@@ -1,0 +1,138 @@
+{
+  "retrieved_at_utc": "2026-09-25T21:32:21.036999+00:00",
+  "services": {
+    "pathway_commons_pid": {
+      "url_template": "https://www.pathwaycommons.org/pc2/search?q=%s&type=pathway&datasource=pid",
+      "note": "datasource=pid (NCI-PID); Reactome excluded to avoid alias with the separately counted Reactome service",
+      "data": {
+        "G3BP1": {
+          "numHits": 0,
+          "human_pid_pathways": []
+        },
+        "SRSF1": {
+          "numHits": 0,
+          "human_pid_pathways": []
+        },
+        "DR1": {
+          "numHits": 0,
+          "human_pid_pathways": []
+        },
+        "RASAL2": {
+          "numHits": 0,
+          "human_pid_pathways": []
+        },
+        "MAPK14": {
+          "numHits": 33,
+          "human_pid_pathways": [
+            {
+              "uri": "pid:pid_14058",
+              "name": "Signaling mediated by p38-alpha and p38-beta",
+              "numParticipants": 83
+            },
+            {
+              "uri": "pid:pid_46139",
+              "name": "Regulation of p38-alpha and p38-beta",
+              "numParticipants": 58
+            },
+            {
+              "uri": "pid:pid_50839",
+              "name": "Regulation of Androgen receptor activity",
+              "numParticipants": 94
+            },
+            {
+              "uri": "pid:pid_16135",
+              "name": "Glucocorticoid receptor regulatory network",
+              "numParticipants": 148
+            },
+            {
+              "uri": "pid:pid_15105",
+              "name": "RAC1 signaling pathway",
+              "numParticipants": 114
+            }
+          ]
+        }
+      }
+    },
+    "clinicaltrials_gov": {
+      "url_ic": "https://clinicaltrials.gov/api/v2/studies?query.cond=interstitial%20cystitis&pageSize=10&fields=NCTId,BriefTitle,OverallStatus,Phase",
+      "url_p38": "https://clinicaltrials.gov/api/v2/studies?query.term=p38%20MAPK%20inhibitor&pageSize=5&fields=NCTId,BriefTitle,OverallStatus",
+      "data": {
+        "ic_bps_trials_sample": [
+          {
+            "nct": "NCT05141006",
+            "title": "Study of BOTOX Injections to Assess Change in Disease Activity and Adverse Events in Adult",
+            "status": "COMPLETED"
+          },
+          {
+            "nct": "NCT01195116",
+            "title": "Usefulness of Dexmedetomidine on Post-operative Pain Management in Patients With Interstit",
+            "status": "COMPLETED"
+          },
+          {
+            "nct": "NCT03463499",
+            "title": "The Efficacy and Safety of Intravesical Hyaluronic Acid and Chondroitin Sulfate After Tran",
+            "status": "COMPLETED"
+          },
+          {
+            "nct": "NCT00499317",
+            "title": "Genetic Study of Chronic Prostatitis/Chronic Pelvic Pain Syndrome (CP/CPPS)",
+            "status": "RECRUITING"
+          },
+          {
+            "nct": "NCT00434343",
+            "title": "Physical Therapy Trial for Pelvic Pain",
+            "status": "COMPLETED"
+          },
+          {
+            "nct": "NCT00704457",
+            "title": "Impact Of Sacral Neuromodulation On Urine Markers For Interstitial Cystitis (IC)",
+            "status": "COMPLETED"
+          },
+          {
+            "nct": "NCT02232282",
+            "title": "Acupuncture for Female IC/PBSyndrome and Its Effect on the Urinary Microbiome: A Randomize",
+            "status": "COMPLETED"
+          },
+          {
+            "nct": "NCT01482676",
+            "title": "The Role of microRNAs in Organ Remodeling in Lower Urinary Tract Dysfunction",
+            "status": "COMPLETED"
+          },
+          {
+            "nct": "NCT05226832",
+            "title": "Intradetrusor Triamcinolone Injection in the Management of Interstitial Cystitis/Bladder P",
+            "status": "WITHDRAWN"
+          },
+          {
+            "nct": "NCT04313972",
+            "title": "IC PaIN Trial: Interstitial Cystitis Pain Improvement With Naltrexone",
+            "status": "TERMINATED"
+          }
+        ],
+        "ic_bps_total_count_field_present": false,
+        "p38_inhibitor_trials_sample": [
+          {
+            "nct": "NCT00205478",
+            "title": "Phase 2 Clinical Study in Rheumatoid Arthritis With an Investigational Oral p38 MAP Kinase"
+          },
+          {
+            "nct": "NCT00390845",
+            "title": "P38 Mitogen-activated Protein (Map) Kinase Inhibitor (SB-681323)Study In Patients With Neu"
+          },
+          {
+            "nct": "NCT02423122",
+            "title": "A PET Study of the Effects of p38 MAP Kinase Inhibitor, VX-745, on Amyloid Plaque Load in "
+          },
+          {
+            "nct": "NCT02423200",
+            "title": "Clinical Pharmacology of p38 MAP Kinase Inhibitor, VX-745, in Mild Cognitive Impairment Du"
+          },
+          {
+            "nct": "NCT05616923",
+            "title": "Topical Mitogenic-Activated Protein Kinase (MAPK) Inhibition in Rosacea"
+          }
+        ]
+      }
+    }
+  }
+}

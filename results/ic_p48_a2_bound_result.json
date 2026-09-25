@@ -1,0 +1,18 @@
+{
+ "preregistration": "projects/interstitial_cystitis/prereg/IC_P48_A2_amendment.md (Gate A2.2, DESCRIPTIVE)",
+ "warning": "BCG enters the subtraction component b_m, so this bound is NOT an independent validation; per-sample BCG residuals center at 0 by construction and only their spread is informative",
+ "frozen_weights": {
+  "M6_cell_state_g2m": 1.0
+ },
+ "n_lesion": 25,
+ "n_bcg": 13,
+ "S_res_lesion_mean": 0.23386403064930328,
+ "S_res_bcg_mean": -1.708035422500241e-17,
+ "hedges_g": 0.45445189927811236,
+ "hedges_g_boot_ci95": [
+  -0.14402500748448516,
+  1.0728299017951182
+ ],
+ "permutation_p_one_sided": 0.08919108089191082,
+ "conclusion_category": "COMPATIBLE (positive, CI overlaps 0)"
+}

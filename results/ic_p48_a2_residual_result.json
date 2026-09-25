@@ -1,0 +1,23 @@
+{
+ "preregistration": "projects/interstitial_cystitis/prereg/IC_P48_A2_amendment.md (Gate A2.1)",
+ "design": "net-of-BCG residual module score, LOPO over 25 HIC patients; BCG fixed comparator block",
+ "n_genes_present": {
+  "M1_barrier_apical_junction": 193,
+  "M2_ecm_remodeling": 197,
+  "M3_neuronal_sensory_pain": 20,
+  "M4_metabolism_oxphos": 184,
+  "M5_stress_repair_hypoxia": 192,
+  "M6_cell_state_g2m": 190
+ },
+ "n_pairs": 25,
+ "n_positive_D_residual": 18,
+ "binom_p_one_sided": 0.021642625331878662,
+ "median_D_residual": 0.17983319351115687,
+ "median_D_boot_ci95": [
+  0.0026953985206857878,
+  0.42338192403529296
+ ],
+ "pass_threshold": ">=18/25 and p<0.025 and CI excludes 0",
+ "pass": true,
+ "negative_meaning": "no residual lesion program beyond BCG-shared biology at module level: Hunner ~ severe inflammatory remodeling at this resolution"
+}

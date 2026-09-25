@@ -86,3 +86,6 @@ Program gate is record-level: individually fetched/verified/used GSM accessions 
 
 ## State 11:37
 - PRIDE archive corrected from an earlier irrelevant keyword query: newly relevant human serum preeclampsia study PXD080843 (Sep 14 2026) inspected via exact project API and captured in `results/external/preeclampsia_proteome_context.json`. It informs endpoint boundaries, NOT a comparable expression benchmark or validation. Tool ledger 28/40; duplicate zero-count PRIDE row removed. Exact TNR working paper still 12 pages, no overflow, now includes this source; final claim remains open.
+
+## State 11:38
+- BioStudies archive E-GEOD-4707 checked as PE placenta study-context (early/late onset, pooled normal reference) and saved exact API response: https://www.ebi.ac.uk/biostudies/api/v1/studies/E-GEOD-4707 . It is not a new validation cohort or novel candidate evidence. Science tool audit now 29/40; no duplicate canonical names. Exact TNR working PDF remains 12 pages, no overflow.

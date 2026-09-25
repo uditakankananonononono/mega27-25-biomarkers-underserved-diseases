@@ -132,3 +132,6 @@ Program gate is record-level: individually fetched/verified/used GSM accessions 
 
 ## State 12:09
 - New 2026 PPD PBMC study (11 PPD, 16 healthy postpartum, 20 MDD) is publication context only: DOI 10.2147/IJWH.S618420. Public BioProject search for the article's PRJNA1456230 and ENA run lookup returned no results; did not open a reviewer-only link or count its inaccessible reads. Descriptive FOLR3 sign lookup in existing GSE45603 and GSE290313-PP gives g=-.020/- .039 with large SE; TNNT1 only measured in latter, weak +.056, MMP1 absent. No discovery. Paper 20 rendered pages, no overflow, still not fully visually checked or 20 substantive pages.
+
+## State 12:12
+- GWAS Catalog exact preeclampsia MONDO_0005081 trait association endpoint returned 145 records, only 18 author-reported gene-name mentions; ST3GAL2/GNG2 not named in that limited field. This is context only, NOT evidence of absence or independent expression validation. Exact API metadata saved. Genuine service tool ledger 36/40. PDF now 21 rendered pages due to longer science-tool table, but page 21 is a dangling sentence: DO NOT claim 20 substantive pages or final completion. Source https://www.ebi.ac.uk/gwas/rest/api/efoTraits/MONDO_0005081/associations . No discovery/benchmark endpoint.

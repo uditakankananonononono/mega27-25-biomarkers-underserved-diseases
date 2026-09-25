@@ -1,0 +1,10 @@
+{
+  "retrieved_utc": "2026-09-25T06:40:39.339759+00:00",
+  "url": "https://www.ebi.ac.uk/gwas/rest/api/efoTraits/MONDO_0005081/associations",
+  "n_association_records": 145,
+  "n_reported_gene_mentions": 18,
+  "n_distinct_reported_gene_names": 18,
+  "ST3GAL2_author_reported": false,
+  "GNG2_author_reported": false,
+  "notes": "Author-reported gene names for this exact preeclampsia trait only, not a comprehensive genetic association or clinical validation. Null lookup cannot prove no genetic evidence."
+}

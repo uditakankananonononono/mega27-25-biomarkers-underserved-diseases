@@ -39,3 +39,4 @@ statsmodels,-,1,analysis library,scripts/pe_meta_sensitivity.py,Independent Paul
 NetworkX,-,1,analysis library,scripts/signature_network_context.py,Physical STRING subgraph components and random edge-count context for fixed PCOS and IC sign panels
 seaborn,-,1,analysis visualization library,scripts/figures.py,Rendered empirical matched-null distributions for PCOS P8 and IC P7 failures using observed draws
 Crossref,-,1,scholarly metadata registry,results/external/bibliography_crossref.json,Verified titles and publication dates of eight DOI research studies cited in manuscript
+NHGRI-EBI GWAS Catalog,-,1,external scientific association database,results/external/gwas_pe_context.json,Exact preeclampsia trait MONDO_0005081 association-gene audit; no independent expression validation inferred

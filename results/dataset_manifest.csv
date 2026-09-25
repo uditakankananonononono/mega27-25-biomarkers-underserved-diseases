@@ -1259,3 +1259,11 @@ GSM9798625,GEO individually fetched GSM full-text record,long_covid:P38 one of s
 GSM9798626,GEO individually fetched GSM full-text record,long_covid:P38 one of sorted CD4 fractions; nested in GSE334857 and ten people; not independent cohort
 GSM9798627,GEO individually fetched GSM full-text record,long_covid:P38 one of sorted CD4 fractions; nested in GSE334857 and ten people; not independent cohort
 GSM9798628,GEO individually fetched GSM full-text record,long_covid:P38 one of sorted CD4 fractions; nested in GSE334857 and ten people; not independent cohort
+GSE153739,GEO separately fetched series accession,endometriosis:P40 historical mid-proliferative eutopic FPKM transport; seven libraries
+GSM4650379,GEO individually fetched GSM full-text record,"endometriosis:P40 Control column 1; nested in GSE153739, not independent study"
+GSM4650380,GEO individually fetched GSM full-text record,"endometriosis:P40 Control column 11; nested in GSE153739, not independent study"
+GSM4650381,GEO individually fetched GSM full-text record,"endometriosis:P40 Control column 12; nested in GSE153739, not independent study"
+GSM4650382,GEO individually fetched GSM full-text record,"endometriosis:P40 Endometriosis column 4; nested in GSE153739, not independent study"
+GSM4650383,GEO individually fetched GSM full-text record,"endometriosis:P40 Endometriosis column 8; nested in GSE153739, not independent study"
+GSM4650384,GEO individually fetched GSM full-text record,"endometriosis:P40 Endometriosis column 18; nested in GSE153739, not independent study"
+GSM4650385,GEO individually fetched GSM full-text record,"endometriosis:P40 Endometriosis column 16; nested in GSE153739, not independent study"

@@ -1,0 +1,254 @@
+{
+  "gene": "RPA2",
+  "module": "M6_cell_state_g2m",
+  "prereg": "projects/interstitial_cystitis/prereg/ic_p48_module_genesets.json",
+  "retrieved_at_utc": "2026-09-25T20:32:33.705288+00:00",
+  "sources": {
+    "ensembl": {
+      "url": "https://rest.ensembl.org/lookup/symbol/homo_sapiens/RPA2?content-type=application/json",
+      "data": {
+        "id": "ENSG00000117748",
+        "display_name": "RPA2",
+        "description": "replication protein A2 [Source:HGNC Symbol;Acc:HGNC:10290]",
+        "biotype": "protein_coding",
+        "seq_region_name": "1"
+      }
+    },
+    "uniprot": {
+      "url": "https://rest.uniprot.org/uniprotkb/search?query=gene_exact%3ARPA2%20AND%20organism_id%3A9606%20AND%20reviewed%3Atrue&size=3&format=json",
+      "data": [
+        {
+          "primaryAccession": "P15927",
+          "uniProtkbId": "RFA2_HUMAN",
+          "entryType": "UniProtKB reviewed (Swiss-Prot)"
+        }
+      ]
+    },
+    "europe_pmc": {
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=RPA2%20AND%20%22interstitial%20cystitis%22&format=json&pageSize=10",
+      "data": {
+        "hit_count": 3,
+        "papers": [
+          {
+            "id": "34427716",
+            "title": "Abstracts des 73. Kongresses der Deutschen Gesellschaft für Urologie e. V.",
+            "doi": "10.1007/s00120-021-01626-1",
+            "pubYear": "2021"
+          },
+          {
+            "id": "32030671",
+            "title": "Vision 20/20 for the Second Leap of Reproductive Sciences.",
+            "doi": "10.1007/s43032-019-00138-w",
+            "pubYear": "2020"
+          },
+          {
+            "id": "PMC10902613",
+            "title": "Abstracts",
+            "doi": null,
+            "pubYear": "2024"
+          }
+        ]
+      }
+    },
+    "mygene": {
+      "url": "https://mygene.info/v3/query?q=symbol%3ARPA2&species=human&size=3",
+      "data": {
+        "total": 1,
+        "hits": [
+          {
+            "_id": "6118",
+            "symbol": "RPA2",
+            "name": "replication protein A2",
+            "taxid": 9606
+          }
+        ]
+      }
+    },
+    "chembl": {
+      "url": "https://www.ebi.ac.uk/chembl/api/data/target/search.json?q=RPA2&limit=20",
+      "data": {
+        "total": 1,
+        "human_targets": [
+          {
+            "target_chembl_id": "CHEMBL6196071",
+            "pref_name": "Replication protein A 32 kDa subunit",
+            "organism": "Homo sapiens"
+          }
+        ]
+      }
+    },
+    "hgnc_rest": {
+      "url": "https://rest.genenames.org/fetch/symbol/RPA2",
+      "data": [
+        {
+          "symbol": "RPA2",
+          "hgnc_id": "HGNC:10290",
+          "entrez_id": "6118",
+          "ensembl_gene_id": "ENSG00000117748",
+          "status": "Approved"
+        }
+      ]
+    },
+    "gtex_reference": {
+      "url": "https://gtexportal.org/api/v2/reference/gene?geneId=RPA2",
+      "data": [
+        {
+          "geneSymbol": "RPA2",
+          "geneId": null,
+          "gencodeId": "ENSG00000117748.9",
+          "entrezGeneId": 6118
+        }
+      ]
+    },
+    "reactome": {
+      "url": "https://reactome.org/ContentService/data/mapping/UniProt/P15927/pathways",
+      "data": [
+        {
+          "stId": "R-HSA-110312",
+          "displayName": "Translesion synthesis by REV1",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-110314",
+          "displayName": "Recognition of DNA damage by PCNA-containing replication complex",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-110320",
+          "displayName": "Translesion Synthesis by POLH",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-174437",
+          "displayName": "Removal of the Flap Intermediate from the C-strand",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-176187",
+          "displayName": "Activation of ATR in response to replication stress",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-3371453",
+          "displayName": "Regulation of HSF1-mediated heat shock response",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-3371511",
+          "displayName": "HSF1 activation",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-5358565",
+          "displayName": "Mismatch repair (MMR) directed by MSH2:MSH6 (MutSalpha)",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-5358606",
+          "displayName": "Mismatch repair (MMR) directed by MSH2:MSH3 (MutSbeta)",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-5651801",
+          "displayName": "PCNA-Dependent Long Patch Base Excision Repair",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-5655862",
+          "displayName": "Translesion synthesis by POLK",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-5656121",
+          "displayName": "Translesion synthesis by POLI",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-5656169",
+          "displayName": "Termination of translesion DNA synthesis",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-5685938",
+          "displayName": "HDR through Single Strand Annealing (SSA)",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-5685942",
+          "displayName": "HDR through Homologous Recombination (HRR)",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-5693607",
+          "displayName": "Processing of DNA double-strand break ends",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-5693616",
+          "displayName": "Presynaptic phase of homologous DNA pairing and strand exchange",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-5696395",
+          "displayName": "Formation of Incision Complex in GG-NER",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-5696397",
+          "displayName": "Gap-filling DNA repair synthesis and ligation in GG-NER",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-5696400",
+          "displayName": "Dual Incision in GG-NER",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-6782135",
+          "displayName": "Dual incision in TC-NER",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-6782210",
+          "displayName": "Gap-filling DNA repair synthesis and ligation in TC-NER",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-6783310",
+          "displayName": "Fanconi Anemia Pathway",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-6804756",
+          "displayName": "Regulation of TP53 Activity through Phosphorylation",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-68962",
+          "displayName": "Activation of the pre-replicative complex",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-69166",
+          "displayName": "Removal of the Flap Intermediate",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-69473",
+          "displayName": "G2/M DNA damage checkpoint",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-912446",
+          "displayName": "Meiotic recombination",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-9709570",
+          "displayName": "Impaired BRCA2 binding to RAD51",
+          "speciesName": "Homo sapiens"
+        }
+      ]
+    }
+  }
+}

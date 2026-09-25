@@ -1,0 +1,100 @@
+{
+  "gene": "ARID4A",
+  "module": "M6_cell_state_g2m",
+  "prereg": "projects/interstitial_cystitis/prereg/ic_p48_module_genesets.json",
+  "retrieved_at_utc": "2026-09-25T20:31:31.202306+00:00",
+  "sources": {
+    "ensembl": {
+      "url": "https://rest.ensembl.org/lookup/symbol/homo_sapiens/ARID4A?content-type=application/json",
+      "data": {
+        "id": "ENSG00000032219",
+        "display_name": "ARID4A",
+        "description": "AT-rich interaction domain 4A [Source:HGNC Symbol;Acc:HGNC:9885]",
+        "biotype": "protein_coding",
+        "seq_region_name": "14"
+      }
+    },
+    "uniprot": {
+      "url": "https://rest.uniprot.org/uniprotkb/search?query=gene_exact%3AARID4A%20AND%20organism_id%3A9606%20AND%20reviewed%3Atrue&size=3&format=json",
+      "data": [
+        {
+          "primaryAccession": "P29374",
+          "uniProtkbId": "ARI4A_HUMAN",
+          "entryType": "UniProtKB reviewed (Swiss-Prot)"
+        }
+      ]
+    },
+    "europe_pmc": {
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=ARID4A%20AND%20%22interstitial%20cystitis%22&format=json&pageSize=10",
+      "data": {
+        "hit_count": 0,
+        "papers": []
+      }
+    },
+    "mygene": {
+      "url": "https://mygene.info/v3/query?q=symbol%3AARID4A&species=human&size=3",
+      "data": {
+        "total": 1,
+        "hits": [
+          {
+            "_id": "5926",
+            "symbol": "ARID4A",
+            "name": "AT-rich interaction domain 4A",
+            "taxid": 9606
+          }
+        ]
+      }
+    },
+    "chembl": {
+      "url": "https://www.ebi.ac.uk/chembl/api/data/target/search.json?q=ARID4A&limit=20",
+      "data": {
+        "total": 1,
+        "human_targets": [
+          {
+            "target_chembl_id": "CHEMBL3709855",
+            "pref_name": "AT-rich interactive domain-containing protein 4A",
+            "organism": "Homo sapiens"
+          }
+        ]
+      }
+    },
+    "hgnc_rest": {
+      "url": "https://rest.genenames.org/fetch/symbol/ARID4A",
+      "data": [
+        {
+          "symbol": "ARID4A",
+          "hgnc_id": "HGNC:9885",
+          "entrez_id": "5926",
+          "ensembl_gene_id": "ENSG00000032219",
+          "status": "Approved"
+        }
+      ]
+    },
+    "gtex_reference": {
+      "url": "https://gtexportal.org/api/v2/reference/gene?geneId=ARID4A",
+      "data": [
+        {
+          "geneSymbol": "ARID4A",
+          "geneId": null,
+          "gencodeId": "ENSG00000032219.18",
+          "entrezGeneId": 5926
+        }
+      ]
+    },
+    "reactome": {
+      "url": "https://reactome.org/ContentService/data/mapping/UniProt/P29374/pathways",
+      "data": [
+        {
+          "stId": "R-HSA-3214815",
+          "displayName": "HDACs deacetylate histones",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-9679191",
+          "displayName": "Potential therapeutics for SARS",
+          "speciesName": "Homo sapiens"
+        }
+      ]
+    }
+  }
+}

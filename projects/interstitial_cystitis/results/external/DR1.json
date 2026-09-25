@@ -1,0 +1,131 @@
+{
+  "gene": "DR1",
+  "module": "M6_cell_state_g2m",
+  "prereg": "projects/interstitial_cystitis/prereg/ic_p48_module_genesets.json",
+  "retrieved_at_utc": "2026-09-25T20:31:56.334041+00:00",
+  "sources": {
+    "ensembl": {
+      "url": "https://rest.ensembl.org/lookup/symbol/homo_sapiens/DR1?content-type=application/json",
+      "data": {
+        "id": "ENSG00000117505",
+        "display_name": "DR1",
+        "description": "down-regulator of transcription 1 [Source:HGNC Symbol;Acc:HGNC:3017]",
+        "biotype": "protein_coding",
+        "seq_region_name": "1"
+      }
+    },
+    "uniprot": {
+      "url": "https://rest.uniprot.org/uniprotkb/search?query=gene_exact%3ADR1%20AND%20organism_id%3A9606%20AND%20reviewed%3Atrue&size=3&format=json",
+      "data": [
+        {
+          "primaryAccession": "Q01658",
+          "uniProtkbId": "NC2B_HUMAN",
+          "entryType": "UniProtKB reviewed (Swiss-Prot)"
+        }
+      ]
+    },
+    "europe_pmc": {
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=DR1%20AND%20%22interstitial%20cystitis%22&format=json&pageSize=10",
+      "data": {
+        "hit_count": 5,
+        "papers": [
+          {
+            "id": "38764941",
+            "title": "Therapeutic strategies for uncomplicated cystitis in women.",
+            "doi": "10.3205/id000086",
+            "pubYear": "2024"
+          },
+          {
+            "id": "39351187",
+            "title": "Insights into renal and urological complications of inflammatory bowel disease.",
+            "doi": "10.5527/wjn.v13.i3.96574",
+            "pubYear": "2024"
+          },
+          {
+            "id": "PMC7166724",
+            "title": "2013 ACVIM Forum Research Abstracts Program",
+            "doi": null,
+            "pubYear": "2013"
+          },
+          {
+            "id": "24085684",
+            "title": "Abstracts of the 2013 Annual Meeting of the American College of Rheumatology. October 25-30, 2013. San Diego, California, USA.",
+            "doi": "10.1002/art.38216",
+            "pubYear": "2013"
+          },
+          {
+            "id": "PMC4669991",
+            "title": "UEG Week 2015 Poster Presentations",
+            "doi": null,
+            "pubYear": "2015"
+          }
+        ]
+      }
+    },
+    "mygene": {
+      "url": "https://mygene.info/v3/query?q=symbol%3ADR1&species=human&size=3",
+      "data": {
+        "total": 1,
+        "hits": [
+          {
+            "_id": "1810",
+            "symbol": "DR1",
+            "name": "down-regulator of transcription 1",
+            "taxid": 9606
+          }
+        ]
+      }
+    },
+    "chembl": {
+      "url": "https://www.ebi.ac.uk/chembl/api/data/target/search.json?q=DR1&limit=20",
+      "data": {
+        "total": 1,
+        "human_targets": [
+          {
+            "target_chembl_id": "CHEMBL5058617",
+            "pref_name": "NB4-DR1",
+            "organism": "Homo sapiens"
+          }
+        ]
+      }
+    },
+    "hgnc_rest": {
+      "url": "https://rest.genenames.org/fetch/symbol/DR1",
+      "data": [
+        {
+          "symbol": "DR1",
+          "hgnc_id": "HGNC:3017",
+          "entrez_id": "1810",
+          "ensembl_gene_id": "ENSG00000117505",
+          "status": "Approved"
+        }
+      ]
+    },
+    "gtex_reference": {
+      "url": "https://gtexportal.org/api/v2/reference/gene?geneId=DR1",
+      "data": [
+        {
+          "geneSymbol": "DR1",
+          "geneId": null,
+          "gencodeId": "ENSG00000117505.12",
+          "entrezGeneId": 1810
+        }
+      ]
+    },
+    "reactome": {
+      "url": "https://reactome.org/ContentService/data/mapping/UniProt/Q01658/pathways",
+      "data": [
+        {
+          "stId": "R-HSA-3214847",
+          "displayName": "HATs acetylate histones",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-9772755",
+          "displayName": "Formation of WDR5-containing histone-modifying complexes",
+          "speciesName": "Homo sapiens"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,107 @@
+{
+  "gene": "SMC2",
+  "module": "M6_cell_state_g2m",
+  "prereg": "projects/interstitial_cystitis/prereg/ic_p48_module_genesets.json",
+  "retrieved_at_utc": "2026-09-25T20:32:16.080192+00:00",
+  "sources": {
+    "ensembl": {
+      "url": "https://rest.ensembl.org/lookup/symbol/homo_sapiens/SMC2?content-type=application/json",
+      "data": {
+        "id": "ENSG00000136824",
+        "display_name": "SMC2",
+        "description": "structural maintenance of chromosomes 2 [Source:HGNC Symbol;Acc:HGNC:14011]",
+        "biotype": "protein_coding",
+        "seq_region_name": "9"
+      }
+    },
+    "uniprot": {
+      "url": "https://rest.uniprot.org/uniprotkb/search?query=gene_exact%3ASMC2%20AND%20organism_id%3A9606%20AND%20reviewed%3Atrue&size=3&format=json",
+      "data": [
+        {
+          "primaryAccession": "O95347",
+          "uniProtkbId": "SMC2_HUMAN",
+          "entryType": "UniProtKB reviewed (Swiss-Prot)"
+        }
+      ]
+    },
+    "europe_pmc": {
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=SMC2%20AND%20%22interstitial%20cystitis%22&format=json&pageSize=10",
+      "data": {
+        "hit_count": 1,
+        "papers": [
+          {
+            "id": "42399658",
+            "title": "Integrated single-cell and spatial transcriptomics reveal stromal-immune-vascular crosstalk in patients with interstitial cystitis/bladder pain syndrome.",
+            "doi": "10.1038/s12276-026-01768-2",
+            "pubYear": "2026"
+          }
+        ]
+      }
+    },
+    "mygene": {
+      "url": "https://mygene.info/v3/query?q=symbol%3ASMC2&species=human&size=3",
+      "data": {
+        "total": 1,
+        "hits": [
+          {
+            "_id": "10592",
+            "symbol": "SMC2",
+            "name": "structural maintenance of chromosomes 2",
+            "taxid": 9606
+          }
+        ]
+      }
+    },
+    "chembl": {
+      "url": "https://www.ebi.ac.uk/chembl/api/data/target/search.json?q=SMC2&limit=20",
+      "data": {
+        "total": 1,
+        "human_targets": [
+          {
+            "target_chembl_id": "CHEMBL4105890",
+            "pref_name": "Structural maintenance of chromosomes protein 2",
+            "organism": "Homo sapiens"
+          }
+        ]
+      }
+    },
+    "hgnc_rest": {
+      "url": "https://rest.genenames.org/fetch/symbol/SMC2",
+      "data": [
+        {
+          "symbol": "SMC2",
+          "hgnc_id": "HGNC:14011",
+          "entrez_id": "10592",
+          "ensembl_gene_id": "ENSG00000136824",
+          "status": "Approved"
+        }
+      ]
+    },
+    "gtex_reference": {
+      "url": "https://gtexportal.org/api/v2/reference/gene?geneId=SMC2",
+      "data": [
+        {
+          "geneSymbol": "SMC2",
+          "geneId": null,
+          "gencodeId": "ENSG00000136824.18",
+          "entrezGeneId": 10592
+        }
+      ]
+    },
+    "reactome": {
+      "url": "https://reactome.org/ContentService/data/mapping/UniProt/O95347/pathways",
+      "data": [
+        {
+          "stId": "R-HSA-2299718",
+          "displayName": "Condensation of Prophase Chromosomes",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-2514853",
+          "displayName": "Condensation of Prometaphase Chromosomes",
+          "speciesName": "Homo sapiens"
+        }
+      ]
+    }
+  }
+}

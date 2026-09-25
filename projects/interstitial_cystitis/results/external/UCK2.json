@@ -1,0 +1,112 @@
+{
+  "gene": "UCK2",
+  "module": "M6_cell_state_g2m",
+  "prereg": "projects/interstitial_cystitis/prereg/ic_p48_module_genesets.json",
+  "retrieved_at_utc": "2026-09-25T20:31:25.023759+00:00",
+  "sources": {
+    "ensembl": {
+      "url": "https://rest.ensembl.org/lookup/symbol/homo_sapiens/UCK2?content-type=application/json",
+      "data": {
+        "id": "ENSG00000143179",
+        "display_name": "UCK2",
+        "description": "uridine-cytidine kinase 2 [Source:HGNC Symbol;Acc:HGNC:12562]",
+        "biotype": "protein_coding",
+        "seq_region_name": "1"
+      }
+    },
+    "uniprot": {
+      "url": "https://rest.uniprot.org/uniprotkb/search?query=gene_exact%3AUCK2%20AND%20organism_id%3A9606%20AND%20reviewed%3Atrue&size=3&format=json",
+      "data": [
+        {
+          "primaryAccession": "Q9BZX2",
+          "uniProtkbId": "UCK2_HUMAN",
+          "entryType": "UniProtKB reviewed (Swiss-Prot)"
+        }
+      ]
+    },
+    "europe_pmc": {
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=UCK2%20AND%20%22interstitial%20cystitis%22&format=json&pageSize=10",
+      "data": {
+        "hit_count": 1,
+        "papers": [
+          {
+            "id": "PMC10902613",
+            "title": "Abstracts",
+            "doi": null,
+            "pubYear": "2024"
+          }
+        ]
+      }
+    },
+    "mygene": {
+      "url": "https://mygene.info/v3/query?q=symbol%3AUCK2&species=human&size=3",
+      "data": {
+        "total": 1,
+        "hits": [
+          {
+            "_id": "7371",
+            "symbol": "UCK2",
+            "name": "uridine-cytidine kinase 2",
+            "taxid": 9606
+          }
+        ]
+      }
+    },
+    "chembl": {
+      "url": "https://www.ebi.ac.uk/chembl/api/data/target/search.json?q=UCK2&limit=20",
+      "data": {
+        "total": 3,
+        "human_targets": [
+          {
+            "target_chembl_id": "CHEMBL2469",
+            "pref_name": "Uridine-cytidine kinase 2",
+            "organism": "Homo sapiens"
+          },
+          {
+            "target_chembl_id": "CHEMBL3542438",
+            "pref_name": "Uridine-cytidine kinase",
+            "organism": "Homo sapiens"
+          },
+          {
+            "target_chembl_id": "CHEMBL4748231",
+            "pref_name": "von Hippel-Lindau disease tumor suppressor/Uridine-cytidine kinase 2",
+            "organism": "Homo sapiens"
+          }
+        ]
+      }
+    },
+    "hgnc_rest": {
+      "url": "https://rest.genenames.org/fetch/symbol/UCK2",
+      "data": [
+        {
+          "symbol": "UCK2",
+          "hgnc_id": "HGNC:12562",
+          "entrez_id": "7371",
+          "ensembl_gene_id": "ENSG00000143179",
+          "status": "Approved"
+        }
+      ]
+    },
+    "gtex_reference": {
+      "url": "https://gtexportal.org/api/v2/reference/gene?geneId=UCK2",
+      "data": [
+        {
+          "geneSymbol": "UCK2",
+          "geneId": null,
+          "gencodeId": "ENSG00000143179.14",
+          "entrezGeneId": 7371
+        }
+      ]
+    },
+    "reactome": {
+      "url": "https://reactome.org/ContentService/data/mapping/UniProt/Q9BZX2/pathways",
+      "data": [
+        {
+          "stId": "R-HSA-73614",
+          "displayName": "Pyrimidine salvage",
+          "speciesName": "Homo sapiens"
+        }
+      ]
+    }
+  }
+}

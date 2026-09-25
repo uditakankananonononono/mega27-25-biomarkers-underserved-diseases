@@ -1,0 +1,113 @@
+{
+  "gene": "NUMA1",
+  "module": "M6_cell_state_g2m",
+  "prereg": "projects/interstitial_cystitis/prereg/ic_p48_module_genesets.json",
+  "retrieved_at_utc": "2026-09-25T20:30:53.368486+00:00",
+  "sources": {
+    "ensembl": {
+      "url": "https://rest.ensembl.org/lookup/symbol/homo_sapiens/NUMA1?content-type=application/json",
+      "data": {
+        "id": "ENSG00000137497",
+        "display_name": "NUMA1",
+        "description": "nuclear mitotic apparatus protein 1 [Source:HGNC Symbol;Acc:HGNC:8059]",
+        "biotype": "protein_coding",
+        "seq_region_name": "11"
+      }
+    },
+    "uniprot": {
+      "url": "https://rest.uniprot.org/uniprotkb/search?query=gene_exact%3ANUMA1%20AND%20organism_id%3A9606%20AND%20reviewed%3Atrue&size=3&format=json",
+      "data": [
+        {
+          "primaryAccession": "Q14980",
+          "uniProtkbId": "NUMA1_HUMAN",
+          "entryType": "UniProtKB reviewed (Swiss-Prot)"
+        }
+      ]
+    },
+    "europe_pmc": {
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=NUMA1%20AND%20%22interstitial%20cystitis%22&format=json&pageSize=10",
+      "data": {
+        "hit_count": 2,
+        "papers": [
+          {
+            "id": "28224770",
+            "title": "Performance of an Automated Fluorescence Antinuclear Antibody Image Analyzer.",
+            "doi": "10.3343/alm.2017.37.3.240",
+            "pubYear": "2017"
+          },
+          {
+            "id": "33303164",
+            "title": "Review: Detection and quantification of proteins in human urine.",
+            "doi": "10.1016/j.talanta.2020.121718",
+            "pubYear": "2021"
+          }
+        ]
+      }
+    },
+    "mygene": {
+      "url": "https://mygene.info/v3/query?q=symbol%3ANUMA1&species=human&size=3",
+      "data": {
+        "total": 1,
+        "hits": [
+          {
+            "_id": "4926",
+            "symbol": "NUMA1",
+            "name": "nuclear mitotic apparatus protein 1",
+            "taxid": 9606
+          }
+        ]
+      }
+    },
+    "chembl": {
+      "url": "https://www.ebi.ac.uk/chembl/api/data/target/search.json?q=NUMA1&limit=20",
+      "data": {
+        "total": 1,
+        "human_targets": [
+          {
+            "target_chembl_id": "CHEMBL5725184",
+            "pref_name": "Nuclear mitotic apparatus protein 1",
+            "organism": "Homo sapiens"
+          }
+        ]
+      }
+    },
+    "hgnc_rest": {
+      "url": "https://rest.genenames.org/fetch/symbol/NUMA1",
+      "data": [
+        {
+          "symbol": "NUMA1",
+          "hgnc_id": "HGNC:8059",
+          "entrez_id": "4926",
+          "ensembl_gene_id": "ENSG00000137497",
+          "status": "Approved"
+        }
+      ]
+    },
+    "gtex_reference": {
+      "url": "https://gtexportal.org/api/v2/reference/gene?geneId=NUMA1",
+      "data": [
+        {
+          "geneSymbol": "NUMA1",
+          "geneId": null,
+          "gencodeId": "ENSG00000137497.17",
+          "entrezGeneId": 4926
+        }
+      ]
+    },
+    "reactome": {
+      "url": "https://reactome.org/ContentService/data/mapping/UniProt/Q14980/pathways",
+      "data": [
+        {
+          "stId": "R-HSA-380320",
+          "displayName": "Recruitment of NuMA to mitotic centrosomes",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-68875",
+          "displayName": "Mitotic Prophase",
+          "speciesName": "Homo sapiens"
+        }
+      ]
+    }
+  }
+}

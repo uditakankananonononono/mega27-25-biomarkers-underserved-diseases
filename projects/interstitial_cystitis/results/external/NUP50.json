@@ -1,0 +1,247 @@
+{
+  "gene": "NUP50",
+  "module": "M6_cell_state_g2m",
+  "prereg": "projects/interstitial_cystitis/prereg/ic_p48_module_genesets.json",
+  "retrieved_at_utc": "2026-09-25T20:30:23.926253+00:00",
+  "sources": {
+    "ensembl": {
+      "url": "https://rest.ensembl.org/lookup/symbol/homo_sapiens/NUP50?content-type=application/json",
+      "data": {
+        "id": "ENSG00000093000",
+        "display_name": "NUP50",
+        "description": "nucleoporin 50 [Source:HGNC Symbol;Acc:HGNC:8065]",
+        "biotype": "protein_coding",
+        "seq_region_name": "22"
+      }
+    },
+    "uniprot": {
+      "url": "https://rest.uniprot.org/uniprotkb/search?query=gene_exact%3ANUP50%20AND%20organism_id%3A9606%20AND%20reviewed%3Atrue&size=3&format=json",
+      "data": [
+        {
+          "primaryAccession": "Q9UKX7",
+          "uniProtkbId": "NUP50_HUMAN",
+          "entryType": "UniProtKB reviewed (Swiss-Prot)"
+        }
+      ]
+    },
+    "europe_pmc": {
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=NUP50%20AND%20%22interstitial%20cystitis%22&format=json&pageSize=10",
+      "data": {
+        "hit_count": 1,
+        "papers": [
+          {
+            "id": "PMC7163937",
+            "title": "Poster Sessions",
+            "doi": null,
+            "pubYear": "2014"
+          }
+        ]
+      }
+    },
+    "mygene": {
+      "url": "https://mygene.info/v3/query?q=symbol%3ANUP50&species=human&size=3",
+      "data": {
+        "total": 1,
+        "hits": [
+          {
+            "_id": "10762",
+            "symbol": "NUP50",
+            "name": "nucleoporin 50",
+            "taxid": 9606
+          }
+        ]
+      }
+    },
+    "chembl": {
+      "url": "https://www.ebi.ac.uk/chembl/api/data/target/search.json?q=NUP50&limit=20",
+      "data": {
+        "total": 1,
+        "human_targets": [
+          {
+            "target_chembl_id": "CHEMBL6067071",
+            "pref_name": "Nuclear pore complex protein Nup50",
+            "organism": "Homo sapiens"
+          }
+        ]
+      }
+    },
+    "hgnc_rest": {
+      "url": "https://rest.genenames.org/fetch/symbol/NUP50",
+      "data": [
+        {
+          "symbol": "NUP50",
+          "hgnc_id": "HGNC:8065",
+          "entrez_id": "10762",
+          "ensembl_gene_id": "ENSG00000093000",
+          "status": "Approved"
+        }
+      ]
+    },
+    "gtex_reference": {
+      "url": "https://gtexportal.org/api/v2/reference/gene?geneId=NUP50",
+      "data": [
+        {
+          "geneSymbol": "NUP50",
+          "geneId": null,
+          "gencodeId": "ENSG00000093000.18",
+          "entrezGeneId": 10762
+        }
+      ]
+    },
+    "reactome": {
+      "url": "https://reactome.org/ContentService/data/mapping/UniProt/Q9UKX7/pathways",
+      "data": [
+        {
+          "stId": "R-HSA-1169408",
+          "displayName": "ISG15 antiviral mechanism",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-159227",
+          "displayName": "Transport of the SLBP independent Mature mRNA",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-159230",
+          "displayName": "Transport of the SLBP Dependant Mature mRNA",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-159231",
+          "displayName": "Transport of Mature mRNA Derived from an Intronless Transcript",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-159236",
+          "displayName": "Transport of Mature mRNA derived from an Intron-Containing Transcript",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-165054",
+          "displayName": "Rev-mediated nuclear export of HIV RNA",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-168271",
+          "displayName": "Transport of Ribonucleoproteins into the Host Nucleus",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-168276",
+          "displayName": "NS1 Mediated Effects on Host Pathways",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-168325",
+          "displayName": "Viral Messenger RNA Synthesis",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-168333",
+          "displayName": "NEP/NS2 Interacts with the Cellular Export Machinery",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-170822",
+          "displayName": "Regulation of Glucokinase by Glucokinase Regulatory Protein",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-180746",
+          "displayName": "Nuclear import of Rev protein",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-180910",
+          "displayName": "Vpr-mediated nuclear import of PICs",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-1855170",
+          "displayName": "IPs transport between nucleus and cytosol",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-1855196",
+          "displayName": "IP3 and IP4 transport between cytosol and nucleus",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-1855229",
+          "displayName": "IP6 and IP7 transport between cytosol and nucleus",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-191859",
+          "displayName": "snRNP Assembly",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-3108214",
+          "displayName": "SUMOylation of DNA damage response and repair proteins",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-3232142",
+          "displayName": "SUMOylation of ubiquitinylation proteins",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-3301854",
+          "displayName": "Nuclear Pore Complex (NPC) Disassembly",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-3371453",
+          "displayName": "Regulation of HSF1-mediated heat shock response",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-4085377",
+          "displayName": "SUMOylation of SUMOylation proteins",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-4551638",
+          "displayName": "SUMOylation of chromatin organization proteins",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-4570464",
+          "displayName": "SUMOylation of RNA binding proteins",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-4615885",
+          "displayName": "SUMOylation of DNA replication proteins",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-5619107",
+          "displayName": "Defective TPR may confer susceptibility towards thyroid papillary carcinoma (TPC)",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-6784531",
+          "displayName": "tRNA processing in the nucleus",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-9609690",
+          "displayName": "HCMV Early Events",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-9610379",
+          "displayName": "HCMV Late Events",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-9705671",
+          "displayName": "SARS-CoV-2 activates/modulates innate and adaptive immune responses",
+          "speciesName": "Homo sapiens"
+        }
+      ]
+    }
+  }
+}

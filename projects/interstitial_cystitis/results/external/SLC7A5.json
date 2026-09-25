@@ -1,0 +1,142 @@
+{
+  "gene": "SLC7A5",
+  "module": "M6_cell_state_g2m",
+  "prereg": "projects/interstitial_cystitis/prereg/ic_p48_module_genesets.json",
+  "retrieved_at_utc": "2026-09-25T20:30:33.160702+00:00",
+  "sources": {
+    "ensembl": {
+      "url": "https://rest.ensembl.org/lookup/symbol/homo_sapiens/SLC7A5?content-type=application/json",
+      "data": {
+        "id": "ENSG00000103257",
+        "display_name": "SLC7A5",
+        "description": "solute carrier family 7 member 5 [Source:HGNC Symbol;Acc:HGNC:11063]",
+        "biotype": "protein_coding",
+        "seq_region_name": "16"
+      }
+    },
+    "uniprot": {
+      "url": "https://rest.uniprot.org/uniprotkb/search?query=gene_exact%3ASLC7A5%20AND%20organism_id%3A9606%20AND%20reviewed%3Atrue&size=3&format=json",
+      "data": [
+        {
+          "primaryAccession": "Q01650",
+          "uniProtkbId": "LAT1_HUMAN",
+          "entryType": "UniProtKB reviewed (Swiss-Prot)"
+        }
+      ]
+    },
+    "europe_pmc": {
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=SLC7A5%20AND%20%22interstitial%20cystitis%22&format=json&pageSize=10",
+      "data": {
+        "hit_count": 6,
+        "papers": [
+          {
+            "id": "42650215",
+            "title": "Functional Foods and Micro- and Nanoplastics: Advances in Precision Nutritional Medicine for Oral-Gut-Brain Axis Health.",
+            "doi": "10.3390/antiox15080951",
+            "pubYear": "2026"
+          },
+          {
+            "id": "30646511",
+            "title": "The Role of Dimethyl Sulfoxide (DMSO) in Gene Expression Modulation and Glycosaminoglycan Metabolism in Lysosomal Storage Disorders on an Example of Mucopolysaccharidosis.",
+            "doi": "10.3390/ijms20020304",
+            "pubYear": "2019"
+          },
+          {
+            "id": "29237492",
+            "title": "Pentosan polysulfate binds to STRO-1<sup>+</sup> mesenchymal progenitor cells, is internalized, and modifies gene expression: a novel approach of pre-programing stem cells for therapeutic application requiring their chondrogenesis.",
+            "doi": "10.1186/s13287-017-0723-y",
+            "pubYear": "2017"
+          },
+          {
+            "id": "PMC10902613",
+            "title": "Abstracts",
+            "doi": null,
+            "pubYear": "2024"
+          },
+          {
+            "id": "36648635",
+            "title": "World Molecular Imaging Congress 2022.",
+            "doi": "10.1007/s11307-022-01794-2",
+            "pubYear": "2022"
+          },
+          {
+            "id": "32030671",
+            "title": "Vision 20/20 for the Second Leap of Reproductive Sciences.",
+            "doi": "10.1007/s43032-019-00138-w",
+            "pubYear": "2020"
+          }
+        ]
+      }
+    },
+    "mygene": {
+      "url": "https://mygene.info/v3/query?q=symbol%3ASLC7A5&species=human&size=3",
+      "data": {
+        "total": 1,
+        "hits": [
+          {
+            "_id": "8140",
+            "symbol": "SLC7A5",
+            "name": "solute carrier family 7 member 5",
+            "taxid": 9606
+          }
+        ]
+      }
+    },
+    "chembl": {
+      "url": "https://www.ebi.ac.uk/chembl/api/data/target/search.json?q=SLC7A5&limit=20",
+      "data": {
+        "total": 3,
+        "human_targets": [
+          {
+            "target_chembl_id": "CHEMBL4459",
+            "pref_name": "Large neutral amino acids transporter small subunit 1",
+            "organism": "Homo sapiens"
+          }
+        ]
+      }
+    },
+    "hgnc_rest": {
+      "url": "https://rest.genenames.org/fetch/symbol/SLC7A5",
+      "data": [
+        {
+          "symbol": "SLC7A5",
+          "hgnc_id": "HGNC:11063",
+          "entrez_id": "8140",
+          "ensembl_gene_id": "ENSG00000103257",
+          "status": "Approved"
+        }
+      ]
+    },
+    "gtex_reference": {
+      "url": "https://gtexportal.org/api/v2/reference/gene?geneId=SLC7A5",
+      "data": [
+        {
+          "geneSymbol": "SLC7A5",
+          "geneId": null,
+          "gencodeId": "ENSG00000103257.8",
+          "entrezGeneId": 8140
+        }
+      ]
+    },
+    "reactome": {
+      "url": "https://reactome.org/ContentService/data/mapping/UniProt/Q01650/pathways",
+      "data": [
+        {
+          "stId": "R-HSA-210991",
+          "displayName": "Basigin interactions",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-352230",
+          "displayName": "Amino acid transport across the plasma membrane",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-71240",
+          "displayName": "Tryptophan catabolism",
+          "speciesName": "Homo sapiens"
+        }
+      ]
+    }
+  }
+}

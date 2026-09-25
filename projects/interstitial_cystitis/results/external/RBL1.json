@@ -1,0 +1,138 @@
+{
+  "gene": "RBL1",
+  "module": "M6_cell_state_g2m",
+  "prereg": "projects/interstitial_cystitis/prereg/ic_p48_module_genesets.json",
+  "retrieved_at_utc": "2026-09-25T20:30:45.706141+00:00",
+  "sources": {
+    "ensembl": {
+      "url": "https://rest.ensembl.org/lookup/symbol/homo_sapiens/RBL1?content-type=application/json",
+      "data": {
+        "id": "ENSG00000080839",
+        "display_name": "RBL1",
+        "description": "RB transcriptional corepressor like 1 [Source:HGNC Symbol;Acc:HGNC:9893]",
+        "biotype": "protein_coding",
+        "seq_region_name": "20"
+      }
+    },
+    "uniprot": {
+      "url": "https://rest.uniprot.org/uniprotkb/search?query=gene_exact%3ARBL1%20AND%20organism_id%3A9606%20AND%20reviewed%3Atrue&size=3&format=json",
+      "data": [
+        {
+          "primaryAccession": "P28749",
+          "uniProtkbId": "RBL1_HUMAN",
+          "entryType": "UniProtKB reviewed (Swiss-Prot)"
+        }
+      ]
+    },
+    "europe_pmc": {
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=RBL1%20AND%20%22interstitial%20cystitis%22&format=json&pageSize=10",
+      "data": {
+        "hit_count": 3,
+        "papers": [
+          {
+            "id": "33361432",
+            "title": "Single-Cell Transcriptomics Reveals a Heterogeneous Cellular Response to BK Virus Infection.",
+            "doi": "10.1128/jvi.02237-20",
+            "pubYear": "2021"
+          },
+          {
+            "id": "41625014",
+            "title": "Abstracts selected for poster presentation [listed in alphabetical order by presenter].",
+            "doi": "10.1177/23523735251412131",
+            "pubYear": "2026"
+          },
+          {
+            "id": "25769533",
+            "title": "Abstracts of the 62nd Annual Scientific Meeting, March 26-28, 2015, San Francisco, California.",
+            "doi": "10.1177/1933719115579631",
+            "pubYear": "2015"
+          }
+        ]
+      }
+    },
+    "mygene": {
+      "url": "https://mygene.info/v3/query?q=symbol%3ARBL1&species=human&size=3",
+      "data": {
+        "total": 1,
+        "hits": [
+          {
+            "_id": "5933",
+            "symbol": "RBL1",
+            "name": "RB transcriptional corepressor like 1",
+            "taxid": 9606
+          }
+        ]
+      }
+    },
+    "chembl": {
+      "url": "https://www.ebi.ac.uk/chembl/api/data/target/search.json?q=RBL1&limit=20",
+      "data": {
+        "total": 1,
+        "human_targets": []
+      }
+    },
+    "hgnc_rest": {
+      "url": "https://rest.genenames.org/fetch/symbol/RBL1",
+      "data": [
+        {
+          "symbol": "RBL1",
+          "hgnc_id": "HGNC:9893",
+          "entrez_id": "5933",
+          "ensembl_gene_id": "ENSG00000080839",
+          "status": "Approved"
+        }
+      ]
+    },
+    "gtex_reference": {
+      "url": "https://gtexportal.org/api/v2/reference/gene?geneId=RBL1",
+      "data": [
+        {
+          "geneSymbol": "RBL1",
+          "geneId": null,
+          "gencodeId": "ENSG00000080839.11",
+          "entrezGeneId": 5933
+        }
+      ]
+    },
+    "reactome": {
+      "url": "https://reactome.org/ContentService/data/mapping/UniProt/P28749/pathways",
+      "data": [
+        {
+          "stId": "R-HSA-1362277",
+          "displayName": "Transcription of E2F targets under negative control by DREAM complex",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-1362300",
+          "displayName": "Transcription of E2F targets under negative control by p107 (RBL1) and p130 (RBL2) in complex with HDAC1",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-1538133",
+          "displayName": "G0 and Early G1",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-2173796",
+          "displayName": "SMAD2/SMAD3:SMAD4 heterotrimer regulates transcription",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-6804114",
+          "displayName": "TP53 Regulates Transcription of Genes Involved in G2 Cell Cycle Arrest",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-69205",
+          "displayName": "G1/S-Specific Transcription",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-69231",
+          "displayName": "Cyclin D associated events in G1",
+          "speciesName": "Homo sapiens"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,305 @@
+{
+  "gene": "CUL1",
+  "module": "M6_cell_state_g2m",
+  "prereg": "projects/interstitial_cystitis/prereg/ic_p48_module_genesets.json",
+  "retrieved_at_utc": "2026-09-25T20:31:37.509624+00:00",
+  "sources": {
+    "ensembl": {
+      "url": "https://rest.ensembl.org/lookup/symbol/homo_sapiens/CUL1?content-type=application/json",
+      "data": {
+        "id": "ENSG00000055130",
+        "display_name": "CUL1",
+        "description": "cullin 1 [Source:HGNC Symbol;Acc:HGNC:2551]",
+        "biotype": "protein_coding",
+        "seq_region_name": "7"
+      }
+    },
+    "uniprot": {
+      "url": "https://rest.uniprot.org/uniprotkb/search?query=gene_exact%3ACUL1%20AND%20organism_id%3A9606%20AND%20reviewed%3Atrue&size=3&format=json",
+      "data": [
+        {
+          "primaryAccession": "Q13616",
+          "uniProtkbId": "CUL1_HUMAN",
+          "entryType": "UniProtKB reviewed (Swiss-Prot)"
+        }
+      ]
+    },
+    "europe_pmc": {
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=CUL1%20AND%20%22interstitial%20cystitis%22&format=json&pageSize=10",
+      "data": {
+        "hit_count": 4,
+        "papers": [
+          {
+            "id": "39051218",
+            "title": "The Effect of Phytocannabinoids and Endocannabinoids on Nrf2 Activity in the Central Nervous System and Periphery.",
+            "doi": "10.3390/neurolint16040057",
+            "pubYear": "2024"
+          },
+          {
+            "id": "28439009",
+            "title": "Estrogen receptor β, a regulator of androgen receptor signaling in the mouse ventral prostate.",
+            "doi": "10.1073/pnas.1702211114",
+            "pubYear": "2017"
+          },
+          {
+            "id": "32478052",
+            "title": "Let-7i-5p Regulation of Cell Morphology and Migration Through Distinct Signaling Pathways in Normal and Pathogenic Urethral Fibroblasts.",
+            "doi": "10.3389/fbioe.2020.00428",
+            "pubYear": "2020"
+          },
+          {
+            "id": "36648635",
+            "title": "World Molecular Imaging Congress 2022.",
+            "doi": "10.1007/s11307-022-01794-2",
+            "pubYear": "2022"
+          }
+        ]
+      }
+    },
+    "mygene": {
+      "url": "https://mygene.info/v3/query?q=symbol%3ACUL1&species=human&size=3",
+      "data": {
+        "total": 1,
+        "hits": [
+          {
+            "_id": "8454",
+            "symbol": "CUL1",
+            "name": "cullin 1",
+            "taxid": 9606
+          }
+        ]
+      }
+    },
+    "chembl": {
+      "url": "https://www.ebi.ac.uk/chembl/api/data/target/search.json?q=CUL1&limit=20",
+      "data": {
+        "total": 3,
+        "human_targets": [
+          {
+            "target_chembl_id": "CHEMBL3758068",
+            "pref_name": "Cullin-1",
+            "organism": "Homo sapiens"
+          },
+          {
+            "target_chembl_id": "CHEMBL4523655",
+            "pref_name": "NEDD8/Cullin-1",
+            "organism": "Homo sapiens"
+          },
+          {
+            "target_chembl_id": "CHEMBL3885547",
+            "pref_name": "Cullin-1/S-phase kinase-associated protein 1",
+            "organism": "Homo sapiens"
+          }
+        ]
+      }
+    },
+    "hgnc_rest": {
+      "url": "https://rest.genenames.org/fetch/symbol/CUL1",
+      "data": [
+        {
+          "symbol": "CUL1",
+          "hgnc_id": "HGNC:2551",
+          "entrez_id": "8454",
+          "ensembl_gene_id": "ENSG00000055130",
+          "status": "Approved"
+        }
+      ]
+    },
+    "gtex_reference": {
+      "url": "https://gtexportal.org/api/v2/reference/gene?geneId=CUL1",
+      "data": [
+        {
+          "geneSymbol": "CUL1",
+          "geneId": null,
+          "gencodeId": "ENSG00000055130.15",
+          "entrezGeneId": 8454
+        }
+      ]
+    },
+    "reactome": {
+      "url": "https://reactome.org/ContentService/data/mapping/UniProt/Q13616/pathways",
+      "data": [
+        {
+          "stId": "R-HSA-1169091",
+          "displayName": "Activation of NF-kappaB in B cells",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-1170546",
+          "displayName": "Prolactin receptor signaling",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-174113",
+          "displayName": "SCF-beta-TrCP mediated degradation of Emi1",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-187577",
+          "displayName": "SCF(Skp2)-mediated degradation of p27/p21",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-195253",
+          "displayName": "Degradation of beta-catenin by the destruction complex",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-202424",
+          "displayName": "Downstream TCR signaling",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-2122947",
+          "displayName": "NOTCH1 Intracellular Domain Regulates Transcription",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-2565942",
+          "displayName": "Regulation of PLK1 Activity at G2/M Transition",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-2644606",
+          "displayName": "Constitutive Signaling by NOTCH1 PEST Domain Mutants",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-2644607",
+          "displayName": "Loss of Function of FBXW7 in Cancer and NOTCH1 Signaling",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-2871837",
+          "displayName": "FCERI mediated NF-kB activation",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-2894862",
+          "displayName": "Constitutive Signaling by NOTCH1 HD+PEST Domain Mutants",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-5607761",
+          "displayName": "Dectin-1 mediated noncanonical NF-kB signaling",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-5607764",
+          "displayName": "CLEC7A (Dectin-1) signaling",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-5610780",
+          "displayName": "Degradation of GLI1 by the proteasome",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-5610783",
+          "displayName": "Degradation of GLI2 by the proteasome",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-5610785",
+          "displayName": "GLI3 is processed to GLI3R by the proteasome",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-5676590",
+          "displayName": "NIK-->noncanonical NF-kB signaling",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-5684264",
+          "displayName": "MAP3K8 (TPL2)-dependent MAPK1/3 activation",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-68949",
+          "displayName": "Orc1 removal from chromatin",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-69231",
+          "displayName": "Cyclin D associated events in G1",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-69601",
+          "displayName": "Ubiquitin-Mediated Degradation of Phosphorylated Cdc25A",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-8854050",
+          "displayName": "FBXL7 down-regulates AURKA during mitotic entry and in early mitosis",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-8939902",
+          "displayName": "Regulation of RUNX2 expression and activity",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-8951664",
+          "displayName": "Neddylation",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-9020702",
+          "displayName": "Interleukin-1 signaling",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-917937",
+          "displayName": "Iron uptake and transport",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-9604323",
+          "displayName": "Negative regulation of NOTCH4 signaling",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-9684482",
+          "displayName": "IFIT antiviral response",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-9690722",
+          "displayName": "Viral strategies to evade IFIT action",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-9708530",
+          "displayName": "Regulation of BACH1 activity",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-9725371",
+          "displayName": "Nuclear events stimulated by ALK signaling in cancer",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-9762114",
+          "displayName": "GSK3B and BTRC:CUL1-mediated-degradation of NFE2L2",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-983168",
+          "displayName": "Antigen processing: Ubiquitination & Proteasome degradation",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-9929356",
+          "displayName": "GSK3B-mediated proteasomal degradation of PD-L1(CD274)",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-9932298",
+          "displayName": "Degradation of CRY and PER proteins",
+          "speciesName": "Homo sapiens"
+        }
+      ]
+    }
+  }
+}

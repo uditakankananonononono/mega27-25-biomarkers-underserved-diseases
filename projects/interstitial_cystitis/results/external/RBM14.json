@@ -1,0 +1,95 @@
+{
+  "gene": "RBM14",
+  "module": "M6_cell_state_g2m",
+  "prereg": "projects/interstitial_cystitis/prereg/ic_p48_module_genesets.json",
+  "retrieved_at_utc": "2026-09-25T20:32:26.405898+00:00",
+  "sources": {
+    "ensembl": {
+      "url": "https://rest.ensembl.org/lookup/symbol/homo_sapiens/RBM14?content-type=application/json",
+      "data": {
+        "id": "ENSG00000239306",
+        "display_name": "RBM14",
+        "description": "RNA binding motif protein 14 [Source:HGNC Symbol;Acc:HGNC:14219]",
+        "biotype": "protein_coding",
+        "seq_region_name": "11"
+      }
+    },
+    "uniprot": {
+      "url": "https://rest.uniprot.org/uniprotkb/search?query=gene_exact%3ARBM14%20AND%20organism_id%3A9606%20AND%20reviewed%3Atrue&size=3&format=json",
+      "data": [
+        {
+          "primaryAccession": "Q96PK6",
+          "uniProtkbId": "RBM14_HUMAN",
+          "entryType": "UniProtKB reviewed (Swiss-Prot)"
+        }
+      ]
+    },
+    "europe_pmc": {
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=RBM14%20AND%20%22interstitial%20cystitis%22&format=json&pageSize=10",
+      "data": {
+        "hit_count": 0,
+        "papers": []
+      }
+    },
+    "mygene": {
+      "url": "https://mygene.info/v3/query?q=symbol%3ARBM14&species=human&size=3",
+      "data": {
+        "total": 1,
+        "hits": [
+          {
+            "_id": "10432",
+            "symbol": "RBM14",
+            "name": "RNA binding motif protein 14",
+            "taxid": 9606
+          }
+        ]
+      }
+    },
+    "chembl": {
+      "url": "https://www.ebi.ac.uk/chembl/api/data/target/search.json?q=RBM14&limit=20",
+      "data": {
+        "total": 1,
+        "human_targets": [
+          {
+            "target_chembl_id": "CHEMBL6066402",
+            "pref_name": "RNA-binding protein 14",
+            "organism": "Homo sapiens"
+          }
+        ]
+      }
+    },
+    "hgnc_rest": {
+      "url": "https://rest.genenames.org/fetch/symbol/RBM14",
+      "data": [
+        {
+          "symbol": "RBM14",
+          "hgnc_id": "HGNC:14219",
+          "entrez_id": "10432",
+          "ensembl_gene_id": "ENSG00000239306",
+          "status": "Approved"
+        }
+      ]
+    },
+    "gtex_reference": {
+      "url": "https://gtexportal.org/api/v2/reference/gene?geneId=RBM14",
+      "data": [
+        {
+          "geneSymbol": "RBM14",
+          "geneId": null,
+          "gencodeId": "ENSG00000239306.4",
+          "entrezGeneId": 10432
+        }
+      ]
+    },
+    "reactome": {
+      "url": "https://reactome.org/ContentService/data/mapping/UniProt/Q96PK6/pathways",
+      "data": [
+        {
+          "stId": "R-HSA-8941326",
+          "displayName": "RUNX2 regulates bone development",
+          "speciesName": "Homo sapiens"
+        }
+      ]
+    }
+  }
+}

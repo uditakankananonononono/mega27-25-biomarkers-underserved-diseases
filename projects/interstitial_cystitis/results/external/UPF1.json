@@ -1,0 +1,113 @@
+{
+  "gene": "UPF1",
+  "module": "M6_cell_state_g2m",
+  "prereg": "projects/interstitial_cystitis/prereg/ic_p48_module_genesets.json",
+  "retrieved_at_utc": "2026-09-25T20:31:47.269853+00:00",
+  "sources": {
+    "ensembl": {
+      "url": "https://rest.ensembl.org/lookup/symbol/homo_sapiens/UPF1?content-type=application/json",
+      "data": {
+        "id": "ENSG00000005007",
+        "display_name": "UPF1",
+        "description": "UPF1 RNA helicase and ATPase [Source:HGNC Symbol;Acc:HGNC:9962]",
+        "biotype": "protein_coding",
+        "seq_region_name": "19"
+      }
+    },
+    "uniprot": {
+      "url": "https://rest.uniprot.org/uniprotkb/search?query=gene_exact%3AUPF1%20AND%20organism_id%3A9606%20AND%20reviewed%3Atrue&size=3&format=json",
+      "data": [
+        {
+          "primaryAccession": "Q92900",
+          "uniProtkbId": "RENT1_HUMAN",
+          "entryType": "UniProtKB reviewed (Swiss-Prot)"
+        }
+      ]
+    },
+    "europe_pmc": {
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=UPF1%20AND%20%22interstitial%20cystitis%22&format=json&pageSize=10",
+      "data": {
+        "hit_count": 2,
+        "papers": [
+          {
+            "id": "32438606",
+            "title": "Exosomal Long Non-Coding RNAs in Lung Diseases.",
+            "doi": "10.3390/ijms21103580",
+            "pubYear": "2020"
+          },
+          {
+            "id": "PMC11077711",
+            "title": "Proceedings of the 101st Annual Meeting of The Physiological Society of Japan",
+            "doi": null,
+            "pubYear": "2024"
+          }
+        ]
+      }
+    },
+    "mygene": {
+      "url": "https://mygene.info/v3/query?q=symbol%3AUPF1&species=human&size=3",
+      "data": {
+        "total": 1,
+        "hits": [
+          {
+            "_id": "5976",
+            "symbol": "UPF1",
+            "name": "UPF1 RNA helicase and ATPase",
+            "taxid": 9606
+          }
+        ]
+      }
+    },
+    "chembl": {
+      "url": "https://www.ebi.ac.uk/chembl/api/data/target/search.json?q=UPF1&limit=20",
+      "data": {
+        "total": 1,
+        "human_targets": [
+          {
+            "target_chembl_id": "CHEMBL6066487",
+            "pref_name": "Regulator of nonsense transcripts 1",
+            "organism": "Homo sapiens"
+          }
+        ]
+      }
+    },
+    "hgnc_rest": {
+      "url": "https://rest.genenames.org/fetch/symbol/UPF1",
+      "data": [
+        {
+          "symbol": "UPF1",
+          "hgnc_id": "HGNC:9962",
+          "entrez_id": "5976",
+          "ensembl_gene_id": "ENSG00000005007",
+          "status": "Approved"
+        }
+      ]
+    },
+    "gtex_reference": {
+      "url": "https://gtexportal.org/api/v2/reference/gene?geneId=UPF1",
+      "data": [
+        {
+          "geneSymbol": "UPF1",
+          "geneId": null,
+          "gencodeId": "ENSG00000005007.12",
+          "entrezGeneId": 5976
+        }
+      ]
+    },
+    "reactome": {
+      "url": "https://reactome.org/ContentService/data/mapping/UniProt/Q92900/pathways",
+      "data": [
+        {
+          "stId": "R-HSA-975956",
+          "displayName": "Nonsense Mediated Decay (NMD) independent of the Exon Junction Complex (EJC)",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-975957",
+          "displayName": "Nonsense Mediated Decay (NMD) enhanced by the Exon Junction Complex (EJC)",
+          "speciesName": "Homo sapiens"
+        }
+      ]
+    }
+  }
+}

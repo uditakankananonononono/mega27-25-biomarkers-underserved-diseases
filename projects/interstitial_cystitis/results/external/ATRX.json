@@ -1,0 +1,148 @@
+{
+  "gene": "ATRX",
+  "module": "M6_cell_state_g2m",
+  "prereg": "projects/interstitial_cystitis/prereg/ic_p48_module_genesets.json",
+  "retrieved_at_utc": "2026-09-25T20:29:58.624137+00:00",
+  "sources": {
+    "ensembl": {
+      "url": "https://rest.ensembl.org/lookup/symbol/homo_sapiens/ATRX?content-type=application/json",
+      "data": {
+        "id": "ENSG00000085224",
+        "display_name": "ATRX",
+        "description": "ATRX chromatin remodeler [Source:HGNC Symbol;Acc:HGNC:886]",
+        "biotype": "protein_coding",
+        "seq_region_name": "X"
+      }
+    },
+    "uniprot": {
+      "url": "https://rest.uniprot.org/uniprotkb/search?query=gene_exact%3AATRX%20AND%20organism_id%3A9606%20AND%20reviewed%3Atrue&size=3&format=json",
+      "data": [
+        {
+          "primaryAccession": "P46100",
+          "uniProtkbId": "ATRX_HUMAN",
+          "entryType": "UniProtKB reviewed (Swiss-Prot)"
+        }
+      ]
+    },
+    "europe_pmc": {
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=ATRX%20AND%20%22interstitial%20cystitis%22&format=json&pageSize=10",
+      "data": {
+        "hit_count": 8,
+        "papers": [
+          {
+            "id": "39575487",
+            "title": "Role of DNA methylation transferase in urinary system diseases: From basic to clinical perspectives (Review).",
+            "doi": "10.3892/ijmm.2024.5460",
+            "pubYear": "2025"
+          },
+          {
+            "id": "PMC4447161",
+            "title": "36th Annual Scientific Meeting of the Canadian Pain Society: Abstract Titles",
+            "doi": null,
+            "pubYear": "2015"
+          },
+          {
+            "id": "PMC4447163",
+            "title": "36th Annual Scientific Meeting of the Canadian Pain Society: Abstracts",
+            "doi": null,
+            "pubYear": "2015"
+          },
+          {
+            "id": "34448894",
+            "title": "33&lt;sup&gt;rd&lt;/sup&gt; European Congress of Pathology - Abstracts.",
+            "doi": "10.1007/s00428-021-03157-8",
+            "pubYear": "2021"
+          },
+          {
+            "id": "PMC7130291",
+            "title": "Subject Index",
+            "doi": null,
+            "pubYear": "2007"
+          },
+          {
+            "id": "17174306",
+            "title": "hnRNP-U enhances the expression of specific genes by stabilizing mRNA.",
+            "doi": "10.1016/j.febslet.2006.11.062",
+            "pubYear": "2007"
+          },
+          {
+            "id": "PMC10902613",
+            "title": "Abstracts",
+            "doi": null,
+            "pubYear": "2024"
+          },
+          {
+            "id": "PMC7163937",
+            "title": "Poster Sessions",
+            "doi": null,
+            "pubYear": "2014"
+          }
+        ]
+      }
+    },
+    "mygene": {
+      "url": "https://mygene.info/v3/query?q=symbol%3AATRX&species=human&size=3",
+      "data": {
+        "total": 1,
+        "hits": [
+          {
+            "_id": "546",
+            "symbol": "ATRX",
+            "name": "ATRX chromatin remodeler",
+            "taxid": 9606
+          }
+        ]
+      }
+    },
+    "chembl": {
+      "url": "https://www.ebi.ac.uk/chembl/api/data/target/search.json?q=ATRX&limit=20",
+      "data": {
+        "total": 1,
+        "human_targets": []
+      }
+    },
+    "hgnc_rest": {
+      "url": "https://rest.genenames.org/fetch/symbol/ATRX",
+      "data": [
+        {
+          "symbol": "ATRX",
+          "hgnc_id": "HGNC:886",
+          "entrez_id": "546",
+          "ensembl_gene_id": "ENSG00000085224",
+          "status": "Approved"
+        }
+      ]
+    },
+    "gtex_reference": {
+      "url": "https://gtexportal.org/api/v2/reference/gene?geneId=ATRX",
+      "data": [
+        {
+          "geneSymbol": "ATRX",
+          "geneId": null,
+          "gencodeId": "ENSG00000085224.21",
+          "entrezGeneId": 546
+        }
+      ]
+    },
+    "reactome": {
+      "url": "https://reactome.org/ContentService/data/mapping/UniProt/P46100/pathways",
+      "data": [
+        {
+          "stId": "R-HSA-9670095",
+          "displayName": "Inhibition of DNA recombination at telomere",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-9670613",
+          "displayName": "Defective Inhibition of DNA Recombination at Telomere Due to DAXX Mutations",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-9670615",
+          "displayName": "Defective Inhibition of DNA Recombination at Telomere Due to ATRX Mutations",
+          "speciesName": "Homo sapiens"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,96 @@
+{
+  "gene": "RAD54L",
+  "module": "M6_cell_state_g2m",
+  "prereg": "projects/interstitial_cystitis/prereg/ic_p48_module_genesets.json",
+  "retrieved_at_utc": "2026-09-25T20:30:59.800843+00:00",
+  "sources": {
+    "ensembl": {
+      "url": "https://rest.ensembl.org/lookup/symbol/homo_sapiens/RAD54L?content-type=application/json",
+      "data": {
+        "id": "ENSG00000085999",
+        "display_name": "RAD54L",
+        "description": "RAD54 like [Source:HGNC Symbol;Acc:HGNC:9826]",
+        "biotype": "protein_coding",
+        "seq_region_name": "1"
+      }
+    },
+    "uniprot": {
+      "url": "https://rest.uniprot.org/uniprotkb/search?query=gene_exact%3ARAD54L%20AND%20organism_id%3A9606%20AND%20reviewed%3Atrue&size=3&format=json",
+      "data": [
+        {
+          "primaryAccession": "Q92698",
+          "uniProtkbId": "RAD54_HUMAN",
+          "entryType": "UniProtKB reviewed (Swiss-Prot)"
+        },
+        {
+          "primaryAccession": "P46100",
+          "uniProtkbId": "ATRX_HUMAN",
+          "entryType": "UniProtKB reviewed (Swiss-Prot)"
+        }
+      ]
+    },
+    "europe_pmc": {
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=RAD54L%20AND%20%22interstitial%20cystitis%22&format=json&pageSize=10",
+      "data": {
+        "hit_count": 0,
+        "papers": []
+      }
+    },
+    "mygene": {
+      "url": "https://mygene.info/v3/query?q=symbol%3ARAD54L&species=human&size=3",
+      "data": {
+        "total": 1,
+        "hits": [
+          {
+            "_id": "8438",
+            "symbol": "RAD54L",
+            "name": "RAD54 like",
+            "taxid": 9606
+          }
+        ]
+      }
+    },
+    "chembl": {
+      "url": "https://www.ebi.ac.uk/chembl/api/data/target/search.json?q=RAD54L&limit=20",
+      "data": {
+        "total": 1,
+        "human_targets": [
+          {
+            "target_chembl_id": "CHEMBL2146297",
+            "pref_name": "DNA repair and recombination protein RAD54-like",
+            "organism": "Homo sapiens"
+          }
+        ]
+      }
+    },
+    "hgnc_rest": {
+      "url": "https://rest.genenames.org/fetch/symbol/RAD54L",
+      "data": [
+        {
+          "symbol": "RAD54L",
+          "hgnc_id": "HGNC:9826",
+          "entrez_id": "8438",
+          "ensembl_gene_id": "ENSG00000085999",
+          "status": "Approved"
+        }
+      ]
+    },
+    "gtex_reference": {
+      "url": "https://gtexportal.org/api/v2/reference/gene?geneId=RAD54L",
+      "data": [
+        {
+          "geneSymbol": "RAD54L",
+          "geneId": null,
+          "gencodeId": "ENSG00000085999.11",
+          "entrezGeneId": 8438
+        }
+      ]
+    },
+    "reactome": {
+      "url": "https://reactome.org/ContentService/data/mapping/UniProt/Q92698/pathways",
+      "data": {
+        "error": "HTTP Error 404: Not Found"
+      }
+    }
+  }
+}

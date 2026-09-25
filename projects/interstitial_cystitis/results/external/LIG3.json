@@ -1,0 +1,125 @@
+{
+  "gene": "LIG3",
+  "module": "M6_cell_state_g2m",
+  "prereg": "projects/interstitial_cystitis/prereg/ic_p48_module_genesets.json",
+  "retrieved_at_utc": "2026-09-25T20:30:14.168886+00:00",
+  "sources": {
+    "ensembl": {
+      "url": "https://rest.ensembl.org/lookup/symbol/homo_sapiens/LIG3?content-type=application/json",
+      "data": {
+        "id": "ENSG00000005156",
+        "display_name": "LIG3",
+        "description": "DNA ligase 3 [Source:HGNC Symbol;Acc:HGNC:6600]",
+        "biotype": "protein_coding",
+        "seq_region_name": "17"
+      }
+    },
+    "uniprot": {
+      "url": "https://rest.uniprot.org/uniprotkb/search?query=gene_exact%3ALIG3%20AND%20organism_id%3A9606%20AND%20reviewed%3Atrue&size=3&format=json",
+      "data": [
+        {
+          "primaryAccession": "P49916",
+          "uniProtkbId": "DNLI3_HUMAN",
+          "entryType": "UniProtKB reviewed (Swiss-Prot)"
+        },
+        {
+          "primaryAccession": "Q6UXM1",
+          "uniProtkbId": "LRIG3_HUMAN",
+          "entryType": "UniProtKB reviewed (Swiss-Prot)"
+        }
+      ]
+    },
+    "europe_pmc": {
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=LIG3%20AND%20%22interstitial%20cystitis%22&format=json&pageSize=10",
+      "data": {
+        "hit_count": 0,
+        "papers": []
+      }
+    },
+    "mygene": {
+      "url": "https://mygene.info/v3/query?q=symbol%3ALIG3&species=human&size=3",
+      "data": {
+        "total": 1,
+        "hits": [
+          {
+            "_id": "3980",
+            "symbol": "LIG3",
+            "name": "DNA ligase 3",
+            "taxid": 9606
+          }
+        ]
+      }
+    },
+    "chembl": {
+      "url": "https://www.ebi.ac.uk/chembl/api/data/target/search.json?q=LIG3&limit=20",
+      "data": {
+        "total": 1,
+        "human_targets": [
+          {
+            "target_chembl_id": "CHEMBL4295773",
+            "pref_name": "DNA ligase 3",
+            "organism": "Homo sapiens"
+          }
+        ]
+      }
+    },
+    "hgnc_rest": {
+      "url": "https://rest.genenames.org/fetch/symbol/LIG3",
+      "data": [
+        {
+          "symbol": "LIG3",
+          "hgnc_id": "HGNC:6600",
+          "entrez_id": "3980",
+          "ensembl_gene_id": "ENSG00000005156",
+          "status": "Approved"
+        }
+      ]
+    },
+    "gtex_reference": {
+      "url": "https://gtexportal.org/api/v2/reference/gene?geneId=LIG3",
+      "data": [
+        {
+          "geneSymbol": "LIG3",
+          "geneId": null,
+          "gencodeId": "ENSG00000005156.11",
+          "entrezGeneId": 3980
+        }
+      ]
+    },
+    "reactome": {
+      "url": "https://reactome.org/ContentService/data/mapping/UniProt/P49916/pathways",
+      "data": [
+        {
+          "stId": "R-HSA-110381",
+          "displayName": "Resolution of AP sites via the single-nucleotide replacement pathway",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-5649702",
+          "displayName": "APEX1-Independent Resolution of AP Sites via the Single Nucleotide Replacement Pathway",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-5685939",
+          "displayName": "HDR through MMEJ (alt-NHEJ)",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-5696397",
+          "displayName": "Gap-filling DNA repair synthesis and ligation in GG-NER",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-6782210",
+          "displayName": "Gap-filling DNA repair synthesis and ligation in TC-NER",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-9913635",
+          "displayName": "Strand-asynchronous mitochondrial DNA replication",
+          "speciesName": "Homo sapiens"
+        }
+      ]
+    }
+  }
+}

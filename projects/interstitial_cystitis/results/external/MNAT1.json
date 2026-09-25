@@ -1,0 +1,267 @@
+{
+  "gene": "MNAT1",
+  "module": "M6_cell_state_g2m",
+  "prereg": "projects/interstitial_cystitis/prereg/ic_p48_module_genesets.json",
+  "retrieved_at_utc": "2026-09-25T20:32:06.916149+00:00",
+  "sources": {
+    "ensembl": {
+      "url": "https://rest.ensembl.org/lookup/symbol/homo_sapiens/MNAT1?content-type=application/json",
+      "data": {
+        "id": "ENSG00000020426",
+        "display_name": "MNAT1",
+        "description": "MNAT1 component of CDK activating kinase [Source:HGNC Symbol;Acc:HGNC:7181]",
+        "biotype": "protein_coding",
+        "seq_region_name": "14"
+      }
+    },
+    "uniprot": {
+      "url": "https://rest.uniprot.org/uniprotkb/search?query=gene_exact%3AMNAT1%20AND%20organism_id%3A9606%20AND%20reviewed%3Atrue&size=3&format=json",
+      "data": [
+        {
+          "primaryAccession": "P51948",
+          "uniProtkbId": "MAT1_HUMAN",
+          "entryType": "UniProtKB reviewed (Swiss-Prot)"
+        }
+      ]
+    },
+    "europe_pmc": {
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=MNAT1%20AND%20%22interstitial%20cystitis%22&format=json&pageSize=10",
+      "data": {
+        "hit_count": 1,
+        "papers": [
+          {
+            "id": "29540744",
+            "title": "Alpha-oxoglutarate inhibits the proliferation of immortalized normal bladder epithelial cells via an epigenetic switch involving ARID1A.",
+            "doi": "10.1038/s41598-018-22771-2",
+            "pubYear": "2018"
+          }
+        ]
+      }
+    },
+    "mygene": {
+      "url": "https://mygene.info/v3/query?q=symbol%3AMNAT1&species=human&size=3",
+      "data": {
+        "total": 1,
+        "hits": [
+          {
+            "_id": "4331",
+            "symbol": "MNAT1",
+            "name": "MNAT1 component of CDK activating kinase",
+            "taxid": 9606
+          }
+        ]
+      }
+    },
+    "chembl": {
+      "url": "https://www.ebi.ac.uk/chembl/api/data/target/search.json?q=MNAT1&limit=20",
+      "data": {
+        "total": 2,
+        "human_targets": [
+          {
+            "target_chembl_id": "CHEMBL3038473",
+            "pref_name": "CDK7/Cyclin H/MNAT1",
+            "organism": "Homo sapiens"
+          },
+          {
+            "target_chembl_id": "CHEMBL5053",
+            "pref_name": "CDK-activating kinase assembly factor MAT1",
+            "organism": "Homo sapiens"
+          }
+        ]
+      }
+    },
+    "hgnc_rest": {
+      "url": "https://rest.genenames.org/fetch/symbol/MNAT1",
+      "data": [
+        {
+          "symbol": "MNAT1",
+          "hgnc_id": "HGNC:7181",
+          "entrez_id": "4331",
+          "ensembl_gene_id": "ENSG00000020426",
+          "status": "Approved"
+        }
+      ]
+    },
+    "gtex_reference": {
+      "url": "https://gtexportal.org/api/v2/reference/gene?geneId=MNAT1",
+      "data": [
+        {
+          "geneSymbol": "MNAT1",
+          "geneId": null,
+          "gencodeId": "ENSG00000020426.10",
+          "entrezGeneId": 4331
+        }
+      ]
+    },
+    "reactome": {
+      "url": "https://reactome.org/ContentService/data/mapping/UniProt/P51948/pathways",
+      "data": [
+        {
+          "stId": "R-HSA-112382",
+          "displayName": "Formation of RNA Pol II elongation complex ",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-113418",
+          "displayName": "Formation of the Early Elongation Complex",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-167152",
+          "displayName": "Formation of HIV elongation complex in the absence of HIV Tat",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-167158",
+          "displayName": "Formation of the HIV-1 Early Elongation Complex",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-167160",
+          "displayName": "RNA Pol II CTD phosphorylation and interaction with CE during HIV infection",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-167161",
+          "displayName": "HIV Transcription Initiation",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-167162",
+          "displayName": "RNA Polymerase II HIV Promoter Escape",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-167172",
+          "displayName": "Transcription of the HIV genome",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-167200",
+          "displayName": "Formation of HIV-1 elongation complex containing HIV-1 Tat",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-167246",
+          "displayName": "Tat-mediated elongation of the HIV-1 transcript",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-427413",
+          "displayName": "NoRC negatively regulates rRNA expression",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-5696395",
+          "displayName": "Formation of Incision Complex in GG-NER",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-674695",
+          "displayName": "RNA Polymerase II Pre-transcription Events",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-6781823",
+          "displayName": "Formation of TC-NER Pre-Incision Complex",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-6781827",
+          "displayName": "Transcription-Coupled Nucleotide Excision Repair (TC-NER)",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-6782135",
+          "displayName": "Dual incision in TC-NER",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-6782210",
+          "displayName": "Gap-filling DNA repair synthesis and ligation in TC-NER",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-6796648",
+          "displayName": "TP53 Regulates Transcription of DNA Repair Genes",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-69202",
+          "displayName": "Cyclin E associated events during G1/S transition ",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-69231",
+          "displayName": "Cyclin D associated events in G1",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-69273",
+          "displayName": "Cyclin A/B1/B2 associated events during G2/M transition",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-69656",
+          "displayName": "Cyclin A:Cdk2-associated events at S phase entry",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-72086",
+          "displayName": "mRNA Capping",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-73762",
+          "displayName": "RNA Polymerase I Transcription Initiation",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-73772",
+          "displayName": "RNA Polymerase I Promoter Escape",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-73776",
+          "displayName": "RNA Polymerase II Promoter Escape",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-73779",
+          "displayName": "RNA Polymerase II Transcription Pre-Initiation And Promoter Opening",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-73863",
+          "displayName": "RNA Polymerase I Transcription Termination",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-75953",
+          "displayName": "RNA Polymerase II Transcription Initiation",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-75955",
+          "displayName": "RNA Polymerase II Transcription Elongation",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-76042",
+          "displayName": "RNA Polymerase II Transcription Initiation And Promoter Clearance",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-77075",
+          "displayName": "RNA Pol II CTD phosphorylation and interaction with CE",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-8939236",
+          "displayName": "RUNX1 regulates transcription of genes involved in differentiation of HSCs",
+          "speciesName": "Homo sapiens"
+        }
+      ]
+    }
+  }
+}

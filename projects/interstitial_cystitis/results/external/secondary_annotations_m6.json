@@ -1,0 +1,1084 @@
+{
+  "retrieved_at_utc": "2026-09-25T20:31:10.459149+00:00",
+  "module": "M6_cell_state_g2m",
+  "n_genes": 200,
+  "hub_genes": [
+    "G3BP1",
+    "SRSF1",
+    "DR1",
+    "RASAL2",
+    "MAPK14"
+  ],
+  "hub_selection": "top 5 M6 genes by human validated miRTarBase pair count (A2.3b cache)",
+  "hub_pair_counts": {
+    "G3BP1": 1289,
+    "SRSF1": 1274,
+    "DR1": 1250,
+    "RASAL2": 1220,
+    "MAPK14": 1165
+  },
+  "services": {
+    "gprofiler": {
+      "url": "https://biit.cs.ut.ee/gprofiler/api/gost/profile/",
+      "data": [
+        {
+          "source": "GO:BP",
+          "native": "GO:1903047",
+          "name": "mitotic cell cycle process",
+          "p_value": 3.0142569491042078e-77,
+          "intersection_size": 92
+        },
+        {
+          "source": "GO:BP",
+          "native": "GO:0000278",
+          "name": "mitotic cell cycle",
+          "p_value": 7.281131088895175e-77,
+          "intersection_size": 97
+        },
+        {
+          "source": "GO:BP",
+          "native": "GO:0007049",
+          "name": "cell cycle",
+          "p_value": 7.11221525018423e-76,
+          "intersection_size": 118
+        },
+        {
+          "source": "GO:BP",
+          "native": "GO:0022402",
+          "name": "cell cycle process",
+          "p_value": 2.3618738830758466e-75,
+          "intersection_size": 108
+        },
+        {
+          "source": "REAC",
+          "native": "REAC:R-HSA-1640170",
+          "name": "Cell Cycle",
+          "p_value": 1.1163716457684676e-61,
+          "intersection_size": 90
+        },
+        {
+          "source": "REAC",
+          "native": "REAC:R-HSA-69278",
+          "name": "Cell Cycle, Mitotic",
+          "p_value": 4.4831913313051555e-58,
+          "intersection_size": 81
+        },
+        {
+          "source": "GO:BP",
+          "native": "GO:0010564",
+          "name": "regulation of cell cycle process",
+          "p_value": 5.059533366168134e-55,
+          "intersection_size": 75
+        },
+        {
+          "source": "GO:BP",
+          "native": "GO:0051726",
+          "name": "regulation of cell cycle",
+          "p_value": 1.2217947107850887e-53,
+          "intersection_size": 85
+        },
+        {
+          "source": "GO:BP",
+          "native": "GO:0051276",
+          "name": "chromosome organization",
+          "p_value": 3.242526616655329e-53,
+          "intersection_size": 68
+        },
+        {
+          "source": "GO:BP",
+          "native": "GO:0044770",
+          "name": "cell cycle phase transition",
+          "p_value": 4.827408412810905e-50,
+          "intersection_size": 64
+        },
+        {
+          "source": "GO:BP",
+          "native": "GO:0044772",
+          "name": "mitotic cell cycle phase transition",
+          "p_value": 4.8654368729625477e-48,
+          "intersection_size": 58
+        },
+        {
+          "source": "GO:BP",
+          "native": "GO:0051301",
+          "name": "cell division",
+          "p_value": 8.451648291677819e-47,
+          "intersection_size": 66
+        },
+        {
+          "source": "GO:BP",
+          "native": "GO:0140014",
+          "name": "mitotic nuclear division",
+          "p_value": 1.3535908322776754e-46,
+          "intersection_size": 50
+        },
+        {
+          "source": "GO:BP",
+          "native": "GO:0000819",
+          "name": "sister chromatid segregation",
+          "p_value": 3.1071344519219104e-46,
+          "intersection_size": 47
+        },
+        {
+          "source": "GO:BP",
+          "native": "GO:0000280",
+          "name": "nuclear division",
+          "p_value": 2.734102875389451e-45,
+          "intersection_size": 57
+        }
+      ]
+    },
+    "string": {
+      "url": "https://string-db.org/api/json/network",
+      "data": []
+    },
+    "ols_mondo": {
+      "url": "https://www.ebi.ac.uk/ols4/api/search?q=interstitial%20cystitis&ontology=mondo&exact=true&rows=5",
+      "data": [
+        {
+          "obo_id": "MONDO:0018301",
+          "label": "interstitial cystitis",
+          "description": [
+            "A rare chronic debilitating urogenital disease characterized by urinary frequency, urgency, and pelvic pain."
+          ],
+          "is_obsolete": null
+        }
+      ]
+    },
+    "opentargets_disease_search": {
+      "url": "https://api.platform.opentargets.org/api/v4/graphql",
+      "data": [
+        {
+          "id": "EFO_1000869",
+          "name": "chronic interstitial cystitis",
+          "entity": "disease"
+        },
+        {
+          "id": "EFO_0008008",
+          "name": "lower urinary tract symptom",
+          "entity": "disease"
+        }
+      ]
+    },
+    "opentargets_associations": {
+      "url": "https://api.platform.opentargets.org/api/v4/graphql",
+      "disease_id": "EFO_1000869",
+      "data": {
+        "G3BP1": {
+          "score": null,
+          "in_top50": false
+        },
+        "SRSF1": {
+          "score": null,
+          "in_top50": false
+        },
+        "DR1": {
+          "score": null,
+          "in_top50": false
+        }
+      }
+    }
+  },
+  "hub_annotations": {
+    "G3BP1": {
+      "uniprot": "Q13283",
+      "QuickGO": {
+        "url": "https://www.ebi.ac.uk/QuickGO/services/annotation/search?geneProductId=UniProtKB:Q13283&limit=50",
+        "data": {
+          "hits": 139,
+          "annotations": [
+            {
+              "goId": "GO:0003676",
+              "goEvidence": "IEA",
+              "goAspect": "molecular_function"
+            },
+            {
+              "goId": "GO:0003678",
+              "goEvidence": "IEA",
+              "goAspect": "molecular_function"
+            },
+            {
+              "goId": "GO:0003678",
+              "goEvidence": "IBA",
+              "goAspect": "molecular_function"
+            },
+            {
+              "goId": "GO:0003678",
+              "goEvidence": "TAS",
+              "goAspect": "molecular_function"
+            },
+            {
+              "goId": "GO:0003678",
+              "goEvidence": "IDA",
+              "goAspect": "molecular_function"
+            },
+            {
+              "goId": "GO:0003723",
+              "goEvidence": "IEA",
+              "goAspect": "molecular_function"
+            },
+            {
+              "goId": "GO:0003723",
+              "goEvidence": "HDA",
+              "goAspect": "molecular_function"
+            },
+            {
+              "goId": "GO:0003723",
+              "goEvidence": "HDA",
+              "goAspect": "molecular_function"
+            },
+            {
+              "goId": "GO:0003724",
+              "goEvidence": "IEA",
+              "goAspect": "molecular_function"
+            },
+            {
+              "goId": "GO:0003724",
+              "goEvidence": "IBA",
+              "goAspect": "molecular_function"
+            }
+          ]
+        }
+      },
+      "IntAct": {
+        "url": "https://www.ebi.ac.uk/intact/ws/interaction/findInteractions/Q13283?format=json",
+        "data": {
+          "total_elements": 705,
+          "interactions": [
+            {
+              "ac": "EBI-27071424",
+              "idA": "Q13283 (uniprotkb)",
+              "idB": "P0DTC9 (uniprotkb)",
+              "miscore": null
+            },
+            {
+              "ac": "EBI-27071460",
+              "idA": "Q13283 (uniprotkb)",
+              "idB": "P0DTC9 (uniprotkb)",
+              "miscore": null
+            },
+            {
+              "ac": "EBI-26883367",
+              "idA": "CHEBI:60924 (chebi)",
+              "idB": "Q13283-1 (uniprotkb)",
+              "miscore": null
+            },
+            {
+              "ac": "EBI-26877734",
+              "idA": "Q13283 (uniprotkb)",
+              "idB": "Q13283 (uniprotkb)",
+              "miscore": null
+            },
+            {
+              "ac": "EBI-54453992",
+              "idA": "Q13283 (uniprotkb)",
+              "idB": "Q96L73 (uniprotkb)",
+              "miscore": null
+            },
+            {
+              "ac": "EBI-54804376",
+              "idA": "Q13283 (uniprotkb)",
+              "idB": "Q96L73 (uniprotkb)",
+              "miscore": null
+            },
+            {
+              "ac": "EBI-6176374",
+              "idA": "P04578-PRO_0000038427 (uniprotkb)",
+              "idB": "Q13283 (uniprotkb)",
+              "miscore": null
+            },
+            {
+              "ac": "EBI-54804394",
+              "idA": "P35222 (uniprotkb)",
+              "idB": "Q13283 (uniprotkb)",
+              "miscore": null
+            },
+            {
+              "ac": "EBI-28964410",
+              "idA": "CHEBI:28304 (chebi)",
+              "idB": "Q13283 (uniprotkb)",
+              "miscore": null
+            },
+            {
+              "ac": "EBI-28955695",
+              "idA": "ENST00000394805.8 (ensembl)",
+              "idB": "Q13283 (uniprotkb)",
+              "miscore": null
+            }
+          ]
+        }
+      },
+      "InterPro": {
+        "url": "https://www.ebi.ac.uk/interpro/api/protein/UniProt/Q13283/",
+        "data": {
+          "accession": "Q13283",
+          "entries": []
+        }
+      },
+      "OpenAlex": {
+        "url": "https://api.openalex.org/works?search=G3BP1%20interstitial%20cystitis&per-page=5",
+        "data": {
+          "count": 3,
+          "works": [
+            {
+              "id": "https://openalex.org/W4405475952",
+              "title": "A Novel Approach for Bladder Cancer Treatment: Nanoparticles as a Drug Delivery System",
+              "publication_year": 2024
+            },
+            {
+              "id": "https://openalex.org/W7122589161",
+              "title": "The infection–microbiome–immunity axis in bladder cancer: mechanistic insights and therapeutic perspectives",
+              "publication_year": 2026
+            },
+            {
+              "id": "https://openalex.org/W7131626597",
+              "title": "Mendelian randomization studies in atopic dermatitis: causal insights across omics layers",
+              "publication_year": 2026
+            }
+          ]
+        }
+      },
+      "HPA": {
+        "url": "https://www.proteinatlas.org/ENSG00000145907.json",
+        "data": {
+          "Gene": "G3BP1",
+          "Gene description": "G3BP stress granule assembly factor 1",
+          "RNA tissue specificity": "Low tissue specificity",
+          "RNA tissue specific nTPM": null,
+          "Protein class": [
+            "Enzymes",
+            "Plasma proteins",
+            "Predicted intracellular proteins",
+            "Predicted membrane proteins"
+          ],
+          "Disease involvement": null
+        }
+      }
+    },
+    "SRSF1": {
+      "uniprot": "Q07955",
+      "QuickGO": {
+        "url": "https://www.ebi.ac.uk/QuickGO/services/annotation/search?geneProductId=UniProtKB:Q07955&limit=50",
+        "data": {
+          "hits": 121,
+          "annotations": [
+            {
+              "goId": "GO:0035145",
+              "goEvidence": "IDA",
+              "goAspect": "cellular_component"
+            },
+            {
+              "goId": "GO:0003676",
+              "goEvidence": "IEA",
+              "goAspect": "molecular_function"
+            },
+            {
+              "goId": "GO:0003723",
+              "goEvidence": "IEA",
+              "goAspect": "molecular_function"
+            },
+            {
+              "goId": "GO:0003723",
+              "goEvidence": "IDA",
+              "goAspect": "molecular_function"
+            },
+            {
+              "goId": "GO:0003723",
+              "goEvidence": "IPI",
+              "goAspect": "molecular_function"
+            },
+            {
+              "goId": "GO:0003723",
+              "goEvidence": "HDA",
+              "goAspect": "molecular_function"
+            },
+            {
+              "goId": "GO:0003723",
+              "goEvidence": "HDA",
+              "goAspect": "molecular_function"
+            },
+            {
+              "goId": "GO:0003729",
+              "goEvidence": "IBA",
+              "goAspect": "molecular_function"
+            },
+            {
+              "goId": "GO:0003729",
+              "goEvidence": "IEA",
+              "goAspect": "molecular_function"
+            },
+            {
+              "goId": "GO:0003729",
+              "goEvidence": "IDA",
+              "goAspect": "molecular_function"
+            }
+          ]
+        }
+      },
+      "IntAct": {
+        "url": "https://www.ebi.ac.uk/intact/ws/interaction/findInteractions/Q07955?format=json",
+        "data": {
+          "total_elements": 856,
+          "interactions": [
+            {
+              "ac": "EBI-22128719",
+              "idA": "Q8TBB1 (uniprotkb)",
+              "idB": "Q07955-1 (uniprotkb)",
+              "miscore": null
+            },
+            {
+              "ac": "EBI-21581572",
+              "idA": "P47902-2 (uniprotkb)",
+              "idB": "Q07955-2 (uniprotkb)",
+              "miscore": null
+            },
+            {
+              "ac": "EBI-21675546",
+              "idA": "P49761-1 (uniprotkb)",
+              "idB": "Q07955-2 (uniprotkb)",
+              "miscore": null
+            },
+            {
+              "ac": "EBI-21727187",
+              "idA": "Q6ZUT1-2 (uniprotkb)",
+              "idB": "Q07955-2 (uniprotkb)",
+              "miscore": null
+            },
+            {
+              "ac": "EBI-21728858",
+              "idA": "Q9Y383-2 (uniprotkb)",
+              "idB": "Q07955-2 (uniprotkb)",
+              "miscore": null
+            },
+            {
+              "ac": "EBI-21718427",
+              "idA": "P26368-2 (uniprotkb)",
+              "idB": "Q07955-2 (uniprotkb)",
+              "miscore": null
+            },
+            {
+              "ac": "EBI-5455543",
+              "idA": "EBI-5333232 (intact)",
+              "idB": "Q07955-1 (uniprotkb)",
+              "miscore": null
+            },
+            {
+              "ac": "EBI-5457328",
+              "idA": "EBI-5333168 (intact)",
+              "idB": "Q07955-1 (uniprotkb)",
+              "miscore": null
+            },
+            {
+              "ac": "EBI-6259780",
+              "idA": "EBI-5333185 (intact)",
+              "idB": "Q07955-1 (uniprotkb)",
+              "miscore": null
+            },
+            {
+              "ac": "EBI-21666158",
+              "idA": "Q12926-2 (uniprotkb)",
+              "idB": "Q07955-2 (uniprotkb)",
+              "miscore": null
+            }
+          ]
+        }
+      },
+      "InterPro": {
+        "url": "https://www.ebi.ac.uk/interpro/api/protein/UniProt/Q07955/",
+        "data": {
+          "accession": "Q07955",
+          "entries": []
+        }
+      },
+      "OpenAlex": {
+        "url": "https://api.openalex.org/works?search=SRSF1%20interstitial%20cystitis&per-page=5",
+        "data": {
+          "count": 11,
+          "works": [
+            {
+              "id": "https://openalex.org/W2188299787",
+              "title": "The significance of autoantibodies to DFS70/LEDGFp75 in health and disease: integrating basic science with clinical understanding",
+              "publication_year": 2015
+            },
+            {
+              "id": "https://openalex.org/W3012792733",
+              "title": "Twenty years of research on the DFS70/LEDGF autoantibody-autoantigen system: many lessons learned but still many questions",
+              "publication_year": 2020
+            },
+            {
+              "id": "https://openalex.org/W3026858007",
+              "title": "Exosomal Long Non-Coding RNAs in Lung Diseases",
+              "publication_year": 2020
+            },
+            {
+              "id": "https://openalex.org/W2904623992",
+              "title": "Non-Coding RNAs in Breast Cancer: Intracellular and Intercellular Communication",
+              "publication_year": 2018
+            },
+            {
+              "id": "https://openalex.org/W4383341885",
+              "title": "Body fluid-derived stem cells — an untapped stem cell source in genitourinary regeneration",
+              "publication_year": 2023
+            }
+          ]
+        }
+      },
+      "HPA": {
+        "url": "https://www.proteinatlas.org/ENSG00000136450.json",
+        "data": {
+          "Gene": "SRSF1",
+          "Gene description": "Serine and arginine rich splicing factor 1",
+          "RNA tissue specificity": "Low tissue specificity",
+          "RNA tissue specific nTPM": null,
+          "Protein class": [
+            "Essential proteins",
+            "Plasma proteins",
+            "Predicted intracellular proteins"
+          ],
+          "Disease involvement": [
+            "Disease variant",
+            "Intellectual disability"
+          ]
+        }
+      }
+    },
+    "DR1": {
+      "uniprot": "Q01658",
+      "QuickGO": {
+        "url": "https://www.ebi.ac.uk/QuickGO/services/annotation/search?geneProductId=UniProtKB:Q01658&limit=50",
+        "data": {
+          "hits": 117,
+          "annotations": [
+            {
+              "goId": "GO:0005515",
+              "goEvidence": "IPI",
+              "goAspect": "molecular_function"
+            },
+            {
+              "goId": "GO:0005515",
+              "goEvidence": "IPI",
+              "goAspect": "molecular_function"
+            },
+            {
+              "goId": "GO:0005515",
+              "goEvidence": "IPI",
+              "goAspect": "molecular_function"
+            },
+            {
+              "goId": "GO:0005515",
+              "goEvidence": "IPI",
+              "goAspect": "molecular_function"
+            },
+            {
+              "goId": "GO:0005515",
+              "goEvidence": "IPI",
+              "goAspect": "molecular_function"
+            },
+            {
+              "goId": "GO:0005515",
+              "goEvidence": "IPI",
+              "goAspect": "molecular_function"
+            },
+            {
+              "goId": "GO:0005515",
+              "goEvidence": "IPI",
+              "goAspect": "molecular_function"
+            },
+            {
+              "goId": "GO:0005515",
+              "goEvidence": "IPI",
+              "goAspect": "molecular_function"
+            },
+            {
+              "goId": "GO:0005515",
+              "goEvidence": "IPI",
+              "goAspect": "molecular_function"
+            },
+            {
+              "goId": "GO:0005515",
+              "goEvidence": "IPI",
+              "goAspect": "molecular_function"
+            }
+          ]
+        }
+      },
+      "IntAct": {
+        "url": "https://www.ebi.ac.uk/intact/ws/interaction/findInteractions/Q01658?format=json",
+        "data": {
+          "total_elements": 325,
+          "interactions": [
+            {
+              "ac": "EBI-22122592",
+              "idA": "Q14919 (uniprotkb)",
+              "idB": "Q01658 (uniprotkb)",
+              "miscore": null
+            },
+            {
+              "ac": "EBI-22128249",
+              "idA": "Q9NRF9 (uniprotkb)",
+              "idB": "Q01658 (uniprotkb)",
+              "miscore": null
+            },
+            {
+              "ac": "EBI-22141009",
+              "idA": "Q01658 (uniprotkb)",
+              "idB": "P20226 (uniprotkb)",
+              "miscore": null
+            },
+            {
+              "ac": "EBI-2844590",
+              "idA": "Q7ARD3 (uniprotkb)",
+              "idB": "Q01658 (uniprotkb)",
+              "miscore": null
+            },
+            {
+              "ac": "EBI-21522123",
+              "idA": "Q9NS73-5 (uniprotkb)",
+              "idB": "Q01658 (uniprotkb)",
+              "miscore": null
+            },
+            {
+              "ac": "EBI-54711952",
+              "idA": "Q01658 (uniprotkb)",
+              "idB": "Q6PH81 (uniprotkb)",
+              "miscore": null
+            },
+            {
+              "ac": "EBI-5462854",
+              "idA": "EBI-5333321 (intact)",
+              "idB": "Q01658 (uniprotkb)",
+              "miscore": null
+            },
+            {
+              "ac": "EBI-5463455",
+              "idA": "EBI-5333267 (intact)",
+              "idB": "Q01658 (uniprotkb)",
+              "miscore": null
+            },
+            {
+              "ac": "EBI-7906488",
+              "idA": "Q01658 (uniprotkb)",
+              "idB": "P27633 (uniprotkb)",
+              "miscore": null
+            },
+            {
+              "ac": "EBI-26001976",
+              "idA": "EBI-25831191 (intact)",
+              "idB": "Q01658 (uniprotkb)",
+              "miscore": null
+            }
+          ]
+        }
+      },
+      "InterPro": {
+        "url": "https://www.ebi.ac.uk/interpro/api/protein/UniProt/Q01658/",
+        "data": {
+          "accession": "Q01658",
+          "entries": []
+        }
+      },
+      "OpenAlex": {
+        "url": "https://api.openalex.org/works?search=DR1%20interstitial%20cystitis&per-page=5",
+        "data": {
+          "count": 16,
+          "works": [
+            {
+              "id": "https://openalex.org/W4398155980",
+              "title": "Therapeutic strategies for uncomplicated cystitis in women",
+              "publication_year": 2024
+            },
+            {
+              "id": "https://openalex.org/W1571166414",
+              "title": "Extraintestinal manifestations and complications in inflammatory bowel diseases",
+              "publication_year": 2006
+            },
+            {
+              "id": "https://openalex.org/W3187922938",
+              "title": "Pulmonary sarcoidosis",
+              "publication_year": 2005
+            },
+            {
+              "id": "https://openalex.org/W2096839637",
+              "title": "Bench-to-bedside review: Pulmonary–renal syndromes – an update for the intensivist",
+              "publication_year": 2007
+            },
+            {
+              "id": "https://openalex.org/W2037979916",
+              "title": "Immunopathogenesis of HTLV-I-associated myelopathy/tropical spastic paraparesis",
+              "publication_year": 2000
+            }
+          ]
+        }
+      },
+      "HPA": {
+        "url": "https://www.proteinatlas.org/ENSG00000117505.json",
+        "data": {
+          "Gene": "DR1",
+          "Gene description": "Down-regulator of transcription 1",
+          "RNA tissue specificity": "Low tissue specificity",
+          "RNA tissue specific nTPM": null,
+          "Protein class": [
+            "Essential proteins",
+            "Predicted intracellular proteins"
+          ],
+          "Disease involvement": null
+        }
+      }
+    },
+    "RASAL2": {
+      "uniprot": "Q9UJF2",
+      "QuickGO": {
+        "url": "https://www.ebi.ac.uk/QuickGO/services/annotation/search?geneProductId=UniProtKB:Q9UJF2&limit=50",
+        "data": {
+          "hits": 18,
+          "annotations": [
+            {
+              "goId": "GO:0005096",
+              "goEvidence": "IBA",
+              "goAspect": "molecular_function"
+            },
+            {
+              "goId": "GO:0005096",
+              "goEvidence": "TAS",
+              "goAspect": "molecular_function"
+            },
+            {
+              "goId": "GO:0005515",
+              "goEvidence": "IPI",
+              "goAspect": "molecular_function"
+            },
+            {
+              "goId": "GO:0005515",
+              "goEvidence": "IPI",
+              "goAspect": "molecular_function"
+            },
+            {
+              "goId": "GO:0005515",
+              "goEvidence": "IPI",
+              "goAspect": "molecular_function"
+            },
+            {
+              "goId": "GO:0005515",
+              "goEvidence": "IPI",
+              "goAspect": "molecular_function"
+            },
+            {
+              "goId": "GO:0005515",
+              "goEvidence": "IPI",
+              "goAspect": "molecular_function"
+            },
+            {
+              "goId": "GO:0005515",
+              "goEvidence": "IPI",
+              "goAspect": "molecular_function"
+            },
+            {
+              "goId": "GO:0002021",
+              "goEvidence": "IEA",
+              "goAspect": "biological_process"
+            },
+            {
+              "goId": "GO:0007165",
+              "goEvidence": "TAS",
+              "goAspect": "biological_process"
+            }
+          ]
+        }
+      },
+      "IntAct": {
+        "url": "https://www.ebi.ac.uk/intact/ws/interaction/findInteractions/Q9UJF2?format=json",
+        "data": {
+          "total_elements": 163,
+          "interactions": [
+            {
+              "ac": "EBI-52370319",
+              "idA": "Q86TL0 (uniprotkb)",
+              "idB": "Q9UJF2-2 (uniprotkb)",
+              "miscore": null
+            },
+            {
+              "ac": "EBI-52371723",
+              "idA": "Q9H0R8 (uniprotkb)",
+              "idB": "Q9UJF2-2 (uniprotkb)",
+              "miscore": null
+            },
+            {
+              "ac": "EBI-22784870",
+              "idA": "Q9UJF2-2 (uniprotkb)",
+              "idB": "Q6FHY5 (uniprotkb)",
+              "miscore": null
+            },
+            {
+              "ac": "EBI-22326458",
+              "idA": "Q9UJF2-2 (uniprotkb)",
+              "idB": "Q6FHY5 (uniprotkb)",
+              "miscore": null
+            },
+            {
+              "ac": "EBI-24282975",
+              "idA": "Q6FHY5 (uniprotkb)",
+              "idB": "Q9UJF2-2 (uniprotkb)",
+              "miscore": null
+            },
+            {
+              "ac": "EBI-28956128",
+              "idA": "P63252 (uniprotkb)",
+              "idB": "Q9UJF2-2 (uniprotkb)",
+              "miscore": null
+            },
+            {
+              "ac": "EBI-52373277",
+              "idA": "Q9HCE7 (uniprotkb)",
+              "idB": "Q9UJF2-2 (uniprotkb)",
+              "miscore": null
+            },
+            {
+              "ac": "EBI-23094074",
+              "idA": "Q9UJF2-2 (uniprotkb)",
+              "idB": "P23508 (uniprotkb)",
+              "miscore": null
+            },
+            {
+              "ac": "EBI-24454281",
+              "idA": "P23508 (uniprotkb)",
+              "idB": "Q9UJF2-2 (uniprotkb)",
+              "miscore": null
+            },
+            {
+              "ac": "EBI-24962213",
+              "idA": "Q9UJF2-2 (uniprotkb)",
+              "idB": "P23508 (uniprotkb)",
+              "miscore": null
+            }
+          ]
+        }
+      },
+      "InterPro": {
+        "url": "https://www.ebi.ac.uk/interpro/api/protein/UniProt/Q9UJF2/",
+        "data": {
+          "accession": "Q9UJF2",
+          "entries": []
+        }
+      },
+      "OpenAlex": {
+        "url": "https://api.openalex.org/works?search=RASAL2%20interstitial%20cystitis&per-page=5",
+        "data": {
+          "count": 2,
+          "works": [
+            {
+              "id": "https://openalex.org/W4308000873",
+              "title": "NF-κB inhibitors gifted by nature: The anticancer promise of polyphenol compounds",
+              "publication_year": 2022
+            },
+            {
+              "id": "https://openalex.org/W4236036583",
+              "title": "Program",
+              "publication_year": 2018
+            }
+          ]
+        }
+      },
+      "HPA": {
+        "url": "https://www.proteinatlas.org/ENSG00000075391.json",
+        "data": {
+          "Gene": "RASAL2",
+          "Gene description": "RAS protein activator like 2",
+          "RNA tissue specificity": "Low tissue specificity",
+          "RNA tissue specific nTPM": null,
+          "Protein class": [
+            "Plasma proteins",
+            "Predicted intracellular proteins",
+            "RAS pathway related proteins"
+          ],
+          "Disease involvement": null
+        }
+      }
+    },
+    "MAPK14": {
+      "uniprot": "Q16539",
+      "QuickGO": {
+        "url": "https://www.ebi.ac.uk/QuickGO/services/annotation/search?geneProductId=UniProtKB:Q16539&limit=50",
+        "data": {
+          "hits": 197,
+          "annotations": [
+            {
+              "goId": "GO:0043536",
+              "goEvidence": "IMP",
+              "goAspect": "biological_process"
+            },
+            {
+              "goId": "GO:0071222",
+              "goEvidence": "IDA",
+              "goAspect": "biological_process"
+            },
+            {
+              "goId": "GO:0004674",
+              "goEvidence": "IBA",
+              "goAspect": "molecular_function"
+            },
+            {
+              "goId": "GO:0004674",
+              "goEvidence": "EXP",
+              "goAspect": "molecular_function"
+            },
+            {
+              "goId": "GO:0004674",
+              "goEvidence": "IDA",
+              "goAspect": "molecular_function"
+            },
+            {
+              "goId": "GO:0004674",
+              "goEvidence": "IMP",
+              "goAspect": "molecular_function"
+            },
+            {
+              "goId": "GO:0004674",
+              "goEvidence": "TAS",
+              "goAspect": "molecular_function"
+            },
+            {
+              "goId": "GO:0004674",
+              "goEvidence": "TAS",
+              "goAspect": "molecular_function"
+            },
+            {
+              "goId": "GO:0004674",
+              "goEvidence": "TAS",
+              "goAspect": "molecular_function"
+            },
+            {
+              "goId": "GO:0004674",
+              "goEvidence": "TAS",
+              "goAspect": "molecular_function"
+            }
+          ]
+        }
+      },
+      "IntAct": {
+        "url": "https://www.ebi.ac.uk/intact/ws/interaction/findInteractions/Q16539?format=json",
+        "data": {
+          "total_elements": 429,
+          "interactions": [
+            {
+              "ac": "EBI-22129885",
+              "idA": "Q16539-1 (uniprotkb)",
+              "idB": "Q16644 (uniprotkb)",
+              "miscore": null
+            },
+            {
+              "ac": "EBI-16067405",
+              "idA": "Q16539-1 (uniprotkb)",
+              "idB": "Q15256-1 (uniprotkb)",
+              "miscore": null
+            },
+            {
+              "ac": "EBI-16067424",
+              "idA": "Q16539-1 (uniprotkb)",
+              "idB": "Q15256-1 (uniprotkb)",
+              "miscore": null
+            },
+            {
+              "ac": "EBI-16067450",
+              "idA": "Q16539-1 (uniprotkb)",
+              "idB": "P54830-1 (uniprotkb)",
+              "miscore": null
+            },
+            {
+              "ac": "EBI-16067469",
+              "idA": "Q16539-1 (uniprotkb)",
+              "idB": "P54830-1 (uniprotkb)",
+              "miscore": null
+            },
+            {
+              "ac": "EBI-16067490",
+              "idA": "Q16539-1 (uniprotkb)",
+              "idB": "Q15256-1 (uniprotkb)",
+              "miscore": null
+            },
+            {
+              "ac": "EBI-16067509",
+              "idA": "Q16539-1 (uniprotkb)",
+              "idB": "P54830-1 (uniprotkb)",
+              "miscore": null
+            },
+            {
+              "ac": "EBI-16067555",
+              "idA": "Q16539-1 (uniprotkb)",
+              "idB": "P54830-1 (uniprotkb)",
+              "miscore": null
+            },
+            {
+              "ac": "EBI-16067576",
+              "idA": "P54830-1 (uniprotkb)",
+              "idB": "Q16539-1 (uniprotkb)",
+              "miscore": null
+            },
+            {
+              "ac": "EBI-16067597",
+              "idA": "Q16539-1 (uniprotkb)",
+              "idB": "Q15256-1 (uniprotkb)",
+              "miscore": null
+            }
+          ]
+        }
+      },
+      "InterPro": {
+        "url": "https://www.ebi.ac.uk/interpro/api/protein/UniProt/Q16539/",
+        "data": {
+          "accession": "Q16539",
+          "entries": []
+        }
+      },
+      "OpenAlex": {
+        "url": "https://api.openalex.org/works?search=MAPK14%20interstitial%20cystitis&per-page=5",
+        "data": {
+          "count": 17,
+          "works": [
+            {
+              "id": "https://openalex.org/W3049748772",
+              "title": "Revealing the targets and mechanisms of vitamin A in the treatment of COVID-19",
+              "publication_year": 2020
+            },
+            {
+              "id": "https://openalex.org/W3043654626",
+              "title": "Integrative pharmacological mechanism of vitamin C combined with glycyrrhizic acid against COVID-19: findings of bioinformatics analyses",
+              "publication_year": 2020
+            },
+            {
+              "id": "https://openalex.org/W3044258667",
+              "title": "Autophagy is involved in the protective effect of p21 on LPS-induced cardiac dysfunction",
+              "publication_year": 2020
+            },
+            {
+              "id": "https://openalex.org/W2117798786",
+              "title": "Hippocampal CA1 Transcriptional Profile of Sleep Deprivation: Relation to Aging and Stress",
+              "publication_year": 2012
+            },
+            {
+              "id": "https://openalex.org/W4281615261",
+              "title": "Vitamin C exerts anti-cadmium induced fracture functions/targets: bioinformatic and biostructural findings",
+              "publication_year": 2022
+            }
+          ]
+        }
+      },
+      "HPA": {
+        "url": "https://www.proteinatlas.org/ENSG00000112062.json",
+        "data": {
+          "Gene": "MAPK14",
+          "Gene description": "Mitogen-activated protein kinase 14",
+          "RNA tissue specificity": "Low tissue specificity",
+          "RNA tissue specific nTPM": null,
+          "Protein class": [
+            "Cancer-related genes",
+            "Enzymes",
+            "Predicted intracellular proteins"
+          ],
+          "Disease involvement": [
+            "Cancer-related genes"
+          ]
+        }
+      }
+    }
+  }
+}

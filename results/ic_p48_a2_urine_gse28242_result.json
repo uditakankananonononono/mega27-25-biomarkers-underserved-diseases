@@ -1,0 +1,31 @@
+{
+ "preregistration": "projects/interstitial_cystitis/prereg/IC_P48_A2_amendment.md (Gate A2.3a, EXPLORATORY)",
+ "label": "EXPLORATORY directional transfer; n=3 Hunner-PBS urine; no threshold tuning",
+ "frozen_program": "M6 G2-M Checkpoint module (weight +1), 190 genes; symbols present in urine matrix: 190",
+ "groups": {
+  "control": 5,
+  "PBS_without_lesions": 5,
+  "PBS_with_lesions": 3
+ },
+ "per_sample_S": {
+  "GSM699135": -0.1937,
+  "GSM699136": -0.2634,
+  "GSM699137": 0.2065,
+  "GSM699138": 0.1266,
+  "GSM699139": -0.2013,
+  "GSM699140": -0.0733,
+  "GSM699141": 0.0562,
+  "GSM699142": -0.0809,
+  "GSM699143": -0.2954,
+  "GSM699144": 0.059,
+  "GSM699145": 0.1987,
+  "GSM699146": -0.0195,
+  "GSM699147": 0.4802
+ },
+ "mean_S_hunner_urine": 0.2197982574936771,
+ "mean_S_other": -0.06593947724810298,
+ "directional_difference": 0.2857377347417801,
+ "permutation_p_one_sided": 0.0405959404059594,
+ "probe_mapping": "GPL6244 full platform table via GEO acc.cgi (gene_assignment first symbol); probes averaged per symbol",
+ "interpretation": "positive direction means the frozen tissue residual program scores higher in Hunner urine than lesion-free/control urine"
+}

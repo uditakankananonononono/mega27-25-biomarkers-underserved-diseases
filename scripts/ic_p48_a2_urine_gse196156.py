@@ -86,12 +86,18 @@ def load_matrix(path):
         lines = f.read().splitlines()
     hdr_i = lines.index('!series_matrix_table_begin')
     header = lines[hdr_i + 1].strip().split('\t')
-    rows = {}
+    rows, skipped = {}, 0
     for ln in lines[hdr_i + 2:]:
         if ln.startswith('!series_matrix_table_end'):
             break
         c = ln.split('\t')
-        rows[c[0].strip('"')] = [float(x) for x in c[1:]]
+        try:
+            vals = [float(x) for x in c[1:]]
+        except ValueError:
+            skipped += 1  # miRNA with missing/non-numeric calls: not in the 464-row measured set
+            continue
+        rows[c[0].strip('"')] = vals
+    print(f'matrix: {len(rows)} fully-measured miRNA rows, {skipped} rows with missing calls skipped', flush=True)
     return [h.strip('"') for h in header[1:]], rows
 
 def main():

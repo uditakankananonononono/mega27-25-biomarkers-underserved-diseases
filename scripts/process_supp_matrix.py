@@ -26,6 +26,14 @@ SPECS = {
     'GSE303840': dict(disease='preeclampsia', file='GSE303840_merged_Raw.csv.gz',
                      unit='counts', sep=',', key='hgnc_symbol', title_prefix='',
                      label_field='Sample_title', case='Preeclamptic', control='Normal', tissue='placenta'),
+    'GSE155489': dict(disease='pcos', file='GSE155489_gc_pcos_counts.csv.gz',
+                     unit='counts', sep=',', key='gene', title_prefix='',
+                     label_field='Sample_characteristics_ch1', case='disease state: polycystic ovary syndrome(PCOS)',
+                     control='disease state: Control', tissue='cumulus granulosa cells'),
+    'GSE262735': dict(disease='pcos', file='GSE262735_counts_table.txt.gz',
+                     unit='counts', sep='\t', key='Unnamed: 0', title_prefix='',
+                     label_field='Sample_characteristics_ch1_2', case='disease state: Pcos',
+                     control='disease state: control', tissue='PBMC monocytes'),
     'GSE304677': dict(disease='pcos', file='GSE304677_1_genes_fpkm_expression.xlsx',
                      unit='counts', sep=None, key='gene_name', title_prefix='',
                      label_field='Sample_characteristics_ch1_2', case='group: PCOS', control='group: control',
@@ -52,7 +60,15 @@ def load(gse):
         x = pd.read_excel(path, usecols=lambda c: c == p['key'] or c.startswith('count.'))
     else:
         x = pd.read_csv(path, sep=p['sep'], low_memory=False)
-    if gse == 'GSE204835':
+    if gse == 'GSE155489':
+        ann = ann[ann.Sample_title.str.startswith('cumulus granulosa cells')].copy()
+        lab = lab.reindex(ann.index)
+        cols = {v: k for k, v in ann.Sample_description.items()}
+        sample = {c: cols[c] for c in x if c in cols}
+    elif gse == 'GSE262735':
+        cols = {v: k for k, v in ann.Sample_description.items()}
+        sample = {c: cols[c.split('_')[0]] for c in x if '_1.fastq' in c and c.split('_')[0] in cols}
+    elif gse == 'GSE204835':
         # Count header N.BAM corresponds exactly to GEO title "Sample N".
         cols = {v: k for k, v in ann.Sample_title.str.replace(p['title_prefix'], '', regex=False).items()}
         sample = {c: cols[c.split('.')[0]] for c in x if c.endswith('.BAM') and c.split('.')[0] in cols}
@@ -75,7 +91,7 @@ def load(gse):
     if gse == 'GSE204835':
         h = pd.read_csv(geo.HGNC_PATH, sep='\t', dtype=str, usecols=['symbol','entrez_id']).dropna()
         mapping = dict(zip(h.entrez_id, h.symbol)); x[p['key']] = x[p['key']].astype(str).map(mapping)
-    if gse == 'GSE306864':
+    if gse in ('GSE306864', 'GSE262735'):
         h = pd.read_csv(geo.HGNC_PATH, sep='\t', dtype=str, usecols=['symbol','ensembl_gene_id']).dropna()
         mapping = dict(zip(h.ensembl_gene_id, h.symbol))
         x[p['key']] = x[p['key']].astype(str).str.split('.').str[0].map(mapping)

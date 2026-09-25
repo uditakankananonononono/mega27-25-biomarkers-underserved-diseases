@@ -99,8 +99,9 @@ class CNN1D(nn.Module):
 
 
 def train_cnn(Xtr, ytr, epochs=60, lr=3e-3, seed=0, batch=32):
+    # Seed model weights before instantiation, not just the later minibatch order.
+    net = seeded_node_model(CNN1D, Xtr.shape[1], seed=seed)
     torch.manual_seed(seed)
-    net = CNN1D(Xtr.shape[1])
     opt = torch.optim.Adam(net.parameters(), lr=lr, weight_decay=1e-4)
     X = torch.tensor(Xtr, dtype=torch.float32); y = torch.tensor(ytr, dtype=torch.float32)
     pos = max(1.0, float(y.sum())); pw = torch.tensor((len(y) - pos) / pos)

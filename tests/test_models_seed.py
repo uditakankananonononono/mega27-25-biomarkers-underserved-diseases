@@ -27,3 +27,14 @@ def test_seeded_training_reproducible_after_different_global_rng_states():
     b = models.seeded_node_model(models.MLP, 3, dropout=0.0, seed=23)
     pb = models.train_node_model(b, x, None, y, mask, epochs=2, seed=23)
     assert np.array_equal(pa, pb)
+
+
+def test_cnn_seeded_initialization_repeatable_despite_global_rng():
+    x = np.random.default_rng(0).normal(size=(8, 12)).astype(np.float32)
+    y = np.array([0, 1] * 4)
+    a = models.train_cnn(x, y, epochs=2, seed=7, batch=4)
+    pa = models.predict_cnn(a, x)
+    torch.rand(100)
+    b = models.train_cnn(x, y, epochs=2, seed=7, batch=4)
+    pb = models.predict_cnn(b, x)
+    assert np.array_equal(pa, pb)

@@ -50,3 +50,8 @@ The broad results/tools_used.csv is NOT a 40-external-tools ledger. It counts lo
 
 ## State 11:05 program-wide tool ruling from parent
 Parent clarified that genuine analysis libraries count; infra (Git, curl, pytest, pdfLaTeX, GitHub/Drive) does not; GEO and PubMed are distinct NCBI databases; aliases of a service collapse. Recounted in results/program_tool_audit.csv: **19/40**. This supersedes both broad ledger 29 and strict external-service count 12 for the program gate. Do not add pure infrastructure. The user's 10:58 phrasing "external tools" and the parent program-wide ruling are preserved as separate provenance; parent owns any remaining scope reconciliation.
+
+## State 11:09
+- All 7 queued GNN prioritization disease runs finished; candidate/benchmark CSVs for all committed. PPD GNN did NOT beat RWR (GCN AUROC 0.695 vs RWR 0.803).
+- Program count now 24/40 after genuinely used QuickGO, IntAct, InterPro, OpenAlex, EBI OLS on candidate/context; evidence JSON saved. No clinical claim from annotation overlap. Strict services count ledger is secondary; program count lives in results/program_tool_audit.csv.
+- Continued PCOS follow-up passed only a small registered sign-set cohort, other cohorts negative. This is not enough to call a biomarker discovery or a world benchmark break.

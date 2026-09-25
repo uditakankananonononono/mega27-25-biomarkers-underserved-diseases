@@ -1,5 +1,5 @@
 canonical_tool,raw_ledger_entries,counted,kind,evidence,notes
-NCBI GEO,1;2;3;4;24,1,external scientific database,"scripts/geo_discover.py; src/ubiomark/geo.py; scripts/process_supp_matrix.py","esearch/esummary/FTP are one GEO service, not separate tools"
+NCBI GEO,1;2;3;4;24,1,external scientific database,scripts/geo_discover.py; src/ubiomark/geo.py; scripts/process_supp_matrix.py,"esearch/esummary/FTP are one GEO service, not separate tools"
 Open Targets Platform,5,1,external scientific database,scripts/fetch_opentargets.py,Disease-target evidence
 STRING,6,1,external scientific database,src/ubiomark/network.py,Human physical PPI
 PyTorch,7,1,analysis library,src/ubiomark/models.py,Neural models
@@ -11,7 +11,7 @@ pytest,12,0,testing infrastructure,tests/,Excluded per parent rule
 Git,13,0,infrastructure,.git,Excluded
 OpenSSH,14,0,infrastructure,-,Excluded
 curl,15,0,infrastructure,-,Excluded
-HGNC,16;26,1,external scientific database,"src/ubiomark/geo.py; results/external/*.json",Local download and REST same service
+HGNC,16;26,1,external scientific database,src/ubiomark/geo.py; results/external/*.json,Local download and REST same service
 g:Profiler,17,1,external scientific service,scripts/enrich_gprofiler.py,Enrichment
 NCBI PubMed,18,1,external scientific database,src/ubiomark/novelty.py,Distinct database from GEO
 Ensembl,19,1,external scientific database,results/external/*.json,Gene lookup
@@ -23,3 +23,8 @@ ChEMBL,25,1,external scientific database,results/external/*.json,Target lookup
 GTEx Portal,27,1,external scientific database,results/external/*.json,Reference gene lookup only
 Matplotlib,28,1,analysis library,scripts/figures.py,Real-data figures
 pdfLaTeX,29,0,document infrastructure,paper/manuscript.pdf,Excluded per parent rule
+QuickGO,-,1,external scientific database,results/external/secondary_annotations.json,GO annotation for ST3GAL2
+IntAct,-,1,external scientific database,results/external/secondary_annotations.json,Protein interactions
+InterPro,-,1,external scientific database,results/external/secondary_annotations.json,Protein domain annotations
+OpenAlex,-,1,external scholarly database,results/external/secondary_annotations.json,PCOS co-mention literature metadata
+EMBL-EBI OLS,-,1,external ontology service,results/external/secondary_annotations.json,MONDO PCOS exact identifier validation

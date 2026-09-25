@@ -1,0 +1,22 @@
+{
+  "retrieved_at_utc": "2026-09-25T06:04:31.627367+00:00",
+  "sources": {
+    "HPA": {
+      "url": "https://www.proteinatlas.org/api/search_download.php?search=ST3GAL2&columns=g,eg,pe,rc,t&format=json",
+      "data": [
+        {
+          "Gene": "ST3GAL2",
+          "Ensembl": "ENSG00000157350",
+          "Evidence": "Evidence at protein level"
+        }
+      ]
+    },
+    "ClinVar": {
+      "url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=clinvar&term=ST3GAL2%5Bgene%5D&retmode=json&retmax=0",
+      "data": {
+        "count": 105,
+        "querytranslation": "ST3GAL2[gene]"
+      }
+    }
+  }
+}

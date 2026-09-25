@@ -14,7 +14,7 @@ import torch.nn.functional as F
 def to_torch_sparse(M: sp.csr_matrix) -> torch.Tensor:
     M = M.tocoo()
     i = torch.tensor(np.vstack([M.row, M.col]), dtype=torch.long)
-    return torch.sparse_coo_tensor(i, torch.tensor(M.data, dtype=torch.float32), M.shape).coalesce()
+    return torch.sparse_coo_tensor(i, torch.tensor(M.data, dtype=torch.float32), M.shape).coalesce().to_sparse_csr()
 
 
 class GCN(nn.Module):
@@ -54,7 +54,7 @@ class MLP(nn.Module):
         return self.net(x).squeeze(-1)
 
 
-def train_node_model(model, x, A, y, train_mask, epochs=200, lr=0.01, wd=5e-4, seed=0):
+def train_node_model(model, x, A, y, train_mask, epochs=100, lr=0.01, wd=5e-4, seed=0):
     torch.manual_seed(seed)
     opt = torch.optim.Adam(model.parameters(), lr=lr, weight_decay=wd)
     yt = torch.tensor(y, dtype=torch.float32)

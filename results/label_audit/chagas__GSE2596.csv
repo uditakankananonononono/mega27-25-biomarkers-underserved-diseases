@@ -1,0 +1,9 @@
+text,label,count
+"# (n) hsab-#-# | reference pool, cy# | endomyocardial biopsy, cy#",DROP,27
+"# (r) hsab-#-# | reference pool, cy# | endomyocardial biopsy, cy#",DROP,13
+"# (ch) hsab-#-# | reference pool, cy# | endomyocardial biopsy, cy#",DROP,8
+"# (pre-ch) hsab-#-# | reference pool, cy# | endomyocardial biopsy, cy#",DROP,7
+"# (pre-r) hsab-#-# | reference pool, cy# | endomyocardial biopsy, cy#",DROP,4
+"us# (r) hsab-#-# | reference pool, cy# | endomyocardial biopsy, cy#",DROP,2
+"# (r) hsab-#-# | endomyocardial biopsy, cy# | reference pool, cy#",DROP,1
+"# hsab-#-# | reference pool, cy# | endomyocardial biopsy, cy#",DROP,1

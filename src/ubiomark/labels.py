@@ -58,10 +58,24 @@ def group_text(ann: pd.DataFrame) -> pd.Series:
     return pd.Series(out, index=ann.index)
 
 
+YES = r"(y|yes|1|true|positive|pos|affected)"
+NO = r"(n|no|0|false|negative|neg|unaffected)"
+
+
 def label_one(text: str, disease: str) -> str | None:
+    text = text.replace("_", " ")
     if re.search(EXCLUDE, text):
         return None
     term = TERMS[disease]
+    # explicit indicator fields, e.g. "pcos: n" / "ppd: yes"
+    for part in text.split("|"):
+        if ":" in part:
+            k, v = [x.strip() for x in part.split(":", 1)]
+            if re.search(term, k):
+                if re.fullmatch(YES, v):
+                    return "case"
+                if re.fullmatch(NO, v):
+                    return "control"
     neg = rf"\b(non[- ]?|no |without |not |negative for )({term})"
     t2 = re.sub(neg, " __ctrl__ ", text)
     ctrl = bool(re.search(GENERIC_CONTROL, t2)) or "__ctrl__" in t2

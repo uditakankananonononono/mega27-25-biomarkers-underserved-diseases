@@ -1,0 +1,18 @@
+text,label,count
+# (ctl) _frozen tissue | control_left ventricular free wall heart tissue | subject status: healthy hearts of organ donors,control,1
+aaf (ccc)_frozen tissue | ccc_left ventricular free wall heart tissue | subject status: end-stage heart failure patients at the moment of heart transplantation,case,1
+apa (ccc)_frozen tissue | ccc_left ventricular free wall heart tissue | subject status: end-stage heart failure patients at the moment of heart transplantation,case,1
+ebs (ccc)_frozen tissue | ccc_left ventricular free wall heart tissue | subject status: end-stage heart failure patients at the moment of heart transplantation,case,1
+embt (ctl)_frozen tissue | control_left ventricular free wall heart tissue | subject status: healthy hearts of organ donors,control,1
+ess (ctl)_frozen tissue | control_left ventricular free wall heart tissue | subject status: healthy hearts of organ donors,control,1
+fjr (ctl)_frozen tissue | control_left ventricular free wall heart tissue | subject status: healthy hearts of organ donors,control,1
+hbo (ccc)_frozen tissue | ccc_left ventricular free wall heart tissue | subject status: end-stage heart failure patients at the moment of heart transplantation,case,1
+lo (ctl)_frozen tissue | control_left ventricular free wall heart tissue | subject status: healthy hearts of organ donors,control,1
+map (ccc)_frozen tissue | ccc_left ventricular free wall heart tissue | subject status: end-stage heart failure patients at the moment of heart transplantation,case,1
+mbfm (ctl)_frozen tissue | control_left ventricular free wall heart tissue | subject status: healthy hearts of organ donors,control,1
+mcrs (ccc)_frozen tissue | ccc_left ventricular free wall heart tissue | subject status: end-stage heart failure patients at the moment of heart transplantation,case,1
+nsr (ccc)_frozen tissue | ccc_left ventricular free wall heart tissue | subject status: end-stage heart failure patients at the moment of heart transplantation,case,1
+pmg (ccc)_frozen tissue | ccc_left ventricular free wall heart tissue | subject status: end-stage heart failure patients at the moment of heart transplantation,case,1
+scs (ccc)_frozen tissue | ccc_left ventricular free wall heart tissue | subject status: end-stage heart failure patients at the moment of heart transplantation,case,1
+zfs (ctl)_frozen tissue | control_left ventricular free wall heart tissue | subject status: healthy hearts of organ donors,control,1
+zmc (ccc)_frozen tissue | ccc_left ventricular free wall heart tissue | subject status: end-stage heart failure patients at the moment of heart transplantation,case,1

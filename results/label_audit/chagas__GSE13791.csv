@@ -1,0 +1,11 @@
+text,label,count
+"smooth muscle cells  uninfected control, # hours,  biological rep # | vascular smooth muscle control # hours",control,5
+"smooth muscle cells  infected with t. cruzi for # hours, biological rep # | vascular smooth muscle cells infected with t. cruzi for # hours",case,5
+"endothelial cells on control transwell top, biological rep # | endothelial cells bathed with media from  control cells  (transwell top)",control,2
+"endothelial cells infected with t. cruzil, biological rep # | endothelial cells infected with t. cruzi (transwell bottom)",case,2
+"endothelial cells on infected transwell top, biological rep # | endothelial cells bathed with media from  cells infected  with t. cruzi (transwell top)",case,2
+"endothelial cells uninfected control, biological rep # | endothelial cells control (transwell bottom)",control,2
+"fibroblasts on control transwell top, biological rep # | fibroblasts bathed with media from  control cells  (transwell top)",control,2
+"fibroblasts infected with t. cruzi, biological rep # | fibroblasts infected with t. cruzi (transwell bottom)",case,2
+"fibroblasts uninfected control, biological rep # | fibroblast control (transwell bottom)",control,2
+"fibroblasts on infected transwell top, biological rep # | fibroblasts bathed with media from  cells infected  with t. cruzi (transwell top)",case,2

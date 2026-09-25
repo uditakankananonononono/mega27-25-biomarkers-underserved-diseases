@@ -49,3 +49,10 @@ def test_clean_symbol_prefers_protein_coding():
     assert geo._clean_symbol("MIR4640 /// DDR1", "Gene symbol") == "DDR1"
     assert geo._clean_symbol("NM_1 // TP53 // tumor protein", "gene_assignment") == "TP53"
     assert geo._clean_symbol("---", "Gene symbol") is None
+
+
+def test_indicator_fields_and_underscores():
+    assert labels.label_one("liver | pcos: n | cardiovascular disease: y", "pcos") == "control"
+    assert labels.label_one("sample | ppd: yes", "postpartum_depression") == "case"
+    assert labels.label_one("ep1_adipose_control | omental adipose tissue", "pcos") == "control"
+    assert labels.label_one("ep1_adipose_pcos | omental adipose tissue", "pcos") == "case"

@@ -1,0 +1,8 @@
+text,label,count
+inf + simv # | huvec cells preincubated with simvastatin and t cruzi infected,case,4
+inf + bz + simv # | huvec cells preincubated with benznidazole/simvastatin and t cruzi infected,case,4
+inf + bz # | huvec cells preincubated with benznidazole and t cruzi infected,case,4
+ctrl # | huvec uninfected cells,control,3
+inf + asa # | huvec cells preincubated with aspirin and t cruzi infected,case,3
+inf + asa + simv # | huvec cells preincubated with aspirin/simvastatin and t cruzi infected,case,3
+inf # | huvec infected cells with t cruzi,case,2

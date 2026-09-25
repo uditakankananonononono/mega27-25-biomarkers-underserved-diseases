@@ -1,0 +1,4 @@
+text,label,count
+"hpcve # trypos # hrs, # | hpcve infected with # trypos for # hrs in rpmi media placenta #",DROP,11
+"ctrl # hrs, # | hpcve uninfected # hrs in rpmi media placenta #",control,3
+"hpcve control # hrs, # | hpcve uninfected #hrs in rpmi media placenta #",control,3

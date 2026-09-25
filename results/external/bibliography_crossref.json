@@ -1,0 +1,114 @@
+{
+  "retrieved_at_utc": "2026-09-25T06:29:40.164451+00:00",
+  "works": [
+    {
+      "doi": "10.3389/fimmu.2025.1511529",
+      "title": "Identification and validation of immune and diagnostic biomarkers for interstitial cystitis/painful bladder syndrome by integrating bioinformatics and machine-learning",
+      "journal": "Frontiers in Immunology",
+      "published": [
+        2025,
+        1,
+        23
+      ],
+      "authors": [
+        "Zhou",
+        "Zhu",
+        "Zhang",
+        "Wu",
+        "Deng",
+        "Jiang",
+        "Peng",
+        "Geng",
+        "Tuo",
+        "Zou"
+      ],
+      "url": "https://doi.org/10.3389/fimmu.2025.1511529",
+      "metadata_api": "https://api.crossref.org/works/10.3389/fimmu.2025.1511529",
+      "type": "journal-article"
+    },
+    {
+      "doi": "10.1371/journal.pone.0161504",
+      "title": "Comparison of Normal and Pre-Eclamptic Placental Gene Expression: A Systematic Review with Meta-Analysis",
+      "journal": "PLOS ONE",
+      "published": [
+        2016,
+        8,
+        25
+      ],
+      "authors": [
+        "Brew",
+        "Sullivan",
+        "Woodman"
+      ],
+      "url": "https://doi.org/10.1371/journal.pone.0161504",
+      "metadata_api": "https://api.crossref.org/works/10.1371/journal.pone.0161504",
+      "type": "journal-article"
+    },
+    {
+      "doi": "10.1371/journal.pone.0068991",
+      "title": "Differentially Expressed Genes in the Pre-Eclamptic Placenta: A Systematic Review and Meta-Analysis",
+      "journal": "PLoS ONE",
+      "published": [
+        2013,
+        7,
+        12
+      ],
+      "authors": [
+        "Kleinrouweler",
+        "van Uitert",
+        "Moerland",
+        "Ris-Stalpers",
+        "van der Post",
+        "Afink"
+      ],
+      "url": "https://doi.org/10.1371/journal.pone.0068991",
+      "metadata_api": "https://api.crossref.org/works/10.1371/journal.pone.0068991",
+      "type": "journal-article"
+    },
+    {
+      "doi": "10.1186/s13048-025-01956-0",
+      "title": "Interpreting the molecular and cellular landscape of PCOS through bulk transcriptomics, single-cell transcriptomics and machine learning",
+      "journal": "Journal of Ovarian Research",
+      "published": [
+        2026,
+        1,
+        7
+      ],
+      "authors": [
+        "Xu",
+        "Zhang",
+        "Guo",
+        "Liu",
+        "Li",
+        "Zhang"
+      ],
+      "url": "https://doi.org/10.1186/s13048-025-01956-0",
+      "metadata_api": "https://api.crossref.org/works/10.1186/s13048-025-01956-0",
+      "type": "journal-article"
+    },
+    {
+      "doi": "10.1038/s41380-025-03068-z",
+      "title": "Differentially expressed transcripts associated with depressive symptoms during pregnancy and postpartum",
+      "journal": "Molecular Psychiatry",
+      "published": [
+        2025,
+        6,
+        5
+      ],
+      "authors": [
+        "Bj\u00f6rvang",
+        "Vrettou",
+        "Bujanda Cundin",
+        "Del Prete",
+        "R\u00fcegg",
+        "Lager",
+        "di Bernardo",
+        "Comasco",
+        "Skalkidou"
+      ],
+      "url": "https://doi.org/10.1038/s41380-025-03068-z",
+      "metadata_api": "https://api.crossref.org/works/10.1038/s41380-025-03068-z",
+      "type": "journal-article"
+    }
+  ]
+}

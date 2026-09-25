@@ -118,3 +118,6 @@ Program gate is record-level: individually fetched/verified/used GSM accessions 
 
 ## State 11:59
 - Paired GCN-vs-RWR internal gene-recovery folds across nine diseases and AUROC/AUPRC saved in `results/gene_fold_uncertainty.csv`; preeclampsia GCN modestly better within-project on both metrics, PPD and PCOS favor RWR; same label graph and repeated folds mean no published benchmark break. Paper adds measured comparison and limitations. Exact-TNR draft remains 18 pages, no overfull/undefined references. Tool count still 34/40; accession count 132/120. A BioStudies accession guess for GSE293353 returned 404 and is not counted or cited.
+
+## State 12:01
+- Crossref registry checked five DOI article titles and publication dates. Corrected the PCOS cited paper's publication date to January 2026 even though its DOI string contains 2025. Metadata with exact DOI URLs is saved in `results/external/bibliography_crossref.json`. Tool ledger 35/40 distinct used science services/libraries. Source-derived paper-tool caption is dynamic, not stale 31. Exact-TNR draft is 19 rendered pages but the final page remains mostly blank, so this is not 19 substantive pages and the 20-page gate is NOT met. No discovery/benchmark endpoint. Further bibliography and substantive paper work needed.

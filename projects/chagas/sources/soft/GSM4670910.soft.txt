@@ -1,0 +1,39 @@
+^SAMPLE = GSM4670910
+!Sample_title = Homo sapiens with Chagas disease treated with Benznidazole [114030076]
+!Sample_geo_accession = GSM4670910
+!Sample_status = Public on Mar 31 2021
+!Sample_submission_date = Jul 14 2020
+!Sample_last_update_date = Mar 31 2021
+!Sample_type = genomic
+!Sample_channel_count = 1
+!Sample_source_name_ch1 = Benzidazole adverse reaction_Yes
+!Sample_organism_ch1 = Homo sapiens
+!Sample_taxid_ch1 = 9606
+!Sample_characteristics_ch1 = subject status: Chagas disease patient treated with Benznidazole
+!Sample_characteristics_ch1 = adverse reaction to benznidazole: Yes
+!Sample_characteristics_ch1 = tissue: buffy-coat of peripheral blood collection
+!Sample_treatment_protocol_ch1 = The patients received Benznidazole (5mg/Kg/day) for 60 days, maximum of 300mg/day.
+!Sample_growth_protocol_ch1 = Cryopreserved buffy-coat of peripheral blood
+!Sample_molecule_ch1 = genomic DNA
+!Sample_extract_protocol_ch1 = Genomic DNA was extracted from cryopreserved buffy-coat obtained from peripheral blood using the Qiagen DNA Mini Kit. DNA quality and quantity was assessed using a Nanodrop Spectrophotometer and agarose gel electrophoresis.
+!Sample_label_ch1 = cy3, cy5
+!Sample_label_protocol_ch1 = As per manufacturer (Affymetrix)
+!Sample_hyb_protocol = DNA was restriction digested, PCR amplified, fragmented, labeled and hybridized to each array according to the manufacturer's instructions.
+!Sample_scan_protocol = The Arrays were then washed using Affymetrix fluidics stations, and scanned using the Gene Chip Scanner 3000.
+!Sample_data_processing = The array image was acquired using Affymetrix GeneChip® Operating Software (GCOS version 1.4). Copy number values for individual SNPs were extracted and converted from CEL files into signal intensities using GTYPE 4.1 and Affymetrix Copy Number Analysis Tool (CNAT 4.0.1) softwares. Genomic Smoothing analysis was performed by using the smoothing window of 0 Mb, and inferred copy number states were derived from a Hidden Markov Model (HMM) based algorithm implemented in CNAT 4.0.1. Circular Binary Segmentation (Ohlsen et al., 2004) was applied using DNAcopy package for R Bioconductor on raw data.
+!Sample_data_processing = affymetrix-algorithm-name = AxiomGT1
+!Sample_data_processing = affymetrix-algorithm-version = 1.0
+!Sample_data_processing = affymetrix-array-type = Axiom_InCor_BB
+!Sample_data_processing = Genotype Call (SNP call): AA, AB, BB, NC, and NoCall; 'Signal' = Summarized signal
+!Sample_platform_id = GPL28868
+!Sample_contact_name = Roberta,,Martins
+!Sample_contact_email = betacristina@gmail.com
+!Sample_contact_institute = FMUSP
+!Sample_contact_address = Av. Dr. Eneas Carvalho de Aguiar, 470
+!Sample_contact_city = Sao Paulo
+!Sample_contact_zip/postal_code = 05403-000
+!Sample_contact_country = Brazil
+!Sample_supplementary_file = ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM4670nnn/GSM4670910/suppl/GSM4670910_lucas_114030076_E12_MV.AxiomGT1.chp.gz
+!Sample_supplementary_file = ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM4670nnn/GSM4670910/suppl/GSM4670910_lucas_114030076_E12_MV.CEL.gz
+!Sample_series_id = GSE154421
+!Sample_data_row_count = 0

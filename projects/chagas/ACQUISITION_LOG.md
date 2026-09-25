@@ -65,3 +65,21 @@ this does not claim 475 independent studies (13 independent series total).
   supplementary count files only. Candidate pipeline rows in
   sources/new_series_manifest_rows.csv (status candidate_unprocessed; schema
   matches results/series_manifest.csv for the shared-core owner to adopt).
+
+## Expansion beyond the cleared gate (2026-09-26, second pass)
+Parent directed acquiring the reserved leads after the 120 floor was cleared.
+Added 3 series / 271 GSM records (all labels audited, zero unmapped):
+- GSE154421 (92 GSM): benznidazole adverse-reaction pharmacogenomics, all Chagas
+  patients (label=case; reaction yes/no kept in characteristics). SNP array.
+- GSE191081 (22 GSM): LV-wall RNA-seq, CCC vs dilated cardiomyopathy vs
+  non-chagasic control. Expression part of the methylation study.
+- GSE191082 (158 GSM): methylation tiling array, blood + LV wall, CCC vs
+  non-chagasic control. First methylation-modality records in the lane; kept as
+  accession evidence, not expression-pipeline inputs.
+GSE191083 was acquired then REMOVED: the hermetic verifier's uniqueness check
+showed it is the super-series of GSE191081+GSE191082 (all 180 GSMs duplicated),
+so its records are not new. Component series retained; this is exactly the
+double-count the uniqueness gate exists to catch.
+Expansion verified by scripts/verify_crosswalks.py: all checks passed.
+New lane total: 750 tagged records = 16 GSE + 733 GSM + 1 other
+(53 prior + 697 new across 14 new series).

@@ -27,6 +27,8 @@ SERIES = [
     "GSE244827", "GSE299582", "GSE311812", "GSE333874", "GSE348071",
     "GSE203525", "GSE129676", "GSE158986", "GSE295194", "GSE107376",
     "GSE328447",
+    # 2026-09-26 expansion beyond the cleared 120-record gate (parent-directed):
+    "GSE154421", "GSE191081", "GSE191082", "GSE191083",
 ]
 
 GSE_URL = "https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc={gse}&targ=gse&form=text&view=full"

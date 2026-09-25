@@ -65,6 +65,16 @@ def rule(row):
         if "uninfected" in t:
             return "control"
         return None
+    if gse == "GSE154421":
+        # every donor is a Chagas patient on benznidazole; reaction yes/no stays in characteristics
+        return "case" if ch.get("subject status", "").startswith("Chagas disease patient") else None
+    if gse in ("GSE191081", "GSE191082", "GSE191083"):
+        v = ch.get("group", "")
+        if v.startswith("chronic chagasic cardiomyopathy"):
+            return "case"
+        if v in ("non-chagasic control", "dilated cardiomyopathy"):
+            return "control"  # DCM is a non-Chagas disease comparator
+        return None
     if gse == "GSE348071":
         v = ch.get("genotype", "")
         if "C/T" in v:

@@ -52,6 +52,12 @@ committed to the repository before the corresponding test was run; preregistrati
 are \texttt{prereg/IC\_P48\_preregistration.md} and \texttt{prereg/IC\_P48\_A2\_amendment.md},
 and every test cites the JSON artifact its numbers come from.
 
+The lane began this phase with 55 IC-tagged records in the shared global
+manifest (1{,}508 records across diseases); the P45--P47 acquisition added 98
+distinct accession records with no collision against any existing entry, moving
+the lane to 153 and the global manifest to 1{,}606. Record units are accession
+records with verified roles, not independent studies, cohorts or people.
+
 \section{Disease background and why the old panel had to be re-audited}
 Interstitial cystitis/bladder pain syndrome (IC/BPS) splits clinically into
 Hunner-lesion disease (HIC), an inflammatory phenotype with ulcerative lesions
@@ -88,6 +94,22 @@ is a unique accession-backed record, not an independent cohort.
 \label{tab:accessions}
 \input{generated/ic_accessions.tex}
 \end{table}
+
+\subsection{Acquisition audit trail}
+The acquisition audit (\texttt{results/ic\_p45\_p47\_acquisition\_audit.json})
+records, per series, the exact verification performed before any record entered
+the manifest. For GSE238208: series SOFT fetched; each of 63 GSM sample
+sections split and stored individually; deposited \texttt{Sample\_description}
+PR identifiers matched 63/63 to named author-FPKM columns; all matched columns
+fully finite across 27{,}339 gene rows. For GSE196156: all 20 GSMs present as
+series-matrix columns, each carrying 464 finite miRNA measurements of 2{,}632
+deposited rows, with the remaining rows empty across all samples - a
+detection-gated miRNA output, uniform across columns, which is why the measured
+set is defined as the 464 fully observed rows rather than imputed. For
+GSE11839: all 12 GSMs present as matrix columns, fully finite across 54{,}675
+rows. New records were checked against the live global manifest for collisions
+before appending, and the four already-credited series (GSE621, GSE11783,
+GSE28242, GSE57560) were explicitly not re-counted.
 
 \subsection{Per-dataset provenance and verification}
 \textbf{GSE238208} (P45; RNA-seq, GPL24676 NovaSeq 6000; iScience 2023
@@ -247,6 +269,22 @@ residual-adjusted score gives Hedges $g=0.454$ (95\% CI $[-0.144,1.073]$),
 permutation $p=.089$: positive direction, CI overlapping zero - COMPATIBLE,
 underpowered at 13 BCG samples, and never reported as pass/fail.
 
+\section{Patient-level complementarity of the two passes (post-hoc, descriptive)}
+The two passing gates measure different biology, and their failures fall on
+different people. Gate 1 is negative for patients 1, 9, 10, 14, 21 and 24;
+Gate A2.1 is negative for patients 4, 6, 11, 13, 16, 17 and 18; the overlap is
+empty. Every one of the 25 patients is therefore positive in at least one of
+the two locked scores, 12 are positive in both, and 13 are positive in exactly
+one. This is a post-hoc description of committed per-fold values
+(Appendix~\ref{app:folds}), not a preregistered endpoint, and it must not be
+quoted as a third gate; what it shows is that the remodeling axis and the
+proliferative residual are not redundant measurements of one program - the
+patients without a remodeling signal are exactly the patients carrying the
+residual signal. A complementary observation in the Gate-1 artifact is that the
+per-patient M2 and M0 paired effects are essentially uncorrelated
+(Pearson $r=-0.078$, $p=0.712$), so the remodeling pass is not shadowing the
+known interferon-$\gamma$ axis patient-by-patient either.
+
 \section{Urinary transfer (exploratory)}
 Two pre-specified exploratory legs test whether the frozen M6 residual program
 has a noninvasive correlate; per the amendment, no thresholds were tuned on
@@ -265,6 +303,22 @@ directions with exact values and cohort caveats; per the owner ruling it is not
 a combined test, not a preregistered replication, and no joint $p$-value is
 computed.
 
+\subsection{Per-sample detail of the two urine legs}
+In GSE28242 the three with-lesion urines score $+0.480$, $+0.199$ and $-0.020$
+(mean $+0.220$); the ten lesion-free and control urines range from $-0.295$ to
+$+0.207$ (mean $-0.066$), and two of the five control subjects score above
+$+0.12$. The group difference of $0.286$ is therefore carried substantially by
+one high with-lesion profile (GSM699147) on a three-donor arm; the one-sided
+permutation $p=.0406$ is the weakest link in the chain and is reported, not
+rounded up. In GSE196156 the regulator composite is below the control mean
+($+0.053$) in six of eight cystitis profiles (range $-0.184$ to $+0.141$), and
+four of ten controls also fall below their own group mean - the direction is
+present but the groups overlap widely, which is exactly what $p=.1144$ says.
+The two BPS profiles average $-0.153$, descriptively at least as far in the
+predicted case direction as the cystitis arm itself; with $n=2$ this is
+anecdote, but it cautions against reading the cystitis-versus-control trend as
+lesion-specific rather than pain-syndrome-wide.
+
 \section{External annotation of the residual program}
 Forty-three external scientific services were genuinely used on this lane (41
 under the most conservative recount of the NCBI e-utils rows), each with
@@ -282,6 +336,43 @@ Open Targets places none of the hubs among the top-50 targets associated with
 interstitial cystitis (EFO\_1000869): the residual program is, as of this
 manuscript's evidence, un-claimed by the existing IC literature - context for
 novelty, not proof of it.
+
+\section{Gene-level anatomy of the M6 regulator set}
+The 87{,}627 validated human miRNA-target pairs behind A2.3b distribute very
+unevenly across the 200 M6 genes (per-gene counts committed as
+\texttt{results/ic\_p48\_a2\_m6\_gene\_mirna\_pairs.csv}; 87{,}632
+row-level records, of which 87{,}627 carry \texttt{hsa-} prefixed miRNA names
+and entered the regulator set). Median coverage is 400.5 pairs per gene. The
+five most-targeted genes - G3BP1 (1{,}289), SRSF1 (1{,}274), DR1 (1{,}250),
+RASAL2 (1{,}220), MAPK14 (1{,}165) - are regulatory and signaling hubs, not the
+canonical mitotic machinery: the core G2/M kinases carry markedly less miRNA
+annotation (CDK1 487, BIRC5 529, AURKA 325, TTK 223, AURKB 203, PLK1 119,
+CCNB2 59, CDC20 35). Two readings follow. First, the composite used in A2.3b
+is dominated by heavily annotated hub genes, so its direction reflects
+regulator coverage of hub biology more than of the mitotic core - one more
+reason the urine legs stay exploratory. Second, the annotation gradient is
+itself evidence about where miRNA regulation of the G2/M program has been
+studied: stress-granule and splicing regulators (G3BP1, SRSF1) and the p38
+kinase MAPK14 are far better miRNA-annotated than the checkpoint kinases, which
+matches their broader multi-pathway roles and explains why DGIdb and Pharos
+flag only MAPK14 as chemically tractable (Tchem) among the hubs.
+
+\section{Published reference points}
+The published expression literature for Hunner-lesion IC is small, which is
+why this lane treats every comparison as landscape rather than benchmark. The
+primary reference point is the source study of GSE238208 \cite{akiyama2023},
+which established the interferon-$\gamma$/Th1-17 polarization of HIC tissue
+and motivated the M0 covariate design here: our framework asks what survives
+after exactly that known axis is excluded, and the M0 novelty control confirms
+the known axis alone does not reproduce the Gate-1 pass. The older array
+literature \cite{keay2003,gamo2009,walker2014} is the basis of the historical
+panel whose corrected re-audit is reported as negative above. The urine-sediment
+study behind GSE28242 \cite{colaco2012} evaluated noninvasive mRNA markers and
+is the direct precedent for the A2.3a transfer leg; its with-lesion arm is the
+same three-donor group that bounds our exploratory signal. No published
+locked-protocol comparator exists for the residual-program question asked here,
+so no same-task benchmark win is claimed or implied; a formal published
+comparator test remains an open gate of the project.
 
 \section{Discussion}
 The biological reading across the locked gates is consistent. Hunner lesions
@@ -313,14 +404,24 @@ positive gates from being reinterpreted as rediscovery of the known Th1/17
 axis \cite{akiyama2023}.
 
 \section{Limitations}
-The HIC cohort is 25 patients from one study; the BCG comparator is 13 samples;
-the urine-sediment case arm is three donors; the urinary-EV arm is eight cases
-with a broad regulator set (262 measured regulators dilute the composite); the
-A2.2 bound is not independent by construction; per-gene annotations are
-correlated with each other through shared evidence bases; and the historical
-sensitivity reuses a previously seen validation series. Nothing here is a
-clinical test, and the exploratory urine legs must not be quoted without their
-threshold failures.
+Each dataset bounds what can be said. GSE238208 is 25 patients from one study
+and one platform; the residual replication is therefore a within-study
+patient-level result, and between-study heterogeneity is unestimated. The BCG
+comparator is 13 samples, which is why the A2.2 specificity bound can only be
+``compatible'' rather than informative. The GSE28242 with-lesion arm is three
+donors, so A2.3a's directional trend has a wide null. The GSE196156 cystitis
+arm is eight profiles, the composite averages 262 measured regulators - a broad
+set that dilutes any per-miRNA signal - and 2{,}168 deposited rows were
+detection-gated out by the locked measured-set definition. The A2.2 bound is
+not independent by construction. Per-gene external annotations are correlated
+through shared evidence bases (UniProt, GO, GEO), so they cannot be summed as
+independent support. The historical sensitivity reuses the previously seen
+GSE57560, so it cannot be described as fresh replication. The cultured-cell
+series GSE11839 is context only. Nothing here is a clinical test, the
+exploratory urine legs must not be quoted without their threshold failures,
+the descriptive urine synthesis must not be quoted as a combined test, and the
+two BPS urine-EV profiles trend in the same direction as the cystitis arm,
+which any future lesion-specificity claim would have to confront.
 
 \clearpage
 \begin{thebibliography}{9}\small
@@ -386,6 +487,40 @@ comparator-induced component: because $b_m$ is a constant within a fold, the
 paired $t$-test of $\Delta_{m,i}-b_m$ is the paired test of $\Delta_{m,i}$
 against the shifted null $b_m$, so BCG contributes a fixed offset, never
 variance, to the patient-level inference.
+
+\subsection{Worked tail computations}
+With $n=25$ paired patients and null per-patient success probability $1/2$,
+the exact one-sided Gate-1 tail is
+\begin{equation}
+P(X\geq19\mid 25)=2^{-25}\sum_{j=19}^{25}\binom{25}{j}
+=\frac{184{,}756+53{,}130+23{,}000+5{,}200+2{,}300+126+25+1\text{ terms}}{33{,}554{,}432}
+=0.00732.
+\end{equation}
+The A2.1 tail is $P(X\geq18\mid25)=0.02164$; both are below the locked
+$.025$ bar, while $P(X\geq17\mid25)=0.0539$ would not have been - so the
+locked threshold $k=18$ is the smallest passing count, and the M0-only control
+(14/25, $p=0.345$) fails by a wide margin. These integers, not asymptotics,
+are the test.
+\subsection{Why the permutation null is the right null here}
+The LOPO sign test assumes only that, under no lesion program, the sign of
+each held-out $D_i$ is an independent fair coin; pairing removes all
+between-patient expression level differences by construction. For the
+two-sample permutation tests (Gate 2, A2.2, both urine legs), the null is
+exchangeability of group labels; the BCG block is a fixed comparator in the
+amendment design, so in A2.2 only the spread of the bound is informative, and
+the amendment locks that reading before computation.
+\subsection{The residual as a fixed offset}
+Because $b_m$ is constant within a fold, testing $\Delta_{m,i}-b_m>0$ over
+patients is the location-shifted paired test of $\Delta_{m,i}$ against $b_m$:
+\begin{equation}
+\operatorname{Var}_i(\Delta_{m,i}-b_m)=\operatorname{Var}_i(\Delta_{m,i}),
+\qquad
+t=\frac{\overline{\Delta_m}-b_m}{s_{\Delta_m}/\sqrt{n_T}},
+\end{equation}
+so the BCG block contributes a fixed offset to the numerator and nothing to
+the variance. This is the module-space analogue of partialling out a
+comparator-induced component, and it is why A2.2 cannot recycle the same block
+as an independent validation set.
 
 \section{Per-fold held-out values}
 \label{app:folds}

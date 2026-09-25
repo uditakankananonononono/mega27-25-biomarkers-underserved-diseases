@@ -56,3 +56,9 @@ def test_indicator_fields_and_underscores():
     assert labels.label_one("sample | ppd: yes", "postpartum_depression") == "case"
     assert labels.label_one("ep1_adipose_control | omental adipose tissue", "pcos") == "control"
     assert labels.label_one("ep1_adipose_pcos | omental adipose tissue", "pcos") == "case"
+
+
+def test_conflicting_disease_indicators_abstain_in_either_order():
+    for text in ("pcos: n | pcos: y", "pcos: yes | pcos: no"):
+        assert labels.label_one(text, "pcos") is None
+    assert labels.label_one("ppd: yes | ppd: yes", "postpartum_depression") == "case"

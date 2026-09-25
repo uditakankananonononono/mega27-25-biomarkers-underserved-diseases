@@ -68,14 +68,19 @@ def label_one(text: str, disease: str) -> str | None:
         return None
     term = TERMS[disease]
     # explicit indicator fields, e.g. "pcos: n" / "ppd: yes"
+    indicator_votes = set()
     for part in text.split("|"):
         if ":" in part:
             k, v = [x.strip() for x in part.split(":", 1)]
             if re.search(term, k):
                 if re.fullmatch(YES, v):
-                    return "case"
+                    indicator_votes.add("case")
                 if re.fullmatch(NO, v):
-                    return "control"
+                    indicator_votes.add("control")
+    if len(indicator_votes) > 1:
+        return None  # contradictory disease indicators must not be selected by field order
+    if indicator_votes:
+        return next(iter(indicator_votes))
     neg = rf"\b(non[- ]?|no |without |not |negative for )({term})"
     t2 = re.sub(neg, " __ctrl__ ", text)
     ctrl = bool(re.search(GENERIC_CONTROL, t2)) or "__ctrl__" in t2

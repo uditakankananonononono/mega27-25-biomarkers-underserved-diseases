@@ -57,3 +57,7 @@ Prior: 54 (17 GSE + 36 GSM + 1 other). Added: 276 (5 GSE + 271 GSM).
 New total: 330 tagged records = 22 GSE + 307 GSM + 1 other. Floor 120: PASS.
 These are record units nested within 22 independent series, not 330
 independent studies.
+
+## Post-commit validation
+Live re-verification of 14 randomly sampled GSMs (seed 25, ~5% of 271):
+14/14 refetched bytes match recorded sha256, 0 mismatches.

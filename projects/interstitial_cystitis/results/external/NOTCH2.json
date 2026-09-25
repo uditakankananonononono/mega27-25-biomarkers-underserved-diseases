@@ -1,0 +1,201 @@
+{
+  "gene": "NOTCH2",
+  "module": "M6_cell_state_g2m",
+  "prereg": "projects/interstitial_cystitis/prereg/ic_p48_module_genesets.json",
+  "retrieved_at_utc": "2026-09-25T21:22:55.740728+00:00",
+  "sources": {
+    "ensembl": {
+      "url": "https://rest.ensembl.org/lookup/symbol/homo_sapiens/NOTCH2?content-type=application/json",
+      "data": {
+        "id": "ENSG00000134250",
+        "display_name": "NOTCH2",
+        "description": "notch receptor 2 [Source:HGNC Symbol;Acc:HGNC:7882]",
+        "biotype": "protein_coding",
+        "seq_region_name": "1"
+      }
+    },
+    "uniprot": {
+      "url": "https://rest.uniprot.org/uniprotkb/search?query=gene_exact%3ANOTCH2%20AND%20organism_id%3A9606%20AND%20reviewed%3Atrue&size=3&format=json",
+      "data": [
+        {
+          "primaryAccession": "Q04721",
+          "uniProtkbId": "NOTC2_HUMAN",
+          "entryType": "UniProtKB reviewed (Swiss-Prot)"
+        }
+      ]
+    },
+    "europe_pmc": {
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=NOTCH2%20AND%20%22interstitial%20cystitis%22&format=json&pageSize=10",
+      "data": {
+        "hit_count": 13,
+        "papers": [
+          {
+            "id": "42558631",
+            "title": "Mechanistic insights into the lncRNA-Notch signaling axis in tumors.",
+            "doi": "10.3389/fcell.2026.1903203",
+            "pubYear": "2026"
+          },
+          {
+            "id": "38148075",
+            "title": "CCL2- and Notch2-mediated Central Sensitization in a Rat Chronic Pelvic Pain Model.",
+            "doi": "10.21873/invivo.13427",
+            "pubYear": "2024"
+          },
+          {
+            "id": "39252992",
+            "title": "Adult zymosan re-exposure exacerbates the molecular alterations in the brainstem rostral ventromedial medulla of rats with early life zymosan-induced cystitis.",
+            "doi": "10.1016/j.ynpai.2024.100160",
+            "pubYear": "2024"
+          },
+          {
+            "id": "38191820",
+            "title": "Circulating exosomal miR-16-5p and let-7e-5p are associated with bladder fibrosis of diabetic cystopathy.",
+            "doi": "10.1038/s41598-024-51451-7",
+            "pubYear": "2024"
+          },
+          {
+            "id": "40180907",
+            "title": "Wnt signaling pathways in biology and disease: mechanisms and therapeutic advances.",
+            "doi": "10.1038/s41392-025-02142-w",
+            "pubYear": "2025"
+          },
+          {
+            "id": "37446908",
+            "title": "Epigallocatechin-3-Gallate Therapeutic Potential in Cancer: Mechanism of Action and Clinical Implications.",
+            "doi": "10.3390/molecules28135246",
+            "pubYear": "2023"
+          },
+          {
+            "id": "32438606",
+            "title": "Exosomal Long Non-Coding RNAs in Lung Diseases.",
+            "doi": "10.3390/ijms21103580",
+            "pubYear": "2020"
+          },
+          {
+            "id": "25524549",
+            "title": "Tumor necrosis factor superfamily in innate immunity and inflammation.",
+            "doi": "10.1101/cshperspect.a016279",
+            "pubYear": "2014"
+          },
+          {
+            "id": "PMC7130291",
+            "title": "Subject Index",
+            "doi": null,
+            "pubYear": "2007"
+          },
+          {
+            "id": "25769533",
+            "title": "Abstracts of the 62nd Annual Scientific Meeting, March 26-28, 2015, San Francisco, California.",
+            "doi": "10.1177/1933719115579631",
+            "pubYear": "2015"
+          }
+        ]
+      }
+    },
+    "mygene": {
+      "url": "https://mygene.info/v3/query?q=symbol%3ANOTCH2&species=human&size=3",
+      "data": {
+        "total": 1,
+        "hits": [
+          {
+            "_id": "4853",
+            "symbol": "NOTCH2",
+            "name": "notch receptor 2",
+            "taxid": 9606
+          }
+        ]
+      }
+    },
+    "chembl": {
+      "url": "https://www.ebi.ac.uk/chembl/api/data/target/search.json?q=NOTCH2&limit=20",
+      "data": {
+        "total": 2,
+        "human_targets": [
+          {
+            "target_chembl_id": "CHEMBL3407320",
+            "pref_name": "Neurogenic locus notch homolog protein 2",
+            "organism": "Homo sapiens"
+          },
+          {
+            "target_chembl_id": "CHEMBL4524007",
+            "pref_name": "Notch receptor",
+            "organism": "Homo sapiens"
+          }
+        ]
+      }
+    },
+    "hgnc_rest": {
+      "url": "https://rest.genenames.org/fetch/symbol/NOTCH2",
+      "data": [
+        {
+          "symbol": "NOTCH2",
+          "hgnc_id": "HGNC:7882",
+          "entrez_id": "4853",
+          "ensembl_gene_id": "ENSG00000134250",
+          "status": "Approved"
+        }
+      ]
+    },
+    "gtex_reference": {
+      "url": "https://gtexportal.org/api/v2/reference/gene?geneId=NOTCH2",
+      "data": [
+        {
+          "geneSymbol": "NOTCH2",
+          "geneId": null,
+          "gencodeId": "ENSG00000134250.19",
+          "entrezGeneId": 4853
+        }
+      ]
+    },
+    "reactome": {
+      "url": "https://reactome.org/ContentService/data/mapping/UniProt/Q04721/pathways",
+      "data": [
+        {
+          "stId": "R-HSA-1912399",
+          "displayName": "Pre-NOTCH Processing in the Endoplasmic Reticulum",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-1912408",
+          "displayName": "Pre-NOTCH Transcription and Translation",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-1912420",
+          "displayName": "Pre-NOTCH Processing in Golgi",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-2197563",
+          "displayName": "NOTCH2 intracellular domain regulates transcription",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-2979096",
+          "displayName": "NOTCH2 Activation and Transmission of Signal to the Nucleus",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-350054",
+          "displayName": "Notch-HLH transcription pathway",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-5083630",
+          "displayName": "Defective LFNG causes SCDO3",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-9013695",
+          "displayName": "NOTCH4 Intracellular Domain Regulates Transcription",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-9976102",
+          "displayName": "Differentiation of naive CD4+ T cells to T helper 2 cells (Th2 cells)",
+          "speciesName": "Homo sapiens"
+        }
+      ]
+    }
+  }
+}

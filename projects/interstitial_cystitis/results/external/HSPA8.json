@@ -1,0 +1,220 @@
+{
+  "gene": "HSPA8",
+  "module": "M6_cell_state_g2m",
+  "prereg": "projects/interstitial_cystitis/prereg/ic_p48_module_genesets.json",
+  "retrieved_at_utc": "2026-09-25T21:23:28.175789+00:00",
+  "sources": {
+    "ensembl": {
+      "url": "https://rest.ensembl.org/lookup/symbol/homo_sapiens/HSPA8?content-type=application/json",
+      "data": {
+        "id": "ENSG00000109971",
+        "display_name": "HSPA8",
+        "description": "heat shock protein family A (Hsp70) member 8 [Source:HGNC Symbol;Acc:HGNC:5241]",
+        "biotype": "protein_coding",
+        "seq_region_name": "11"
+      }
+    },
+    "uniprot": {
+      "url": "https://rest.uniprot.org/uniprotkb/search?query=gene_exact%3AHSPA8%20AND%20organism_id%3A9606%20AND%20reviewed%3Atrue&size=3&format=json",
+      "data": [
+        {
+          "primaryAccession": "P11142",
+          "uniProtkbId": "HSP7C_HUMAN",
+          "entryType": "UniProtKB reviewed (Swiss-Prot)"
+        }
+      ]
+    },
+    "europe_pmc": {
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=HSPA8%20AND%20%22interstitial%20cystitis%22&format=json&pageSize=10",
+      "data": {
+        "hit_count": 4,
+        "papers": [
+          {
+            "id": "42121909",
+            "title": "Mosaic: Single-Cell Atlas of Stress.",
+            "doi": "10.3390/cells15090807",
+            "pubYear": "2026"
+          },
+          {
+            "id": "39644167",
+            "title": "Polyploid superficial uroepithelial bladder barrier cells express features of cellular senescence across the lifespan and are insensitive to senolytics.",
+            "doi": "10.1111/acel.14399",
+            "pubYear": "2025"
+          },
+          {
+            "id": "PMC5672695",
+            "title": "Abstract",
+            "doi": null,
+            "pubYear": "2017"
+          },
+          {
+            "id": "16733262",
+            "title": "Tumor-associated antigen arrays for the serological diagnosis of cancer.",
+            "doi": "10.1074/mcp.r600010-mcp200",
+            "pubYear": "2006"
+          }
+        ]
+      }
+    },
+    "mygene": {
+      "url": "https://mygene.info/v3/query?q=symbol%3AHSPA8&species=human&size=3",
+      "data": {
+        "total": 1,
+        "hits": [
+          {
+            "_id": "3312",
+            "symbol": "HSPA8",
+            "name": "heat shock protein family A (Hsp70) member 8",
+            "taxid": 9606
+          }
+        ]
+      }
+    },
+    "chembl": {
+      "url": "https://www.ebi.ac.uk/chembl/api/data/target/search.json?q=HSPA8&limit=20",
+      "data": {
+        "total": 3,
+        "human_targets": [
+          {
+            "target_chembl_id": "CHEMBL1275223",
+            "pref_name": "Heat shock cognate 71 kDa protein",
+            "organism": "Homo sapiens"
+          }
+        ]
+      }
+    },
+    "hgnc_rest": {
+      "url": "https://rest.genenames.org/fetch/symbol/HSPA8",
+      "data": [
+        {
+          "symbol": "HSPA8",
+          "hgnc_id": "HGNC:5241",
+          "entrez_id": "3312",
+          "ensembl_gene_id": "ENSG00000109971",
+          "status": "Approved"
+        }
+      ]
+    },
+    "gtex_reference": {
+      "url": "https://gtexportal.org/api/v2/reference/gene?geneId=HSPA8",
+      "data": [
+        {
+          "geneSymbol": "HSPA8",
+          "geneId": null,
+          "gencodeId": "ENSG00000109971.13",
+          "entrezGeneId": 3312
+        }
+      ]
+    },
+    "reactome": {
+      "url": "https://reactome.org/ContentService/data/mapping/UniProt/P11142/pathways",
+      "data": [
+        {
+          "stId": "R-HSA-3371453",
+          "displayName": "Regulation of HSF1-mediated heat shock response",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-3371497",
+          "displayName": "HSP90 chaperone cycle for steroid hormone receptors (SHR) in the presence of ligand",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-3371568",
+          "displayName": "Attenuation phase",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-3371571",
+          "displayName": "HSF1-dependent transactivation",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-432720",
+          "displayName": "Lysosome Vesicle Biogenesis",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-432722",
+          "displayName": "Golgi Associated Vesicle Biogenesis",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-447041",
+          "displayName": "CHL1 interactions",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-450408",
+          "displayName": "AUF1 (hnRNP D0) binds and destabilizes mRNA",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-6785807",
+          "displayName": "Interleukin-4 and Interleukin-13 signaling",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-6798695",
+          "displayName": "Neutrophil degranulation",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-72163",
+          "displayName": "mRNA Splicing - Major Pathway",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-8856828",
+          "displayName": "Clathrin-mediated endocytosis",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-8876725",
+          "displayName": "Protein methylation",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-888590",
+          "displayName": "GABA synthesis, release, reuptake and degradation",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-9613354",
+          "displayName": "Lipophagy",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-9613829",
+          "displayName": "Chaperone Mediated Autophagy",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-9615710",
+          "displayName": "Late endosomal microautophagy",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-9828642",
+          "displayName": "Respiratory syncytial virus genome transcription",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-9833482",
+          "displayName": "PKR-mediated signaling",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-9918481",
+          "displayName": "Dengue Virus-Host Interactions",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-9918487",
+          "displayName": "Dengue Virus Genome Translation and Replication",
+          "speciesName": "Homo sapiens"
+        }
+      ]
+    }
+  }
+}

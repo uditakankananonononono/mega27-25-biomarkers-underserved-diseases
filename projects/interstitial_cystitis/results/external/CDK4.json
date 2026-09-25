@@ -1,0 +1,321 @@
+{
+  "gene": "CDK4",
+  "module": "M6_cell_state_g2m",
+  "prereg": "projects/interstitial_cystitis/prereg/ic_p48_module_genesets.json",
+  "retrieved_at_utc": "2026-09-25T20:32:51.227971+00:00",
+  "sources": {
+    "ensembl": {
+      "url": "https://rest.ensembl.org/lookup/symbol/homo_sapiens/CDK4?content-type=application/json",
+      "data": {
+        "id": "ENSG00000135446",
+        "display_name": "CDK4",
+        "description": "cyclin dependent kinase 4 [Source:HGNC Symbol;Acc:HGNC:1773]",
+        "biotype": "protein_coding",
+        "seq_region_name": "12"
+      }
+    },
+    "uniprot": {
+      "url": "https://rest.uniprot.org/uniprotkb/search?query=gene_exact%3ACDK4%20AND%20organism_id%3A9606%20AND%20reviewed%3Atrue&size=3&format=json",
+      "data": [
+        {
+          "primaryAccession": "P11802",
+          "uniProtkbId": "CDK4_HUMAN",
+          "entryType": "UniProtKB reviewed (Swiss-Prot)"
+        }
+      ]
+    },
+    "europe_pmc": {
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=CDK4%20AND%20%22interstitial%20cystitis%22&format=json&pageSize=10",
+      "data": {
+        "hit_count": 25,
+        "papers": [
+          {
+            "id": "PMC11427005",
+            "title": "NSAUA 2024 Annual Meeting Abstracts – Basic Science",
+            "doi": null,
+            "pubYear": "2024"
+          },
+          {
+            "id": "41961104",
+            "title": "The hidden players: LncRNA-Encoded micropeptides in cancer hallmarks.",
+            "doi": "10.1007/s00018-026-06151-y",
+            "pubYear": "2026"
+          },
+          {
+            "id": "36944905",
+            "title": "A network map of cytoskeleton-associated protein 4 (CKAP4) mediated signaling pathway in cancer.",
+            "doi": "10.1007/s12079-023-00739-w",
+            "pubYear": "2023"
+          },
+          {
+            "id": "36613500",
+            "title": "Changes in the Expression and Functional Activities of C-X-C Motif Chemokine Ligand 13 (<i>CXCL13</i>) in Hyperplastic Prostate.",
+            "doi": "10.3390/ijms24010056",
+            "pubYear": "2022"
+          },
+          {
+            "id": "41625014",
+            "title": "Abstracts selected for poster presentation [listed in alphabetical order by presenter].",
+            "doi": "10.1177/23523735251412131",
+            "pubYear": "2026"
+          },
+          {
+            "id": "35967285",
+            "title": "NAT10 promotes cell proliferation by acetylating <i>CEP170</i> mRNA to enhance translation efficiency in multiple myeloma.",
+            "doi": "10.1016/j.apsb.2022.01.015",
+            "pubYear": "2022"
+          },
+          {
+            "id": "39544361",
+            "title": "Chemical approaches targeting the hurdles of hepatocyte transplantation: mechanisms, applications, and advances.",
+            "doi": "10.3389/fcell.2024.1480226",
+            "pubYear": "2024"
+          },
+          {
+            "id": "34127844",
+            "title": "PI3K inhibitors are finally coming of age.",
+            "doi": "10.1038/s41573-021-00209-1",
+            "pubYear": "2021"
+          },
+          {
+            "id": "35406634",
+            "title": "The Promising Therapeutic and Preventive Properties of Anthocyanidins/Anthocyanins on Prostate Cancer.",
+            "doi": "10.3390/cells11071070",
+            "pubYear": "2022"
+          },
+          {
+            "id": "34800164",
+            "title": "Pharmacological blockage of the AHR-CYP1A1 axis: a call for in vivo evidence.",
+            "doi": "10.1007/s00109-021-02163-2",
+            "pubYear": "2022"
+          }
+        ]
+      }
+    },
+    "mygene": {
+      "url": "https://mygene.info/v3/query?q=symbol%3ACDK4&species=human&size=3",
+      "data": {
+        "total": 1,
+        "hits": [
+          {
+            "_id": "1019",
+            "symbol": "CDK4",
+            "name": "cyclin dependent kinase 4",
+            "taxid": 9606
+          }
+        ]
+      }
+    },
+    "chembl": {
+      "url": "https://www.ebi.ac.uk/chembl/api/data/target/search.json?q=CDK4&limit=20",
+      "data": {
+        "total": 24,
+        "human_targets": [
+          {
+            "target_chembl_id": "CHEMBL3038517",
+            "pref_name": "CDK2/CDK4",
+            "organism": "Homo sapiens"
+          },
+          {
+            "target_chembl_id": "CHEMBL4106184",
+            "pref_name": "CDK4/CDK9",
+            "organism": "Homo sapiens"
+          },
+          {
+            "target_chembl_id": "CHEMBL4523963",
+            "pref_name": "CDK4/CDK1",
+            "organism": "Homo sapiens"
+          },
+          {
+            "target_chembl_id": "CHEMBL3038472",
+            "pref_name": "CDK4/Cyclin D3",
+            "organism": "Homo sapiens"
+          },
+          {
+            "target_chembl_id": "CHEMBL331",
+            "pref_name": "Cyclin-dependent kinase 4",
+            "organism": "Homo sapiens"
+          },
+          {
+            "target_chembl_id": "CHEMBL3885548",
+            "pref_name": "Cyclin-A1/Cyclin-dependent kinase 4",
+            "organism": "Homo sapiens"
+          },
+          {
+            "target_chembl_id": "CHEMBL4523686",
+            "pref_name": "Protein cereblon/Cyclin-dependent kinase 4",
+            "organism": "Homo sapiens"
+          },
+          {
+            "target_chembl_id": "CHEMBL3301385",
+            "pref_name": "Cyclin-dependent kinase 4/cyclin D2",
+            "organism": "Homo sapiens"
+          },
+          {
+            "target_chembl_id": "CHEMBL3885554",
+            "pref_name": "Cyclin-dependent kinase 4/G1/S-specific cyclin-E1",
+            "organism": "Homo sapiens"
+          },
+          {
+            "target_chembl_id": "CHEMBL4523715",
+            "pref_name": "Protein cereblon/G1/S-specific cyclin-E1/Cyclin-dependent kinase 4",
+            "organism": "Homo sapiens"
+          },
+          {
+            "target_chembl_id": "CHEMBL4523732",
+            "pref_name": "von Hippel-Lindau disease tumor suppressor/Cyclin-dependent kinase 4",
+            "organism": "Homo sapiens"
+          },
+          {
+            "target_chembl_id": "CHEMBL2111326",
+            "pref_name": "Cyclin-dependent kinase 2 and 4 (CDK2 and CDK4)",
+            "organism": "Homo sapiens"
+          },
+          {
+            "target_chembl_id": "CHEMBL3885553",
+            "pref_name": "Cyclin-dependent kinase 4/6",
+            "organism": "Homo sapiens"
+          },
+          {
+            "target_chembl_id": "CHEMBL1907601",
+            "pref_name": "Cyclin-dependent kinase 4/cyclin D1",
+            "organism": "Homo sapiens"
+          },
+          {
+            "target_chembl_id": "CHEMBL4888444",
+            "pref_name": "Cyclin-dependent kinase 2/4/6",
+            "organism": "Homo sapiens"
+          },
+          {
+            "target_chembl_id": "CHEMBL2095942",
+            "pref_name": "Cyclin-dependent kinase 4/cyclin D",
+            "organism": "Homo sapiens"
+          }
+        ]
+      }
+    },
+    "hgnc_rest": {
+      "url": "https://rest.genenames.org/fetch/symbol/CDK4",
+      "data": [
+        {
+          "symbol": "CDK4",
+          "hgnc_id": "HGNC:1773",
+          "entrez_id": "1019",
+          "ensembl_gene_id": "ENSG00000135446",
+          "status": "Approved"
+        }
+      ]
+    },
+    "gtex_reference": {
+      "url": "https://gtexportal.org/api/v2/reference/gene?geneId=CDK4",
+      "data": [
+        {
+          "geneSymbol": "CDK4",
+          "geneId": null,
+          "gencodeId": "ENSG00000135446.16",
+          "entrezGeneId": 1019
+        }
+      ]
+    },
+    "reactome": {
+      "url": "https://reactome.org/ContentService/data/mapping/UniProt/P11802/pathways",
+      "data": [
+        {
+          "stId": "R-HSA-187577",
+          "displayName": "SCF(Skp2)-mediated degradation of p27/p21",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-2559580",
+          "displayName": "Oxidative Stress Induced Senescence",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-2559582",
+          "displayName": "Senescence-Associated Secretory Phenotype (SASP)",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-2559585",
+          "displayName": "Oncogene Induced Senescence",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-3214858",
+          "displayName": "RMTs methylate histone arginines",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-381340",
+          "displayName": "Transcriptional regulation of white adipocyte differentiation",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-69231",
+          "displayName": "Cyclin D associated events in G1",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-75815",
+          "displayName": "Ubiquitin-dependent degradation of Cyclin D",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-8849470",
+          "displayName": "PTK6 Regulates Cell Cycle",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-8878166",
+          "displayName": "Transcriptional regulation by RUNX2",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-912446",
+          "displayName": "Meiotic recombination",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-9616222",
+          "displayName": "Transcriptional regulation of granulopoiesis",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-9630791",
+          "displayName": "Evasion of Oncogene Induced Senescence Due to Defective p16INK4A binding to CDK4",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-9630794",
+          "displayName": "Evasion of Oncogene Induced Senescence Due to Defective p16INK4A binding to CDK4 and CDK6",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-9632697",
+          "displayName": "Evasion of Oxidative Stress Induced Senescence Due to Defective p16INK4A binding to CDK4",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-9632700",
+          "displayName": "Evasion of Oxidative Stress Induced Senescence Due to Defective p16INK4A binding to CDK4 and CDK6",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-9661069",
+          "displayName": "Defective binding of RB1 mutants to E2F1,(E2F2, E2F3)",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-9754119",
+          "displayName": "Drug-mediated inhibition of CDK4/CDK6 activity",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-9929491",
+          "displayName": "SPOP-mediated proteasomal degradation of PD-L1(CD274)",
+          "speciesName": "Homo sapiens"
+        }
+      ]
+    }
+  }
+}

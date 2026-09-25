@@ -34,11 +34,20 @@ preregistered M6 program, not independent replication.
 | 23 | OpenAlex | "hub gene + interstitial cystitis" literature metadata | same |
 | 24 | Human Protein Atlas | Per-gene tissue/protein context (via Ensembl IDs) | same |
 
-Status: 24 genuinely used services with repo-resident evidence. Not counted:
+| 25 | DGIdb (GraphQL) | Drug-gene interactions per hub: MAPK14 druggable (105 interactions incl. p38 inhibitors); other hubs 0 - honest druggability gradient | results/external/tertiary_annotations_m6.json |
+| 26 | GWAS Catalog REST v2 | Mapped-gene associations per hub (verified `mapped_gene=` filter with a bogus-gene control; traits recorded per gene) | same |
+| 27 | NCBI PubMed eutils | Programmatic "interstitial cystitis" Title/Abstract co-mention counts per hub: all 0 - honest null (IC abstracts do not co-mention these hubs) | same |
+| 28 | Pharos (NIH/NCATS GraphQL) | Target development levels: MAPK14 Tchem/Kinase; G3BP1, DR1, RASAL2 Tbio; SRSF1 Tbio | same |
+| 29 | cBioPortal API | Hub mutation records in TCGA bladder (blca_tcga_pan_can_atlas_2018): RASAL2 16, SRSF1 6, MAPK14 4, G3BP1 2, DR1 1 | same |
+| 30 | WikiPathways JSON API | Human pathway search per hub (e.g. MAPK14 in 1,131 human pathway text hits) | same |
+| 31 | PGS Catalog REST | Trait search "cystitis"/"bladder pain syndrome": 0 PGS traits - honest empty | same |
+
+Status: 31 genuinely used services with repo-resident evidence. Not counted:
 Git/GitHub/SSH/curl (infrastructure), Python/numpy/pandas/scipy (already counted
 in the program-wide audit, not re-claimed here as IC-lane evidence), GEO web
 pages vs GEO FTP (one service), Enrichr's two libraries (one service, two rows
 above kept for provenance of the two distinct locked gene sets - counted once).
-Next candidates, genuine use only: DGIdb (druggability of M6 hubs), GWAS Catalog
-(pelvic pain/urinary traits), PubMed eutils (programmatic IC co-mention counts),
-DisGeNET, ClinGen, DepMap (proliferation context), Expression Atlas, Bgee.
+Next candidates, genuine use only: Monarch Initiative (disease-gene associations),
+UCSC Genome Browser API (locus context), ClinVar eutils (hub variant counts),
+DepMap (dependency context), Expression Atlas (baseline bladder expression),
+Signor (causal signaling), CORUM (complexes), HMDB (bladder metabolomics refs).

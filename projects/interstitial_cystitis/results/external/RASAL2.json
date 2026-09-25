@@ -1,0 +1,99 @@
+{
+  "gene": "RASAL2",
+  "module": "M6_cell_state_g2m",
+  "prereg": "projects/interstitial_cystitis/prereg/ic_p48_module_genesets.json",
+  "retrieved_at_utc": "2026-09-25T20:33:10.115074+00:00",
+  "sources": {
+    "ensembl": {
+      "url": "https://rest.ensembl.org/lookup/symbol/homo_sapiens/RASAL2?content-type=application/json",
+      "data": {
+        "id": "ENSG00000075391",
+        "display_name": "RASAL2",
+        "description": "RAS protein activator like 2 [Source:HGNC Symbol;Acc:HGNC:9874]",
+        "biotype": "protein_coding",
+        "seq_region_name": "1"
+      }
+    },
+    "uniprot": {
+      "url": "https://rest.uniprot.org/uniprotkb/search?query=gene_exact%3ARASAL2%20AND%20organism_id%3A9606%20AND%20reviewed%3Atrue&size=3&format=json",
+      "data": [
+        {
+          "primaryAccession": "Q9UJF2",
+          "uniProtkbId": "NGAP_HUMAN",
+          "entryType": "UniProtKB reviewed (Swiss-Prot)"
+        }
+      ]
+    },
+    "europe_pmc": {
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=RASAL2%20AND%20%22interstitial%20cystitis%22&format=json&pageSize=10",
+      "data": {
+        "hit_count": 0,
+        "papers": []
+      }
+    },
+    "mygene": {
+      "url": "https://mygene.info/v3/query?q=symbol%3ARASAL2&species=human&size=3",
+      "data": {
+        "total": 1,
+        "hits": [
+          {
+            "_id": "9462",
+            "symbol": "RASAL2",
+            "name": "RAS protein activator like 2",
+            "taxid": 9606
+          }
+        ]
+      }
+    },
+    "chembl": {
+      "url": "https://www.ebi.ac.uk/chembl/api/data/target/search.json?q=RASAL2&limit=20",
+      "data": {
+        "total": 0,
+        "human_targets": []
+      }
+    },
+    "hgnc_rest": {
+      "url": "https://rest.genenames.org/fetch/symbol/RASAL2",
+      "data": [
+        {
+          "symbol": "RASAL2",
+          "hgnc_id": "HGNC:9874",
+          "entrez_id": "9462",
+          "ensembl_gene_id": "ENSG00000075391",
+          "status": "Approved"
+        }
+      ]
+    },
+    "gtex_reference": {
+      "url": "https://gtexportal.org/api/v2/reference/gene?geneId=RASAL2",
+      "data": [
+        {
+          "geneSymbol": "RASAL2",
+          "geneId": null,
+          "gencodeId": "ENSG00000075391.16",
+          "entrezGeneId": 9462
+        }
+      ]
+    },
+    "reactome": {
+      "url": "https://reactome.org/ContentService/data/mapping/UniProt/Q9UJF2/pathways",
+      "data": [
+        {
+          "stId": "R-HSA-5658442",
+          "displayName": "Regulation of RAS by GAPs",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-9696264",
+          "displayName": "RND3 GTPase cycle",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-9696273",
+          "displayName": "RND1 GTPase cycle",
+          "speciesName": "Homo sapiens"
+        }
+      ]
+    }
+  }
+}

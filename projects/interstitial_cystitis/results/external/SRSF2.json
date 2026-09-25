@@ -1,0 +1,138 @@
+{
+  "gene": "SRSF2",
+  "module": "M6_cell_state_g2m",
+  "prereg": "projects/interstitial_cystitis/prereg/ic_p48_module_genesets.json",
+  "retrieved_at_utc": "2026-09-25T21:24:01.096585+00:00",
+  "sources": {
+    "ensembl": {
+      "url": "https://rest.ensembl.org/lookup/symbol/homo_sapiens/SRSF2?content-type=application/json",
+      "data": {
+        "id": "ENSG00000161547",
+        "display_name": "SRSF2",
+        "description": "serine and arginine rich splicing factor 2 [Source:HGNC Symbol;Acc:HGNC:10783]",
+        "biotype": "protein_coding",
+        "seq_region_name": "17"
+      }
+    },
+    "uniprot": {
+      "url": "https://rest.uniprot.org/uniprotkb/search?query=gene_exact%3ASRSF2%20AND%20organism_id%3A9606%20AND%20reviewed%3Atrue&size=3&format=json",
+      "data": [
+        {
+          "primaryAccession": "Q01130",
+          "uniProtkbId": "SRSF2_HUMAN",
+          "entryType": "UniProtKB reviewed (Swiss-Prot)"
+        }
+      ]
+    },
+    "europe_pmc": {
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=SRSF2%20AND%20%22interstitial%20cystitis%22&format=json&pageSize=10",
+      "data": {
+        "hit_count": 2,
+        "papers": [
+          {
+            "id": "PMC10902613",
+            "title": "Abstracts",
+            "doi": null,
+            "pubYear": "2024"
+          },
+          {
+            "id": "25769533",
+            "title": "Abstracts of the 62nd Annual Scientific Meeting, March 26-28, 2015, San Francisco, California.",
+            "doi": "10.1177/1933719115579631",
+            "pubYear": "2015"
+          }
+        ]
+      }
+    },
+    "mygene": {
+      "url": "https://mygene.info/v3/query?q=symbol%3ASRSF2&species=human&size=3",
+      "data": {
+        "total": 1,
+        "hits": [
+          {
+            "_id": "6427",
+            "symbol": "SRSF2",
+            "name": "serine and arginine rich splicing factor 2",
+            "taxid": 9606
+          }
+        ]
+      }
+    },
+    "chembl": {
+      "url": "https://www.ebi.ac.uk/chembl/api/data/target/search.json?q=SRSF2&limit=20",
+      "data": {
+        "total": 1,
+        "human_targets": [
+          {
+            "target_chembl_id": "CHEMBL5725035",
+            "pref_name": "Serine/arginine-rich splicing factor 2",
+            "organism": "Homo sapiens"
+          }
+        ]
+      }
+    },
+    "hgnc_rest": {
+      "url": "https://rest.genenames.org/fetch/symbol/SRSF2",
+      "data": [
+        {
+          "symbol": "SRSF2",
+          "hgnc_id": "HGNC:10783",
+          "entrez_id": "6427",
+          "ensembl_gene_id": "ENSG00000161547",
+          "status": "Approved"
+        }
+      ]
+    },
+    "gtex_reference": {
+      "url": "https://gtexportal.org/api/v2/reference/gene?geneId=SRSF2",
+      "data": [
+        {
+          "geneSymbol": "SRSF2",
+          "geneId": null,
+          "gencodeId": "ENSG00000161547.16",
+          "entrezGeneId": 6427
+        }
+      ]
+    },
+    "reactome": {
+      "url": "https://reactome.org/ContentService/data/mapping/UniProt/Q01130/pathways",
+      "data": [
+        {
+          "stId": "R-HSA-159236",
+          "displayName": "Transport of Mature mRNA derived from an Intron-Containing Transcript",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-72163",
+          "displayName": "mRNA Splicing - Major Pathway",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-72165",
+          "displayName": "mRNA Splicing - Minor Pathway",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-72187",
+          "displayName": "mRNA 3'-end processing",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-72203",
+          "displayName": "Processing of Capped Intron-Containing Pre-mRNA",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-9770562",
+          "displayName": "mRNA Polyadenylation",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-9918481",
+          "displayName": "Dengue Virus-Host Interactions",
+          "speciesName": "Homo sapiens"
+        }
+      ]
+    }
+  }
+}

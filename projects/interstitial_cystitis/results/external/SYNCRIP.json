@@ -1,0 +1,104 @@
+{
+  "gene": "SYNCRIP",
+  "module": "M6_cell_state_g2m",
+  "prereg": "projects/interstitial_cystitis/prereg/ic_p48_module_genesets.json",
+  "retrieved_at_utc": "2026-09-25T21:21:49.007554+00:00",
+  "sources": {
+    "ensembl": {
+      "url": "https://rest.ensembl.org/lookup/symbol/homo_sapiens/SYNCRIP?content-type=application/json",
+      "data": {
+        "id": "ENSG00000135316",
+        "display_name": "SYNCRIP",
+        "description": "synaptotagmin binding cytoplasmic RNA interacting protein [Source:HGNC Symbol;Acc:HGNC:16918]",
+        "biotype": "protein_coding",
+        "seq_region_name": "6"
+      }
+    },
+    "uniprot": {
+      "url": "https://rest.uniprot.org/uniprotkb/search?query=gene_exact%3ASYNCRIP%20AND%20organism_id%3A9606%20AND%20reviewed%3Atrue&size=3&format=json",
+      "data": [
+        {
+          "primaryAccession": "O60506",
+          "uniProtkbId": "HNRPQ_HUMAN",
+          "entryType": "UniProtKB reviewed (Swiss-Prot)"
+        }
+      ]
+    },
+    "europe_pmc": {
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=SYNCRIP%20AND%20%22interstitial%20cystitis%22&format=json&pageSize=10",
+      "data": {
+        "hit_count": 2,
+        "papers": [
+          {
+            "id": "39450410",
+            "title": "miRNA packaging into small extracellular vesicles and implications in pain.",
+            "doi": "10.1097/pr9.0000000000001198",
+            "pubYear": "2024"
+          },
+          {
+            "id": "24085684",
+            "title": "Abstracts of the 2013 Annual Meeting of the American College of Rheumatology. October 25-30, 2013. San Diego, California, USA.",
+            "doi": "10.1002/art.38216",
+            "pubYear": "2013"
+          }
+        ]
+      }
+    },
+    "mygene": {
+      "url": "https://mygene.info/v3/query?q=symbol%3ASYNCRIP&species=human&size=3",
+      "data": {
+        "total": 1,
+        "hits": [
+          {
+            "_id": "10492",
+            "symbol": "SYNCRIP",
+            "name": "synaptotagmin binding cytoplasmic RNA interacting protein",
+            "taxid": 9606
+          }
+        ]
+      }
+    },
+    "chembl": {
+      "url": "https://www.ebi.ac.uk/chembl/api/data/target/search.json?q=SYNCRIP&limit=20",
+      "data": {
+        "total": 1,
+        "human_targets": [
+          {
+            "target_chembl_id": "CHEMBL4295997",
+            "pref_name": "Heterogeneous nuclear ribonucleoprotein Q",
+            "organism": "Homo sapiens"
+          }
+        ]
+      }
+    },
+    "hgnc_rest": {
+      "url": "https://rest.genenames.org/fetch/symbol/SYNCRIP",
+      "data": [
+        {
+          "symbol": "SYNCRIP",
+          "hgnc_id": "HGNC:16918",
+          "entrez_id": "10492",
+          "ensembl_gene_id": "ENSG00000135316",
+          "status": "Approved"
+        }
+      ]
+    },
+    "gtex_reference": {
+      "url": "https://gtexportal.org/api/v2/reference/gene?geneId=SYNCRIP",
+      "data": [
+        {
+          "geneSymbol": "SYNCRIP",
+          "geneId": null,
+          "gencodeId": "ENSG00000135316.17",
+          "entrezGeneId": 10492
+        }
+      ]
+    },
+    "reactome": {
+      "url": "https://reactome.org/ContentService/data/mapping/UniProt/O60506/pathways",
+      "data": {
+        "error": "HTTP Error 404: Not Found"
+      }
+    }
+  }
+}

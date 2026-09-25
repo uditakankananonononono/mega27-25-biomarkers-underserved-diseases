@@ -1,0 +1,147 @@
+{
+  "gene": "E2F4",
+  "module": "M6_cell_state_g2m",
+  "prereg": "projects/interstitial_cystitis/prereg/ic_p48_module_genesets.json",
+  "retrieved_at_utc": "2026-09-25T21:24:39.835784+00:00",
+  "sources": {
+    "ensembl": {
+      "url": "https://rest.ensembl.org/lookup/symbol/homo_sapiens/E2F4?content-type=application/json",
+      "data": {
+        "id": "ENSG00000205250",
+        "display_name": "E2F4",
+        "description": "E2F transcription factor 4 [Source:HGNC Symbol;Acc:HGNC:3118]",
+        "biotype": "protein_coding",
+        "seq_region_name": "16"
+      }
+    },
+    "uniprot": {
+      "url": "https://rest.uniprot.org/uniprotkb/search?query=gene_exact%3AE2F4%20AND%20organism_id%3A9606%20AND%20reviewed%3Atrue&size=3&format=json",
+      "data": [
+        {
+          "primaryAccession": "Q16254",
+          "uniProtkbId": "E2F4_HUMAN",
+          "entryType": "UniProtKB reviewed (Swiss-Prot)"
+        }
+      ]
+    },
+    "europe_pmc": {
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=E2F4%20AND%20%22interstitial%20cystitis%22&format=json&pageSize=10",
+      "data": {
+        "hit_count": 1,
+        "papers": [
+          {
+            "id": "32030671",
+            "title": "Vision 20/20 for the Second Leap of Reproductive Sciences.",
+            "doi": "10.1007/s43032-019-00138-w",
+            "pubYear": "2020"
+          }
+        ]
+      }
+    },
+    "mygene": {
+      "url": "https://mygene.info/v3/query?q=symbol%3AE2F4&species=human&size=3",
+      "data": {
+        "total": 1,
+        "hits": [
+          {
+            "_id": "1874",
+            "symbol": "E2F4",
+            "name": "E2F transcription factor 4",
+            "taxid": 9606
+          }
+        ]
+      }
+    },
+    "chembl": {
+      "url": "https://www.ebi.ac.uk/chembl/api/data/target/search.json?q=E2F4&limit=20",
+      "data": {
+        "total": 1,
+        "human_targets": [
+          {
+            "target_chembl_id": "CHEMBL4630726",
+            "pref_name": "E2F",
+            "organism": "Homo sapiens"
+          }
+        ]
+      }
+    },
+    "hgnc_rest": {
+      "url": "https://rest.genenames.org/fetch/symbol/E2F4",
+      "data": [
+        {
+          "symbol": "E2F4",
+          "hgnc_id": "HGNC:3118",
+          "entrez_id": "1874",
+          "ensembl_gene_id": "ENSG00000205250",
+          "status": "Approved"
+        }
+      ]
+    },
+    "gtex_reference": {
+      "url": "https://gtexportal.org/api/v2/reference/gene?geneId=E2F4",
+      "data": [
+        {
+          "geneSymbol": "E2F4",
+          "geneId": null,
+          "gencodeId": "ENSG00000205250.8",
+          "entrezGeneId": 1874
+        }
+      ]
+    },
+    "reactome": {
+      "url": "https://reactome.org/ContentService/data/mapping/UniProt/Q16254/pathways",
+      "data": [
+        {
+          "stId": "R-HSA-1362277",
+          "displayName": "Transcription of E2F targets under negative control by DREAM complex",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-1362300",
+          "displayName": "Transcription of E2F targets under negative control by p107 (RBL1) and p130 (RBL2) in complex with HDAC1",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-1538133",
+          "displayName": "G0 and Early G1",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-2173796",
+          "displayName": "SMAD2/SMAD3:SMAD4 heterotrimer regulates transcription",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-6804114",
+          "displayName": "TP53 Regulates Transcription of Genes Involved in G2 Cell Cycle Arrest",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-69202",
+          "displayName": "Cyclin E associated events during G1/S transition ",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-69205",
+          "displayName": "G1/S-Specific Transcription",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-69231",
+          "displayName": "Cyclin D associated events in G1",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-69656",
+          "displayName": "Cyclin A:Cdk2-associated events at S phase entry",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-9945556",
+          "displayName": "Transcriptional regulation of multiciliogenesis",
+          "speciesName": "Homo sapiens"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,386 @@
+{
+  "gene": "EGF",
+  "module": "M6_cell_state_g2m",
+  "prereg": "projects/interstitial_cystitis/prereg/ic_p48_module_genesets.json",
+  "retrieved_at_utc": "2026-09-25T21:22:14.774520+00:00",
+  "sources": {
+    "ensembl": {
+      "url": "https://rest.ensembl.org/lookup/symbol/homo_sapiens/EGF?content-type=application/json",
+      "data": {
+        "id": "ENSG00000138798",
+        "display_name": "EGF",
+        "description": "epidermal growth factor [Source:HGNC Symbol;Acc:HGNC:3229]",
+        "biotype": "protein_coding",
+        "seq_region_name": "4"
+      }
+    },
+    "uniprot": {
+      "url": "https://rest.uniprot.org/uniprotkb/search?query=gene_exact%3AEGF%20AND%20organism_id%3A9606%20AND%20reviewed%3Atrue&size=3&format=json",
+      "data": [
+        {
+          "primaryAccession": "P01133",
+          "uniProtkbId": "EGF_HUMAN",
+          "entryType": "UniProtKB reviewed (Swiss-Prot)"
+        }
+      ]
+    },
+    "europe_pmc": {
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=EGF%20AND%20%22interstitial%20cystitis%22&format=json&pageSize=10",
+      "data": {
+        "hit_count": 297,
+        "papers": [
+          {
+            "id": "42417871",
+            "title": "Intravesical HA/EGF Salvage Therapy for Hyaluronic Acid-Refractory Interstitial Cystitis/Bladder Pain Syndrome: A Small Retrospective Pilot Case Series.",
+            "doi": "10.1007/s00192-026-06793-3",
+            "pubYear": "2026"
+          },
+          {
+            "id": "42112338",
+            "title": "Signaling pathways related to interstitial cystitis.",
+            "doi": "10.3389/fimmu.2026.1774072",
+            "pubYear": "2026"
+          },
+          {
+            "id": "42068052",
+            "title": "Animal Models of Hunner-Type Interstitial Cystitis.",
+            "doi": "10.1111/iju.70487",
+            "pubYear": "2026"
+          },
+          {
+            "id": "42473557",
+            "title": "Biomaterials and Nanomedicine for Mucosal Repair and Inflammation Control in Interstitial Cystitis/Bladder Pain Syndrome: An Extensive Review.",
+            "doi": "10.2147/ijn.s617670",
+            "pubYear": "2026"
+          },
+          {
+            "id": "42293825",
+            "title": "Platelet-rich plasma in selected urological conditions: a narrative review of biological rationale, current evidence, and limitations.",
+            "doi": "10.21037/tau-2026-1-0084",
+            "pubYear": "2026"
+          },
+          {
+            "id": "42131402",
+            "title": "Use of disease-specific biomarkers in identifying interstitial cystitis and guiding effective treatment for its different subtypes.",
+            "doi": "10.4103/tcmj.tcmj-d-25-00028",
+            "pubYear": "2026"
+          },
+          {
+            "id": "42540991",
+            "title": "Urine Epidermal Growth Factor/Creatinine Ratio in Female Patients with Overactive Bladder and Recurrent Lower Urinary Tract Infection.",
+            "doi": "10.4103/gmit.gmit-d-25-00075",
+            "pubYear": "2026"
+          },
+          {
+            "id": "42193444",
+            "title": "Transurethral Injection of Autologous Micronized Adipose Tissue for Refractory Interstitial Cystitis/Bladder Pain Syndrome: A Retrospective Pilot Study.",
+            "doi": "10.3390/biomedicines14051119",
+            "pubYear": "2026"
+          },
+          {
+            "id": "41898733",
+            "title": "From Regeneration to Analgesia: The Role of BPC-157 in Tissue Repair and Pain Management.",
+            "doi": "10.3390/ijms27062876",
+            "pubYear": "2026"
+          },
+          {
+            "id": "41713163",
+            "title": "Interstitial cystitis: a phenotype and rare variant exome sequencing study.",
+            "doi": "10.1016/j.ebiom.2026.106150",
+            "pubYear": "2026"
+          }
+        ]
+      }
+    },
+    "mygene": {
+      "url": "https://mygene.info/v3/query?q=symbol%3AEGF&species=human&size=3",
+      "data": {
+        "total": 1,
+        "hits": [
+          {
+            "_id": "1950",
+            "symbol": "EGF",
+            "name": "epidermal growth factor",
+            "taxid": 9606
+          }
+        ]
+      }
+    },
+    "chembl": {
+      "url": "https://www.ebi.ac.uk/chembl/api/data/target/search.json?q=EGF&limit=20",
+      "data": {
+        "total": 144,
+        "human_targets": [
+          {
+            "target_chembl_id": "CHEMBL5734",
+            "pref_name": "Pro-epidermal growth factor",
+            "organism": "Homo sapiens"
+          },
+          {
+            "target_chembl_id": "CHEMBL3286070",
+            "pref_name": "Proheparin-binding EGF-like growth factor",
+            "organism": "Homo sapiens"
+          },
+          {
+            "target_chembl_id": "CHEMBL4523920",
+            "pref_name": "Adhesion G protein-coupled receptor L4",
+            "organism": "Homo sapiens"
+          },
+          {
+            "target_chembl_id": "CHEMBL3712972",
+            "pref_name": "Epidermal growth factor-like protein 7",
+            "organism": "Homo sapiens"
+          },
+          {
+            "target_chembl_id": "CHEMBL4662938",
+            "pref_name": "Protransforming growth factor alpha",
+            "organism": "Homo sapiens"
+          },
+          {
+            "target_chembl_id": "CHEMBL3713343",
+            "pref_name": "Lactadherin",
+            "organism": "Homo sapiens"
+          },
+          {
+            "target_chembl_id": "CHEMBL3713025",
+            "pref_name": "Protein Cripto",
+            "organism": "Homo sapiens"
+          },
+          {
+            "target_chembl_id": "CHEMBL4128",
+            "pref_name": "Angiopoietin-1 receptor",
+            "organism": "Homo sapiens"
+          },
+          {
+            "target_chembl_id": "CHEMBL5274",
+            "pref_name": "Tyrosine-protein kinase receptor Tie-1",
+            "organism": "Homo sapiens"
+          },
+          {
+            "target_chembl_id": "CHEMBL5671",
+            "pref_name": "Protein delta homolog 1",
+            "organism": "Homo sapiens"
+          },
+          {
+            "target_chembl_id": "CHEMBL3161",
+            "pref_name": "L-selectin",
+            "organism": "Homo sapiens"
+          }
+        ]
+      }
+    },
+    "hgnc_rest": {
+      "url": "https://rest.genenames.org/fetch/symbol/EGF",
+      "data": [
+        {
+          "symbol": "EGF",
+          "hgnc_id": "HGNC:3229",
+          "entrez_id": "1950",
+          "ensembl_gene_id": "ENSG00000138798",
+          "status": "Approved"
+        }
+      ]
+    },
+    "gtex_reference": {
+      "url": "https://gtexportal.org/api/v2/reference/gene?geneId=EGF",
+      "data": [
+        {
+          "geneSymbol": "EGF",
+          "geneId": null,
+          "gencodeId": "ENSG00000138798.11",
+          "entrezGeneId": 1950
+        }
+      ]
+    },
+    "reactome": {
+      "url": "https://reactome.org/ContentService/data/mapping/UniProt/P01133/pathways",
+      "data": [
+        {
+          "stId": "R-HSA-114608",
+          "displayName": "Platelet degranulation ",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-1227986",
+          "displayName": "Signaling by ERBB2",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-1236382",
+          "displayName": "Constitutive Signaling by Ligand-Responsive EGFR Cancer Variants",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-1236394",
+          "displayName": "Signaling by ERBB4",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-1250196",
+          "displayName": "SHC1 events in ERBB2 signaling",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-1251932",
+          "displayName": "PLCG1 events in ERBB2 signaling",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-1257604",
+          "displayName": "PIP3 activates AKT signaling",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-177929",
+          "displayName": "Signaling by EGFR",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-179812",
+          "displayName": "GRB2 events in EGFR signaling",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-180292",
+          "displayName": "GAB1 signalosome",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-180336",
+          "displayName": "SHC1 events in EGFR signaling",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-182971",
+          "displayName": "EGFR downregulation",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-1963640",
+          "displayName": "GRB2 events in ERBB2 signaling",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-1963642",
+          "displayName": "PI3K events in ERBB2 signaling",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-212718",
+          "displayName": "EGFR interacts with phospholipase C-gamma",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-2219530",
+          "displayName": "Constitutive Signaling by Aberrant PI3K in Cancer",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-5637810",
+          "displayName": "Constitutive Signaling by EGFRvIII",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-5638303",
+          "displayName": "Inhibition of Signaling by Overexpressed EGFR",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-5673001",
+          "displayName": "RAF/MAP kinase cascade",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-6785631",
+          "displayName": "ERBB2 Regulates Cell Motility",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-6811558",
+          "displayName": "PI5P, PP2A and IER3 Regulate PI3K/AKT Signaling",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-8847993",
+          "displayName": "ERBB2 Activates PTK6 Signaling",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-8856825",
+          "displayName": "Cargo recognition for clathrin-mediated endocytosis",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-8856828",
+          "displayName": "Clathrin-mediated endocytosis",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-8863795",
+          "displayName": "Downregulation of ERBB2 signaling",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-9009391",
+          "displayName": "Extra-nuclear estrogen signaling",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-9013507",
+          "displayName": "NOTCH3 Activation and Transmission of Signal to the Nucleus",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-9634638",
+          "displayName": "Estrogen-dependent nuclear events downstream of ESR-membrane signaling",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-9664565",
+          "displayName": "Signaling by ERBB2 KD Mutants",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-9665348",
+          "displayName": "Signaling by ERBB2 ECD mutants",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-9665686",
+          "displayName": "Signaling by ERBB2 TMD/JMD mutants",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-9725554",
+          "displayName": "Differentiation of Keratinocytes in Interfollicular Epidermis in Mammalian Skin",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-9818030",
+          "displayName": "NFE2L2 regulating tumorigenic genes",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-9927418",
+          "displayName": "Developmental Lineage of Mammary Gland Luminal Epithelial Cells",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-9927432",
+          "displayName": "Developmental Lineage of Mammary Gland Myoepithelial Cells",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-9937080",
+          "displayName": "Developmental Lineage of Multipotent Pancreatic Progenitor Cells",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-9981148",
+          "displayName": "Developmental Lineage of Pancreatic Endocrine Mid Progenitor Cells",
+          "speciesName": "Homo sapiens"
+        }
+      ]
+    }
+  }
+}

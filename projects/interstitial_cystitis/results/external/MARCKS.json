@@ -1,0 +1,114 @@
+{
+  "gene": "MARCKS",
+  "module": "M6_cell_state_g2m",
+  "prereg": "projects/interstitial_cystitis/prereg/ic_p48_module_genesets.json",
+  "retrieved_at_utc": "2026-09-25T21:20:52.249318+00:00",
+  "sources": {
+    "ensembl": {
+      "url": "https://rest.ensembl.org/lookup/symbol/homo_sapiens/MARCKS?content-type=application/json",
+      "data": {
+        "id": "ENSG00000277443",
+        "display_name": "MARCKS",
+        "description": "myristoylated alanine rich protein kinase C substrate [Source:HGNC Symbol;Acc:HGNC:6759]",
+        "biotype": "protein_coding",
+        "seq_region_name": "6"
+      }
+    },
+    "uniprot": {
+      "url": "https://rest.uniprot.org/uniprotkb/search?query=gene_exact%3AMARCKS%20AND%20organism_id%3A9606%20AND%20reviewed%3Atrue&size=3&format=json",
+      "data": [
+        {
+          "primaryAccession": "P29966",
+          "uniProtkbId": "MARCS_HUMAN",
+          "entryType": "UniProtKB reviewed (Swiss-Prot)"
+        }
+      ]
+    },
+    "europe_pmc": {
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=MARCKS%20AND%20%22interstitial%20cystitis%22&format=json&pageSize=10",
+      "data": {
+        "hit_count": 3,
+        "papers": [
+          {
+            "id": "37371512",
+            "title": "Protein Biomarker Discovery Studies on Urinary sEV Fractions Separated with UF-SEC for the First Diagnosis and Detection of Recurrence in Bladder Cancer Patients.",
+            "doi": "10.3390/biom13060932",
+            "pubYear": "2023"
+          },
+          {
+            "id": "12057914",
+            "title": "Gene expression profiling of mouse bladder inflammatory responses to LPS, substance P, and antigen-stimulation.",
+            "doi": "10.1016/s0002-9440(10)61159-5",
+            "pubYear": "2002"
+          },
+          {
+            "id": "PMC7166756",
+            "title": "Research Abstract Program of the 2011 ACVIM Forum Denver, Colorado, June 15–18, 2011",
+            "doi": null,
+            "pubYear": "2011"
+          }
+        ]
+      }
+    },
+    "mygene": {
+      "url": "https://mygene.info/v3/query?q=symbol%3AMARCKS&species=human&size=3",
+      "data": {
+        "total": 1,
+        "hits": [
+          {
+            "_id": "4082",
+            "symbol": "MARCKS",
+            "name": "myristoylated alanine rich protein kinase C substrate",
+            "taxid": 9606
+          }
+        ]
+      }
+    },
+    "chembl": {
+      "url": "https://www.ebi.ac.uk/chembl/api/data/target/search.json?q=MARCKS&limit=20",
+      "data": {
+        "total": 1,
+        "human_targets": [
+          {
+            "target_chembl_id": "CHEMBL4804244",
+            "pref_name": "Myristoylated alanine-rich C-kinase substrate",
+            "organism": "Homo sapiens"
+          }
+        ]
+      }
+    },
+    "hgnc_rest": {
+      "url": "https://rest.genenames.org/fetch/symbol/MARCKS",
+      "data": [
+        {
+          "symbol": "MARCKS",
+          "hgnc_id": "HGNC:6759",
+          "entrez_id": "4082",
+          "ensembl_gene_id": "ENSG00000277443",
+          "status": "Approved"
+        }
+      ]
+    },
+    "gtex_reference": {
+      "url": "https://gtexportal.org/api/v2/reference/gene?geneId=MARCKS",
+      "data": [
+        {
+          "geneSymbol": "MARCKS",
+          "geneId": null,
+          "gencodeId": "ENSG00000277443.2",
+          "entrezGeneId": 4082
+        }
+      ]
+    },
+    "reactome": {
+      "url": "https://reactome.org/ContentService/data/mapping/UniProt/P29966/pathways",
+      "data": [
+        {
+          "stId": "R-HSA-399997",
+          "displayName": "Acetylcholine regulates insulin secretion",
+          "speciesName": "Homo sapiens"
+        }
+      ]
+    }
+  }
+}

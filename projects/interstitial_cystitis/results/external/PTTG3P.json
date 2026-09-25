@@ -1,0 +1,92 @@
+{
+  "gene": "PTTG3P",
+  "module": "M6_cell_state_g2m",
+  "prereg": "projects/interstitial_cystitis/prereg/ic_p48_module_genesets.json",
+  "retrieved_at_utc": "2026-09-25T21:23:39.647224+00:00",
+  "sources": {
+    "ensembl": {
+      "url": "https://rest.ensembl.org/lookup/symbol/homo_sapiens/PTTG3P?content-type=application/json",
+      "data": {
+        "id": "ENSG00000213005",
+        "display_name": "PTTG3P",
+        "description": "pituitary tumor-transforming 3, pseudogene [Source:HGNC Symbol;Acc:HGNC:13422]",
+        "biotype": "processed_pseudogene",
+        "seq_region_name": "8"
+      }
+    },
+    "uniprot": {
+      "url": "https://rest.uniprot.org/uniprotkb/search?query=gene_exact%3APTTG3P%20AND%20organism_id%3A9606%20AND%20reviewed%3Atrue&size=3&format=json",
+      "data": [
+        {
+          "primaryAccession": "Q9NZH4",
+          "uniProtkbId": "PTTG3_HUMAN",
+          "entryType": "UniProtKB reviewed (Swiss-Prot)"
+        }
+      ]
+    },
+    "europe_pmc": {
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=PTTG3P%20AND%20%22interstitial%20cystitis%22&format=json&pageSize=10",
+      "data": {
+        "hit_count": 1,
+        "papers": [
+          {
+            "id": "42558631",
+            "title": "Mechanistic insights into the lncRNA-Notch signaling axis in tumors.",
+            "doi": "10.3389/fcell.2026.1903203",
+            "pubYear": "2026"
+          }
+        ]
+      }
+    },
+    "mygene": {
+      "url": "https://mygene.info/v3/query?q=symbol%3APTTG3P&species=human&size=3",
+      "data": {
+        "total": 1,
+        "hits": [
+          {
+            "_id": "26255",
+            "symbol": "PTTG3P",
+            "name": "pituitary tumor-transforming 3, pseudogene",
+            "taxid": 9606
+          }
+        ]
+      }
+    },
+    "chembl": {
+      "url": "https://www.ebi.ac.uk/chembl/api/data/target/search.json?q=PTTG3P&limit=20",
+      "data": {
+        "total": 0,
+        "human_targets": []
+      }
+    },
+    "hgnc_rest": {
+      "url": "https://rest.genenames.org/fetch/symbol/PTTG3P",
+      "data": [
+        {
+          "symbol": "PTTG3P",
+          "hgnc_id": "HGNC:13422",
+          "entrez_id": "26255",
+          "ensembl_gene_id": "ENSG00000213005",
+          "status": "Approved"
+        }
+      ]
+    },
+    "gtex_reference": {
+      "url": "https://gtexportal.org/api/v2/reference/gene?geneId=PTTG3P",
+      "data": [
+        {
+          "geneSymbol": "PTTG3P",
+          "geneId": null,
+          "gencodeId": "ENSG00000213005.3",
+          "entrezGeneId": 26255
+        }
+      ]
+    },
+    "reactome": {
+      "url": "https://reactome.org/ContentService/data/mapping/UniProt/Q9NZH4/pathways",
+      "data": {
+        "error": "HTTP Error 404: Not Found"
+      }
+    }
+  }
+}

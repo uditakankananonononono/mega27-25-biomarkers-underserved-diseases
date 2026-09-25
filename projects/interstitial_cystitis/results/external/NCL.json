@@ -1,0 +1,156 @@
+{
+  "gene": "NCL",
+  "module": "M6_cell_state_g2m",
+  "prereg": "projects/interstitial_cystitis/prereg/ic_p48_module_genesets.json",
+  "retrieved_at_utc": "2026-09-25T21:21:58.506723+00:00",
+  "sources": {
+    "ensembl": {
+      "url": "https://rest.ensembl.org/lookup/symbol/homo_sapiens/NCL?content-type=application/json",
+      "data": {
+        "id": "ENSG00000115053",
+        "display_name": "NCL",
+        "description": "nucleolin [Source:HGNC Symbol;Acc:HGNC:7667]",
+        "biotype": "protein_coding",
+        "seq_region_name": "2"
+      }
+    },
+    "uniprot": {
+      "url": "https://rest.uniprot.org/uniprotkb/search?query=gene_exact%3ANCL%20AND%20organism_id%3A9606%20AND%20reviewed%3Atrue&size=3&format=json",
+      "data": [
+        {
+          "primaryAccession": "P19338",
+          "uniProtkbId": "NUCL_HUMAN",
+          "entryType": "UniProtKB reviewed (Swiss-Prot)"
+        }
+      ]
+    },
+    "europe_pmc": {
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=NCL%20AND%20%22interstitial%20cystitis%22&format=json&pageSize=10",
+      "data": {
+        "hit_count": 24,
+        "papers": [
+          {
+            "id": "39626654",
+            "title": "Mimickers of hydroxychloroquine retinal toxicity.",
+            "doi": "10.1111/ceo.14461",
+            "pubYear": "2024"
+          },
+          {
+            "id": "36824020",
+            "title": "Single-cell profiling reveals various types of interstitial cells in the bladder.",
+            "doi": "10.1111/cpr.13431",
+            "pubYear": "2023"
+          },
+          {
+            "id": "37391520",
+            "title": "Wound healing responses of urinary extravasation after urethral injury.",
+            "doi": "10.1038/s41598-023-37610-2",
+            "pubYear": "2023"
+          },
+          {
+            "id": "34642384",
+            "title": "The surgical effect on overactive bladder symptoms in women with pelvic organ prolapse.",
+            "doi": "10.1038/s41598-021-99537-w",
+            "pubYear": "2021"
+          },
+          {
+            "id": "26839484",
+            "title": "Impaired Na(+)/K(+)-ATPase Function in Patients with Interstitial Cystitis/Painful Bladder Syndrome.",
+            "doi": "10.3346/jkms.2016.31.2.280",
+            "pubYear": "2016"
+          },
+          {
+            "id": "23670165",
+            "title": "Local immune response in bladder pain syndrome/interstitial cystitis ESSIC type 3C.",
+            "doi": "10.1007/s00192-013-2112-0",
+            "pubYear": "2013"
+          },
+          {
+            "id": "23555989",
+            "title": "Perineural mast cells are specifically enriched in pancreatic neuritis and neuropathic pain in pancreatic cancer and chronic pancreatitis.",
+            "doi": "10.1371/journal.pone.0060529",
+            "pubYear": "2013"
+          },
+          {
+            "id": "25061818",
+            "title": "The mGluR5 antagonist fenobam induces analgesic conditioned place preference in mice with spared nerve injury.",
+            "doi": "10.1371/journal.pone.0103524",
+            "pubYear": "2014"
+          },
+          {
+            "id": "18082196",
+            "title": "Abnormal expression of differentiation related proteins and proteoglycan core proteins in the urothelium of patients with interstitial cystitis.",
+            "doi": "10.1016/j.juro.2007.09.022",
+            "pubYear": "2008"
+          },
+          {
+            "id": "17537219",
+            "title": "Differentiation potential of urothelium from patients with benign bladder dysfunction.",
+            "doi": "10.1111/j.1464-410x.2007.06795.x",
+            "pubYear": "2007"
+          }
+        ]
+      }
+    },
+    "mygene": {
+      "url": "https://mygene.info/v3/query?q=symbol%3ANCL&species=human&size=3",
+      "data": {
+        "total": 0,
+        "hits": []
+      }
+    },
+    "chembl": {
+      "url": "https://www.ebi.ac.uk/chembl/api/data/target/search.json?q=NCL&limit=20",
+      "data": {
+        "total": 2,
+        "human_targets": [
+          {
+            "target_chembl_id": "CHEMBL4295725",
+            "pref_name": "Nucleolin",
+            "organism": "Homo sapiens"
+          },
+          {
+            "target_chembl_id": "CHEMBL4523126",
+            "pref_name": "Calpain-9",
+            "organism": "Homo sapiens"
+          }
+        ]
+      }
+    },
+    "hgnc_rest": {
+      "url": "https://rest.genenames.org/fetch/symbol/NCL",
+      "data": []
+    },
+    "gtex_reference": {
+      "url": "https://gtexportal.org/api/v2/reference/gene?geneId=NCL",
+      "data": [
+        {
+          "geneSymbol": "NCL",
+          "geneId": null,
+          "gencodeId": "ENSG00000115053.15",
+          "entrezGeneId": 4691
+        }
+      ]
+    },
+    "reactome": {
+      "url": "https://reactome.org/ContentService/data/mapping/UniProt/P19338/pathways",
+      "data": [
+        {
+          "stId": "R-HSA-6791226",
+          "displayName": "Major pathway of rRNA processing in the nucleolus and cytosol",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-9820960",
+          "displayName": "Respiratory syncytial virus (RSV) attachment and entry",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-9918476",
+          "displayName": "Assembly and Release of Dengue Virus Virions",
+          "speciesName": "Homo sapiens"
+        }
+      ]
+    }
+  }
+}

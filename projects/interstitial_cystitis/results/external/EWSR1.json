@@ -1,0 +1,133 @@
+{
+  "gene": "EWSR1",
+  "module": "M6_cell_state_g2m",
+  "prereg": "projects/interstitial_cystitis/prereg/ic_p48_module_genesets.json",
+  "retrieved_at_utc": "2026-09-25T21:24:20.822161+00:00",
+  "sources": {
+    "ensembl": {
+      "url": "https://rest.ensembl.org/lookup/symbol/homo_sapiens/EWSR1?content-type=application/json",
+      "data": {
+        "id": "ENSG00000182944",
+        "display_name": "EWSR1",
+        "description": "EWS RNA binding protein 1 [Source:HGNC Symbol;Acc:HGNC:3508]",
+        "biotype": "protein_coding",
+        "seq_region_name": "22"
+      }
+    },
+    "uniprot": {
+      "url": "https://rest.uniprot.org/uniprotkb/search?query=gene_exact%3AEWSR1%20AND%20organism_id%3A9606%20AND%20reviewed%3Atrue&size=3&format=json",
+      "data": [
+        {
+          "primaryAccession": "Q01844",
+          "uniProtkbId": "EWS_HUMAN",
+          "entryType": "UniProtKB reviewed (Swiss-Prot)"
+        }
+      ]
+    },
+    "europe_pmc": {
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=EWSR1%20AND%20%22interstitial%20cystitis%22&format=json&pageSize=10",
+      "data": {
+        "hit_count": 6,
+        "papers": [
+          {
+            "id": "37829338",
+            "title": "Case report: The activity of multi-kinase VEGF inhibitor, Pazopanib, in metastatic undifferentiated round cell sarcomas harboring <i>EWSR1::CREM</i> fusion: clinicopathological series of two cases and literature review.",
+            "doi": "10.3389/fonc.2023.1215003",
+            "pubYear": "2023"
+          },
+          {
+            "id": "34674717",
+            "title": "Huanglianjiedu Decoction as an effective treatment for oral squamous cell carcinoma based on network pharmacology and experimental validation.",
+            "doi": "10.1186/s12935-021-02201-6",
+            "pubYear": "2021"
+          },
+          {
+            "id": "32438606",
+            "title": "Exosomal Long Non-Coding RNAs in Lung Diseases.",
+            "doi": "10.3390/ijms21103580",
+            "pubYear": "2020"
+          },
+          {
+            "id": "34448894",
+            "title": "33&lt;sup&gt;rd&lt;/sup&gt; European Congress of Pathology - Abstracts.",
+            "doi": "10.1007/s00428-021-03157-8",
+            "pubYear": "2021"
+          },
+          {
+            "id": "PMC10902613",
+            "title": "Abstracts",
+            "doi": null,
+            "pubYear": "2024"
+          },
+          {
+            "id": "29051965",
+            "title": "Abstracts from the 37th Congress of the Société Internationale d'Urologie, Centro de Congressos de Lisboa, October 19-22, 2017.",
+            "doi": "10.1007/s00345-017-2090-9",
+            "pubYear": "2017"
+          }
+        ]
+      }
+    },
+    "mygene": {
+      "url": "https://mygene.info/v3/query?q=symbol%3AEWSR1&species=human&size=3",
+      "data": {
+        "total": 1,
+        "hits": [
+          {
+            "_id": "2130",
+            "symbol": "EWSR1",
+            "name": "EWS RNA binding protein 1",
+            "taxid": 9606
+          }
+        ]
+      }
+    },
+    "chembl": {
+      "url": "https://www.ebi.ac.uk/chembl/api/data/target/search.json?q=EWSR1&limit=20",
+      "data": {
+        "total": 2,
+        "human_targets": [
+          {
+            "target_chembl_id": "CHEMBL3351202",
+            "pref_name": "RNA-binding protein EWS",
+            "organism": "Homo sapiens"
+          },
+          {
+            "target_chembl_id": "CHEMBL3885568",
+            "pref_name": "Friend leukemia integration 1 transcription factor (Proto-oncogene Fli-1)/RNA-binding protein EWS",
+            "organism": "Homo sapiens"
+          }
+        ]
+      }
+    },
+    "hgnc_rest": {
+      "url": "https://rest.genenames.org/fetch/symbol/EWSR1",
+      "data": [
+        {
+          "symbol": "EWSR1",
+          "hgnc_id": "HGNC:3508",
+          "entrez_id": "2130",
+          "ensembl_gene_id": "ENSG00000182944",
+          "status": "Approved"
+        }
+      ]
+    },
+    "gtex_reference": {
+      "url": "https://gtexportal.org/api/v2/reference/gene?geneId=EWSR1",
+      "data": [
+        {
+          "geneSymbol": "EWSR1",
+          "geneId": null,
+          "gencodeId": "ENSG00000182944.17",
+          "entrezGeneId": 2130
+        }
+      ]
+    },
+    "reactome": {
+      "url": "https://reactome.org/ContentService/data/mapping/UniProt/Q01844/pathways",
+      "data": {
+        "error": "HTTP Error 404: Not Found"
+      }
+    }
+  }
+}

@@ -1,0 +1,105 @@
+{
+  "gene": "SAP30",
+  "module": "M6_cell_state_g2m",
+  "prereg": "projects/interstitial_cystitis/prereg/ic_p48_module_genesets.json",
+  "retrieved_at_utc": "2026-09-25T21:21:12.363296+00:00",
+  "sources": {
+    "ensembl": {
+      "url": "https://rest.ensembl.org/lookup/symbol/homo_sapiens/SAP30?content-type=application/json",
+      "data": {
+        "id": "ENSG00000164105",
+        "display_name": "SAP30",
+        "description": "Sin3A associated protein 30 [Source:HGNC Symbol;Acc:HGNC:10532]",
+        "biotype": "protein_coding",
+        "seq_region_name": "4"
+      }
+    },
+    "uniprot": {
+      "url": "https://rest.uniprot.org/uniprotkb/search?query=gene_exact%3ASAP30%20AND%20organism_id%3A9606%20AND%20reviewed%3Atrue&size=3&format=json",
+      "data": [
+        {
+          "primaryAccession": "O75446",
+          "uniProtkbId": "SAP30_HUMAN",
+          "entryType": "UniProtKB reviewed (Swiss-Prot)"
+        }
+      ]
+    },
+    "europe_pmc": {
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=SAP30%20AND%20%22interstitial%20cystitis%22&format=json&pageSize=10",
+      "data": {
+        "hit_count": 0,
+        "papers": []
+      }
+    },
+    "mygene": {
+      "url": "https://mygene.info/v3/query?q=symbol%3ASAP30&species=human&size=3",
+      "data": {
+        "total": 1,
+        "hits": [
+          {
+            "_id": "8819",
+            "symbol": "SAP30",
+            "name": "Sin3A associated protein 30",
+            "taxid": 9606
+          }
+        ]
+      }
+    },
+    "chembl": {
+      "url": "https://www.ebi.ac.uk/chembl/api/data/target/search.json?q=SAP30&limit=20",
+      "data": {
+        "total": 1,
+        "human_targets": [
+          {
+            "target_chembl_id": "CHEMBL5725127",
+            "pref_name": "SAP30-binding protein",
+            "organism": "Homo sapiens"
+          }
+        ]
+      }
+    },
+    "hgnc_rest": {
+      "url": "https://rest.genenames.org/fetch/symbol/SAP30",
+      "data": [
+        {
+          "symbol": "SAP30",
+          "hgnc_id": "HGNC:10532",
+          "entrez_id": "8819",
+          "ensembl_gene_id": "ENSG00000164105",
+          "status": "Approved"
+        }
+      ]
+    },
+    "gtex_reference": {
+      "url": "https://gtexportal.org/api/v2/reference/gene?geneId=SAP30",
+      "data": [
+        {
+          "geneSymbol": "SAP30",
+          "geneId": null,
+          "gencodeId": "ENSG00000164105.3",
+          "entrezGeneId": 8819
+        }
+      ]
+    },
+    "reactome": {
+      "url": "https://reactome.org/ContentService/data/mapping/UniProt/O75446/pathways",
+      "data": [
+        {
+          "stId": "R-HSA-3214815",
+          "displayName": "HDACs deacetylate histones",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-427413",
+          "displayName": "NoRC negatively regulates rRNA expression",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-9679191",
+          "displayName": "Potential therapeutics for SARS",
+          "speciesName": "Homo sapiens"
+        }
+      ]
+    }
+  }
+}

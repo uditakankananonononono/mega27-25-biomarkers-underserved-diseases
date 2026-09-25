@@ -1,0 +1,125 @@
+{
+  "gene": "ORC5",
+  "module": "M6_cell_state_g2m",
+  "prereg": "projects/interstitial_cystitis/prereg/ic_p48_module_genesets.json",
+  "retrieved_at_utc": "2026-09-25T21:21:07.393847+00:00",
+  "sources": {
+    "ensembl": {
+      "url": "https://rest.ensembl.org/lookup/symbol/homo_sapiens/ORC5?content-type=application/json",
+      "data": {
+        "id": "ENSG00000164815",
+        "display_name": "ORC5",
+        "description": "origin recognition complex subunit 5 [Source:HGNC Symbol;Acc:HGNC:8491]",
+        "biotype": "protein_coding",
+        "seq_region_name": "7"
+      }
+    },
+    "uniprot": {
+      "url": "https://rest.uniprot.org/uniprotkb/search?query=gene_exact%3AORC5%20AND%20organism_id%3A9606%20AND%20reviewed%3Atrue&size=3&format=json",
+      "data": [
+        {
+          "primaryAccession": "O43913",
+          "uniProtkbId": "ORC5_HUMAN",
+          "entryType": "UniProtKB reviewed (Swiss-Prot)"
+        }
+      ]
+    },
+    "europe_pmc": {
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=ORC5%20AND%20%22interstitial%20cystitis%22&format=json&pageSize=10",
+      "data": {
+        "hit_count": 0,
+        "papers": []
+      }
+    },
+    "mygene": {
+      "url": "https://mygene.info/v3/query?q=symbol%3AORC5&species=human&size=3",
+      "data": {
+        "total": 1,
+        "hits": [
+          {
+            "_id": "5001",
+            "symbol": "ORC5",
+            "name": "origin recognition complex subunit 5",
+            "taxid": 9606
+          }
+        ]
+      }
+    },
+    "chembl": {
+      "url": "https://www.ebi.ac.uk/chembl/api/data/target/search.json?q=ORC5&limit=20",
+      "data": {
+        "total": 1,
+        "human_targets": [
+          {
+            "target_chembl_id": "CHEMBL5725187",
+            "pref_name": "Origin recognition complex subunit 5",
+            "organism": "Homo sapiens"
+          }
+        ]
+      }
+    },
+    "hgnc_rest": {
+      "url": "https://rest.genenames.org/fetch/symbol/ORC5",
+      "data": [
+        {
+          "symbol": "ORC5",
+          "hgnc_id": "HGNC:8491",
+          "entrez_id": "5001",
+          "ensembl_gene_id": "ENSG00000164815",
+          "status": "Approved"
+        }
+      ]
+    },
+    "gtex_reference": {
+      "url": "https://gtexportal.org/api/v2/reference/gene?geneId=ORC5",
+      "data": [
+        {
+          "geneSymbol": "ORC5",
+          "geneId": null,
+          "gencodeId": "ENSG00000164815.10",
+          "entrezGeneId": 5001
+        }
+      ]
+    },
+    "reactome": {
+      "url": "https://reactome.org/ContentService/data/mapping/UniProt/O43913/pathways",
+      "data": [
+        {
+          "stId": "R-HSA-113507",
+          "displayName": "E2F-enabled inhibition of pre-replication complex formation",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-176187",
+          "displayName": "Activation of ATR in response to replication stress",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-68616",
+          "displayName": "Assembly of the ORC complex at the origin of replication",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-68689",
+          "displayName": "CDC6 association with the ORC:origin complex",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-68867",
+          "displayName": "Assembly of the pre-replicative complex",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-68949",
+          "displayName": "Orc1 removal from chromatin",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-68962",
+          "displayName": "Activation of the pre-replicative complex",
+          "speciesName": "Homo sapiens"
+        }
+      ]
+    }
+  }
+}

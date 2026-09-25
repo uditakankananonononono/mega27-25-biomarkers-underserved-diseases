@@ -1,0 +1,134 @@
+{
+  "gene": "E2F2",
+  "module": "M6_cell_state_g2m",
+  "prereg": "projects/interstitial_cystitis/prereg/ic_p48_module_genesets.json",
+  "retrieved_at_utc": "2026-09-25T21:22:09.720005+00:00",
+  "sources": {
+    "ensembl": {
+      "url": "https://rest.ensembl.org/lookup/symbol/homo_sapiens/E2F2?content-type=application/json",
+      "data": {
+        "id": "ENSG00000007968",
+        "display_name": "E2F2",
+        "description": "E2F transcription factor 2 [Source:HGNC Symbol;Acc:HGNC:3114]",
+        "biotype": "protein_coding",
+        "seq_region_name": "1"
+      }
+    },
+    "uniprot": {
+      "url": "https://rest.uniprot.org/uniprotkb/search?query=gene_exact%3AE2F2%20AND%20organism_id%3A9606%20AND%20reviewed%3Atrue&size=3&format=json",
+      "data": [
+        {
+          "primaryAccession": "Q14209",
+          "uniProtkbId": "E2F2_HUMAN",
+          "entryType": "UniProtKB reviewed (Swiss-Prot)"
+        }
+      ]
+    },
+    "europe_pmc": {
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=E2F2%20AND%20%22interstitial%20cystitis%22&format=json&pageSize=10",
+      "data": {
+        "hit_count": 3,
+        "papers": [
+          {
+            "id": "34943467",
+            "title": "Biomarkers in the Light of the Etiopathology of IC/BPS.",
+            "doi": "10.3390/diagnostics11122231",
+            "pubYear": "2021"
+          },
+          {
+            "id": "36321189",
+            "title": "Post-prostatic-massage urine exosomes of men with chronic prostatitis/chronic pelvic pain syndrome carry prostate-cancer-typical microRNAs and activate proto-oncogenes.",
+            "doi": "10.1002/1878-0261.13329",
+            "pubYear": "2023"
+          },
+          {
+            "id": "PMC10902613",
+            "title": "Abstracts",
+            "doi": null,
+            "pubYear": "2024"
+          }
+        ]
+      }
+    },
+    "mygene": {
+      "url": "https://mygene.info/v3/query?q=symbol%3AE2F2&species=human&size=3",
+      "data": {
+        "total": 1,
+        "hits": [
+          {
+            "_id": "1870",
+            "symbol": "E2F2",
+            "name": "E2F transcription factor 2",
+            "taxid": 9606
+          }
+        ]
+      }
+    },
+    "chembl": {
+      "url": "https://www.ebi.ac.uk/chembl/api/data/target/search.json?q=E2F2&limit=20",
+      "data": {
+        "total": 1,
+        "human_targets": [
+          {
+            "target_chembl_id": "CHEMBL4630726",
+            "pref_name": "E2F",
+            "organism": "Homo sapiens"
+          }
+        ]
+      }
+    },
+    "hgnc_rest": {
+      "url": "https://rest.genenames.org/fetch/symbol/E2F2",
+      "data": [
+        {
+          "symbol": "E2F2",
+          "hgnc_id": "HGNC:3114",
+          "entrez_id": "1870",
+          "ensembl_gene_id": "ENSG00000007968",
+          "status": "Approved"
+        }
+      ]
+    },
+    "gtex_reference": {
+      "url": "https://gtexportal.org/api/v2/reference/gene?geneId=E2F2",
+      "data": [
+        {
+          "geneSymbol": "E2F2",
+          "geneId": null,
+          "gencodeId": "ENSG00000007968.6",
+          "entrezGeneId": 1870
+        }
+      ]
+    },
+    "reactome": {
+      "url": "https://reactome.org/ContentService/data/mapping/UniProt/Q14209/pathways",
+      "data": [
+        {
+          "stId": "R-HSA-2559580",
+          "displayName": "Oxidative Stress Induced Senescence",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-2559585",
+          "displayName": "Oncogene Induced Senescence",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-69231",
+          "displayName": "Cyclin D associated events in G1",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-9661069",
+          "displayName": "Defective binding of RB1 mutants to E2F1,(E2F2, E2F3)",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-9938024",
+          "displayName": "Somatic hypermutation of immunoglobulin genes",
+          "speciesName": "Homo sapiens"
+        }
+      ]
+    }
+  }
+}

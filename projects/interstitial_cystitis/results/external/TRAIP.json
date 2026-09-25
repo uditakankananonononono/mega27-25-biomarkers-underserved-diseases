@@ -1,0 +1,89 @@
+{
+  "gene": "TRAIP",
+  "module": "M6_cell_state_g2m",
+  "prereg": "projects/interstitial_cystitis/prereg/ic_p48_module_genesets.json",
+  "retrieved_at_utc": "2026-09-25T21:20:22.988791+00:00",
+  "sources": {
+    "ensembl": {
+      "url": "https://rest.ensembl.org/lookup/symbol/homo_sapiens/TRAIP?content-type=application/json",
+      "data": {
+        "id": "ENSG00000183763",
+        "display_name": "TRAIP",
+        "description": "TRAF interacting protein [Source:HGNC Symbol;Acc:HGNC:30764]",
+        "biotype": "protein_coding",
+        "seq_region_name": "3"
+      }
+    },
+    "uniprot": {
+      "url": "https://rest.uniprot.org/uniprotkb/search?query=gene_exact%3ATRAIP%20AND%20organism_id%3A9606%20AND%20reviewed%3Atrue&size=3&format=json",
+      "data": [
+        {
+          "primaryAccession": "Q9BWF2",
+          "uniProtkbId": "TRAIP_HUMAN",
+          "entryType": "UniProtKB reviewed (Swiss-Prot)"
+        }
+      ]
+    },
+    "europe_pmc": {
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=TRAIP%20AND%20%22interstitial%20cystitis%22&format=json&pageSize=10",
+      "data": {
+        "hit_count": 0,
+        "papers": []
+      }
+    },
+    "mygene": {
+      "url": "https://mygene.info/v3/query?q=symbol%3ATRAIP&species=human&size=3",
+      "data": {
+        "total": 1,
+        "hits": [
+          {
+            "_id": "10293",
+            "symbol": "TRAIP",
+            "name": "TRAF interacting protein",
+            "taxid": 9606
+          }
+        ]
+      }
+    },
+    "chembl": {
+      "url": "https://www.ebi.ac.uk/chembl/api/data/target/search.json?q=TRAIP&limit=20",
+      "data": {
+        "total": 0,
+        "human_targets": []
+      }
+    },
+    "hgnc_rest": {
+      "url": "https://rest.genenames.org/fetch/symbol/TRAIP",
+      "data": [
+        {
+          "symbol": "TRAIP",
+          "hgnc_id": "HGNC:30764",
+          "entrez_id": "10293",
+          "ensembl_gene_id": "ENSG00000183763",
+          "status": "Approved"
+        }
+      ]
+    },
+    "gtex_reference": {
+      "url": "https://gtexportal.org/api/v2/reference/gene?geneId=TRAIP",
+      "data": [
+        {
+          "geneSymbol": "TRAIP",
+          "geneId": null,
+          "gencodeId": "ENSG00000183763.8",
+          "entrezGeneId": 10293
+        }
+      ]
+    },
+    "reactome": {
+      "url": "https://reactome.org/ContentService/data/mapping/UniProt/Q9BWF2/pathways",
+      "data": [
+        {
+          "stId": "R-HSA-983168",
+          "displayName": "Antigen processing: Ubiquitination & Proteasome degradation",
+          "speciesName": "Homo sapiens"
+        }
+      ]
+    }
+  }
+}

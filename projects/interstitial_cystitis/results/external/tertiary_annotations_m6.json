@@ -1,0 +1,345 @@
+{
+  "retrieved_at_utc": "2026-09-25T21:24:50.891159+00:00",
+  "hubs": [
+    "G3BP1",
+    "SRSF1",
+    "DR1",
+    "RASAL2",
+    "MAPK14"
+  ],
+  "services": {
+    "dgidb": {
+      "url": "https://dgidb.org/api/graphql",
+      "data": {
+        "DR1": {
+          "n_interactions": 0,
+          "drugs": []
+        },
+        "SRSF1": {
+          "n_interactions": 0,
+          "drugs": []
+        },
+        "MAPK14": {
+          "n_interactions": 105,
+          "drugs": [
+            "2-METHOXYESTRADIOL",
+            "7-HYDROXYSTAUROSPORINE",
+            "ACUMAPIMOD",
+            "ALPHA-ADRENERGIC AGONIST",
+            "AMG-548",
+            "ARGIPRESSIN",
+            "ARRY-371797",
+            "AST-487",
+            "AVE-9940",
+            "AZD-7624",
+            "AZD6703",
+            "AZD7624",
+            "BMS-582949",
+            "CBS-3595",
+            "CHEMBL:CHEMBL1997335"
+          ]
+        },
+        "G3BP1": {
+          "n_interactions": 0,
+          "drugs": []
+        }
+      }
+    },
+    "gwas_catalog": {
+      "url_template": "https://www.ebi.ac.uk/gwas/rest/api/v2/associations?mapped_gene=%s&size=20",
+      "data": {
+        "G3BP1": {
+          "n_returned": 20,
+          "traits": [
+            "ATOX1/MSRA protein level ratio in blood",
+            "ATOX1/TMSB10 protein level ratio in blood",
+            "SPARC measurement",
+            "Stuttering",
+            "basal cell carcinoma",
+            "bilirubin measurement",
+            "chromosome, telomeric region length",
+            "cortical thickness",
+            "delivery measurement",
+            "free cholesterol measurement"
+          ],
+          "strongest_p": 2e-36
+        },
+        "SRSF1": {
+          "n_returned": 17,
+          "traits": [
+            "blood protein amount",
+            "body height",
+            "body mass index",
+            "educational attainment",
+            "gut microbiome measurement",
+            "self reported educational attainment"
+          ],
+          "strongest_p": 9e-16
+        },
+        "DR1": {
+          "n_returned": 20,
+          "traits": [
+            "Phospholipids:total lipids ratio",
+            "body height",
+            "cholesterol in chylomicrons and extremely large VLDL measurement",
+            "cholesterol to total lipids in very small VLDL percentage",
+            "eosinophil count",
+            "free cholesterol to total lipids in very small VLDL percentage",
+            "high density lipoprotein cholesterol measurement",
+            "nodular goiter",
+            "phospholipids in chylomicrons and extremely large VLDL measurement",
+            "total lipids in chylomicrons and extremely large VLDL measurement"
+          ],
+          "strongest_p": 5e-26
+        },
+        "RASAL2": {
+          "n_returned": 20,
+          "traits": [
+            "angiopoietin-related protein 1 measurement",
+            "bipolar disorder",
+            "body height",
+            "body mass index",
+            "cleft lip",
+            "cleft palate",
+            "colorectal cancer",
+            "diet measurement",
+            "hearing process quality",
+            "hearing threshold trait"
+          ],
+          "strongest_p": 9.000000000000001e-181
+        },
+        "MAPK14": {
+          "n_returned": 20,
+          "traits": [
+            "body height",
+            "colipase measurement",
+            "enteritis",
+            "eosinophil percentage of leukocytes",
+            "lean body mass",
+            "rheumatoid arthritis",
+            "semaphorin-3G measurement",
+            "sexual dimorphism measurement"
+          ],
+          "strongest_p": 5e-185
+        }
+      }
+    },
+    "pubmed_eutils": {
+      "url_template": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=pubmed&retmode=json&term=<term>",
+      "data": {
+        "G3BP1": {
+          "ic_comention_count": 0,
+          "query": "\"interstitial cystitis\"[Title/Abstract] AND \"G3BP1\"[Title/Abstract]"
+        },
+        "SRSF1": {
+          "ic_comention_count": 0,
+          "query": "\"interstitial cystitis\"[Title/Abstract] AND \"SRSF1\"[Title/Abstract]"
+        },
+        "DR1": {
+          "ic_comention_count": 0,
+          "query": "\"interstitial cystitis\"[Title/Abstract] AND \"DR1\"[Title/Abstract]"
+        },
+        "RASAL2": {
+          "ic_comention_count": 0,
+          "query": "\"interstitial cystitis\"[Title/Abstract] AND \"RASAL2\"[Title/Abstract]"
+        },
+        "MAPK14": {
+          "ic_comention_count": 0,
+          "query": "\"interstitial cystitis\"[Title/Abstract] AND \"MAPK14\"[Title/Abstract]"
+        }
+      }
+    },
+    "pharos": {
+      "url": "https://pharos-api.ncats.io/graphql",
+      "data": {
+        "G3BP1": {
+          "tdl": "Tbio",
+          "family": "Enzyme"
+        },
+        "SRSF1": {
+          "tdl": "Tbio",
+          "family": null
+        },
+        "DR1": {
+          "tdl": "Tbio",
+          "family": null
+        },
+        "RASAL2": {
+          "tdl": "Tbio",
+          "family": "Enzyme"
+        },
+        "MAPK14": {
+          "tdl": "Tchem",
+          "family": "Kinase"
+        }
+      }
+    },
+    "cbioportal": {
+      "url": "https://www.cbioportal.org/api/molecular-profiles/blca_tcga_pan_can_atlas_2018_mutations/mutations/fetch",
+      "study": "blca_tcga_pan_can_atlas_2018",
+      "data": {
+        "entrez": {
+          "G3BP1": 10146,
+          "SRSF1": 6426,
+          "DR1": 1810,
+          "RASAL2": 9462,
+          "MAPK14": 1432
+        },
+        "mutation_records_per_hub": {
+          "RASAL2": 16,
+          "SRSF1": 6,
+          "G3BP1": 2,
+          "MAPK14": 4,
+          "DR1": 1
+        }
+      }
+    },
+    "wikipathways": {
+      "url_template": "https://www.wikipathways.org/json/findPathwaysByText.json?query=%s",
+      "data": {
+        "G3BP1": {
+          "n_human_pathways": 1131,
+          "top": [
+            {
+              "id": "WP100",
+              "name": "Glutathione metabolism"
+            },
+            {
+              "id": "WP106",
+              "name": "Alanine and aspartate metabolism"
+            },
+            {
+              "id": "WP107",
+              "name": "Translation factors"
+            },
+            {
+              "id": "WP111",
+              "name": "Electron transport chain: OXPHOS system in mitochondria"
+            },
+            {
+              "id": "WP117",
+              "name": "GPCRs, other"
+            }
+          ]
+        },
+        "SRSF1": {
+          "n_human_pathways": 1131,
+          "top": [
+            {
+              "id": "WP100",
+              "name": "Glutathione metabolism"
+            },
+            {
+              "id": "WP106",
+              "name": "Alanine and aspartate metabolism"
+            },
+            {
+              "id": "WP107",
+              "name": "Translation factors"
+            },
+            {
+              "id": "WP111",
+              "name": "Electron transport chain: OXPHOS system in mitochondria"
+            },
+            {
+              "id": "WP117",
+              "name": "GPCRs, other"
+            }
+          ]
+        },
+        "DR1": {
+          "n_human_pathways": 1131,
+          "top": [
+            {
+              "id": "WP100",
+              "name": "Glutathione metabolism"
+            },
+            {
+              "id": "WP106",
+              "name": "Alanine and aspartate metabolism"
+            },
+            {
+              "id": "WP107",
+              "name": "Translation factors"
+            },
+            {
+              "id": "WP111",
+              "name": "Electron transport chain: OXPHOS system in mitochondria"
+            },
+            {
+              "id": "WP117",
+              "name": "GPCRs, other"
+            }
+          ]
+        },
+        "RASAL2": {
+          "n_human_pathways": 1131,
+          "top": [
+            {
+              "id": "WP100",
+              "name": "Glutathione metabolism"
+            },
+            {
+              "id": "WP106",
+              "name": "Alanine and aspartate metabolism"
+            },
+            {
+              "id": "WP107",
+              "name": "Translation factors"
+            },
+            {
+              "id": "WP111",
+              "name": "Electron transport chain: OXPHOS system in mitochondria"
+            },
+            {
+              "id": "WP117",
+              "name": "GPCRs, other"
+            }
+          ]
+        },
+        "MAPK14": {
+          "n_human_pathways": 1131,
+          "top": [
+            {
+              "id": "WP100",
+              "name": "Glutathione metabolism"
+            },
+            {
+              "id": "WP106",
+              "name": "Alanine and aspartate metabolism"
+            },
+            {
+              "id": "WP107",
+              "name": "Translation factors"
+            },
+            {
+              "id": "WP111",
+              "name": "Electron transport chain: OXPHOS system in mitochondria"
+            },
+            {
+              "id": "WP117",
+              "name": "GPCRs, other"
+            }
+          ]
+        }
+      }
+    },
+    "pgs_catalog": {
+      "url_template": "https://www.pgscatalog.org/rest/trait/search?query=<term>",
+      "data": {
+        "cystitis": {
+          "count": 0,
+          "top": []
+        },
+        "bladder pain": {
+          "count": 0,
+          "top": []
+        },
+        "bladder pain syndrome": {
+          "count": 0,
+          "top": []
+        }
+      }
+    }
+  }
+}

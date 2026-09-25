@@ -1,0 +1,221 @@
+{
+  "gene": "POLE",
+  "module": "M6_cell_state_g2m",
+  "prereg": "projects/interstitial_cystitis/prereg/ic_p48_module_genesets.json",
+  "retrieved_at_utc": "2026-09-25T20:33:01.137217+00:00",
+  "sources": {
+    "ensembl": {
+      "url": "https://rest.ensembl.org/lookup/symbol/homo_sapiens/POLE?content-type=application/json",
+      "data": {
+        "id": "ENSG00000177084",
+        "display_name": "POLE",
+        "description": "DNA polymerase epsilon, catalytic subunit [Source:HGNC Symbol;Acc:HGNC:9177]",
+        "biotype": "protein_coding",
+        "seq_region_name": "12"
+      }
+    },
+    "uniprot": {
+      "url": "https://rest.uniprot.org/uniprotkb/search?query=gene_exact%3APOLE%20AND%20organism_id%3A9606%20AND%20reviewed%3Atrue&size=3&format=json",
+      "data": [
+        {
+          "primaryAccession": "Q07864",
+          "uniProtkbId": "DPOE1_HUMAN",
+          "entryType": "UniProtKB reviewed (Swiss-Prot)"
+        }
+      ]
+    },
+    "europe_pmc": {
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=POLE%20AND%20%22interstitial%20cystitis%22&format=json&pageSize=10",
+      "data": {
+        "hit_count": 157,
+        "papers": [
+          {
+            "id": "37321232",
+            "title": "MACULAR HOLE IN A PATIENT WITH PENTOSAN POLYSULFATE MACULOPATHY.",
+            "doi": "10.1097/icb.0000000000001444",
+            "pubYear": "2024"
+          },
+          {
+            "id": "41049115",
+            "title": "Pigmentary Maculopathy in Patients with Interstitial Cystitis: Association with Pentosan Polysulfate and Other Therapies.",
+            "doi": "10.1016/j.xops.2025.100909",
+            "pubYear": "2026"
+          },
+          {
+            "id": "39127911",
+            "title": "Excluding confusable diseases in patients with presumptive diagnosis of interstitial cystitis: A large patient cohort study.",
+            "doi": "10.1002/ijgo.15856",
+            "pubYear": "2025"
+          },
+          {
+            "id": "42504375",
+            "title": "Dialysis-Requiring Acute Kidney Injury Secondary to Severe Rhabdomyolysis in a Recreational Ketamine User.",
+            "doi": "10.7759/cureus.111521",
+            "pubYear": "2026"
+          },
+          {
+            "id": "39787060",
+            "title": "Retrospective study of incidence/prevalence of pigmentary maculopathy and retinopathy in patients receiving pentosan polysulfate sodium.",
+            "doi": "10.1371/journal.pone.0313497",
+            "pubYear": "2025"
+          },
+          {
+            "id": "PMC13372454",
+            "title": "Poster Session 5: Pediatric Urology, Basic Science : Sunday, June 28, 2026 • 16:45–18:00",
+            "doi": null,
+            "pubYear": "2026"
+          },
+          {
+            "id": "39522413",
+            "title": "Malignant pheochromocytoma with vascular invasion and metastasis: A case report and review of treatment options.",
+            "doi": "10.1016/j.ijscr.2024.110537",
+            "pubYear": "2024"
+          },
+          {
+            "id": "41892601",
+            "title": "Expanding the Spectrum of Central Sensitivity Syndrome: Integrating Otologic Migraine as Otologic Central Sensitivity Syndrome.",
+            "doi": "10.3390/brainsci16030257",
+            "pubYear": "2026"
+          },
+          {
+            "id": "38202771",
+            "title": "Pharmacological Properties of Shionone: Potential Anti-Inflammatory Phytochemical against Different Diseases.",
+            "doi": "10.3390/molecules29010189",
+            "pubYear": "2023"
+          },
+          {
+            "id": "38984334",
+            "title": "This pain drives me crazy: Psychiatric symptoms in women with interstitial cystitis/bladder pain syndrome.",
+            "doi": "10.5498/wjp.v14.i6.954",
+            "pubYear": "2024"
+          }
+        ]
+      }
+    },
+    "mygene": {
+      "url": "https://mygene.info/v3/query?q=symbol%3APOLE&species=human&size=3",
+      "data": {
+        "total": 1,
+        "hits": [
+          {
+            "_id": "5426",
+            "symbol": "POLE",
+            "name": "DNA polymerase epsilon, catalytic subunit",
+            "taxid": 9606
+          }
+        ]
+      }
+    },
+    "chembl": {
+      "url": "https://www.ebi.ac.uk/chembl/api/data/target/search.json?q=POLE&limit=20",
+      "data": {
+        "total": 5,
+        "human_targets": [
+          {
+            "target_chembl_id": "CHEMBL6067222",
+            "pref_name": "Centrosome and spindle pole-associated protein 1",
+            "organism": "Homo sapiens"
+          },
+          {
+            "target_chembl_id": "CHEMBL5724683",
+            "pref_name": "Gamma-tubulin complex component 3",
+            "organism": "Homo sapiens"
+          },
+          {
+            "target_chembl_id": "CHEMBL5724684",
+            "pref_name": "Gamma-tubulin complex component 2",
+            "organism": "Homo sapiens"
+          },
+          {
+            "target_chembl_id": "CHEMBL4523294",
+            "pref_name": "Separin",
+            "organism": "Homo sapiens"
+          },
+          {
+            "target_chembl_id": "CHEMBL2363042",
+            "pref_name": "DNA polymerase (alpha/delta/epsilon)",
+            "organism": "Homo sapiens"
+          }
+        ]
+      }
+    },
+    "hgnc_rest": {
+      "url": "https://rest.genenames.org/fetch/symbol/POLE",
+      "data": [
+        {
+          "symbol": "POLE",
+          "hgnc_id": "HGNC:9177",
+          "entrez_id": "5426",
+          "ensembl_gene_id": "ENSG00000177084",
+          "status": "Approved"
+        }
+      ]
+    },
+    "gtex_reference": {
+      "url": "https://gtexportal.org/api/v2/reference/gene?geneId=POLE",
+      "data": [
+        {
+          "geneSymbol": "POLE",
+          "geneId": null,
+          "gencodeId": "ENSG00000177084.16",
+          "entrezGeneId": 5426
+        }
+      ]
+    },
+    "reactome": {
+      "url": "https://reactome.org/ContentService/data/mapping/UniProt/Q07864/pathways",
+      "data": [
+        {
+          "stId": "R-HSA-110314",
+          "displayName": "Recognition of DNA damage by PCNA-containing replication complex",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-5651801",
+          "displayName": "PCNA-Dependent Long Patch Base Excision Repair",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-5656169",
+          "displayName": "Termination of translesion DNA synthesis",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-5685942",
+          "displayName": "HDR through Homologous Recombination (HRR)",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-5696397",
+          "displayName": "Gap-filling DNA repair synthesis and ligation in GG-NER",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-5696400",
+          "displayName": "Dual Incision in GG-NER",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-6782135",
+          "displayName": "Dual incision in TC-NER",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-6782210",
+          "displayName": "Gap-filling DNA repair synthesis and ligation in TC-NER",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-68952",
+          "displayName": "DNA replication initiation",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-68962",
+          "displayName": "Activation of the pre-replicative complex",
+          "speciesName": "Homo sapiens"
+        }
+      ]
+    }
+  }
+}

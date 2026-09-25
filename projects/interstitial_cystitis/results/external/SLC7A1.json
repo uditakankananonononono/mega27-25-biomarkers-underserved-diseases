@@ -1,0 +1,108 @@
+{
+  "gene": "SLC7A1",
+  "module": "M6_cell_state_g2m",
+  "prereg": "projects/interstitial_cystitis/prereg/ic_p48_module_genesets.json",
+  "retrieved_at_utc": "2026-09-25T20:33:48.398628+00:00",
+  "sources": {
+    "ensembl": {
+      "url": "https://rest.ensembl.org/lookup/symbol/homo_sapiens/SLC7A1?content-type=application/json",
+      "data": {
+        "id": "ENSG00000139514",
+        "display_name": "SLC7A1",
+        "description": "solute carrier family 7 member 1 [Source:HGNC Symbol;Acc:HGNC:11057]",
+        "biotype": "protein_coding",
+        "seq_region_name": "13"
+      }
+    },
+    "uniprot": {
+      "url": "https://rest.uniprot.org/uniprotkb/search?query=gene_exact%3ASLC7A1%20AND%20organism_id%3A9606%20AND%20reviewed%3Atrue&size=3&format=json",
+      "data": [
+        {
+          "primaryAccession": "P30825",
+          "uniProtkbId": "CTR1_HUMAN",
+          "entryType": "UniProtKB reviewed (Swiss-Prot)"
+        }
+      ]
+    },
+    "europe_pmc": {
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=SLC7A1%20AND%20%22interstitial%20cystitis%22&format=json&pageSize=10",
+      "data": {
+        "hit_count": 2,
+        "papers": [
+          {
+            "id": "41713163",
+            "title": "Interstitial cystitis: a phenotype and rare variant exome sequencing study.",
+            "doi": "10.1016/j.ebiom.2026.106150",
+            "pubYear": "2026"
+          },
+          {
+            "id": "32030671",
+            "title": "Vision 20/20 for the Second Leap of Reproductive Sciences.",
+            "doi": "10.1007/s43032-019-00138-w",
+            "pubYear": "2020"
+          }
+        ]
+      }
+    },
+    "mygene": {
+      "url": "https://mygene.info/v3/query?q=symbol%3ASLC7A1&species=human&size=3",
+      "data": {
+        "total": 1,
+        "hits": [
+          {
+            "_id": "6541",
+            "symbol": "SLC7A1",
+            "name": "solute carrier family 7 member 1",
+            "taxid": 9606
+          }
+        ]
+      }
+    },
+    "chembl": {
+      "url": "https://www.ebi.ac.uk/chembl/api/data/target/search.json?q=SLC7A1&limit=20",
+      "data": {
+        "total": 1,
+        "human_targets": [
+          {
+            "target_chembl_id": "CHEMBL6066921",
+            "pref_name": "High affinity cationic amino acid transporter 1",
+            "organism": "Homo sapiens"
+          }
+        ]
+      }
+    },
+    "hgnc_rest": {
+      "url": "https://rest.genenames.org/fetch/symbol/SLC7A1",
+      "data": [
+        {
+          "symbol": "SLC7A1",
+          "hgnc_id": "HGNC:11057",
+          "entrez_id": "6541",
+          "ensembl_gene_id": "ENSG00000139514",
+          "status": "Approved"
+        }
+      ]
+    },
+    "gtex_reference": {
+      "url": "https://gtexportal.org/api/v2/reference/gene?geneId=SLC7A1",
+      "data": [
+        {
+          "geneSymbol": "SLC7A1",
+          "geneId": null,
+          "gencodeId": "ENSG00000139514.12",
+          "entrezGeneId": 6541
+        }
+      ]
+    },
+    "reactome": {
+      "url": "https://reactome.org/ContentService/data/mapping/UniProt/P30825/pathways",
+      "data": [
+        {
+          "stId": "R-HSA-352230",
+          "displayName": "Amino acid transport across the plasma membrane",
+          "speciesName": "Homo sapiens"
+        }
+      ]
+    }
+  }
+}

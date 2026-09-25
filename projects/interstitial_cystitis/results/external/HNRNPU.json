@@ -1,0 +1,128 @@
+{
+  "gene": "HNRNPU",
+  "module": "M6_cell_state_g2m",
+  "prereg": "projects/interstitial_cystitis/prereg/ic_p48_module_genesets.json",
+  "retrieved_at_utc": "2026-09-25T21:23:55.585867+00:00",
+  "sources": {
+    "ensembl": {
+      "url": "https://rest.ensembl.org/lookup/symbol/homo_sapiens/HNRNPU?content-type=application/json",
+      "data": {
+        "id": "ENSG00000153187",
+        "display_name": "HNRNPU",
+        "description": "heterogeneous nuclear ribonucleoprotein U [Source:HGNC Symbol;Acc:HGNC:5048]",
+        "biotype": "protein_coding",
+        "seq_region_name": "1"
+      }
+    },
+    "uniprot": {
+      "url": "https://rest.uniprot.org/uniprotkb/search?query=gene_exact%3AHNRNPU%20AND%20organism_id%3A9606%20AND%20reviewed%3Atrue&size=3&format=json",
+      "data": [
+        {
+          "primaryAccession": "Q00839",
+          "uniProtkbId": "HNRPU_HUMAN",
+          "entryType": "UniProtKB reviewed (Swiss-Prot)"
+        }
+      ]
+    },
+    "europe_pmc": {
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=HNRNPU%20AND%20%22interstitial%20cystitis%22&format=json&pageSize=10",
+      "data": {
+        "hit_count": 2,
+        "papers": [
+          {
+            "id": "27652284",
+            "title": "Targeted sequencing of 351 candidate genes for epileptic encephalopathy in a large cohort of patients.",
+            "doi": "10.1002/mgg3.235",
+            "pubYear": "2016"
+          },
+          {
+            "id": "34674717",
+            "title": "Huanglianjiedu Decoction as an effective treatment for oral squamous cell carcinoma based on network pharmacology and experimental validation.",
+            "doi": "10.1186/s12935-021-02201-6",
+            "pubYear": "2021"
+          }
+        ]
+      }
+    },
+    "mygene": {
+      "url": "https://mygene.info/v3/query?q=symbol%3AHNRNPU&species=human&size=3",
+      "data": {
+        "total": 1,
+        "hits": [
+          {
+            "_id": "3192",
+            "symbol": "HNRNPU",
+            "name": "heterogeneous nuclear ribonucleoprotein U",
+            "taxid": 9606
+          }
+        ]
+      }
+    },
+    "chembl": {
+      "url": "https://www.ebi.ac.uk/chembl/api/data/target/search.json?q=HNRNPU&limit=20",
+      "data": {
+        "total": 1,
+        "human_targets": [
+          {
+            "target_chembl_id": "CHEMBL4296007",
+            "pref_name": "Heterogeneous nuclear ribonucleoprotein U",
+            "organism": "Homo sapiens"
+          }
+        ]
+      }
+    },
+    "hgnc_rest": {
+      "url": "https://rest.genenames.org/fetch/symbol/HNRNPU",
+      "data": [
+        {
+          "symbol": "HNRNPU",
+          "hgnc_id": "HGNC:5048",
+          "entrez_id": "3192",
+          "ensembl_gene_id": "ENSG00000153187",
+          "status": "Approved"
+        }
+      ]
+    },
+    "gtex_reference": {
+      "url": "https://gtexportal.org/api/v2/reference/gene?geneId=HNRNPU",
+      "data": [
+        {
+          "geneSymbol": "HNRNPU",
+          "geneId": null,
+          "gencodeId": "ENSG00000153187.18",
+          "entrezGeneId": 3192
+        }
+      ]
+    },
+    "reactome": {
+      "url": "https://reactome.org/ContentService/data/mapping/UniProt/Q00839/pathways",
+      "data": [
+        {
+          "stId": "R-HSA-72163",
+          "displayName": "mRNA Splicing - Major Pathway",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-72203",
+          "displayName": "Processing of Capped Intron-Containing Pre-mRNA",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-9770562",
+          "displayName": "mRNA Polyadenylation",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-9844594",
+          "displayName": "Transcriptional regulation of brown and beige adipocyte differentiation by EBF2",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-9918481",
+          "displayName": "Dengue Virus-Host Interactions",
+          "speciesName": "Homo sapiens"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,99 @@
+{
+  "gene": "SRSF10",
+  "module": "M6_cell_state_g2m",
+  "prereg": "projects/interstitial_cystitis/prereg/ic_p48_module_genesets.json",
+  "retrieved_at_utc": "2026-09-25T21:22:26.896705+00:00",
+  "sources": {
+    "ensembl": {
+      "url": "https://rest.ensembl.org/lookup/symbol/homo_sapiens/SRSF10?content-type=application/json",
+      "data": {
+        "id": "ENSG00000188529",
+        "display_name": "SRSF10",
+        "description": "serine and arginine rich splicing factor 10 [Source:HGNC Symbol;Acc:HGNC:16713]",
+        "biotype": "protein_coding",
+        "seq_region_name": "1"
+      }
+    },
+    "uniprot": {
+      "url": "https://rest.uniprot.org/uniprotkb/search?query=gene_exact%3ASRSF10%20AND%20organism_id%3A9606%20AND%20reviewed%3Atrue&size=3&format=json",
+      "data": [
+        {
+          "primaryAccession": "O75494",
+          "uniProtkbId": "SRS10_HUMAN",
+          "entryType": "UniProtKB reviewed (Swiss-Prot)"
+        }
+      ]
+    },
+    "europe_pmc": {
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=SRSF10%20AND%20%22interstitial%20cystitis%22&format=json&pageSize=10",
+      "data": {
+        "hit_count": 0,
+        "papers": []
+      }
+    },
+    "mygene": {
+      "url": "https://mygene.info/v3/query?q=symbol%3ASRSF10&species=human&size=3",
+      "data": {
+        "total": 1,
+        "hits": [
+          {
+            "_id": "10772",
+            "symbol": "SRSF10",
+            "name": "serine and arginine rich splicing factor 10",
+            "taxid": 9606
+          }
+        ]
+      }
+    },
+    "chembl": {
+      "url": "https://www.ebi.ac.uk/chembl/api/data/target/search.json?q=SRSF10&limit=20",
+      "data": {
+        "total": 0,
+        "human_targets": []
+      }
+    },
+    "hgnc_rest": {
+      "url": "https://rest.genenames.org/fetch/symbol/SRSF10",
+      "data": [
+        {
+          "symbol": "SRSF10",
+          "hgnc_id": "HGNC:16713",
+          "entrez_id": "10772",
+          "ensembl_gene_id": "ENSG00000188529",
+          "status": "Approved"
+        }
+      ]
+    },
+    "gtex_reference": {
+      "url": "https://gtexportal.org/api/v2/reference/gene?geneId=SRSF10",
+      "data": [
+        {
+          "geneSymbol": "SRSF10",
+          "geneId": null,
+          "gencodeId": "ENSG00000188529.14",
+          "entrezGeneId": 10772
+        }
+      ]
+    },
+    "reactome": {
+      "url": "https://reactome.org/ContentService/data/mapping/UniProt/O75494/pathways",
+      "data": [
+        {
+          "stId": "R-HSA-72163",
+          "displayName": "mRNA Splicing - Major Pathway",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-72203",
+          "displayName": "Processing of Capped Intron-Containing Pre-mRNA",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-9770562",
+          "displayName": "mRNA Polyadenylation",
+          "speciesName": "Homo sapiens"
+        }
+      ]
+    }
+  }
+}

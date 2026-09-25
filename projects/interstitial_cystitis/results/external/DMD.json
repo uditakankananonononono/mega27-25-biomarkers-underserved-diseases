@@ -1,0 +1,166 @@
+{
+  "gene": "DMD",
+  "module": "M6_cell_state_g2m",
+  "prereg": "projects/interstitial_cystitis/prereg/ic_p48_module_genesets.json",
+  "retrieved_at_utc": "2026-09-25T21:23:44.248199+00:00",
+  "sources": {
+    "ensembl": {
+      "url": "https://rest.ensembl.org/lookup/symbol/homo_sapiens/DMD?content-type=application/json",
+      "data": {
+        "id": "ENSG00000198947",
+        "display_name": "DMD",
+        "description": "dystrophin [Source:HGNC Symbol;Acc:HGNC:2928]",
+        "biotype": "protein_coding",
+        "seq_region_name": "X"
+      }
+    },
+    "uniprot": {
+      "url": "https://rest.uniprot.org/uniprotkb/search?query=gene_exact%3ADMD%20AND%20organism_id%3A9606%20AND%20reviewed%3Atrue&size=3&format=json",
+      "data": [
+        {
+          "primaryAccession": "P11532",
+          "uniProtkbId": "DMD_HUMAN",
+          "entryType": "UniProtKB reviewed (Swiss-Prot)"
+        }
+      ]
+    },
+    "europe_pmc": {
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=DMD%20AND%20%22interstitial%20cystitis%22&format=json&pageSize=10",
+      "data": {
+        "hit_count": 27,
+        "papers": [
+          {
+            "id": "41724774",
+            "title": "Decoding the dark genome reveals its organisation into modular disease networks.",
+            "doi": "10.1038/s41598-026-40553-z",
+            "pubYear": "2026"
+          },
+          {
+            "id": "PMC13434919",
+            "title": "Abstracts of the 19th International Congress on Neuromuscular Diseases 7th – 11th July 2026",
+            "doi": null,
+            "pubYear": "2026"
+          },
+          {
+            "id": "41303269",
+            "title": "Mitochondrial Macular Dystrophy-A Case Report and Mini Review of Retinal Dystrophies.",
+            "doi": "10.3390/jcm14228236",
+            "pubYear": "2025"
+          },
+          {
+            "id": "39800958",
+            "title": "Axis I diagnosis profile according to the Diagnostic Criteria for Temporomandibular Disorders (DC/TMD): comparison between hospital-based orofacial pain clinic and dental academic-based orofacial pain clinic.",
+            "doi": "10.22514/jofph.2024.040",
+            "pubYear": "2024"
+          },
+          {
+            "id": "40625007",
+            "title": "Advances in Therapeutic Applications of CRISPR Genome Editing for Spinal Pain Management.",
+            "doi": "10.14245/ns.2550462.231",
+            "pubYear": "2025"
+          },
+          {
+            "id": "30653537",
+            "title": "Formal comment on \"Systematic review of the predictors of statin adherence for the primary prevention of cardiovascular disease\".",
+            "doi": "10.1371/journal.pone.0205138",
+            "pubYear": "2019"
+          },
+          {
+            "id": "27694784",
+            "title": "Myogenic temporomandibular disorders: Clinical systemic comorbidities in a female population sample.",
+            "doi": "10.4317/medoral.21249",
+            "pubYear": "2016"
+          },
+          {
+            "id": "38922501",
+            "title": "Engineering extracellular vesicles for ROS scavenging and tissue regeneration.",
+            "doi": "10.1186/s40580-024-00430-9",
+            "pubYear": "2024"
+          },
+          {
+            "id": "20181082",
+            "title": "Urinary glycosaminoglycan excretion in patients with primary nocturnal enuresis.",
+            "doi": "10.1186/1824-7288-36-13",
+            "pubYear": "2010"
+          },
+          {
+            "id": "29674491",
+            "title": "Ketamine Pharmacokinetics and Pharmacodynamics Are Altered by P-Glycoprotein and Breast Cancer Resistance Protein Efflux Transporters in Mice.",
+            "doi": "10.1124/dmd.117.078360",
+            "pubYear": "2018"
+          }
+        ]
+      }
+    },
+    "mygene": {
+      "url": "https://mygene.info/v3/query?q=symbol%3ADMD&species=human&size=3",
+      "data": {
+        "total": 1,
+        "hits": [
+          {
+            "_id": "1756",
+            "symbol": "DMD",
+            "name": "dystrophin",
+            "taxid": 9606
+          }
+        ]
+      }
+    },
+    "chembl": {
+      "url": "https://www.ebi.ac.uk/chembl/api/data/target/search.json?q=DMD&limit=20",
+      "data": {
+        "total": 2,
+        "human_targets": [
+          {
+            "target_chembl_id": "CHEMBL5498504",
+            "pref_name": "Dystrophin",
+            "organism": "Homo sapiens"
+          }
+        ]
+      }
+    },
+    "hgnc_rest": {
+      "url": "https://rest.genenames.org/fetch/symbol/DMD",
+      "data": [
+        {
+          "symbol": "DMD",
+          "hgnc_id": "HGNC:2928",
+          "entrez_id": "1756",
+          "ensembl_gene_id": "ENSG00000198947",
+          "status": "Approved"
+        }
+      ]
+    },
+    "gtex_reference": {
+      "url": "https://gtexportal.org/api/v2/reference/gene?geneId=DMD",
+      "data": [
+        {
+          "geneSymbol": "DMD",
+          "geneId": null,
+          "gencodeId": "ENSG00000198947.15",
+          "entrezGeneId": 1756
+        }
+      ]
+    },
+    "reactome": {
+      "url": "https://reactome.org/ContentService/data/mapping/UniProt/P11532/pathways",
+      "data": [
+        {
+          "stId": "R-HSA-3000171",
+          "displayName": "Non-integrin membrane-ECM interactions",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-390522",
+          "displayName": "Striated Muscle Contraction",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-9913351",
+          "displayName": "Formation of the dystrophin-glycoprotein complex (DGC)",
+          "speciesName": "Homo sapiens"
+        }
+      ]
+    }
+  }
+}

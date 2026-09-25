@@ -1,0 +1,193 @@
+{
+  "gene": "CUL4A",
+  "module": "M6_cell_state_g2m",
+  "prereg": "projects/interstitial_cystitis/prereg/ic_p48_module_genesets.json",
+  "retrieved_at_utc": "2026-09-25T20:33:39.946677+00:00",
+  "sources": {
+    "ensembl": {
+      "url": "https://rest.ensembl.org/lookup/symbol/homo_sapiens/CUL4A?content-type=application/json",
+      "data": {
+        "id": "ENSG00000139842",
+        "display_name": "CUL4A",
+        "description": "cullin 4A [Source:HGNC Symbol;Acc:HGNC:2554]",
+        "biotype": "protein_coding",
+        "seq_region_name": "13"
+      }
+    },
+    "uniprot": {
+      "url": "https://rest.uniprot.org/uniprotkb/search?query=gene_exact%3ACUL4A%20AND%20organism_id%3A9606%20AND%20reviewed%3Atrue&size=3&format=json",
+      "data": [
+        {
+          "primaryAccession": "Q13619",
+          "uniProtkbId": "CUL4A_HUMAN",
+          "entryType": "UniProtKB reviewed (Swiss-Prot)"
+        }
+      ]
+    },
+    "europe_pmc": {
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=CUL4A%20AND%20%22interstitial%20cystitis%22&format=json&pageSize=10",
+      "data": {
+        "hit_count": 2,
+        "papers": [
+          {
+            "id": "29540744",
+            "title": "Alpha-oxoglutarate inhibits the proliferation of immortalized normal bladder epithelial cells via an epigenetic switch involving ARID1A.",
+            "doi": "10.1038/s41598-018-22771-2",
+            "pubYear": "2018"
+          },
+          {
+            "id": "24085684",
+            "title": "Abstracts of the 2013 Annual Meeting of the American College of Rheumatology. October 25-30, 2013. San Diego, California, USA.",
+            "doi": "10.1002/art.38216",
+            "pubYear": "2013"
+          }
+        ]
+      }
+    },
+    "mygene": {
+      "url": "https://mygene.info/v3/query?q=symbol%3ACUL4A&species=human&size=3",
+      "data": {
+        "total": 1,
+        "hits": [
+          {
+            "_id": "8451",
+            "symbol": "CUL4A",
+            "name": "cullin 4A",
+            "taxid": 9606
+          }
+        ]
+      }
+    },
+    "chembl": {
+      "url": "https://www.ebi.ac.uk/chembl/api/data/target/search.json?q=CUL4A&limit=20",
+      "data": {
+        "total": 10,
+        "human_targets": [
+          {
+            "target_chembl_id": "CHEMBL4523598",
+            "pref_name": "Cullin-4A",
+            "organism": "Homo sapiens"
+          },
+          {
+            "target_chembl_id": "CHEMBL4296133",
+            "pref_name": "Protein cereblon/Bromodomain-containing protein 4/Cullin-4A",
+            "organism": "Homo sapiens"
+          },
+          {
+            "target_chembl_id": "CHEMBL4296134",
+            "pref_name": "Protein cereblon/Bromodomain-containing protein 2/Cullin-4A",
+            "organism": "Homo sapiens"
+          },
+          {
+            "target_chembl_id": "CHEMBL4296135",
+            "pref_name": "Protein cereblon/Bromodomain-containing protein 3/Cullin-4A",
+            "organism": "Homo sapiens"
+          },
+          {
+            "target_chembl_id": "CHEMBL5169084",
+            "pref_name": "Protein cereblon/Androgen receptor/Cullin-4A",
+            "organism": "Homo sapiens"
+          },
+          {
+            "target_chembl_id": "CHEMBL4523713",
+            "pref_name": "Protein cereblon/Estrogen receptor/Cullin-4A",
+            "organism": "Homo sapiens"
+          },
+          {
+            "target_chembl_id": "CHEMBL4523714",
+            "pref_name": "Protein cereblon/Eukaryotic peptide chain release factor GTP-binding subunit ERF3A/Cullin-4A",
+            "organism": "Homo sapiens"
+          },
+          {
+            "target_chembl_id": "CHEMBL4524003",
+            "pref_name": "Protein cereblon/Eukaryotic peptide chain release factor GTP-binding subunit ERF3A/DNA damage-binding protein 1/Cullin-4A",
+            "organism": "Homo sapiens"
+          },
+          {
+            "target_chembl_id": "CHEMBL3833061",
+            "pref_name": "CRL4(CRBN) E3 ubiquitin ligase",
+            "organism": "Homo sapiens"
+          }
+        ]
+      }
+    },
+    "hgnc_rest": {
+      "url": "https://rest.genenames.org/fetch/symbol/CUL4A",
+      "data": [
+        {
+          "symbol": "CUL4A",
+          "hgnc_id": "HGNC:2554",
+          "entrez_id": "8451",
+          "ensembl_gene_id": "ENSG00000139842",
+          "status": "Approved"
+        }
+      ]
+    },
+    "gtex_reference": {
+      "url": "https://gtexportal.org/api/v2/reference/gene?geneId=CUL4A",
+      "data": [
+        {
+          "geneSymbol": "CUL4A",
+          "geneId": null,
+          "gencodeId": "ENSG00000139842.14",
+          "entrezGeneId": 8451
+        }
+      ]
+    },
+    "reactome": {
+      "url": "https://reactome.org/ContentService/data/mapping/UniProt/Q13619/pathways",
+      "data": [
+        {
+          "stId": "R-HSA-110314",
+          "displayName": "Recognition of DNA damage by PCNA-containing replication complex",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-5696394",
+          "displayName": "DNA Damage Recognition in GG-NER",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-5696395",
+          "displayName": "Formation of Incision Complex in GG-NER",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-5696400",
+          "displayName": "Dual Incision in GG-NER",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-6781823",
+          "displayName": "Formation of TC-NER Pre-Incision Complex",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-6781827",
+          "displayName": "Transcription-Coupled Nucleotide Excision Repair (TC-NER)",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-6782135",
+          "displayName": "Dual incision in TC-NER",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-6782210",
+          "displayName": "Gap-filling DNA repair synthesis and ligation in TC-NER",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-8951664",
+          "displayName": "Neddylation",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-9974237",
+          "displayName": "Negative Regulation of DNA Double Strand Break Response",
+          "speciesName": "Homo sapiens"
+        }
+      ]
+    }
+  }
+}

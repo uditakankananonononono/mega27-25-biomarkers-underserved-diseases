@@ -1,0 +1,158 @@
+{
+  "gene": "SMARCC1",
+  "module": "M6_cell_state_g2m",
+  "prereg": "projects/interstitial_cystitis/prereg/ic_p48_module_genesets.json",
+  "retrieved_at_utc": "2026-09-25T21:22:45.069162+00:00",
+  "sources": {
+    "ensembl": {
+      "url": "https://rest.ensembl.org/lookup/symbol/homo_sapiens/SMARCC1?content-type=application/json",
+      "data": {
+        "id": "ENSG00000173473",
+        "display_name": "SMARCC1",
+        "description": "SWI/SNF related BAF chromatin remodeling complex subunit C1 [Source:HGNC Symbol;Acc:HGNC:11104]",
+        "biotype": "protein_coding",
+        "seq_region_name": "3"
+      }
+    },
+    "uniprot": {
+      "url": "https://rest.uniprot.org/uniprotkb/search?query=gene_exact%3ASMARCC1%20AND%20organism_id%3A9606%20AND%20reviewed%3Atrue&size=3&format=json",
+      "data": [
+        {
+          "primaryAccession": "Q92922",
+          "uniProtkbId": "SMRC1_HUMAN",
+          "entryType": "UniProtKB reviewed (Swiss-Prot)"
+        }
+      ]
+    },
+    "europe_pmc": {
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=SMARCC1%20AND%20%22interstitial%20cystitis%22&format=json&pageSize=10",
+      "data": {
+        "hit_count": 2,
+        "papers": [
+          {
+            "id": "41791709",
+            "title": "The SWI/SNF complex in tumor metabolism: Mechanisms and therapeutic implications.",
+            "doi": "10.1016/j.jbc.2026.111342",
+            "pubYear": "2026"
+          },
+          {
+            "id": "18267009",
+            "title": "Molecular networks discriminating mouse bladder responses to intravesical bacillus Calmette-Guerin (BCG), LPS, and TNF-alpha.",
+            "doi": "10.1186/1471-2172-9-4",
+            "pubYear": "2008"
+          }
+        ]
+      }
+    },
+    "mygene": {
+      "url": "https://mygene.info/v3/query?q=symbol%3ASMARCC1&species=human&size=3",
+      "data": {
+        "total": 1,
+        "hits": [
+          {
+            "_id": "6599",
+            "symbol": "SMARCC1",
+            "name": "SWI/SNF related BAF chromatin remodeling complex subunit C1",
+            "taxid": 9606
+          }
+        ]
+      }
+    },
+    "chembl": {
+      "url": "https://www.ebi.ac.uk/chembl/api/data/target/search.json?q=SMARCC1&limit=20",
+      "data": {
+        "total": 1,
+        "human_targets": [
+          {
+            "target_chembl_id": "CHEMBL5725104",
+            "pref_name": "SWI/SNF complex subunit SMARCC1",
+            "organism": "Homo sapiens"
+          }
+        ]
+      }
+    },
+    "hgnc_rest": {
+      "url": "https://rest.genenames.org/fetch/symbol/SMARCC1",
+      "data": [
+        {
+          "symbol": "SMARCC1",
+          "hgnc_id": "HGNC:11104",
+          "entrez_id": "6599",
+          "ensembl_gene_id": "ENSG00000173473",
+          "status": "Approved"
+        }
+      ]
+    },
+    "gtex_reference": {
+      "url": "https://gtexportal.org/api/v2/reference/gene?geneId=SMARCC1",
+      "data": [
+        {
+          "geneSymbol": "SMARCC1",
+          "geneId": null,
+          "gencodeId": "ENSG00000173473.10",
+          "entrezGeneId": 6599
+        }
+      ]
+    },
+    "reactome": {
+      "url": "https://reactome.org/ContentService/data/mapping/UniProt/Q92922/pathways",
+      "data": [
+        {
+          "stId": "R-HSA-3214858",
+          "displayName": "RMTs methylate histone arginines",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-8939243",
+          "displayName": "RUNX1 interacts with co-factors whose precise effect on RUNX1 targets is not known",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-9824585",
+          "displayName": "Regulation of MITF-M-dependent genes involved in pigmentation",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-9845323",
+          "displayName": "Regulation of endogenous retroelements by Piwi-interacting RNAs (piRNAs)",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-9932451",
+          "displayName": "SWI/SNF chromatin remodelers",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-9933937",
+          "displayName": "Formation of the canonical BAF (cBAF) complex",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-9933939",
+          "displayName": "Formation of the polybromo-BAF (pBAF) complex",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-9933946",
+          "displayName": "Formation of the embryonic stem cell BAF (esBAF) complex",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-9933947",
+          "displayName": "Formation of the non-canonical BAF (ncBAF) complex",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-9934037",
+          "displayName": "Formation of neuronal progenitor and neuronal BAF (npBAF and nBAF)",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-9938024",
+          "displayName": "Somatic hypermutation of immunoglobulin genes",
+          "speciesName": "Homo sapiens"
+        }
+      ]
+    }
+  }
+}

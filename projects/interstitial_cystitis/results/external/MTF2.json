@@ -1,0 +1,89 @@
+{
+  "gene": "MTF2",
+  "module": "M6_cell_state_g2m",
+  "prereg": "projects/interstitial_cystitis/prereg/ic_p48_module_genesets.json",
+  "retrieved_at_utc": "2026-09-25T21:24:34.975585+00:00",
+  "sources": {
+    "ensembl": {
+      "url": "https://rest.ensembl.org/lookup/symbol/homo_sapiens/MTF2?content-type=application/json",
+      "data": {
+        "id": "ENSG00000143033",
+        "display_name": "MTF2",
+        "description": "metal response element binding transcription factor 2 [Source:HGNC Symbol;Acc:HGNC:29535]",
+        "biotype": "protein_coding",
+        "seq_region_name": "1"
+      }
+    },
+    "uniprot": {
+      "url": "https://rest.uniprot.org/uniprotkb/search?query=gene_exact%3AMTF2%20AND%20organism_id%3A9606%20AND%20reviewed%3Atrue&size=3&format=json",
+      "data": [
+        {
+          "primaryAccession": "Q9Y483",
+          "uniProtkbId": "MTF2_HUMAN",
+          "entryType": "UniProtKB reviewed (Swiss-Prot)"
+        }
+      ]
+    },
+    "europe_pmc": {
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=MTF2%20AND%20%22interstitial%20cystitis%22&format=json&pageSize=10",
+      "data": {
+        "hit_count": 0,
+        "papers": []
+      }
+    },
+    "mygene": {
+      "url": "https://mygene.info/v3/query?q=symbol%3AMTF2&species=human&size=3",
+      "data": {
+        "total": 1,
+        "hits": [
+          {
+            "_id": "22823",
+            "symbol": "MTF2",
+            "name": "metal response element binding transcription factor 2",
+            "taxid": 9606
+          }
+        ]
+      }
+    },
+    "chembl": {
+      "url": "https://www.ebi.ac.uk/chembl/api/data/target/search.json?q=MTF2&limit=20",
+      "data": {
+        "total": 0,
+        "human_targets": []
+      }
+    },
+    "hgnc_rest": {
+      "url": "https://rest.genenames.org/fetch/symbol/MTF2",
+      "data": [
+        {
+          "symbol": "MTF2",
+          "hgnc_id": "HGNC:29535",
+          "entrez_id": "22823",
+          "ensembl_gene_id": "ENSG00000143033",
+          "status": "Approved"
+        }
+      ]
+    },
+    "gtex_reference": {
+      "url": "https://gtexportal.org/api/v2/reference/gene?geneId=MTF2",
+      "data": [
+        {
+          "geneSymbol": "MTF2",
+          "geneId": null,
+          "gencodeId": "ENSG00000143033.17",
+          "entrezGeneId": 22823
+        }
+      ]
+    },
+    "reactome": {
+      "url": "https://reactome.org/ContentService/data/mapping/UniProt/Q9Y483/pathways",
+      "data": [
+        {
+          "stId": "R-HSA-212300",
+          "displayName": "PRC2 methylates histones and DNA",
+          "speciesName": "Homo sapiens"
+        }
+      ]
+    }
+  }
+}

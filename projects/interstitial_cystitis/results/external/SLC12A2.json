@@ -1,0 +1,119 @@
+{
+  "gene": "SLC12A2",
+  "module": "M6_cell_state_g2m",
+  "prereg": "projects/interstitial_cystitis/prereg/ic_p48_module_genesets.json",
+  "retrieved_at_utc": "2026-09-25T21:22:50.352021+00:00",
+  "sources": {
+    "ensembl": {
+      "url": "https://rest.ensembl.org/lookup/symbol/homo_sapiens/SLC12A2?content-type=application/json",
+      "data": {
+        "id": "ENSG00000064651",
+        "display_name": "SLC12A2",
+        "description": "solute carrier family 12 member 2 [Source:HGNC Symbol;Acc:HGNC:10911]",
+        "biotype": "protein_coding",
+        "seq_region_name": "5"
+      }
+    },
+    "uniprot": {
+      "url": "https://rest.uniprot.org/uniprotkb/search?query=gene_exact%3ASLC12A2%20AND%20organism_id%3A9606%20AND%20reviewed%3Atrue&size=3&format=json",
+      "data": [
+        {
+          "primaryAccession": "P55011",
+          "uniProtkbId": "S12A2_HUMAN",
+          "entryType": "UniProtKB reviewed (Swiss-Prot)"
+        }
+      ]
+    },
+    "europe_pmc": {
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=SLC12A2%20AND%20%22interstitial%20cystitis%22&format=json&pageSize=10",
+      "data": {
+        "hit_count": 3,
+        "papers": [
+          {
+            "id": "PMC11077711",
+            "title": "Proceedings of the 101st Annual Meeting of The Physiological Society of Japan",
+            "doi": null,
+            "pubYear": "2024"
+          },
+          {
+            "id": "25769533",
+            "title": "Abstracts of the 62nd Annual Scientific Meeting, March 26-28, 2015, San Francisco, California.",
+            "doi": "10.1177/1933719115579631",
+            "pubYear": "2015"
+          },
+          {
+            "id": "PMC10902613",
+            "title": "Abstracts",
+            "doi": null,
+            "pubYear": "2024"
+          }
+        ]
+      }
+    },
+    "mygene": {
+      "url": "https://mygene.info/v3/query?q=symbol%3ASLC12A2&species=human&size=3",
+      "data": {
+        "total": 1,
+        "hits": [
+          {
+            "_id": "6558",
+            "symbol": "SLC12A2",
+            "name": "solute carrier family 12 member 2",
+            "taxid": 9606
+          }
+        ]
+      }
+    },
+    "chembl": {
+      "url": "https://www.ebi.ac.uk/chembl/api/data/target/search.json?q=SLC12A2&limit=20",
+      "data": {
+        "total": 2,
+        "human_targets": [
+          {
+            "target_chembl_id": "CHEMBL1615383",
+            "pref_name": "Solute carrier family 12 member 2",
+            "organism": "Homo sapiens"
+          },
+          {
+            "target_chembl_id": "CHEMBL3885641",
+            "pref_name": "Solute carrier family 12 member 2/member 5",
+            "organism": "Homo sapiens"
+          }
+        ]
+      }
+    },
+    "hgnc_rest": {
+      "url": "https://rest.genenames.org/fetch/symbol/SLC12A2",
+      "data": [
+        {
+          "symbol": "SLC12A2",
+          "hgnc_id": "HGNC:10911",
+          "entrez_id": "6558",
+          "ensembl_gene_id": "ENSG00000064651",
+          "status": "Approved"
+        }
+      ]
+    },
+    "gtex_reference": {
+      "url": "https://gtexportal.org/api/v2/reference/gene?geneId=SLC12A2",
+      "data": [
+        {
+          "geneSymbol": "SLC12A2",
+          "geneId": null,
+          "gencodeId": "ENSG00000064651.13",
+          "entrezGeneId": 6558
+        }
+      ]
+    },
+    "reactome": {
+      "url": "https://reactome.org/ContentService/data/mapping/UniProt/P55011/pathways",
+      "data": [
+        {
+          "stId": "R-HSA-426117",
+          "displayName": "Cation-coupled Chloride cotransporters",
+          "speciesName": "Homo sapiens"
+        }
+      ]
+    }
+  }
+}

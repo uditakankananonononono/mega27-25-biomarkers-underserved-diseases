@@ -1,0 +1,110 @@
+{
+  "gene": "BCL3",
+  "module": "M6_cell_state_g2m",
+  "prereg": "projects/interstitial_cystitis/prereg/ic_p48_module_genesets.json",
+  "retrieved_at_utc": "2026-09-25T21:24:44.639625+00:00",
+  "sources": {
+    "ensembl": {
+      "url": "https://rest.ensembl.org/lookup/symbol/homo_sapiens/BCL3?content-type=application/json",
+      "data": {
+        "id": "ENSG00000069399",
+        "display_name": "BCL3",
+        "description": "BCL3 transcription coactivator [Source:HGNC Symbol;Acc:HGNC:998]",
+        "biotype": "protein_coding",
+        "seq_region_name": "19"
+      }
+    },
+    "uniprot": {
+      "url": "https://rest.uniprot.org/uniprotkb/search?query=gene_exact%3ABCL3%20AND%20organism_id%3A9606%20AND%20reviewed%3Atrue&size=3&format=json",
+      "data": [
+        {
+          "primaryAccession": "P20749",
+          "uniProtkbId": "BCL3_HUMAN",
+          "entryType": "UniProtKB reviewed (Swiss-Prot)"
+        }
+      ]
+    },
+    "europe_pmc": {
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=BCL3%20AND%20%22interstitial%20cystitis%22&format=json&pageSize=10",
+      "data": {
+        "hit_count": 3,
+        "papers": [
+          {
+            "id": "32823063",
+            "title": "Interleukin-10 and Small Molecule SHIP1 Allosteric Regulators Trigger Anti-inflammatory Effects through SHIP1/STAT3 Complexes.",
+            "doi": "10.1016/j.isci.2020.101433",
+            "pubYear": "2020"
+          },
+          {
+            "id": "32744743",
+            "title": "2018 ACVIM Forum Research Abstract Program. Seattle, Washington, June 14 - 15, 2018.",
+            "doi": "10.1111/jvim.15319",
+            "pubYear": "2018"
+          },
+          {
+            "id": "PMC7104549",
+            "title": "Scientific Abstracts",
+            "doi": null,
+            "pubYear": "2012"
+          }
+        ]
+      }
+    },
+    "mygene": {
+      "url": "https://mygene.info/v3/query?q=symbol%3ABCL3&species=human&size=3",
+      "data": {
+        "total": 1,
+        "hits": [
+          {
+            "_id": "602",
+            "symbol": "BCL3",
+            "name": "BCL3 transcription coactivator",
+            "taxid": 9606
+          }
+        ]
+      }
+    },
+    "chembl": {
+      "url": "https://www.ebi.ac.uk/chembl/api/data/target/search.json?q=BCL3&limit=20",
+      "data": {
+        "total": 1,
+        "human_targets": [
+          {
+            "target_chembl_id": "CHEMBL4523197",
+            "pref_name": "B-cell lymphoma 3 protein",
+            "organism": "Homo sapiens"
+          }
+        ]
+      }
+    },
+    "hgnc_rest": {
+      "url": "https://rest.genenames.org/fetch/symbol/BCL3",
+      "data": [
+        {
+          "symbol": "BCL3",
+          "hgnc_id": "HGNC:998",
+          "entrez_id": "602",
+          "ensembl_gene_id": "ENSG00000069399",
+          "status": "Approved"
+        }
+      ]
+    },
+    "gtex_reference": {
+      "url": "https://gtexportal.org/api/v2/reference/gene?geneId=BCL3",
+      "data": [
+        {
+          "geneSymbol": "BCL3",
+          "geneId": null,
+          "gencodeId": "ENSG00000069399.14",
+          "entrezGeneId": 602
+        }
+      ]
+    },
+    "reactome": {
+      "url": "https://reactome.org/ContentService/data/mapping/UniProt/P20749/pathways",
+      "data": {
+        "error": "HTTP Error 404: Not Found"
+      }
+    }
+  }
+}

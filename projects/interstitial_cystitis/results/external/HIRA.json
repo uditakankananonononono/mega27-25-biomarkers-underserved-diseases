@@ -1,0 +1,176 @@
+{
+  "gene": "HIRA",
+  "module": "M6_cell_state_g2m",
+  "prereg": "projects/interstitial_cystitis/prereg/ic_p48_module_genesets.json",
+  "retrieved_at_utc": "2026-09-25T21:21:36.375340+00:00",
+  "sources": {
+    "ensembl": {
+      "url": "https://rest.ensembl.org/lookup/symbol/homo_sapiens/HIRA?content-type=application/json",
+      "data": {
+        "id": "ENSG00000100084",
+        "display_name": "HIRA",
+        "description": "histone cell cycle regulator [Source:HGNC Symbol;Acc:HGNC:4916]",
+        "biotype": "protein_coding",
+        "seq_region_name": "22"
+      }
+    },
+    "uniprot": {
+      "url": "https://rest.uniprot.org/uniprotkb/search?query=gene_exact%3AHIRA%20AND%20organism_id%3A9606%20AND%20reviewed%3Atrue&size=3&format=json",
+      "data": [
+        {
+          "primaryAccession": "P54198",
+          "uniProtkbId": "HIRA_HUMAN",
+          "entryType": "UniProtKB reviewed (Swiss-Prot)"
+        }
+      ]
+    },
+    "europe_pmc": {
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=HIRA%20AND%20%22interstitial%20cystitis%22&format=json&pageSize=10",
+      "data": {
+        "hit_count": 15,
+        "papers": [
+          {
+            "id": "41920327",
+            "title": "Efficacy of Platelet-Rich Plasma in Interstitial Cystitis/Bladder Pain Syndrome: A Systematic Review and Meta-Analysis.",
+            "doi": "10.1007/s00192-026-06579-7",
+            "pubYear": "2026"
+          },
+          {
+            "id": "39274302",
+            "title": "Real-World Practices of Pentosan Polysulfate Maculopathy Screening in Various Clinical Settings and Practice-Associated Factors.",
+            "doi": "10.3390/jcm13175090",
+            "pubYear": "2024"
+          },
+          {
+            "id": "38760453",
+            "title": "Screening practices and risk assessment for maculopathy in pentosan polysulfate users across different exposure levels.",
+            "doi": "10.1038/s41598-024-62041-y",
+            "pubYear": "2024"
+          },
+          {
+            "id": "36175345",
+            "title": "Associations of unspecified pain, idiopathic pain and COVID-19 in South Korea: a nationwide cohort study.",
+            "doi": "10.3344/kjp.2022.35.4.458",
+            "pubYear": "2022"
+          },
+          {
+            "id": "PMC11268854",
+            "title": "Poster Session 6: Transplant, Basic Science, Adrenal, Innovation : Sunday, June 30, 2024 • 16:10–17:40",
+            "doi": null,
+            "pubYear": "2024"
+          },
+          {
+            "id": "37291550",
+            "title": "Systematic review and meta-analysis of calculating degree of comorbidity of irritable bowel syndrome with migraine.",
+            "doi": "10.1186/s13030-023-00275-4",
+            "pubYear": "2023"
+          },
+          {
+            "id": "30932000",
+            "title": "Machine Learning Approach to find the relation between Endometriosis, benign breast disease, cystitis and non-toxic goiter.",
+            "doi": "10.1038/s41598-019-41973-w",
+            "pubYear": "2019"
+          },
+          {
+            "id": "26391482",
+            "title": "SIU 2015 Abstracts.",
+            "doi": "10.1007/s00345-015-1684-3",
+            "pubYear": "2015"
+          },
+          {
+            "id": "22709920",
+            "title": "2012 CUA Abstracts.",
+            "doi": null,
+            "pubYear": "2012"
+          },
+          {
+            "id": "PMC1011950",
+            "title": null,
+            "doi": null,
+            "pubYear": "1986"
+          }
+        ]
+      }
+    },
+    "mygene": {
+      "url": "https://mygene.info/v3/query?q=symbol%3AHIRA&species=human&size=3",
+      "data": {
+        "total": 1,
+        "hits": [
+          {
+            "_id": "7290",
+            "symbol": "HIRA",
+            "name": "histone cell cycle regulator",
+            "taxid": 9606
+          }
+        ]
+      }
+    },
+    "chembl": {
+      "url": "https://www.ebi.ac.uk/chembl/api/data/target/search.json?q=HIRA&limit=20",
+      "data": {
+        "total": 6,
+        "human_targets": [
+          {
+            "target_chembl_id": "CHEMBL5724675",
+            "pref_name": "Protein HIRA",
+            "organism": "Homo sapiens"
+          },
+          {
+            "target_chembl_id": "CHEMBL5724673",
+            "pref_name": "HIRA-interacting protein 3",
+            "organism": "Homo sapiens"
+          },
+          {
+            "target_chembl_id": "CHEMBL4295671",
+            "pref_name": "DnaJ homolog subfamily A member 2",
+            "organism": "Homo sapiens"
+          },
+          {
+            "target_chembl_id": "CHEMBL3923",
+            "pref_name": "Nischarin",
+            "organism": "Homo sapiens"
+          }
+        ]
+      }
+    },
+    "hgnc_rest": {
+      "url": "https://rest.genenames.org/fetch/symbol/HIRA",
+      "data": [
+        {
+          "symbol": "HIRA",
+          "hgnc_id": "HGNC:4916",
+          "entrez_id": "7290",
+          "ensembl_gene_id": "ENSG00000100084",
+          "status": "Approved"
+        }
+      ]
+    },
+    "gtex_reference": {
+      "url": "https://gtexportal.org/api/v2/reference/gene?geneId=HIRA",
+      "data": [
+        {
+          "geneSymbol": "HIRA",
+          "geneId": null,
+          "gencodeId": "ENSG00000100084.14",
+          "entrezGeneId": 7290
+        }
+      ]
+    },
+    "reactome": {
+      "url": "https://reactome.org/ContentService/data/mapping/UniProt/P54198/pathways",
+      "data": [
+        {
+          "stId": "R-HSA-2559584",
+          "displayName": "Formation of Senescence-Associated Heterochromatin Foci (SAHF)",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-9821993",
+          "displayName": "Replacement of protamines by nucleosomes in the male pronucleus",
+          "speciesName": "Homo sapiens"
+        }
+      ]
+    }
+  }
+}

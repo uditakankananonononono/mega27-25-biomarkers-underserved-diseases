@@ -1,0 +1,98 @@
+{
+  "gene": "HOXC10",
+  "module": "M6_cell_state_g2m",
+  "prereg": "projects/interstitial_cystitis/prereg/ic_p48_module_genesets.json",
+  "retrieved_at_utc": "2026-09-25T20:33:23.447482+00:00",
+  "sources": {
+    "ensembl": {
+      "url": "https://rest.ensembl.org/lookup/symbol/homo_sapiens/HOXC10?content-type=application/json",
+      "data": {
+        "id": "ENSG00000180818",
+        "display_name": "HOXC10",
+        "description": "homeobox C10 [Source:HGNC Symbol;Acc:HGNC:5122]",
+        "biotype": "protein_coding",
+        "seq_region_name": "12"
+      }
+    },
+    "uniprot": {
+      "url": "https://rest.uniprot.org/uniprotkb/search?query=gene_exact%3AHOXC10%20AND%20organism_id%3A9606%20AND%20reviewed%3Atrue&size=3&format=json",
+      "data": [
+        {
+          "primaryAccession": "Q9NYD6",
+          "uniProtkbId": "HXC10_HUMAN",
+          "entryType": "UniProtKB reviewed (Swiss-Prot)"
+        }
+      ]
+    },
+    "europe_pmc": {
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=HOXC10%20AND%20%22interstitial%20cystitis%22&format=json&pageSize=10",
+      "data": {
+        "hit_count": 2,
+        "papers": [
+          {
+            "id": "31996391",
+            "title": "Identification of a Sacral, Visceral Sensory Transcriptome in Embryonic and Adult Mice.",
+            "doi": "10.1523/eneuro.0397-19.2019",
+            "pubYear": "2020"
+          },
+          {
+            "id": "PMC6796246",
+            "title": "UEG Week 2018 Poster Presentations",
+            "doi": null,
+            "pubYear": "2018"
+          }
+        ]
+      }
+    },
+    "mygene": {
+      "url": "https://mygene.info/v3/query?q=symbol%3AHOXC10&species=human&size=3",
+      "data": {
+        "total": 1,
+        "hits": [
+          {
+            "_id": "3226",
+            "symbol": "HOXC10",
+            "name": "homeobox C10",
+            "taxid": 9606
+          }
+        ]
+      }
+    },
+    "chembl": {
+      "url": "https://www.ebi.ac.uk/chembl/api/data/target/search.json?q=HOXC10&limit=20",
+      "data": {
+        "total": 0,
+        "human_targets": []
+      }
+    },
+    "hgnc_rest": {
+      "url": "https://rest.genenames.org/fetch/symbol/HOXC10",
+      "data": [
+        {
+          "symbol": "HOXC10",
+          "hgnc_id": "HGNC:5122",
+          "entrez_id": "3226",
+          "ensembl_gene_id": "ENSG00000180818",
+          "status": "Approved"
+        }
+      ]
+    },
+    "gtex_reference": {
+      "url": "https://gtexportal.org/api/v2/reference/gene?geneId=HOXC10",
+      "data": [
+        {
+          "geneSymbol": "HOXC10",
+          "geneId": null,
+          "gencodeId": "ENSG00000180818.4",
+          "entrezGeneId": 3226
+        }
+      ]
+    },
+    "reactome": {
+      "url": "https://reactome.org/ContentService/data/mapping/UniProt/Q9NYD6/pathways",
+      "data": {
+        "error": "HTTP Error 404: Not Found"
+      }
+    }
+  }
+}

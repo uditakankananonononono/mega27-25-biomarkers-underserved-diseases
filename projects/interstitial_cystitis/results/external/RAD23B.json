@@ -1,0 +1,117 @@
+{
+  "gene": "RAD23B",
+  "module": "M6_cell_state_g2m",
+  "prereg": "projects/interstitial_cystitis/prereg/ic_p48_module_genesets.json",
+  "retrieved_at_utc": "2026-09-25T21:22:05.120571+00:00",
+  "sources": {
+    "ensembl": {
+      "url": "https://rest.ensembl.org/lookup/symbol/homo_sapiens/RAD23B?content-type=application/json",
+      "data": {
+        "id": "ENSG00000119318",
+        "display_name": "RAD23B",
+        "description": "RAD23 nucleotide excision repair protein B [Source:HGNC Symbol;Acc:HGNC:9813]",
+        "biotype": "protein_coding",
+        "seq_region_name": "9"
+      }
+    },
+    "uniprot": {
+      "url": "https://rest.uniprot.org/uniprotkb/search?query=gene_exact%3ARAD23B%20AND%20organism_id%3A9606%20AND%20reviewed%3Atrue&size=3&format=json",
+      "data": [
+        {
+          "primaryAccession": "P54727",
+          "uniProtkbId": "RD23B_HUMAN",
+          "entryType": "UniProtKB reviewed (Swiss-Prot)"
+        }
+      ]
+    },
+    "europe_pmc": {
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=RAD23B%20AND%20%22interstitial%20cystitis%22&format=json&pageSize=10",
+      "data": {
+        "hit_count": 1,
+        "papers": [
+          {
+            "id": "36600055",
+            "title": "Critical roles of cytokine storm and bacterial infection in patients with COVID-19: therapeutic potential of mesenchymal stem cells.",
+            "doi": "10.1007/s10787-022-01132-6",
+            "pubYear": "2023"
+          }
+        ]
+      }
+    },
+    "mygene": {
+      "url": "https://mygene.info/v3/query?q=symbol%3ARAD23B&species=human&size=3",
+      "data": {
+        "total": 1,
+        "hits": [
+          {
+            "_id": "5887",
+            "symbol": "RAD23B",
+            "name": "RAD23 nucleotide excision repair protein B",
+            "taxid": 9606
+          }
+        ]
+      }
+    },
+    "chembl": {
+      "url": "https://www.ebi.ac.uk/chembl/api/data/target/search.json?q=RAD23B&limit=20",
+      "data": {
+        "total": 1,
+        "human_targets": [
+          {
+            "target_chembl_id": "CHEMBL6066866",
+            "pref_name": "UV excision repair protein RAD23 homolog B",
+            "organism": "Homo sapiens"
+          }
+        ]
+      }
+    },
+    "hgnc_rest": {
+      "url": "https://rest.genenames.org/fetch/symbol/RAD23B",
+      "data": [
+        {
+          "symbol": "RAD23B",
+          "hgnc_id": "HGNC:9813",
+          "entrez_id": "5887",
+          "ensembl_gene_id": "ENSG00000119318",
+          "status": "Approved"
+        }
+      ]
+    },
+    "gtex_reference": {
+      "url": "https://gtexportal.org/api/v2/reference/gene?geneId=RAD23B",
+      "data": [
+        {
+          "geneSymbol": "RAD23B",
+          "geneId": null,
+          "gencodeId": "ENSG00000119318.12",
+          "entrezGeneId": 5887
+        }
+      ]
+    },
+    "reactome": {
+      "url": "https://reactome.org/ContentService/data/mapping/UniProt/P54727/pathways",
+      "data": [
+        {
+          "stId": "R-HSA-532668",
+          "displayName": "N-glycan trimming in the ER and Calnexin/Calreticulin cycle",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-5689877",
+          "displayName": "Josephin domain DUBs",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-5696394",
+          "displayName": "DNA Damage Recognition in GG-NER",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-5696395",
+          "displayName": "Formation of Incision Complex in GG-NER",
+          "speciesName": "Homo sapiens"
+        }
+      ]
+    }
+  }
+}

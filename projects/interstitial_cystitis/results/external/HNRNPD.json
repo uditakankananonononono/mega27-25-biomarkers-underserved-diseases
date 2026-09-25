@@ -1,0 +1,120 @@
+{
+  "gene": "HNRNPD",
+  "module": "M6_cell_state_g2m",
+  "prereg": "projects/interstitial_cystitis/prereg/ic_p48_module_genesets.json",
+  "retrieved_at_utc": "2026-09-25T21:21:21.883886+00:00",
+  "sources": {
+    "ensembl": {
+      "url": "https://rest.ensembl.org/lookup/symbol/homo_sapiens/HNRNPD?content-type=application/json",
+      "data": {
+        "id": "ENSG00000138668",
+        "display_name": "HNRNPD",
+        "description": "heterogeneous nuclear ribonucleoprotein D [Source:HGNC Symbol;Acc:HGNC:5036]",
+        "biotype": "protein_coding",
+        "seq_region_name": "4"
+      }
+    },
+    "uniprot": {
+      "url": "https://rest.uniprot.org/uniprotkb/search?query=gene_exact%3AHNRNPD%20AND%20organism_id%3A9606%20AND%20reviewed%3Atrue&size=3&format=json",
+      "data": [
+        {
+          "primaryAccession": "Q14103",
+          "uniProtkbId": "HNRPD_HUMAN",
+          "entryType": "UniProtKB reviewed (Swiss-Prot)"
+        }
+      ]
+    },
+    "europe_pmc": {
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=HNRNPD%20AND%20%22interstitial%20cystitis%22&format=json&pageSize=10",
+      "data": {
+        "hit_count": 0,
+        "papers": []
+      }
+    },
+    "mygene": {
+      "url": "https://mygene.info/v3/query?q=symbol%3AHNRNPD&species=human&size=3",
+      "data": {
+        "total": 1,
+        "hits": [
+          {
+            "_id": "3184",
+            "symbol": "HNRNPD",
+            "name": "heterogeneous nuclear ribonucleoprotein D",
+            "taxid": 9606
+          }
+        ]
+      }
+    },
+    "chembl": {
+      "url": "https://www.ebi.ac.uk/chembl/api/data/target/search.json?q=HNRNPD&limit=20",
+      "data": {
+        "total": 1,
+        "human_targets": [
+          {
+            "target_chembl_id": "CHEMBL4296009",
+            "pref_name": "Heterogeneous nuclear ribonucleoprotein D0",
+            "organism": "Homo sapiens"
+          }
+        ]
+      }
+    },
+    "hgnc_rest": {
+      "url": "https://rest.genenames.org/fetch/symbol/HNRNPD",
+      "data": [
+        {
+          "symbol": "HNRNPD",
+          "hgnc_id": "HGNC:5036",
+          "entrez_id": "3184",
+          "ensembl_gene_id": "ENSG00000138668",
+          "status": "Approved"
+        }
+      ]
+    },
+    "gtex_reference": {
+      "url": "https://gtexportal.org/api/v2/reference/gene?geneId=HNRNPD",
+      "data": [
+        {
+          "geneSymbol": "HNRNPD",
+          "geneId": null,
+          "gencodeId": "ENSG00000138668.18",
+          "entrezGeneId": 3184
+        }
+      ]
+    },
+    "reactome": {
+      "url": "https://reactome.org/ContentService/data/mapping/UniProt/Q14103/pathways",
+      "data": [
+        {
+          "stId": "R-HSA-450408",
+          "displayName": "AUF1 (hnRNP D0) binds and destabilizes mRNA",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-72163",
+          "displayName": "mRNA Splicing - Major Pathway",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-72203",
+          "displayName": "Processing of Capped Intron-Containing Pre-mRNA",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-9770562",
+          "displayName": "mRNA Polyadenylation",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-9918481",
+          "displayName": "Dengue Virus-Host Interactions",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-9918487",
+          "displayName": "Dengue Virus Genome Translation and Replication",
+          "speciesName": "Homo sapiens"
+        }
+      ]
+    }
+  }
+}

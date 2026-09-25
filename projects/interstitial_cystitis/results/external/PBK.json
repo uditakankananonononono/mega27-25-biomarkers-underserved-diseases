@@ -1,0 +1,110 @@
+{
+  "gene": "PBK",
+  "module": "M6_cell_state_g2m",
+  "prereg": "projects/interstitial_cystitis/prereg/ic_p48_module_genesets.json",
+  "retrieved_at_utc": "2026-09-25T21:21:02.786969+00:00",
+  "sources": {
+    "ensembl": {
+      "url": "https://rest.ensembl.org/lookup/symbol/homo_sapiens/PBK?content-type=application/json",
+      "data": {
+        "id": "ENSG00000168078",
+        "display_name": "PBK",
+        "description": "PDZ binding kinase [Source:HGNC Symbol;Acc:HGNC:18282]",
+        "biotype": "protein_coding",
+        "seq_region_name": "8"
+      }
+    },
+    "uniprot": {
+      "url": "https://rest.uniprot.org/uniprotkb/search?query=gene_exact%3APBK%20AND%20organism_id%3A9606%20AND%20reviewed%3Atrue&size=3&format=json",
+      "data": [
+        {
+          "primaryAccession": "Q96KB5",
+          "uniProtkbId": "TOPK_HUMAN",
+          "entryType": "UniProtKB reviewed (Swiss-Prot)"
+        }
+      ]
+    },
+    "europe_pmc": {
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=PBK%20AND%20%22interstitial%20cystitis%22&format=json&pageSize=10",
+      "data": {
+        "hit_count": 3,
+        "papers": [
+          {
+            "id": "38526326",
+            "title": "Identification of key pathways and mRNAs in interstitial cystitis/bladder pain syndrome treatment with quercetin through bioinformatics analysis of mRNA-sequence data.",
+            "doi": "10.18632/aging.205682",
+            "pubYear": "2024"
+          },
+          {
+            "id": "PMC10902613",
+            "title": "Abstracts",
+            "doi": null,
+            "pubYear": "2024"
+          },
+          {
+            "id": "PMC6796246",
+            "title": "UEG Week 2018 Poster Presentations",
+            "doi": null,
+            "pubYear": "2018"
+          }
+        ]
+      }
+    },
+    "mygene": {
+      "url": "https://mygene.info/v3/query?q=symbol%3APBK&species=human&size=3",
+      "data": {
+        "total": 1,
+        "hits": [
+          {
+            "_id": "55872",
+            "symbol": "PBK",
+            "name": "PDZ binding kinase",
+            "taxid": 9606
+          }
+        ]
+      }
+    },
+    "chembl": {
+      "url": "https://www.ebi.ac.uk/chembl/api/data/target/search.json?q=PBK&limit=20",
+      "data": {
+        "total": 1,
+        "human_targets": [
+          {
+            "target_chembl_id": "CHEMBL4896",
+            "pref_name": "Lymphokine-activated killer T-cell-originated protein kinase",
+            "organism": "Homo sapiens"
+          }
+        ]
+      }
+    },
+    "hgnc_rest": {
+      "url": "https://rest.genenames.org/fetch/symbol/PBK",
+      "data": [
+        {
+          "symbol": "PBK",
+          "hgnc_id": "HGNC:18282",
+          "entrez_id": "55872",
+          "ensembl_gene_id": "ENSG00000168078",
+          "status": "Approved"
+        }
+      ]
+    },
+    "gtex_reference": {
+      "url": "https://gtexportal.org/api/v2/reference/gene?geneId=PBK",
+      "data": [
+        {
+          "geneSymbol": "PBK",
+          "geneId": null,
+          "gencodeId": "ENSG00000168078.9",
+          "entrezGeneId": 55872
+        }
+      ]
+    },
+    "reactome": {
+      "url": "https://reactome.org/ContentService/data/mapping/UniProt/Q96KB5/pathways",
+      "data": {
+        "error": "HTTP Error 404: Not Found"
+      }
+    }
+  }
+}

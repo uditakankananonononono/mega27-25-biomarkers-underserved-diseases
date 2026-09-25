@@ -1,0 +1,161 @@
+{
+  "gene": "SS18",
+  "module": "M6_cell_state_g2m",
+  "prereg": "projects/interstitial_cystitis/prereg/ic_p48_module_genesets.json",
+  "retrieved_at_utc": "2026-09-25T21:20:13.853262+00:00",
+  "sources": {
+    "ensembl": {
+      "url": "https://rest.ensembl.org/lookup/symbol/homo_sapiens/SS18?content-type=application/json",
+      "data": {
+        "id": "ENSG00000141380",
+        "display_name": "SS18",
+        "description": "SS18 subunit of BAF chromatin remodeling complex [Source:HGNC Symbol;Acc:HGNC:11340]",
+        "biotype": "protein_coding",
+        "seq_region_name": "18"
+      }
+    },
+    "uniprot": {
+      "url": "https://rest.uniprot.org/uniprotkb/search?query=gene_exact%3ASS18%20AND%20organism_id%3A9606%20AND%20reviewed%3Atrue&size=3&format=json",
+      "data": [
+        {
+          "primaryAccession": "Q15532",
+          "uniProtkbId": "SSXT_HUMAN",
+          "entryType": "UniProtKB reviewed (Swiss-Prot)"
+        }
+      ]
+    },
+    "europe_pmc": {
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=SS18%20AND%20%22interstitial%20cystitis%22&format=json&pageSize=10",
+      "data": {
+        "hit_count": 5,
+        "papers": [
+          {
+            "id": "37829338",
+            "title": "Case report: The activity of multi-kinase VEGF inhibitor, Pazopanib, in metastatic undifferentiated round cell sarcomas harboring <i>EWSR1::CREM</i> fusion: clinicopathological series of two cases and literature review.",
+            "doi": "10.3389/fonc.2023.1215003",
+            "pubYear": "2023"
+          },
+          {
+            "id": "41791709",
+            "title": "The SWI/SNF complex in tumor metabolism: Mechanisms and therapeutic implications.",
+            "doi": "10.1016/j.jbc.2026.111342",
+            "pubYear": "2026"
+          },
+          {
+            "id": "34448894",
+            "title": "33&lt;sup&gt;rd&lt;/sup&gt; European Congress of Pathology - Abstracts.",
+            "doi": "10.1007/s00428-021-03157-8",
+            "pubYear": "2021"
+          },
+          {
+            "id": "22772769",
+            "title": "A compulsory examination in pathology: redundant or necessary?",
+            "doi": "10.1007/s00428-012-1278-z",
+            "pubYear": "2012"
+          },
+          {
+            "id": "PMC10902613",
+            "title": "Abstracts",
+            "doi": null,
+            "pubYear": "2024"
+          }
+        ]
+      }
+    },
+    "mygene": {
+      "url": "https://mygene.info/v3/query?q=symbol%3ASS18&species=human&size=3",
+      "data": {
+        "total": 1,
+        "hits": [
+          {
+            "_id": "6760",
+            "symbol": "SS18",
+            "name": "SS18 subunit of BAF chromatin remodeling complex",
+            "taxid": 9606
+          }
+        ]
+      }
+    },
+    "chembl": {
+      "url": "https://www.ebi.ac.uk/chembl/api/data/target/search.json?q=SS18&limit=20",
+      "data": {
+        "total": 1,
+        "human_targets": [
+          {
+            "target_chembl_id": "CHEMBL6067352",
+            "pref_name": "SS18-like protein 2",
+            "organism": "Homo sapiens"
+          }
+        ]
+      }
+    },
+    "hgnc_rest": {
+      "url": "https://rest.genenames.org/fetch/symbol/SS18",
+      "data": [
+        {
+          "symbol": "SS18",
+          "hgnc_id": "HGNC:11340",
+          "entrez_id": "6760",
+          "ensembl_gene_id": "ENSG00000141380",
+          "status": "Approved"
+        }
+      ]
+    },
+    "gtex_reference": {
+      "url": "https://gtexportal.org/api/v2/reference/gene?geneId=SS18",
+      "data": [
+        {
+          "geneSymbol": "SS18",
+          "geneId": null,
+          "gencodeId": "ENSG00000141380.13",
+          "entrezGeneId": 6760
+        }
+      ]
+    },
+    "reactome": {
+      "url": "https://reactome.org/ContentService/data/mapping/UniProt/Q15532/pathways",
+      "data": [
+        {
+          "stId": "R-HSA-9824585",
+          "displayName": "Regulation of MITF-M-dependent genes involved in pigmentation",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-9845323",
+          "displayName": "Regulation of endogenous retroelements by Piwi-interacting RNAs (piRNAs)",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-9932451",
+          "displayName": "SWI/SNF chromatin remodelers",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-9933937",
+          "displayName": "Formation of the canonical BAF (cBAF) complex",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-9933946",
+          "displayName": "Formation of the embryonic stem cell BAF (esBAF) complex",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-9933947",
+          "displayName": "Formation of the non-canonical BAF (ncBAF) complex",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-9934037",
+          "displayName": "Formation of neuronal progenitor and neuronal BAF (npBAF and nBAF)",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-9938024",
+          "displayName": "Somatic hypermutation of immunoglobulin genes",
+          "speciesName": "Homo sapiens"
+        }
+      ]
+    }
+  }
+}

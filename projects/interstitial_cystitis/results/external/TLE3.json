@@ -1,0 +1,122 @@
+{
+  "gene": "TLE3",
+  "module": "M6_cell_state_g2m",
+  "prereg": "projects/interstitial_cystitis/prereg/ic_p48_module_genesets.json",
+  "retrieved_at_utc": "2026-09-25T21:21:54.193822+00:00",
+  "sources": {
+    "ensembl": {
+      "url": "https://rest.ensembl.org/lookup/symbol/homo_sapiens/TLE3?content-type=application/json",
+      "data": {
+        "id": "ENSG00000140332",
+        "display_name": "TLE3",
+        "description": "TLE family member 3, transcriptional corepressor [Source:HGNC Symbol;Acc:HGNC:11839]",
+        "biotype": "protein_coding",
+        "seq_region_name": "15"
+      }
+    },
+    "uniprot": {
+      "url": "https://rest.uniprot.org/uniprotkb/search?query=gene_exact%3ATLE3%20AND%20organism_id%3A9606%20AND%20reviewed%3Atrue&size=3&format=json",
+      "data": [
+        {
+          "primaryAccession": "Q04726",
+          "uniProtkbId": "TLE3_HUMAN",
+          "entryType": "UniProtKB reviewed (Swiss-Prot)"
+        }
+      ]
+    },
+    "europe_pmc": {
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=TLE3%20AND%20%22interstitial%20cystitis%22&format=json&pageSize=10",
+      "data": {
+        "hit_count": 2,
+        "papers": [
+          {
+            "id": "PPR276334",
+            "title": "MOATAI-VIR - an AI algorithm that predicts severe adverse events and molecular features for COVID-19’s complications",
+            "doi": "10.1101/2021.01.29.21250712",
+            "pubYear": "2021"
+          },
+          {
+            "id": "22772769",
+            "title": "A compulsory examination in pathology: redundant or necessary?",
+            "doi": "10.1007/s00428-012-1278-z",
+            "pubYear": "2012"
+          }
+        ]
+      }
+    },
+    "mygene": {
+      "url": "https://mygene.info/v3/query?q=symbol%3ATLE3&species=human&size=3",
+      "data": {
+        "total": 1,
+        "hits": [
+          {
+            "_id": "7090",
+            "symbol": "TLE3",
+            "name": "TLE family member 3, transcriptional corepressor",
+            "taxid": 9606
+          }
+        ]
+      }
+    },
+    "chembl": {
+      "url": "https://www.ebi.ac.uk/chembl/api/data/target/search.json?q=TLE3&limit=20",
+      "data": {
+        "total": 0,
+        "human_targets": []
+      }
+    },
+    "hgnc_rest": {
+      "url": "https://rest.genenames.org/fetch/symbol/TLE3",
+      "data": [
+        {
+          "symbol": "TLE3",
+          "hgnc_id": "HGNC:11839",
+          "entrez_id": "7090",
+          "ensembl_gene_id": "ENSG00000140332",
+          "status": "Approved"
+        }
+      ]
+    },
+    "gtex_reference": {
+      "url": "https://gtexportal.org/api/v2/reference/gene?geneId=TLE3",
+      "data": [
+        {
+          "geneSymbol": "TLE3",
+          "geneId": null,
+          "gencodeId": "ENSG00000140332.15",
+          "entrezGeneId": 7090
+        }
+      ]
+    },
+    "reactome": {
+      "url": "https://reactome.org/ContentService/data/mapping/UniProt/Q04726/pathways",
+      "data": [
+        {
+          "stId": "R-HSA-201722",
+          "displayName": "Formation of the beta-catenin:TCF transactivating complex",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-2122947",
+          "displayName": "NOTCH1 Intracellular Domain Regulates Transcription",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-3769402",
+          "displayName": "Deactivation of the beta-catenin transactivating complex",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-4641265",
+          "displayName": "Repression of WNT target genes",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-9018519",
+          "displayName": "Estrogen-dependent gene expression",
+          "speciesName": "Homo sapiens"
+        }
+      ]
+    }
+  }
+}

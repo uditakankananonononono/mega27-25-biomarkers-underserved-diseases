@@ -1,0 +1,126 @@
+{
+  "gene": "MEIS1",
+  "module": "M6_cell_state_g2m",
+  "prereg": "projects/interstitial_cystitis/prereg/ic_p48_module_genesets.json",
+  "retrieved_at_utc": "2026-09-25T21:23:51.130791+00:00",
+  "sources": {
+    "ensembl": {
+      "url": "https://rest.ensembl.org/lookup/symbol/homo_sapiens/MEIS1?content-type=application/json",
+      "data": {
+        "id": "ENSG00000143995",
+        "display_name": "MEIS1",
+        "description": "Meis homeobox 1 [Source:HGNC Symbol;Acc:HGNC:7000]",
+        "biotype": "protein_coding",
+        "seq_region_name": "2"
+      }
+    },
+    "uniprot": {
+      "url": "https://rest.uniprot.org/uniprotkb/search?query=gene_exact%3AMEIS1%20AND%20organism_id%3A9606%20AND%20reviewed%3Atrue&size=3&format=json",
+      "data": [
+        {
+          "primaryAccession": "O00470",
+          "uniProtkbId": "MEIS1_HUMAN",
+          "entryType": "UniProtKB reviewed (Swiss-Prot)"
+        }
+      ]
+    },
+    "europe_pmc": {
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=MEIS1%20AND%20%22interstitial%20cystitis%22&format=json&pageSize=10",
+      "data": {
+        "hit_count": 5,
+        "papers": [
+          {
+            "id": "42558631",
+            "title": "Mechanistic insights into the lncRNA-Notch signaling axis in tumors.",
+            "doi": "10.3389/fcell.2026.1903203",
+            "pubYear": "2026"
+          },
+          {
+            "id": "32532082",
+            "title": "Gene Expression Profiling in Fibromyalgia Indicates an Autoimmune Origin of the Disease and Opens New Avenues for Targeted Therapy.",
+            "doi": "10.3390/jcm9061814",
+            "pubYear": "2020"
+          },
+          {
+            "id": "14572310",
+            "title": "Structure and regulation of the mDot1 gene, a mouse histone H3 methyltransferase.",
+            "doi": "10.1042/bj20030839",
+            "pubYear": "2004"
+          },
+          {
+            "id": "25769533",
+            "title": "Abstracts of the 62nd Annual Scientific Meeting, March 26-28, 2015, San Francisco, California.",
+            "doi": "10.1177/1933719115579631",
+            "pubYear": "2015"
+          },
+          {
+            "id": "PMC7104427",
+            "title": "Abstracts",
+            "doi": null,
+            "pubYear": "2018"
+          }
+        ]
+      }
+    },
+    "mygene": {
+      "url": "https://mygene.info/v3/query?q=symbol%3AMEIS1&species=human&size=3",
+      "data": {
+        "total": 1,
+        "hits": [
+          {
+            "_id": "4211",
+            "symbol": "MEIS1",
+            "name": "Meis homeobox 1",
+            "taxid": 9606
+          }
+        ]
+      }
+    },
+    "chembl": {
+      "url": "https://www.ebi.ac.uk/chembl/api/data/target/search.json?q=MEIS1&limit=20",
+      "data": {
+        "total": 1,
+        "human_targets": [
+          {
+            "target_chembl_id": "CHEMBL4879409",
+            "pref_name": "Homeobox protein Meis1",
+            "organism": "Homo sapiens"
+          }
+        ]
+      }
+    },
+    "hgnc_rest": {
+      "url": "https://rest.genenames.org/fetch/symbol/MEIS1",
+      "data": [
+        {
+          "symbol": "MEIS1",
+          "hgnc_id": "HGNC:7000",
+          "entrez_id": "4211",
+          "ensembl_gene_id": "ENSG00000143995",
+          "status": "Approved"
+        }
+      ]
+    },
+    "gtex_reference": {
+      "url": "https://gtexportal.org/api/v2/reference/gene?geneId=MEIS1",
+      "data": [
+        {
+          "geneSymbol": "MEIS1",
+          "geneId": null,
+          "gencodeId": "ENSG00000143995.19",
+          "entrezGeneId": 4211
+        }
+      ]
+    },
+    "reactome": {
+      "url": "https://reactome.org/ContentService/data/mapping/UniProt/O00470/pathways",
+      "data": [
+        {
+          "stId": "R-HSA-5617472",
+          "displayName": "Activation of anterior HOX genes in hindbrain development during early embryogenesis",
+          "speciesName": "Homo sapiens"
+        }
+      ]
+    }
+  }
+}

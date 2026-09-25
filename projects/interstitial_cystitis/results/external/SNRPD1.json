@@ -1,0 +1,135 @@
+{
+  "gene": "SNRPD1",
+  "module": "M6_cell_state_g2m",
+  "prereg": "projects/interstitial_cystitis/prereg/ic_p48_module_genesets.json",
+  "retrieved_at_utc": "2026-09-25T21:22:31.911909+00:00",
+  "sources": {
+    "ensembl": {
+      "url": "https://rest.ensembl.org/lookup/symbol/homo_sapiens/SNRPD1?content-type=application/json",
+      "data": {
+        "id": "ENSG00000167088",
+        "display_name": "SNRPD1",
+        "description": "small nuclear ribonucleoprotein D1 polypeptide [Source:HGNC Symbol;Acc:HGNC:11158]",
+        "biotype": "protein_coding",
+        "seq_region_name": "18"
+      }
+    },
+    "uniprot": {
+      "url": "https://rest.uniprot.org/uniprotkb/search?query=gene_exact%3ASNRPD1%20AND%20organism_id%3A9606%20AND%20reviewed%3Atrue&size=3&format=json",
+      "data": [
+        {
+          "primaryAccession": "P62316",
+          "uniProtkbId": "SMD2_HUMAN",
+          "entryType": "UniProtKB reviewed (Swiss-Prot)"
+        },
+        {
+          "primaryAccession": "P62314",
+          "uniProtkbId": "SMD1_HUMAN",
+          "entryType": "UniProtKB reviewed (Swiss-Prot)"
+        }
+      ]
+    },
+    "europe_pmc": {
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=SNRPD1%20AND%20%22interstitial%20cystitis%22&format=json&pageSize=10",
+      "data": {
+        "hit_count": 0,
+        "papers": []
+      }
+    },
+    "mygene": {
+      "url": "https://mygene.info/v3/query?q=symbol%3ASNRPD1&species=human&size=3",
+      "data": {
+        "total": 1,
+        "hits": [
+          {
+            "_id": "6632",
+            "symbol": "SNRPD1",
+            "name": "small nuclear ribonucleoprotein D1 polypeptide",
+            "taxid": 9606
+          }
+        ]
+      }
+    },
+    "chembl": {
+      "url": "https://www.ebi.ac.uk/chembl/api/data/target/search.json?q=SNRPD1&limit=20",
+      "data": {
+        "total": 2,
+        "human_targets": [
+          {
+            "target_chembl_id": "CHEMBL5725105",
+            "pref_name": "Small nuclear ribonucleoprotein Sm D2",
+            "organism": "Homo sapiens"
+          },
+          {
+            "target_chembl_id": "CHEMBL6066339",
+            "pref_name": "Small nuclear ribonucleoprotein Sm D1",
+            "organism": "Homo sapiens"
+          }
+        ]
+      }
+    },
+    "hgnc_rest": {
+      "url": "https://rest.genenames.org/fetch/symbol/SNRPD1",
+      "data": [
+        {
+          "symbol": "SNRPD1",
+          "hgnc_id": "HGNC:11158",
+          "entrez_id": "6632",
+          "ensembl_gene_id": "ENSG00000167088",
+          "status": "Approved"
+        }
+      ]
+    },
+    "gtex_reference": {
+      "url": "https://gtexportal.org/api/v2/reference/gene?geneId=SNRPD1",
+      "data": [
+        {
+          "geneSymbol": "SNRPD1",
+          "geneId": null,
+          "gencodeId": "ENSG00000167088.10",
+          "entrezGeneId": 6632
+        }
+      ]
+    },
+    "reactome": {
+      "url": "https://reactome.org/ContentService/data/mapping/UniProt/P62316/pathways",
+      "data": [
+        {
+          "stId": "R-HSA-191859",
+          "displayName": "snRNP Assembly",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-72163",
+          "displayName": "mRNA Splicing - Major Pathway",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-72165",
+          "displayName": "mRNA Splicing - Minor Pathway",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-9754678",
+          "displayName": "SARS-CoV-2 modulates host translation machinery",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-9770562",
+          "displayName": "mRNA Polyadenylation",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-9918481",
+          "displayName": "Dengue Virus-Host Interactions",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-9943411",
+          "displayName": "CHD1 and CHD2 subfamily",
+          "speciesName": "Homo sapiens"
+        }
+      ]
+    }
+  }
+}

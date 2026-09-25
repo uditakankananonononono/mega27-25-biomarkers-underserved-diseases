@@ -1,0 +1,194 @@
+{
+  "gene": "WRN",
+  "module": "M6_cell_state_g2m",
+  "prereg": "projects/interstitial_cystitis/prereg/ic_p48_module_genesets.json",
+  "retrieved_at_utc": "2026-09-25T21:25:07.599065+00:00",
+  "sources": {
+    "ensembl": {
+      "url": "https://rest.ensembl.org/lookup/symbol/homo_sapiens/WRN?content-type=application/json",
+      "data": {
+        "id": "ENSG00000165392",
+        "display_name": "WRN",
+        "description": "WRN RecQ like helicase [Source:HGNC Symbol;Acc:HGNC:12791]",
+        "biotype": "protein_coding",
+        "seq_region_name": "8"
+      }
+    },
+    "uniprot": {
+      "url": "https://rest.uniprot.org/uniprotkb/search?query=gene_exact%3AWRN%20AND%20organism_id%3A9606%20AND%20reviewed%3Atrue&size=3&format=json",
+      "data": [
+        {
+          "primaryAccession": "Q14191",
+          "uniProtkbId": "WRN_HUMAN",
+          "entryType": "UniProtKB reviewed (Swiss-Prot)"
+        }
+      ]
+    },
+    "europe_pmc": {
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=WRN%20AND%20%22interstitial%20cystitis%22&format=json&pageSize=10",
+      "data": {
+        "hit_count": 3,
+        "papers": [
+          {
+            "id": "33538002",
+            "title": "Single-cell transcriptomes of mouse bladder urothelium uncover novel cell type markers and urothelial differentiation characteristics.",
+            "doi": "10.1111/cpr.13007",
+            "pubYear": "2021"
+          },
+          {
+            "id": "36600055",
+            "title": "Critical roles of cytokine storm and bacterial infection in patients with COVID-19: therapeutic potential of mesenchymal stem cells.",
+            "doi": "10.1007/s10787-022-01132-6",
+            "pubYear": "2023"
+          },
+          {
+            "id": "PMC10902613",
+            "title": "Abstracts",
+            "doi": null,
+            "pubYear": "2024"
+          }
+        ]
+      }
+    },
+    "mygene": {
+      "url": "https://mygene.info/v3/query?q=symbol%3AWRN&species=human&size=3",
+      "data": {
+        "total": 1,
+        "hits": [
+          {
+            "_id": "7486",
+            "symbol": "WRN",
+            "name": "WRN RecQ like helicase",
+            "taxid": 9606
+          }
+        ]
+      }
+    },
+    "chembl": {
+      "url": "https://www.ebi.ac.uk/chembl/api/data/target/search.json?q=WRN&limit=20",
+      "data": {
+        "total": 1,
+        "human_targets": [
+          {
+            "target_chembl_id": "CHEMBL2146312",
+            "pref_name": "Bifunctional 3'-5' exonuclease/ATP-dependent helicase WRN",
+            "organism": "Homo sapiens"
+          }
+        ]
+      }
+    },
+    "hgnc_rest": {
+      "url": "https://rest.genenames.org/fetch/symbol/WRN",
+      "data": [
+        {
+          "symbol": "WRN",
+          "hgnc_id": "HGNC:12791",
+          "entrez_id": "7486",
+          "ensembl_gene_id": "ENSG00000165392",
+          "status": "Approved"
+        }
+      ]
+    },
+    "gtex_reference": {
+      "url": "https://gtexportal.org/api/v2/reference/gene?geneId=WRN",
+      "data": [
+        {
+          "geneSymbol": "WRN",
+          "geneId": null,
+          "gencodeId": "ENSG00000165392.9",
+          "entrezGeneId": 7486
+        }
+      ]
+    },
+    "reactome": {
+      "url": "https://reactome.org/ContentService/data/mapping/UniProt/Q14191/pathways",
+      "data": [
+        {
+          "stId": "R-HSA-174414",
+          "displayName": "Processive synthesis on the C-strand of the telomere",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-174437",
+          "displayName": "Removal of the Flap Intermediate from the C-strand",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-3108214",
+          "displayName": "SUMOylation of DNA damage response and repair proteins",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-5685938",
+          "displayName": "HDR through Single Strand Annealing (SSA)",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-5685942",
+          "displayName": "HDR through Homologous Recombination (HRR)",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-5693554",
+          "displayName": "Resolution of D-loop Structures through Synthesis-Dependent Strand Annealing (SDSA)",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-5693568",
+          "displayName": "Resolution of D-loop Structures through Holliday Junction Intermediates",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-5693579",
+          "displayName": "Homologous DNA Pairing and Strand Exchange",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-5693607",
+          "displayName": "Processing of DNA double-strand break ends",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-5693616",
+          "displayName": "Presynaptic phase of homologous DNA pairing and strand exchange",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-6804756",
+          "displayName": "Regulation of TP53 Activity through Phosphorylation",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-69473",
+          "displayName": "G2/M DNA damage checkpoint",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-9701192",
+          "displayName": "Defective homologous recombination repair (HRR) due to BRCA1 loss of function",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-9704331",
+          "displayName": "Defective HDR through Homologous Recombination Repair (HRR) due to PALB2 loss of BRCA1 binding function",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-9704646",
+          "displayName": "Defective HDR through Homologous Recombination Repair (HRR) due to PALB2 loss of BRCA2/RAD51/RAD51C binding function",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-9709570",
+          "displayName": "Impaired BRCA2 binding to RAD51",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-9709603",
+          "displayName": "Impaired BRCA2 binding to PALB2",
+          "speciesName": "Homo sapiens"
+        }
+      ]
+    }
+  }
+}

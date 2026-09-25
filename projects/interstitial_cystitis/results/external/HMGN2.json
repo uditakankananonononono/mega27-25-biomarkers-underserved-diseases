@@ -1,0 +1,92 @@
+{
+  "gene": "HMGN2",
+  "module": "M6_cell_state_g2m",
+  "prereg": "projects/interstitial_cystitis/prereg/ic_p48_module_genesets.json",
+  "retrieved_at_utc": "2026-09-25T21:22:20.325448+00:00",
+  "sources": {
+    "ensembl": {
+      "url": "https://rest.ensembl.org/lookup/symbol/homo_sapiens/HMGN2?content-type=application/json",
+      "data": {
+        "id": "ENSG00000198830",
+        "display_name": "HMGN2",
+        "description": "high mobility group nucleosomal binding domain 2 [Source:HGNC Symbol;Acc:HGNC:4986]",
+        "biotype": "protein_coding",
+        "seq_region_name": "1"
+      }
+    },
+    "uniprot": {
+      "url": "https://rest.uniprot.org/uniprotkb/search?query=gene_exact%3AHMGN2%20AND%20organism_id%3A9606%20AND%20reviewed%3Atrue&size=3&format=json",
+      "data": [
+        {
+          "primaryAccession": "P05204",
+          "uniProtkbId": "HMGN2_HUMAN",
+          "entryType": "UniProtKB reviewed (Swiss-Prot)"
+        }
+      ]
+    },
+    "europe_pmc": {
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=HMGN2%20AND%20%22interstitial%20cystitis%22&format=json&pageSize=10",
+      "data": {
+        "hit_count": 1,
+        "papers": [
+          {
+            "id": "24828484",
+            "title": "Human antimicrobial peptides and proteins.",
+            "doi": "10.3390/ph7050545",
+            "pubYear": "2014"
+          }
+        ]
+      }
+    },
+    "mygene": {
+      "url": "https://mygene.info/v3/query?q=symbol%3AHMGN2&species=human&size=3",
+      "data": {
+        "total": 1,
+        "hits": [
+          {
+            "_id": "3151",
+            "symbol": "HMGN2",
+            "name": "high mobility group nucleosomal binding domain 2",
+            "taxid": 9606
+          }
+        ]
+      }
+    },
+    "chembl": {
+      "url": "https://www.ebi.ac.uk/chembl/api/data/target/search.json?q=HMGN2&limit=20",
+      "data": {
+        "total": 0,
+        "human_targets": []
+      }
+    },
+    "hgnc_rest": {
+      "url": "https://rest.genenames.org/fetch/symbol/HMGN2",
+      "data": [
+        {
+          "symbol": "HMGN2",
+          "hgnc_id": "HGNC:4986",
+          "entrez_id": "3151",
+          "ensembl_gene_id": "ENSG00000198830",
+          "status": "Approved"
+        }
+      ]
+    },
+    "gtex_reference": {
+      "url": "https://gtexportal.org/api/v2/reference/gene?geneId=HMGN2",
+      "data": [
+        {
+          "geneSymbol": "HMGN2",
+          "geneId": null,
+          "gencodeId": "ENSG00000198830.10",
+          "entrezGeneId": 3151
+        }
+      ]
+    },
+    "reactome": {
+      "url": "https://reactome.org/ContentService/data/mapping/UniProt/P05204/pathways",
+      "data": {
+        "error": "HTTP Error 404: Not Found"
+      }
+    }
+  }
+}

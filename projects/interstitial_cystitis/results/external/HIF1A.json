@@ -1,0 +1,226 @@
+{
+  "gene": "HIF1A",
+  "module": "M6_cell_state_g2m",
+  "prereg": "projects/interstitial_cystitis/prereg/ic_p48_module_genesets.json",
+  "retrieved_at_utc": "2026-09-25T21:21:42.378490+00:00",
+  "sources": {
+    "ensembl": {
+      "url": "https://rest.ensembl.org/lookup/symbol/homo_sapiens/HIF1A?content-type=application/json",
+      "data": {
+        "id": "ENSG00000100644",
+        "display_name": "HIF1A",
+        "description": "hypoxia inducible factor 1 subunit alpha [Source:HGNC Symbol;Acc:HGNC:4910]",
+        "biotype": "protein_coding",
+        "seq_region_name": "14"
+      }
+    },
+    "uniprot": {
+      "url": "https://rest.uniprot.org/uniprotkb/search?query=gene_exact%3AHIF1A%20AND%20organism_id%3A9606%20AND%20reviewed%3Atrue&size=3&format=json",
+      "data": [
+        {
+          "primaryAccession": "Q16665",
+          "uniProtkbId": "HIF1A_HUMAN",
+          "entryType": "UniProtKB reviewed (Swiss-Prot)"
+        }
+      ]
+    },
+    "europe_pmc": {
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=HIF1A%20AND%20%22interstitial%20cystitis%22&format=json&pageSize=10",
+      "data": {
+        "hit_count": 267,
+        "papers": [
+          {
+            "id": "42415588",
+            "title": "The effect of Sambucus nigra extract in the treatment of interstitial cystitis.",
+            "doi": "10.32604/cju.2025.070231",
+            "pubYear": "2026"
+          },
+          {
+            "id": "42643182",
+            "title": "Interstitial Cystitis/Bladder Pain Syndrome: A Narrative Review of Nomenclature, Epidemiology, Pathophysiology, Diagnosis, and Management.",
+            "doi": "10.7759/cureus.115115",
+            "pubYear": "2026"
+          },
+          {
+            "id": "42324905",
+            "title": "A Fluorescent Inhibitory Peptide Identifies α6β4 nAChR Distribution in the Rat Urinary Tract.",
+            "doi": "10.1021/acs.analchem.6c00715",
+            "pubYear": "2026"
+          },
+          {
+            "id": "42399658",
+            "title": "Integrated single-cell and spatial transcriptomics reveal stromal-immune-vascular crosstalk in patients with interstitial cystitis/bladder pain syndrome.",
+            "doi": "10.1038/s12276-026-01768-2",
+            "pubYear": "2026"
+          },
+          {
+            "id": "42389877",
+            "title": "Mucoadhesive Peptide-Catalase Self-Assembled Nano-Formulation for Effective Treatment of Mucosal Inflammatory Diseases.",
+            "doi": "10.1002/advs.76390",
+            "pubYear": "2026"
+          },
+          {
+            "id": "40149433",
+            "title": "Potential Role of &lt;i&gt;ABCF2&lt;/i&gt; Gene in Pudendal Nerve Neuropathy and Interstitial Cystitis.",
+            "doi": "10.3390/genes16030281",
+            "pubYear": "2025"
+          },
+          {
+            "id": "39917301",
+            "title": "Identification and validation of immune and diagnostic biomarkers for interstitial cystitis/painful bladder syndrome by integrating bioinformatics and machine-learning.",
+            "doi": "10.3389/fimmu.2025.1511529",
+            "pubYear": "2025"
+          },
+          {
+            "id": "40859299",
+            "title": "Conditional immortalization of mesenchymal stem cells and their extracellular vesicles therapy for interstitial cystitis/bladder pain syndrome.",
+            "doi": "10.1186/s13287-025-04615-9",
+            "pubYear": "2025"
+          },
+          {
+            "id": "39974737",
+            "title": "Exploring the anti-inflammatory effects of phytochemicals in attenuating interstitial cystitis-a literature review.",
+            "doi": "10.3389/fphar.2025.1483548",
+            "pubYear": "2025"
+          },
+          {
+            "id": "41892506",
+            "title": "Efficacy of &lt;i&gt;Escherichia coli&lt;/i&gt; Nissle 1917 for the Prevention of Recurrent Urinary Tract Infections in Women: A Preliminary Controlled Prospective Study.",
+            "doi": "10.3390/clinpract16030062",
+            "pubYear": "2026"
+          }
+        ]
+      }
+    },
+    "mygene": {
+      "url": "https://mygene.info/v3/query?q=symbol%3AHIF1A&species=human&size=3",
+      "data": {
+        "total": 1,
+        "hits": [
+          {
+            "_id": "3091",
+            "symbol": "HIF1A",
+            "name": "hypoxia inducible factor 1 subunit alpha",
+            "taxid": 9606
+          }
+        ]
+      }
+    },
+    "chembl": {
+      "url": "https://www.ebi.ac.uk/chembl/api/data/target/search.json?q=HIF1A&limit=20",
+      "data": {
+        "total": 6,
+        "human_targets": [
+          {
+            "target_chembl_id": "CHEMBL4296108",
+            "pref_name": "HIF1A/p300/CREB-binding protein",
+            "organism": "Homo sapiens"
+          },
+          {
+            "target_chembl_id": "CHEMBL4261",
+            "pref_name": "Hypoxia-inducible factor 1-alpha",
+            "organism": "Homo sapiens"
+          },
+          {
+            "target_chembl_id": "CHEMBL4296117",
+            "pref_name": "von Hippel-Lindau disease tumor suppressor/Elongin-C/Elongin-B/HIF1A",
+            "organism": "Homo sapiens"
+          },
+          {
+            "target_chembl_id": "CHEMBL3885588",
+            "pref_name": "Histone acetyltransferase p300/Hypoxia-inducible factor 1-alpha",
+            "organism": "Homo sapiens"
+          },
+          {
+            "target_chembl_id": "CHEMBL2221345",
+            "pref_name": "Hypoxia inducible factors; HIF-1-alpha, HIF-2-alpha",
+            "organism": "Homo sapiens"
+          }
+        ]
+      }
+    },
+    "hgnc_rest": {
+      "url": "https://rest.genenames.org/fetch/symbol/HIF1A",
+      "data": [
+        {
+          "symbol": "HIF1A",
+          "hgnc_id": "HGNC:4910",
+          "entrez_id": "3091",
+          "ensembl_gene_id": "ENSG00000100644",
+          "status": "Approved"
+        }
+      ]
+    },
+    "gtex_reference": {
+      "url": "https://gtexportal.org/api/v2/reference/gene?geneId=HIF1A",
+      "data": [
+        {
+          "geneSymbol": "HIF1A",
+          "geneId": null,
+          "gencodeId": "ENSG00000100644.16",
+          "entrezGeneId": 3091
+        }
+      ]
+    },
+    "reactome": {
+      "url": "https://reactome.org/ContentService/data/mapping/UniProt/Q16665/pathways",
+      "data": [
+        {
+          "stId": "R-HSA-1234158",
+          "displayName": "Regulation of gene expression by Hypoxia-inducible Factor",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-1234174",
+          "displayName": "Cellular response to hypoxia",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-1234176",
+          "displayName": "Oxygen-dependent proline hydroxylation of Hypoxia-inducible Factor Alpha",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-2122947",
+          "displayName": "NOTCH1 Intracellular Domain Regulates Transcription",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-5689880",
+          "displayName": "Ub-specific processing proteases",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-6785807",
+          "displayName": "Interleukin-4 and Interleukin-13 signaling",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-8849473",
+          "displayName": "PTK6 Expression",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-8857538",
+          "displayName": "PTK6 promotes HIF1A stabilization",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-8951664",
+          "displayName": "Neddylation",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-9701898",
+          "displayName": "STAT3 nuclear events downstream of ALK signaling",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-9909649",
+          "displayName": "Regulation of PD-L1(CD274) transcription",
+          "speciesName": "Homo sapiens"
+        }
+      ]
+    }
+  }
+}

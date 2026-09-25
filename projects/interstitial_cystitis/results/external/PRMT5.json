@@ -1,0 +1,151 @@
+{
+  "gene": "PRMT5",
+  "module": "M6_cell_state_g2m",
+  "prereg": "projects/interstitial_cystitis/prereg/ic_p48_module_genesets.json",
+  "retrieved_at_utc": "2026-09-25T21:20:29.148144+00:00",
+  "sources": {
+    "ensembl": {
+      "url": "https://rest.ensembl.org/lookup/symbol/homo_sapiens/PRMT5?content-type=application/json",
+      "data": {
+        "id": "ENSG00000100462",
+        "display_name": "PRMT5",
+        "description": "protein arginine methyltransferase 5 [Source:HGNC Symbol;Acc:HGNC:10894]",
+        "biotype": "protein_coding",
+        "seq_region_name": "14"
+      }
+    },
+    "uniprot": {
+      "url": "https://rest.uniprot.org/uniprotkb/search?query=gene_exact%3APRMT5%20AND%20organism_id%3A9606%20AND%20reviewed%3Atrue&size=3&format=json",
+      "data": [
+        {
+          "primaryAccession": "O14744",
+          "uniProtkbId": "ANM5_HUMAN",
+          "entryType": "UniProtKB reviewed (Swiss-Prot)"
+        }
+      ]
+    },
+    "europe_pmc": {
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=PRMT5%20AND%20%22interstitial%20cystitis%22&format=json&pageSize=10",
+      "data": {
+        "hit_count": 5,
+        "papers": [
+          {
+            "id": "42729133",
+            "title": "Oxidative stress in bladder outlet obstruction: a narrative review.",
+            "doi": "10.21037/tau-2026-0358",
+            "pubYear": "2026"
+          },
+          {
+            "id": "PPR276334",
+            "title": "MOATAI-VIR - an AI algorithm that predicts severe adverse events and molecular features for COVID-19’s complications",
+            "doi": "10.1101/2021.01.29.21250712",
+            "pubYear": "2021"
+          },
+          {
+            "id": "PMC10902613",
+            "title": "Abstracts",
+            "doi": null,
+            "pubYear": "2024"
+          },
+          {
+            "id": "25769533",
+            "title": "Abstracts of the 62nd Annual Scientific Meeting, March 26-28, 2015, San Francisco, California.",
+            "doi": "10.1177/1933719115579631",
+            "pubYear": "2015"
+          },
+          {
+            "id": "32213001",
+            "title": "UEG Week 2019 Poster Presentations.",
+            "doi": "10.1177/2050640619854671",
+            "pubYear": "2019"
+          }
+        ]
+      }
+    },
+    "mygene": {
+      "url": "https://mygene.info/v3/query?q=symbol%3APRMT5&species=human&size=3",
+      "data": {
+        "total": 1,
+        "hits": [
+          {
+            "_id": "10419",
+            "symbol": "PRMT5",
+            "name": "protein arginine methyltransferase 5",
+            "taxid": 9606
+          }
+        ]
+      }
+    },
+    "chembl": {
+      "url": "https://www.ebi.ac.uk/chembl/api/data/target/search.json?q=PRMT5&limit=20",
+      "data": {
+        "total": 5,
+        "human_targets": [
+          {
+            "target_chembl_id": "CHEMBL1795116",
+            "pref_name": "Protein arginine N-methyltransferase 5",
+            "organism": "Homo sapiens"
+          },
+          {
+            "target_chembl_id": "CHEMBL5483002",
+            "pref_name": "PRMT5-Riok1",
+            "organism": "Homo sapiens"
+          },
+          {
+            "target_chembl_id": "CHEMBL4748215",
+            "pref_name": "von Hippel-Lindau disease tumor suppressor/Protein arginine N-methyltransferase 5",
+            "organism": "Homo sapiens"
+          },
+          {
+            "target_chembl_id": "CHEMBL3137261",
+            "pref_name": "PRMT5/MEP50 complex",
+            "organism": "Homo sapiens"
+          }
+        ]
+      }
+    },
+    "hgnc_rest": {
+      "url": "https://rest.genenames.org/fetch/symbol/PRMT5",
+      "data": [
+        {
+          "symbol": "PRMT5",
+          "hgnc_id": "HGNC:10894",
+          "entrez_id": "10419",
+          "ensembl_gene_id": "ENSG00000100462",
+          "status": "Approved"
+        }
+      ]
+    },
+    "gtex_reference": {
+      "url": "https://gtexportal.org/api/v2/reference/gene?geneId=PRMT5",
+      "data": [
+        {
+          "geneSymbol": "PRMT5",
+          "geneId": null,
+          "gencodeId": "ENSG00000100462.15",
+          "entrezGeneId": 10419
+        }
+      ]
+    },
+    "reactome": {
+      "url": "https://reactome.org/ContentService/data/mapping/UniProt/O14744/pathways",
+      "data": [
+        {
+          "stId": "R-HSA-191859",
+          "displayName": "snRNP Assembly",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-3214858",
+          "displayName": "RMTs methylate histone arginines",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-6804760",
+          "displayName": "Regulation of TP53 Activity through Methylation",
+          "speciesName": "Homo sapiens"
+        }
+      ]
+    }
+  }
+}

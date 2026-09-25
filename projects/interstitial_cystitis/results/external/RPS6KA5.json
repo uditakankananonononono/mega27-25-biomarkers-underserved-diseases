@@ -1,0 +1,127 @@
+{
+  "gene": "RPS6KA5",
+  "module": "M6_cell_state_g2m",
+  "prereg": "projects/interstitial_cystitis/prereg/ic_p48_module_genesets.json",
+  "retrieved_at_utc": "2026-09-25T20:33:29.437687+00:00",
+  "sources": {
+    "ensembl": {
+      "url": "https://rest.ensembl.org/lookup/symbol/homo_sapiens/RPS6KA5?content-type=application/json",
+      "data": {
+        "id": "ENSG00000100784",
+        "display_name": "RPS6KA5",
+        "description": "ribosomal protein S6 kinase A5 [Source:HGNC Symbol;Acc:HGNC:10434]",
+        "biotype": "protein_coding",
+        "seq_region_name": "14"
+      }
+    },
+    "uniprot": {
+      "url": "https://rest.uniprot.org/uniprotkb/search?query=gene_exact%3ARPS6KA5%20AND%20organism_id%3A9606%20AND%20reviewed%3Atrue&size=3&format=json",
+      "data": [
+        {
+          "primaryAccession": "O75582",
+          "uniProtkbId": "KS6A5_HUMAN",
+          "entryType": "UniProtKB reviewed (Swiss-Prot)"
+        }
+      ]
+    },
+    "europe_pmc": {
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=RPS6KA5%20AND%20%22interstitial%20cystitis%22&format=json&pageSize=10",
+      "data": {
+        "hit_count": 1,
+        "papers": [
+          {
+            "id": "29363787",
+            "title": "A genome-scale DNA methylation study in women with interstitial cystitis/bladder pain syndrome.",
+            "doi": "10.1002/nau.23489",
+            "pubYear": "2018"
+          }
+        ]
+      }
+    },
+    "mygene": {
+      "url": "https://mygene.info/v3/query?q=symbol%3ARPS6KA5&species=human&size=3",
+      "data": {
+        "total": 1,
+        "hits": [
+          {
+            "_id": "9252",
+            "symbol": "RPS6KA5",
+            "name": "ribosomal protein S6 kinase A5",
+            "taxid": 9606
+          }
+        ]
+      }
+    },
+    "chembl": {
+      "url": "https://www.ebi.ac.uk/chembl/api/data/target/search.json?q=RPS6KA5&limit=20",
+      "data": {
+        "total": 2,
+        "human_targets": [
+          {
+            "target_chembl_id": "CHEMBL4237",
+            "pref_name": "Ribosomal protein S6 kinase alpha-5",
+            "organism": "Homo sapiens"
+          },
+          {
+            "target_chembl_id": "CHEMBL3832633",
+            "pref_name": "Ribosomal protein S6 kinase",
+            "organism": "Homo sapiens"
+          }
+        ]
+      }
+    },
+    "hgnc_rest": {
+      "url": "https://rest.genenames.org/fetch/symbol/RPS6KA5",
+      "data": [
+        {
+          "symbol": "RPS6KA5",
+          "hgnc_id": "HGNC:10434",
+          "entrez_id": "9252",
+          "ensembl_gene_id": "ENSG00000100784",
+          "status": "Approved"
+        }
+      ]
+    },
+    "gtex_reference": {
+      "url": "https://gtexportal.org/api/v2/reference/gene?geneId=RPS6KA5",
+      "data": [
+        {
+          "geneSymbol": "RPS6KA5",
+          "geneId": null,
+          "gencodeId": "ENSG00000100784.10",
+          "entrezGeneId": 9252
+        }
+      ]
+    },
+    "reactome": {
+      "url": "https://reactome.org/ContentService/data/mapping/UniProt/O75582/pathways",
+      "data": [
+        {
+          "stId": "R-HSA-198753",
+          "displayName": "ERK/MAPK targets",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-199920",
+          "displayName": "CREB phosphorylation",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-375165",
+          "displayName": "NCAM signaling for neurite out-growth",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-437239",
+          "displayName": "Recycling pathway of L1",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-5621575",
+          "displayName": "CD209 (DC-SIGN) signaling",
+          "speciesName": "Homo sapiens"
+        }
+      ]
+    }
+  }
+}

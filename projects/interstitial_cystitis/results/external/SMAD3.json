@@ -1,0 +1,271 @@
+{
+  "gene": "SMAD3",
+  "module": "M6_cell_state_g2m",
+  "prereg": "projects/interstitial_cystitis/prereg/ic_p48_module_genesets.json",
+  "retrieved_at_utc": "2026-09-25T21:23:10.668342+00:00",
+  "sources": {
+    "ensembl": {
+      "url": "https://rest.ensembl.org/lookup/symbol/homo_sapiens/SMAD3?content-type=application/json",
+      "data": {
+        "id": "ENSG00000166949",
+        "display_name": "SMAD3",
+        "description": "SMAD family member 3 [Source:HGNC Symbol;Acc:HGNC:6769]",
+        "biotype": "protein_coding",
+        "seq_region_name": "15"
+      }
+    },
+    "uniprot": {
+      "url": "https://rest.uniprot.org/uniprotkb/search?query=gene_exact%3ASMAD3%20AND%20organism_id%3A9606%20AND%20reviewed%3Atrue&size=3&format=json",
+      "data": [
+        {
+          "primaryAccession": "P84022",
+          "uniProtkbId": "SMAD3_HUMAN",
+          "entryType": "UniProtKB reviewed (Swiss-Prot)"
+        }
+      ]
+    },
+    "europe_pmc": {
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=SMAD3%20AND%20%22interstitial%20cystitis%22&format=json&pageSize=10",
+      "data": {
+        "hit_count": 48,
+        "papers": [
+          {
+            "id": "42112338",
+            "title": "Signaling pathways related to interstitial cystitis.",
+            "doi": "10.3389/fimmu.2026.1774072",
+            "pubYear": "2026"
+          },
+          {
+            "id": "41713163",
+            "title": "Interstitial cystitis: a phenotype and rare variant exome sequencing study.",
+            "doi": "10.1016/j.ebiom.2026.106150",
+            "pubYear": "2026"
+          },
+          {
+            "id": "41698890",
+            "title": "TRPA1 promotes overactive bladder progression by activating the NLRP3 inflammasome and driving pyroptosis.",
+            "doi": "10.1038/s41419-026-08426-5",
+            "pubYear": "2026"
+          },
+          {
+            "id": "40271070",
+            "title": "TRPC3 contributes to cyclophosphamide-induced cystitis progression by enhancing bladder fibrosis through activation of the TGF-β/smad pathway.",
+            "doi": "10.3389/fphar.2025.1565156",
+            "pubYear": "2025"
+          },
+          {
+            "id": "38055393",
+            "title": "Emodin inhibits bladder inflammation and fibrosis in mice with interstitial cystitis by regulating JMJD3.",
+            "doi": "10.1590/acb385123",
+            "pubYear": "2023"
+          },
+          {
+            "id": "40258857",
+            "title": "Molecular characterization of suburothelial fibrosis in murine acute recurrent bladder inflammation.",
+            "doi": "10.1038/s41598-025-96860-4",
+            "pubYear": "2025"
+          },
+          {
+            "id": "41961104",
+            "title": "The hidden players: LncRNA-Encoded micropeptides in cancer hallmarks.",
+            "doi": "10.1007/s00018-026-06151-y",
+            "pubYear": "2026"
+          },
+          {
+            "id": "42511786",
+            "title": "Exosomes in Benign Urological Disorders: From Molecular Biology to Clinical Perspectives.",
+            "doi": "10.3390/ijms27146441",
+            "pubYear": "2026"
+          },
+          {
+            "id": "38103146",
+            "title": "The roles of pyroptosis in genitourinary diseases.",
+            "doi": "10.1007/s11255-023-03894-6",
+            "pubYear": "2024"
+          },
+          {
+            "id": "42729133",
+            "title": "Oxidative stress in bladder outlet obstruction: a narrative review.",
+            "doi": "10.21037/tau-2026-0358",
+            "pubYear": "2026"
+          }
+        ]
+      }
+    },
+    "mygene": {
+      "url": "https://mygene.info/v3/query?q=symbol%3ASMAD3&species=human&size=3",
+      "data": {
+        "total": 1,
+        "hits": [
+          {
+            "_id": "4088",
+            "symbol": "SMAD3",
+            "name": "SMAD family member 3",
+            "taxid": 9606
+          }
+        ]
+      }
+    },
+    "chembl": {
+      "url": "https://www.ebi.ac.uk/chembl/api/data/target/search.json?q=SMAD3&limit=20",
+      "data": {
+        "total": 8,
+        "human_targets": [
+          {
+            "target_chembl_id": "CHEMBL1293258",
+            "pref_name": "Mothers against decapentaplegic homolog 3",
+            "organism": "Homo sapiens"
+          },
+          {
+            "target_chembl_id": "CHEMBL4296077",
+            "pref_name": "Transforming growth factor beta-1 proprotein/Mothers against decapentaplegic homolog 3",
+            "organism": "Homo sapiens"
+          },
+          {
+            "target_chembl_id": "CHEMBL3885604",
+            "pref_name": "Mothers against decapentaplegic homolog 2/homolog 3",
+            "organism": "Homo sapiens"
+          }
+        ]
+      }
+    },
+    "hgnc_rest": {
+      "url": "https://rest.genenames.org/fetch/symbol/SMAD3",
+      "data": [
+        {
+          "symbol": "SMAD3",
+          "hgnc_id": "HGNC:6769",
+          "entrez_id": "4088",
+          "ensembl_gene_id": "ENSG00000166949",
+          "status": "Approved"
+        }
+      ]
+    },
+    "gtex_reference": {
+      "url": "https://gtexportal.org/api/v2/reference/gene?geneId=SMAD3",
+      "data": [
+        {
+          "geneSymbol": "SMAD3",
+          "geneId": null,
+          "gencodeId": "ENSG00000166949.15",
+          "entrezGeneId": 4088
+        }
+      ]
+    },
+    "reactome": {
+      "url": "https://reactome.org/ContentService/data/mapping/UniProt/P84022/pathways",
+      "data": [
+        {
+          "stId": "R-HSA-1181150",
+          "displayName": "Signaling by NODAL",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-1502540",
+          "displayName": "Signaling by Activin",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-2173788",
+          "displayName": "Downregulation of TGF-beta receptor signaling",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-2173789",
+          "displayName": "TGF-beta receptor signaling activates SMADs",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-2173795",
+          "displayName": "Downregulation of SMAD2/3:SMAD4 transcriptional activity",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-2173796",
+          "displayName": "SMAD2/SMAD3:SMAD4 heterotrimer regulates transcription",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-3304356",
+          "displayName": "SMAD2/3 Phosphorylation Motif Mutants in Cancer",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-3311021",
+          "displayName": "SMAD4 MH2 Domain Mutants in Cancer",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-3315487",
+          "displayName": "SMAD2/3 MH2 Domain Mutants in Cancer",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-3656532",
+          "displayName": "TGFBR1 KD Mutants in Cancer",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-5689880",
+          "displayName": "Ub-specific processing proteases",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-8941855",
+          "displayName": "RUNX3 regulates CDKN1A transcription",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-8952158",
+          "displayName": "RUNX3 regulates BCL2L11 (BIM) transcription",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-9008059",
+          "displayName": "Interleukin-37 signaling",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-9013695",
+          "displayName": "NOTCH4 Intracellular Domain Regulates Transcription",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-9615017",
+          "displayName": "FOXO-mediated transcription of oxidative stress, metabolic and neuronal genes",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-9617828",
+          "displayName": "FOXO-mediated transcription of cell cycle genes",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-9735871",
+          "displayName": "SARS-CoV-1 targets host intracellular signalling and regulatory pathways",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-9754189",
+          "displayName": "Germ layer formation at gastrulation",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-9796292",
+          "displayName": "Formation of axial mesoderm",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-9823730",
+          "displayName": "Formation of definitive endoderm",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-9839394",
+          "displayName": "TGFBR3 expression",
+          "speciesName": "Homo sapiens"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,114 @@
+{
+  "gene": "G3BP1",
+  "module": "M6_cell_state_g2m",
+  "prereg": "projects/interstitial_cystitis/prereg/ic_p48_module_genesets.json",
+  "retrieved_at_utc": "2026-09-25T21:23:34.789736+00:00",
+  "sources": {
+    "ensembl": {
+      "url": "https://rest.ensembl.org/lookup/symbol/homo_sapiens/G3BP1?content-type=application/json",
+      "data": {
+        "id": "ENSG00000145907",
+        "display_name": "G3BP1",
+        "description": "G3BP stress granule assembly factor 1 [Source:HGNC Symbol;Acc:HGNC:30292]",
+        "biotype": "protein_coding",
+        "seq_region_name": "5"
+      }
+    },
+    "uniprot": {
+      "url": "https://rest.uniprot.org/uniprotkb/search?query=gene_exact%3AG3BP1%20AND%20organism_id%3A9606%20AND%20reviewed%3Atrue&size=3&format=json",
+      "data": [
+        {
+          "primaryAccession": "Q13283",
+          "uniProtkbId": "G3BP1_HUMAN",
+          "entryType": "UniProtKB reviewed (Swiss-Prot)"
+        }
+      ]
+    },
+    "europe_pmc": {
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=G3BP1%20AND%20%22interstitial%20cystitis%22&format=json&pageSize=10",
+      "data": {
+        "hit_count": 3,
+        "papers": [
+          {
+            "id": "41836422",
+            "title": "Mendelian randomization studies in atopic dermatitis: causal insights across omics layers.",
+            "doi": "10.3389/fimmu.2026.1717812",
+            "pubYear": "2026"
+          },
+          {
+            "id": "40919133",
+            "title": "Ferroptosis in Cancer and Inflammatory Diseases: Mechanisms and Therapeutic Implications.",
+            "doi": "10.1002/mco2.70349",
+            "pubYear": "2025"
+          },
+          {
+            "id": "PMC13434919",
+            "title": "Abstracts of the 19th International Congress on Neuromuscular Diseases 7th – 11th July 2026",
+            "doi": null,
+            "pubYear": "2026"
+          }
+        ]
+      }
+    },
+    "mygene": {
+      "url": "https://mygene.info/v3/query?q=symbol%3AG3BP1&species=human&size=3",
+      "data": {
+        "total": 1,
+        "hits": [
+          {
+            "_id": "10146",
+            "symbol": "G3BP1",
+            "name": "G3BP stress granule assembly factor 1",
+            "taxid": 9606
+          }
+        ]
+      }
+    },
+    "chembl": {
+      "url": "https://www.ebi.ac.uk/chembl/api/data/target/search.json?q=G3BP1&limit=20",
+      "data": {
+        "total": 1,
+        "human_targets": [
+          {
+            "target_chembl_id": "CHEMBL6067419",
+            "pref_name": "Ras GTPase-activating protein-binding protein 1",
+            "organism": "Homo sapiens"
+          }
+        ]
+      }
+    },
+    "hgnc_rest": {
+      "url": "https://rest.genenames.org/fetch/symbol/G3BP1",
+      "data": [
+        {
+          "symbol": "G3BP1",
+          "hgnc_id": "HGNC:30292",
+          "entrez_id": "10146",
+          "ensembl_gene_id": "ENSG00000145907",
+          "status": "Approved"
+        }
+      ]
+    },
+    "gtex_reference": {
+      "url": "https://gtexportal.org/api/v2/reference/gene?geneId=G3BP1",
+      "data": [
+        {
+          "geneSymbol": "G3BP1",
+          "geneId": null,
+          "gencodeId": "ENSG00000145907.14",
+          "entrezGeneId": 10146
+        }
+      ]
+    },
+    "reactome": {
+      "url": "https://reactome.org/ContentService/data/mapping/UniProt/Q13283/pathways",
+      "data": [
+        {
+          "stId": "R-HSA-9705671",
+          "displayName": "SARS-CoV-2 activates/modulates innate and adaptive immune responses",
+          "speciesName": "Homo sapiens"
+        }
+      ]
+    }
+  }
+}

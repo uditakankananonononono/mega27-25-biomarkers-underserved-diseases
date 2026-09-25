@@ -1,0 +1,107 @@
+{
+  "gene": "MT2A",
+  "module": "M6_cell_state_g2m",
+  "prereg": "projects/interstitial_cystitis/prereg/ic_p48_module_genesets.json",
+  "retrieved_at_utc": "2026-09-25T21:24:06.636968+00:00",
+  "sources": {
+    "ensembl": {
+      "url": "https://rest.ensembl.org/lookup/symbol/homo_sapiens/MT2A?content-type=application/json",
+      "data": {
+        "id": "ENSG00000125148",
+        "display_name": "MT2A",
+        "description": "metallothionein 2A [Source:HGNC Symbol;Acc:HGNC:7406]",
+        "biotype": "protein_coding",
+        "seq_region_name": "16"
+      }
+    },
+    "uniprot": {
+      "url": "https://rest.uniprot.org/uniprotkb/search?query=gene_exact%3AMT2A%20AND%20organism_id%3A9606%20AND%20reviewed%3Atrue&size=3&format=json",
+      "data": [
+        {
+          "primaryAccession": "P02795",
+          "uniProtkbId": "MT2_HUMAN",
+          "entryType": "UniProtKB reviewed (Swiss-Prot)"
+        }
+      ]
+    },
+    "europe_pmc": {
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=MT2A%20AND%20%22interstitial%20cystitis%22&format=json&pageSize=10",
+      "data": {
+        "hit_count": 2,
+        "papers": [
+          {
+            "id": "41214060",
+            "title": "Identification of T cell stress response state (T&lt;sub&gt;STR&lt;/sub&gt;) and key genes related to T cells in discoid lupus erythematosus.",
+            "doi": "10.1038/s41598-025-23088-7",
+            "pubYear": "2025"
+          },
+          {
+            "id": "PMC7163937",
+            "title": "Poster Sessions",
+            "doi": null,
+            "pubYear": "2014"
+          }
+        ]
+      }
+    },
+    "mygene": {
+      "url": "https://mygene.info/v3/query?q=symbol%3AMT2A&species=human&size=3",
+      "data": {
+        "total": 1,
+        "hits": [
+          {
+            "_id": "4502",
+            "symbol": "MT2A",
+            "name": "metallothionein 2A",
+            "taxid": 9606
+          }
+        ]
+      }
+    },
+    "chembl": {
+      "url": "https://www.ebi.ac.uk/chembl/api/data/target/search.json?q=MT2A&limit=20",
+      "data": {
+        "total": 0,
+        "human_targets": []
+      }
+    },
+    "hgnc_rest": {
+      "url": "https://rest.genenames.org/fetch/symbol/MT2A",
+      "data": [
+        {
+          "symbol": "MT2A",
+          "hgnc_id": "HGNC:7406",
+          "entrez_id": "4502",
+          "ensembl_gene_id": "ENSG00000125148",
+          "status": "Approved"
+        }
+      ]
+    },
+    "gtex_reference": {
+      "url": "https://gtexportal.org/api/v2/reference/gene?geneId=MT2A",
+      "data": [
+        {
+          "geneSymbol": "MT2A",
+          "geneId": null,
+          "gencodeId": "ENSG00000125148.6",
+          "entrezGeneId": 4502
+        }
+      ]
+    },
+    "reactome": {
+      "url": "https://reactome.org/ContentService/data/mapping/UniProt/P02795/pathways",
+      "data": [
+        {
+          "stId": "R-HSA-5661231",
+          "displayName": "Metallothioneins bind metals",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-877300",
+          "displayName": "Interferon gamma signaling",
+          "speciesName": "Homo sapiens"
+        }
+      ]
+    }
+  }
+}

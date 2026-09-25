@@ -1,0 +1,89 @@
+{
+  "gene": "CASP8AP2",
+  "module": "M6_cell_state_g2m",
+  "prereg": "projects/interstitial_cystitis/prereg/ic_p48_module_genesets.json",
+  "retrieved_at_utc": "2026-09-25T21:22:37.268867+00:00",
+  "sources": {
+    "ensembl": {
+      "url": "https://rest.ensembl.org/lookup/symbol/homo_sapiens/CASP8AP2?content-type=application/json",
+      "data": {
+        "id": "ENSG00000118412",
+        "display_name": "CASP8AP2",
+        "description": "caspase 8 associated protein 2 [Source:HGNC Symbol;Acc:HGNC:1510]",
+        "biotype": "protein_coding",
+        "seq_region_name": "6"
+      }
+    },
+    "uniprot": {
+      "url": "https://rest.uniprot.org/uniprotkb/search?query=gene_exact%3ACASP8AP2%20AND%20organism_id%3A9606%20AND%20reviewed%3Atrue&size=3&format=json",
+      "data": [
+        {
+          "primaryAccession": "Q9UKL3",
+          "uniProtkbId": "C8AP2_HUMAN",
+          "entryType": "UniProtKB reviewed (Swiss-Prot)"
+        }
+      ]
+    },
+    "europe_pmc": {
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=CASP8AP2%20AND%20%22interstitial%20cystitis%22&format=json&pageSize=10",
+      "data": {
+        "hit_count": 0,
+        "papers": []
+      }
+    },
+    "mygene": {
+      "url": "https://mygene.info/v3/query?q=symbol%3ACASP8AP2&species=human&size=3",
+      "data": {
+        "total": 1,
+        "hits": [
+          {
+            "_id": "9994",
+            "symbol": "CASP8AP2",
+            "name": "caspase 8 associated protein 2",
+            "taxid": 9606
+          }
+        ]
+      }
+    },
+    "chembl": {
+      "url": "https://www.ebi.ac.uk/chembl/api/data/target/search.json?q=CASP8AP2&limit=20",
+      "data": {
+        "total": 0,
+        "human_targets": []
+      }
+    },
+    "hgnc_rest": {
+      "url": "https://rest.genenames.org/fetch/symbol/CASP8AP2",
+      "data": [
+        {
+          "symbol": "CASP8AP2",
+          "hgnc_id": "HGNC:1510",
+          "entrez_id": "9994",
+          "ensembl_gene_id": "ENSG00000118412",
+          "status": "Approved"
+        }
+      ]
+    },
+    "gtex_reference": {
+      "url": "https://gtexportal.org/api/v2/reference/gene?geneId=CASP8AP2",
+      "data": [
+        {
+          "geneSymbol": "CASP8AP2",
+          "geneId": null,
+          "gencodeId": "ENSG00000118412.12",
+          "entrezGeneId": 9994
+        }
+      ]
+    },
+    "reactome": {
+      "url": "https://reactome.org/ContentService/data/mapping/UniProt/Q9UKL3/pathways",
+      "data": [
+        {
+          "stId": "R-HSA-3899300",
+          "displayName": "SUMOylation of transcription cofactors",
+          "speciesName": "Homo sapiens"
+        }
+      ]
+    }
+  }
+}

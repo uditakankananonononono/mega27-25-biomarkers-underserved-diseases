@@ -1,0 +1,140 @@
+{
+  "gene": "PURA",
+  "module": "M6_cell_state_g2m",
+  "prereg": "projects/interstitial_cystitis/prereg/ic_p48_module_genesets.json",
+  "retrieved_at_utc": "2026-09-25T21:24:52.859520+00:00",
+  "sources": {
+    "ensembl": {
+      "url": "https://rest.ensembl.org/lookup/symbol/homo_sapiens/PURA?content-type=application/json",
+      "data": {
+        "id": "ENSG00000185129",
+        "display_name": "PURA",
+        "description": "purine rich element binding protein A [Source:HGNC Symbol;Acc:HGNC:9701]",
+        "biotype": "protein_coding",
+        "seq_region_name": "5"
+      }
+    },
+    "uniprot": {
+      "url": "https://rest.uniprot.org/uniprotkb/search?query=gene_exact%3APURA%20AND%20organism_id%3A9606%20AND%20reviewed%3Atrue&size=3&format=json",
+      "data": [
+        {
+          "primaryAccession": "Q00577",
+          "uniProtkbId": "PURA_HUMAN",
+          "entryType": "UniProtKB reviewed (Swiss-Prot)"
+        }
+      ]
+    },
+    "europe_pmc": {
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=PURA%20AND%20%22interstitial%20cystitis%22&format=json&pageSize=10",
+      "data": {
+        "hit_count": 8,
+        "papers": [
+          {
+            "id": "36775270",
+            "title": "[Reproducibility evaluation of air-charged catheter for rest urethral pressure profilometry].",
+            "doi": "10.3760/cma.j.cn112137-20220518-01095",
+            "pubYear": "2023"
+          },
+          {
+            "id": "40125242",
+            "title": "Novel Management of Post-laparoscopic Sacrocolpopexy-Associated Overactive Bladder: A Combined Approach of Vaginal Natural Orifice Transluminal Endoscopic Surgery (vNOTES) Mesh Removal and Fotona Laser Therapy.",
+            "doi": "10.7759/cureus.79277",
+            "pubYear": "2025"
+          },
+          {
+            "id": "36505169",
+            "title": "Is Erbium/Neodymium Laser Combination Therapy an Effective Treatment Option for Interstitial Cystitis/Bladder Pain Syndrome With Vulvodynia?",
+            "doi": "10.7759/cureus.31228",
+            "pubYear": "2022"
+          },
+          {
+            "id": "38328583",
+            "title": "Comparative genomic analysis of uropathogenic <i>Escherichia coli</i> strains from women with recurrent urinary tract infection.",
+            "doi": "10.3389/fmicb.2023.1340427",
+            "pubYear": "2023"
+          },
+          {
+            "id": "15498797",
+            "title": "Primary Sjögren's syndrome: new clinical and therapeutic concepts.",
+            "doi": "10.1136/ard.2004.025676",
+            "pubYear": "2005"
+          },
+          {
+            "id": "26391482",
+            "title": "SIU 2015 Abstracts.",
+            "doi": "10.1007/s00345-015-1684-3",
+            "pubYear": "2015"
+          },
+          {
+            "id": "PMC7419731",
+            "title": "Abstracts",
+            "doi": null,
+            "pubYear": "2020"
+          },
+          {
+            "id": "31090026",
+            "title": "Abstracts from the 2019 Annual Meeting of the Society of General Internal Medicine.",
+            "doi": "10.1007/s11606-019-05007-5",
+            "pubYear": "2019"
+          }
+        ]
+      }
+    },
+    "mygene": {
+      "url": "https://mygene.info/v3/query?q=symbol%3APURA&species=human&size=3",
+      "data": {
+        "total": 1,
+        "hits": [
+          {
+            "_id": "5813",
+            "symbol": "PURA",
+            "name": "purine rich element binding protein A",
+            "taxid": 9606
+          }
+        ]
+      }
+    },
+    "chembl": {
+      "url": "https://www.ebi.ac.uk/chembl/api/data/target/search.json?q=PURA&limit=20",
+      "data": {
+        "total": 1,
+        "human_targets": [
+          {
+            "target_chembl_id": "CHEMBL6066334",
+            "pref_name": "Transcriptional regulator protein Pur-beta",
+            "organism": "Homo sapiens"
+          }
+        ]
+      }
+    },
+    "hgnc_rest": {
+      "url": "https://rest.genenames.org/fetch/symbol/PURA",
+      "data": [
+        {
+          "symbol": "PURA",
+          "hgnc_id": "HGNC:9701",
+          "entrez_id": "5813",
+          "ensembl_gene_id": "ENSG00000185129",
+          "status": "Approved"
+        }
+      ]
+    },
+    "gtex_reference": {
+      "url": "https://gtexportal.org/api/v2/reference/gene?geneId=PURA",
+      "data": [
+        {
+          "geneSymbol": "PURA",
+          "geneId": null,
+          "gencodeId": "ENSG00000185129.5",
+          "entrezGeneId": 5813
+        }
+      ]
+    },
+    "reactome": {
+      "url": "https://reactome.org/ContentService/data/mapping/UniProt/Q00577/pathways",
+      "data": {
+        "error": "HTTP Error 404: Not Found"
+      }
+    }
+  }
+}

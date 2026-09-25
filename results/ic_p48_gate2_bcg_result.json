@@ -1,0 +1,14 @@
+{
+ "preregistration": "projects/interstitial_cystitis/prereg/IC_P48_preregistration.md (Gate 2)",
+ "frozen_weights": {
+  "M2_ecm_remodeling": 1.0
+ },
+ "n_lesion": 25,
+ "n_bcg": 13,
+ "S_lesion_mean": 0.18138648591223286,
+ "S_bcg_mean": 0.3047584827226345,
+ "hedges_g": -0.2599013603968353,
+ "permutation_p_one_sided": 0.7764223577642235,
+ "pass_threshold": "Hedges g >= 0.8 and permutation p < 0.025",
+ "pass": false
+}

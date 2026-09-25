@@ -14,3 +14,13 @@ P3 (registered 10:40 IST, after validation unlock): ST3GAL2 expression is LOWER 
     independent cohorts NOT used in discovery or validation (any GEO preeclampsia case/control cohort outside
     results/split_locked.csv, labels audited, all such cohorts reported). Falsified if the random-effects meta over
     those new cohorts gives mu >= 0 or one-sided p >= 0.05.
+
+## CORRECTION 10:43 IST - duplicate samples across series
+Audit found identical GSM IDs shared between series (sub/superseries re-deposits), including discovery GSE75010 vs
+validation GSE98224 (48 samples) and validation GSE149437 vs GSE149440 (87). Deduplicated by a results-blind rule
+(scripts/dedup_split.py -> results/split_final.csv). Results BEFORE dedup (results/replication_results_before_dedup.json)
+are INVALID and superseded. After dedup:
+- P1 GNG2: validation mu=-0.15, p=0.24 -> falsified (unchanged verdict).
+- P2 top-50: preeclampsia FAILS (0.53, p=0.23); leishmaniasis FAILS (0.44, p=0.85); PCOS passes (0.72, p=0.010);
+  interstitial cystitis passes (1.00, p<1e-4); endometriosis, PPD, ME/CFS fail.
+- Novel preeclampsia candidate set: FAILS (0.43, p=0.71). ST3GAL2 alone p=0.013 (not Bonferroni-significant over 30).

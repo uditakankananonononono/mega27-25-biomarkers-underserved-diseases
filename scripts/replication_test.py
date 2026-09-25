@@ -16,7 +16,7 @@ rng = np.random.default_rng(20260925)
 
 
 def val_table(d):
-    sp = pd.read_csv("results/split_locked.csv")
+    sp = pd.read_csv("results/split_final.csv" if os.path.exists("results/split_final.csv") else "results/split_locked.csv")
     tags = list(sp[(sp.disease == d) & (sp.split == "validation")].tag)
     if os.path.exists("results/split_addendum_1.csv"):
         ad = pd.read_csv("results/split_addendum_1.csv")

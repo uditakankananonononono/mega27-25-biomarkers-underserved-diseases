@@ -14,7 +14,7 @@ from ubiomark import network, models
 torch.set_num_threads(1)
 G = 512
 genes, A = network.load_string(400)
-sp = pd.read_csv("results/split_locked.csv")
+sp = pd.read_csv("results/split_final.csv" if os.path.exists("results/split_final.csv") else "results/split_locked.csv")
 ad = pd.read_csv("results/split_addendum_1.csv") if os.path.exists("results/split_addendum_1.csv") else pd.DataFrame(columns=sp.columns)
 sp = pd.concat([sp, ad[ad.split == "validation"][sp.columns.intersection(ad.columns)]])
 rows = []

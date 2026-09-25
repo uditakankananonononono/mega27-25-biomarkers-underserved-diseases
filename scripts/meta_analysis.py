@@ -3,7 +3,7 @@ import sys, os, numpy as np, pandas as pd
 sys.path.insert(0, "src")
 from ubiomark import stats
 split = sys.argv[1] if len(sys.argv) > 1 else "discovery"
-sp = pd.read_csv("results/split_locked.csv")
+sp = pd.read_csv("results/split_final.csv" if os.path.exists("results/split_final.csv") else "results/split_locked.csv")
 os.makedirs(f"results/meta_{split}", exist_ok=True)
 summ = []
 for d, g in sp[sp.split == split].groupby("disease"):

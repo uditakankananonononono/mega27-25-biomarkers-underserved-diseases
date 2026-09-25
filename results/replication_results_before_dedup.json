@@ -21,20 +21,6 @@
     "FLJ11710",
     "COL11A2"
    ]
-  },
-  "novel_candidates": {
-   "n": 30,
-   "T1_concordance": 0.6333333333333333,
-   "p_T1": 0.22447755224477553,
-   "null_T1_mean": 0.54709,
-   "T2_replicated": 3,
-   "p_T2": 0.1897810218978102,
-   "null_T2_mean": 1.4973,
-   "replicated_genes": [
-    "RBBP4",
-    "PICK1",
-    "SMAD9"
-   ]
   }
  },
  "fibromyalgia": {
@@ -48,10 +34,10 @@
    "n": 40,
    "T1_concordance": 1.0,
    "p_T1": 9.999000099990002e-05,
-   "null_T1_mean": 0.7180099999999999,
+   "null_T1_mean": 0.71715,
    "T2_replicated": 22,
    "p_T2": 9.999000099990002e-05,
-   "null_T2_mean": 2.3548,
+   "null_T2_mean": 2.3648,
    "replicated_genes": [
     "CSF2RB",
     "HOXD1",
@@ -80,21 +66,51 @@
  },
  "leishmaniasis": {
   "validation_tags": [
+   "GSE125992",
    "GSE125993"
   ],
   "top50": {
-   "n": 43,
-   "T1_concordance": 0.4418604651162791,
-   "p_T1": 0.8496150384961504,
-   "null_T1_mean": 0.5090116279069768,
-   "T2_replicated": 4,
-   "p_T2": 0.5523447655234477,
-   "null_T2_mean": 3.8662,
+   "n": 42,
+   "T1_concordance": 0.9761904761904762,
+   "p_T1": 9.999000099990002e-05,
+   "null_T1_mean": 0.5806976190476191,
+   "T2_replicated": 33,
+   "p_T2": 9.999000099990002e-05,
+   "null_T2_mean": 8.2289,
    "replicated_genes": [
-    "GBP1",
-    "ANG",
     "EZH2",
-    "PAQR7"
+    "KNL1",
+    "BPGM",
+    "CHEK1",
+    "PAQR7",
+    "CACNA2D2",
+    "GABPB1",
+    "BCL2L11",
+    "GUCD1",
+    "PNP",
+    "FANCI",
+    "C14orf93",
+    "KCTD15",
+    "PYROXD2",
+    "UBE2F",
+    "SLC7A5",
+    "GLCE",
+    "TOP2A",
+    "FAM46C",
+    "SASH1",
+    "ALS2",
+    "MCM6",
+    "SUMF1",
+    "POLE2",
+    "SORBS3",
+    "PIM1",
+    "CENPE",
+    "RSC1A1",
+    "STK17A",
+    "DUSP22",
+    "RGCC",
+    "CCDC149",
+    "SSH3"
    ]
   }
  },
@@ -105,11 +121,11 @@
   "top50": {
    "n": 50,
    "T1_concordance": 0.3,
-   "p_T1": 0.9831016898310169,
-   "null_T1_mean": 0.43904800000000005,
+   "p_T1": 0.9849015098490151,
+   "null_T1_mean": 0.43875600000000003,
    "T2_replicated": 0,
    "p_T2": 1.0,
-   "null_T2_mean": 0.5567,
+   "null_T2_mean": 0.5624,
    "replicated_genes": []
   }
  },
@@ -123,19 +139,21 @@
   "top50": {
    "n": 50,
    "T1_concordance": 0.72,
-   "p_T1": 0.010198980101989802,
-   "null_T1_mean": 0.547532,
-   "T2_replicated": 7,
-   "p_T2": 0.007799220077992201,
-   "null_T2_mean": 2.2409,
+   "p_T1": 0.0058994100589941,
+   "null_T1_mean": 0.537226,
+   "T2_replicated": 9,
+   "p_T2": 0.00019998000199980003,
+   "null_T2_mean": 2.1414,
    "replicated_genes": [
+    "HSPA1A",
     "CHD4",
     "ZNFX1",
-    "MAP7D1",
-    "ANXA11",
+    "LMO4",
+    "GRB2",
+    "SNRK",
+    "APOA1",
     "H2AFY",
-    "GAB2",
-    "EDC4"
+    "ANXA11"
    ]
   }
  },
@@ -146,11 +164,11 @@
   "top50": {
    "n": 40,
    "T1_concordance": 0.6,
-   "p_T1": 0.12588741125887412,
-   "null_T1_mean": 0.49634750000000005,
+   "p_T1": 0.12208779122087791,
+   "null_T1_mean": 0.4946725,
    "T2_replicated": 2,
-   "p_T2": 0.39346065393460655,
-   "null_T2_mean": 1.3448,
+   "p_T2": 0.38976102389761025,
+   "null_T2_mean": 1.3329,
    "replicated_genes": [
     "LINC01089",
     "PICALM"
@@ -160,35 +178,44 @@
  "preeclampsia": {
   "validation_tags": [
    "GSE94643",
+   "GSE98224-GPL6244",
    "GSE147776",
+   "GSE149437",
    "GSE149440",
    "GSE186819",
    "GSE190639"
   ],
   "top50": {
-   "n": 49,
-   "T1_concordance": 0.5306122448979592,
-   "p_T1": 0.22807719228077192,
-   "null_T1_mean": 0.4660632653061225,
-   "T2_replicated": 3,
-   "p_T2": 0.26617338266173385,
-   "null_T2_mean": 1.8005,
+   "n": 50,
+   "T1_concordance": 0.74,
+   "p_T1": 0.00039996000399960006,
+   "null_T1_mean": 0.49017200000000005,
+   "T2_replicated": 7,
+   "p_T2": 0.025897410258974102,
+   "null_T2_mean": 2.9217,
    "replicated_genes": [
     "IGSF6",
+    "CYBB",
+    "MKNK1",
+    "MCTP1",
     "APMAP",
-    "PIK3CG"
+    "PIK3CG",
+    "F13A1"
    ]
   },
   "novel_candidates": {
    "n": 30,
-   "T1_concordance": 0.43333333333333335,
-   "p_T1": 0.7066293370662934,
-   "null_T1_mean": 0.4663166666666667,
-   "T2_replicated": 1,
-   "p_T2": 0.6691330866913309,
-   "null_T2_mean": 1.0844,
+   "T1_concordance": 0.7666666666666667,
+   "p_T1": 0.0006999300069993001,
+   "null_T1_mean": 0.4905166666666666,
+   "T2_replicated": 4,
+   "p_T2": 0.09049095090490951,
+   "null_T2_mean": 1.7375,
    "replicated_genes": [
-    "ST3GAL2"
+    "GNB1",
+    "SYK",
+    "ST3GAL2",
+    "CSNK1E"
    ]
   }
  }

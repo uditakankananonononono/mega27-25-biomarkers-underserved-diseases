@@ -9,7 +9,7 @@ pages = [p for p in text.split('\f') if p.strip()]
 excluded_headings = re.compile(r'^\s*(?:\d+(?:\.\d+)*\s+)?[A-Z][A-Za-z0-9 ,():/–-]{3,90}\s*$')
 # The reference section may start mid-page. Do not discard preceding research text
 # or count bibliography words after its heading.
-reference_start = re.compile(r'^\s*42\s+Verified primary-literature references\s*$', re.M)
+reference_start = re.compile(r'^\s*\d+\s+Verified primary-literature references\s*$', re.M)
 appendix_start = re.compile(r'^\s*A\s+Accession and tool ledgers\s*$', re.M)
 count = research_pages = 0
 in_back_matter = False
@@ -22,6 +22,7 @@ for page_no, page in enumerate(pages, 1):
         in_back_matter = True
     page = reference_start.split(page, maxsplit=1)[0]
     page = appendix_start.split(page, maxsplit=1)[0]
+    page = re.split(r'^\s*References\s*$', page, maxsplit=1, flags=re.M)[0]
     clean = []
     for line in page.splitlines():
         if excluded_headings.match(line) or re.match(r'^\s*\d+\s*$', line):

@@ -1,0 +1,62 @@
+{
+  "retrieved_ist": "2026-09-25 20:31",
+  "api_manual": "https://www.kegg.jp/kegg/rest/keggapi.html",
+  "fixed_genes": {
+    "FES": {
+      "entrez_id": "2242",
+      "url": "https://rest.kegg.jp/link/pathway/hsa:2242",
+      "status": 200,
+      "pathways": [
+        "path:hsa04360"
+      ]
+    },
+    "GPAT3": {
+      "entrez_id": "84803",
+      "url": "https://rest.kegg.jp/link/pathway/hsa:84803",
+      "status": 200,
+      "pathways": [
+        "path:hsa00561",
+        "path:hsa00564",
+        "path:hsa01100"
+      ]
+    },
+    "FURIN": {
+      "entrez_id": "5045",
+      "url": "https://rest.kegg.jp/link/pathway/hsa:5045",
+      "status": 200,
+      "pathways": [
+        "path:hsa03250",
+        "path:hsa04382"
+      ]
+    },
+    "GRAMD1A": {
+      "entrez_id": "57655",
+      "url": "https://rest.kegg.jp/link/pathway/hsa:57655",
+      "status": 200,
+      "pathways": []
+    },
+    "ZNF467": {
+      "entrez_id": "168544",
+      "url": "https://rest.kegg.jp/link/pathway/hsa:168544",
+      "status": 200,
+      "pathways": []
+    },
+    "LPGAT1": {
+      "entrez_id": "9926",
+      "url": "https://rest.kegg.jp/link/pathway/hsa:9926",
+      "status": 200,
+      "pathways": [
+        "path:hsa00564"
+      ]
+    }
+  },
+  "pathway_names": {
+    "path:hsa00561": "Glycerolipid metabolism - Homo sapiens (human)",
+    "path:hsa00564": "Glycerophospholipid metabolism - Homo sapiens (human)",
+    "path:hsa01100": "Metabolic pathways - Homo sapiens (human)",
+    "path:hsa03250": "Viral life cycle - HIV-1 - Homo sapiens (human)",
+    "path:hsa04360": "Axon guidance - Homo sapiens (human)",
+    "path:hsa04382": "Cornified envelope formation - Homo sapiens (human)"
+  },
+  "mapping": "Pinned HGNC exact approved symbol to unique Entrez ID, then KEGG hsa gene-to-pathway link; KEGG biological context is not PE validation."
+}

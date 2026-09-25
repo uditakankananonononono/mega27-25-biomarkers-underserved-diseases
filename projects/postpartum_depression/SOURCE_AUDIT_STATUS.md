@@ -16,3 +16,7 @@ The two cohorts differ in platform, draw timing and PPD ascertainment; no pooled
 ## GSE290313 unresolved person key
 
 `python3 projects/postpartum_depression/audit_GSE290313_identity.py` checks the 119 previously source-verified postpartum libraries. All 119 full library tokens are unique, but there are only 80 `DE##` prefixes. Thirty-five prefixes repeat; 15 span both case and control labels. `sources/GSE290313_prefix_collision_audit.csv` names every collision. Because the `DE##` prefix is not established as a donor identifier (and its discordant labels suggest it may be reused), neither 80 nor 119 is a proven person count. These are **not** added as independent validation patients, and the 119 GSMs stay out of the conservative used manifest pending a source-backed person crosswalk.
+
+## Clinical stratification caution for GSE44132
+
+The antenatal sample metadata contain prepartum-depression status in addition to later PPD. Among the 50 nontechnical-control people, the source labels split as follows: future PPD yes / prepartum yes **12**, future PPD yes / prepartum no **11**; future PPD no / prepartum yes **7**, future PPD no / prepartum no **20**. The exploratory 23-versus-27 unstratified Welch screen may therefore mix prepartum depression risk and future PPD. A prospective model must handle this baseline state as a prespecified stratum or covariate; a marginal methylation difference would not prove a PPD-specific effect. Array and experimental batches are also recorded per GSM in the crosswalk and need QC before any clinical inference.

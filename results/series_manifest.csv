@@ -112,3 +112,6 @@ endometriosis,GSE11768,GSE11768-GPL8300_series_matrix.txt.gz,GPL8300,skip_labels
 endometriosis,GSE11691,GSE11691_series_matrix.txt.gz,GPL96,skip_labels,9,0,0,9,
 endometriosis,GSE7846,GSE7846_series_matrix.txt.gz,GPL570,ok,5,5,21594,0,
 endometriosis,GSE6364,GSE6364_series_matrix.txt.gz,GPL570,ok,21,16,21594,0,
+preeclampsia,GSE251742,GSE251742_series_matrix.txt.gz,GPL10558,skip_labels,0,3,0,9,
+preeclampsia,GSE190639,GSE190639_series_matrix.txt.gz,GPL31059,ok,6,13,726,13,
+preeclampsia,GSE186819,GSE186819_series_matrix.txt.gz,GPL16686,error,12,13,0,0,"""GPL16686: no symbol column in ['ID', 'RANGE_STRAND', 'RANGE_START', 'RANGE_END', 'total_probes', 'GB_ACC', 'SPOT_ID', 'RANGE_GB']"""

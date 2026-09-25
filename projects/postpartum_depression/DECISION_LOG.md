@@ -8,3 +8,5 @@
 Evidence: `SOURCE_AUDIT_STATUS.md`, per-record CSVs and source/matrix hashes in `sources/`, `PUBLISHED_COMPARATOR.md`, and `validate_source_audit.py`. URLs and caveats in those records are part of this decision, not optional footnotes.
 
 Resource provenance: `EXTERNAL_RESOURCE_LEDGER.csv` records only two genuinely used external resources for this PPD-specific audit (NCBI GEO and NCBI PubMed). FTP mirrors, individual GSM accession pages and local NumPy/SciPy are not separate external services. This is not a claim that the 40-service gate is near completion; additional independent services must be genuinely used on this lane, not copied from another disease's ledger.
+
+GEO keyword discovery was triaged against the actual primary-series titles and study populations (`sources/geo_search_triage.csv`). Broad postpartum-depression search results include mouse maternal-brain studies, a mouse lactation/drug experiment, heroin-use prefrontal cortex, and preeclampsia; none is a legitimate additional human PPD cohort. They were excluded instead of padding the 120-record target.

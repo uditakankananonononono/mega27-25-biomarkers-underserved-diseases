@@ -99,3 +99,7 @@ Program gate is record-level: individually fetched/verified/used GSM accessions 
 
 ## State 11:45
 - CellxGene dataset 6963899a (human normal trophoblast, decidua/placenta; secondary atlas, 75,042 cells) checked as tissue-composition context, not a PE case/control validation: https://cellxgene.cziscience.com/e/ecf2e08e-2032-4a9e-b466-b65b395f4a02.cxg/ . Captured exact index metadata. Tool ledger now 31/40. Exact-TNR paper still 16 pages with no overflow, not yet the required substantive 20 or a discovery.
+
+## State 11:49
+- P7 was committed before GSE28242 expression read. Urine-sediment cross-tissue all-PBS 22/43 signs, matched-null p=.641; lesion-free 15/43, p=.991; Hunner-lesion 40/43, p=.0001 on just 3 cases. Exact subtype-label permutation (post-hoc) gives 2/56, p=.0357. Primary test fails; subtype effect is consistent with the original GSE28242 published conclusion, not a novel biomarker. All 13 metadata labels and no GSM overlap checked. Source https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE28242 ; P7 ledgers/scripts committed below.
+- Exact-TNR PDF has 16 content pages after removing one dangling-word page, still short of 20 substantive pages. No discovery/benchmark gate met. Tool ledger remains 31/40; record ledger 130/120.

@@ -1,0 +1,74 @@
+{
+  "source": "https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE229750",
+  "source_sha256": "84e9475d9794bc89d544a441eba159f6a372e7d594300bc1eb7d19452f179214",
+  "n_case": 5,
+  "n_control": 5,
+  "n_repeat_treated_excluded": 2,
+  "n_raw_ensg_rows": 60623,
+  "n_unique_mapped_genes": 41968,
+  "n_effect_genes": 11511,
+  "n_fixed_measured": 6,
+  "n_down": 5,
+  "n_corrected_down": 0,
+  "registered_descriptive_support": false,
+  "ambiguous_ensembl_ids": 3,
+  "genes": [
+    {
+      "gene": "CPA3",
+      "status": "not uniquely mapped or expression filtered"
+    },
+    {
+      "gene": "GCSAML",
+      "status": "measured",
+      "g": 0.0073494199481591305,
+      "v": 0.4000027006986787,
+      "welch_p": 0.9900815750066314,
+      "down": false
+    },
+    {
+      "gene": "MS4A2",
+      "status": "measured",
+      "g": -0.45923391673911623,
+      "v": 0.4105447895141775,
+      "welch_p": 0.44480767076325334,
+      "down": true
+    },
+    {
+      "gene": "FCER1A",
+      "status": "measured",
+      "g": -0.45817806875086303,
+      "v": 0.41049635713421356,
+      "welch_p": 0.4472319568606704,
+      "down": true
+    },
+    {
+      "gene": "ITGB8",
+      "status": "not uniquely mapped or expression filtered"
+    },
+    {
+      "gene": "UQCC3",
+      "status": "measured",
+      "g": -0.07832546647164644,
+      "v": 0.40030674393490007,
+      "welch_p": 0.8954583639969483,
+      "down": true
+    },
+    {
+      "gene": "HDC",
+      "status": "measured",
+      "g": -0.1472927970883206,
+      "v": 0.40108475840370506,
+      "welch_p": 0.8030456900708212,
+      "down": true
+    },
+    {
+      "gene": "GATA2",
+      "status": "measured",
+      "g": -0.2667502891123399,
+      "v": 0.40355778583707586,
+      "welch_p": 0.6532461086185053,
+      "down": true
+    }
+  ],
+  "limitation": "Five donors per group, neutrophils versus old whole blood, historical selected genes; not an independent biomarker or benchmark."
+}

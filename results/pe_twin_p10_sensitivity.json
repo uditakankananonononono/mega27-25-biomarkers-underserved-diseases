@@ -85,6 +85,8 @@
       "t_p": 0.6515629793837893
     }
   },
+  "case_mean_delivery_age_weeks": 33.20408163265306,
+  "control_mean_delivery_age_weeks": 33.111111111111114,
   "delivery_age_weeks": {
     "1": 33.857142857142854,
     "10": 35.142857142857146,

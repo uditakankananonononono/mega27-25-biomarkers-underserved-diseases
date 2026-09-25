@@ -90,6 +90,8 @@ se=np.sqrt(np.diag(np.linalg.inv(Xreg.T@Xreg))[1] * (err**2).sum(axis=0)/(16-3))
 from scipy.stats import t as tdist
 p=2*tdist.sf(abs(beta[1]/se),df=13)
 res['posthoc_delivery_age_adjusted']={gene:{'case_coefficient_log2cpm':float(b),'t_p':float(pp)} for gene,b,pp in zip(sel,beta[1],p)}
+res['case_mean_delivery_age_weeks']=float(weeks[labels].mean())
+res['control_mean_delivery_age_weeks']=float(weeks[~labels].mean())
 res['delivery_age_weeks']={str(k):float(v) for k,v in zip(preg.columns,weeks)}
 res['gestational_caveat']='Delivery age is post-outcome and potentially affected by disease; adjustment is descriptive only, may induce bias, and is not matched first-trimester replication.'
 Path('results/pe_twin_p10_sensitivity.json').write_text(json.dumps(res,indent=2)+'\n')

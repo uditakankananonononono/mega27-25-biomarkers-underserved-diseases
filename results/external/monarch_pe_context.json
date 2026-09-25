@@ -1,0 +1,59 @@
+{
+  "source_entity_url": "https://api-v3.monarchinitiative.org/v3/api/entity/MONDO:0005081",
+  "source_association_url": "https://api-v3.monarchinitiative.org/v3/api/entity/MONDO:0005081/biolink:CorrelatedGeneToDiseaseAssociation?limit=20&direct=true",
+  "retrieved_ist": "2026-09-25 20:25",
+  "entity_id": "MONDO:0005081",
+  "entity_name": "preeclampsia",
+  "exact_crossrefs": [
+    "DOID:10591",
+    "EFO:0000668",
+    "GARD:0012924",
+    "ICD10CM:O14",
+    "ICD9:642.40",
+    "ICD9:642.41",
+    "ICD9:642.42",
+    "ICD9:642.43",
+    "ICD9:642.44",
+    "MEDGEN:18608",
+    "MESH:D011225",
+    "MedDRA:10036485",
+    "NCIT:C85021",
+    "OMIMPS:189800",
+    "Orphanet:275555",
+    "SCTID:398254007",
+    "UMLS:C0032914",
+    "icd11.foundation:229121159"
+  ],
+  "n_direct_phenotype_terms": 27,
+  "n_direct_correlated_genes": 3,
+  "direct_correlated_genes": [
+    {
+      "symbol": "CORIN",
+      "id": "HGNC:19012",
+      "disease_id": "MONDO:0005081",
+      "source": "infores:orphanet"
+    },
+    {
+      "symbol": "FLT1",
+      "id": "HGNC:3763",
+      "disease_id": "MONDO:0005081",
+      "source": "infores:orphanet"
+    },
+    {
+      "symbol": "STOX1",
+      "id": "HGNC:23508",
+      "disease_id": "MONDO:0005081",
+      "source": "infores:orphanet"
+    }
+  ],
+  "fixed_panel": [
+    "FES",
+    "GPAT3",
+    "FURIN",
+    "GRAMD1A",
+    "ZNF467",
+    "LPGAT1"
+  ],
+  "panel_overlap": [],
+  "interpretation": "Empty overlap means absent from this narrow direct Orphanet-derived subset, not absent from other disease resources or biologically irrelevant; ontology bridge is context, not expression validation."
+}

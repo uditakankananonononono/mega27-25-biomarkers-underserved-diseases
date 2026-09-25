@@ -20,3 +20,7 @@ The two cohorts differ in platform, draw timing and PPD ascertainment; no pooled
 ## Clinical stratification caution for GSE44132
 
 The antenatal sample metadata contain prepartum-depression status in addition to later PPD. Among the 50 nontechnical-control people, the source labels split as follows: future PPD yes / prepartum yes **12**, future PPD yes / prepartum no **11**; future PPD no / prepartum yes **7**, future PPD no / prepartum no **20**. The exploratory 23-versus-27 unstratified Welch screen may therefore mix prepartum depression risk and future PPD. A prospective model must handle this baseline state as a prespecified stratum or covariate; a marginal methylation difference would not prove a PPD-specific effect. Array and experimental batches are also recorded per GSM in the crosswalk and need QC before any clinical inference.
+
+## Within-person longitudinal check (exploratory)
+
+`paired_methylation_audit.py` paired each GSE335141 mother by source-verified patient token and compared her T4-minus-T0 beta change between 17 PPD and 24 healthy mothers. On the 880,068 complete finite probes, zero passed BH-FDR<0.05. The script and `sources/GSE335141_paired_exploratory_summary.json` retain the null. It does not interpret T4 as an early predictive measurement; it does not adjust blood-cell composition or clinical confounding, so this is not disease mechanism evidence. The observed first-ranked unadjusted probe is not a validated biomarker.

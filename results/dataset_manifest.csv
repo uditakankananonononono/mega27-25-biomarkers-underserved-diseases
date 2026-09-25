@@ -1311,3 +1311,16 @@ GSM7176067,GEO individually fetched GSM full-text record,"fibromyalgia:P43 healt
 GSM7176068,GEO individually fetched GSM full-text record,"fibromyalgia:P43 healthy week 0 nested in GSE229750, 12 libraries from 10 people"
 GSM7176070,GEO individually fetched GSM full-text record,"fibromyalgia:P43 healthy week 0 nested in GSE229750, 12 libraries from 10 people"
 GSM7176071,GEO individually fetched GSM full-text record,"fibromyalgia:P43 healthy week 0 nested in GSE229750, 12 libraries from 10 people"
+GSE279757,GEO separately fetched series and FPKM workbook,"preeclampsia:P44 archived 6/6 placental transport, at-delivery"
+GSM8579735,GEO individually fetched GSM full-text record,preeclampsia:P44 N exact FPKM column; nested in GSE279757
+GSM8579736,GEO individually fetched GSM full-text record,preeclampsia:P44 N exact FPKM column; nested in GSE279757
+GSM8579737,GEO individually fetched GSM full-text record,preeclampsia:P44 N exact FPKM column; nested in GSE279757
+GSM8579738,GEO individually fetched GSM full-text record,preeclampsia:P44 N exact FPKM column; nested in GSE279757
+GSM8579739,GEO individually fetched GSM full-text record,preeclampsia:P44 N exact FPKM column; nested in GSE279757
+GSM8579740,GEO individually fetched GSM full-text record,preeclampsia:P44 N exact FPKM column; nested in GSE279757
+GSM8579741,GEO individually fetched GSM full-text record,preeclampsia:P44 PE exact FPKM column; nested in GSE279757
+GSM8579742,GEO individually fetched GSM full-text record,preeclampsia:P44 PE exact FPKM column; nested in GSE279757
+GSM8579743,GEO individually fetched GSM full-text record,preeclampsia:P44 PE exact FPKM column; nested in GSE279757
+GSM8579744,GEO individually fetched GSM full-text record,preeclampsia:P44 PE exact FPKM column; nested in GSE279757
+GSM8579745,GEO individually fetched GSM full-text record,preeclampsia:P44 PE exact FPKM column; nested in GSE279757
+GSM8579746,GEO individually fetched GSM full-text record,preeclampsia:P44 PE exact FPKM column; nested in GSE279757

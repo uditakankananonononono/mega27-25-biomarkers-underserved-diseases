@@ -1,0 +1,46 @@
+canonical_tool,raw_ledger_entries,counted,kind,evidence,notes,external_only_counted
+NCBI GEO,1;2;3;4;24,1,external scientific database,scripts/geo_discover.py; src/ubiomark/geo.py; scripts/process_supp_matrix.py,"esearch/esummary/FTP are one GEO service, not separate tools",True
+Open Targets Platform,5,1,external scientific database,scripts/fetch_opentargets.py,Disease-target evidence,True
+STRING,6,1,external scientific database,src/ubiomark/network.py,Human physical PPI,True
+PyTorch,7,1,analysis library,src/ubiomark/models.py,Neural models,False
+scikit-learn,8,1,analysis library,scripts/prioritize.py,Baselines and metrics,False
+NumPy,9,1,analysis library,src/ubiomark/stats.py,Numeric arrays,False
+SciPy,10,1,analysis library,src/ubiomark/stats.py,Sparse graphs and statistics,False
+pandas,11,1,analysis library,src/ubiomark/geo.py,Data tables,False
+pytest,12,0,testing infrastructure,tests/,Excluded per parent rule,False
+Git,13,0,infrastructure,.git,Excluded,False
+OpenSSH,14,0,infrastructure,-,Excluded,False
+curl,15,0,infrastructure,-,Excluded,False
+HGNC,16;26,1,external scientific database,src/ubiomark/geo.py; results/external/*.json,Local download and REST same service,True
+g:Profiler,17,1,external scientific service,scripts/enrich_gprofiler.py,Enrichment,True
+NCBI PubMed,18,1,external scientific database,src/ubiomark/novelty.py,Distinct database from GEO,True
+Ensembl,19,1,external scientific database,results/external/*.json,Gene lookup,True
+UniProtKB,20,1,external scientific database,results/external/*.json,Protein lookup,True
+Europe PMC,21,1,external scientific database,results/external/*.json,Literature,True
+MyGene.info,22,1,external scientific service,results/external/*.json,Identifier cross-check,True
+Reactome,23,1,external scientific database,results/external/*.json,Pathways,True
+ChEMBL,25,1,external scientific database,results/external/*.json,Target lookup,True
+GTEx Portal,27,1,external scientific database,results/external/*.json,Reference gene lookup only,True
+Matplotlib,28,1,analysis library,scripts/figures.py,Real-data figures,False
+pdfLaTeX,29,0,document infrastructure,paper/manuscript.pdf,Excluded per parent rule,False
+QuickGO,-,1,external scientific database,results/external/secondary_annotations.json,GO annotation for ST3GAL2,True
+IntAct,-,1,external scientific database,results/external/secondary_annotations.json,Protein interactions,True
+InterPro,-,1,external scientific database,results/external/secondary_annotations.json,Protein domain annotations,True
+OpenAlex,-,1,external scholarly database,results/external/secondary_annotations.json,PCOS co-mention literature metadata,True
+EMBL-EBI OLS,-,1,external ontology service,results/external/secondary_annotations.json,MONDO PCOS exact identifier validation,True
+AlphaFold Protein Structure Database,-,1,external scientific database,results/external/context_multimodal.json,Structure prediction metadata for ST3GAL2 and SDC3; not a disease validation,True
+EMBL-EBI BioStudies,-,1,external scientific study archive,results/external/biostudies_pe_study.json,Relevant PE placenta array E-GEOD-4707 checked for early/late onset and pooled reference design; no independent new validation inferred,True
+MetaboLights,-,1,external metabolomics archive,results/external/pcos_metabolights_context.json,Relevant human PCOS granulosa-cell LC-MS study MTBLS12367 checked; distinct metabolite endpoint does not validate expression sign set,True
+CZ CellxGene,-,1,external single-cell atlas,results/external/placenta_cellxgene_context.json,Human normal trophoblast reference dataset 6963899a used to bound tissue composition; secondary and not a PE disease validation,True
+Human Protein Atlas,-,1,external scientific database,results/external/st3gal2_context_checks.json,ST3GAL2 protein-evidence and exact Ensembl identifier checked; not clinical validation,True
+NCBI ClinVar,-,1,external scientific database,results/external/st3gal2_context_checks.json,105 ST3GAL2 gene-associated records checked to reject inference that candidate lacks clinical variant reports; no preeclampsia link inferred,True
+PRIDE Archive,-,1,external scientific proteomics archive,results/external/preeclampsia_proteome_context.json,Relevant human first-trimester serum PE proteome PXD080843 identified as distinct modality and noncomparable benchmark; prior unrelated query excluded,True
+statsmodels,-,1,analysis library,scripts/pe_meta_sensitivity.py,Independent Paule-Mandel and DerSimonian-Laird pooled-effect sensitivity for falsified ST3GAL2 preeclampsia prediction,False
+NetworkX,-,1,analysis library,scripts/signature_network_context.py,Physical STRING subgraph components and random edge-count context for fixed PCOS and IC sign panels,False
+seaborn,-,1,analysis visualization library,scripts/figures.py,Rendered empirical matched-null distributions for PCOS P8 and IC P7 failures using observed draws,False
+Crossref,-,1,scholarly metadata registry,results/external/bibliography_crossref.json,Verified titles and publication dates of eight DOI research studies cited in manuscript,True
+NHGRI-EBI GWAS Catalog,-,1,external scientific association database,results/external/gwas_pe_context.json,Exact preeclampsia trait MONDO_0005081 association-gene audit; no independent expression validation inferred,True
+RCSB Protein Data Bank,-,1,external scientific structure archive,results/external/rcsb_fes_structure_context.json,Exact human FES kinase structures 8XKP and 3BKB checked for protein/domain context; neither validates a PE biomarker,True
+BioGRID,-,1,external scientific interaction database,results/external/biogrid_fes_context.json,Human FES record 108533: 40 interactors and 53 curated interactions with primary interaction pages checked; not PE-specific evidence,True
+GlyGen,-,1,external integrated glycoprotein/PTM database,results/external/glygen_fes_ptm_context.json,Exact human FES P07332-1 phosphorylation-site records checked to distinguish kinase activity from RNA abundance; no PE mechanism inferred,True
+iPTMnet,-,1,external PTM knowledgebase,results/external/iptmnet_fes_context.json,Exact FES P07332 kinase-substrate entry checked BCR Y177 and PECAM1 Y690 to separate PTM mechanism from RNA; source overlap and no PE relevance stated,True

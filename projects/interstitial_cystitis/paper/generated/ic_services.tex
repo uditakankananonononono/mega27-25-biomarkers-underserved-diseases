@@ -1,0 +1,47 @@
+\begin{longtable}{r p{0.22\textwidth} p{0.40\textwidth} p{0.24\textwidth}}
+\hline\hline \# & Service & Genuine use in this lane & Evidence \\
+\hline\endhead
+1 & NCBI GEO (esearch/FTP/SOFT) & Accession discovery, series/sample SOFT retrieval, matrix download for GSE238208, GSE196156, GSE11839, GSE28242, GSE57560, GSE621, GSE11783 & sources/*.txt, sources/*\_crosswalk.csv \\
+2 & NCBI GEO platform tables (GPL6244, GPL29077 annotation) & Symbol mapping for urine transfer (190/190 M6 symbols) & results/ic\_p48\_a2\_urine\_gse28242\_result.json \\
+3 & Enrichr (Maayan Lab) - MSigDB\_Hallmark\_2020 library & M0-M6 module gene sets (locked) & prereg/ic\_p48\_module\_genesets.json \\
+4 & Enrichr - GO\_Biological\_Process\_2025 library & M3 pain module gene set (GO:0019233, 21 genes, locked) & prereg/ic\_p48\_module\_genesets.json \\
+5 & ChatGPT (program consult, redirect mode) & Round 1 redirect after corrected k=2 negative; round 2 residual-framework consult & redirect/round1\_*, redirect/round2\_* \\
+6 & miRTarBase v10 (new host awi.cuhk.edu.cn) & Human validated miRNA-target pairs vs the 200-gene M6 module (87,627 pairs; per-gene CSV export endpoint) & results/ic\_p48\_a2\_urine\_gse196156\_result.json \\
+7 & miRBase (mature.fa) & MIMAT accession -> mature miRNA name map (2,789 hsa entries) for A2.3b & results/ic\_p48\_a2\_urine\_gse196156\_result.json \\
+8 & Ensembl REST & Per-gene lookup for M6 module genes & projects/interstitial\_cystitis/results/external/<GENE>.json \\
+9 & UniProtKB REST & Reviewed human accessions per M6 gene & same \\
+10 & Europe PMC & "interstitial cystitis" co-mention literature per M6 gene & same \\
+11 & MyGene.info & Identifier cross-check per M6 gene & same \\
+12 & ChEMBL API & Target lookup per M6 gene & same \\
+13 & HGNC REST (genenames.org) & Symbol status/ID per M6 gene & same \\
+14 & GTEx Portal API & Reference gene lookup per M6 gene & same \\
+15 & Reactome Content Service & Pathway mapping via UniProt accession per M6 gene & same \\
+16 & g:Profiler g:GOSt & Enrichment of the committed 200-gene M6 list: top hits mitotic cell cycle (GO:1903047/GO:0000278/GO:0007049) and REAC Cell Cycle - operational validation of the module list & results/external/secondary\_annotations\_m6.json (in this directory) \\
+17 & STRING API & Network query among the 5 miRNA-hub M6 genes: 0 physical edges returned (honest null: miRNA hubs are not a physical complex) & same \\
+18 & Open Targets Platform GraphQL & Disease search resolved interstitial cystitis = EFO\_1000869; hub genes G3BP1/SRSF1/DR1 not among its top-50 associated targets (honest null, recorded) & same \\
+19 & EMBL-EBI OLS (MONDO) & Disease ontology anchor MONDO:0018301 "interstitial cystitis" & same \\
+20 & QuickGO & GO annotations per hub gene & same \\
+21 & IntAct & Interaction records per hub gene & same \\
+22 & InterPro & Domain annotations per hub gene & same \\
+23 & OpenAlex & "hub gene + interstitial cystitis" literature metadata & same \\
+24 & Human Protein Atlas & Per-gene tissue/protein context (via Ensembl IDs) & same \\
+25 & DGIdb (GraphQL) & Drug-gene interactions per hub: MAPK14 druggable (105 interactions incl. p38 inhibitors); other hubs 0 - honest druggability gradient & results/external/tertiary\_annotations\_m6.json \\
+26 & GWAS Catalog REST v2 & Mapped-gene associations per hub (verified `mapped\_gene=` filter with a bogus-gene control; traits recorded per gene) & same \\
+27 & NCBI PubMed eutils & Programmatic "interstitial cystitis" Title/Abstract co-mention counts per hub: all 0 - honest null (IC abstracts do not co-mention these hubs) & same \\
+28 & Pharos (NIH/NCATS GraphQL) & Target development levels: MAPK14 Tchem/Kinase; G3BP1, DR1, RASAL2 Tbio; SRSF1 Tbio & same \\
+29 & cBioPortal API & Hub mutation records in TCGA bladder (blca\_tcga\_pan\_can\_atlas\_2018): RASAL2 16, SRSF1 6, MAPK14 4, G3BP1 2, DR1 1 & same \\
+30 & WikiPathways JSON API & Human pathway search per hub (e.g. MAPK14 in 1,131 human pathway text hits) & same \\
+31 & PGS Catalog REST & Trait search "cystitis"/"bladder pain syndrome": 0 PGS traits - honest empty & same \\
+32 & Monarch Initiative v3 & IC disease record (MONDO:0018301) + association predicates + disease phenotypes (bladder/urethra/pain features recorded) & results/external/quaternary\_annotations\_m6.json \\
+33 & NCBI ClinVar (eutils) & Clinical variant record counts per hub (RASAL2 222 ... DR1 20); distinct NCBI database, GEO-vs-PubMed counting precedent & same \\
+34 & NCBI dbSNP (eutils) & Human variant counts per hub (RASAL2 145,551 ... SRSF1 9,441); distinct NCBI database & same \\
+35 & NCBI Gene (eutils) & Gene records/summaries per hub; distinct NCBI database & same \\
+36 & UCSC Genome Browser API & hg38 locus search per hub (position matches recorded) & same \\
+37 & Signor & Full-network download (43,570 rows) filtered to human hub edges: MAPK14 239, G3BP1 11, SRSF1 9, DR1 1, RASAL2 0 (per-protein params verified ignored; network filtered locally) & same \\
+38 & KEGG REST & Gene records + pathway membership per hub (MAPK14 hsa:1432 in 65 pathways; G3BP1/SRSF1/RASAL2 sparse - honest gradient) & results/external/quinary\_annotations\_m6.json \\
+39 & GO Consortium Central API & Term records behind locked modules: GO:0000086 G2/M transition (M6), GO:0019233 sensory perception of pain (M3) & same \\
+40 & Rfam & Family records for the top-3 A2.3b regulator miRNAs by validated M6 pair count: mir-16 RF00254, mir-24 RF00178, mir-3613 RF03323 & same \\
+41 & RNAcentral & RNA record for top regulator hsa-miR-16-5p (URS00004BCD9C) & same \\
+42 & Pathway Commons (NCI-PID datasource) & Pathway search per hub restricted to NCI-PID (Reactome excluded to avoid alias): MAPK14 33 hits (top: p38-alpha/beta signaling) & results/external/buffer\_annotations\_m6.json \\
+43 & ClinicalTrials.gov API v2 & IC/BPS trial landscape sample + p38 MAPK inhibitor trial search (context for the DGIdb druggability finding) & same \\
+\hline\hline\end{longtable}

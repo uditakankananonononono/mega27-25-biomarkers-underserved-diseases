@@ -1,0 +1,305 @@
+\documentclass[11pt,a4paper]{article}
+\usepackage{mathptmx}
+\usepackage[margin=0.9in]{geometry}
+\usepackage{amsmath,amssymb,graphicx,longtable,array}
+\usepackage{url}
+\setlength{\parskip}{4pt}\setlength{\parindent}{0pt}
+
+\title{Hunner-lesion interstitial cystitis after the audit:\\
+a preregistered net-of-inflammation residual program with\\
+transparent negative results}
+\author{MEGA-PROGRAM-27, interstitial cystitis lane (builder branch \texttt{builder-25-ic})}
+\date{26 September 2026 - working disease manuscript; not yet complete}
+
+\begin{document}
+\maketitle
+\begin{abstract}
+Interstitial cystitis/bladder pain syndrome with Hunner lesions (HIC) is a
+distinct inflammatory bladder disease whose molecular diagnosis is still made on
+cystoscopy, not on a marker. This report does four things, in order, and keeps
+every negative on the record. First, a duplicate-sample and mislabel audit shows
+the historical top-50 IC expression panel does not survive correction: in the
+post-audit two-source replication the old and new top-50 lists share zero genes,
+no gene reaches BH $q<.05$, and the registered sign-agreement threshold fails
+(43/50, $p=.0469$ against a .025 bar). Second, we acquire and individually
+verify 98 new accession records, bringing the lane to 153 accession-backed
+records with honest nesting labels. Third, we preregister a module-level test on
+the 2025 paired Hunner-lesion RNA-seq cohort (GSE238208; 25 patients, lesion and
+non-lesion biopsies, plus 13 BCG inflammatory-cystitis samples): the lesion
+program replicates across patients (19/25, $p=.0073$) but is shared with BCG
+inflammation, so the Hunner-specific gate fails. Fourth, a locked amendment
+tests the net-of-BCG residual: a G2/M proliferative residual program replicates
+(18/25, $p=.0216$), with a descriptive specificity bound that is compatible but
+underpowered, and two pre-specified exploratory urinary transfers that point the
+locked direction without crossing their thresholds. Forty-three external
+scientific services annotate the program (41 under the most conservative
+recount). No clinical test, named discovery, or benchmark break is claimed; this
+is a working research manuscript, not a diagnostic claim.
+\end{abstract}
+\tableofcontents\clearpage
+
+\section{Scope, verdict and reproducibility}
+This document is the disease-level manuscript for the interstitial-cystitis
+lane of MEGA-PROGRAM-27. It is written while the project gates are only partly
+met, and says so. Current gate state: the 120 accession-record floor is met
+(153 records, Table~\ref{tab:accessions}); the 40 genuinely-used external
+service floor is met (43 counted, 41 most-conservative, Appendix~\ref{app:services});
+the substantive-page floor for this disease paper is not yet met and is stated
+honestly where relevant; a positive preregistered replication exists for the
+residual program (Gate A2.1) but no published-comparator benchmark break and no
+named new discovery is claimed. Every analysis threshold in this manuscript was
+committed to the repository before the corresponding test was run; preregistrations
+are \texttt{prereg/IC\_P48\_preregistration.md} and \texttt{prereg/IC\_P48\_A2\_amendment.md},
+and every test cites the JSON artifact its numbers come from.
+
+\section{Disease background and why the old panel had to be re-audited}
+Interstitial cystitis/bladder pain syndrome (IC/BPS) splits clinically into
+Hunner-lesion disease (HIC), an inflammatory phenotype with ulcerative lesions
+visible at cystoscopy, and non-lesion bladder pain syndrome (BPS), which shares
+pain but not the lesion biology. BCG intravesical therapy for bladder cancer
+produces an iatrogenic inflammatory cystitis that is the most important
+molecular comparator: any ``Hunner signature'' that is equally present in BCG
+cystitis is a general severe-inflammation signature, not a Hunner marker. The
+historical in-program IC panel descended from two array series (GSE621,
+GSE11783). The program-wide audit found two IC-derived mock-APF samples in
+GSE621 had been treated as normal controls, and that GSE11783's ten IC
+libraries are nested in five patients, so library-level inference was not
+patient-level. The post-audit sensitivity (Table~\ref{tab:gates}, row 1) is
+therefore the correct statement of the historical panel: it is negative.
+
+\section{Data acquisition and provenance}
+Each GSM record used in this lane was fetched individually (SOFT text retained
+in \texttt{sources/}), mapped to its matrix column by deposited title and
+description, and labeled with its role, including honest nesting (for example,
+``not independent cohort/participant'' where libraries repeat a person). The
+P45 acquisition (GSE238208) contributes 64 sample records: 25 paired Hunner
+lesion and non-lesion biopsies and 13 BCG samples across 38 people. P46
+(GSE196156) contributes 21 urinary extracellular-vesicle miRNA records
+(8 cystitis, 2 BPS, 10 controls, one platform). P47 (GSE11839) contributes 13
+cultured-urothelium records (3 IC, 3 controls, two media). Together with the
+re-audited historical records and the individually checked GSE57560 GSMs,
+the lane holds 153 accession-backed records (145 sample records in
+Table~\ref{tab:accessions} plus eight series-level records). Duplicate accessions
+against the global manifest were checked before appending; the manifest's unit
+is a unique accession-backed record, not an independent cohort.
+
+\begin{table}[h]\centering\small
+\caption{Individually verified sample records by series and group.}
+\label{tab:accessions}
+\input{generated/ic_accessions.tex}
+\end{table}
+
+\section{The corrected two-source replication is negative}
+After the audit corrections, discovery was restricted to GSE621 and GSE11783
+with mislabeled and nested samples handled, and sensitivity was recomputed in
+the previously seen GSE57560 (so it cannot be called fresh independent
+replication). Of 3,326 genes measured in both sources, the new top-50 shares
+zero genes with the old top-50; the best new-cohort BH value is $q=.418$ with
+no gene under $.05$; and the validation sign agreement is 43/50 (86\%) against
+an empirical null mean of 75.1\%, $p=.0469$, which fails the registered $.025$
+threshold. The historical positive panel is therefore recorded as a ledger
+negative, not rewritten into a weaker claim.
+
+\section{Preregistered module framework (P48)}
+\label{sec:framework}
+The redirect after the negative re-audit was preregistered before any testing.
+Six candidate biology modules and one known-biology covariate module were locked
+with fixed gene sets (Table~\ref{tab:modules}) from public libraries (MSigDB
+Hallmark via Enrichr; GO Biological Process 2025 for the pain module,
+GO:0019233, 21 genes). The design uses the paired structure of GSE238208: 25
+HIC patients each contribute a lesion and a non-lesion biopsy, and the 13 BCG
+samples form a fixed comparator block.
+
+For training fold $T$ and gene $g$, per-gene $z$-scores are computed over the
+48 training HIC columns only:
+\begin{equation}
+z_{g,s}=\frac{x_{g,s}-\bar x_{g,T}}{\hat\sigma_{g,T}}.
+\end{equation}
+Module $m$'s per-patient paired effect is the mean member-gene $z$ difference:
+\begin{equation}
+\Delta_{m,i}=\overline{z}_{m,\mathrm{lesion},i}-\overline{z}_{m,\mathrm{nonlesion},i},
+\qquad
+e_m=\frac{1}{|T|}\sum_{i\in T}\Delta_{m,i}.
+\end{equation}
+A module enters the Gate-1 score with weight $+1$ iff its mean paired effect is
+positive and a one-sided paired $t$-test over training patients gives $p<.05$;
+the held-out patient score is
+\begin{equation}
+D_i=\sum_{m:\,\mathrm{selected}} \Delta_{m,i}.
+\end{equation}
+M0 (interferon-$\gamma$ inflammatory) is an excluded covariate: if M0 alone
+passes and M1--M6 fails, the result is declared known-inflammatory rediscovery,
+a novelty negative by construction.
+
+\begin{table}[h]\centering\small
+\caption{Locked modules (gene counts; matrix coverage in parentheses).}
+\label{tab:modules}
+\input{generated/ic_modules.tex}
+\end{table}
+
+\section{Gate 1: the lesion axis replicates across patients}
+Leave-one-patient-out over the 25 HIC patients, refitting every quantity per
+fold, gives 19/25 held-out patients with $D_i>0$ (exact one-sided binomial
+$p=.0073$, threshold $.025$), median $D=0.273$ with bootstrap 95\% CI
+$[0.068,0.644]$. The frozen weight rule selected only module M2 (ECM/EMT
+remodeling) in the training folds. The M0-only novelty control fails (14/25,
+$p=.345$), so the pass is not known-inflammatory rediscovery. Per-fold values
+are in Appendix~\ref{app:folds}.
+
+\section{Gate 2: the replicating axis is shared with BCG inflammation}
+Applying the frozen Gate-1 score to the BCG block is negative for Hunner
+specificity: the score is higher in BCG (0.305) than in Hunner lesions (0.181),
+Hedges $g=-0.260$, permutation $p=.776$ against the locked pass bar
+($g\geq0.8$, $p<.025$). The replicating lesion axis is therefore severe
+inflammatory-remodeling biology, not Hunner-specific biology. This is a kept
+negative, and it motivates the residual design rather than a re-thresholded
+claim.
+
+\section{Amendment A2: net-of-BCG residual program}
+The amendment was locked before any A2 testing. For module $m$, the BCG
+component over the fixed comparator block is
+\begin{equation}
+b_m=\frac{1}{13}\sum_{s\in\mathrm{BCG}}\overline{z}_{m,s},
+\end{equation}
+and the residual module effect is $A_m=e_m-b_m$. A module enters the residual
+score with weight $+1$ iff $A_m>0$ and the one-sided paired $t$-test of
+$\Delta_{m,i}-b_m$ over training patients gives $p<.05$; the held-out residual
+is
+\begin{equation}
+D^{\mathrm{res}}_i=\sum_{m:\,\mathrm{selected}}\left(\Delta_{m,i}-b_m\right).
+\end{equation}
+BCG never enters a HIC training fold; the block is exchangeable.
+
+\section{Gate A2.1: the G2/M residual replicates}
+Only module M6 (G2/M checkpoint, 190 matrix-covered genes) is selected in every
+fold. The residual replication passes the locked bar exactly: 18/25 held-out
+patients positive, $p=.0216$ ($P(X\geq18\mid25,.5)=.02164$), median residual
+$0.180$, bootstrap 95\% CI $[0.0027,0.423]$ excluding zero. Reading: after
+removing the module-level biology that BCG inflammatory cystitis also induces,
+Hunner lesions retain a reproducible within-patient proliferative residual.
+
+\section{Gate A2.2: specificity bound is compatible, not a validation}
+The BCG block enters the A2.1 subtraction, so re-testing it cannot be
+independent; the amendment locks this as a descriptive bound. The
+residual-adjusted score gives Hedges $g=0.454$ (95\% CI $[-0.144,1.073]$),
+permutation $p=.089$: positive direction, CI overlapping zero - COMPATIBLE,
+underpowered at 13 BCG samples, and never reported as pass/fail.
+
+\section{Urinary transfer (exploratory)}
+Two pre-specified exploratory legs test whether the frozen M6 residual program
+has a noninvasive correlate; per the amendment, no thresholds were tuned on
+urine data. In urine sediment mRNA (GSE28242; 190/190 M6 symbols mapped via the
+GPL6244 platform table), Hunner-PBS urine ($n=3$) scores above
+lesion-free/controls ($n=10$): difference $0.286$, one-sided permutation
+$p=.0406$. In urinary extracellular-vesicle miRNA (GSE196156), the pre-specified
+validated miRTarBase repressors of the 200-gene M6 module (87,627 human
+miRNA-target pairs; 262 of the 464 fully measured miRNAs are regulators; the
+locked direction is lower composite in cases) give composite means $-0.0273$
+(cystitis, $n=8$) versus $+0.0525$ (control, $n=10$), difference $-0.0798$ in
+the predicted direction, one-sided permutation $p=.1144$. Neither leg meets the
+.025 bar. A post-hoc descriptive note
+(\texttt{results/ic\_p48\_a2\_urine\_descriptive\_synthesis.md}) states both
+directions with exact values and cohort caveats; per the owner ruling it is not
+a combined test, not a preregistered replication, and no joint $p$-value is
+computed.
+
+\section{External annotation of the residual program}
+Forty-three external scientific services were genuinely used on this lane (41
+under the most conservative recount of the NCBI e-utils rows), each with
+repo-resident evidence (Appendix~\ref{app:services}). Conclusions drawn from
+them are contextual, not independent replication, because annotation records
+share underlying evidence bases. The five M6 genes with the most validated
+miRNA regulation (G3BP1, SRSF1, DR1, RASAL2, MAPK14) are regulatory hubs rather
+than a physical complex: STRING returns zero physical edges among them. Their
+druggability is uneven: DGIdb reports 105 interactions for MAPK14 (including
+p38$\alpha$ inhibitors) and none for the other hubs, and Pharos classifies
+MAPK14 as Tchem while the others are Tbio. In TCGA bladder tumors, mutation
+records are sparse (RASAL2 16, SRSF1 6, MAPK14 4, G3BP1 2, DR1 1). PubMed
+abstract co-mention of any hub with ``interstitial cystitis'' is zero, and
+Open Targets places none of the hubs among the top-50 targets associated with
+interstitial cystitis (EFO\_1000869): the residual program is, as of this
+manuscript's evidence, un-claimed by the existing IC literature - context for
+novelty, not proof of it.
+
+\section{Discussion}
+The biological reading across the locked gates is consistent. Hunner lesions
+carry a strong remodeling/inflammatory axis (M2) that replicates across
+patients but is equally a BCG-cystitis program; treating it as a Hunner marker
+would mislabel severe inflammation generally, and the locked Gate-2 negative
+prevents exactly that error. Removing the BCG-shared component leaves a
+proliferative G2/M residual that replicates at patient level (A2.1), coheres
+with the urothelial hyperproliferation described in HIC histology, and shows a
+directionally consistent but statistically weak noninvasive correlate in two
+independent urine modalities. The honest summary is: a replicated tissue
+residual program with an unproven urinary marker path.
+
+\section{Limitations}
+The HIC cohort is 25 patients from one study; the BCG comparator is 13 samples;
+the urine-sediment case arm is three donors; the urinary-EV arm is eight cases
+with a broad regulator set (262 measured regulators dilute the composite); the
+A2.2 bound is not independent by construction; per-gene annotations are
+correlated with each other through shared evidence bases; and the historical
+sensitivity reuses a previously seen validation series. Nothing here is a
+clinical test, and the exploratory urine legs must not be quoted without their
+threshold failures.
+
+\clearpage
+\appendix
+
+\section{Derivations}
+\label{app:deriv}
+The binomial gate uses the exact one-sided tail. For $n$ independent patients
+with null success probability $1/2$,
+\begin{equation}
+P(X\geq k\mid n)=\sum_{j=k}^{n}\binom{n}{j}2^{-n},
+\end{equation}
+so $P(X\geq19\mid25)=0.00732$ and $P(X\geq18\mid25)=0.02164$; the locked bar is
+$.025$ one-sided, matching the program's two-sided $.05$ convention. Hedges'
+$g$ corrects the standardized mean difference for small samples:
+\begin{equation}
+d=\frac{\bar x_1-\bar x_0}{s_p},\qquad
+g=J\,d,\qquad J=1-\frac{3}{4(n_1+n_0)-9}.
+\end{equation}
+The permutation $p$ for a one-sided mean difference $\Delta$ over $B$ label
+reshuffles is the $(+1)$-smoothed tail fraction
+\begin{equation}
+p=\frac{1+\#\{b:\ \Delta_b\ \text{at least as extreme as}\ \Delta_{\mathrm{obs}}\}}{1+B},
+\end{equation}
+which is never zero and is exact for the exchangeable null. The residual
+construction (Eq.~5--6) is a module-space analogue of partialling out a
+comparator-induced component: because $b_m$ is a constant within a fold, the
+paired $t$-test of $\Delta_{m,i}-b_m$ is the paired test of $\Delta_{m,i}$
+against the shifted null $b_m$, so BCG contributes a fixed offset, never
+variance, to the patient-level inference.
+
+\section{Per-fold held-out values}
+\label{app:folds}
+\subsection*{Gate 1 folds}
+\input{generated/ic_gate1_folds.tex}
+\subsection*{Gate A2.1 folds}
+\input{generated/ic_a21_folds.tex}
+
+\section{Locked module gene sets}
+\label{app:genes}
+Gene lists as committed in \texttt{prereg/ic\_p48\_module\_genesets.json}.
+\input{generated/ic_genelists.tex}
+
+\section{Pre-specified miRNA regulators (A2.3b)}
+\label{app:regulators}
+Named human regulators of the M6 module from miRTarBase v10 (87,627 validated
+pairs); 262 mature miRNAs measured in GSE196156.
+\input{generated/ic_regulators.tex}
+
+\section{External-service ledger}
+\label{app:services}
+Counting conventions and the rejected candidates with evidence are in
+\texttt{EXTERNAL\_SERVICES.md}; dual count: 43 counted / 41 most-conservative.
+\input{generated/ic_services.tex}
+
+\section{Per-gene external annotation digest}
+\label{app:digest}
+One line per M6 module gene, from the committed per-gene snapshots; columns are
+counts returned by each service, not curated judgments.
+\input{generated/ic_annotation_digest.tex}
+
+\end{document}

@@ -94,3 +94,4 @@ MONDO_0011989,Open Targets disease associations,known genes leishmaniasis
 EFO_1000869,Open Targets disease associations,known genes interstitial_cystitis
 STRING v12.0 9606 physical links,STRING,PPI graph
 HGNC complete set,HGNC,ID mapping
+GSE290313,GEO series,postpartum_depression:validation (RNA-seq)

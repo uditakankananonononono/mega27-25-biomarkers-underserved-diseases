@@ -1,0 +1,3 @@
+disease,tag,gse,split,n_case,n_control,note
+postpartum_depression,GSE290313-PP,GSE290313,validation,86,98,added 10:36 before any look at its statistics; RNA-seq postpartum timepoint
+postpartum_depression,GSE290313-PRED,GSE290313,validation_predictive,14,60,pregnancy-timepoint samples of women who later had postpartum-only symptoms; secondary

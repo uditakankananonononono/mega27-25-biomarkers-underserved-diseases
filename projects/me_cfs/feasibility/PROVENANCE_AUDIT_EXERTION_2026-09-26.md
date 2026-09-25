@@ -51,12 +51,15 @@ R3 DISEASE-SPECIFIC controls; R4 truly untouched same-task comparator.
    https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE214283
    https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE214282
    https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE214284
-   R1/R2 PASS (D1/D2 paired by COR token). Independence vs excluded P41:
-   zero COR-token overlap between GSE214283's 58 donors and P41's six
-   (COR-1433/2349/4614/1726/3013/5587) - but SAME Cornell study family and
-   clinical protocol as excluded P41 (GSE236402 is a plasma-particle arm of
-   this study per the project's P41 registration), so donor-level independence
-   holds per metadata while cohort-level relatedness must be disclosed.
+   GSE214283 R1/R2 PASS (D1/D2 paired by COR token); zero COR-token overlap
+   between its 58 donors and P41's six (COR-1433/2349/4614/1726/3013/5587) -
+   donor-level independence from excluded P41 holds per metadata, but it is
+   the SAME Cornell study family/clinical protocol (GSE236402 is a
+   plasma-particle arm per the project's P41 registration), so cohort-level
+   relatedness must be disclosed. GSE214282 FAILS independence: its 8 monocyte
+   donors include COR-1726 and COR-1433, two of P41's six excluded donors
+   (verified from GSM titles), and all 8 samples are D2-only (24h post-CPET,
+   unpaired). Only GSE214283 survives in this family.
    R3 FAIL (healthy controls). R4: series themselves never analyzed by the
    project; published comparator PMID 38232699 exists.
 4. GSE251792/GSE251872 (NIH deep phenotyping SuperSeries + PBMC RNA-seq):

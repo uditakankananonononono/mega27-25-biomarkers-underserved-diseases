@@ -88,6 +88,38 @@ GSE84796,GEO series,chagas:discovery
 GSE91189,GEO series,preeclampsia:discovery
 GSE93839,GEO series,preeclampsia:discovery
 GSE94643,GEO series,preeclampsia:validation
+GSM4705199,GEO sample full-text record,pcos:GSE155489:label_identity_audit
+GSM4705200,GEO sample full-text record,pcos:GSE155489:label_identity_audit
+GSM4705203,GEO sample full-text record,pcos:GSE155489:label_identity_audit
+GSM4705204,GEO sample full-text record,pcos:GSE155489:label_identity_audit
+GSM6198397,GEO sample full-text record,preeclampsia:GSE204835:label_identity_audit
+GSM6198398,GEO sample full-text record,preeclampsia:GSE204835:label_identity_audit
+GSM6198411,GEO sample full-text record,preeclampsia:GSE204835:label_identity_audit
+GSM6198412,GEO sample full-text record,preeclampsia:GSE204835:label_identity_audit
+GSM8174669,GEO sample full-text record,pcos:GSE262735:label_identity_audit
+GSM8174670,GEO sample full-text record,pcos:GSE262735:label_identity_audit
+GSM8174678,GEO sample full-text record,pcos:GSE262735:label_identity_audit
+GSM8174679,GEO sample full-text record,pcos:GSE262735:label_identity_audit
+GSM8534278,GEO sample full-text record,pcos:GSE277906:label_identity_audit
+GSM8534279,GEO sample full-text record,pcos:GSE277906:label_identity_audit
+GSM8534295,GEO sample full-text record,pcos:GSE277906:label_identity_audit
+GSM8534296,GEO sample full-text record,pcos:GSE277906:label_identity_audit
+GSM8980951,GEO sample full-text record,preeclampsia:GSE296973:label_identity_audit
+GSM8980952,GEO sample full-text record,preeclampsia:GSE296973:label_identity_audit
+GSM8980961,GEO sample full-text record,preeclampsia:GSE296973:label_identity_audit
+GSM8980962,GEO sample full-text record,preeclampsia:GSE296973:label_identity_audit
+GSM9136811,GEO sample full-text record,preeclampsia:GSE303840:label_identity_audit
+GSM9136812,GEO sample full-text record,preeclampsia:GSE303840:label_identity_audit
+GSM9136817,GEO sample full-text record,preeclampsia:GSE303840:label_identity_audit
+GSM9136818,GEO sample full-text record,preeclampsia:GSE303840:label_identity_audit
+GSM9155146,GEO sample full-text record,pcos:GSE304677:label_identity_audit
+GSM9155147,GEO sample full-text record,pcos:GSE304677:label_identity_audit
+GSM9155151,GEO sample full-text record,pcos:GSE304677:label_identity_audit
+GSM9155152,GEO sample full-text record,pcos:GSE304677:label_identity_audit
+GSM9210996,GEO sample full-text record,preeclampsia:GSE306864:label_identity_audit
+GSM9210997,GEO sample full-text record,preeclampsia:GSE306864:label_identity_audit
+GSM9210998,GEO sample full-text record,preeclampsia:GSE306864:label_identity_audit
+GSM9211004,GEO sample full-text record,preeclampsia:GSE306864:label_identity_audit
 HGNC complete set,HGNC,ID mapping
 MONDO_0005081,Open Targets disease associations,known genes preeclampsia
 MONDO_0005133,Open Targets disease associations,known genes endometriosis

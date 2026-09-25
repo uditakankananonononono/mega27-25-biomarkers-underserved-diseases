@@ -70,6 +70,53 @@
     "seed_22_overlap_with_P33_seed_22_train_n": 23,
     "P33_test_n": 60,
     "P33_train_n": 108,
-    "interpretation": "The new 50-seed paper releases sample-index CSVs in this LLM archive, contrary to an earlier blanket no-split-index impression; it does not release corresponding standard-ML per-patient predictions in this file. Every new-paper held-out index has 38 people, not the P33 fixed 60, and the seed numbered 22 is not the same split. Matching seed labels do not make scores comparable. Exact remodelling would require reconstructing the paper-specific cohort, its constraints and train-only DESeq2/VST feature-selection/threshold procedure, then reporting same-patient paired results."
+    "interpretation": "The new 50-seed paper releases sample-index CSVs in this LLM archive, contrary to an earlier blanket no-split-index impression; it does not release corresponding standard-ML per-patient predictions in this file. Every new-paper held-out index has 38 people, not the P33 fixed 60, and the seed numbered 22 is not the same split. Matching seed labels do not make scores comparable. Exact remodelling would require reconstructing the paper-specific cohort, its constraints and train-only DESeq2/VST feature-selection/threshold procedure, then reporting same-patient paired results. The union of released per-seed held-out indices covers only 147 of P33's 168 IDs, leaving 21 absent; the archive does not prove their exclusion reason or the complete training split, so do not infer selection policy from this descriptive absence.",
+    "union_unique_ids_across_50": 147,
+    "union_in_P33_168_person_pool": 147,
+    "P33_pool_not_in_new_index_union": 21,
+    "index_union_by_phenotype_sex": [
+      {
+        "phenotype": "HC",
+        "sex": "F",
+        "in_new_index_pool": false,
+        "n": 5
+      },
+      {
+        "phenotype": "HC",
+        "sex": "F",
+        "in_new_index_pool": true,
+        "n": 47
+      },
+      {
+        "phenotype": "HC",
+        "sex": "M",
+        "in_new_index_pool": false,
+        "n": 7
+      },
+      {
+        "phenotype": "HC",
+        "sex": "M",
+        "in_new_index_pool": true,
+        "n": 16
+      },
+      {
+        "phenotype": "MECFS",
+        "sex": "F",
+        "in_new_index_pool": true,
+        "n": 74
+      },
+      {
+        "phenotype": "MECFS",
+        "sex": "M",
+        "in_new_index_pool": false,
+        "n": 9
+      },
+      {
+        "phenotype": "MECFS",
+        "sex": "M",
+        "in_new_index_pool": true,
+        "n": 10
+      }
+    ]
   }
 }

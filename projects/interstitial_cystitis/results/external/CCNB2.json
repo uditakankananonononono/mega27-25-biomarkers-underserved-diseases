@@ -1,0 +1,175 @@
+{
+  "gene": "CCNB2",
+  "module": "M6_cell_state_g2m",
+  "prereg": "projects/interstitial_cystitis/prereg/ic_p48_module_genesets.json",
+  "retrieved_at_utc": "2026-09-25T19:44:29.079648+00:00",
+  "sources": {
+    "ensembl": {
+      "url": "https://rest.ensembl.org/lookup/symbol/homo_sapiens/CCNB2?content-type=application/json",
+      "error": "HTTP Error 503: Service Unavailable"
+    },
+    "uniprot": {
+      "url": "https://rest.uniprot.org/uniprotkb/search?query=gene_exact%3ACCNB2%20AND%20organism_id%3A9606%20AND%20reviewed%3Atrue&size=3&format=json",
+      "data": [
+        {
+          "primaryAccession": "O95067",
+          "uniProtkbId": "CCNB2_HUMAN",
+          "entryType": "UniProtKB reviewed (Swiss-Prot)"
+        }
+      ]
+    },
+    "europe_pmc": {
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=CCNB2%20AND%20%22interstitial%20cystitis%22&format=json&pageSize=10",
+      "data": {
+        "hit_count": 5,
+        "papers": [
+          {
+            "id": "41485159",
+            "title": "Inflammation-associated immune-related genes as potential biomarkers for the diagnosis of interstitial cystitis.",
+            "doi": "10.1007/s10238-025-02032-z",
+            "pubYear": "2026"
+          },
+          {
+            "id": "36944905",
+            "title": "A network map of cytoskeleton-associated protein 4 (CKAP4) mediated signaling pathway in cancer.",
+            "doi": "10.1007/s12079-023-00739-w",
+            "pubYear": "2023"
+          },
+          {
+            "id": "12057914",
+            "title": "Gene expression profiling of mouse bladder inflammatory responses to LPS, substance P, and antigen-stimulation.",
+            "doi": "10.1016/s0002-9440(10)61159-5",
+            "pubYear": "2002"
+          },
+          {
+            "id": "PMC10800223",
+            "title": "2023 ACVIM Forum Research Abstract Program",
+            "doi": null,
+            "pubYear": "2023"
+          },
+          {
+            "id": "24085684",
+            "title": "Abstracts of the 2013 Annual Meeting of the American College of Rheumatology. October 25-30, 2013. San Diego, California, USA.",
+            "doi": "10.1002/art.38216",
+            "pubYear": "2013"
+          }
+        ]
+      }
+    },
+    "mygene": {
+      "url": "https://mygene.info/v3/query?q=symbol%3ACCNB2&species=human&size=3",
+      "data": {
+        "total": 1,
+        "hits": [
+          {
+            "_id": "9133",
+            "symbol": "CCNB2",
+            "name": "cyclin B2",
+            "taxid": 9606
+          }
+        ]
+      }
+    },
+    "chembl": {
+      "url": "https://www.ebi.ac.uk/chembl/api/data/target/search.json?q=CCNB2&limit=20",
+      "data": {
+        "total": 2,
+        "human_targets": [
+          {
+            "target_chembl_id": "CHEMBL3723",
+            "pref_name": "G2/mitotic-specific cyclin-B2",
+            "organism": "Homo sapiens"
+          },
+          {
+            "target_chembl_id": "CHEMBL2094127",
+            "pref_name": "Cyclin-dependent kinase 1/cyclin B",
+            "organism": "Homo sapiens"
+          }
+        ]
+      }
+    },
+    "hgnc_rest": {
+      "url": "https://rest.genenames.org/fetch/symbol/CCNB2",
+      "data": [
+        {
+          "symbol": "CCNB2",
+          "hgnc_id": "HGNC:1580",
+          "entrez_id": "9133",
+          "ensembl_gene_id": "ENSG00000157456",
+          "status": "Approved"
+        }
+      ]
+    },
+    "gtex_reference": {
+      "url": "https://gtexportal.org/api/v2/reference/gene?geneId=CCNB2",
+      "data": [
+        {
+          "geneSymbol": "CCNB2",
+          "geneId": null,
+          "gencodeId": "ENSG00000157456.7",
+          "entrezGeneId": 9133
+        }
+      ]
+    },
+    "reactome": {
+      "url": "https://reactome.org/ContentService/data/mapping/UniProt/O95067/pathways",
+      "data": [
+        {
+          "stId": "R-HSA-156711",
+          "displayName": "Polo-like kinase mediated events",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-162658",
+          "displayName": "Golgi Cisternae Pericentriolar Stack Reorganization",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-2500257",
+          "displayName": "Resolution of Sister Chromatid Cohesion",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-2514853",
+          "displayName": "Condensation of Prometaphase Chromosomes",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-2565942",
+          "displayName": "Regulation of PLK1 Activity at G2/M Transition",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-2980767",
+          "displayName": "Activation of NIMA Kinases NEK9, NEK6, NEK7",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-2995383",
+          "displayName": "Initiation of Nuclear Envelope (NE) Reformation",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-3301854",
+          "displayName": "Nuclear Pore Complex (NPC) Disassembly",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-69273",
+          "displayName": "Cyclin A/B1/B2 associated events during G2/M transition",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-69478",
+          "displayName": "G2/M DNA replication checkpoint",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-8852276",
+          "displayName": "The role of GTSE1 in G2/M progression after G2 checkpoint",
+          "speciesName": "Homo sapiens"
+        }
+      ]
+    }
+  }
+}

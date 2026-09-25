@@ -1,0 +1,267 @@
+{
+  "gene": "CCNA2",
+  "module": "M6_cell_state_g2m",
+  "prereg": "projects/interstitial_cystitis/prereg/ic_p48_module_genesets.json",
+  "retrieved_at_utc": "2026-09-25T19:43:46.177340+00:00",
+  "sources": {
+    "ensembl": {
+      "url": "https://rest.ensembl.org/lookup/symbol/homo_sapiens/CCNA2?content-type=application/json",
+      "data": {
+        "id": "ENSG00000145386",
+        "display_name": "CCNA2",
+        "description": "cyclin A2 [Source:HGNC Symbol;Acc:HGNC:1578]",
+        "biotype": "protein_coding",
+        "seq_region_name": "4"
+      }
+    },
+    "uniprot": {
+      "url": "https://rest.uniprot.org/uniprotkb/search?query=gene_exact%3ACCNA2%20AND%20organism_id%3A9606%20AND%20reviewed%3Atrue&size=3&format=json",
+      "data": [
+        {
+          "primaryAccession": "P20248",
+          "uniProtkbId": "CCNA2_HUMAN",
+          "entryType": "UniProtKB reviewed (Swiss-Prot)"
+        }
+      ]
+    },
+    "europe_pmc": {
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=CCNA2%20AND%20%22interstitial%20cystitis%22&format=json&pageSize=10",
+      "data": {
+        "hit_count": 6,
+        "papers": [
+          {
+            "id": "38526326",
+            "title": "Identification of key pathways and mRNAs in interstitial cystitis/bladder pain syndrome treatment with quercetin through bioinformatics analysis of mRNA-sequence data.",
+            "doi": "10.18632/aging.205682",
+            "pubYear": "2024"
+          },
+          {
+            "id": "34943467",
+            "title": "Biomarkers in the Light of the Etiopathology of IC/BPS.",
+            "doi": "10.3390/diagnostics11122231",
+            "pubYear": "2021"
+          },
+          {
+            "id": "42121909",
+            "title": "Mosaic: Single-Cell Atlas of Stress.",
+            "doi": "10.3390/cells15090807",
+            "pubYear": "2026"
+          },
+          {
+            "id": "PMC7104427",
+            "title": "Abstracts",
+            "doi": null,
+            "pubYear": "2018"
+          },
+          {
+            "id": "25769533",
+            "title": "Abstracts of the 62nd Annual Scientific Meeting, March 26-28, 2015, San Francisco, California.",
+            "doi": "10.1177/1933719115579631",
+            "pubYear": "2015"
+          },
+          {
+            "id": "PMC6796246",
+            "title": "UEG Week 2018 Poster Presentations",
+            "doi": null,
+            "pubYear": "2018"
+          }
+        ]
+      }
+    },
+    "mygene": {
+      "url": "https://mygene.info/v3/query?q=symbol%3ACCNA2&species=human&size=3",
+      "data": {
+        "total": 1,
+        "hits": [
+          {
+            "_id": "890",
+            "symbol": "CCNA2",
+            "name": "cyclin A2",
+            "taxid": 9606
+          }
+        ]
+      }
+    },
+    "chembl": {
+      "url": "https://www.ebi.ac.uk/chembl/api/data/target/search.json?q=CCNA2&limit=20",
+      "data": {
+        "total": 8,
+        "human_targets": [
+          {
+            "target_chembl_id": "CHEMBL2582",
+            "pref_name": "Cyclin-A2",
+            "organism": "Homo sapiens"
+          },
+          {
+            "target_chembl_id": "CHEMBL4106153",
+            "pref_name": "CDK2/Bovine cyclin A",
+            "organism": "Homo sapiens"
+          },
+          {
+            "target_chembl_id": "CHEMBL2094128",
+            "pref_name": "Cyclin-dependent kinase 2/cyclin A",
+            "organism": "Homo sapiens"
+          },
+          {
+            "target_chembl_id": "CHEMBL3038469",
+            "pref_name": "CDK2/Cyclin A2",
+            "organism": "Homo sapiens"
+          },
+          {
+            "target_chembl_id": "CHEMBL3038467",
+            "pref_name": "CDK1/Cyclin A",
+            "organism": "Homo sapiens"
+          },
+          {
+            "target_chembl_id": "CHEMBL4523636",
+            "pref_name": "CDK17/Cyclin-A2",
+            "organism": "Homo sapiens"
+          },
+          {
+            "target_chembl_id": "CHEMBL5483182",
+            "pref_name": "CDK1/Cyclin A",
+            "organism": "Homo sapiens"
+          },
+          {
+            "target_chembl_id": "CHEMBL6195578",
+            "pref_name": "Microtubule-associated protein 1 light chain 3 beta/Cyclin-dependent kinase 2/Cyclin-A2",
+            "organism": "Homo sapiens"
+          }
+        ]
+      }
+    },
+    "hgnc_rest": {
+      "url": "https://rest.genenames.org/fetch/symbol/CCNA2",
+      "data": [
+        {
+          "symbol": "CCNA2",
+          "hgnc_id": "HGNC:1578",
+          "entrez_id": "890",
+          "ensembl_gene_id": "ENSG00000145386",
+          "status": "Approved"
+        }
+      ]
+    },
+    "gtex_reference": {
+      "url": "https://gtexportal.org/api/v2/reference/gene?geneId=CCNA2",
+      "data": [
+        {
+          "geneSymbol": "CCNA2",
+          "geneId": null,
+          "gencodeId": "ENSG00000145386.9",
+          "entrezGeneId": 890
+        }
+      ]
+    },
+    "reactome": {
+      "url": "https://reactome.org/ContentService/data/mapping/UniProt/P20248/pathways",
+      "data": [
+        {
+          "stId": "R-HSA-1362300",
+          "displayName": "Transcription of E2F targets under negative control by p107 (RBL1) and p130 (RBL2) in complex with HDAC1",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-1538133",
+          "displayName": "G0 and Early G1",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-171319",
+          "displayName": "Telomere Extension By Telomerase",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-174184",
+          "displayName": "Cdc20:Phospho-APC/C mediated degradation of Cyclin A",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-176408",
+          "displayName": "Regulation of APC/C activators between G1/S and early anaphase",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-187577",
+          "displayName": "SCF(Skp2)-mediated degradation of p27/p21",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-2559582",
+          "displayName": "Senescence-Associated Secretory Phenotype (SASP)",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-2559586",
+          "displayName": "DNA Damage/Telomere Stress Induced Senescence",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-5689880",
+          "displayName": "Ub-specific processing proteases",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-5693607",
+          "displayName": "Processing of DNA double-strand break ends",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-6804116",
+          "displayName": "TP53 Regulates Transcription of Genes Involved in G1 Cell Cycle Arrest",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-6804756",
+          "displayName": "Regulation of TP53 Activity through Phosphorylation",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-6804757",
+          "displayName": "Regulation of TP53 Degradation",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-68911",
+          "displayName": "G2 Phase",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-68949",
+          "displayName": "Orc1 removal from chromatin",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-69017",
+          "displayName": "CDK-mediated phosphorylation and removal of Cdc6",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-69273",
+          "displayName": "Cyclin A/B1/B2 associated events during G2/M transition",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-69478",
+          "displayName": "G2/M DNA replication checkpoint",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-69563",
+          "displayName": "p53-Dependent G1 DNA Damage Response",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-69656",
+          "displayName": "Cyclin A:Cdk2-associated events at S phase entry",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-75035",
+          "displayName": "Chk1/Chk2(Cds1) mediated inactivation of Cyclin B:Cdk1 complex",
+          "speciesName": "Homo sapiens"
+        }
+      ]
+    }
+  }
+}

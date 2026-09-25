@@ -1,0 +1,179 @@
+{
+  "gene": "AURKB",
+  "module": "M6_cell_state_g2m",
+  "prereg": "projects/interstitial_cystitis/prereg/ic_p48_module_genesets.json",
+  "retrieved_at_utc": "2026-09-25T19:49:48.601702+00:00",
+  "sources": {
+    "ensembl": {
+      "url": "https://rest.ensembl.org/lookup/symbol/homo_sapiens/AURKB?content-type=application/json",
+      "data": {
+        "id": "ENSG00000178999",
+        "display_name": "AURKB",
+        "description": "aurora kinase B [Source:HGNC Symbol;Acc:HGNC:11390]",
+        "biotype": "protein_coding",
+        "seq_region_name": "17"
+      }
+    },
+    "uniprot": {
+      "url": "https://rest.uniprot.org/uniprotkb/search?query=gene_exact%3AAURKB%20AND%20organism_id%3A9606%20AND%20reviewed%3Atrue&size=3&format=json",
+      "data": [
+        {
+          "primaryAccession": "Q96GD4",
+          "uniProtkbId": "AURKB_HUMAN",
+          "entryType": "UniProtKB reviewed (Swiss-Prot)"
+        }
+      ]
+    },
+    "europe_pmc": {
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=AURKB%20AND%20%22interstitial%20cystitis%22&format=json&pageSize=10",
+      "data": {
+        "hit_count": 3,
+        "papers": [
+          {
+            "id": "34427716",
+            "title": "Abstracts des 73. Kongresses der Deutschen Gesellschaft für Urologie e. V.",
+            "doi": "10.1007/s00120-021-01626-1",
+            "pubYear": "2021"
+          },
+          {
+            "id": "20405294",
+            "title": "Total laparoscopic radical hysterectomy for cervical cancer in prolapsed uterus.",
+            "doi": "10.1007/s00404-010-1472-7",
+            "pubYear": "2010"
+          },
+          {
+            "id": "PMC10902613",
+            "title": "Abstracts",
+            "doi": null,
+            "pubYear": "2024"
+          }
+        ]
+      }
+    },
+    "mygene": {
+      "url": "https://mygene.info/v3/query?q=symbol%3AAURKB&species=human&size=3",
+      "data": {
+        "total": 1,
+        "hits": [
+          {
+            "_id": "9212",
+            "symbol": "AURKB",
+            "name": "aurora kinase B",
+            "taxid": 9606
+          }
+        ]
+      }
+    },
+    "chembl": {
+      "url": "https://www.ebi.ac.uk/chembl/api/data/target/search.json?q=AURKB&limit=20",
+      "data": {
+        "total": 8,
+        "human_targets": [
+          {
+            "target_chembl_id": "CHEMBL2185",
+            "pref_name": "Aurora kinase B",
+            "organism": "Homo sapiens"
+          },
+          {
+            "target_chembl_id": "CHEMBL3430907",
+            "pref_name": "Aurora kinase B/Inner centromere protein",
+            "organism": "Homo sapiens"
+          },
+          {
+            "target_chembl_id": "CHEMBL3430908",
+            "pref_name": "Aurora kinase B/Receptor-type tyrosine-protein kinase",
+            "organism": "Homo sapiens"
+          },
+          {
+            "target_chembl_id": "CHEMBL3430911",
+            "pref_name": "Serine/threonine-protein kinase Aurora",
+            "organism": "Homo sapiens"
+          },
+          {
+            "target_chembl_id": "CHEMBL3883303",
+            "pref_name": "Aurora kinase A/B",
+            "organism": "Homo sapiens"
+          }
+        ]
+      }
+    },
+    "hgnc_rest": {
+      "url": "https://rest.genenames.org/fetch/symbol/AURKB",
+      "data": [
+        {
+          "symbol": "AURKB",
+          "hgnc_id": "HGNC:11390",
+          "entrez_id": "9212",
+          "ensembl_gene_id": "ENSG00000178999",
+          "status": "Approved"
+        }
+      ]
+    },
+    "gtex_reference": {
+      "url": "https://gtexportal.org/api/v2/reference/gene?geneId=AURKB",
+      "data": [
+        {
+          "geneSymbol": "AURKB",
+          "geneId": null,
+          "gencodeId": "ENSG00000178999.12",
+          "entrezGeneId": 9212
+        }
+      ]
+    },
+    "reactome": {
+      "url": "https://reactome.org/ContentService/data/mapping/UniProt/Q96GD4/pathways",
+      "data": [
+        {
+          "stId": "R-HSA-141444",
+          "displayName": "Amplification  of signal from unattached  kinetochores via a MAD2  inhibitory signal",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-174178",
+          "displayName": "APC/C:Cdh1 mediated degradation of Cdc20 and other APC/C:Cdh1 targeted proteins in late mitosis/early G1",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-2467813",
+          "displayName": "Separation of Sister Chromatids",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-2500257",
+          "displayName": "Resolution of Sister Chromatid Cohesion",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-4615885",
+          "displayName": "SUMOylation of DNA replication proteins",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-5663220",
+          "displayName": "RHO GTPases Activate Formins",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-6804756",
+          "displayName": "Regulation of TP53 Activity through Phosphorylation",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-68877",
+          "displayName": "Mitotic Prometaphase",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-9022692",
+          "displayName": "Regulation of MECP2 expression and activity",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-9648025",
+          "displayName": "EML4 and NUDC in mitotic spindle formation",
+          "speciesName": "Homo sapiens"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,110 @@
+{
+  "gene": "PRC1",
+  "module": "M6_cell_state_g2m",
+  "prereg": "projects/interstitial_cystitis/prereg/ic_p48_module_genesets.json",
+  "retrieved_at_utc": "2026-09-25T19:47:06.724261+00:00",
+  "sources": {
+    "ensembl": {
+      "url": "https://rest.ensembl.org/lookup/symbol/homo_sapiens/PRC1?content-type=application/json",
+      "data": {
+        "id": "ENSG00000198901",
+        "display_name": "PRC1",
+        "description": "protein regulator of cytokinesis 1 [Source:HGNC Symbol;Acc:HGNC:9341]",
+        "biotype": "protein_coding",
+        "seq_region_name": "15"
+      }
+    },
+    "uniprot": {
+      "url": "https://rest.uniprot.org/uniprotkb/search?query=gene_exact%3APRC1%20AND%20organism_id%3A9606%20AND%20reviewed%3Atrue&size=3&format=json",
+      "error": "HTTP Error 503: Backend fetch failed"
+    },
+    "europe_pmc": {
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=PRC1%20AND%20%22interstitial%20cystitis%22&format=json&pageSize=10",
+      "data": {
+        "hit_count": 6,
+        "papers": [
+          {
+            "id": "40207138",
+            "title": "Pathogenic effects of &lt;i&gt;Streptococcus oralis&lt;/i&gt; intestinal colonization on bladder health in mice.",
+            "doi": "10.1016/j.crmicr.2025.100375",
+            "pubYear": "2025"
+          },
+          {
+            "id": "32438606",
+            "title": "Exosomal Long Non-Coding RNAs in Lung Diseases.",
+            "doi": "10.3390/ijms21103580",
+            "pubYear": "2020"
+          },
+          {
+            "id": "30232827",
+            "title": "Quantitative Proteomic Analysis Reveals Caffeine-Perturbed Proteomic Profiles in Normal Bladder Epithelial Cells.",
+            "doi": "10.1002/pmic.201800190",
+            "pubYear": "2018"
+          },
+          {
+            "id": "26879937",
+            "title": "Elevated urinary urea by high-protein diet could be one of the inducements of bladder disorders.",
+            "doi": "10.1186/s12967-016-0809-9",
+            "pubYear": "2016"
+          },
+          {
+            "id": "PMC7104549",
+            "title": "Scientific Abstracts",
+            "doi": null,
+            "pubYear": "2012"
+          },
+          {
+            "id": "PMC7163937",
+            "title": "Poster Sessions",
+            "doi": null,
+            "pubYear": "2014"
+          }
+        ]
+      }
+    },
+    "mygene": {
+      "url": "https://mygene.info/v3/query?q=symbol%3APRC1&species=human&size=3",
+      "data": {
+        "total": 1,
+        "hits": [
+          {
+            "_id": "9055",
+            "symbol": "PRC1",
+            "name": "protein regulator of cytokinesis 1",
+            "taxid": 9606
+          }
+        ]
+      }
+    },
+    "chembl": {
+      "url": "https://www.ebi.ac.uk/chembl/api/data/target/search.json?q=PRC1&limit=20",
+      "data": {
+        "total": 1,
+        "human_targets": []
+      }
+    },
+    "hgnc_rest": {
+      "url": "https://rest.genenames.org/fetch/symbol/PRC1",
+      "data": [
+        {
+          "symbol": "PRC1",
+          "hgnc_id": "HGNC:9341",
+          "entrez_id": "9055",
+          "ensembl_gene_id": "ENSG00000198901",
+          "status": "Approved"
+        }
+      ]
+    },
+    "gtex_reference": {
+      "url": "https://gtexportal.org/api/v2/reference/gene?geneId=PRC1",
+      "data": [
+        {
+          "geneSymbol": "PRC1",
+          "geneId": null,
+          "gencodeId": "ENSG00000198901.13",
+          "entrezGeneId": 9055
+        }
+      ]
+    }
+  }
+}

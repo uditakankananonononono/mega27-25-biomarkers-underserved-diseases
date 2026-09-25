@@ -1,0 +1,192 @@
+{
+  "gene": "UBE2C",
+  "module": "M6_cell_state_g2m",
+  "prereg": "projects/interstitial_cystitis/prereg/ic_p48_module_genesets.json",
+  "retrieved_at_utc": "2026-09-25T19:52:36.846564+00:00",
+  "sources": {
+    "ensembl": {
+      "url": "https://rest.ensembl.org/lookup/symbol/homo_sapiens/UBE2C?content-type=application/json",
+      "error": "HTTP Error 503: Service Unavailable"
+    },
+    "uniprot": {
+      "url": "https://rest.uniprot.org/uniprotkb/search?query=gene_exact%3AUBE2C%20AND%20organism_id%3A9606%20AND%20reviewed%3Atrue&size=3&format=json",
+      "data": [
+        {
+          "primaryAccession": "O00762",
+          "uniProtkbId": "UBE2C_HUMAN",
+          "entryType": "UniProtKB reviewed (Swiss-Prot)"
+        }
+      ]
+    },
+    "europe_pmc": {
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=UBE2C%20AND%20%22interstitial%20cystitis%22&format=json&pageSize=10",
+      "data": {
+        "hit_count": 2,
+        "papers": [
+          {
+            "id": "42121909",
+            "title": "Mosaic: Single-Cell Atlas of Stress.",
+            "doi": "10.3390/cells15090807",
+            "pubYear": "2026"
+          },
+          {
+            "id": "32366865",
+            "title": "Single cell and tissue-transcriptomic analysis of murine bladders reveals age- and TNFα-dependent but microbiota-independent tertiary lymphoid tissue formation.",
+            "doi": "10.1038/s41385-020-0290-x",
+            "pubYear": "2020"
+          }
+        ]
+      }
+    },
+    "mygene": {
+      "url": "https://mygene.info/v3/query?q=symbol%3AUBE2C&species=human&size=3",
+      "data": {
+        "total": 1,
+        "hits": [
+          {
+            "_id": "11065",
+            "symbol": "UBE2C",
+            "name": "ubiquitin conjugating enzyme E2 C",
+            "taxid": 9606
+          }
+        ]
+      }
+    },
+    "chembl": {
+      "url": "https://www.ebi.ac.uk/chembl/api/data/target/search.json?q=UBE2C&limit=20",
+      "data": {
+        "total": 1,
+        "human_targets": [
+          {
+            "target_chembl_id": "CHEMBL4105834",
+            "pref_name": "Ubiquitin-conjugating enzyme E2 C",
+            "organism": "Homo sapiens"
+          }
+        ]
+      }
+    },
+    "hgnc_rest": {
+      "url": "https://rest.genenames.org/fetch/symbol/UBE2C",
+      "data": [
+        {
+          "symbol": "UBE2C",
+          "hgnc_id": "HGNC:15937",
+          "entrez_id": "11065",
+          "ensembl_gene_id": "ENSG00000175063",
+          "status": "Approved"
+        }
+      ]
+    },
+    "gtex_reference": {
+      "url": "https://gtexportal.org/api/v2/reference/gene?geneId=UBE2C",
+      "data": [
+        {
+          "geneSymbol": "UBE2C",
+          "geneId": null,
+          "gencodeId": "ENSG00000175063.16",
+          "entrezGeneId": 11065
+        }
+      ]
+    },
+    "reactome": {
+      "url": "https://reactome.org/ContentService/data/mapping/UniProt/O00762/pathways",
+      "data": [
+        {
+          "stId": "R-HSA-141430",
+          "displayName": "Inactivation of APC/C via direct inhibition of the APC/C complex",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-174048",
+          "displayName": "APC/C:Cdc20 mediated degradation of Cyclin B",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-174084",
+          "displayName": "Autodegradation of Cdh1 by Cdh1:APC/C",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-174154",
+          "displayName": "APC/C:Cdc20 mediated degradation of Securin",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-174178",
+          "displayName": "APC/C:Cdh1 mediated degradation of Cdc20 and other APC/C:Cdh1 targeted proteins in late mitosis/early G1",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-174184",
+          "displayName": "Cdc20:Phospho-APC/C mediated degradation of Cyclin A",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-176407",
+          "displayName": "Conversion from APC/C:Cdc20 to APC/C:Cdh1 in late anaphase",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-176408",
+          "displayName": "Regulation of APC/C activators between G1/S and early anaphase",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-176409",
+          "displayName": "APC/C:Cdc20 mediated degradation of mitotic proteins",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-176412",
+          "displayName": "Phosphorylation of the APC/C",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-179409",
+          "displayName": "APC-Cdc20 mediated degradation of Nek2A",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-2467813",
+          "displayName": "Separation of Sister Chromatids",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-2559582",
+          "displayName": "Senescence-Associated Secretory Phenotype (SASP)",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-68867",
+          "displayName": "Assembly of the pre-replicative complex",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-69017",
+          "displayName": "CDK-mediated phosphorylation and removal of Cdc6",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-8853884",
+          "displayName": "Transcriptional Regulation by VENTX",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-8866652",
+          "displayName": "Synthesis of active ubiquitin: roles of E1 and E2 enzymes",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-9687136",
+          "displayName": "Aberrant regulation of mitotic exit in cancer due to RB1 defects",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-983168",
+          "displayName": "Antigen processing: Ubiquitination & Proteasome degradation",
+          "speciesName": "Homo sapiens"
+        }
+      ]
+    }
+  }
+}

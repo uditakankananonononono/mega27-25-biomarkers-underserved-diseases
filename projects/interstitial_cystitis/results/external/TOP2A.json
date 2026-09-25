@@ -1,0 +1,170 @@
+{
+  "gene": "TOP2A",
+  "module": "M6_cell_state_g2m",
+  "prereg": "projects/interstitial_cystitis/prereg/ic_p48_module_genesets.json",
+  "retrieved_at_utc": "2026-09-25T19:44:22.827703+00:00",
+  "sources": {
+    "ensembl": {
+      "url": "https://rest.ensembl.org/lookup/symbol/homo_sapiens/TOP2A?content-type=application/json",
+      "error": "HTTP Error 500: Internal Server Error"
+    },
+    "uniprot": {
+      "url": "https://rest.uniprot.org/uniprotkb/search?query=gene_exact%3ATOP2A%20AND%20organism_id%3A9606%20AND%20reviewed%3Atrue&size=3&format=json",
+      "data": [
+        {
+          "primaryAccession": "P11388",
+          "uniProtkbId": "TOP2A_HUMAN",
+          "entryType": "UniProtKB reviewed (Swiss-Prot)"
+        }
+      ]
+    },
+    "europe_pmc": {
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=TOP2A%20AND%20%22interstitial%20cystitis%22&format=json&pageSize=10",
+      "data": {
+        "hit_count": 11,
+        "papers": [
+          {
+            "id": "41622168",
+            "title": "TOP2A drives T-cell infiltration and immune remodeling in cyclophosphamide-induced cystitis: a single-cell sequencing study with potential implications for interstitial cystitis.",
+            "doi": "10.1186/s12894-026-02061-0",
+            "pubYear": "2026"
+          },
+          {
+            "id": "41485159",
+            "title": "Inflammation-associated immune-related genes as potential biomarkers for the diagnosis of interstitial cystitis.",
+            "doi": "10.1007/s10238-025-02032-z",
+            "pubYear": "2026"
+          },
+          {
+            "id": "40137900",
+            "title": "Transcriptomic Characterization of the Porcine Urinary Bladder Trigone Following Intravesical Administration of Resiniferatoxin: Insights from High-Throughput Sequencing.",
+            "doi": "10.3390/toxins17030127",
+            "pubYear": "2025"
+          },
+          {
+            "id": "42121909",
+            "title": "Mosaic: Single-Cell Atlas of Stress.",
+            "doi": "10.3390/cells15090807",
+            "pubYear": "2026"
+          },
+          {
+            "id": "40380233",
+            "title": "Single-cell transcriptomic analysis deciphers the inflammatory microenvironment characterized by CXCL9+ fibroblasts and ACKR1+ endothelial cells in immune-related myocarditis.",
+            "doi": "10.1186/s12967-025-06551-x",
+            "pubYear": "2025"
+          },
+          {
+            "id": "32366865",
+            "title": "Single cell and tissue-transcriptomic analysis of murine bladders reveals age- and TNFα-dependent but microbiota-independent tertiary lymphoid tissue formation.",
+            "doi": "10.1038/s41385-020-0290-x",
+            "pubYear": "2020"
+          },
+          {
+            "id": "PMC10800223",
+            "title": "2023 ACVIM Forum Research Abstract Program",
+            "doi": null,
+            "pubYear": "2023"
+          },
+          {
+            "id": "32744743",
+            "title": "2018 ACVIM Forum Research Abstract Program. Seattle, Washington, June 14 - 15, 2018.",
+            "doi": "10.1111/jvim.15319",
+            "pubYear": "2018"
+          },
+          {
+            "id": "PMC10902613",
+            "title": "Abstracts",
+            "doi": null,
+            "pubYear": "2024"
+          },
+          {
+            "id": "22772769",
+            "title": "A compulsory examination in pathology: redundant or necessary?",
+            "doi": "10.1007/s00428-012-1278-z",
+            "pubYear": "2012"
+          }
+        ]
+      }
+    },
+    "mygene": {
+      "url": "https://mygene.info/v3/query?q=symbol%3ATOP2A&species=human&size=3",
+      "data": {
+        "total": 1,
+        "hits": [
+          {
+            "_id": "7153",
+            "symbol": "TOP2A",
+            "name": "DNA topoisomerase II alpha",
+            "taxid": 9606
+          }
+        ]
+      }
+    },
+    "chembl": {
+      "url": "https://www.ebi.ac.uk/chembl/api/data/target/search.json?q=TOP2A&limit=20",
+      "data": {
+        "total": 6,
+        "human_targets": [
+          {
+            "target_chembl_id": "CHEMBL4845646",
+            "pref_name": "TOP2A promoter",
+            "organism": "Homo sapiens"
+          },
+          {
+            "target_chembl_id": "CHEMBL1806",
+            "pref_name": "DNA topoisomerase 2-alpha",
+            "organism": "Homo sapiens"
+          },
+          {
+            "target_chembl_id": "CHEMBL4106174",
+            "pref_name": "Topoisomerase I/II",
+            "organism": "Homo sapiens"
+          },
+          {
+            "target_chembl_id": "CHEMBL2094255",
+            "pref_name": "DNA topoisomerase II",
+            "organism": "Homo sapiens"
+          }
+        ]
+      }
+    },
+    "hgnc_rest": {
+      "url": "https://rest.genenames.org/fetch/symbol/TOP2A",
+      "data": [
+        {
+          "symbol": "TOP2A",
+          "hgnc_id": "HGNC:11989",
+          "entrez_id": "7153",
+          "ensembl_gene_id": "ENSG00000131747",
+          "status": "Approved"
+        }
+      ]
+    },
+    "gtex_reference": {
+      "url": "https://gtexportal.org/api/v2/reference/gene?geneId=TOP2A",
+      "data": [
+        {
+          "geneSymbol": "TOP2A",
+          "geneId": null,
+          "gencodeId": "ENSG00000131747.14",
+          "entrezGeneId": 7153
+        }
+      ]
+    },
+    "reactome": {
+      "url": "https://reactome.org/ContentService/data/mapping/UniProt/P11388/pathways",
+      "data": [
+        {
+          "stId": "R-HSA-1362277",
+          "displayName": "Transcription of E2F targets under negative control by DREAM complex",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-4615885",
+          "displayName": "SUMOylation of DNA replication proteins",
+          "speciesName": "Homo sapiens"
+        }
+      ]
+    }
+  }
+}

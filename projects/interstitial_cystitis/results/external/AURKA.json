@@ -1,0 +1,220 @@
+{
+  "gene": "AURKA",
+  "module": "M6_cell_state_g2m",
+  "prereg": "projects/interstitial_cystitis/prereg/ic_p48_module_genesets.json",
+  "retrieved_at_utc": "2026-09-25T19:43:33.376381+00:00",
+  "sources": {
+    "ensembl": {
+      "url": "https://rest.ensembl.org/lookup/symbol/homo_sapiens/AURKA?content-type=application/json",
+      "error": "HTTP Error 500: Internal Server Error"
+    },
+    "uniprot": {
+      "url": "https://rest.uniprot.org/uniprotkb/search?query=gene_exact%3AAURKA%20AND%20organism_id%3A9606%20AND%20reviewed%3Atrue&size=3&format=json",
+      "data": [
+        {
+          "primaryAccession": "O14965",
+          "uniProtkbId": "AURKA_HUMAN",
+          "entryType": "UniProtKB reviewed (Swiss-Prot)"
+        }
+      ]
+    },
+    "europe_pmc": {
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=AURKA%20AND%20%22interstitial%20cystitis%22&format=json&pageSize=10",
+      "data": {
+        "hit_count": 12,
+        "papers": [
+          {
+            "id": "33916038",
+            "title": "Noninvasive Urine-Based Tests to Diagnose or Detect Recurrence of Bladder Cancer.",
+            "doi": "10.3390/cancers13071650",
+            "pubYear": "2021"
+          },
+          {
+            "id": "32055750",
+            "title": "Advances in urinary biomarker discovery in urological research.",
+            "doi": "10.4111/icu.2020.61.s1.s8",
+            "pubYear": "2020"
+          },
+          {
+            "id": "PMC11268854",
+            "title": "Poster Session 6: Transplant, Basic Science, Adrenal, Innovation : Sunday, June 30, 2024 • 16:10–17:40",
+            "doi": null,
+            "pubYear": "2024"
+          },
+          {
+            "id": "34072980",
+            "title": "Characteristics of the Urinary Proteome in Women with Overactive Bladder Syndrome: A Case-Control Study.",
+            "doi": "10.3390/jcm10112446",
+            "pubYear": "2021"
+          },
+          {
+            "id": "28017836",
+            "title": "Recent advances in hyaluronic acid-decorated nanocarriers for targeted cancer therapy.",
+            "doi": "10.1016/j.drudis.2016.12.009",
+            "pubYear": "2017"
+          },
+          {
+            "id": "26391482",
+            "title": "SIU 2015 Abstracts.",
+            "doi": "10.1007/s00345-015-1684-3",
+            "pubYear": "2015"
+          },
+          {
+            "id": "20405294",
+            "title": "Total laparoscopic radical hysterectomy for cervical cancer in prolapsed uterus.",
+            "doi": "10.1007/s00404-010-1472-7",
+            "pubYear": "2010"
+          },
+          {
+            "id": "PMC7104455",
+            "title": "Scientific Abstracts",
+            "doi": null,
+            "pubYear": "2013"
+          },
+          {
+            "id": "22772769",
+            "title": "A compulsory examination in pathology: redundant or necessary?",
+            "doi": "10.1007/s00428-012-1278-z",
+            "pubYear": "2012"
+          },
+          {
+            "id": "PMC10902613",
+            "title": "Abstracts",
+            "doi": null,
+            "pubYear": "2024"
+          }
+        ]
+      }
+    },
+    "mygene": {
+      "url": "https://mygene.info/v3/query?q=symbol%3AAURKA&species=human&size=3",
+      "data": {
+        "total": 1,
+        "hits": [
+          {
+            "_id": "6790",
+            "symbol": "AURKA",
+            "name": "aurora kinase A",
+            "taxid": 9606
+          }
+        ]
+      }
+    },
+    "chembl": {
+      "url": "https://www.ebi.ac.uk/chembl/api/data/target/search.json?q=AURKA&limit=20",
+      "data": {
+        "total": 10,
+        "human_targets": [
+          {
+            "target_chembl_id": "CHEMBL5442327",
+            "pref_name": "AURKA pre-mRNA",
+            "organism": "Homo sapiens"
+          },
+          {
+            "target_chembl_id": "CHEMBL5910",
+            "pref_name": "Small ribosomal subunit protein mS38",
+            "organism": "Homo sapiens"
+          },
+          {
+            "target_chembl_id": "CHEMBL4722",
+            "pref_name": "Aurora kinase A",
+            "organism": "Homo sapiens"
+          },
+          {
+            "target_chembl_id": "CHEMBL3883304",
+            "pref_name": "Aurora kinase A/Targeting protein for Xklp2",
+            "organism": "Homo sapiens"
+          },
+          {
+            "target_chembl_id": "CHEMBL5465201",
+            "pref_name": "Protein cereblon/Aurora kinase A",
+            "organism": "Homo sapiens"
+          },
+          {
+            "target_chembl_id": "CHEMBL3430911",
+            "pref_name": "Serine/threonine-protein kinase Aurora",
+            "organism": "Homo sapiens"
+          },
+          {
+            "target_chembl_id": "CHEMBL3883303",
+            "pref_name": "Aurora kinase A/B",
+            "organism": "Homo sapiens"
+          },
+          {
+            "target_chembl_id": "CHEMBL4748216",
+            "pref_name": "von Hippel-Lindau disease tumor suppressor/Aurora kinase A",
+            "organism": "Homo sapiens"
+          }
+        ]
+      }
+    },
+    "hgnc_rest": {
+      "url": "https://rest.genenames.org/fetch/symbol/AURKA",
+      "data": [
+        {
+          "symbol": "AURKA",
+          "hgnc_id": "HGNC:11393",
+          "entrez_id": "6790",
+          "ensembl_gene_id": "ENSG00000087586",
+          "status": "Approved"
+        }
+      ]
+    },
+    "gtex_reference": {
+      "url": "https://gtexportal.org/api/v2/reference/gene?geneId=AURKA",
+      "data": [
+        {
+          "geneSymbol": "AURKA",
+          "geneId": null,
+          "gencodeId": "ENSG00000087586.17",
+          "entrezGeneId": 6790
+        }
+      ]
+    },
+    "reactome": {
+      "url": "https://reactome.org/ContentService/data/mapping/UniProt/O14965/pathways",
+      "data": [
+        {
+          "stId": "R-HSA-174178",
+          "displayName": "APC/C:Cdh1 mediated degradation of Cdc20 and other APC/C:Cdh1 targeted proteins in late mitosis/early G1",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-2565942",
+          "displayName": "Regulation of PLK1 Activity at G2/M Transition",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-4615885",
+          "displayName": "SUMOylation of DNA replication proteins",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-6804114",
+          "displayName": "TP53 Regulates Transcription of Genes Involved in G2 Cell Cycle Arrest",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-6804756",
+          "displayName": "Regulation of TP53 Activity through Phosphorylation",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-8854050",
+          "displayName": "FBXL7 down-regulates AURKA during mitotic entry and in early mitosis",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-8854518",
+          "displayName": "AURKA Activation by TPX2",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-8854521",
+          "displayName": "Interaction between PHLDA1 and AURKA",
+          "speciesName": "Homo sapiens"
+        }
+      ]
+    }
+  }
+}

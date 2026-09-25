@@ -1,0 +1,118 @@
+{
+  "gene": "PTTG1",
+  "module": "M6_cell_state_g2m",
+  "prereg": "projects/interstitial_cystitis/prereg/ic_p48_module_genesets.json",
+  "retrieved_at_utc": "2026-09-25T19:53:34.287954+00:00",
+  "sources": {
+    "ensembl": {
+      "url": "https://rest.ensembl.org/lookup/symbol/homo_sapiens/PTTG1?content-type=application/json",
+      "data": {
+        "id": "ENSG00000164611",
+        "display_name": "PTTG1",
+        "description": "PTTG1 regulator of sister chromatid separation, securin [Source:HGNC Symbol;Acc:HGNC:9690]",
+        "biotype": "protein_coding",
+        "seq_region_name": "5"
+      }
+    },
+    "uniprot": {
+      "url": "https://rest.uniprot.org/uniprotkb/search?query=gene_exact%3APTTG1%20AND%20organism_id%3A9606%20AND%20reviewed%3Atrue&size=3&format=json",
+      "data": [
+        {
+          "primaryAccession": "O95997",
+          "uniProtkbId": "PTTG1_HUMAN",
+          "entryType": "UniProtKB reviewed (Swiss-Prot)"
+        }
+      ]
+    },
+    "europe_pmc": {
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=PTTG1%20AND%20%22interstitial%20cystitis%22&format=json&pageSize=10",
+      "data": {
+        "hit_count": 3,
+        "papers": [
+          {
+            "id": "32744743",
+            "title": "2018 ACVIM Forum Research Abstract Program. Seattle, Washington, June 14 - 15, 2018.",
+            "doi": "10.1111/jvim.15319",
+            "pubYear": "2018"
+          },
+          {
+            "id": "PMC7104427",
+            "title": "Abstracts",
+            "doi": null,
+            "pubYear": "2018"
+          },
+          {
+            "id": "24085684",
+            "title": "Abstracts of the 2013 Annual Meeting of the American College of Rheumatology. October 25-30, 2013. San Diego, California, USA.",
+            "doi": "10.1002/art.38216",
+            "pubYear": "2013"
+          }
+        ]
+      }
+    },
+    "mygene": {
+      "url": "https://mygene.info/v3/query?q=symbol%3APTTG1&species=human&size=3",
+      "data": {
+        "total": 1,
+        "hits": [
+          {
+            "_id": "9232",
+            "symbol": "PTTG1",
+            "name": "PTTG1 regulator of sister chromatid separation, securin",
+            "taxid": 9606
+          }
+        ]
+      }
+    },
+    "chembl": {
+      "url": "https://www.ebi.ac.uk/chembl/api/data/target/search.json?q=PTTG1&limit=20",
+      "data": {
+        "total": 0,
+        "human_targets": []
+      }
+    },
+    "hgnc_rest": {
+      "url": "https://rest.genenames.org/fetch/symbol/PTTG1",
+      "data": [
+        {
+          "symbol": "PTTG1",
+          "hgnc_id": "HGNC:9690",
+          "entrez_id": "9232",
+          "ensembl_gene_id": "ENSG00000164611",
+          "status": "Approved"
+        }
+      ]
+    },
+    "gtex_reference": {
+      "url": "https://gtexportal.org/api/v2/reference/gene?geneId=PTTG1",
+      "data": [
+        {
+          "geneSymbol": "PTTG1",
+          "geneId": null,
+          "gencodeId": "ENSG00000164611.12",
+          "entrezGeneId": 9232
+        }
+      ]
+    },
+    "reactome": {
+      "url": "https://reactome.org/ContentService/data/mapping/UniProt/O95997/pathways",
+      "data": [
+        {
+          "stId": "R-HSA-174154",
+          "displayName": "APC/C:Cdc20 mediated degradation of Securin",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-174178",
+          "displayName": "APC/C:Cdh1 mediated degradation of Cdc20 and other APC/C:Cdh1 targeted proteins in late mitosis/early G1",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-2467813",
+          "displayName": "Separation of Sister Chromatids",
+          "speciesName": "Homo sapiens"
+        }
+      ]
+    }
+  }
+}

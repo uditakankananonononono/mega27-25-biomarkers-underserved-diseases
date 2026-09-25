@@ -1,0 +1,109 @@
+{
+  "gene": "NDC80",
+  "module": "M6_cell_state_g2m",
+  "prereg": "projects/interstitial_cystitis/prereg/ic_p48_module_genesets.json",
+  "retrieved_at_utc": "2026-09-25T19:47:36.250598+00:00",
+  "sources": {
+    "ensembl": {
+      "url": "https://rest.ensembl.org/lookup/symbol/homo_sapiens/NDC80?content-type=application/json",
+      "data": {
+        "id": "ENSG00000080986",
+        "display_name": "NDC80",
+        "description": "NDC80 kinetochore complex component [Source:HGNC Symbol;Acc:HGNC:16909]",
+        "biotype": "protein_coding",
+        "seq_region_name": "18"
+      }
+    },
+    "uniprot": {
+      "url": "https://rest.uniprot.org/uniprotkb/search?query=gene_exact%3ANDC80%20AND%20organism_id%3A9606%20AND%20reviewed%3Atrue&size=3&format=json",
+      "error": "HTTP Error 503: Backend fetch failed"
+    },
+    "europe_pmc": {
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=NDC80%20AND%20%22interstitial%20cystitis%22&format=json&pageSize=10",
+      "data": {
+        "hit_count": 4,
+        "papers": [
+          {
+            "id": "41485159",
+            "title": "Inflammation-associated immune-related genes as potential biomarkers for the diagnosis of interstitial cystitis.",
+            "doi": "10.1007/s10238-025-02032-z",
+            "pubYear": "2026"
+          },
+          {
+            "id": "PMC7130291",
+            "title": "Subject Index",
+            "doi": null,
+            "pubYear": "2007"
+          },
+          {
+            "id": "17174306",
+            "title": "hnRNP-U enhances the expression of specific genes by stabilizing mRNA.",
+            "doi": "10.1016/j.febslet.2006.11.062",
+            "pubYear": "2007"
+          },
+          {
+            "id": "PMC10902613",
+            "title": "Abstracts",
+            "doi": null,
+            "pubYear": "2024"
+          }
+        ]
+      }
+    },
+    "mygene": {
+      "url": "https://mygene.info/v3/query?q=symbol%3ANDC80&species=human&size=3",
+      "data": {
+        "total": 1,
+        "hits": [
+          {
+            "_id": "10403",
+            "symbol": "NDC80",
+            "name": "NDC80 kinetochore complex component",
+            "taxid": 9606
+          }
+        ]
+      }
+    },
+    "chembl": {
+      "url": "https://www.ebi.ac.uk/chembl/api/data/target/search.json?q=NDC80&limit=20",
+      "data": {
+        "total": 2,
+        "human_targets": [
+          {
+            "target_chembl_id": "CHEMBL5660",
+            "pref_name": "Kinetochore protein NDC80 homolog",
+            "organism": "Homo sapiens"
+          },
+          {
+            "target_chembl_id": "CHEMBL4802034",
+            "pref_name": "HEC1/NEK2",
+            "organism": "Homo sapiens"
+          }
+        ]
+      }
+    },
+    "hgnc_rest": {
+      "url": "https://rest.genenames.org/fetch/symbol/NDC80",
+      "data": [
+        {
+          "symbol": "NDC80",
+          "hgnc_id": "HGNC:16909",
+          "entrez_id": "10403",
+          "ensembl_gene_id": "ENSG00000080986",
+          "status": "Approved"
+        }
+      ]
+    },
+    "gtex_reference": {
+      "url": "https://gtexportal.org/api/v2/reference/gene?geneId=NDC80",
+      "data": [
+        {
+          "geneSymbol": "NDC80",
+          "geneId": null,
+          "gencodeId": "ENSG00000080986.12",
+          "entrezGeneId": 10403
+        }
+      ]
+    }
+  }
+}

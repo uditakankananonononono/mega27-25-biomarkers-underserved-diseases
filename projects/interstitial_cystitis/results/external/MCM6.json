@@ -1,0 +1,127 @@
+{
+  "gene": "MCM6",
+  "module": "M6_cell_state_g2m",
+  "prereg": "projects/interstitial_cystitis/prereg/ic_p48_module_genesets.json",
+  "retrieved_at_utc": "2026-09-25T19:53:01.914458+00:00",
+  "sources": {
+    "ensembl": {
+      "url": "https://rest.ensembl.org/lookup/symbol/homo_sapiens/MCM6?content-type=application/json",
+      "error": "HTTP Error 500: Internal Server Error"
+    },
+    "uniprot": {
+      "url": "https://rest.uniprot.org/uniprotkb/search?query=gene_exact%3AMCM6%20AND%20organism_id%3A9606%20AND%20reviewed%3Atrue&size=3&format=json",
+      "data": [
+        {
+          "primaryAccession": "Q14566",
+          "uniProtkbId": "MCM6_HUMAN",
+          "entryType": "UniProtKB reviewed (Swiss-Prot)"
+        }
+      ]
+    },
+    "europe_pmc": {
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=MCM6%20AND%20%22interstitial%20cystitis%22&format=json&pageSize=10",
+      "data": {
+        "hit_count": 2,
+        "papers": [
+          {
+            "id": "36439482",
+            "title": "Identification of a naturally-occurring canine model for early detection and intervention research in high grade urothelial carcinoma.",
+            "doi": "10.3389/fonc.2022.1011969",
+            "pubYear": "2022"
+          },
+          {
+            "id": "PMC7419731",
+            "title": "Abstracts",
+            "doi": null,
+            "pubYear": "2020"
+          }
+        ]
+      }
+    },
+    "mygene": {
+      "url": "https://mygene.info/v3/query?q=symbol%3AMCM6&species=human&size=3",
+      "data": {
+        "total": 1,
+        "hits": [
+          {
+            "_id": "4175",
+            "symbol": "MCM6",
+            "name": "minichromosome maintenance complex component 6",
+            "taxid": 9606
+          }
+        ]
+      }
+    },
+    "chembl": {
+      "url": "https://www.ebi.ac.uk/chembl/api/data/target/search.json?q=MCM6&limit=20",
+      "data": {
+        "total": 1,
+        "human_targets": [
+          {
+            "target_chembl_id": "CHEMBL4296011",
+            "pref_name": "DNA replication licensing factor MCM6",
+            "organism": "Homo sapiens"
+          }
+        ]
+      }
+    },
+    "hgnc_rest": {
+      "url": "https://rest.genenames.org/fetch/symbol/MCM6",
+      "data": [
+        {
+          "symbol": "MCM6",
+          "hgnc_id": "HGNC:6949",
+          "entrez_id": "4175",
+          "ensembl_gene_id": "ENSG00000076003",
+          "status": "Approved"
+        }
+      ]
+    },
+    "gtex_reference": {
+      "url": "https://gtexportal.org/api/v2/reference/gene?geneId=MCM6",
+      "data": [
+        {
+          "geneSymbol": "MCM6",
+          "geneId": null,
+          "gencodeId": "ENSG00000076003.4",
+          "entrezGeneId": 4175
+        }
+      ]
+    },
+    "reactome": {
+      "url": "https://reactome.org/ContentService/data/mapping/UniProt/Q14566/pathways",
+      "data": [
+        {
+          "stId": "R-HSA-176187",
+          "displayName": "Activation of ATR in response to replication stress",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-176974",
+          "displayName": "Unwinding of DNA",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-68867",
+          "displayName": "Assembly of the pre-replicative complex",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-68949",
+          "displayName": "Orc1 removal from chromatin",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-68962",
+          "displayName": "Activation of the pre-replicative complex",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-69052",
+          "displayName": "Switching of origins to a post-replicative state",
+          "speciesName": "Homo sapiens"
+        }
+      ]
+    }
+  }
+}

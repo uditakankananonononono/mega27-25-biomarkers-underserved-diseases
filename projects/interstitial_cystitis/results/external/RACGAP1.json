@@ -1,0 +1,150 @@
+{
+  "gene": "RACGAP1",
+  "module": "M6_cell_state_g2m",
+  "prereg": "projects/interstitial_cystitis/prereg/ic_p48_module_genesets.json",
+  "retrieved_at_utc": "2026-09-25T19:51:45.801507+00:00",
+  "sources": {
+    "ensembl": {
+      "url": "https://rest.ensembl.org/lookup/symbol/homo_sapiens/RACGAP1?content-type=application/json",
+      "data": {
+        "id": "ENSG00000161800",
+        "display_name": "RACGAP1",
+        "description": "Rac GTPase activating protein 1 [Source:HGNC Symbol;Acc:HGNC:9804]",
+        "biotype": "protein_coding",
+        "seq_region_name": "12"
+      }
+    },
+    "uniprot": {
+      "url": "https://rest.uniprot.org/uniprotkb/search?query=gene_exact%3ARACGAP1%20AND%20organism_id%3A9606%20AND%20reviewed%3Atrue&size=3&format=json",
+      "data": [
+        {
+          "primaryAccession": "Q9H0H5",
+          "uniProtkbId": "RGAP1_HUMAN",
+          "entryType": "UniProtKB reviewed (Swiss-Prot)"
+        }
+      ]
+    },
+    "europe_pmc": {
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=RACGAP1%20AND%20%22interstitial%20cystitis%22&format=json&pageSize=10",
+      "data": {
+        "hit_count": 0,
+        "papers": []
+      }
+    },
+    "mygene": {
+      "url": "https://mygene.info/v3/query?q=symbol%3ARACGAP1&species=human&size=3",
+      "data": {
+        "total": 1,
+        "hits": [
+          {
+            "_id": "29127",
+            "symbol": "RACGAP1",
+            "name": "Rac GTPase activating protein 1",
+            "taxid": 9606
+          }
+        ]
+      }
+    },
+    "chembl": {
+      "url": "https://www.ebi.ac.uk/chembl/api/data/target/search.json?q=RACGAP1&limit=20",
+      "data": {
+        "total": 1,
+        "human_targets": [
+          {
+            "target_chembl_id": "CHEMBL2146306",
+            "pref_name": "Rac GTPase-activating protein 1",
+            "organism": "Homo sapiens"
+          }
+        ]
+      }
+    },
+    "hgnc_rest": {
+      "url": "https://rest.genenames.org/fetch/symbol/RACGAP1",
+      "data": [
+        {
+          "symbol": "RACGAP1",
+          "hgnc_id": "HGNC:9804",
+          "entrez_id": "29127",
+          "ensembl_gene_id": "ENSG00000161800",
+          "status": "Approved"
+        }
+      ]
+    },
+    "gtex_reference": {
+      "url": "https://gtexportal.org/api/v2/reference/gene?geneId=RACGAP1",
+      "data": [
+        {
+          "geneSymbol": "RACGAP1",
+          "geneId": null,
+          "gencodeId": "ENSG00000161800.12",
+          "entrezGeneId": 29127
+        }
+      ]
+    },
+    "reactome": {
+      "url": "https://reactome.org/ContentService/data/mapping/UniProt/Q9H0H5/pathways",
+      "data": [
+        {
+          "stId": "R-HSA-2132295",
+          "displayName": "MHC class II antigen presentation",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-6811434",
+          "displayName": "COPI-dependent Golgi-to-ER retrograde traffic",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-8980692",
+          "displayName": "RHOA GTPase cycle",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-9013026",
+          "displayName": "RHOB GTPase cycle",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-9013106",
+          "displayName": "RHOC GTPase cycle",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-9013148",
+          "displayName": "CDC42 GTPase cycle",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-9013149",
+          "displayName": "RAC1 GTPase cycle",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-9013404",
+          "displayName": "RAC2 GTPase cycle",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-9013405",
+          "displayName": "RHOD GTPase cycle",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-9013423",
+          "displayName": "RAC3 GTPase cycle",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-983189",
+          "displayName": "Kinesins",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-9979719",
+          "displayName": "Processing of antigen in germinal center B cells",
+          "speciesName": "Homo sapiens"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,104 @@
+{
+  "gene": "NUSAP1",
+  "module": "M6_cell_state_g2m",
+  "prereg": "projects/interstitial_cystitis/prereg/ic_p48_module_genesets.json",
+  "retrieved_at_utc": "2026-09-25T19:48:20.686110+00:00",
+  "sources": {
+    "ensembl": {
+      "url": "https://rest.ensembl.org/lookup/symbol/homo_sapiens/NUSAP1?content-type=application/json",
+      "data": {
+        "id": "ENSG00000137804",
+        "display_name": "NUSAP1",
+        "description": "nucleolar and spindle associated protein 1 [Source:HGNC Symbol;Acc:HGNC:18538]",
+        "biotype": "protein_coding",
+        "seq_region_name": "15"
+      }
+    },
+    "uniprot": {
+      "url": "https://rest.uniprot.org/uniprotkb/search?query=gene_exact%3ANUSAP1%20AND%20organism_id%3A9606%20AND%20reviewed%3Atrue&size=3&format=json",
+      "data": [
+        {
+          "primaryAccession": "Q9BXS6",
+          "uniProtkbId": "NUSAP_HUMAN",
+          "entryType": "UniProtKB reviewed (Swiss-Prot)"
+        }
+      ]
+    },
+    "europe_pmc": {
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=NUSAP1%20AND%20%22interstitial%20cystitis%22&format=json&pageSize=10",
+      "data": {
+        "hit_count": 3,
+        "papers": [
+          {
+            "id": "41485159",
+            "title": "Inflammation-associated immune-related genes as potential biomarkers for the diagnosis of interstitial cystitis.",
+            "doi": "10.1007/s10238-025-02032-z",
+            "pubYear": "2026"
+          },
+          {
+            "id": "32018225",
+            "title": "Knockdown of P3H4 inhibits proliferation and invasion of bladder cancer.",
+            "doi": "10.18632/aging.102732",
+            "pubYear": "2020"
+          },
+          {
+            "id": "42121909",
+            "title": "Mosaic: Single-Cell Atlas of Stress.",
+            "doi": "10.3390/cells15090807",
+            "pubYear": "2026"
+          }
+        ]
+      }
+    },
+    "mygene": {
+      "url": "https://mygene.info/v3/query?q=symbol%3ANUSAP1&species=human&size=3",
+      "data": {
+        "total": 1,
+        "hits": [
+          {
+            "_id": "51203",
+            "symbol": "NUSAP1",
+            "name": "nucleolar and spindle associated protein 1",
+            "taxid": 9606
+          }
+        ]
+      }
+    },
+    "chembl": {
+      "url": "https://www.ebi.ac.uk/chembl/api/data/target/search.json?q=NUSAP1&limit=20",
+      "data": {
+        "total": 0,
+        "human_targets": []
+      }
+    },
+    "hgnc_rest": {
+      "url": "https://rest.genenames.org/fetch/symbol/NUSAP1",
+      "data": [
+        {
+          "symbol": "NUSAP1",
+          "hgnc_id": "HGNC:18538",
+          "entrez_id": "51203",
+          "ensembl_gene_id": "ENSG00000137804",
+          "status": "Approved"
+        }
+      ]
+    },
+    "gtex_reference": {
+      "url": "https://gtexportal.org/api/v2/reference/gene?geneId=NUSAP1",
+      "data": [
+        {
+          "geneSymbol": "NUSAP1",
+          "geneId": null,
+          "gencodeId": "ENSG00000137804.12",
+          "entrezGeneId": 51203
+        }
+      ]
+    },
+    "reactome": {
+      "url": "https://reactome.org/ContentService/data/mapping/UniProt/Q9BXS6/pathways",
+      "data": {
+        "error": "HTTP Error 404: Not Found"
+      }
+    }
+  }
+}

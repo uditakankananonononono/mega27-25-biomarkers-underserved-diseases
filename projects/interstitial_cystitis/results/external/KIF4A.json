@@ -1,0 +1,122 @@
+{
+  "gene": "KIF4A",
+  "module": "M6_cell_state_g2m",
+  "prereg": "projects/interstitial_cystitis/prereg/ic_p48_module_genesets.json",
+  "retrieved_at_utc": "2026-09-25T19:53:58.134957+00:00",
+  "sources": {
+    "ensembl": {
+      "url": "https://rest.ensembl.org/lookup/symbol/homo_sapiens/KIF4A?content-type=application/json",
+      "data": {
+        "id": "ENSG00000090889",
+        "display_name": "KIF4A",
+        "description": "kinesin family member 4A [Source:HGNC Symbol;Acc:HGNC:13339]",
+        "biotype": "protein_coding",
+        "seq_region_name": "X"
+      }
+    },
+    "uniprot": {
+      "url": "https://rest.uniprot.org/uniprotkb/search?query=gene_exact%3AKIF4A%20AND%20organism_id%3A9606%20AND%20reviewed%3Atrue&size=3&format=json",
+      "data": [
+        {
+          "primaryAccession": "O95239",
+          "uniProtkbId": "KIF4A_HUMAN",
+          "entryType": "UniProtKB reviewed (Swiss-Prot)"
+        }
+      ]
+    },
+    "europe_pmc": {
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=KIF4A%20AND%20%22interstitial%20cystitis%22&format=json&pageSize=10",
+      "data": {
+        "hit_count": 1,
+        "papers": [
+          {
+            "id": "PMC10902613",
+            "title": "Abstracts",
+            "doi": null,
+            "pubYear": "2024"
+          }
+        ]
+      }
+    },
+    "mygene": {
+      "url": "https://mygene.info/v3/query?q=symbol%3AKIF4A&species=human&size=3",
+      "data": {
+        "total": 1,
+        "hits": [
+          {
+            "_id": "24137",
+            "symbol": "KIF4A",
+            "name": "kinesin family member 4A",
+            "taxid": 9606
+          }
+        ]
+      }
+    },
+    "chembl": {
+      "url": "https://www.ebi.ac.uk/chembl/api/data/target/search.json?q=KIF4A&limit=20",
+      "data": {
+        "total": 1,
+        "human_targets": [
+          {
+            "target_chembl_id": "CHEMBL6163",
+            "pref_name": "Chromosome-associated kinesin KIF4A",
+            "organism": "Homo sapiens"
+          }
+        ]
+      }
+    },
+    "hgnc_rest": {
+      "url": "https://rest.genenames.org/fetch/symbol/KIF4A",
+      "data": [
+        {
+          "symbol": "KIF4A",
+          "hgnc_id": "HGNC:13339",
+          "entrez_id": "24137",
+          "ensembl_gene_id": "ENSG00000090889",
+          "status": "Approved"
+        }
+      ]
+    },
+    "gtex_reference": {
+      "url": "https://gtexportal.org/api/v2/reference/gene?geneId=KIF4A",
+      "data": [
+        {
+          "geneSymbol": "KIF4A",
+          "geneId": null,
+          "gencodeId": "ENSG00000090889.11",
+          "entrezGeneId": 24137
+        }
+      ]
+    },
+    "reactome": {
+      "url": "https://reactome.org/ContentService/data/mapping/UniProt/O95239/pathways",
+      "data": [
+        {
+          "stId": "R-HSA-2132295",
+          "displayName": "MHC class II antigen presentation",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-437239",
+          "displayName": "Recycling pathway of L1",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-6811434",
+          "displayName": "COPI-dependent Golgi-to-ER retrograde traffic",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-983189",
+          "displayName": "Kinesins",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-9979719",
+          "displayName": "Processing of antigen in germinal center B cells",
+          "speciesName": "Homo sapiens"
+        }
+      ]
+    }
+  }
+}

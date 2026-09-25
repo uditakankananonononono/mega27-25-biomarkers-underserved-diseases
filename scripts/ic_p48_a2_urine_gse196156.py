@@ -26,7 +26,7 @@ Endpoint: composite = per-sample mean of per-miRNA z-scores (z over all 20
   mean difference (Cystitis - Control), 20000 label reshuffles, seed 20260926.
 EXPLORATORY per the amendment; not an independent validation, not a claim.
 """
-import csv, gzip, io, json, subprocess, sys, urllib.parse
+import csv, gzip, io, json, subprocess, sys, time, urllib.parse
 import numpy as np
 
 MATURE_FA = sys.argv[1] if len(sys.argv) > 1 else '/tmp/mature.fa'
@@ -46,8 +46,16 @@ def fetch_gene_csv(gene, cache):
     if not os.path.exists(p):
         # urllib TLS handshake fails against this host from this runtime; curl is
         # the transport instead (same endpoint, same rows - transport only).
+        # Server rate-limits rapid sequential queries: retry with backoff.
         url = MTB_URL + urllib.parse.quote(gene)
-        subprocess.run(['curl', '-s', '--fail', '--max-time', '60', '-o', p, url], check=True)
+        for attempt in range(6):
+            r = subprocess.run(['curl', '-s', '--fail', '--max-time', '60', '-o', p, url])
+            if r.returncode == 0 and os.path.getsize(p) > 200:
+                break
+            time.sleep(5 * (attempt + 1))
+        else:
+            raise RuntimeError(f'failed to fetch {gene} after retries')
+        time.sleep(1.0)  # polite pacing between genes
     return p
 
 def load_regulator_names(genes, cache):

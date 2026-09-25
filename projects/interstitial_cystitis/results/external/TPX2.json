@@ -1,0 +1,118 @@
+{
+  "gene": "TPX2",
+  "module": "M6_cell_state_g2m",
+  "prereg": "projects/interstitial_cystitis/prereg/ic_p48_module_genesets.json",
+  "retrieved_at_utc": "2026-09-25T19:50:09.375119+00:00",
+  "sources": {
+    "ensembl": {
+      "url": "https://rest.ensembl.org/lookup/symbol/homo_sapiens/TPX2?content-type=application/json",
+      "data": {
+        "id": "ENSG00000088325",
+        "display_name": "TPX2",
+        "description": "TPX2 microtubule nucleation factor [Source:HGNC Symbol;Acc:HGNC:1249]",
+        "biotype": "protein_coding",
+        "seq_region_name": "20"
+      }
+    },
+    "uniprot": {
+      "url": "https://rest.uniprot.org/uniprotkb/search?query=gene_exact%3ATPX2%20AND%20organism_id%3A9606%20AND%20reviewed%3Atrue&size=3&format=json",
+      "data": [
+        {
+          "primaryAccession": "Q9ULW0",
+          "uniProtkbId": "TPX2_HUMAN",
+          "entryType": "UniProtKB reviewed (Swiss-Prot)"
+        }
+      ]
+    },
+    "europe_pmc": {
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=TPX2%20AND%20%22interstitial%20cystitis%22&format=json&pageSize=10",
+      "data": {
+        "hit_count": 2,
+        "papers": [
+          {
+            "id": "30145203",
+            "title": "Integrated proteomic and phosphoproteomic analyses of cisplatin-sensitive and resistant bladder cancer cells reveal CDK2 network as a key therapeutic target.",
+            "doi": "10.1016/j.canlet.2018.08.014",
+            "pubYear": "2018"
+          },
+          {
+            "id": "PMC10902613",
+            "title": "Abstracts",
+            "doi": null,
+            "pubYear": "2024"
+          }
+        ]
+      }
+    },
+    "mygene": {
+      "url": "https://mygene.info/v3/query?q=symbol%3ATPX2&species=human&size=3",
+      "data": {
+        "total": 1,
+        "hits": [
+          {
+            "_id": "22974",
+            "symbol": "TPX2",
+            "name": "TPX2 microtubule nucleation factor",
+            "taxid": 9606
+          }
+        ]
+      }
+    },
+    "chembl": {
+      "url": "https://www.ebi.ac.uk/chembl/api/data/target/search.json?q=TPX2&limit=20",
+      "data": {
+        "total": 2,
+        "human_targets": [
+          {
+            "target_chembl_id": "CHEMBL5389",
+            "pref_name": "Targeting protein for Xklp2",
+            "organism": "Homo sapiens"
+          },
+          {
+            "target_chembl_id": "CHEMBL3883304",
+            "pref_name": "Aurora kinase A/Targeting protein for Xklp2",
+            "organism": "Homo sapiens"
+          }
+        ]
+      }
+    },
+    "hgnc_rest": {
+      "url": "https://rest.genenames.org/fetch/symbol/TPX2",
+      "data": [
+        {
+          "symbol": "TPX2",
+          "hgnc_id": "HGNC:1249",
+          "entrez_id": "22974",
+          "ensembl_gene_id": "ENSG00000088325",
+          "status": "Approved"
+        }
+      ]
+    },
+    "gtex_reference": {
+      "url": "https://gtexportal.org/api/v2/reference/gene?geneId=TPX2",
+      "data": [
+        {
+          "geneSymbol": "TPX2",
+          "geneId": null,
+          "gencodeId": "ENSG00000088325.15",
+          "entrezGeneId": 22974
+        }
+      ]
+    },
+    "reactome": {
+      "url": "https://reactome.org/ContentService/data/mapping/UniProt/Q9ULW0/pathways",
+      "data": [
+        {
+          "stId": "R-HSA-6804756",
+          "displayName": "Regulation of TP53 Activity through Phosphorylation",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-8854518",
+          "displayName": "AURKA Activation by TPX2",
+          "speciesName": "Homo sapiens"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,102 @@
+{
+  "gene": "TTK",
+  "module": "M6_cell_state_g2m",
+  "prereg": "projects/interstitial_cystitis/prereg/ic_p48_module_genesets.json",
+  "retrieved_at_utc": "2026-09-25T19:46:45.093385+00:00",
+  "sources": {
+    "ensembl": {
+      "url": "https://rest.ensembl.org/lookup/symbol/homo_sapiens/TTK?content-type=application/json",
+      "data": {
+        "id": "ENSG00000112742",
+        "display_name": "TTK",
+        "description": "TTK protein kinase [Source:HGNC Symbol;Acc:HGNC:12401]",
+        "biotype": "protein_coding",
+        "seq_region_name": "6"
+      }
+    },
+    "uniprot": {
+      "url": "https://rest.uniprot.org/uniprotkb/search?query=gene_exact%3ATTK%20AND%20organism_id%3A9606%20AND%20reviewed%3Atrue&size=3&format=json",
+      "error": "HTTP Error 503: Backend fetch failed"
+    },
+    "europe_pmc": {
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=TTK%20AND%20%22interstitial%20cystitis%22&format=json&pageSize=10",
+      "data": {
+        "hit_count": 2,
+        "papers": [
+          {
+            "id": "34337466",
+            "title": "Robotic Management of Pelvic Lipomatosis-Experience with Difficulties Encountered and the Techniques to Successful Outcomes.",
+            "doi": "10.1016/j.euros.2020.08.004",
+            "pubYear": "2020"
+          },
+          {
+            "id": "37160297",
+            "title": "Antidepressants for pain management in adults with chronic pain: a network meta-analysis.",
+            "doi": "10.1002/14651858.cd014682.pub2",
+            "pubYear": "2023"
+          }
+        ]
+      }
+    },
+    "mygene": {
+      "url": "https://mygene.info/v3/query?q=symbol%3ATTK&species=human&size=3",
+      "data": {
+        "total": 1,
+        "hits": [
+          {
+            "_id": "7272",
+            "symbol": "TTK",
+            "name": "TTK protein kinase",
+            "taxid": 9606
+          }
+        ]
+      }
+    },
+    "chembl": {
+      "url": "https://www.ebi.ac.uk/chembl/api/data/target/search.json?q=TTK&limit=20",
+      "data": {
+        "total": 3,
+        "human_targets": [
+          {
+            "target_chembl_id": "CHEMBL3983",
+            "pref_name": "Dual specificity protein kinase TTK",
+            "organism": "Homo sapiens"
+          },
+          {
+            "target_chembl_id": "CHEMBL6177901",
+            "pref_name": "Protein cereblon/Dual specificity protein kinase TTK",
+            "organism": "Homo sapiens"
+          },
+          {
+            "target_chembl_id": "CHEMBL6193796",
+            "pref_name": "von Hippel-Lindau disease tumor suppressor/Dual specificity protein kinase TTK",
+            "organism": "Homo sapiens"
+          }
+        ]
+      }
+    },
+    "hgnc_rest": {
+      "url": "https://rest.genenames.org/fetch/symbol/TTK",
+      "data": [
+        {
+          "symbol": "TTK",
+          "hgnc_id": "HGNC:12401",
+          "entrez_id": "7272",
+          "ensembl_gene_id": "ENSG00000112742",
+          "status": "Approved"
+        }
+      ]
+    },
+    "gtex_reference": {
+      "url": "https://gtexportal.org/api/v2/reference/gene?geneId=TTK",
+      "data": [
+        {
+          "geneSymbol": "TTK",
+          "geneId": null,
+          "gencodeId": "ENSG00000112742.9",
+          "entrezGeneId": 7272
+        }
+      ]
+    }
+  }
+}

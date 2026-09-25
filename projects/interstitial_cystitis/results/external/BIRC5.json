@@ -1,0 +1,195 @@
+{
+  "gene": "BIRC5",
+  "module": "M6_cell_state_g2m",
+  "prereg": "projects/interstitial_cystitis/prereg/ic_p48_module_genesets.json",
+  "retrieved_at_utc": "2026-09-25T19:45:28.122797+00:00",
+  "sources": {
+    "ensembl": {
+      "url": "https://rest.ensembl.org/lookup/symbol/homo_sapiens/BIRC5?content-type=application/json",
+      "data": {
+        "id": "ENSG00000089685",
+        "display_name": "BIRC5",
+        "description": "baculoviral IAP repeat containing 5 [Source:HGNC Symbol;Acc:HGNC:593]",
+        "biotype": "protein_coding",
+        "seq_region_name": "17"
+      }
+    },
+    "uniprot": {
+      "url": "https://rest.uniprot.org/uniprotkb/search?query=gene_exact%3ABIRC5%20AND%20organism_id%3A9606%20AND%20reviewed%3Atrue&size=3&format=json",
+      "data": [
+        {
+          "primaryAccession": "O15392",
+          "uniProtkbId": "BIRC5_HUMAN",
+          "entryType": "UniProtKB reviewed (Swiss-Prot)"
+        }
+      ]
+    },
+    "europe_pmc": {
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=BIRC5%20AND%20%22interstitial%20cystitis%22&format=json&pageSize=10",
+      "data": {
+        "hit_count": 9,
+        "papers": [
+          {
+            "id": "36944905",
+            "title": "A network map of cytoskeleton-associated protein 4 (CKAP4) mediated signaling pathway in cancer.",
+            "doi": "10.1007/s12079-023-00739-w",
+            "pubYear": "2023"
+          },
+          {
+            "id": "41080567",
+            "title": "Bladder cancer immunotherapy parallel advances in BCG optimization and next-generation vaccine platforms.",
+            "doi": "10.3389/fimmu.2025.1648698",
+            "pubYear": "2025"
+          },
+          {
+            "id": "33916038",
+            "title": "Noninvasive Urine-Based Tests to Diagnose or Detect Recurrence of Bladder Cancer.",
+            "doi": "10.3390/cancers13071650",
+            "pubYear": "2021"
+          },
+          {
+            "id": "32438606",
+            "title": "Exosomal Long Non-Coding RNAs in Lung Diseases.",
+            "doi": "10.3390/ijms21103580",
+            "pubYear": "2020"
+          },
+          {
+            "id": "24222663",
+            "title": "Surface-modified nanoparticles enhance transurothelial penetration and delivery of survivin siRNA in treating bladder cancer.",
+            "doi": "10.1158/1535-7163.mct-13-0502",
+            "pubYear": "2014"
+          },
+          {
+            "id": "34448894",
+            "title": "33&lt;sup&gt;rd&lt;/sup&gt; European Congress of Pathology - Abstracts.",
+            "doi": "10.1007/s00428-021-03157-8",
+            "pubYear": "2021"
+          },
+          {
+            "id": "25769533",
+            "title": "Abstracts of the 62nd Annual Scientific Meeting, March 26-28, 2015, San Francisco, California.",
+            "doi": "10.1177/1933719115579631",
+            "pubYear": "2015"
+          },
+          {
+            "id": "PMC10902613",
+            "title": "Abstracts",
+            "doi": null,
+            "pubYear": "2024"
+          },
+          {
+            "id": "24085684",
+            "title": "Abstracts of the 2013 Annual Meeting of the American College of Rheumatology. October 25-30, 2013. San Diego, California, USA.",
+            "doi": "10.1002/art.38216",
+            "pubYear": "2013"
+          }
+        ]
+      }
+    },
+    "mygene": {
+      "url": "https://mygene.info/v3/query?q=symbol%3ABIRC5&species=human&size=3",
+      "data": {
+        "total": 1,
+        "hits": [
+          {
+            "_id": "332",
+            "symbol": "BIRC5",
+            "name": "baculoviral IAP repeat containing 5",
+            "taxid": 9606
+          }
+        ]
+      }
+    },
+    "chembl": {
+      "url": "https://www.ebi.ac.uk/chembl/api/data/target/search.json?q=BIRC5&limit=20",
+      "data": {
+        "total": 1,
+        "human_targets": [
+          {
+            "target_chembl_id": "CHEMBL5989",
+            "pref_name": "Baculoviral IAP repeat-containing protein 5",
+            "organism": "Homo sapiens"
+          }
+        ]
+      }
+    },
+    "hgnc_rest": {
+      "url": "https://rest.genenames.org/fetch/symbol/BIRC5",
+      "data": [
+        {
+          "symbol": "BIRC5",
+          "hgnc_id": "HGNC:593",
+          "entrez_id": "332",
+          "ensembl_gene_id": "ENSG00000089685",
+          "status": "Approved"
+        }
+      ]
+    },
+    "gtex_reference": {
+      "url": "https://gtexportal.org/api/v2/reference/gene?geneId=BIRC5",
+      "data": [
+        {
+          "geneSymbol": "BIRC5",
+          "geneId": null,
+          "gencodeId": "ENSG00000089685.14",
+          "entrezGeneId": 332
+        }
+      ]
+    },
+    "reactome": {
+      "url": "https://reactome.org/ContentService/data/mapping/UniProt/O15392/pathways",
+      "data": [
+        {
+          "stId": "R-HSA-141444",
+          "displayName": "Amplification  of signal from unattached  kinetochores via a MAD2  inhibitory signal",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-2467813",
+          "displayName": "Separation of Sister Chromatids",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-2500257",
+          "displayName": "Resolution of Sister Chromatid Cohesion",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-4615885",
+          "displayName": "SUMOylation of DNA replication proteins",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-5663220",
+          "displayName": "RHO GTPases Activate Formins",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-6785807",
+          "displayName": "Interleukin-4 and Interleukin-13 signaling",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-6803205",
+          "displayName": "TP53 regulates transcription of several additional cell death genes whose specific roles in p53-dependent apoptosis remain uncertain",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-68877",
+          "displayName": "Mitotic Prometaphase",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-8951664",
+          "displayName": "Neddylation",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-9648025",
+          "displayName": "EML4 and NUDC in mitotic spindle formation",
+          "speciesName": "Homo sapiens"
+        }
+      ]
+    }
+  }
+}

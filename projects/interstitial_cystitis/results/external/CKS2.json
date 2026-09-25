@@ -1,0 +1,104 @@
+{
+  "gene": "CKS2",
+  "module": "M6_cell_state_g2m",
+  "prereg": "projects/interstitial_cystitis/prereg/ic_p48_module_genesets.json",
+  "retrieved_at_utc": "2026-09-25T19:48:40.286660+00:00",
+  "sources": {
+    "ensembl": {
+      "url": "https://rest.ensembl.org/lookup/symbol/homo_sapiens/CKS2?content-type=application/json",
+      "error": "The read operation timed out"
+    },
+    "uniprot": {
+      "url": "https://rest.uniprot.org/uniprotkb/search?query=gene_exact%3ACKS2%20AND%20organism_id%3A9606%20AND%20reviewed%3Atrue&size=3&format=json",
+      "data": [
+        {
+          "primaryAccession": "P33552",
+          "uniProtkbId": "CKS2_HUMAN",
+          "entryType": "UniProtKB reviewed (Swiss-Prot)"
+        }
+      ]
+    },
+    "europe_pmc": {
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=CKS2%20AND%20%22interstitial%20cystitis%22&format=json&pageSize=10",
+      "data": {
+        "hit_count": 3,
+        "papers": [
+          {
+            "id": "42121909",
+            "title": "Mosaic: Single-Cell Atlas of Stress.",
+            "doi": "10.3390/cells15090807",
+            "pubYear": "2026"
+          },
+          {
+            "id": "PMC7130291",
+            "title": "Subject Index",
+            "doi": null,
+            "pubYear": "2007"
+          },
+          {
+            "id": "17174306",
+            "title": "hnRNP-U enhances the expression of specific genes by stabilizing mRNA.",
+            "doi": "10.1016/j.febslet.2006.11.062",
+            "pubYear": "2007"
+          }
+        ]
+      }
+    },
+    "mygene": {
+      "url": "https://mygene.info/v3/query?q=symbol%3ACKS2&species=human&size=3",
+      "data": {
+        "total": 1,
+        "hits": [
+          {
+            "_id": "1164",
+            "symbol": "CKS2",
+            "name": "CDC28 protein kinase regulatory subunit 2",
+            "taxid": 9606
+          }
+        ]
+      }
+    },
+    "chembl": {
+      "url": "https://www.ebi.ac.uk/chembl/api/data/target/search.json?q=CKS2&limit=20",
+      "data": {
+        "total": 1,
+        "human_targets": [
+          {
+            "target_chembl_id": "CHEMBL6066381",
+            "pref_name": "Cyclin-dependent kinases regulatory subunit 2",
+            "organism": "Homo sapiens"
+          }
+        ]
+      }
+    },
+    "hgnc_rest": {
+      "url": "https://rest.genenames.org/fetch/symbol/CKS2",
+      "data": [
+        {
+          "symbol": "CKS2",
+          "hgnc_id": "HGNC:2000",
+          "entrez_id": "1164",
+          "ensembl_gene_id": "ENSG00000123975",
+          "status": "Approved"
+        }
+      ]
+    },
+    "gtex_reference": {
+      "url": "https://gtexportal.org/api/v2/reference/gene?geneId=CKS2",
+      "data": [
+        {
+          "geneSymbol": "CKS2",
+          "geneId": null,
+          "gencodeId": "ENSG00000123975.4",
+          "entrezGeneId": 1164
+        }
+      ]
+    },
+    "reactome": {
+      "url": "https://reactome.org/ContentService/data/mapping/UniProt/P33552/pathways",
+      "data": {
+        "error": "HTTP Error 404: Not Found"
+      }
+    }
+  }
+}

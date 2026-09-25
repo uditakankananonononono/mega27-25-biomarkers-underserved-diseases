@@ -1,0 +1,100 @@
+{
+  "gene": "SMC4",
+  "module": "M6_cell_state_g2m",
+  "prereg": "projects/interstitial_cystitis/prereg/ic_p48_module_genesets.json",
+  "retrieved_at_utc": "2026-09-25T19:50:29.484176+00:00",
+  "sources": {
+    "ensembl": {
+      "url": "https://rest.ensembl.org/lookup/symbol/homo_sapiens/SMC4?content-type=application/json",
+      "data": {
+        "id": "ENSG00000113810",
+        "display_name": "SMC4",
+        "description": "structural maintenance of chromosomes 4 [Source:HGNC Symbol;Acc:HGNC:14013]",
+        "biotype": "protein_coding",
+        "seq_region_name": "3"
+      }
+    },
+    "uniprot": {
+      "url": "https://rest.uniprot.org/uniprotkb/search?query=gene_exact%3ASMC4%20AND%20organism_id%3A9606%20AND%20reviewed%3Atrue&size=3&format=json",
+      "data": [
+        {
+          "primaryAccession": "Q9NTJ3",
+          "uniProtkbId": "SMC4_HUMAN",
+          "entryType": "UniProtKB reviewed (Swiss-Prot)"
+        }
+      ]
+    },
+    "europe_pmc": {
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=SMC4%20AND%20%22interstitial%20cystitis%22&format=json&pageSize=10",
+      "data": {
+        "hit_count": 0,
+        "papers": []
+      }
+    },
+    "mygene": {
+      "url": "https://mygene.info/v3/query?q=symbol%3ASMC4&species=human&size=3",
+      "data": {
+        "total": 1,
+        "hits": [
+          {
+            "_id": "10051",
+            "symbol": "SMC4",
+            "name": "structural maintenance of chromosomes 4",
+            "taxid": 9606
+          }
+        ]
+      }
+    },
+    "chembl": {
+      "url": "https://www.ebi.ac.uk/chembl/api/data/target/search.json?q=SMC4&limit=20",
+      "data": {
+        "total": 1,
+        "human_targets": [
+          {
+            "target_chembl_id": "CHEMBL5725092",
+            "pref_name": "Structural maintenance of chromosomes protein 4",
+            "organism": "Homo sapiens"
+          }
+        ]
+      }
+    },
+    "hgnc_rest": {
+      "url": "https://rest.genenames.org/fetch/symbol/SMC4",
+      "data": [
+        {
+          "symbol": "SMC4",
+          "hgnc_id": "HGNC:14013",
+          "entrez_id": "10051",
+          "ensembl_gene_id": "ENSG00000113810",
+          "status": "Approved"
+        }
+      ]
+    },
+    "gtex_reference": {
+      "url": "https://gtexportal.org/api/v2/reference/gene?geneId=SMC4",
+      "data": [
+        {
+          "geneSymbol": "SMC4",
+          "geneId": null,
+          "gencodeId": "ENSG00000113810.15",
+          "entrezGeneId": 10051
+        }
+      ]
+    },
+    "reactome": {
+      "url": "https://reactome.org/ContentService/data/mapping/UniProt/Q9NTJ3/pathways",
+      "data": [
+        {
+          "stId": "R-HSA-2299718",
+          "displayName": "Condensation of Prophase Chromosomes",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-2514853",
+          "displayName": "Condensation of Prometaphase Chromosomes",
+          "speciesName": "Homo sapiens"
+        }
+      ]
+    }
+  }
+}

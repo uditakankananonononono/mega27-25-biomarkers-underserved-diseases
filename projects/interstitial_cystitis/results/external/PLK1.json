@@ -1,0 +1,266 @@
+{
+  "gene": "PLK1",
+  "module": "M6_cell_state_g2m",
+  "prereg": "projects/interstitial_cystitis/prereg/ic_p48_module_genesets.json",
+  "retrieved_at_utc": "2026-09-25T19:45:58.312302+00:00",
+  "sources": {
+    "ensembl": {
+      "url": "https://rest.ensembl.org/lookup/symbol/homo_sapiens/PLK1?content-type=application/json",
+      "error": "The read operation timed out"
+    },
+    "uniprot": {
+      "url": "https://rest.uniprot.org/uniprotkb/search?query=gene_exact%3APLK1%20AND%20organism_id%3A9606%20AND%20reviewed%3Atrue&size=3&format=json",
+      "data": [
+        {
+          "primaryAccession": "P53350",
+          "uniProtkbId": "PLK1_HUMAN",
+          "entryType": "UniProtKB reviewed (Swiss-Prot)"
+        }
+      ]
+    },
+    "europe_pmc": {
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=PLK1%20AND%20%22interstitial%20cystitis%22&format=json&pageSize=10",
+      "data": {
+        "hit_count": 6,
+        "papers": [
+          {
+            "id": "40207138",
+            "title": "Pathogenic effects of &lt;i&gt;Streptococcus oralis&lt;/i&gt; intestinal colonization on bladder health in mice.",
+            "doi": "10.1016/j.crmicr.2025.100375",
+            "pubYear": "2025"
+          },
+          {
+            "id": "41680842",
+            "title": "Multi-tyrosine kinase inhibitors: exploring immunomodulatory effects on various immune cell types in cancer.",
+            "doi": "10.1186/s12935-025-04141-x",
+            "pubYear": "2026"
+          },
+          {
+            "id": "18369709",
+            "title": "Intravesical treatments of bladder cancer: review.",
+            "doi": "10.1007/s11095-008-9566-7",
+            "pubYear": "2008"
+          },
+          {
+            "id": "PMC10902613",
+            "title": "Abstracts",
+            "doi": null,
+            "pubYear": "2024"
+          },
+          {
+            "id": "20405294",
+            "title": "Total laparoscopic radical hysterectomy for cervical cancer in prolapsed uterus.",
+            "doi": "10.1007/s00404-010-1472-7",
+            "pubYear": "2010"
+          },
+          {
+            "id": "PMC7163937",
+            "title": "Poster Sessions",
+            "doi": null,
+            "pubYear": "2014"
+          }
+        ]
+      }
+    },
+    "mygene": {
+      "url": "https://mygene.info/v3/query?q=symbol%3APLK1&species=human&size=3",
+      "data": {
+        "total": 1,
+        "hits": [
+          {
+            "_id": "5347",
+            "symbol": "PLK1",
+            "name": "polo like kinase 1",
+            "taxid": 9606
+          }
+        ]
+      }
+    },
+    "chembl": {
+      "url": "https://www.ebi.ac.uk/chembl/api/data/target/search.json?q=PLK1&limit=20",
+      "data": {
+        "total": 8,
+        "human_targets": [
+          {
+            "target_chembl_id": "CHEMBL3024",
+            "pref_name": "Serine/threonine-protein kinase PLK1",
+            "organism": "Homo sapiens"
+          },
+          {
+            "target_chembl_id": "CHEMBL4742280",
+            "pref_name": "Protein cereblon/Serine/threonine-protein kinase PLK1",
+            "organism": "Homo sapiens"
+          },
+          {
+            "target_chembl_id": "CHEMBL6195529",
+            "pref_name": "von Hippel-Lindau disease tumor suppressor/Serine/threonine-protein kinase PLK1",
+            "organism": "Homo sapiens"
+          },
+          {
+            "target_chembl_id": "CHEMBL4295893",
+            "pref_name": "Mitotic interactor and substrate of PLK1",
+            "organism": "Homo sapiens"
+          },
+          {
+            "target_chembl_id": "CHEMBL5724695",
+            "pref_name": "DNA excision repair protein ERCC-6-like",
+            "organism": "Homo sapiens"
+          }
+        ]
+      }
+    },
+    "hgnc_rest": {
+      "url": "https://rest.genenames.org/fetch/symbol/PLK1",
+      "data": [
+        {
+          "symbol": "PLK1",
+          "hgnc_id": "HGNC:9077",
+          "entrez_id": "5347",
+          "ensembl_gene_id": "ENSG00000166851",
+          "status": "Approved"
+        }
+      ]
+    },
+    "gtex_reference": {
+      "url": "https://gtexportal.org/api/v2/reference/gene?geneId=PLK1",
+      "data": [
+        {
+          "geneSymbol": "PLK1",
+          "geneId": null,
+          "gencodeId": "ENSG00000166851.14",
+          "entrezGeneId": 5347
+        }
+      ]
+    },
+    "reactome": {
+      "url": "https://reactome.org/ContentService/data/mapping/UniProt/P53350/pathways",
+      "data": [
+        {
+          "stId": "R-HSA-141444",
+          "displayName": "Amplification  of signal from unattached  kinetochores via a MAD2  inhibitory signal",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-156711",
+          "displayName": "Polo-like kinase mediated events",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-162658",
+          "displayName": "Golgi Cisternae Pericentriolar Stack Reorganization",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-174178",
+          "displayName": "APC/C:Cdh1 mediated degradation of Cdc20 and other APC/C:Cdh1 targeted proteins in late mitosis/early G1",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-176412",
+          "displayName": "Phosphorylation of the APC/C",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-176417",
+          "displayName": "Phosphorylation of Emi1",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-2299718",
+          "displayName": "Condensation of Prophase Chromosomes",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-2467813",
+          "displayName": "Separation of Sister Chromatids",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-2500257",
+          "displayName": "Resolution of Sister Chromatid Cohesion",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-2565942",
+          "displayName": "Regulation of PLK1 Activity at G2/M Transition",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-2980767",
+          "displayName": "Activation of NIMA Kinases NEK9, NEK6, NEK7",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-380259",
+          "displayName": "Loss of Nlp from mitotic centrosomes",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-380270",
+          "displayName": "Recruitment of mitotic centrosome proteins and complexes",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-380284",
+          "displayName": "Loss of proteins required for interphase microtubule organization from the centrosome",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-380320",
+          "displayName": "Recruitment of NuMA to mitotic centrosomes",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-5620912",
+          "displayName": "Anchoring of the basal body to the plasma membrane",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-5663220",
+          "displayName": "RHO GTPases Activate Formins",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-68877",
+          "displayName": "Mitotic Prometaphase",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-68881",
+          "displayName": "Mitotic Metaphase/Anaphase Transition",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-68884",
+          "displayName": "Mitotic Telophase/Cytokinesis",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-69273",
+          "displayName": "Cyclin A/B1/B2 associated events during G2/M transition",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-8852276",
+          "displayName": "The role of GTSE1 in G2/M progression after G2 checkpoint",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-8854518",
+          "displayName": "AURKA Activation by TPX2",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-9648025",
+          "displayName": "EML4 and NUDC in mitotic spindle formation",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-9825892",
+          "displayName": "Regulation of MITF-M-dependent genes involved in cell cycle and proliferation",
+          "speciesName": "Homo sapiens"
+        }
+      ]
+    }
+  }
+}

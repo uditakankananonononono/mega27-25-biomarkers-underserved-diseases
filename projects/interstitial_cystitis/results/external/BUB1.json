@@ -1,0 +1,144 @@
+{
+  "gene": "BUB1",
+  "module": "M6_cell_state_g2m",
+  "prereg": "projects/interstitial_cystitis/prereg/ic_p48_module_genesets.json",
+  "retrieved_at_utc": "2026-09-25T19:50:48.935771+00:00",
+  "sources": {
+    "ensembl": {
+      "url": "https://rest.ensembl.org/lookup/symbol/homo_sapiens/BUB1?content-type=application/json",
+      "data": {
+        "id": "ENSG00000169679",
+        "display_name": "BUB1",
+        "description": "BUB1 mitotic checkpoint serine/threonine kinase [Source:HGNC Symbol;Acc:HGNC:1148]",
+        "biotype": "protein_coding",
+        "seq_region_name": "2"
+      }
+    },
+    "uniprot": {
+      "url": "https://rest.uniprot.org/uniprotkb/search?query=gene_exact%3ABUB1%20AND%20organism_id%3A9606%20AND%20reviewed%3Atrue&size=3&format=json",
+      "data": [
+        {
+          "primaryAccession": "O43683",
+          "uniProtkbId": "BUB1_HUMAN",
+          "entryType": "UniProtKB reviewed (Swiss-Prot)"
+        }
+      ]
+    },
+    "europe_pmc": {
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=BUB1%20AND%20%22interstitial%20cystitis%22&format=json&pageSize=10",
+      "data": {
+        "hit_count": 3,
+        "papers": [
+          {
+            "id": "33597717",
+            "title": "RCL1 copy number variants are associated with a range of neuropsychiatric phenotypes.",
+            "doi": "10.1038/s41380-021-01035-y",
+            "pubYear": "2021"
+          },
+          {
+            "id": "42650215",
+            "title": "Functional Foods and Micro- and Nanoplastics: Advances in Precision Nutritional Medicine for Oral-Gut-Brain Axis Health.",
+            "doi": "10.3390/antiox15080951",
+            "pubYear": "2026"
+          },
+          {
+            "id": "21159190",
+            "title": "Comparative gene expression profiling analysis of urothelial carcinoma of the renal pelvis and bladder.",
+            "doi": "10.1186/1755-8794-3-58",
+            "pubYear": "2010"
+          }
+        ]
+      }
+    },
+    "mygene": {
+      "url": "https://mygene.info/v3/query?q=symbol%3ABUB1&species=human&size=3",
+      "data": {
+        "total": 1,
+        "hits": [
+          {
+            "_id": "699",
+            "symbol": "BUB1",
+            "name": "BUB1 mitotic checkpoint serine/threonine kinase",
+            "taxid": 9606
+          }
+        ]
+      }
+    },
+    "chembl": {
+      "url": "https://www.ebi.ac.uk/chembl/api/data/target/search.json?q=BUB1&limit=20",
+      "data": {
+        "total": 2,
+        "human_targets": [
+          {
+            "target_chembl_id": "CHEMBL1772932",
+            "pref_name": "Mitotic checkpoint serine/threonine-protein kinase BUB1",
+            "organism": "Homo sapiens"
+          },
+          {
+            "target_chembl_id": "CHEMBL4295998",
+            "pref_name": "Mitotic checkpoint serine/threonine-protein kinase BUB1 beta",
+            "organism": "Homo sapiens"
+          }
+        ]
+      }
+    },
+    "hgnc_rest": {
+      "url": "https://rest.genenames.org/fetch/symbol/BUB1",
+      "data": [
+        {
+          "symbol": "BUB1",
+          "hgnc_id": "HGNC:1148",
+          "entrez_id": "699",
+          "ensembl_gene_id": "ENSG00000169679",
+          "status": "Approved"
+        }
+      ]
+    },
+    "gtex_reference": {
+      "url": "https://gtexportal.org/api/v2/reference/gene?geneId=BUB1",
+      "data": [
+        {
+          "geneSymbol": "BUB1",
+          "geneId": null,
+          "gencodeId": "ENSG00000169679.14",
+          "entrezGeneId": 699
+        }
+      ]
+    },
+    "reactome": {
+      "url": "https://reactome.org/ContentService/data/mapping/UniProt/O43683/pathways",
+      "data": [
+        {
+          "stId": "R-HSA-141444",
+          "displayName": "Amplification  of signal from unattached  kinetochores via a MAD2  inhibitory signal",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-2467813",
+          "displayName": "Separation of Sister Chromatids",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-2500257",
+          "displayName": "Resolution of Sister Chromatid Cohesion",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-5663220",
+          "displayName": "RHO GTPases Activate Formins",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-68877",
+          "displayName": "Mitotic Prometaphase",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-9648025",
+          "displayName": "EML4 and NUDC in mitotic spindle formation",
+          "speciesName": "Homo sapiens"
+        }
+      ]
+    }
+  }
+}

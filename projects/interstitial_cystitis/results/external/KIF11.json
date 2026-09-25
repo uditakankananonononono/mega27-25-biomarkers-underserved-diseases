@@ -1,0 +1,133 @@
+{
+  "gene": "KIF11",
+  "module": "M6_cell_state_g2m",
+  "prereg": "projects/interstitial_cystitis/prereg/ic_p48_module_genesets.json",
+  "retrieved_at_utc": "2026-09-25T19:47:42.280220+00:00",
+  "sources": {
+    "ensembl": {
+      "url": "https://rest.ensembl.org/lookup/symbol/homo_sapiens/KIF11?content-type=application/json",
+      "data": {
+        "id": "ENSG00000138160",
+        "display_name": "KIF11",
+        "description": "kinesin family member 11 [Source:HGNC Symbol;Acc:HGNC:6388]",
+        "biotype": "protein_coding",
+        "seq_region_name": "10"
+      }
+    },
+    "uniprot": {
+      "url": "https://rest.uniprot.org/uniprotkb/search?query=gene_exact%3AKIF11%20AND%20organism_id%3A9606%20AND%20reviewed%3Atrue&size=3&format=json",
+      "data": [
+        {
+          "primaryAccession": "P52732",
+          "uniProtkbId": "KIF11_HUMAN",
+          "entryType": "UniProtKB reviewed (Swiss-Prot)"
+        }
+      ]
+    },
+    "europe_pmc": {
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=KIF11%20AND%20%22interstitial%20cystitis%22&format=json&pageSize=10",
+      "data": {
+        "hit_count": 2,
+        "papers": [
+          {
+            "id": "41485159",
+            "title": "Inflammation-associated immune-related genes as potential biomarkers for the diagnosis of interstitial cystitis.",
+            "doi": "10.1007/s10238-025-02032-z",
+            "pubYear": "2026"
+          },
+          {
+            "id": "41303269",
+            "title": "Mitochondrial Macular Dystrophy-A Case Report and Mini Review of Retinal Dystrophies.",
+            "doi": "10.3390/jcm14228236",
+            "pubYear": "2025"
+          }
+        ]
+      }
+    },
+    "mygene": {
+      "url": "https://mygene.info/v3/query?q=symbol%3AKIF11&species=human&size=3",
+      "data": {
+        "total": 1,
+        "hits": [
+          {
+            "_id": "3832",
+            "symbol": "KIF11",
+            "name": "kinesin family member 11",
+            "taxid": 9606
+          }
+        ]
+      }
+    },
+    "chembl": {
+      "url": "https://www.ebi.ac.uk/chembl/api/data/target/search.json?q=KIF11&limit=20",
+      "data": {
+        "total": 4,
+        "human_targets": [
+          {
+            "target_chembl_id": "CHEMBL4581",
+            "pref_name": "Kinesin-like protein KIF11",
+            "organism": "Homo sapiens"
+          },
+          {
+            "target_chembl_id": "CHEMBL6195559",
+            "pref_name": "Protein cereblon/Kinesin-like protein KIF11",
+            "organism": "Homo sapiens"
+          },
+          {
+            "target_chembl_id": "CHEMBL6193844",
+            "pref_name": "LC3/Kinesin-like protein KIF11",
+            "organism": "Homo sapiens"
+          }
+        ]
+      }
+    },
+    "hgnc_rest": {
+      "url": "https://rest.genenames.org/fetch/symbol/KIF11",
+      "data": [
+        {
+          "symbol": "KIF11",
+          "hgnc_id": "HGNC:6388",
+          "entrez_id": "3832",
+          "ensembl_gene_id": "ENSG00000138160",
+          "status": "Approved"
+        }
+      ]
+    },
+    "gtex_reference": {
+      "url": "https://gtexportal.org/api/v2/reference/gene?geneId=KIF11",
+      "data": [
+        {
+          "geneSymbol": "KIF11",
+          "geneId": null,
+          "gencodeId": "ENSG00000138160.5",
+          "entrezGeneId": 3832
+        }
+      ]
+    },
+    "reactome": {
+      "url": "https://reactome.org/ContentService/data/mapping/UniProt/P52732/pathways",
+      "data": [
+        {
+          "stId": "R-HSA-2132295",
+          "displayName": "MHC class II antigen presentation",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-6811434",
+          "displayName": "COPI-dependent Golgi-to-ER retrograde traffic",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-983189",
+          "displayName": "Kinesins",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-9979719",
+          "displayName": "Processing of antigen in germinal center B cells",
+          "speciesName": "Homo sapiens"
+        }
+      ]
+    }
+  }
+}

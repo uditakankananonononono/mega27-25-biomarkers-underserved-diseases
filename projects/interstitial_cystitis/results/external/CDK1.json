@@ -1,0 +1,396 @@
+{
+  "gene": "CDK1",
+  "module": "M6_cell_state_g2m",
+  "prereg": "projects/interstitial_cystitis/prereg/ic_p48_module_genesets.json",
+  "retrieved_at_utc": "2026-09-25T19:53:49.873358+00:00",
+  "sources": {
+    "ensembl": {
+      "url": "https://rest.ensembl.org/lookup/symbol/homo_sapiens/CDK1?content-type=application/json",
+      "data": {
+        "id": "ENSG00000170312",
+        "display_name": "CDK1",
+        "description": "cyclin dependent kinase 1 [Source:HGNC Symbol;Acc:HGNC:1722]",
+        "biotype": "protein_coding",
+        "seq_region_name": "10"
+      }
+    },
+    "uniprot": {
+      "url": "https://rest.uniprot.org/uniprotkb/search?query=gene_exact%3ACDK1%20AND%20organism_id%3A9606%20AND%20reviewed%3Atrue&size=3&format=json",
+      "data": [
+        {
+          "primaryAccession": "P06493",
+          "uniProtkbId": "CDK1_HUMAN",
+          "entryType": "UniProtKB reviewed (Swiss-Prot)"
+        }
+      ]
+    },
+    "europe_pmc": {
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=CDK1%20AND%20%22interstitial%20cystitis%22&format=json&pageSize=10",
+      "data": {
+        "hit_count": 31,
+        "papers": [
+          {
+            "id": "41485159",
+            "title": "Inflammation-associated immune-related genes as potential biomarkers for the diagnosis of interstitial cystitis.",
+            "doi": "10.1007/s10238-025-02032-z",
+            "pubYear": "2026"
+          },
+          {
+            "id": "41131355",
+            "title": "Re: \"Regulation of Autophagy by the Cdk1/p53/p21 Feedback Loop in an Interstitial Cystitis/Bladder Pain Syndrome Cell Model: Implications for Inflammatory Response\".",
+            "doi": "10.1007/s00192-025-06326-4",
+            "pubYear": "2026"
+          },
+          {
+            "id": "40447865",
+            "title": "Regulation of Autophagy by the Cdk1/p53/p21 Feedback Loop in an Interstitial Cystitis/Bladder Pain Syndrome Cell Model: Implications for Inflammatory Response.",
+            "doi": "10.1007/s00192-025-06169-z",
+            "pubYear": "2025"
+          },
+          {
+            "id": "38880159",
+            "title": "Cdk1/p53/p21 feedback loop mechanisms in the pathogenesis of interstitial cystitis/bladder pain syndrome.",
+            "doi": "10.1016/j.bbadis.2024.167305",
+            "pubYear": "2024"
+          },
+          {
+            "id": "42473557",
+            "title": "Biomaterials and Nanomedicine for Mucosal Repair and Inflammation Control in Interstitial Cystitis/Bladder Pain Syndrome: An Extensive Review.",
+            "doi": "10.2147/ijn.s617670",
+            "pubYear": "2026"
+          },
+          {
+            "id": "34861510",
+            "title": "Intravital imaging and single cell transcriptomic analysis for engraftment of mesenchymal stem cells in an animal model of interstitial cystitis/bladder pain syndrome.",
+            "doi": "10.1016/j.biomaterials.2021.121277",
+            "pubYear": "2022"
+          },
+          {
+            "id": "34080795",
+            "title": "Cyclin-dependent kinase 1 shows to be a potential genetic target for chemical cystitis.",
+            "doi": "10.1002/iid3.454",
+            "pubYear": "2021"
+          },
+          {
+            "id": "36944905",
+            "title": "A network map of cytoskeleton-associated protein 4 (CKAP4) mediated signaling pathway in cancer.",
+            "doi": "10.1007/s12079-023-00739-w",
+            "pubYear": "2023"
+          },
+          {
+            "id": "41333774",
+            "title": "Flavonoids: a natural remedy in the prevention and management of diverse diseases.",
+            "doi": "10.3389/fmed.2025.1713869",
+            "pubYear": "2025"
+          },
+          {
+            "id": "38179216",
+            "title": "Stem cells and pain.",
+            "doi": "10.4252/wjsc.v15.i12.1035",
+            "pubYear": "2023"
+          }
+        ]
+      }
+    },
+    "mygene": {
+      "url": "https://mygene.info/v3/query?q=symbol%3ACDK1&species=human&size=3",
+      "data": {
+        "total": 1,
+        "hits": [
+          {
+            "_id": "983",
+            "symbol": "CDK1",
+            "name": "cyclin dependent kinase 1",
+            "taxid": 9606
+          }
+        ]
+      }
+    },
+    "chembl": {
+      "url": "https://www.ebi.ac.uk/chembl/api/data/target/search.json?q=CDK1&limit=20",
+      "data": {
+        "total": 17,
+        "human_targets": [
+          {
+            "target_chembl_id": "CHEMBL4523963",
+            "pref_name": "CDK4/CDK1",
+            "organism": "Homo sapiens"
+          },
+          {
+            "target_chembl_id": "CHEMBL308",
+            "pref_name": "Cyclin-dependent kinase 1",
+            "organism": "Homo sapiens"
+          },
+          {
+            "target_chembl_id": "CHEMBL3038467",
+            "pref_name": "CDK1/Cyclin A",
+            "organism": "Homo sapiens"
+          },
+          {
+            "target_chembl_id": "CHEMBL3038468",
+            "pref_name": "CDK1/Cyclin E",
+            "organism": "Homo sapiens"
+          },
+          {
+            "target_chembl_id": "CHEMBL4296066",
+            "pref_name": "Cyclin-dependent kinase 1/Cyclin A1",
+            "organism": "Homo sapiens"
+          },
+          {
+            "target_chembl_id": "CHEMBL4523683",
+            "pref_name": "Protein cereblon/Cyclin-dependent kinase 1",
+            "organism": "Homo sapiens"
+          },
+          {
+            "target_chembl_id": "CHEMBL5483182",
+            "pref_name": "CDK1/Cyclin A",
+            "organism": "Homo sapiens"
+          },
+          {
+            "target_chembl_id": "CHEMBL5483189",
+            "pref_name": "CDK1/Cyclin E",
+            "organism": "Homo sapiens"
+          },
+          {
+            "target_chembl_id": "CHEMBL1907602",
+            "pref_name": "Cyclin-dependent kinase 1/cyclin B1",
+            "organism": "Homo sapiens"
+          },
+          {
+            "target_chembl_id": "CHEMBL4296065",
+            "pref_name": "Cyclin-dependent kinase 1/ G1/S-specific cyclin-D3",
+            "organism": "Homo sapiens"
+          },
+          {
+            "target_chembl_id": "CHEMBL6066121",
+            "pref_name": "von Hippel-Lindau disease tumor suppressor/Cyclin-dependent kinase 1",
+            "organism": "Homo sapiens"
+          },
+          {
+            "target_chembl_id": "CHEMBL2094127",
+            "pref_name": "Cyclin-dependent kinase 1/cyclin B",
+            "organism": "Homo sapiens"
+          },
+          {
+            "target_chembl_id": "CHEMBL3885551",
+            "pref_name": "Cyclin-dependent kinase 1/G1/S-specific cyclin-D1",
+            "organism": "Homo sapiens"
+          },
+          {
+            "target_chembl_id": "CHEMBL3559691",
+            "pref_name": "Cyclin-dependent kinase",
+            "organism": "Homo sapiens"
+          }
+        ]
+      }
+    },
+    "hgnc_rest": {
+      "url": "https://rest.genenames.org/fetch/symbol/CDK1",
+      "data": [
+        {
+          "symbol": "CDK1",
+          "hgnc_id": "HGNC:1722",
+          "entrez_id": "983",
+          "ensembl_gene_id": "ENSG00000170312",
+          "status": "Approved"
+        }
+      ]
+    },
+    "gtex_reference": {
+      "url": "https://gtexportal.org/api/v2/reference/gene?geneId=CDK1",
+      "data": [
+        {
+          "geneSymbol": "CDK1",
+          "geneId": null,
+          "gencodeId": "ENSG00000170312.15",
+          "entrezGeneId": 983
+        }
+      ]
+    },
+    "reactome": {
+      "url": "https://reactome.org/ContentService/data/mapping/UniProt/P06493/pathways",
+      "data": [
+        {
+          "stId": "R-HSA-110056",
+          "displayName": "MAPK3 (ERK1) activation",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-113507",
+          "displayName": "E2F-enabled inhibition of pre-replication complex formation",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-1362300",
+          "displayName": "Transcription of E2F targets under negative control by p107 (RBL1) and p130 (RBL2) in complex with HDAC1",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-162658",
+          "displayName": "Golgi Cisternae Pericentriolar Stack Reorganization",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-174048",
+          "displayName": "APC/C:Cdc20 mediated degradation of Cyclin B",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-174184",
+          "displayName": "Cdc20:Phospho-APC/C mediated degradation of Cyclin A",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-176408",
+          "displayName": "Regulation of APC/C activators between G1/S and early anaphase",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-176412",
+          "displayName": "Phosphorylation of the APC/C",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-176417",
+          "displayName": "Phosphorylation of Emi1",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-2299718",
+          "displayName": "Condensation of Prophase Chromosomes",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-2465910",
+          "displayName": "MASTL Facilitates Mitotic Progression",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-2500257",
+          "displayName": "Resolution of Sister Chromatid Cohesion",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-2514853",
+          "displayName": "Condensation of Prometaphase Chromosomes",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-2565942",
+          "displayName": "Regulation of PLK1 Activity at G2/M Transition",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-2980767",
+          "displayName": "Activation of NIMA Kinases NEK9, NEK6, NEK7",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-2995383",
+          "displayName": "Initiation of Nuclear Envelope (NE) Reformation",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-3301854",
+          "displayName": "Nuclear Pore Complex (NPC) Disassembly",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-380259",
+          "displayName": "Loss of Nlp from mitotic centrosomes",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-380270",
+          "displayName": "Recruitment of mitotic centrosome proteins and complexes",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-380284",
+          "displayName": "Loss of proteins required for interphase microtubule organization from the centrosome",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-380320",
+          "displayName": "Recruitment of NuMA to mitotic centrosomes",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-4419969",
+          "displayName": "Depolymerization of the Nuclear Lamina",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-5620912",
+          "displayName": "Anchoring of the basal body to the plasma membrane",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-5687128",
+          "displayName": "MAPK6/MAPK4 signaling",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-5689896",
+          "displayName": "Ovarian tumor domain proteases",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-6804114",
+          "displayName": "TP53 Regulates Transcription of Genes Involved in G2 Cell Cycle Arrest",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-6804757",
+          "displayName": "Regulation of TP53 Degradation",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-68875",
+          "displayName": "Mitotic Prophase",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-69205",
+          "displayName": "G1/S-Specific Transcription",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-69273",
+          "displayName": "Cyclin A/B1/B2 associated events during G2/M transition",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-69478",
+          "displayName": "G2/M DNA replication checkpoint",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-75035",
+          "displayName": "Chk1/Chk2(Cds1) mediated inactivation of Cyclin B:Cdk1 complex",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-8852276",
+          "displayName": "The role of GTSE1 in G2/M progression after G2 checkpoint",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-8854518",
+          "displayName": "AURKA Activation by TPX2",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-8878166",
+          "displayName": "Transcriptional regulation by RUNX2",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-9833482",
+          "displayName": "PKR-mediated signaling",
+          "speciesName": "Homo sapiens"
+        }
+      ]
+    }
+  }
+}

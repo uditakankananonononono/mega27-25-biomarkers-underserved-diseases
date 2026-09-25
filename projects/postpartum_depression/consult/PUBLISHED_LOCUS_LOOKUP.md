@@ -1,0 +1,7 @@
+# Published candidate loci, source checked
+
+The original primary paper (Guintivano et al. 2013, open full text https://pmc.ncbi.nlm.nih.gov/articles/PMC7039252/) explicitly names CpGs **cg21326881** (HP1BP3) and **cg00058938** (TTC9B) in the Results section. It reports published results from its own discovery/replication analysis; their coefficients/decision rule and cohort allocation must still be recovered before attempting faithful prediction. Do not call these novel PPD markers or substitute an ad hoc fitted two-probe score for the published model.
+
+The source-verified GSE44132 beta matrix contains 483,266 probe rows and the GSE335141 EPICv2 matrix contains 880,068. Next QC: verify those exact two identifiers in the matrices and their platform annotations, then decide whether published loci can be transported as *measurement comparisons* without implying that postpartum data test prospective antenatal prediction. A gene name alone is not a valid CpG probe mapping.
+
+**Measured availability check, pinned downloaded matrices:** the GSE44132 series matrix has **neither** exact cg21326881 nor cg00058938 row. GSE335141 has `cg21326881_TC21` and `cg00058938_TC21`. This blocks the suggested GSE44132 two-CpG baseline as written; do not silently substitute neighboring probes or extract a model from those absent rows. Investigate the original raw array data/platform manifest and alternate pyrosequencing assay before promising reproduction. The GSE335141 two EPICv2 probes are postpartum measurements and do not independently validate antenatal prediction.

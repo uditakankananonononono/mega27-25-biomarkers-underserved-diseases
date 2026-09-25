@@ -21,3 +21,7 @@ Conditional direction: compare a clinical prenatal-mood baseline to a fixed, pub
 5. **Reject for now** deep-learning, arbitrary genome-wide feature search, cross-platform pooled classifier and cosmetic dashboard. None addresses the missing independent outcome-aligned cohort; implementing them now adds degrees of freedom without validation.
 
 No numerical claim, external citation, published coefficient or biological finding from ChatGPT was adopted without independent source verification. This consultation does not satisfy 40 genuinely used external scientific services; ChatGPT is not counted as a validation source.
+
+### New source-grounded blocker after consultation
+
+The original paper names cg21326881 and cg00058938 (https://pmc.ncbi.nlm.nih.gov/articles/PMC7039252/). Direct scan of the pinned GEO matrices found **neither** in GSE44132's 483,266-row deposited series matrix; both occur only as EPICv2-suffixed rows in GSE335141, which is postpartum. Thus ChatGPT's most prominent proposed "build now" HP1BP3/TTC9B comparator in GSE44132 is currently **not executable as stated**. Do not improvise proxy CpGs. Need primary raw/pyrosequencing assay mapping or a different honest baseline and a new preregistration. See `PUBLISHED_LOCUS_LOOKUP.md`.

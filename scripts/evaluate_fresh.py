@@ -25,3 +25,15 @@ for _, r in s.iterrows():
         c = c.join(g[['g','v']], how='left'); c.to_csv('results/fresh_pcos_gene_test.csv')
 pd.DataFrame(rows).to_csv('results/fresh_cohort_tests.csv',index=False)
 print(pd.DataFrame(rows).to_string(index=False))
+
+# P3 primary outcome: all fresh PE cohorts, regardless of tissue; placenta-only is secondary.
+pe = pd.DataFrame(rows).query("disease == 'preeclampsia'")
+summary = []
+for label, cohort in [('all', pe), ('placenta_only', pe[pe.tissue != 'peripheral blood'])]:
+    fit = stats.dersimonian_laird(cohort.g.to_numpy(float)[None, :], (cohort.se.to_numpy(float)**2)[None, :])
+    summary.append(dict(stratum=label, accessions=';'.join(cohort.gse), k=int(fit['k'][0]),
+                        mu=float(fit['mu'][0]), se=float(fit['se'][0]), z=float(fit['z'][0]),
+                        p_two_sided=float(fit['p'][0]), p_one_sided_down=float(norm.cdf(fit['z'][0])),
+                        tau2=float(fit['tau2'][0]), I2=float(fit['I2'][0])))
+pd.DataFrame(summary).to_csv('results/P3_fresh_meta.csv', index=False)
+print(pd.DataFrame(summary).to_string(index=False))

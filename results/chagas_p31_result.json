@@ -1,0 +1,103 @@
+{
+  "source": "https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE244827",
+  "sha256": {
+    "GSE244827_series_matrix.txt.gz": "0adbb136595af79d256f94c8e429df5fafdf6891d101508b1ee2cef0bba300e7",
+    "GSE244827_CHAVArawcounts.txt.gz": "32c2f37bf8ea26371bc704ef4e463b44c9d2a46448e6a3f2c6822c4ee3dc8211"
+  },
+  "n_pos_card": 6,
+  "n_pos_noncard": 4,
+  "n_neg_card": 10,
+  "n_neg_noncard": 13,
+  "n_unique_mapped_genes": 41120,
+  "n_effect_genes": 13288,
+  "n_fixed_measured": 17,
+  "missing_fixed": [
+    "IGJ",
+    "LOC100128420",
+    "LOC100653210"
+  ],
+  "n_positive": 17,
+  "n_negative": 0,
+  "n_sign_match": 15,
+  "null_mean": 10.5906,
+  "empirical_p": 0.020497950204979503,
+  "registered_descriptive_support": true,
+  "ambiguous_ensembl_ids": 3,
+  "posthoc_sensitivity": {
+    "leave_one_out": [
+      {
+        "omitted_gsm": "GSM7830432",
+        "n_case": 5,
+        "n_control": 4,
+        "sign_matches": 15
+      },
+      {
+        "omitted_gsm": "GSM7830434",
+        "n_case": 5,
+        "n_control": 4,
+        "sign_matches": 14
+      },
+      {
+        "omitted_gsm": "GSM7830441",
+        "n_case": 5,
+        "n_control": 4,
+        "sign_matches": 16
+      },
+      {
+        "omitted_gsm": "GSM7830446",
+        "n_case": 5,
+        "n_control": 4,
+        "sign_matches": 15
+      },
+      {
+        "omitted_gsm": "GSM7830447",
+        "n_case": 5,
+        "n_control": 4,
+        "sign_matches": 15
+      },
+      {
+        "omitted_gsm": "GSM7830455",
+        "n_case": 5,
+        "n_control": 4,
+        "sign_matches": 15
+      },
+      {
+        "omitted_gsm": "GSM7830424",
+        "n_case": 6,
+        "n_control": 3,
+        "sign_matches": 14
+      },
+      {
+        "omitted_gsm": "GSM7830436",
+        "n_case": 6,
+        "n_control": 3,
+        "sign_matches": 16
+      },
+      {
+        "omitted_gsm": "GSM7830437",
+        "n_case": 6,
+        "n_control": 3,
+        "sign_matches": 16
+      },
+      {
+        "omitted_gsm": "GSM7830442",
+        "n_case": 6,
+        "n_control": 3,
+        "sign_matches": 15
+      }
+    ],
+    "sex_strata": {
+      "Sex: Female": {
+        "n_case": 2,
+        "n_control": 3,
+        "sign_matches": 16
+      },
+      "Sex: Male": {
+        "n_case": 4,
+        "n_control": 1,
+        "sign_matches": 15
+      }
+    },
+    "seronegative_stage_sign_matches": 1
+  }
+}

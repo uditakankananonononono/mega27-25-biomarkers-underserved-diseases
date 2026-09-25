@@ -1,0 +1,107 @@
+{
+  "retrieved": "2026-09-25",
+  "service": "GlyGen",
+  "api_url": "https://api.glygen.org/protein/detail/P07332-1",
+  "page_url": "https://glygen.org/protein/P07332-1",
+  "protein": "P07332-1",
+  "names": [
+    {
+      "name": "FES",
+      "type": "recommended",
+      "evidence": [
+        {
+          "id": "P07332",
+          "database": "UniProtKB",
+          "url": "https://www.uniprot.org/uniprotkb/P07332"
+        }
+      ]
+    },
+    {
+      "name": "FES",
+      "type": "synonym",
+      "evidence": [
+        {
+          "id": "NP_001137255",
+          "database": "RefSeq",
+          "url": "https://www.ncbi.nlm.nih.gov/protein/NP_001137255"
+        }
+      ]
+    },
+    {
+      "name": "FPS",
+      "type": "synonym",
+      "evidence": [
+        {
+          "id": "NP_001137255",
+          "database": "RefSeq",
+          "url": "https://www.ncbi.nlm.nih.gov/protein/NP_001137255"
+        },
+        {
+          "id": "P07332",
+          "database": "UniProtKB",
+          "url": "https://www.uniprot.org/uniprotkb/P07332"
+        }
+      ]
+    }
+  ],
+  "phosphorylation_site_count": 10,
+  "phosphorylation_site_labels": [
+    "Tyr261",
+    "Ser408",
+    "Ser411",
+    "Thr421",
+    "Ser64",
+    "Ser67",
+    "Tyr713",
+    "Tyr713",
+    "Ser716",
+    "Tyr811"
+  ],
+  "phosphorylation_site_evidence_examples": [
+    {
+      "site": "Tyr713",
+      "evidence": [
+        {
+          "database": "iPTMnet",
+          "id": "P07332",
+          "url": "http://research.bioinformatics.udel.edu/iptmnet/entry/P07332"
+        },
+        {
+          "database": "PubMed",
+          "id": "8663427",
+          "url": "https://glygen.org/publication/PubMed/8663427"
+        },
+        {
+          "database": "PubMed",
+          "id": "7687763",
+          "url": "https://glygen.org/publication/PubMed/7687763"
+        }
+      ]
+    },
+    {
+      "site": "Tyr713",
+      "evidence": [
+        {
+          "database": "UniProtKB",
+          "id": "P07332",
+          "url": "https://www.uniprot.org/uniprotkb/P07332"
+        },
+        {
+          "database": "IntAct",
+          "id": "P07332",
+          "url": "https://www.ebi.ac.uk/intact/interactors/id:P07332*"
+        },
+        {
+          "database": "iPTMnet",
+          "id": "P07332",
+          "url": "http://research.bioinformatics.udel.edu/iptmnet/entry/P07332"
+        }
+      ]
+    }
+  ],
+  "tissue_entries_count": 13,
+  "placenta_tissue_entries": [],
+  "disease_expression_entries_count": 12,
+  "preeclampsia_expression_entries": [],
+  "interpretation": "The curated phosphorylation evidence demonstrates that kinase activity is a separate post-translational measurement not inferred from placental FES RNA. Returned tissue and disease expression lists are not exhaustive; missing placenta or PE entries do not mean absent protein or effect. No mechanistic or clinical PE claim."
+}

@@ -26,6 +26,10 @@ SPECS = {
     'GSE303840': dict(disease='preeclampsia', file='GSE303840_merged_Raw.csv.gz',
                      unit='counts', sep=',', key='hgnc_symbol', title_prefix='',
                      label_field='Sample_title', case='Preeclamptic', control='Normal', tissue='placenta'),
+    'GSE193123': dict(disease='pcos', file='GSE193123_gene_count.txt.gz',
+                     unit='counts', sep='\t', key='gene_name', title_prefix='',
+                     label_field='Sample_characteristics_ch1_2', case='diagnosis: Polycystic ovary syndrome (PCOS)',
+                     control='diagnosis: Healthy', tissue='ovarian granulosa cells pooled libraries'),
     'GSE155489': dict(disease='pcos', file='GSE155489_gc_pcos_counts.csv.gz',
                      unit='counts', sep=',', key='gene', title_prefix='',
                      label_field='Sample_characteristics_ch1', case='disease state: polycystic ovary syndrome(PCOS)',
@@ -72,6 +76,9 @@ def load(gse):
         # Count header N.BAM corresponds exactly to GEO title "Sample N".
         cols = {v: k for k, v in ann.Sample_title.str.replace(p['title_prefix'], '', regex=False).items()}
         sample = {c: cols[c.split('.')[0]] for c in x if c.endswith('.BAM') and c.split('.')[0] in cols}
+    elif gse == 'GSE193123':
+        cols = {('P' if v.startswith('PCOS') else 'C') + v.split()[-1]: k for k,v in ann.Sample_title.items()}
+        sample = {c: cols[c] for c in x if c in cols}
     elif gse == 'GSE303840':
         cols = {v.split()[0][0] + ('P' if 'Preeclamptic' in v else 'N') + v.split()[-1]: k for k, v in ann.Sample_title.items()}
         sample = {c: cols[c] for c in x if c in cols}

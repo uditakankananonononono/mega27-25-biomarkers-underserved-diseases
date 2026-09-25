@@ -1,0 +1,279 @@
+{
+  "retrieved_at_utc": "2026-09-25T05:39:05.231651+00:00",
+  "disease_ontology": {
+    "url": "https://www.ebi.ac.uk/ols4/api/ontologies/mondo/terms?obo_id=MONDO:0008487",
+    "data": [
+      {
+        "obo_id": "MONDO:0008487",
+        "label": "polycystic ovary syndrome",
+        "description": [
+          "A disorder that manifests as multiple cysts on the ovaries. It results in hormonal imbalances and leads to irregular and abnormal menstrual periods, excess growth of hair, acne eruptions and obesity."
+        ],
+        "is_obsolete": false
+      }
+    ]
+  },
+  "ST3GAL2": {
+    "QuickGO": {
+      "url": "https://www.ebi.ac.uk/QuickGO/services/annotation/search?geneProductId=UniProtKB:Q16842&limit=100",
+      "data": {
+        "hits": 45,
+        "annotations": [
+          {
+            "goId": "GO:0003836",
+            "goEvidence": "IBA",
+            "goAspect": "molecular_function",
+            "reference": "GO_REF:0000033",
+            "taxonId": 9606
+          },
+          {
+            "goId": "GO:0003836",
+            "goEvidence": "IEA",
+            "goAspect": "molecular_function",
+            "reference": "GO_REF:0000120",
+            "taxonId": 9606
+          },
+          {
+            "goId": "GO:0003836",
+            "goEvidence": "IDA",
+            "goAspect": "molecular_function",
+            "reference": "PMID:12716912",
+            "taxonId": 9606
+          },
+          {
+            "goId": "GO:0003836",
+            "goEvidence": "IDA",
+            "goAspect": "molecular_function",
+            "reference": "PMID:25916169",
+            "taxonId": 9606
+          },
+          {
+            "goId": "GO:0003836",
+            "goEvidence": "IDA",
+            "goAspect": "molecular_function",
+            "reference": "PMID:8920913",
+            "taxonId": 9606
+          },
+          {
+            "goId": "GO:0003836",
+            "goEvidence": "IDA",
+            "goAspect": "molecular_function",
+            "reference": "PMID:9266697",
+            "taxonId": 9606
+          },
+          {
+            "goId": "GO:0003836",
+            "goEvidence": "IDA",
+            "goAspect": "molecular_function",
+            "reference": "PMID:9266697",
+            "taxonId": 9606
+          },
+          {
+            "goId": "GO:0003836",
+            "goEvidence": "TAS",
+            "goAspect": "molecular_function",
+            "reference": "Reactome:R-HSA-2046285",
+            "taxonId": 9606
+          },
+          {
+            "goId": "GO:0003836",
+            "goEvidence": "TAS",
+            "goAspect": "molecular_function",
+            "reference": "Reactome:R-HSA-4084984",
+            "taxonId": 9606
+          },
+          {
+            "goId": "GO:0003836",
+            "goEvidence": "TAS",
+            "goAspect": "molecular_function",
+            "reference": "Reactome:R-HSA-9845538",
+            "taxonId": 9606
+          },
+          {
+            "goId": "GO:0008373",
+            "goEvidence": "IEA",
+            "goAspect": "molecular_function",
+            "reference": "GO_REF:0000002",
+            "taxonId": 9606
+          },
+          {
+            "goId": "GO:0008373",
+            "goEvidence": "TAS",
+            "goAspect": "molecular_function",
+            "reference": "Reactome:R-HSA-9683769",
+            "taxonId": 9606
+          },
+          {
+            "goId": "GO:0008373",
+            "goEvidence": "TAS",
+            "goAspect": "molecular_function",
+            "reference": "Reactome:R-HSA-9697018",
+            "taxonId": 9606
+          },
+          {
+            "goId": "GO:0042803",
+            "goEvidence": "IDA",
+            "goAspect": "molecular_function",
+            "reference": "PMID:25916169",
+            "taxonId": 9606
+          },
+          {
+            "goId": "GO:0047288",
+            "goEvidence": "IEA",
+            "goAspect": "molecular_function",
+            "reference": "GO_REF:0000003",
+            "taxonId": 9606
+          },
+          {
+            "goId": "GO:0047288",
+            "goEvidence": "IDA",
+            "goAspect": "molecular_function",
+            "reference": "PMID:9266697",
+            "taxonId": 9606
+          },
+          {
+            "goId": "GO:0047288",
+            "goEvidence": "TAS",
+            "goAspect": "molecular_function",
+            "reference": "Reactome:R-HSA-981497",
+            "taxonId": 9606
+          },
+          {
+            "goId": "GO:0001574",
+            "goEvidence": "IEA",
+            "goAspect": "biological_process",
+            "reference": "GO_REF:0000120",
+            "taxonId": 9606
+          },
+          {
+            "goId": "GO:0001574",
+            "goEvidence": "IDA",
+            "goAspect": "biological_process",
+            "reference": "PMID:8920913",
+            "taxonId": 9606
+          },
+          {
+            "goId": "GO:0001576",
+            "goEvidence": "IDA",
+            "goAspect": "biological_process",
+            "reference": "PMID:12716912",
+            "taxonId": 9606
+          }
+        ]
+      }
+    },
+    "IntAct": {
+      "url": "https://www.ebi.ac.uk/intact/ws/interaction/findInteractions/Q16842?format=json",
+      "data": {
+        "total_elements": 32,
+        "interactions": [
+          {
+            "ac": "EBI-21790524",
+            "idA": "Q9H3H5-2 (uniprotkb)",
+            "idB": "Q16842 (uniprotkb)",
+            "miscore": null
+          },
+          {
+            "ac": "EBI-21582478",
+            "idA": "Q86T26 (uniprotkb)",
+            "idB": "Q16842 (uniprotkb)",
+            "miscore": null
+          },
+          {
+            "ac": "EBI-21844368",
+            "idA": "Q16842 (uniprotkb)",
+            "idB": "Q6ICH7 (uniprotkb)",
+            "miscore": null
+          },
+          {
+            "ac": "EBI-54537438",
+            "idA": "O15218 (uniprotkb)",
+            "idB": "Q16842 (uniprotkb)",
+            "miscore": null
+          },
+          {
+            "ac": "EBI-54476639",
+            "idA": "Q2HXU8 (uniprotkb)",
+            "idB": "Q16842 (uniprotkb)",
+            "miscore": null
+          },
+          {
+            "ac": "EBI-54691445",
+            "idA": "Q6UWM7 (uniprotkb)",
+            "idB": "Q16842 (uniprotkb)",
+            "miscore": null
+          },
+          {
+            "ac": "EBI-54749903",
+            "idA": "Q16842 (uniprotkb)",
+            "idB": "Q6ICH7 (uniprotkb)",
+            "miscore": null
+          },
+          {
+            "ac": "EBI-54749903",
+            "idA": "Q16842 (uniprotkb)",
+            "idB": "Q9NWM8 (uniprotkb)",
+            "miscore": null
+          },
+          {
+            "ac": "EBI-54627041",
+            "idA": "Q86T26 (uniprotkb)",
+            "idB": "Q16842 (uniprotkb)",
+            "miscore": null
+          },
+          {
+            "ac": "EBI-54572944",
+            "idA": "Q96PE5 (uniprotkb)",
+            "idB": "Q16842 (uniprotkb)",
+            "miscore": null
+          }
+        ]
+      }
+    },
+    "InterPro": {
+      "url": "https://www.ebi.ac.uk/interpro/api/protein/UniProt/Q16842/",
+      "data": {
+        "accession": "Q16842",
+        "entries": []
+      }
+    },
+    "OpenAlex": {
+      "url": "https://api.openalex.org/works?search=ST3GAL2%20polycystic%20ovary%20syndrome&per-page=5",
+      "data": {
+        "count": 6,
+        "works": [
+          {
+            "id": "https://openalex.org/W3096555330",
+            "title": "The role of sialyltransferases in gynecological malignant tumors",
+            "publication_year": 2020,
+            "doi": "https://doi.org/10.1016/j.lfs.2020.118670"
+          },
+          {
+            "id": "https://openalex.org/W4319231359",
+            "title": "Alterations in gonadotropin, apoptotic and metabolic pathways in granulosa cells warrant superior fertility of the Dummerstorf high fertility mouse line 1",
+            "publication_year": 2023,
+            "doi": "https://doi.org/10.1186/s13048-023-01113-5"
+          },
+          {
+            "id": "https://openalex.org/W4381611876",
+            "title": "Metformin Disrupts Signaling and Metabolism in Fetal Hepatocytes",
+            "publication_year": 2023,
+            "doi": "https://doi.org/10.2337/db23-0089"
+          },
+          {
+            "id": "https://openalex.org/W2969506311",
+            "title": "Characterising the phenotype and impact of adipose in idiopathic intracranial hypertension",
+            "publication_year": 2019,
+            "doi": null
+          },
+          {
+            "id": "https://openalex.org/W4407638028",
+            "title": "Bioinformatics analysis of next generation sequencing data reveals novel biomarkers and signaling pathways associated with recurrent implantation failure",
+            "publication_year": 2025,
+            "doi": "https://doi.org/10.1101/2025.02.13.638207"
+          }
+        ]
+      }
+    }
+  }
+}

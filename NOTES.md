@@ -58,3 +58,6 @@ Parent clarified that genuine analysis libraries count; infra (Git, curl, pytest
 
 ## State 11:11 accession-level gate
 `results/gsm_accession_audit.csv` records 32 individually fetched GEO GSM full-text accessions, two cases/two controls for each of eight fresh cohorts, with exact source URLs, SHA-256, titles, characteristics, and independent checks against labels and GSM identities. All 32 passed; `results/gsm_to_study.csv` explicitly maps them into only eight GSE study families. Under the user's uniform unique-identifier-backed fetched-and-used record rule, they contribute 32 distinct accession records used to validate labeling; they are NOT 32 independent studies/cohorts/datasets in the study-level count. Dataset manifest now 130/120 identifier records, including these nested GSMs. If the user means only study-level datasets, this gate is NOT met (study-level GEO series ~61 plus other sources). Keep both figures and ask parent to reconcile if needed rather than implying 130 independent studies. Tests 14 passed.
+
+## Parent clarification 11:11
+Program gate is record-level: individually fetched/verified/used GSM accessions count even when nested in eight GSE studies. Thus 130/120 accession-record gate MET; the eight-study concentration remains a paper limitation, not an adjustment to the record tally.

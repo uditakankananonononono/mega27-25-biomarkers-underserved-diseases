@@ -1,0 +1,14 @@
+{
+  "source_url": "https://www.ebi.ac.uk/ena/portal/api/search?result=read_run&query=sample_accession%3D%22SAMN40568562%22&fields=run_accession%2Csample_accession%2Cstudy_accession%2Cexperiment_accession%2Clibrary_strategy%2Cfastq_ftp&format=json&limit=10",
+  "retrieved_ist": "2026-09-25 20:29",
+  "n_runs": 1,
+  "run": {
+    "run_accession": "SRR28411428",
+    "sample_accession": "SAMN40568562",
+    "study_accession": "PRJNA1090471",
+    "experiment_accession": "SRX24015830",
+    "library_strategy": "RNA-Seq"
+  },
+  "n_fastq_files": 2,
+  "interpretation": "One sequence run links conflicted BioSample to project, but metadata does not independently adjudicate T/PE diagnosis; no FASTQ downloaded or expression tested."
+}

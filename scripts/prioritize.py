@@ -49,13 +49,13 @@ for d in diseases:
             scores = {"meta_abs_z": np.abs(F[:, 2]),
                       "rwr": network.rwr(A, y * trm),
                       "logreg": LogisticRegression(max_iter=500, class_weight="balanced").fit(F[tr], y[tr]).predict_proba(F)[:, 1]}
-            scores["mlp"] = models.train_node_model(models.MLP(F.shape[1]), x, None, y, trm, seed=seed)
-            scores["gcn"] = models.train_node_model(models.GCN(F.shape[1]), x, Ahat, y, trm, seed=seed)
-            scores["sage"] = models.train_node_model(models.SAGE(F.shape[1]), x, Amean, y, trm, seed=seed)
+            scores["mlp"] = models.train_node_model(models.seeded_node_model(models.MLP, F.shape[1], seed=seed), x, None, y, trm, seed=seed)
+            scores["gcn"] = models.train_node_model(models.seeded_node_model(models.GCN, F.shape[1], seed=seed), x, Ahat, y, trm, seed=seed)
+            scores["sage"] = models.train_node_model(models.seeded_node_model(models.SAGE, F.shape[1], seed=seed), x, Amean, y, trm, seed=seed)
             # hybrid: SAGE with the fold's RWR score as an extra input feature
             rw = scores["rwr"]; rwz = (np.log(rw + 1e-12) - np.log(rw + 1e-12).mean()) / np.log(rw + 1e-12).std()
             xh = torch.tensor(np.column_stack([F, rwz]).astype(np.float32))
-            scores["sage_rwr"] = models.train_node_model(models.SAGE(xh.shape[1]), xh, Amean, y, trm, seed=seed)
+            scores["sage_rwr"] = models.train_node_model(models.seeded_node_model(models.SAGE, xh.shape[1], seed=seed), xh, Amean, y, trm, seed=seed)
             for mth, s in scores.items():
                 bench.append({"disease": d, "method": mth, "seed": seed, "fold": fold, "npos": npos,
                               "auroc": roc_auc_score(y[te], s[te]), "auprc": average_precision_score(y[te], s[te])})
@@ -64,7 +64,7 @@ for d in diseases:
     allm = np.ones(len(y), bool)
     rw = network.rwr(A, y); rwz = (np.log(rw + 1e-12) - np.log(rw + 1e-12).mean()) / np.log(rw + 1e-12).std()
     xh = torch.tensor(np.column_stack([F, rwz]).astype(np.float32))
-    s = np.mean([models.train_node_model(models.SAGE(xh.shape[1]), xh, Amean, y, allm, seed=k) for k in range(3)], axis=0)
+    s = np.mean([models.train_node_model(models.seeded_node_model(models.SAGE, xh.shape[1], seed=k), xh, Amean, y, allm, seed=k) for k in range(3)], axis=0)
     c = pd.DataFrame({"gene": genes, "score": s, "known_ot": known_any})
     c = c.join(meta[["mu", "z", "p", "q", "I2", "k"]], on="gene")
     c = c[(~c.known_ot) & (c.q < 0.05)].sort_values("score", ascending=False).head(30)

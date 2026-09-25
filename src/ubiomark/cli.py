@@ -59,7 +59,7 @@ def cmd_rank(a):
     F = (F - F.mean(0)) / (F.std(0) + 1e-6)
     deg = np.asarray(A.sum(1)).ravel()
     Am = models.to_torch_sparse(sp.diags(1 / np.maximum(deg, 1)) @ A)
-    s = models.train_node_model(models.SAGE(F.shape[1]), torch.tensor(F), Am, y, np.ones(len(y), bool))
+    s = models.train_node_model(models.seeded_node_model(models.SAGE, F.shape[1], seed=0), torch.tensor(F), Am, y, np.ones(len(y), bool))
     o = pd.DataFrame({"gene": genes, "score": s, "known": y.astype(bool)}).join(meta[["mu", "p", "q"]], on="gene")
     o[~o.known].sort_values("score", ascending=False).head(a.top).to_csv(a.out or sys.stdout, index=False)
 

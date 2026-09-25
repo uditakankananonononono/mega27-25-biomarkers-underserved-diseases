@@ -54,6 +54,16 @@ class MLP(nn.Module):
         return self.net(x).squeeze(-1)
 
 
+def seeded_node_model(model_type, *args, seed=0, **kwargs):
+    """Seed before parameter initialization, not only before optimization.
+
+    Forked RNG state avoids changing the caller's random stream.
+    """
+    with torch.random.fork_rng(devices=[]):
+        torch.manual_seed(seed)
+        return model_type(*args, **kwargs)
+
+
 def train_node_model(model, x, A, y, train_mask, epochs=100, lr=0.01, wd=5e-4, seed=0):
     torch.manual_seed(seed)
     opt = torch.optim.Adam(model.parameters(), lr=lr, weight_decay=wd)

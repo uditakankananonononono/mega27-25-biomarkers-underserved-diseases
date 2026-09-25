@@ -1,0 +1,535 @@
+First, the correction is important: you are right about the binomial threshold. For n=25, k≥18 gives:
+
+P(X≥18∣X∼Bin(25,0.5))=0.0216
+
+so the Gate 1 preregistration was passed even with a much more modest concordance requirement than I stated previously.
+
+The new result materially changes the interpretation. The honest scientific conclusion is:
+
+You have replicated a lesion-localized bladder remodeling state. You have not demonstrated a Hunner-specific state.
+
+That is not a failed project. It is actually a much cleaner result than the old panel, because the signal survived patient-level validation. The mistake would be trying to force it into a "Hunner biomarker" claim after Gate 2.
+
+The key question is whether the current data can support a new Hunner-specific discovery. My answer: possibly, but only if the definition of specificity changes from "another classifier" to "a residual lesion program after removing shared inflammatory/remodeling biology." The power ceiling is real.
+
+Ranking the possible A2 redirects
+Rank 1 — (i) Net-of-inflammation / net-of-BCG contrast (strongest scientifically)
+Concept
+
+The Gate 1 signal:
+
+HIC
+lesion
+	​
+
+−HIC
+nonlesion
+	​
+
+
+contains:
+
+Hunner biology
+
+generic injury/remodeling biology
+
+inflammation
+
+sampling effects
+
+Your Gate 2 tells you M2 mostly belongs to category 2.
+
+The next hypothesis should not be:
+
+"Find another module that separates lesions."
+
+It should be:
+
+"Find a lesion-associated component that remains after subtracting biology also induced by BCG cystitis."
+
+Formally:
+
+For module m:
+
+A
+m
+	​
+
+=(HIC lesion−HIC nonlesion)−(BCG−baseline)
+
+The question becomes:
+
+A
+m
+	​
+
+>0?
+
+Meaning:
+
+"Is this lesion-associated change larger than the change expected from inflammatory cystitis?"
+
+This is a much better definition of specificity.
+
+Validation design
+
+The danger is leakage.
+
+You cannot:
+
+discover modules using all HIC and BCG;
+
+then test those same samples.
+
+I would define the amendment like this:
+
+HIC leg
+
+25 paired patients:
+
+leave-one-patient-out
+
+derive HIC lesion axis in training patients
+
+evaluate held-out patient
+
+Same philosophy as Gate 1.
+
+BCG leg
+
+The problem is that BCG has no matched baseline.
+
+You only have:
+
+HIC lesion
+
+HIC non-lesion
+
+BCG
+
+Therefore BCG specificity is inherently weaker.
+
+The cleanest permutation:
+
+For each held-out HIC patient:
+
+calculate their lesion delta.
+
+compare this to the frozen distribution of BCG expression.
+
+ask whether the HIC lesion effect exceeds the inflammatory comparator distribution.
+
+Primary endpoint
+
+I would not use classification.
+
+Use an effect-size endpoint:
+
+Δ
+specific
+	​
+
+=D
+HIC
+	​
+
+−D
+BCG
+	​
+
+
+Pass criterion:
+
+Pre-register:
+
+median Δ
+specific
+	​
+
+>0
+
+95% CI excludes zero
+
+permutation p<0.025
+
+But I need to be blunt:
+
+with 13 BCG samples, this is probably underpowered.
+
+Main failure mode
+
+The residual signal may disappear.
+
+And that would actually be informative.
+
+Your current evidence suggests:
+
+Hunner lesion=high remodeling/injury state
+
+not:
+
+unique Hunner mechanism
+
+A residual test may simply show:
+
+Hunner≈severe inflammation/remodeling
+Rank 2 — (iii) Redefine the claim around Gate 1 + specificity boundary
+
+This is probably the most honest publication strategy.
+
+Your current strongest statement is:
+
+"A preregistered patient-level analysis identifies a reproducible Hunner-lesion-associated epithelial remodeling axis that is not specific relative to BCG cystitis."
+
+That is a real biological finding.
+
+The mistake would be burying the negative Gate 2.
+
+A stronger scientific framing:
+
+Primary finding
+
+Hunner lesions exhibit a reproducible remodeling state.
+
+Specificity analysis
+
+The state overlaps substantially with inflammatory cystitis.
+
+Translational hypothesis
+
+A noninvasive marker may detect bladder remodeling burden rather than Hunner specificity.
+
+This actually rescues the urine work.
+
+The urine question changes from:
+
+Can urine diagnose Hunner lesions?
+
+to:
+
+Can urine measure a bladder remodeling state associated with severe IC/BPS pathology?
+
+That is a different biomarker.
+
+Potentially more biologically defensible.
+
+Rank 3 — (ii) Split the 13 BCG samples into discovery/validation
+
+I would not do this.
+
+You asked whether 6/7 is meaningful.
+
+Short answer:
+
+No, not for a specificity discovery claim.
+
+The effective problem:
+
+25 HIC pairs are already small.
+
+13 BCG samples are extremely small.
+
+Splitting creates:
+
+Discovery:
+
+n=6
+
+Validation:
+
+n=7
+
+A few samples can dominate:
+
+batch effects;
+
+donor variation;
+
+cell composition.
+
+You would gain apparent methodological cleanliness but lose almost all statistical power.
+
+A 6/7 BCG split is appropriate only as a sanity check, not as the foundation of a headline claim.
+
+Rank 4 — Search for a completely new Hunner classifier
+
+I would not.
+
+You already have evidence why.
+
+The hypothesis space is enormous:
+
+27,339 genes.
+
+Your sample:
+
+25 lesions.
+
+Even if you use:
+
+DE genes;
+
+machine learning;
+
+pathway selection;
+
+random forests;
+
+neural nets;
+
+you are almost guaranteed to find something.
+
+The question is whether it survives.
+
+You already demonstrated the danger:
+
+Old panel:
+
+looked promising
+
+collapsed under label audit
+
+New M2:
+
+survives LOPO
+
+fails specificity
+
+The next failure mode would be:
+
+"A new classifier that works because we tuned it against BCG."
+
+That is exactly what you want to avoid.
+
+A stronger possible direction: "specificity residual atlas"
+
+This is the one additional idea I would consider.
+
+Instead of asking:
+
+What genes are higher in Hunner lesions?
+
+Ask:
+
+Which biological programs are disproportionately enriched in Hunner lesions compared with the inflammatory remodeling background?
+
+Build a residual vector:
+
+R=(HIC
+lesion
+	​
+
+−HIC
+nonlesion
+	​
+
+)−β(BCG)
+
+where β is estimated from module-level responses.
+
+Then rank modules, not genes.
+
+Candidate categories:
+
+More plausible novelty space:
+
+urothelial differentiation failure
+
+sensory nerve signaling
+
+extracellular matrix organization subtype
+
+angiogenesis/remodeling subtype
+
+mitochondrial/metabolic stress
+
+barrier restoration failure
+
+wound-healing trajectories
+
+Avoid:
+
+IFN-gamma
+
+IL-17
+
+Th1
+
+generic immune activation
+
+Those are already claimed.
+
+But can you actually prove specificity?
+
+This is the hardest part.
+
+Let's think statistically.
+
+You have:
+
+Paired lesion effect
+
+Excellent:
+
+n=25
+
+because each patient is their own control.
+
+BCG comparison
+
+Weak:
+
+n=13
+
+because:
+
+no paired baseline;
+
+different disease;
+
+possible batch/confounding.
+
+The power bottleneck is not the HIC discovery.
+
+It is the BCG specificity comparator.
+
+I would estimate:
+
+detecting a huge effect (Cohen's d >1): possible.
+
+detecting a moderate effect (d≈0.5): unlikely.
+
+detecting a subtle Hunner-specific program: probably impossible.
+
+Therefore:
+
+You can probably identify a large Hunner-specific residual program if it exists. You probably cannot reliably prove absence of specificity.
+
+My recommended A2 preregistration
+
+I would write it this way:
+
+A2 Hypothesis
+
+After removing molecular programs shared with inflammatory cystitis, Hunner lesions retain a reproducible molecular residual associated with lesion biology.
+
+Gate A2.1 — Residual discovery
+
+Data:
+
+GSE238208 only.
+
+Method:
+
+paired HIC lesion/non-lesion contrast.
+
+module-level analysis.
+
+BCG response used as a predefined subtraction component.
+
+LOPO patient validation.
+
+Primary endpoint:
+
+Δ
+residual
+	​
+
+>0
+
+in held-out patients.
+
+Gate A2.2 — Specificity bound
+
+Freeze the score.
+
+Evaluate:
+
+HIC lesion vs BCG.
+
+Report:
+
+effect size;
+
+confidence interval;
+
+permutation p-value.
+
+Do not require a binary "pass/fail" if underpowered.
+
+The conclusion categories should be:
+
+Strong evidence:
+
+CI excludes zero.
+
+Compatible:
+
+effect positive but CI overlaps zero.
+
+Evidence against:
+
+effect negative.
+
+Gate A2.3 — Urine exploratory transfer
+
+Only after freezing.
+
+Question:
+
+Can the residual remodeling/specificity-filtered program be detected in urine?
+
+Datasets:
+
+GSE28242
+
+GSE196156
+
+But explicitly:
+
+exploratory due n.
+
+Final judgment
+
+If I were reviewing this as an ISEF/STEM competition project:
+
+The old idea:
+
+"Find an IC biomarker panel."
+
+Dead.
+
+The current result:
+
+"Discover a reproducible Hunner lesion molecular axis."
+
+Alive.
+
+The attempted claim:
+
+"Discover a Hunner-specific biomarker."
+
+Not supported yet.
+
+The realistic A2 opportunity:
+
+Find a residual lesion program after subtracting shared inflammatory remodeling.
+
+That is the only direction I think has a credible chance.
+
+But the honest answer to your last question is:
+
+No, the current datasets do not have strong power to prove subtle Hunner specificity. They have enough power to detect a large specificity effect, but not enough to establish that a modest residual signal does not exist.
+
+Therefore the safest high-integrity deliverable is:
+
+Primary claim:
+"Patient-level replicated Hunner lesion remodeling axis."
+
+Secondary claim:
+"Specificity analysis demonstrates substantial overlap with inflammatory cystitis."
+
+A2 extension:
+"Search for residual Hunner-specific biology under a preregistered net-of-inflammation framework."
+
+That preserves the positive discovery without repeating the exact mistake that killed the 50-gene panel.

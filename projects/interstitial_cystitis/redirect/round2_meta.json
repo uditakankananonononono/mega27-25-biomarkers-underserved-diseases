@@ -1,0 +1,12 @@
+{
+ "mode": "redirect round 2 (Gate 2 ledger negative -> stuck -> redirect, per user-directed ChatGPT modes)",
+ "conversation_url": "https://chatgpt.com/c/6ab6c5ed-963c-83e8-ab63-2c132d9645a0",
+ "consulted_at_ist": "2026-09-26T00:44:00+05:30",
+ "response_file": "round2_response.txt",
+ "status": "advisory input only; A2 design below was finalized locally with the locked BCG no-leakage ban preserved",
+ "local_design_decisions": [
+  "ChatGPT's Gate A2.2 re-tests the same 13 BCG used for the subtraction component; the locked ban forbids calling that an independent validation. A2 therefore locks the specificity leg as a DESCRIPTIVE bound with three conclusion categories (evidence for / compatible / evidence against), never as a binary independent validation.",
+  "BCG 6/7 discovery/validation split rejected (ChatGPT agrees: no power).",
+  "Endpoints recomputed locally: same corrected binomial rule as Gate 1 (>=18/25, one-sided exact p<0.025)."
+ ]
+}

@@ -1,0 +1,10 @@
+disease,gse,matrix,gpl,status,n_case,n_control,n_genes,n_dropped,note
+postpartum_depression,GSE45603,GSE45603_series_matrix.txt.gz,GPL10558,ok,16,32,9744,162,
+me_cfs,GSE269047,GSE269047_series_matrix.txt.gz,GPL22462,skip_noexpr,8,9,0,26,
+me_cfs,GSE67311,GSE67311_series_matrix.txt.gz,GPL11532,skip_labels,0,75,0,67,
+me_cfs,GSE39684,GSE39684_series_matrix.txt.gz,GPL11662,skip_labels,0,0,0,63,
+me_cfs,GSE16059,GSE16059_series_matrix.txt.gz,GPL570,ok,32,44,21594,12,
+me_cfs,GSE14577,GSE14577-GPL96_series_matrix.txt.gz,GPL96,ok,8,7,13047,0,
+me_cfs,GSE14577,GSE14577-GPL97_series_matrix.txt.gz,GPL97,ok,8,7,10606,0,
+fibromyalgia,GSE269047,GSE269047_series_matrix.txt.gz,GPL22462,skip_noexpr,10,9,0,24,
+fibromyalgia,GSE67311,GSE67311_series_matrix.txt.gz,GPL11532,ok,67,75,19699,0,

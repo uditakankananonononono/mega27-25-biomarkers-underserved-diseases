@@ -1,0 +1,151 @@
+"""GEO series-matrix and platform download + parsing."""
+from __future__ import annotations
+import gzip, io, os, re, time, urllib.request
+import numpy as np
+import pandas as pd
+
+CACHE = os.environ.get("UBIOMARK_CACHE", os.path.expanduser("~/mega27-25/data/raw"))
+
+
+def _fetch(url: str, dest: str, tries: int = 4) -> str:
+    if os.path.exists(dest) and os.path.getsize(dest) > 0:
+        return dest
+    os.makedirs(os.path.dirname(dest), exist_ok=True)
+    last = None
+    for i in range(tries):
+        try:
+            with urllib.request.urlopen(url, timeout=120) as r, open(dest + ".part", "wb") as f:
+                while True:
+                    b = r.read(1 << 20)
+                    if not b:
+                        break
+                    f.write(b)
+            os.replace(dest + ".part", dest)
+            return dest
+        except Exception as e:  # network retry
+            last = e
+            time.sleep(3 * (i + 1))
+    raise RuntimeError(f"fetch failed {url}: {last}")
+
+
+def series_dir(gse: str) -> str:
+    return f"https://ftp.ncbi.nlm.nih.gov/geo/series/{gse[:-3]}nnn/{gse}/matrix/"
+
+
+def list_matrix_files(gse: str) -> list[str]:
+    html = urllib.request.urlopen(series_dir(gse), timeout=60).read().decode()
+    return sorted(set(re.findall(r'href="(GSE\d+(?:-GPL\d+)?_series_matrix\.txt\.gz)"', html)))
+
+
+def download_matrices(gse: str) -> list[str]:
+    return [_fetch(series_dir(gse) + f, os.path.join(CACHE, "matrix", f)) for f in list_matrix_files(gse)]
+
+
+def parse_series_matrix(path_or_text) -> tuple[pd.DataFrame, pd.DataFrame, dict]:
+    """Return (expression probes x samples, sample annotation df, series meta)."""
+    if isinstance(path_or_text, str) and os.path.exists(path_or_text):
+        opener = gzip.open if path_or_text.endswith(".gz") else open
+        with opener(path_or_text, "rt", errors="replace") as fh:
+            text = fh.read()
+    else:
+        text = path_or_text
+    meta: dict = {}
+    sample_rows: dict[str, list[list[str]]] = {}
+    lines = text.splitlines()
+    try:
+        start = lines.index("!series_matrix_table_begin")
+        end = lines.index("!series_matrix_table_end")
+    except ValueError:
+        start = end = len(lines)
+    for ln in lines[:start]:
+        if not ln.startswith("!"):
+            continue
+        parts = ln.split("\t")
+        key = parts[0][1:]
+        vals = [p.strip().strip('"') for p in parts[1:]]
+        if key.startswith("Sample_"):
+            sample_rows.setdefault(key, []).append(vals)
+        else:
+            meta.setdefault(key, []).append(" ".join(vals))
+    table = "\n".join(lines[start + 1:end])
+    if table.strip():
+        expr = pd.read_csv(io.StringIO(table), sep="\t", index_col=0, quotechar='"', low_memory=False)
+        expr = expr.apply(pd.to_numeric, errors="coerce")
+    else:
+        expr = pd.DataFrame()
+    ids = sample_rows.get("Sample_geo_accession", [[]])[0]
+    ann = pd.DataFrame(index=ids)
+    for key, rows in sample_rows.items():
+        for j, vals in enumerate(rows):
+            if len(vals) == len(ids):
+                ann[f"{key}_{j}" if len(rows) > 1 else key] = vals
+    return expr, ann, meta
+
+
+SYMBOL_COLS = ["Gene Symbol", "GENE_SYMBOL", "Symbol", "ILMN_Gene", "gene_symbol", "GeneSymbol",
+               "Gene symbol", "SYMBOL", "ORF", "gene_assignment", "GENE_NAME", "Gene_Symbol"]
+
+
+def _gpl_ftp(gpl: str) -> str:
+    stem = gpl[:-3] + "nnn" if len(gpl) > 6 else "GPLnnn"
+    return f"https://ftp.ncbi.nlm.nih.gov/geo/platforms/{stem}/{gpl}/"
+
+
+def platform_table(gpl: str) -> pd.DataFrame:
+    """Prefer the compact FTP .annot.gz (GEO-curated 'Gene symbol'); fall back to the full acc.cgi table."""
+    try:
+        dest = _fetch(_gpl_ftp(gpl) + f"annot/{gpl}.annot.gz", os.path.join(CACHE, "gpl", f"{gpl}.annot.gz"), tries=2)
+        with gzip.open(dest, "rt", errors="replace") as fh:
+            lines = [l for l in fh if not l.startswith(("^", "!", "#"))]
+        return pd.read_csv(io.StringIO("".join(lines)), sep="\t", dtype=str, low_memory=False)
+    except Exception:
+        pass
+    dest = os.path.join(CACHE, "gpl", f"{gpl}.txt")
+    url = f"https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc={gpl}&targ=self&form=text&view=data"
+    _fetch(url, dest)
+    with open(dest, errors="replace") as fh:
+        lines = [l for l in fh if not l.startswith(("^", "!", "#"))]
+    return pd.read_csv(io.StringIO("".join(lines)), sep="\t", dtype=str, low_memory=False)
+
+
+def _clean_symbol(s: str, col: str) -> str | None:
+    if not isinstance(s, str) or not s.strip() or s.strip() in ("---", "NA", "nan"):
+        return None
+    if col == "gene_assignment":  # "NM_x // SYMBOL // desc // ..."
+        parts = [p.strip() for p in s.split("//")]
+        s = parts[1] if len(parts) > 1 else ""
+    toks = [t.strip() for t in re.split(r"\s*///\s*|\s*;\s*|,", s.strip()) if t.strip()]
+    good = [t for t in toks if not re.match(r"(MIR\d|LOC\d|SNOR|LINC)", t)]
+    s = (good or toks or [""])[0]
+    return s if re.fullmatch(r"[A-Za-z0-9][A-Za-z0-9\-\.]*", s or "") else None
+
+
+def probe_to_symbol(gpl: str) -> pd.Series:
+    t = platform_table(gpl)
+    col = next((c for c in SYMBOL_COLS if c in t.columns), None)
+    if col is None:
+        raise KeyError(f"{gpl}: no symbol column in {list(t.columns)[:15]}")
+    m = t.set_index(t.columns[0])[col].map(lambda s: _clean_symbol(s, col)).dropna()
+    m.index = m.index.astype(str)
+    return m
+
+
+def to_gene_level(expr: pd.DataFrame, p2s: pd.Series) -> pd.DataFrame:
+    """Collapse probes to genes by the probe with the highest mean (standard maxMean rule), log2 if needed."""
+    x = expr.copy()
+    x.index = x.index.astype(str)
+    x = x.loc[x.index.intersection(p2s.index)]
+    x = log2_if_needed(x)
+    x["__sym"] = p2s.loc[x.index].values
+    x["__mean"] = x.drop(columns="__sym").mean(axis=1)
+    x = x.sort_values("__mean", ascending=False).drop_duplicates("__sym")
+    return x.set_index("__sym").drop(columns="__mean")
+
+
+def log2_if_needed(x: pd.DataFrame) -> pd.DataFrame:
+    v = x.to_numpy(dtype=float)
+    q = np.nanquantile(v, [0.99, 0.25]) if np.isfinite(v).any() else [0, 0]
+    if q[0] > 100:  # clearly linear scale (GEO2R rule)
+        v = np.where(v <= 0, np.nan, v)
+        return pd.DataFrame(np.log2(v), index=x.index, columns=x.columns)
+    return x

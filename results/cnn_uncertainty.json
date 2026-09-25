@@ -1,0 +1,19 @@
+{
+  "n_cohorts": 17,
+  "cnn_mean": 0.577942132207394,
+  "logistic_mean": 0.6275593486245855,
+  "mean_difference_cnn_minus_logistic": -0.04961721641719146,
+  "weighted_by_test_samples_difference": -0.048145049865888405,
+  "cohort_bootstrap_CI95_percentile": [
+    -0.1331570563238034,
+    0.029999639584393254
+  ],
+  "n_cnn_wins": 7,
+  "n_logistic_wins": 8,
+  "n_ties": 2,
+  "two_sided_sign_test_p": 1.0,
+  "two_sided_wilcoxon_p": 0.29318817341550496,
+  "excluded_IC_mean_difference": -0.052718292443265924,
+  "seed": 20260925,
+  "limitations": "Descriptive conditional on the 17 selected holdouts; resamples GEO cohorts as if exchangeable; repeated disease families, heterogeneous tissues and reused controls can violate exchangeability; no claim of a population superiority test."
+}

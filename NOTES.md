@@ -103,3 +103,6 @@ Program gate is record-level: individually fetched/verified/used GSM accessions 
 ## State 11:49
 - P7 was committed before GSE28242 expression read. Urine-sediment cross-tissue all-PBS 22/43 signs, matched-null p=.641; lesion-free 15/43, p=.991; Hunner-lesion 40/43, p=.0001 on just 3 cases. Exact subtype-label permutation (post-hoc) gives 2/56, p=.0357. Primary test fails; subtype effect is consistent with the original GSE28242 published conclusion, not a novel biomarker. All 13 metadata labels and no GSM overlap checked. Source https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE28242 ; P7 ledgers/scripts committed below.
 - Exact-TNR PDF has 16 content pages after removing one dangling-word page, still short of 20 substantive pages. No discovery/benchmark gate met. Tool ledger remains 31/40; record ledger 130/120.
+
+## State 11:50
+- Descriptive paired CNN-vs-logistic uncertainty across 17 original holdouts calculated in `results/cnn_uncertainty.json`: mean difference -0.0496, 10k cohort bootstrap percentile CI [-0.133, 0.030], 7 wins/8 losses/2 ties, sign p=1 and Wilcoxon p=.293. It does not establish either model's population superiority. User-facing manuscript interpretation added; paper currently 17 rendered pages, page 13-14 visually checked, no overfull/undefined references. No tool/count/claim gate changed.

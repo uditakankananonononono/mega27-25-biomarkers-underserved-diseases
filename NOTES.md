@@ -106,3 +106,6 @@ Program gate is record-level: individually fetched/verified/used GSM accessions 
 
 ## State 11:50
 - Descriptive paired CNN-vs-logistic uncertainty across 17 original holdouts calculated in `results/cnn_uncertainty.json`: mean difference -0.0496, 10k cohort bootstrap percentile CI [-0.133, 0.030], 7 wins/8 losses/2 ties, sign p=1 and Wilcoxon p=.293. It does not establish either model's population superiority. User-facing manuscript interpretation added; paper currently 17 rendered pages, page 13-14 visually checked, no overfull/undefined references. No tool/count/claim gate changed.
+
+## State 11:52
+- P8 registration was committed BEFORE the GSE293353 count-matrix download. Follicular granulosa nine PCOS/nine control columns map exactly to GEO sample titles and clinical `group`, with no earlier PCOS GSM overlap. Ensembl IDs mapped via HGNC; three ambiguous IDs excluded. 19/20 fixed genes measured, 16 signs agreed, direction/coverage-matched null expects 15.725, empirical p=.588441: FAIL. Source https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE293353 ; detailed checksums/labels/gene effects in `results/pcos_p8*`. Paper adds negative result; rendered exact-TNR draft remains 17 pages, still short. Manifest adds two truly used unique GSE records (GSE28242, GSE293353), now 132/120 under record-level rule. No discovery/benchmark claim.

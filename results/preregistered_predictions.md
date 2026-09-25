@@ -9,3 +9,8 @@ P1 (preeclampsia, named candidate): GNG2 expression is LOWER in preeclampsia tha
     mu >= 0 or two-sided p >= 0.05.
 P2 (all diseases with validation cohorts): top-50 discovery signature shows sign concordance above the
     10,000 random-gene-set null at p < 0.05 (scripts/replication_test.py). Reported per disease, pass or fail.
+
+P3 (registered 10:40 IST, after validation unlock): ST3GAL2 expression is LOWER in preeclampsia than controls in
+    independent cohorts NOT used in discovery or validation (any GEO preeclampsia case/control cohort outside
+    results/split_locked.csv, labels audited, all such cohorts reported). Falsified if the random-effects meta over
+    those new cohorts gives mu >= 0 or one-sided p >= 0.05.

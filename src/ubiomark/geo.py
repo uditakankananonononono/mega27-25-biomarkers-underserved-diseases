@@ -82,7 +82,7 @@ def parse_series_matrix(path_or_text) -> tuple[pd.DataFrame, pd.DataFrame, dict]
     return expr, ann, meta
 
 
-SYMBOL_COLS = ["Gene Symbol", "GENE_SYMBOL", "Symbol", "ILMN_Gene", "gene_symbol", "GeneSymbol",
+SYMBOL_COLS = ["Gene Symbol", "GENE SYMBOL", "GENE_SYMBOL", "Symbol", "ILMN_Gene", "gene_symbol", "GeneSymbol",
                "Gene symbol", "SYMBOL", "ORF", "gene_assignment", "GENE_NAME", "Gene_Symbol"]
 
 

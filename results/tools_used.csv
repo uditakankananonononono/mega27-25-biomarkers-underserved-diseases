@@ -1,0 +1,16 @@
+tool,category,how_used,evidence_file
+NCBI E-utilities esearch (db=gds),external API,discover GEO series per disease,scripts/geo_discover.py
+NCBI E-utilities esummary (db=gds),external API,series metadata (platform/type/n),scripts/geo_discover.py
+GEO series-matrix FTP,external data service,download expression matrices,src/ubiomark/geo.py
+GEO platform annotation (FTP annot + acc.cgi),external data service,probe->gene symbol mapping,src/ubiomark/geo.py
+Open Targets Platform GraphQL API,external API,disease search + disease-target associations with datatype scores,scripts/fetch_opentargets.py
+STRING v12 downloads,external data service,human physical PPI network + protein info,src/ubiomark/network.py
+PyTorch,ML library,GCN/GraphSAGE/MLP/1D-CNN models,src/ubiomark/models.py
+scikit-learn,ML library,logistic regression baseline + stratified CV + AUROC/AUPRC,scripts/prioritize.py
+NumPy,numerics,effect sizes and meta-analysis,src/ubiomark/stats.py
+SciPy,numerics,sparse graphs + normal tail p-values + eigsh,src/ubiomark/network.py
+pandas,data library,tables and manifests,src/ubiomark/geo.py
+pytest,testing,hermetic unit tests,tests/
+Git,version control,repository history,.git
+OpenSSH (ssh-keygen/ssh-keyscan),tooling,deploy key for GitHub push,-
+curl,tooling,endpoint and download checks,-

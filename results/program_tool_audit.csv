@@ -38,4 +38,4 @@ PRIDE Archive,-,1,external scientific proteomics archive,results/external/preecl
 statsmodels,-,1,analysis library,scripts/pe_meta_sensitivity.py,Independent Paule-Mandel and DerSimonian-Laird pooled-effect sensitivity for falsified ST3GAL2 preeclampsia prediction
 NetworkX,-,1,analysis library,scripts/signature_network_context.py,Physical STRING subgraph components and random edge-count context for fixed PCOS and IC sign panels
 seaborn,-,1,analysis visualization library,scripts/figures.py,Rendered empirical matched-null distributions for PCOS P8 and IC P7 failures using observed draws
-Crossref,-,1,scholarly metadata registry,results/external/bibliography_crossref.json,Verified titles and publication dates of five DOI research studies cited in manuscript
+Crossref,-,1,scholarly metadata registry,results/external/bibliography_crossref.json,Verified titles and publication dates of seven DOI research studies cited in manuscript

@@ -125,3 +125,7 @@ Program gate is record-level: individually fetched/verified/used GSM accessions 
 ## State 12:03
 - Added a documented exploratory P8 signed-expression score after viewing gene outcomes: AUROC .8148, AUPRC .8574 in the same 18 patients; random-sign baseline empirical p=.05994. Not registered, within-cohort normalization uses evaluation distribution, no deployable threshold, and P8's registered sign-set failure remains. Script/result and paper label it exploratory, not a discovery or benchmark win.
 - Seven DOI primary sources verified via Crossref including KG-Bench and original GSE28242 paper; 19 rendered exact-TNR pages with sparse final page, still short of 20 substantive. Tool ledger 35/40, accession 132/120; no qualifying discovery.
+
+## State 12:05
+- Added seven DOI-verified primary citations as a generated references section, with an independent primary citation for the lesion-specific GSE28242 conclusion and DOI for KG-Bench. Exact-TNR PDF now **20 rendered pages**, but final page is roughly half tool-inventory and formula with substantial whitespace; first/last references visually inspected, no clipping. Do NOT yet assert 20 substantive pages or a finished research paper: bibliography coverage remains partial, full visual review and discovery/benchmark gate still open.
+- `results/program_tool_audit.csv` 35/40 unique counted scientific tools; manifest 132/120 unique fetched-and-used accessions; eleven numbered formulas, 14 tests pass. The post-outcome P8 AUROC check remains exploratory and cannot change P8's failed registered null.

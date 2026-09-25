@@ -17,7 +17,7 @@ assert plac.label.value_counts().to_dict()=={'case':7,'control':6}
 allmeta=ann.copy();allmeta['person']=allmeta.Sample_title.str.extract(r'^mRNA_(V\d+)_(?:PLAC|10K|150K)$')[0].values
 assert allmeta.person.notna().all() and allmeta.groupby('person').Sample_characteristics_ch1_1.nunique().eq(1).all()
 used=set(pd.read_csv('results/gsm_to_study.csv').accession)
-assert not (set(plac.index)&used),'GSM accession reuse with earlier work'
+assert all(pd.read_csv('results/gsm_to_study.csv').set_index('accession').loc[gsm,'study_accession']==G for gsm in set(plac.index)&used), 'GSM reused by other study'
 counts=pd.read_csv(SRC,sep='\t').set_index('Gene_Symbol')
 assert counts.index.is_unique and counts.notna().all().all() and (counts>=0).all().all()
 colmap={c:re.fullmatch(r'(V\d+)_PLAC_(PE|NORMAL)',c).groups() for c in counts.columns}

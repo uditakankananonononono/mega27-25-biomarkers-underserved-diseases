@@ -158,3 +158,22 @@ before a named biomarker claim. Do not call normalized source matrices raw count
 report modalities and preprocessing separately.
 Sources: https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE114691 ;
 https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE186257 .
+
+### P13 observed outcome (2026-09-25 12:41 IST)
+GSE186257's normalized-filtered matrix matched all 44 GEO titles/GSMs and 26
+severe-PE/18 nonhypertensive-control labels. All six frozen genes were down,
+with FURIN and ZNF467 passing two-sided p<.05/6; FES g=-.665, nominal
+p=.0209, not gene-wise corrected. This one-study panel result is a pass under
+P13's local threshold, but cannot satisfy its BOTH-studies requirement.
+GSE114691's control and PE-only matrices map all 21+20 count columns exactly
+to GEO sample descriptions and GSMs after punctuation normalization. Raw
+matrices use ENST identifiers; a documented contemporary Ensembl transcript
+membership lookup matched 17/7/3/14/2/4 transcripts respectively to the
+six frozen genes, summed per gene. Historical hg19 transcripts may be missed
+by this current mapping. The PE-only comparison has FES g=-1.537
+(p=.000014), GPAT3 -.397 (.200), FURIN +.423 (.172), GRAMD1A -.876
+(.00735), ZNF467 -.528 (.0945), LPGAT1 -1.094 (.00110). FURIN reverses,
+so the registered both-study panel test FAILS even before considering the
+incomplete mapping. The PE+IUGR file is not an independent validation and
+is not included. FES alone has repeated down signs but was selected through
+old outcomes, is measured at birth, and is not a fresh named discovery.

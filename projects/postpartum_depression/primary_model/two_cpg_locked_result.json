@@ -1,0 +1,55 @@
+{
+  "prereg_commit": "07d7b107ae177a44ac8bd10d0bb58b66af4238c1",
+  "study": "GSE44132",
+  "sample_unit": "distinct patient",
+  "n": 50,
+  "case": 23,
+  "control": 27,
+  "mood_yes": 19,
+  "fixed_probes": [
+    "cg21326881",
+    "cg00058938"
+  ],
+  "random_control_probes": [
+    "cg22973468",
+    "cg14054990"
+  ],
+  "B0_auc": 0.0,
+  "B1_auc": 0.3864734299516908,
+  "B2_auc": 0.7568438003220612,
+  "random_B2_auc": 0.6006441223832528,
+  "B1_brier": 0.2485661208084302,
+  "B2_brier": 0.19879247330767474,
+  "B1_balanced_accuracy_at_0_5": 0.6312399355877616,
+  "B2_balanced_accuracy_at_0_5": 0.677938808373591,
+  "B2_minus_B1_auc": 0.3703703703703704,
+  "bootstrap_95_ci": [
+    0.1887883333333333,
+    0.5600824089105337
+  ],
+  "bootstrap_discard_single_class": 0,
+  "permutation_p_conditional_mood": 0.000999000999000999,
+  "permutation_count": 1000,
+  "strata": {
+    "0": {
+      "n": 31,
+      "case": 11,
+      "B1_auc": 0.0,
+      "B2_auc": 0.8772727272727273
+    },
+    "1": {
+      "n": 19,
+      "case": 12,
+      "B1_auc": 0.0,
+      "B2_auc": 0.34523809523809523
+    }
+  },
+  "drop_one_delta_range": [
+    0.34343434343434354,
+    0.39562289562289565
+  ],
+  "interpretation": "Internal robustness only on a historical original cohort; not the authors fitted LDA, not external validation or clinical utility.",
+  "gate_pass_numeric_only": true,
+  "scientific_gate_pass": false,
+  "scientific_gate_reason": "LOPO fold-retrained mood baseline has rank inversion (B0 AUROC 0); prenatal mood strata B2 AUROC 0.877 vs 0.345, not directionally coherent. Numeric-only gate is invalid for clinical claim."
+}

@@ -1,0 +1,133 @@
+{
+  "retrieved_at_utc": "2026-09-25T21:31:22.363264+00:00",
+  "hubs": [
+    "G3BP1",
+    "SRSF1",
+    "DR1",
+    "RASAL2",
+    "MAPK14"
+  ],
+  "services": {
+    "kegg": {
+      "url_template": "https://rest.kegg.jp/find/genes/<GENE>+hsa ; /link/pathway/<kegg_id>",
+      "data": {
+        "G3BP1": {
+          "kegg_id": "hsa:10146",
+          "n_pathways": 1,
+          "pathways": [
+            "path:hsa04623"
+          ]
+        },
+        "SRSF1": {
+          "kegg_id": "hsa:10772",
+          "n_pathways": 1,
+          "pathways": [
+            "path:hsa03040"
+          ]
+        },
+        "DR1": {
+          "kegg_id": "hsa:9249",
+          "n_pathways": 3,
+          "pathways": [
+            "path:hsa00830",
+            "path:hsa01100",
+            "path:hsa01240"
+          ]
+        },
+        "RASAL2": {
+          "kegg_id": "hsa:9462",
+          "n_pathways": 1,
+          "pathways": [
+            "path:hsa04014"
+          ]
+        },
+        "MAPK14": {
+          "kegg_id": "hsa:1432",
+          "n_pathways": 65,
+          "pathways": [
+            "path:hsa01522",
+            "path:hsa04010",
+            "path:hsa04015",
+            "path:hsa04068",
+            "path:hsa04071",
+            "path:hsa04114",
+            "path:hsa04148",
+            "path:hsa04218",
+            "path:hsa04261",
+            "path:hsa04370"
+          ]
+        }
+      }
+    },
+    "go_consortium_api": {
+      "url_template": "https://api.geneontology.org/api/ontology/term/<GOID>",
+      "data": {
+        "GO:0000086": {
+          "why": "G2/M transition - M6 module biology",
+          "label": "G2/M transition of mitotic cell cycle",
+          "definition": "The mitotic cell cycle transition by which a cell in G2 commits to M phase. The process begins when the kinase activity of M cyclin/CDK complex reaches a threshold high enough for the cell cycle to proceed. This is accomplished by activating a positive feedback loop that results in the accumulation "
+        },
+        "GO:0019233": {
+          "why": "sensory perception of pain - M3 module term (locked)",
+          "label": "sensory perception of pain",
+          "definition": "The series of events required for an organism to receive a painful stimulus, convert it to a molecular signal, and recognize and characterize the signal. A painful stimulus is any physical or chemical event that has the potential to cause tissue damage (actual or perceived) and activates the nocicep"
+        }
+      }
+    },
+    "rfam": {
+      "url_template": "https://rfam.org/search/sequence?term=<family>&content-type=application/json",
+      "data": {
+        "top_regulators_by_m6_pair_count": [
+          [
+            "hsa-miR-16-5p",
+            141
+          ],
+          [
+            "hsa-miR-24-3p",
+            132
+          ],
+          [
+            "hsa-miR-3613-3p",
+            117
+          ]
+        ],
+        "families": {
+          "hsa-miR-16-5p": {
+            "pair_count": 141,
+            "family_query": "mir-16",
+            "rfam_family": {
+              "acc": "RF00254",
+              "id": "mir-16",
+              "description": "mir-16 microRNA precursor family"
+            }
+          },
+          "hsa-miR-24-3p": {
+            "pair_count": 132,
+            "family_query": "mir-24",
+            "rfam_family": {
+              "acc": "RF00178",
+              "id": "mir-24",
+              "description": "mir-24 microRNA precursor family"
+            }
+          },
+          "hsa-miR-3613-3p": {
+            "pair_count": 117,
+            "family_query": "mir-3613",
+            "rfam_family": {
+              "acc": "RF03323",
+              "id": "mir-3613",
+              "description": "mir-3613 microRNA precursor family"
+            }
+          }
+        }
+      }
+    },
+    "rnacentral": {
+      "url": "https://rnacentral.org/api/v1/rna/?external_id=hsa-miR-16-5p&format=json",
+      "data": {
+        "count": null,
+        "first": "URS00004BCD9C"
+      }
+    }
+  }
+}

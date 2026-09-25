@@ -44,11 +44,8 @@ def download_matrices(gse: str) -> list[str]:
 def parse_series_matrix(path_or_text) -> tuple[pd.DataFrame, pd.DataFrame, dict]:
     """Return (expression probes x samples, sample annotation df, series meta)."""
     if isinstance(path_or_text, str) and os.path.exists(path_or_text):
-        opener = gzip.open if path_or_text.endswith(".gz") else open
-        with opener(path_or_text, "rt", errors="replace") as fh:
-            text = fh.read()
-    else:
-        text = path_or_text
+        return _parse_matrix_file(path_or_text)
+    text = path_or_text
     meta: dict = {}
     sample_rows: dict[str, list[list[str]]] = {}
     lines = text.splitlines()
@@ -79,6 +76,27 @@ def parse_series_matrix(path_or_text) -> tuple[pd.DataFrame, pd.DataFrame, dict]
         for j, vals in enumerate(rows):
             if len(vals) == len(ids):
                 ann[f"{key}_{j}" if len(rows) > 1 else key] = vals
+    return expr, ann, meta
+
+
+def _parse_matrix_file(path: str):
+    """Memory-lean parser: header lines read as text, table streamed by the C CSV engine as float32."""
+    opener = gzip.open if path.endswith(".gz") else open
+    head = []
+    with opener(path, "rt", errors="replace") as fh:
+        for ln in fh:
+            if ln.startswith("!series_matrix_table_begin"):
+                break
+            head.append(ln.rstrip("\n"))
+    _, ann, meta = parse_series_matrix("\n".join(head))
+    nskip = len(head) + 1
+    try:
+        expr = pd.read_csv(path, sep="\t", skiprows=nskip, index_col=0, quotechar='"', low_memory=True,
+                           na_values=["null", "NA", ""], dtype={c: "float32" for c in ann.index})
+    except Exception:
+        expr = pd.read_csv(path, sep="\t", skiprows=nskip, index_col=0, quotechar='"', low_memory=False)
+        expr = expr.apply(pd.to_numeric, errors="coerce").astype("float32")
+    expr = expr[~expr.index.astype(str).str.startswith("!")]
     return expr, ann, meta
 
 
@@ -124,10 +142,38 @@ def probe_to_symbol(gpl: str) -> pd.Series:
     t = platform_table(gpl)
     col = next((c for c in SYMBOL_COLS if c in t.columns), None)
     if col is None:
+        hg = hgnc_maps()
+        for c, key, f in [("ENTREZ_GENE_ID", "entrez", lambda v: str(v).split(".")[0]),
+                          ("GB_ACC", "refseq", lambda v: str(v).split(".")[0])]:
+            if c in t.columns:
+                m = t.set_index(t.columns[0])[c].map(lambda v: hg[key].get(f(v))).dropna()
+                if len(m) > 1000:
+                    m.index = m.index.astype(str)
+                    return m
         raise KeyError(f"{gpl}: no symbol column in {list(t.columns)[:15]}")
     m = t.set_index(t.columns[0])[col].map(lambda s: _clean_symbol(s, col)).dropna()
     m.index = m.index.astype(str)
     return m
+
+
+HGNC_PATH = os.path.join(CACHE, "hgnc", "hgnc_complete_set.txt")
+_HG = None
+
+
+def hgnc_maps() -> dict:
+    """Entrez ID / RefSeq accession -> approved HGNC symbol (HGNC complete set)."""
+    global _HG
+    if _HG is None:
+        _fetch("https://storage.googleapis.com/public-download-files/hgnc/tsv/tsv/hgnc_complete_set.txt", HGNC_PATH)
+        h = pd.read_csv(HGNC_PATH, sep="\t", dtype=str, usecols=["symbol", "entrez_id", "refseq_accession"])
+        ent = dict(zip(h.entrez_id.dropna(), h.symbol[h.entrez_id.notna()]))
+        ref = {}
+        for sym, rs in zip(h.symbol, h.refseq_accession.fillna("")):
+            for r in rs.split("|"):
+                if r:
+                    ref[r.split(".")[0]] = sym
+        _HG = {"entrez": ent, "refseq": ref}
+    return _HG
 
 
 def to_gene_level(expr: pd.DataFrame, p2s: pd.Series) -> pd.DataFrame:

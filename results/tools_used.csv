@@ -14,3 +14,4 @@ pytest,testing,hermetic unit tests,tests/
 Git,version control,repository history,.git
 OpenSSH (ssh-keygen/ssh-keyscan),tooling,deploy key for GitHub push,-
 curl,tooling,endpoint and download checks,-
+HGNC complete set,external data service,Entrez/RefSeq -> approved symbol mapping for platforms without symbol columns,src/ubiomark/geo.py

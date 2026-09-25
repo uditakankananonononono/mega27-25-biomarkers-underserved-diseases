@@ -35,3 +35,12 @@ Pipeline order:
 - Re-run cnn_classify.py (split_final) and prioritize for remaining diseases.
 - Pivot: generic RNA-seq processor + fresh cohorts (PE + PCOS) for independent tests; pre-register each prediction in results/preregistered_predictions.md BEFORE processing.
 - Recount dataset_manifest after dedup (dropped series still processed/used? count only series in split_final + addendum).
+
+## State 10:58 (commit 5ab31e8)
+- Real-data tests/figures/working manuscript started. PDF from pdfinfo: **6 pages**, Times-family, 11 numbered formulas; this is NOT the required substantive 50-page paper. `paper/manuscript.pdf` is a working draft only, visual inspection of all six pages done, legible; no padding.
+- P3 ST3GAL2 FALSIFIED on four independent fresh PE RNA GEO series: all-cohort random effects g=-0.1034, one-sided p=0.3850; placenta-only p=0.0994. Source results/P3_fresh_meta.csv. PCOS fresh GSE277906: 12/17 signs, uncorrected p=0.0717, fails.
+- Tools 29/40, dataset manifest 95/120, formulas 11/10 in 6pp working paper. Dataset and tool counts are in committed ledgers.
+- GNN prioritization background runner continues sequentially; finished pcos/leishmaniasis/interstitial_cystitis/me_cfs, will continue chagas/fibromyalgia/postpartum_depression. Check results/prio and commit completed results.
+- External literature comparison: KG-Bench 0.908 AUC uses a DIFFERENT drug-disease temporal label/split; cannot claim published-SOTA break. Local `/tmp/deep-research/mega27-biomarkers/` notes; key source https://pmc.ncbi.nlm.nih.gov/articles/PMC13171177/.
+- GitHub fresh clone still denied publickey. Latest Drive checkpoint covers 659d1d1; new commits since require new bundle/upload immediately. Drive folder https://drive.google.com/drive/folders/1qZzMzWqYeH_c7EvE87LAaxcKvEHN1iIi?authuser=uditakankana%40gmail.com.
+- Tests: 14 passed, one tiny-group variance warning; re-run after changes. Next: update bench, add genuine accessions, seek verified named discovery and published comparability; expand paper substantively, not by page padding; deliver final paper/results and push only when all gates clear.

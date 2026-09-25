@@ -1,0 +1,17 @@
+{
+  "n_cohorts": 17,
+  "cnn_mean": 0.576229723562594,
+  "logistic_mean": 0.6275593486245855,
+  "mean_difference": -0.0513296250619914,
+  "weighted_difference": -0.03786508127195542,
+  "cohort_bootstrap_ci95": [
+    -0.13582449705352553,
+    0.02983277914485713
+  ],
+  "cnn_wins": 7,
+  "logistic_wins": 8,
+  "ties": 2,
+  "sign_test_p": 1.0,
+  "wilcoxon_p": 0.3062337331376457,
+  "method": "Rerun after seeding CNN model weights before construction; same 17 cohort split, same preprocessing; historical pre-fix table retained. Descriptive paired cohorts, not published-SOTA benchmark."
+}

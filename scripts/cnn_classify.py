@@ -50,4 +50,4 @@ for d in sorted(sp.disease.unique()):
              "cnn_random": roc_auc_score(yv, models.predict_cnn(nets["cnn_random"], Xv[:, perm])),
              "logreg": roc_auc_score(yv, lr.predict_proba(Xv)[:, 1])}
         rows.append(r); print(r, flush=True)
-pd.DataFrame(rows).to_csv("results/cnn_crosscohort.csv", index=False)
+pd.DataFrame(rows).to_csv(os.environ.get("UBIOMARK_CNN_OUT", "results/cnn_crosscohort.csv"), index=False)

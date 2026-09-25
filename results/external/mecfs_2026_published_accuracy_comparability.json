@@ -60,5 +60,16 @@
       "max": 0.684210526315789
     }
   },
-  "caveats": "Source paper uses 50 stratified 70:30 splits of an ME/CFS subset and its own feature-selection/classifier workflow. Its mean accuracy is not P33 authors seed-22 108/60 test AUROC or 17-GEO-cohort CNN AUROC. Source table has only seed-level accuracies, not patient-level predictions here. Accuracy and AUROC are different metrics; no claim of beating these models is possible without identical split and feature-selection availability."
+  "caveats": "Source paper uses 50 stratified 70:30 splits of an ME/CFS subset and its own feature-selection/classifier workflow. Its mean accuracy is not P33 authors seed-22 108/60 test AUROC or 17-GEO-cohort CNN AUROC. The published aggregate accuracy table has only seed-level accuracies, but its LLM archive includes per-seed patient indices; standard-ML individual predictions remain unavailable in the inspected files. Those indices show 38 held-out patients per seed, not P33's 60. Accuracy and AUROC are different metrics; no claim of beating these models is possible without identical split and feature-selection availability.",
+  "released_patient_index_audit": {
+    "source_url": "https://raw.githubusercontent.com/adb258/cfrna_ai_manuscript/main/data/full%20pipeline/DONE_o3_MECFS_informed.zip",
+    "zip_sha256": "5edce8394437584636fa4dbeaa49a647737674718dc9aac2ef8883d5a4a2f6d3",
+    "archive_seed_indices": 50,
+    "per_seed_holdout_index_count": 38,
+    "seed_22_overlap_with_P33_seed_22_test_n": 15,
+    "seed_22_overlap_with_P33_seed_22_train_n": 23,
+    "P33_test_n": 60,
+    "P33_train_n": 108,
+    "interpretation": "The new 50-seed paper releases sample-index CSVs in this LLM archive, contrary to an earlier blanket no-split-index impression; it does not release corresponding standard-ML per-patient predictions in this file. Every new-paper held-out index has 38 people, not the P33 fixed 60, and the seed numbered 22 is not the same split. Matching seed labels do not make scores comparable. Exact remodelling would require reconstructing the paper-specific cohort, its constraints and train-only DESeq2/VST feature-selection/threshold procedure, then reporting same-patient paired results."
+  }
 }

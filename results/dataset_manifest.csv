@@ -50,6 +50,7 @@ GSE190971,GEO series,"preeclampsia:P12 PLAC 13 people, 13 of 41 series GSMs"
 GSE192902,GEO cfRNA postQC gene counts,"preeclampsia:P11 first prenatal draw, three nested cohorts, failed panel transport"
 GSE204835,GEO series supplementary matrix,preeclampsia:fresh_validation (placenta (paraffin-embedded))
 GSE212787,GEO series,"endometriosis:P17 processed cohort, 13 unique primary GSMs nested"
+GSE216638,GEO series and count workbook,leishmaniasis:P28 cross-parasite lesion panel transport
 GSE221921,GEO series supplementary expression files,"fibromyalgia:P16 exploratory independent deposit, 189 GSM nested in this GSE; transcriptomic signatures already published"
 GSE23339,GEO series,endometriosis:discovery
 GSE24129,GEO series,preeclampsia:discovery
@@ -405,6 +406,28 @@ GSM6552373,GEO GSM processed RNA count record,"endometriosis:P17 used eutopic do
 GSM6552374,GEO GSM processed RNA count record,"endometriosis:P17 used eutopic donor count matrix, 13 GSMs nested in GSE212787; panel negative"
 GSM6552375,GEO GSM processed RNA count record,"endometriosis:P17 used eutopic donor count matrix, 13 GSMs nested in GSE212787; panel negative"
 GSM6552376,GEO GSM processed RNA count record,"endometriosis:P17 used eutopic donor count matrix, 13 GSMs nested in GSE212787; panel negative"
+GSM6685067,GEO individually fetched GSM full-text record,leishmaniasis:P28 count-column and label source; nested in GSE216638; not independent cohort
+GSM6685068,GEO individually fetched GSM full-text record,leishmaniasis:P28 count-column and label source; nested in GSE216638; not independent cohort
+GSM6685069,GEO individually fetched GSM full-text record,leishmaniasis:P28 count-column and label source; nested in GSE216638; not independent cohort
+GSM6685070,GEO individually fetched GSM full-text record,leishmaniasis:P28 count-column and label source; nested in GSE216638; not independent cohort
+GSM6685071,GEO individually fetched GSM full-text record,leishmaniasis:P28 count-column and label source; nested in GSE216638; not independent cohort
+GSM6685072,GEO individually fetched GSM full-text record,leishmaniasis:P28 count-column and label source; nested in GSE216638; not independent cohort
+GSM6685073,GEO individually fetched GSM full-text record,leishmaniasis:P28 count-column and label source; nested in GSE216638; not independent cohort
+GSM6685074,GEO individually fetched GSM full-text record,leishmaniasis:P28 count-column and label source; nested in GSE216638; not independent cohort
+GSM6685075,GEO individually fetched GSM full-text record,leishmaniasis:P28 count-column and label source; nested in GSE216638; not independent cohort
+GSM6685076,GEO individually fetched GSM full-text record,leishmaniasis:P28 count-column and label source; nested in GSE216638; not independent cohort
+GSM6685077,GEO individually fetched GSM full-text record,leishmaniasis:P28 count-column and label source; nested in GSE216638; not independent cohort
+GSM6685078,GEO individually fetched GSM full-text record,leishmaniasis:P28 count-column and label source; nested in GSE216638; not independent cohort
+GSM6685079,GEO individually fetched GSM full-text record,leishmaniasis:P28 count-column and label source; nested in GSE216638; not independent cohort
+GSM6685080,GEO individually fetched GSM full-text record,leishmaniasis:P28 count-column and label source; nested in GSE216638; not independent cohort
+GSM6685081,GEO individually fetched GSM full-text record,leishmaniasis:P28 count-column and label source; nested in GSE216638; not independent cohort
+GSM6685082,GEO individually fetched GSM full-text record,leishmaniasis:P28 count-column and label source; nested in GSE216638; not independent cohort
+GSM6685083,GEO individually fetched GSM full-text record,leishmaniasis:P28 count-column and label source; nested in GSE216638; not independent cohort
+GSM6685084,GEO individually fetched GSM full-text record,leishmaniasis:P28 count-column and label source; nested in GSE216638; not independent cohort
+GSM6685085,GEO individually fetched GSM full-text record,leishmaniasis:P28 count-column and label source; nested in GSE216638; not independent cohort
+GSM6685086,GEO individually fetched GSM full-text record,leishmaniasis:P28 count-column and label source; nested in GSE216638; not independent cohort
+GSM6685087,GEO individually fetched GSM full-text record,leishmaniasis:P28 count-column and label source; nested in GSE216638; not independent cohort
+GSM6685088,GEO individually fetched GSM full-text record,leishmaniasis:P28 count-column and label source; nested in GSE216638; not independent cohort
 GSM6909756,GEO GSM per-sample expression record,"fibromyalgia:P16 fetched and used individual processed expression, 189 samples nested in GSE221921"
 GSM6909757,GEO GSM per-sample expression record,"fibromyalgia:P16 fetched and used individual processed expression, 189 samples nested in GSE221921"
 GSM6909758,GEO GSM per-sample expression record,"fibromyalgia:P16 fetched and used individual processed expression, 189 samples nested in GSE221921"

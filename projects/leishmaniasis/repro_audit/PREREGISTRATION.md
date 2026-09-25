@@ -4,7 +4,7 @@ expression data was downloaded or inspected (git history is the ordering proof;
 the only artifacts fetched before this commit are the publication text and
 Figure 1 image, hashed below).
 
-## Scope and caveats (owner-verbatim constraints, binding)
+## Scope and caveats (owner's internal design bounds relayed via the parent agent; not a verbatim user approval; this file creates no gate by itself)
 Reproducing the source-published 51-gene ISG signature on GSE162760 CANNOT by
 itself be called a new discovery, independent validation, or a same-task win.
 If it succeeds it is a trustworthy baseline that sharpens a subsequent NEW

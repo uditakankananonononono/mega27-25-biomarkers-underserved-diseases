@@ -1,9 +1,12 @@
 # DRAFT preregistration: within-donor exertion-response trajectory in ME/CFS whole blood
-Status: DRAFT for owner review. NOT approved. HARD GATE: no expression access,
+Status: CLOSED - negative feasibility per owner ruling 2026-09-26 (see CLOSURE_NEGATIVE_2026-09-26.md). Draft preserved unexecuted. HARD GATE: no expression access,
 no testing, no analysis until the owner inspects and approves. Branch
 builder-25-leish. Date drafted: 2026-09-26.
 
-## Scope and interpretation bounds (owner-verbatim constraints, binding)
+## Scope and interpretation bounds
+(These are the owner's internal design bounds relayed through the parent
+agent; they are not a verbatim user approval, and this repository file
+creates no gate by itself.)
 Narrower, draft-only exertion-response question. NOT ME/CFS-specific diagnosis.
 NOT a completed novelty gate. Matched sedentary healthy controls can test a
 disease-by-time interaction but CANNOT establish specificity vs other

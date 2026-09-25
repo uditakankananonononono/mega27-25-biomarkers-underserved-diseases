@@ -50,6 +50,7 @@ rng=np.random.default_rng(20260925);null=np.zeros(10000,int)
 for i in range(len(null)):
  picks=list(rng.choice(up,cp,replace=False))+list(rng.choice(down,cn,replace=False))
  null[i]=int(sum(np.sign(D.loc[picks,'mu'])==np.sign(E.loc[picks,'g'])))
+pd.DataFrame({'matched_random_agreements':null}).to_csv('results/pcos_p8_null_draws.csv.gz',index=False)
 count=int(agreements.sum());p=(1+int(sum(null>=count)))/(len(null)+1)
 row=dict(gse=G,n_case=9,n_control=9,n_genes_measured=len(obs),n_positive=cp,n_negative=cn,n_agree=count,fraction_agree=float(count/len(obs)),null_mean=float(null.mean()),null_sd=float(null.std(ddof=1)),empirical_p=p,passes_per_cohort=(len(obs)>=15 and p<.025),mapped_genes=len(E),unmapped_ensembl_rows=n_unmapped,ambiguous_hgnc_ensembl_ids=sorted(ambiguous),source=base+matfile,matrix_sha256=hashlib.sha256(open(path,'rb').read()).hexdigest(),sample_info_sha256=hashlib.sha256(sample_info).hexdigest())
 with open('results/pcos_p8.json','w') as f:json.dump(row,f,indent=2)

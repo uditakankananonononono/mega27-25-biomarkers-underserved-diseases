@@ -39,6 +39,7 @@ for stratum,cases in [('all_PBS',without|withlesion),('without_lesions',without)
     for b in range(10000):
         picks=np.concatenate([rng.choice(pools[s],size=need[s],replace=False) for s in (-1,1)])
         null[b]=np.mean(np.sign(effects.loc[picks,'g'].to_numpy())==np.sign(disc.loc[picks,'mu'].to_numpy()))
+    pd.DataFrame({'matched_random_fraction_agree':null}).to_csv(f'results/ic_urine_p7_null_{stratum}.csv.gz',index=False)
     score=float(agree.mean()); p=(1+int((null>=score).sum()))/(len(null)+1)
     rows.append(dict(stratum=stratum,n_cases=int(cases.sum()),n_controls=int(normal.sum()),n_selected=50,n_measured=len(observed),n_agree=int(agree.sum()),fraction_agree=score,null_mean=float(null.mean()),null_sd=float(null.std(ddof=1)),empirical_p=p,source=URL))
     for symbol,a in zip(observed,agree):

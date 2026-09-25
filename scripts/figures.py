@@ -31,3 +31,15 @@ if bench:
  ax.set_xlabel('');ax.legend(handles=ax.containers[:len(use)],labels=use,loc='upper center',bbox_to_anchor=(.5,-.28),frameon=False,ncol=3,fontsize=7)
  plt.xticks(rotation=25,ha='right');plt.tight_layout();plt.savefig(P/'gene_benchmark.pdf',bbox_inches='tight');plt.close()
 print('figures',list(P.glob('*.pdf')))
+
+# Fixed-panel sign tests against their selection-matched empirical nulls.
+import seaborn as sns
+fig,axes=plt.subplots(1,2,figsize=(7.3,2.35))
+for ax,file,observed,title,xlabel in [
+ (axes[0],'results/pcos_p8_null_draws.csv.gz',16,'PCOS GSE293353, 19 genes','Matching directions (count)'),
+ (axes[1],'results/ic_urine_p7_null_all_PBS.csv.gz',22/43,'IC urine, all eight PBS cases','Matching directions (fraction)')]:
+ values=pd.read_csv(file).iloc[:,0].to_numpy()
+ sns.histplot(values,stat='probability',discrete=(ax is axes[0]),ax=ax,color='#a6bcc0',edgecolor=None)
+ ax.axvline(observed,color='#a34537',lw=1.6,label='Observed')
+ ax.set_title(title,fontsize=9);ax.set_xlabel(xlabel);ax.set_ylabel('Null frequency');ax.legend(frameon=False,fontsize=8)
+fig.tight_layout();fig.savefig(P/'matched_null_failures.pdf');plt.close(fig)

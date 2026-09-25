@@ -112,3 +112,6 @@ Program gate is record-level: individually fetched/verified/used GSM accessions 
 
 ## State 11:54
 - Independent `statsmodels` DerSimonian-Laird recomputation matched the project's four-cohort P3 ST3GAL2 estimate; iterative Paule-Mandel p=.3955 vs DL p=.3850. All iterative leave-one-out one-sided p values exceed .05 (best .0969). Genuine analysis library used, tool ledger 32/40 with unique canonical names. Exact-TNR working paper 17 pages, no overflow, still below substantive length gate. Citation/claims remain negative.
+
+## State 11:57
+- NetworkX physical-STRING induced subgraphs: 35/50 top IC genes on graph but only one physical edge; all 20 PCOS genes on graph, zero edges. Degree-unmatched random comparison does not show enrichment and cannot prove statistical independence; manuscript removes unsupported implicit module claim. Seaborn graph renders actual matched-null draws for P7 all-PBS and P8 PCOS; those 10k draws are now committed separately. Tool ledger 34/40 genuinely used canonical entries. Paper exact-TNR 18 rendered pages, no overfull, page 14 chart visually inspected and legible. Still below 20 substantive pages; no discovery/benchmark break.

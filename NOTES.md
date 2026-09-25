@@ -146,3 +146,6 @@ Program gate is record-level: individually fetched/verified/used GSM accessions 
 
 ## State 12:24
 - Rebuilt `paper/manuscript-times.pdf` with LuaLaTeX and recovered fontspec paths, not the failed LibreOffice conversion. It now contains P9/P10, 21 rendered pages, embedded Times New Roman regular/bold; no overfull boxes or undefined references in the second compilation. Visually inspected changed science page 10, table page 11, and appendix pages 20-21; these are readable without clipped rows. Other pages were not fully pixel-reviewed and page 21 remains substantially inventory/formula, so the 20 *substantive* page gate remains unverified. The previous NOTES line referring to the committed pre-P9/P10 PDF describes the earlier checkpoint, superseded by this rebuilt PDF.
+
+## State 12:28
+- Exact-Times manuscript source and PDF add explicitly post-outcome P10 FES sensitivity: max-|t| exact label-permutation familywise p=.0342, all 16 LOO signs down, gestational-delivery-age-adjusted descriptive coefficient -0.344 log2 CPM (nominal p=.00848), similar mean delivery ages 33.20/33.11 weeks. None upgrades the frozen six-gene failure. LuaLaTeX rebuild is 21 pages, embedded Times font, no overflow/undefined refs; pages 10-11 visually checked again and readable. Other pages remain short of full pixel pass; 20 substantive pages not certified.

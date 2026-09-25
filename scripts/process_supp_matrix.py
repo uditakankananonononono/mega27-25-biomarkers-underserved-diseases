@@ -20,7 +20,7 @@ SPECS = {
                      label_field='Sample_characteristics_ch1_1', case='cell line: PE high-risk', control='cell line: control',
                      tissue='peripheral blood'),
     'GSE306864': dict(disease='preeclampsia', file='GSE306864_rawCounts.txt.gz',
-                     unit='counts', sep='\t', key='ensembl_id', title_prefix='',
+                     unit='counts', sep='\t', key='Unnamed: 0', title_prefix='',
                      label_field='Sample_characteristics_ch1_2', case='treatment: Preeclampsia', control='treatment: Control',
                      tissue='chorionic villus'),
     'GSE303840': dict(disease='preeclampsia', file='GSE303840_merged_Raw.csv.gz',

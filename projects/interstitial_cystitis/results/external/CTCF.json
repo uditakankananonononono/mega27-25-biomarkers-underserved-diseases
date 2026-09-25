@@ -1,0 +1,155 @@
+{
+  "gene": "CTCF",
+  "module": "M6_cell_state_g2m",
+  "prereg": "projects/interstitial_cystitis/prereg/ic_p48_module_genesets.json",
+  "retrieved_at_utc": "2026-09-25T20:27:07.919492+00:00",
+  "sources": {
+    "ensembl": {
+      "url": "https://rest.ensembl.org/lookup/symbol/homo_sapiens/CTCF?content-type=application/json",
+      "data": {
+        "id": "ENSG00000102974",
+        "display_name": "CTCF",
+        "description": "CCCTC-binding factor [Source:HGNC Symbol;Acc:HGNC:13723]",
+        "biotype": "protein_coding",
+        "seq_region_name": "16"
+      }
+    },
+    "uniprot": {
+      "url": "https://rest.uniprot.org/uniprotkb/search?query=gene_exact%3ACTCF%20AND%20organism_id%3A9606%20AND%20reviewed%3Atrue&size=3&format=json",
+      "data": [
+        {
+          "primaryAccession": "P49711",
+          "uniProtkbId": "CTCF_HUMAN",
+          "entryType": "UniProtKB reviewed (Swiss-Prot)"
+        }
+      ]
+    },
+    "europe_pmc": {
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=CTCF%20AND%20%22interstitial%20cystitis%22&format=json&pageSize=10",
+      "data": {
+        "hit_count": 9,
+        "papers": [
+          {
+            "id": "39252992",
+            "title": "Adult zymosan re-exposure exacerbates the molecular alterations in the brainstem rostral ventromedial medulla of rats with early life zymosan-induced cystitis.",
+            "doi": "10.1016/j.ynpai.2024.100160",
+            "pubYear": "2024"
+          },
+          {
+            "id": "41052277",
+            "title": "Navigating the 3D genome at single-cell resolution: techniques, computation, and mechanistic landscapes.",
+            "doi": "10.1093/bib/bbaf520",
+            "pubYear": "2025"
+          },
+          {
+            "id": "33095778",
+            "title": "In vivo and ex vivo assessment of bladder hyper-permeability and using molecular targeted magnetic resonance imaging to detect claudin-2 in a mouse model for interstitial cystitis.",
+            "doi": "10.1371/journal.pone.0239282",
+            "pubYear": "2020"
+          },
+          {
+            "id": "12057914",
+            "title": "Gene expression profiling of mouse bladder inflammatory responses to LPS, substance P, and antigen-stimulation.",
+            "doi": "10.1016/s0002-9440(10)61159-5",
+            "pubYear": "2002"
+          },
+          {
+            "id": "PMC10902613",
+            "title": "Abstracts",
+            "doi": null,
+            "pubYear": "2024"
+          },
+          {
+            "id": "31801974",
+            "title": "ACNP 58<sup>th</sup> Annual Meeting: Poster Session III.",
+            "doi": "10.1038/s41386-019-0547-9",
+            "pubYear": "2019"
+          },
+          {
+            "id": "PMC7163937",
+            "title": "Poster Sessions",
+            "doi": null,
+            "pubYear": "2014"
+          },
+          {
+            "id": "32030671",
+            "title": "Vision 20/20 for the Second Leap of Reproductive Sciences.",
+            "doi": "10.1007/s43032-019-00138-w",
+            "pubYear": "2020"
+          },
+          {
+            "id": "24085684",
+            "title": "Abstracts of the 2013 Annual Meeting of the American College of Rheumatology. October 25-30, 2013. San Diego, California, USA.",
+            "doi": "10.1002/art.38216",
+            "pubYear": "2013"
+          }
+        ]
+      }
+    },
+    "mygene": {
+      "url": "https://mygene.info/v3/query?q=symbol%3ACTCF&species=human&size=3",
+      "data": {
+        "total": 1,
+        "hits": [
+          {
+            "_id": "10664",
+            "symbol": "CTCF",
+            "name": "CCCTC-binding factor",
+            "taxid": 9606
+          }
+        ]
+      }
+    },
+    "chembl": {
+      "url": "https://www.ebi.ac.uk/chembl/api/data/target/search.json?q=CTCF&limit=20",
+      "data": {
+        "total": 1,
+        "human_targets": [
+          {
+            "target_chembl_id": "CHEMBL4523233",
+            "pref_name": "Transcriptional repressor CTCF",
+            "organism": "Homo sapiens"
+          }
+        ]
+      }
+    },
+    "hgnc_rest": {
+      "url": "https://rest.genenames.org/fetch/symbol/CTCF",
+      "data": [
+        {
+          "symbol": "CTCF",
+          "hgnc_id": "HGNC:13723",
+          "entrez_id": "10664",
+          "ensembl_gene_id": "ENSG00000102974",
+          "status": "Approved"
+        }
+      ]
+    },
+    "gtex_reference": {
+      "url": "https://gtexportal.org/api/v2/reference/gene?geneId=CTCF",
+      "data": [
+        {
+          "geneSymbol": "CTCF",
+          "geneId": null,
+          "gencodeId": "ENSG00000102974.14",
+          "entrezGeneId": 10664
+        }
+      ]
+    },
+    "reactome": {
+      "url": "https://reactome.org/ContentService/data/mapping/UniProt/P49711/pathways",
+      "data": [
+        {
+          "stId": "R-HSA-5617472",
+          "displayName": "Activation of anterior HOX genes in hindbrain development during early embryogenesis",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-9943962",
+          "displayName": "CHD6, CHD7, CHD8, CHD9 subfamily",
+          "speciesName": "Homo sapiens"
+        }
+      ]
+    }
+  }
+}

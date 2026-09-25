@@ -1,0 +1,125 @@
+{
+  "gene": "SUV39H1",
+  "module": "M6_cell_state_g2m",
+  "prereg": "projects/interstitial_cystitis/prereg/ic_p48_module_genesets.json",
+  "retrieved_at_utc": "2026-09-25T20:21:22.975125+00:00",
+  "sources": {
+    "ensembl": {
+      "url": "https://rest.ensembl.org/lookup/symbol/homo_sapiens/SUV39H1?content-type=application/json",
+      "data": {
+        "id": "ENSG00000101945",
+        "display_name": "SUV39H1",
+        "description": "SUV39H1 histone lysine methyltransferase [Source:HGNC Symbol;Acc:HGNC:11479]",
+        "biotype": "protein_coding",
+        "seq_region_name": "X"
+      }
+    },
+    "uniprot": {
+      "url": "https://rest.uniprot.org/uniprotkb/search?query=gene_exact%3ASUV39H1%20AND%20organism_id%3A9606%20AND%20reviewed%3Atrue&size=3&format=json",
+      "data": [
+        {
+          "primaryAccession": "O43463",
+          "uniProtkbId": "SUV91_HUMAN",
+          "entryType": "UniProtKB reviewed (Swiss-Prot)"
+        }
+      ]
+    },
+    "europe_pmc": {
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=SUV39H1%20AND%20%22interstitial%20cystitis%22&format=json&pageSize=10",
+      "data": {
+        "hit_count": 4,
+        "papers": [
+          {
+            "id": "26088181",
+            "title": "The significance of autoantibodies to DFS70/LEDGFp75 in health and disease: integrating basic science with clinical understanding.",
+            "doi": "10.1007/s10238-015-0367-0",
+            "pubYear": "2016"
+          },
+          {
+            "id": "PMC7166724",
+            "title": "2013 ACVIM Forum Research Abstracts Program",
+            "doi": null,
+            "pubYear": "2013"
+          },
+          {
+            "id": "PMC7104427",
+            "title": "Abstracts",
+            "doi": null,
+            "pubYear": "2018"
+          },
+          {
+            "id": "PMC7163937",
+            "title": "Poster Sessions",
+            "doi": null,
+            "pubYear": "2014"
+          }
+        ]
+      }
+    },
+    "mygene": {
+      "url": "https://mygene.info/v3/query?q=symbol%3ASUV39H1&species=human&size=3",
+      "data": {
+        "total": 1,
+        "hits": [
+          {
+            "_id": "6839",
+            "symbol": "SUV39H1",
+            "name": "SUV39H1 histone lysine methyltransferase",
+            "taxid": 9606
+          }
+        ]
+      }
+    },
+    "chembl": {
+      "url": "https://www.ebi.ac.uk/chembl/api/data/target/search.json?q=SUV39H1&limit=20",
+      "data": {
+        "total": 1,
+        "human_targets": [
+          {
+            "target_chembl_id": "CHEMBL1795118",
+            "pref_name": "Histone-lysine N-methyltransferase SUV39H1",
+            "organism": "Homo sapiens"
+          }
+        ]
+      }
+    },
+    "hgnc_rest": {
+      "url": "https://rest.genenames.org/fetch/symbol/SUV39H1",
+      "data": [
+        {
+          "symbol": "SUV39H1",
+          "hgnc_id": "HGNC:11479",
+          "entrez_id": "6839",
+          "ensembl_gene_id": "ENSG00000101945",
+          "status": "Approved"
+        }
+      ]
+    },
+    "gtex_reference": {
+      "url": "https://gtexportal.org/api/v2/reference/gene?geneId=SUV39H1",
+      "data": [
+        {
+          "geneSymbol": "SUV39H1",
+          "geneId": null,
+          "gencodeId": "ENSG00000101945.16",
+          "entrezGeneId": 6839
+        }
+      ]
+    },
+    "reactome": {
+      "url": "https://reactome.org/ContentService/data/mapping/UniProt/O43463/pathways",
+      "data": [
+        {
+          "stId": "R-HSA-3214841",
+          "displayName": "PKMTs methylate histone lysines",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-427359",
+          "displayName": "SIRT1 negatively regulates rRNA expression",
+          "speciesName": "Homo sapiens"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,110 @@
+{
+  "gene": "PDS5B",
+  "module": "M6_cell_state_g2m",
+  "prereg": "projects/interstitial_cystitis/prereg/ic_p48_module_genesets.json",
+  "retrieved_at_utc": "2026-09-25T20:24:25.940905+00:00",
+  "sources": {
+    "ensembl": {
+      "url": "https://rest.ensembl.org/lookup/symbol/homo_sapiens/PDS5B?content-type=application/json",
+      "data": {
+        "id": "ENSG00000083642",
+        "display_name": "PDS5B",
+        "description": "PDS5 cohesin associated factor B [Source:HGNC Symbol;Acc:HGNC:20418]",
+        "biotype": "protein_coding",
+        "seq_region_name": "13"
+      }
+    },
+    "uniprot": {
+      "url": "https://rest.uniprot.org/uniprotkb/search?query=gene_exact%3APDS5B%20AND%20organism_id%3A9606%20AND%20reviewed%3Atrue&size=3&format=json",
+      "data": [
+        {
+          "primaryAccession": "Q9NTI5",
+          "uniProtkbId": "PDS5B_HUMAN",
+          "entryType": "UniProtKB reviewed (Swiss-Prot)"
+        }
+      ]
+    },
+    "europe_pmc": {
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=PDS5B%20AND%20%22interstitial%20cystitis%22&format=json&pageSize=10",
+      "data": {
+        "hit_count": 0,
+        "papers": []
+      }
+    },
+    "mygene": {
+      "url": "https://mygene.info/v3/query?q=symbol%3APDS5B&species=human&size=3",
+      "data": {
+        "total": 1,
+        "hits": [
+          {
+            "_id": "23047",
+            "symbol": "PDS5B",
+            "name": "PDS5 cohesin associated factor B",
+            "taxid": 9606
+          }
+        ]
+      }
+    },
+    "chembl": {
+      "url": "https://www.ebi.ac.uk/chembl/api/data/target/search.json?q=PDS5B&limit=20",
+      "data": {
+        "total": 1,
+        "human_targets": [
+          {
+            "target_chembl_id": "CHEMBL6067140",
+            "pref_name": "Sister chromatid cohesion protein PDS5 homolog B",
+            "organism": "Homo sapiens"
+          }
+        ]
+      }
+    },
+    "hgnc_rest": {
+      "url": "https://rest.genenames.org/fetch/symbol/PDS5B",
+      "data": [
+        {
+          "symbol": "PDS5B",
+          "hgnc_id": "HGNC:20418",
+          "entrez_id": "23047",
+          "ensembl_gene_id": "ENSG00000083642",
+          "status": "Approved"
+        }
+      ]
+    },
+    "gtex_reference": {
+      "url": "https://gtexportal.org/api/v2/reference/gene?geneId=PDS5B",
+      "data": [
+        {
+          "geneSymbol": "PDS5B",
+          "geneId": null,
+          "gencodeId": "ENSG00000083642.18",
+          "entrezGeneId": 23047
+        }
+      ]
+    },
+    "reactome": {
+      "url": "https://reactome.org/ContentService/data/mapping/UniProt/Q9NTI5/pathways",
+      "data": [
+        {
+          "stId": "R-HSA-2467813",
+          "displayName": "Separation of Sister Chromatids",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-2468052",
+          "displayName": "Establishment of Sister Chromatid Cohesion",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-2470946",
+          "displayName": "Cohesin Loading onto Chromatin",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-2500257",
+          "displayName": "Resolution of Sister Chromatid Cohesion",
+          "speciesName": "Homo sapiens"
+        }
+      ]
+    }
+  }
+}

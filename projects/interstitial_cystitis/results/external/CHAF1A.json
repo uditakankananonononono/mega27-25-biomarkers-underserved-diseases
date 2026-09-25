@@ -1,0 +1,85 @@
+{
+  "gene": "CHAF1A",
+  "module": "M6_cell_state_g2m",
+  "prereg": "projects/interstitial_cystitis/prereg/ic_p48_module_genesets.json",
+  "retrieved_at_utc": "2026-09-25T20:21:56.548529+00:00",
+  "sources": {
+    "ensembl": {
+      "url": "https://rest.ensembl.org/lookup/symbol/homo_sapiens/CHAF1A?content-type=application/json",
+      "data": {
+        "id": "ENSG00000167670",
+        "display_name": "CHAF1A",
+        "description": "chromatin assembly factor 1 subunit A [Source:HGNC Symbol;Acc:HGNC:1910]",
+        "biotype": "protein_coding",
+        "seq_region_name": "19"
+      }
+    },
+    "uniprot": {
+      "url": "https://rest.uniprot.org/uniprotkb/search?query=gene_exact%3ACHAF1A%20AND%20organism_id%3A9606%20AND%20reviewed%3Atrue&size=3&format=json",
+      "data": [
+        {
+          "primaryAccession": "Q13111",
+          "uniProtkbId": "CAF1A_HUMAN",
+          "entryType": "UniProtKB reviewed (Swiss-Prot)"
+        }
+      ]
+    },
+    "europe_pmc": {
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=CHAF1A%20AND%20%22interstitial%20cystitis%22&format=json&pageSize=10",
+      "data": {
+        "hit_count": 0,
+        "papers": []
+      }
+    },
+    "mygene": {
+      "url": "https://mygene.info/v3/query?q=symbol%3ACHAF1A&species=human&size=3",
+      "data": {
+        "total": 1,
+        "hits": [
+          {
+            "_id": "10036",
+            "symbol": "CHAF1A",
+            "name": "chromatin assembly factor 1 subunit A",
+            "taxid": 9606
+          }
+        ]
+      }
+    },
+    "chembl": {
+      "url": "https://www.ebi.ac.uk/chembl/api/data/target/search.json?q=CHAF1A&limit=20",
+      "data": {
+        "total": 0,
+        "human_targets": []
+      }
+    },
+    "hgnc_rest": {
+      "url": "https://rest.genenames.org/fetch/symbol/CHAF1A",
+      "data": [
+        {
+          "symbol": "CHAF1A",
+          "hgnc_id": "HGNC:1910",
+          "entrez_id": "10036",
+          "ensembl_gene_id": "ENSG00000167670",
+          "status": "Approved"
+        }
+      ]
+    },
+    "gtex_reference": {
+      "url": "https://gtexportal.org/api/v2/reference/gene?geneId=CHAF1A",
+      "data": [
+        {
+          "geneSymbol": "CHAF1A",
+          "geneId": null,
+          "gencodeId": "ENSG00000167670.15",
+          "entrezGeneId": 10036
+        }
+      ]
+    },
+    "reactome": {
+      "url": "https://reactome.org/ContentService/data/mapping/UniProt/Q13111/pathways",
+      "data": {
+        "error": "HTTP Error 404: Not Found"
+      }
+    }
+  }
+}

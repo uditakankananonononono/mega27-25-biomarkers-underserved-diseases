@@ -1,0 +1,203 @@
+{
+  "gene": "CUL3",
+  "module": "M6_cell_state_g2m",
+  "prereg": "projects/interstitial_cystitis/prereg/ic_p48_module_genesets.json",
+  "retrieved_at_utc": "2026-09-25T20:28:13.991927+00:00",
+  "sources": {
+    "ensembl": {
+      "url": "https://rest.ensembl.org/lookup/symbol/homo_sapiens/CUL3?content-type=application/json",
+      "data": {
+        "id": "ENSG00000036257",
+        "display_name": "CUL3",
+        "description": "cullin 3 [Source:HGNC Symbol;Acc:HGNC:2553]",
+        "biotype": "protein_coding",
+        "seq_region_name": "2"
+      }
+    },
+    "uniprot": {
+      "url": "https://rest.uniprot.org/uniprotkb/search?query=gene_exact%3ACUL3%20AND%20organism_id%3A9606%20AND%20reviewed%3Atrue&size=3&format=json",
+      "data": [
+        {
+          "primaryAccession": "Q13618",
+          "uniProtkbId": "CUL3_HUMAN",
+          "entryType": "UniProtKB reviewed (Swiss-Prot)"
+        }
+      ]
+    },
+    "europe_pmc": {
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=CUL3%20AND%20%22interstitial%20cystitis%22&format=json&pageSize=10",
+      "data": {
+        "hit_count": 7,
+        "papers": [
+          {
+            "id": "39051218",
+            "title": "The Effect of Phytocannabinoids and Endocannabinoids on Nrf2 Activity in the Central Nervous System and Periphery.",
+            "doi": "10.3390/neurolint16040057",
+            "pubYear": "2024"
+          },
+          {
+            "id": "41725014",
+            "title": "Activation of Nrf2 with natural flavonoids and mesenchymal stromal/stem cells: mechanisms and therapeutic potential for inflammatory diseases.",
+            "doi": "10.1186/s13287-026-04925-6",
+            "pubYear": "2026"
+          },
+          {
+            "id": "PMC4575917",
+            "title": "Origins of cancer symposium 2015: posttranslational modifications and cancer",
+            "doi": null,
+            "pubYear": "2015"
+          },
+          {
+            "id": "38671843",
+            "title": "The Interplay between Ferroptosis and Neuroinflammation in Central Neurological Disorders.",
+            "doi": "10.3390/antiox13040395",
+            "pubYear": "2024"
+          },
+          {
+            "id": "36902097",
+            "title": "Role of Plant-Derived Compounds in the Molecular Pathways Related to Inflammation.",
+            "doi": "10.3390/ijms24054666",
+            "pubYear": "2023"
+          },
+          {
+            "id": "17397547",
+            "title": "Regulatory network of inflammation downstream of proteinase-activated receptors.",
+            "doi": "10.1186/1472-6793-7-3",
+            "pubYear": "2007"
+          },
+          {
+            "id": "PMC7163937",
+            "title": "Poster Sessions",
+            "doi": null,
+            "pubYear": "2014"
+          }
+        ]
+      }
+    },
+    "mygene": {
+      "url": "https://mygene.info/v3/query?q=symbol%3ACUL3&species=human&size=3",
+      "data": {
+        "total": 1,
+        "hits": [
+          {
+            "_id": "8452",
+            "symbol": "CUL3",
+            "name": "cullin 3",
+            "taxid": 9606
+          }
+        ]
+      }
+    },
+    "chembl": {
+      "url": "https://www.ebi.ac.uk/chembl/api/data/target/search.json?q=CUL3&limit=20",
+      "data": {
+        "total": 4,
+        "human_targets": [
+          {
+            "target_chembl_id": "CHEMBL6067538",
+            "pref_name": "Cullin-3",
+            "organism": "Homo sapiens"
+          },
+          {
+            "target_chembl_id": "CHEMBL4296124",
+            "pref_name": "Cullin-3/Microtubule-associated protein tau",
+            "organism": "Homo sapiens"
+          },
+          {
+            "target_chembl_id": "CHEMBL6066235",
+            "pref_name": "Kelch-like protein 12",
+            "organism": "Homo sapiens"
+          },
+          {
+            "target_chembl_id": "CHEMBL4296123",
+            "pref_name": "Kelch-like ECH-associated protein 1/Microtubule-associated protein tau/Cullin-3",
+            "organism": "Homo sapiens"
+          }
+        ]
+      }
+    },
+    "hgnc_rest": {
+      "url": "https://rest.genenames.org/fetch/symbol/CUL3",
+      "data": [
+        {
+          "symbol": "CUL3",
+          "hgnc_id": "HGNC:2553",
+          "entrez_id": "8452",
+          "ensembl_gene_id": "ENSG00000036257",
+          "status": "Approved"
+        }
+      ]
+    },
+    "gtex_reference": {
+      "url": "https://gtexportal.org/api/v2/reference/gene?geneId=CUL3",
+      "data": [
+        {
+          "geneSymbol": "CUL3",
+          "geneId": null,
+          "gencodeId": "ENSG00000036257.12",
+          "entrezGeneId": 8452
+        }
+      ]
+    },
+    "reactome": {
+      "url": "https://reactome.org/ContentService/data/mapping/UniProt/Q13618/pathways",
+      "data": [
+        {
+          "stId": "R-HSA-4641258",
+          "displayName": "Degradation of DVL",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-5632684",
+          "displayName": "Hedgehog 'on' state",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-5658442",
+          "displayName": "Regulation of RAS by GAPs",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-8951664",
+          "displayName": "Neddylation",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-9013418",
+          "displayName": "RHOBTB2 GTPase cycle",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-9013422",
+          "displayName": "RHOBTB1 GTPase cycle",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-9679191",
+          "displayName": "Potential therapeutics for SARS",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-9706019",
+          "displayName": "RHOBTB3 ATPase cycle",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-9755511",
+          "displayName": "KEAP1-NFE2L2 pathway",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-983168",
+          "displayName": "Antigen processing: Ubiquitination & Proteasome degradation",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-9929491",
+          "displayName": "SPOP-mediated proteasomal degradation of PD-L1(CD274)",
+          "speciesName": "Homo sapiens"
+        }
+      ]
+    }
+  }
+}

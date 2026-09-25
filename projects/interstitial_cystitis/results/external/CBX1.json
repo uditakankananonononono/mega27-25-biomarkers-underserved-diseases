@@ -1,0 +1,107 @@
+{
+  "gene": "CBX1",
+  "module": "M6_cell_state_g2m",
+  "prereg": "projects/interstitial_cystitis/prereg/ic_p48_module_genesets.json",
+  "retrieved_at_utc": "2026-09-25T20:29:03.151305+00:00",
+  "sources": {
+    "ensembl": {
+      "url": "https://rest.ensembl.org/lookup/symbol/homo_sapiens/CBX1?content-type=application/json",
+      "data": {
+        "id": "ENSG00000108468",
+        "display_name": "CBX1",
+        "description": "chromobox 1 [Source:HGNC Symbol;Acc:HGNC:1551]",
+        "biotype": "protein_coding",
+        "seq_region_name": "17"
+      }
+    },
+    "uniprot": {
+      "url": "https://rest.uniprot.org/uniprotkb/search?query=gene_exact%3ACBX1%20AND%20organism_id%3A9606%20AND%20reviewed%3Atrue&size=3&format=json",
+      "data": [
+        {
+          "primaryAccession": "P83916",
+          "uniProtkbId": "CBX1_HUMAN",
+          "entryType": "UniProtKB reviewed (Swiss-Prot)"
+        }
+      ]
+    },
+    "europe_pmc": {
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=CBX1%20AND%20%22interstitial%20cystitis%22&format=json&pageSize=10",
+      "data": {
+        "hit_count": 1,
+        "papers": [
+          {
+            "id": "24912853",
+            "title": "MicroRNA-205 targets tight junction-related proteins during urothelial cellular differentiation.",
+            "doi": "10.1074/mcp.m113.033563",
+            "pubYear": "2014"
+          }
+        ]
+      }
+    },
+    "mygene": {
+      "url": "https://mygene.info/v3/query?q=symbol%3ACBX1&species=human&size=3",
+      "data": {
+        "total": 1,
+        "hits": [
+          {
+            "_id": "10951",
+            "symbol": "CBX1",
+            "name": "chromobox 1",
+            "taxid": 9606
+          }
+        ]
+      }
+    },
+    "chembl": {
+      "url": "https://www.ebi.ac.uk/chembl/api/data/target/search.json?q=CBX1&limit=20",
+      "data": {
+        "total": 1,
+        "human_targets": [
+          {
+            "target_chembl_id": "CHEMBL1741193",
+            "pref_name": "Chromobox protein homolog 1",
+            "organism": "Homo sapiens"
+          }
+        ]
+      }
+    },
+    "hgnc_rest": {
+      "url": "https://rest.genenames.org/fetch/symbol/CBX1",
+      "data": [
+        {
+          "symbol": "CBX1",
+          "hgnc_id": "HGNC:1551",
+          "entrez_id": "10951",
+          "ensembl_gene_id": "ENSG00000108468",
+          "status": "Approved"
+        }
+      ]
+    },
+    "gtex_reference": {
+      "url": "https://gtexportal.org/api/v2/reference/gene?geneId=CBX1",
+      "data": [
+        {
+          "geneSymbol": "CBX1",
+          "geneId": null,
+          "gencodeId": "ENSG00000108468.14",
+          "entrezGeneId": 10951
+        }
+      ]
+    },
+    "reactome": {
+      "url": "https://reactome.org/ContentService/data/mapping/UniProt/P83916/pathways",
+      "data": [
+        {
+          "stId": "R-HSA-9609690",
+          "displayName": "HCMV Early Events",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-9940465",
+          "displayName": "ChAHP complex assembly",
+          "speciesName": "Homo sapiens"
+        }
+      ]
+    }
+  }
+}

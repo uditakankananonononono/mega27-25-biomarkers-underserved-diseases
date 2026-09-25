@@ -1,0 +1,170 @@
+{
+  "gene": "CHEK1",
+  "module": "M6_cell_state_g2m",
+  "prereg": "projects/interstitial_cystitis/prereg/ic_p48_module_genesets.json",
+  "retrieved_at_utc": "2026-09-25T20:18:17.316342+00:00",
+  "sources": {
+    "ensembl": {
+      "url": "https://rest.ensembl.org/lookup/symbol/homo_sapiens/CHEK1?content-type=application/json",
+      "data": {
+        "id": "ENSG00000149554",
+        "display_name": "CHEK1",
+        "description": "checkpoint kinase 1 [Source:HGNC Symbol;Acc:HGNC:1925]",
+        "biotype": "protein_coding",
+        "seq_region_name": "11"
+      }
+    },
+    "uniprot": {
+      "url": "https://rest.uniprot.org/uniprotkb/search?query=gene_exact%3ACHEK1%20AND%20organism_id%3A9606%20AND%20reviewed%3Atrue&size=3&format=json",
+      "data": [
+        {
+          "primaryAccession": "O14757",
+          "uniProtkbId": "CHK1_HUMAN",
+          "entryType": "UniProtKB reviewed (Swiss-Prot)"
+        }
+      ]
+    },
+    "europe_pmc": {
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=CHEK1%20AND%20%22interstitial%20cystitis%22&format=json&pageSize=10",
+      "data": {
+        "hit_count": 4,
+        "papers": [
+          {
+            "id": "30145203",
+            "title": "Integrated proteomic and phosphoproteomic analyses of cisplatin-sensitive and resistant bladder cancer cells reveal CDK2 network as a key therapeutic target.",
+            "doi": "10.1016/j.canlet.2018.08.014",
+            "pubYear": "2018"
+          },
+          {
+            "id": "29312794",
+            "title": "Camptothecin (CPT) and its derivatives are known to target topoisomerase I (Top1) as their mechanism of action: did we miss something in CPT analogue molecular targets for treating human disease such as cancer?",
+            "doi": null,
+            "pubYear": "2017"
+          },
+          {
+            "id": "25769533",
+            "title": "Abstracts of the 62nd Annual Scientific Meeting, March 26-28, 2015, San Francisco, California.",
+            "doi": "10.1177/1933719115579631",
+            "pubYear": "2015"
+          },
+          {
+            "id": "PMC10902613",
+            "title": "Abstracts",
+            "doi": null,
+            "pubYear": "2024"
+          }
+        ]
+      }
+    },
+    "mygene": {
+      "url": "https://mygene.info/v3/query?q=symbol%3ACHEK1&species=human&size=3",
+      "data": {
+        "total": 1,
+        "hits": [
+          {
+            "_id": "1111",
+            "symbol": "CHEK1",
+            "name": "checkpoint kinase 1",
+            "taxid": 9606
+          }
+        ]
+      }
+    },
+    "chembl": {
+      "url": "https://www.ebi.ac.uk/chembl/api/data/target/search.json?q=CHEK1&limit=20",
+      "data": {
+        "total": 2,
+        "human_targets": [
+          {
+            "target_chembl_id": "CHEMBL4630",
+            "pref_name": "Serine/threonine-protein kinase Chk1",
+            "organism": "Homo sapiens"
+          },
+          {
+            "target_chembl_id": "CHEMBL3883296",
+            "pref_name": "Serine/threonine-protein kinase Chk1/2",
+            "organism": "Homo sapiens"
+          }
+        ]
+      }
+    },
+    "hgnc_rest": {
+      "url": "https://rest.genenames.org/fetch/symbol/CHEK1",
+      "data": [
+        {
+          "symbol": "CHEK1",
+          "hgnc_id": "HGNC:1925",
+          "entrez_id": "1111",
+          "ensembl_gene_id": "ENSG00000149554",
+          "status": "Approved"
+        }
+      ]
+    },
+    "gtex_reference": {
+      "url": "https://gtexportal.org/api/v2/reference/gene?geneId=CHEK1",
+      "data": [
+        {
+          "geneSymbol": "CHEK1",
+          "geneId": null,
+          "gencodeId": "ENSG00000149554.12",
+          "entrezGeneId": 1111
+        }
+      ]
+    },
+    "reactome": {
+      "url": "https://reactome.org/ContentService/data/mapping/UniProt/O14757/pathways",
+      "data": [
+        {
+          "stId": "R-HSA-1433557",
+          "displayName": "Signaling by SCF-KIT",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-176187",
+          "displayName": "Activation of ATR in response to replication stress",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-5693607",
+          "displayName": "Processing of DNA double-strand break ends",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-5693616",
+          "displayName": "Presynaptic phase of homologous DNA pairing and strand exchange",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-6796648",
+          "displayName": "TP53 Regulates Transcription of DNA Repair Genes",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-6804756",
+          "displayName": "Regulation of TP53 Activity through Phosphorylation",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-69473",
+          "displayName": "G2/M DNA damage checkpoint",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-69601",
+          "displayName": "Ubiquitin-Mediated Degradation of Phosphorylated Cdc25A",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-75035",
+          "displayName": "Chk1/Chk2(Cds1) mediated inactivation of Cyclin B:Cdk1 complex",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-8953750",
+          "displayName": "Transcriptional Regulation by E2F6",
+          "speciesName": "Homo sapiens"
+        }
+      ]
+    }
+  }
+}

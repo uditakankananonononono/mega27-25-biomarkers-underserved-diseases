@@ -1,0 +1,241 @@
+{
+  "gene": "XPO1",
+  "module": "M6_cell_state_g2m",
+  "prereg": "projects/interstitial_cystitis/prereg/ic_p48_module_genesets.json",
+  "retrieved_at_utc": "2026-09-25T20:26:19.613613+00:00",
+  "sources": {
+    "ensembl": {
+      "url": "https://rest.ensembl.org/lookup/symbol/homo_sapiens/XPO1?content-type=application/json",
+      "data": {
+        "id": "ENSG00000082898",
+        "display_name": "XPO1",
+        "description": "exportin 1 [Source:HGNC Symbol;Acc:HGNC:12825]",
+        "biotype": "protein_coding",
+        "seq_region_name": "2"
+      }
+    },
+    "uniprot": {
+      "url": "https://rest.uniprot.org/uniprotkb/search?query=gene_exact%3AXPO1%20AND%20organism_id%3A9606%20AND%20reviewed%3Atrue&size=3&format=json",
+      "data": [
+        {
+          "primaryAccession": "O14980",
+          "uniProtkbId": "XPO1_HUMAN",
+          "entryType": "UniProtKB reviewed (Swiss-Prot)"
+        }
+      ]
+    },
+    "europe_pmc": {
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=XPO1%20AND%20%22interstitial%20cystitis%22&format=json&pageSize=10",
+      "data": {
+        "hit_count": 5,
+        "papers": [
+          {
+            "id": "34674717",
+            "title": "Huanglianjiedu Decoction as an effective treatment for oral squamous cell carcinoma based on network pharmacology and experimental validation.",
+            "doi": "10.1186/s12935-021-02201-6",
+            "pubYear": "2021"
+          },
+          {
+            "id": "32687918",
+            "title": "Contribution of monocytes and macrophages to the local tissue inflammation and cytokine storm in COVID-19: Lessons from SARS and MERS, and potential therapeutic interventions.",
+            "doi": "10.1016/j.lfs.2020.118102",
+            "pubYear": "2020"
+          },
+          {
+            "id": "PMC10729591",
+            "title": "ACNP 62nd Annual Meeting: Panels, Mini-Panels and Study Groups",
+            "doi": null,
+            "pubYear": "2023"
+          },
+          {
+            "id": "32213001",
+            "title": "UEG Week 2019 Poster Presentations.",
+            "doi": "10.1177/2050640619854671",
+            "pubYear": "2019"
+          },
+          {
+            "id": "24085684",
+            "title": "Abstracts of the 2013 Annual Meeting of the American College of Rheumatology. October 25-30, 2013. San Diego, California, USA.",
+            "doi": "10.1002/art.38216",
+            "pubYear": "2013"
+          }
+        ]
+      }
+    },
+    "mygene": {
+      "url": "https://mygene.info/v3/query?q=symbol%3AXPO1&species=human&size=3",
+      "data": {
+        "total": 1,
+        "hits": [
+          {
+            "_id": "7514",
+            "symbol": "XPO1",
+            "name": "exportin 1",
+            "taxid": 9606
+          }
+        ]
+      }
+    },
+    "chembl": {
+      "url": "https://www.ebi.ac.uk/chembl/api/data/target/search.json?q=XPO1&limit=20",
+      "data": {
+        "total": 8,
+        "human_targets": [
+          {
+            "target_chembl_id": "CHEMBL5661",
+            "pref_name": "Exportin-1",
+            "organism": "Homo sapiens"
+          },
+          {
+            "target_chembl_id": "CHEMBL6195546",
+            "pref_name": "Protein cereblon/Exportin-1",
+            "organism": "Homo sapiens"
+          },
+          {
+            "target_chembl_id": "CHEMBL4105803",
+            "pref_name": "Exportin-T",
+            "organism": "Homo sapiens"
+          },
+          {
+            "target_chembl_id": "CHEMBL6066255",
+            "pref_name": "Exportin-6",
+            "organism": "Homo sapiens"
+          },
+          {
+            "target_chembl_id": "CHEMBL6067129",
+            "pref_name": "Transportin-3",
+            "organism": "Homo sapiens"
+          },
+          {
+            "target_chembl_id": "CHEMBL5724609",
+            "pref_name": "Exportin-5",
+            "organism": "Homo sapiens"
+          }
+        ]
+      }
+    },
+    "hgnc_rest": {
+      "url": "https://rest.genenames.org/fetch/symbol/XPO1",
+      "data": [
+        {
+          "symbol": "XPO1",
+          "hgnc_id": "HGNC:12825",
+          "entrez_id": "7514",
+          "ensembl_gene_id": "ENSG00000082898",
+          "status": "Approved"
+        }
+      ]
+    },
+    "gtex_reference": {
+      "url": "https://gtexportal.org/api/v2/reference/gene?geneId=XPO1",
+      "data": [
+        {
+          "geneSymbol": "XPO1",
+          "geneId": null,
+          "gencodeId": "ENSG00000082898.16",
+          "entrezGeneId": 7514
+        }
+      ]
+    },
+    "reactome": {
+      "url": "https://reactome.org/ContentService/data/mapping/UniProt/O14980/pathways",
+      "data": [
+        {
+          "stId": "R-HSA-141444",
+          "displayName": "Amplification  of signal from unattached  kinetochores via a MAD2  inhibitory signal",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-165054",
+          "displayName": "Rev-mediated nuclear export of HIV RNA",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-168333",
+          "displayName": "NEP/NS2 Interacts with the Cellular Export Machinery",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-2173788",
+          "displayName": "Downregulation of TGF-beta receptor signaling",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-2467813",
+          "displayName": "Separation of Sister Chromatids",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-2500257",
+          "displayName": "Resolution of Sister Chromatid Cohesion",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-3769402",
+          "displayName": "Deactivation of the beta-catenin transactivating complex",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-450520",
+          "displayName": "HuR (ELAVL1) binds and stabilizes mRNA",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-5663220",
+          "displayName": "RHO GTPases Activate Formins",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-5687128",
+          "displayName": "MAPK6/MAPK4 signaling",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-68877",
+          "displayName": "Mitotic Prometaphase",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-69273",
+          "displayName": "Cyclin A/B1/B2 associated events during G2/M transition",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-9634638",
+          "displayName": "Estrogen-dependent nuclear events downstream of ESR-membrane signaling",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-9648025",
+          "displayName": "EML4 and NUDC in mitotic spindle formation",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-9707616",
+          "displayName": "Heme signaling",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-9768919",
+          "displayName": "NPAS4 regulates expression of target genes",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-9828806",
+          "displayName": "Maturation of hRSV A proteins",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-9856649",
+          "displayName": "Transcriptional and post-translational regulation of MITF-M expression and activity",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-9918432",
+          "displayName": "Maturation of DENV proteins",
+          "speciesName": "Homo sapiens"
+        }
+      ]
+    }
+  }
+}

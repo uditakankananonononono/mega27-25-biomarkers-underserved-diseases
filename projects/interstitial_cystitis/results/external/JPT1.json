@@ -1,0 +1,78 @@
+{
+  "gene": "JPT1",
+  "module": "M6_cell_state_g2m",
+  "prereg": "projects/interstitial_cystitis/prereg/ic_p48_module_genesets.json",
+  "retrieved_at_utc": "2026-09-25T20:23:47.676275+00:00",
+  "sources": {
+    "ensembl": {
+      "url": "https://rest.ensembl.org/lookup/symbol/homo_sapiens/JPT1?content-type=application/json",
+      "data": {
+        "id": "ENSG00000189159",
+        "display_name": "JPT1",
+        "description": "Jupiter microtubule associated homolog 1 [Source:HGNC Symbol;Acc:HGNC:14569]",
+        "biotype": "protein_coding",
+        "seq_region_name": "17"
+      }
+    },
+    "uniprot": {
+      "url": "https://rest.uniprot.org/uniprotkb/search?query=gene_exact%3AJPT1%20AND%20organism_id%3A9606%20AND%20reviewed%3Atrue&size=3&format=json",
+      "data": [
+        {
+          "primaryAccession": "Q9UK76",
+          "uniProtkbId": "JUPI1_HUMAN",
+          "entryType": "UniProtKB reviewed (Swiss-Prot)"
+        }
+      ]
+    },
+    "europe_pmc": {
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=JPT1%20AND%20%22interstitial%20cystitis%22&format=json&pageSize=10",
+      "data": {
+        "hit_count": 0,
+        "papers": []
+      }
+    },
+    "mygene": {
+      "url": "https://mygene.info/v3/query?q=symbol%3AJPT1&species=human&size=3",
+      "data": {
+        "total": 1,
+        "hits": [
+          {
+            "_id": "51155",
+            "symbol": "JPT1",
+            "name": "Jupiter microtubule associated homolog 1",
+            "taxid": 9606
+          }
+        ]
+      }
+    },
+    "chembl": {
+      "url": "https://www.ebi.ac.uk/chembl/api/data/target/search.json?q=JPT1&limit=20",
+      "data": {
+        "total": 0,
+        "human_targets": []
+      }
+    },
+    "hgnc_rest": {
+      "url": "https://rest.genenames.org/fetch/symbol/JPT1",
+      "data": [
+        {
+          "symbol": "JPT1",
+          "hgnc_id": "HGNC:14569",
+          "entrez_id": "51155",
+          "ensembl_gene_id": "ENSG00000189159",
+          "status": "Approved"
+        }
+      ]
+    },
+    "gtex_reference": {
+      "url": "https://gtexportal.org/api/v2/reference/gene?geneId=JPT1",
+      "data": []
+    },
+    "reactome": {
+      "url": "https://reactome.org/ContentService/data/mapping/UniProt/Q9UK76/pathways",
+      "data": {
+        "error": "HTTP Error 404: Not Found"
+      }
+    }
+  }
+}

@@ -1,0 +1,93 @@
+{
+  "gene": "TENT4A",
+  "module": "M6_cell_state_g2m",
+  "prereg": "projects/interstitial_cystitis/prereg/ic_p48_module_genesets.json",
+  "retrieved_at_utc": "2026-09-25T20:28:05.747036+00:00",
+  "sources": {
+    "ensembl": {
+      "url": "https://rest.ensembl.org/lookup/symbol/homo_sapiens/TENT4A?content-type=application/json",
+      "data": {
+        "id": "ENSG00000112941",
+        "display_name": "TENT4A",
+        "description": "terminal nucleotidyltransferase 4A [Source:HGNC Symbol;Acc:HGNC:16705]",
+        "biotype": "protein_coding",
+        "seq_region_name": "5"
+      }
+    },
+    "uniprot": {
+      "url": "https://rest.uniprot.org/uniprotkb/search?query=gene_exact%3ATENT4A%20AND%20organism_id%3A9606%20AND%20reviewed%3Atrue&size=3&format=json",
+      "data": [
+        {
+          "primaryAccession": "Q5XG87",
+          "uniProtkbId": "PAPD7_HUMAN",
+          "entryType": "UniProtKB reviewed (Swiss-Prot)"
+        }
+      ]
+    },
+    "europe_pmc": {
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=TENT4A%20AND%20%22interstitial%20cystitis%22&format=json&pageSize=10",
+      "data": {
+        "hit_count": 0,
+        "papers": []
+      }
+    },
+    "mygene": {
+      "url": "https://mygene.info/v3/query?q=symbol%3ATENT4A&species=human&size=3",
+      "data": {
+        "total": 1,
+        "hits": [
+          {
+            "_id": "11044",
+            "symbol": "TENT4A",
+            "name": "terminal nucleotidyltransferase 4A",
+            "taxid": 9606
+          }
+        ]
+      }
+    },
+    "chembl": {
+      "url": "https://www.ebi.ac.uk/chembl/api/data/target/search.json?q=TENT4A&limit=20",
+      "data": {
+        "total": 1,
+        "human_targets": [
+          {
+            "target_chembl_id": "CHEMBL4680033",
+            "pref_name": "Terminal nucleotidyltransferase 4A",
+            "organism": "Homo sapiens"
+          }
+        ]
+      }
+    },
+    "hgnc_rest": {
+      "url": "https://rest.genenames.org/fetch/symbol/TENT4A",
+      "data": [
+        {
+          "symbol": "TENT4A",
+          "hgnc_id": "HGNC:16705",
+          "entrez_id": "11044",
+          "ensembl_gene_id": "ENSG00000112941",
+          "status": "Approved"
+        }
+      ]
+    },
+    "gtex_reference": {
+      "url": "https://gtexportal.org/api/v2/reference/gene?geneId=TENT4A",
+      "data": []
+    },
+    "reactome": {
+      "url": "https://reactome.org/ContentService/data/mapping/UniProt/Q5XG87/pathways",
+      "data": [
+        {
+          "stId": "R-HSA-6802952",
+          "displayName": "Signaling by BRAF and RAF1 fusions",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-9930044",
+          "displayName": "Nuclear RNA decay",
+          "speciesName": "Homo sapiens"
+        }
+      ]
+    }
+  }
+}

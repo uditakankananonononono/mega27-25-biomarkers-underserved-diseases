@@ -1,0 +1,119 @@
+{
+  "gene": "ILF3",
+  "module": "M6_cell_state_g2m",
+  "prereg": "projects/interstitial_cystitis/prereg/ic_p48_module_genesets.json",
+  "retrieved_at_utc": "2026-09-25T20:22:33.957154+00:00",
+  "sources": {
+    "ensembl": {
+      "url": "https://rest.ensembl.org/lookup/symbol/homo_sapiens/ILF3?content-type=application/json",
+      "data": {
+        "id": "ENSG00000129351",
+        "display_name": "ILF3",
+        "description": "interleukin enhancer binding factor 3 [Source:HGNC Symbol;Acc:HGNC:6038]",
+        "biotype": "protein_coding",
+        "seq_region_name": "19"
+      }
+    },
+    "uniprot": {
+      "url": "https://rest.uniprot.org/uniprotkb/search?query=gene_exact%3AILF3%20AND%20organism_id%3A9606%20AND%20reviewed%3Atrue&size=3&format=json",
+      "data": [
+        {
+          "primaryAccession": "Q12906",
+          "uniProtkbId": "ILF3_HUMAN",
+          "entryType": "UniProtKB reviewed (Swiss-Prot)"
+        }
+      ]
+    },
+    "europe_pmc": {
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=ILF3%20AND%20%22interstitial%20cystitis%22&format=json&pageSize=10",
+      "data": {
+        "hit_count": 3,
+        "papers": [
+          {
+            "id": "42558631",
+            "title": "Mechanistic insights into the lncRNA-Notch signaling axis in tumors.",
+            "doi": "10.3389/fcell.2026.1903203",
+            "pubYear": "2026"
+          },
+          {
+            "id": "18267009",
+            "title": "Molecular networks discriminating mouse bladder responses to intravesical bacillus Calmette-Guerin (BCG), LPS, and TNF-alpha.",
+            "doi": "10.1186/1471-2172-9-4",
+            "pubYear": "2008"
+          },
+          {
+            "id": "PMC8730545",
+            "title": "Research Poster Abstracts",
+            "doi": null,
+            "pubYear": null
+          }
+        ]
+      }
+    },
+    "mygene": {
+      "url": "https://mygene.info/v3/query?q=symbol%3AILF3&species=human&size=3",
+      "data": {
+        "total": 1,
+        "hits": [
+          {
+            "_id": "3609",
+            "symbol": "ILF3",
+            "name": "interleukin enhancer binding factor 3",
+            "taxid": 9606
+          }
+        ]
+      }
+    },
+    "chembl": {
+      "url": "https://www.ebi.ac.uk/chembl/api/data/target/search.json?q=ILF3&limit=20",
+      "data": {
+        "total": 1,
+        "human_targets": [
+          {
+            "target_chembl_id": "CHEMBL5465305",
+            "pref_name": "Interleukin enhancer-binding factor 3",
+            "organism": "Homo sapiens"
+          }
+        ]
+      }
+    },
+    "hgnc_rest": {
+      "url": "https://rest.genenames.org/fetch/symbol/ILF3",
+      "data": [
+        {
+          "symbol": "ILF3",
+          "hgnc_id": "HGNC:6038",
+          "entrez_id": "3609",
+          "ensembl_gene_id": "ENSG00000129351",
+          "status": "Approved"
+        }
+      ]
+    },
+    "gtex_reference": {
+      "url": "https://gtexportal.org/api/v2/reference/gene?geneId=ILF3",
+      "data": [
+        {
+          "geneSymbol": "ILF3",
+          "geneId": null,
+          "gencodeId": "ENSG00000129351.17",
+          "entrezGeneId": 3609
+        }
+      ]
+    },
+    "reactome": {
+      "url": "https://reactome.org/ContentService/data/mapping/UniProt/Q12906/pathways",
+      "data": [
+        {
+          "stId": "R-HSA-9762293",
+          "displayName": "Regulation of CDH11 gene transcription",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-9833482",
+          "displayName": "PKR-mediated signaling",
+          "speciesName": "Homo sapiens"
+        }
+      ]
+    }
+  }
+}

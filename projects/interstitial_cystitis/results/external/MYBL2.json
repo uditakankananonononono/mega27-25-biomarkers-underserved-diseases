@@ -1,0 +1,130 @@
+{
+  "gene": "MYBL2",
+  "module": "M6_cell_state_g2m",
+  "prereg": "projects/interstitial_cystitis/prereg/ic_p48_module_genesets.json",
+  "retrieved_at_utc": "2026-09-25T20:27:48.531991+00:00",
+  "sources": {
+    "ensembl": {
+      "url": "https://rest.ensembl.org/lookup/symbol/homo_sapiens/MYBL2?content-type=application/json",
+      "data": {
+        "id": "ENSG00000101057",
+        "display_name": "MYBL2",
+        "description": "MYB proto-oncogene like 2 [Source:HGNC Symbol;Acc:HGNC:7548]",
+        "biotype": "protein_coding",
+        "seq_region_name": "20"
+      }
+    },
+    "uniprot": {
+      "url": "https://rest.uniprot.org/uniprotkb/search?query=gene_exact%3AMYBL2%20AND%20organism_id%3A9606%20AND%20reviewed%3Atrue&size=3&format=json",
+      "data": [
+        {
+          "primaryAccession": "P10244",
+          "uniProtkbId": "MYBB_HUMAN",
+          "entryType": "UniProtKB reviewed (Swiss-Prot)"
+        }
+      ]
+    },
+    "europe_pmc": {
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=MYBL2%20AND%20%22interstitial%20cystitis%22&format=json&pageSize=10",
+      "data": {
+        "hit_count": 5,
+        "papers": [
+          {
+            "id": "12057914",
+            "title": "Gene expression profiling of mouse bladder inflammatory responses to LPS, substance P, and antigen-stimulation.",
+            "doi": "10.1016/s0002-9440(10)61159-5",
+            "pubYear": "2002"
+          },
+          {
+            "id": "PMC10800223",
+            "title": "2023 ACVIM Forum Research Abstract Program",
+            "doi": null,
+            "pubYear": "2023"
+          },
+          {
+            "id": "34448894",
+            "title": "33&lt;sup&gt;rd&lt;/sup&gt; European Congress of Pathology - Abstracts.",
+            "doi": "10.1007/s00428-021-03157-8",
+            "pubYear": "2021"
+          },
+          {
+            "id": "20405294",
+            "title": "Total laparoscopic radical hysterectomy for cervical cancer in prolapsed uterus.",
+            "doi": "10.1007/s00404-010-1472-7",
+            "pubYear": "2010"
+          },
+          {
+            "id": "PMC7104455",
+            "title": "Scientific Abstracts",
+            "doi": null,
+            "pubYear": "2013"
+          }
+        ]
+      }
+    },
+    "mygene": {
+      "url": "https://mygene.info/v3/query?q=symbol%3AMYBL2&species=human&size=3",
+      "data": {
+        "total": 1,
+        "hits": [
+          {
+            "_id": "4605",
+            "symbol": "MYBL2",
+            "name": "MYB proto-oncogene like 2",
+            "taxid": 9606
+          }
+        ]
+      }
+    },
+    "chembl": {
+      "url": "https://www.ebi.ac.uk/chembl/api/data/target/search.json?q=MYBL2&limit=20",
+      "data": {
+        "total": 1,
+        "human_targets": []
+      }
+    },
+    "hgnc_rest": {
+      "url": "https://rest.genenames.org/fetch/symbol/MYBL2",
+      "data": [
+        {
+          "symbol": "MYBL2",
+          "hgnc_id": "HGNC:7548",
+          "entrez_id": "4605",
+          "ensembl_gene_id": "ENSG00000101057",
+          "status": "Approved"
+        }
+      ]
+    },
+    "gtex_reference": {
+      "url": "https://gtexportal.org/api/v2/reference/gene?geneId=MYBL2",
+      "data": [
+        {
+          "geneSymbol": "MYBL2",
+          "geneId": null,
+          "gencodeId": "ENSG00000101057.15",
+          "entrezGeneId": 4605
+        }
+      ]
+    },
+    "reactome": {
+      "url": "https://reactome.org/ContentService/data/mapping/UniProt/P10244/pathways",
+      "data": [
+        {
+          "stId": "R-HSA-1362300",
+          "displayName": "Transcription of E2F targets under negative control by p107 (RBL1) and p130 (RBL2) in complex with HDAC1",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-156711",
+          "displayName": "Polo-like kinase mediated events",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-8869496",
+          "displayName": "TFAP2A acts as a transcriptional repressor during retinoic acid induced cell differentiation",
+          "speciesName": "Homo sapiens"
+        }
+      ]
+    }
+  }
+}

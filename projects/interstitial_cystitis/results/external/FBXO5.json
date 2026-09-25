@@ -1,0 +1,109 @@
+{
+  "gene": "FBXO5",
+  "module": "M6_cell_state_g2m",
+  "prereg": "projects/interstitial_cystitis/prereg/ic_p48_module_genesets.json",
+  "retrieved_at_utc": "2026-09-25T20:20:27.317196+00:00",
+  "sources": {
+    "ensembl": {
+      "url": "https://rest.ensembl.org/lookup/symbol/homo_sapiens/FBXO5?content-type=application/json",
+      "data": {
+        "id": "ENSG00000112029",
+        "display_name": "FBXO5",
+        "description": "F-box protein 5 [Source:HGNC Symbol;Acc:HGNC:13584]",
+        "biotype": "protein_coding",
+        "seq_region_name": "6"
+      }
+    },
+    "uniprot": {
+      "url": "https://rest.uniprot.org/uniprotkb/search?query=gene_exact%3AFBXO5%20AND%20organism_id%3A9606%20AND%20reviewed%3Atrue&size=3&format=json",
+      "data": [
+        {
+          "primaryAccession": "Q9UKT4",
+          "uniProtkbId": "FBX5_HUMAN",
+          "entryType": "UniProtKB reviewed (Swiss-Prot)"
+        }
+      ]
+    },
+    "europe_pmc": {
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=FBXO5%20AND%20%22interstitial%20cystitis%22&format=json&pageSize=10",
+      "data": {
+        "hit_count": 0,
+        "papers": []
+      }
+    },
+    "mygene": {
+      "url": "https://mygene.info/v3/query?q=symbol%3AFBXO5&species=human&size=3",
+      "data": {
+        "total": 1,
+        "hits": [
+          {
+            "_id": "26271",
+            "symbol": "FBXO5",
+            "name": "F-box protein 5",
+            "taxid": 9606
+          }
+        ]
+      }
+    },
+    "chembl": {
+      "url": "https://www.ebi.ac.uk/chembl/api/data/target/search.json?q=FBXO5&limit=20",
+      "data": {
+        "total": 0,
+        "human_targets": []
+      }
+    },
+    "hgnc_rest": {
+      "url": "https://rest.genenames.org/fetch/symbol/FBXO5",
+      "data": [
+        {
+          "symbol": "FBXO5",
+          "hgnc_id": "HGNC:13584",
+          "entrez_id": "26271",
+          "ensembl_gene_id": "ENSG00000112029",
+          "status": "Approved"
+        }
+      ]
+    },
+    "gtex_reference": {
+      "url": "https://gtexportal.org/api/v2/reference/gene?geneId=FBXO5",
+      "data": [
+        {
+          "geneSymbol": "FBXO5",
+          "geneId": null,
+          "gencodeId": "ENSG00000112029.9",
+          "entrezGeneId": 26271
+        }
+      ]
+    },
+    "reactome": {
+      "url": "https://reactome.org/ContentService/data/mapping/UniProt/Q9UKT4/pathways",
+      "data": [
+        {
+          "stId": "R-HSA-174113",
+          "displayName": "SCF-beta-TrCP mediated degradation of Emi1",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-176408",
+          "displayName": "Regulation of APC/C activators between G1/S and early anaphase",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-176417",
+          "displayName": "Phosphorylation of Emi1",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-68881",
+          "displayName": "Mitotic Metaphase/Anaphase Transition",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-69205",
+          "displayName": "G1/S-Specific Transcription",
+          "speciesName": "Homo sapiens"
+        }
+      ]
+    }
+  }
+}

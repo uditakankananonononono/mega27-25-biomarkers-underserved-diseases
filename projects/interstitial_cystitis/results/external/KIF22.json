@@ -1,0 +1,117 @@
+{
+  "gene": "KIF22",
+  "module": "M6_cell_state_g2m",
+  "prereg": "projects/interstitial_cystitis/prereg/ic_p48_module_genesets.json",
+  "retrieved_at_utc": "2026-09-25T19:54:56.453978+00:00",
+  "sources": {
+    "ensembl": {
+      "url": "https://rest.ensembl.org/lookup/symbol/homo_sapiens/KIF22?content-type=application/json",
+      "data": {
+        "id": "ENSG00000079616",
+        "display_name": "KIF22",
+        "description": "kinesin family member 22 [Source:HGNC Symbol;Acc:HGNC:6391]",
+        "biotype": "protein_coding",
+        "seq_region_name": "16"
+      }
+    },
+    "uniprot": {
+      "url": "https://rest.uniprot.org/uniprotkb/search?query=gene_exact%3AKIF22%20AND%20organism_id%3A9606%20AND%20reviewed%3Atrue&size=3&format=json",
+      "data": [
+        {
+          "primaryAccession": "Q14807",
+          "uniProtkbId": "KIF22_HUMAN",
+          "entryType": "UniProtKB reviewed (Swiss-Prot)"
+        }
+      ]
+    },
+    "europe_pmc": {
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=KIF22%20AND%20%22interstitial%20cystitis%22&format=json&pageSize=10",
+      "data": {
+        "hit_count": 1,
+        "papers": [
+          {
+            "id": "29540744",
+            "title": "Alpha-oxoglutarate inhibits the proliferation of immortalized normal bladder epithelial cells via an epigenetic switch involving ARID1A.",
+            "doi": "10.1038/s41598-018-22771-2",
+            "pubYear": "2018"
+          }
+        ]
+      }
+    },
+    "mygene": {
+      "url": "https://mygene.info/v3/query?q=symbol%3AKIF22&species=human&size=3",
+      "data": {
+        "total": 1,
+        "hits": [
+          {
+            "_id": "3835",
+            "symbol": "KIF22",
+            "name": "kinesin family member 22",
+            "taxid": 9606
+          }
+        ]
+      }
+    },
+    "chembl": {
+      "url": "https://www.ebi.ac.uk/chembl/api/data/target/search.json?q=KIF22&limit=20",
+      "data": {
+        "total": 1,
+        "human_targets": [
+          {
+            "target_chembl_id": "CHEMBL5470",
+            "pref_name": "Kinesin-like protein KIF22",
+            "organism": "Homo sapiens"
+          }
+        ]
+      }
+    },
+    "hgnc_rest": {
+      "url": "https://rest.genenames.org/fetch/symbol/KIF22",
+      "data": [
+        {
+          "symbol": "KIF22",
+          "hgnc_id": "HGNC:6391",
+          "entrez_id": "3835",
+          "ensembl_gene_id": "ENSG00000079616",
+          "status": "Approved"
+        }
+      ]
+    },
+    "gtex_reference": {
+      "url": "https://gtexportal.org/api/v2/reference/gene?geneId=KIF22",
+      "data": [
+        {
+          "geneSymbol": "KIF22",
+          "geneId": null,
+          "gencodeId": "ENSG00000079616.12",
+          "entrezGeneId": 3835
+        }
+      ]
+    },
+    "reactome": {
+      "url": "https://reactome.org/ContentService/data/mapping/UniProt/Q14807/pathways",
+      "data": [
+        {
+          "stId": "R-HSA-2132295",
+          "displayName": "MHC class II antigen presentation",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-6811434",
+          "displayName": "COPI-dependent Golgi-to-ER retrograde traffic",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-983189",
+          "displayName": "Kinesins",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-9979719",
+          "displayName": "Processing of antigen in germinal center B cells",
+          "speciesName": "Homo sapiens"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,119 @@
+{
+  "gene": "SLC38A1",
+  "module": "M6_cell_state_g2m",
+  "prereg": "projects/interstitial_cystitis/prereg/ic_p48_module_genesets.json",
+  "retrieved_at_utc": "2026-09-25T20:27:33.381328+00:00",
+  "sources": {
+    "ensembl": {
+      "url": "https://rest.ensembl.org/lookup/symbol/homo_sapiens/SLC38A1?content-type=application/json",
+      "data": {
+        "id": "ENSG00000111371",
+        "display_name": "SLC38A1",
+        "description": "solute carrier family 38 member 1 [Source:HGNC Symbol;Acc:HGNC:13447]",
+        "biotype": "protein_coding",
+        "seq_region_name": "12"
+      }
+    },
+    "uniprot": {
+      "url": "https://rest.uniprot.org/uniprotkb/search?query=gene_exact%3ASLC38A1%20AND%20organism_id%3A9606%20AND%20reviewed%3Atrue&size=3&format=json",
+      "data": [
+        {
+          "primaryAccession": "Q9H2H9",
+          "uniProtkbId": "S38A1_HUMAN",
+          "entryType": "UniProtKB reviewed (Swiss-Prot)"
+        }
+      ]
+    },
+    "europe_pmc": {
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=SLC38A1%20AND%20%22interstitial%20cystitis%22&format=json&pageSize=10",
+      "data": {
+        "hit_count": 3,
+        "papers": [
+          {
+            "id": "29237492",
+            "title": "Pentosan polysulfate binds to STRO-1<sup>+</sup> mesenchymal progenitor cells, is internalized, and modifies gene expression: a novel approach of pre-programing stem cells for therapeutic application requiring their chondrogenesis.",
+            "doi": "10.1186/s13287-017-0723-y",
+            "pubYear": "2017"
+          },
+          {
+            "id": "32030671",
+            "title": "Vision 20/20 for the Second Leap of Reproductive Sciences.",
+            "doi": "10.1007/s43032-019-00138-w",
+            "pubYear": "2020"
+          },
+          {
+            "id": "PMC7104427",
+            "title": "Abstracts",
+            "doi": null,
+            "pubYear": "2018"
+          }
+        ]
+      }
+    },
+    "mygene": {
+      "url": "https://mygene.info/v3/query?q=symbol%3ASLC38A1&species=human&size=3",
+      "data": {
+        "total": 1,
+        "hits": [
+          {
+            "_id": "81539",
+            "symbol": "SLC38A1",
+            "name": "solute carrier family 38 member 1",
+            "taxid": 9606
+          }
+        ]
+      }
+    },
+    "chembl": {
+      "url": "https://www.ebi.ac.uk/chembl/api/data/target/search.json?q=SLC38A1&limit=20",
+      "data": {
+        "total": 1,
+        "human_targets": [
+          {
+            "target_chembl_id": "CHEMBL6066229",
+            "pref_name": "Sodium-coupled neutral amino acid symporter 1",
+            "organism": "Homo sapiens"
+          }
+        ]
+      }
+    },
+    "hgnc_rest": {
+      "url": "https://rest.genenames.org/fetch/symbol/SLC38A1",
+      "data": [
+        {
+          "symbol": "SLC38A1",
+          "hgnc_id": "HGNC:13447",
+          "entrez_id": "81539",
+          "ensembl_gene_id": "ENSG00000111371",
+          "status": "Approved"
+        }
+      ]
+    },
+    "gtex_reference": {
+      "url": "https://gtexportal.org/api/v2/reference/gene?geneId=SLC38A1",
+      "data": [
+        {
+          "geneSymbol": "SLC38A1",
+          "geneId": null,
+          "gencodeId": "ENSG00000111371.15",
+          "entrezGeneId": 81539
+        }
+      ]
+    },
+    "reactome": {
+      "url": "https://reactome.org/ContentService/data/mapping/UniProt/Q9H2H9/pathways",
+      "data": [
+        {
+          "stId": "R-HSA-210455",
+          "displayName": "Astrocytic Glutamate-Glutamine Uptake And Metabolism",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-352230",
+          "displayName": "Amino acid transport across the plasma membrane",
+          "speciesName": "Homo sapiens"
+        }
+      ]
+    }
+  }
+}

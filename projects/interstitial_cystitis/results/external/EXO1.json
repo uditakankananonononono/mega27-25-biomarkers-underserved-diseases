@@ -1,0 +1,175 @@
+{
+  "gene": "EXO1",
+  "module": "M6_cell_state_g2m",
+  "prereg": "projects/interstitial_cystitis/prereg/ic_p48_module_genesets.json",
+  "retrieved_at_utc": "2026-09-25T20:23:05.109022+00:00",
+  "sources": {
+    "ensembl": {
+      "url": "https://rest.ensembl.org/lookup/symbol/homo_sapiens/EXO1?content-type=application/json",
+      "data": {
+        "id": "ENSG00000174371",
+        "display_name": "EXO1",
+        "description": "exonuclease 1 [Source:HGNC Symbol;Acc:HGNC:3511]",
+        "biotype": "protein_coding",
+        "seq_region_name": "1"
+      }
+    },
+    "uniprot": {
+      "url": "https://rest.uniprot.org/uniprotkb/search?query=gene_exact%3AEXO1%20AND%20organism_id%3A9606%20AND%20reviewed%3Atrue&size=3&format=json",
+      "data": [
+        {
+          "primaryAccession": "Q9UQ84",
+          "uniProtkbId": "EXO1_HUMAN",
+          "entryType": "UniProtKB reviewed (Swiss-Prot)"
+        }
+      ]
+    },
+    "europe_pmc": {
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=EXO1%20AND%20%22interstitial%20cystitis%22&format=json&pageSize=10",
+      "data": {
+        "hit_count": 0,
+        "papers": []
+      }
+    },
+    "mygene": {
+      "url": "https://mygene.info/v3/query?q=symbol%3AEXO1&species=human&size=3",
+      "data": {
+        "total": 1,
+        "hits": [
+          {
+            "_id": "9156",
+            "symbol": "EXO1",
+            "name": "exonuclease 1",
+            "taxid": 9606
+          }
+        ]
+      }
+    },
+    "chembl": {
+      "url": "https://www.ebi.ac.uk/chembl/api/data/target/search.json?q=EXO1&limit=20",
+      "data": {
+        "total": 1,
+        "human_targets": [
+          {
+            "target_chembl_id": "CHEMBL4523496",
+            "pref_name": "Exonuclease 1",
+            "organism": "Homo sapiens"
+          }
+        ]
+      }
+    },
+    "hgnc_rest": {
+      "url": "https://rest.genenames.org/fetch/symbol/EXO1",
+      "data": [
+        {
+          "symbol": "EXO1",
+          "hgnc_id": "HGNC:3511",
+          "entrez_id": "9156",
+          "ensembl_gene_id": "ENSG00000174371",
+          "status": "Approved"
+        }
+      ]
+    },
+    "gtex_reference": {
+      "url": "https://gtexportal.org/api/v2/reference/gene?geneId=EXO1",
+      "data": [
+        {
+          "geneSymbol": "EXO1",
+          "geneId": null,
+          "gencodeId": "ENSG00000174371.16",
+          "entrezGeneId": 9156
+        }
+      ]
+    },
+    "reactome": {
+      "url": "https://reactome.org/ContentService/data/mapping/UniProt/Q9UQ84/pathways",
+      "data": [
+        {
+          "stId": "R-HSA-5358565",
+          "displayName": "Mismatch repair (MMR) directed by MSH2:MSH6 (MutSalpha)",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-5358606",
+          "displayName": "Mismatch repair (MMR) directed by MSH2:MSH3 (MutSbeta)",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-5685938",
+          "displayName": "HDR through Single Strand Annealing (SSA)",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-5685942",
+          "displayName": "HDR through Homologous Recombination (HRR)",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-5693554",
+          "displayName": "Resolution of D-loop Structures through Synthesis-Dependent Strand Annealing (SDSA)",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-5693568",
+          "displayName": "Resolution of D-loop Structures through Holliday Junction Intermediates",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-5693579",
+          "displayName": "Homologous DNA Pairing and Strand Exchange",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-5693607",
+          "displayName": "Processing of DNA double-strand break ends",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-5693616",
+          "displayName": "Presynaptic phase of homologous DNA pairing and strand exchange",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-6804756",
+          "displayName": "Regulation of TP53 Activity through Phosphorylation",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-69473",
+          "displayName": "G2/M DNA damage checkpoint",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-9701192",
+          "displayName": "Defective homologous recombination repair (HRR) due to BRCA1 loss of function",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-9704331",
+          "displayName": "Defective HDR through Homologous Recombination Repair (HRR) due to PALB2 loss of BRCA1 binding function",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-9704646",
+          "displayName": "Defective HDR through Homologous Recombination Repair (HRR) due to PALB2 loss of BRCA2/RAD51/RAD51C binding function",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-9709570",
+          "displayName": "Impaired BRCA2 binding to RAD51",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-9709603",
+          "displayName": "Impaired BRCA2 binding to PALB2",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-9968295",
+          "displayName": "Somatic hypermutation of immunoglobulin genes by error-prone mismatch repair (MMR)",
+          "speciesName": "Homo sapiens"
+        }
+      ]
+    }
+  }
+}

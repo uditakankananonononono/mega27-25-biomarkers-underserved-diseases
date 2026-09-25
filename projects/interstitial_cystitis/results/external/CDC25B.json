@@ -1,0 +1,117 @@
+{
+  "gene": "CDC25B",
+  "module": "M6_cell_state_g2m",
+  "prereg": "projects/interstitial_cystitis/prereg/ic_p48_module_genesets.json",
+  "retrieved_at_utc": "2026-09-25T19:56:59.751150+00:00",
+  "sources": {
+    "ensembl": {
+      "url": "https://rest.ensembl.org/lookup/symbol/homo_sapiens/CDC25B?content-type=application/json",
+      "error": "HTTP Error 503: Service Unavailable"
+    },
+    "uniprot": {
+      "url": "https://rest.uniprot.org/uniprotkb/search?query=gene_exact%3ACDC25B%20AND%20organism_id%3A9606%20AND%20reviewed%3Atrue&size=3&format=json",
+      "data": [
+        {
+          "primaryAccession": "P30305",
+          "uniProtkbId": "MPIP2_HUMAN",
+          "entryType": "UniProtKB reviewed (Swiss-Prot)"
+        }
+      ]
+    },
+    "europe_pmc": {
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=CDC25B%20AND%20%22interstitial%20cystitis%22&format=json&pageSize=10",
+      "data": {
+        "hit_count": 2,
+        "papers": [
+          {
+            "id": "40777016",
+            "title": "Integrated identification of immune-related therapeutic targets for interstitial cystitis via multi-algorithm machine learning: transcriptomic profiling and &lt;i&gt;in vivo&lt;/i&gt; experimental validation.",
+            "doi": "10.3389/fimmu.2025.1636855",
+            "pubYear": "2025"
+          },
+          {
+            "id": "PMC7163937",
+            "title": "Poster Sessions",
+            "doi": null,
+            "pubYear": "2014"
+          }
+        ]
+      }
+    },
+    "mygene": {
+      "url": "https://mygene.info/v3/query?q=symbol%3ACDC25B&species=human&size=3",
+      "data": {
+        "total": 1,
+        "hits": [
+          {
+            "_id": "994",
+            "symbol": "CDC25B",
+            "name": "cell division cycle 25B",
+            "taxid": 9606
+          }
+        ]
+      }
+    },
+    "chembl": {
+      "url": "https://www.ebi.ac.uk/chembl/api/data/target/search.json?q=CDC25B&limit=20",
+      "data": {
+        "total": 2,
+        "human_targets": [
+          {
+            "target_chembl_id": "CHEMBL4804",
+            "pref_name": "M-phase inducer phosphatase 2",
+            "organism": "Homo sapiens"
+          }
+        ]
+      }
+    },
+    "hgnc_rest": {
+      "url": "https://rest.genenames.org/fetch/symbol/CDC25B",
+      "data": [
+        {
+          "symbol": "CDC25B",
+          "hgnc_id": "HGNC:1726",
+          "entrez_id": "994",
+          "ensembl_gene_id": "ENSG00000101224",
+          "status": "Approved"
+        }
+      ]
+    },
+    "gtex_reference": {
+      "url": "https://gtexportal.org/api/v2/reference/gene?geneId=CDC25B",
+      "data": [
+        {
+          "geneSymbol": "CDC25B",
+          "geneId": null,
+          "gencodeId": "ENSG00000101224.17",
+          "entrezGeneId": 994
+        }
+      ]
+    },
+    "reactome": {
+      "url": "https://reactome.org/ContentService/data/mapping/UniProt/P30305/pathways",
+      "data": [
+        {
+          "stId": "R-HSA-69273",
+          "displayName": "Cyclin A/B1/B2 associated events during G2/M transition",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-69656",
+          "displayName": "Cyclin A:Cdk2-associated events at S phase entry",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-8862803",
+          "displayName": "Deregulated CDK5 triggers multiple neurodegenerative pathways in Alzheimer's disease models",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-9825892",
+          "displayName": "Regulation of MITF-M-dependent genes involved in cell cycle and proliferation",
+          "speciesName": "Homo sapiens"
+        }
+      ]
+    }
+  }
+}

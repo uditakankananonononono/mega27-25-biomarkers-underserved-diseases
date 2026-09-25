@@ -1,0 +1,276 @@
+{
+  "gene": "ABL1",
+  "module": "M6_cell_state_g2m",
+  "prereg": "projects/interstitial_cystitis/prereg/ic_p48_module_genesets.json",
+  "retrieved_at_utc": "2026-09-25T20:25:11.820419+00:00",
+  "sources": {
+    "ensembl": {
+      "url": "https://rest.ensembl.org/lookup/symbol/homo_sapiens/ABL1?content-type=application/json",
+      "data": {
+        "id": "ENSG00000097007",
+        "display_name": "ABL1",
+        "description": "ABL proto-oncogene 1, non-receptor tyrosine kinase [Source:HGNC Symbol;Acc:HGNC:76]",
+        "biotype": "protein_coding",
+        "seq_region_name": "9"
+      }
+    },
+    "uniprot": {
+      "url": "https://rest.uniprot.org/uniprotkb/search?query=gene_exact%3AABL1%20AND%20organism_id%3A9606%20AND%20reviewed%3Atrue&size=3&format=json",
+      "data": [
+        {
+          "primaryAccession": "P00519",
+          "uniProtkbId": "ABL1_HUMAN",
+          "entryType": "UniProtKB reviewed (Swiss-Prot)"
+        }
+      ]
+    },
+    "europe_pmc": {
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=ABL1%20AND%20%22interstitial%20cystitis%22&format=json&pageSize=10",
+      "data": {
+        "hit_count": 13,
+        "papers": [
+          {
+            "id": "39582749",
+            "title": "<i>Ureaplasma urealyticum</i> pyelonephritis associated with renal, perinephric, retroperitoneal, and bladder abscesses in a hypogammaglobinemic adult patient presenting with gross hematuria and marked thrombocytosis.",
+            "doi": "10.1016/j.idcr.2024.e02107",
+            "pubYear": "2024"
+          },
+          {
+            "id": "38408622",
+            "title": "Dysregulated inflammatory response to urogynecologic meshes in women with diabetes and its implications.",
+            "doi": "10.1016/j.ajog.2024.02.282",
+            "pubYear": "2024"
+          },
+          {
+            "id": "35174172",
+            "title": "Novel Non-Invasive Diagnosis of Bladder Cancer in Urine Based on Multifunctional Nanoparticles.",
+            "doi": "10.3389/fcell.2021.813420",
+            "pubYear": "2021"
+          },
+          {
+            "id": "37446908",
+            "title": "Epigallocatechin-3-Gallate Therapeutic Potential in Cancer: Mechanism of Action and Clinical Implications.",
+            "doi": "10.3390/molecules28135246",
+            "pubYear": "2023"
+          },
+          {
+            "id": "33916038",
+            "title": "Noninvasive Urine-Based Tests to Diagnose or Detect Recurrence of Bladder Cancer.",
+            "doi": "10.3390/cancers13071650",
+            "pubYear": "2021"
+          },
+          {
+            "id": "34674717",
+            "title": "Huanglianjiedu Decoction as an effective treatment for oral squamous cell carcinoma based on network pharmacology and experimental validation.",
+            "doi": "10.1186/s12935-021-02201-6",
+            "pubYear": "2021"
+          },
+          {
+            "id": "27132234",
+            "title": "Pharmacological treatment options for mast cell activation disease.",
+            "doi": "10.1007/s00210-016-1247-1",
+            "pubYear": "2016"
+          },
+          {
+            "id": "34448894",
+            "title": "33&lt;sup&gt;rd&lt;/sup&gt; European Congress of Pathology - Abstracts.",
+            "doi": "10.1007/s00428-021-03157-8",
+            "pubYear": "2021"
+          },
+          {
+            "id": "31620861",
+            "title": "Abstracts from the 39th Congress of the Société Internationale d'Urologie, Athens, Greece, October 17-20, 2019.",
+            "doi": "10.1007/s00345-019-02955-9",
+            "pubYear": "2019"
+          },
+          {
+            "id": "34427716",
+            "title": "Abstracts des 73. Kongresses der Deutschen Gesellschaft für Urologie e. V.",
+            "doi": "10.1007/s00120-021-01626-1",
+            "pubYear": "2021"
+          }
+        ]
+      }
+    },
+    "mygene": {
+      "url": "https://mygene.info/v3/query?q=symbol%3AABL1&species=human&size=3",
+      "data": {
+        "total": 1,
+        "hits": [
+          {
+            "_id": "25",
+            "symbol": "ABL1",
+            "name": "ABL proto-oncogene 1, non-receptor tyrosine kinase",
+            "taxid": 9606
+          }
+        ]
+      }
+    },
+    "chembl": {
+      "url": "https://www.ebi.ac.uk/chembl/api/data/target/search.json?q=ABL1&limit=20",
+      "data": {
+        "total": 17,
+        "human_targets": [
+          {
+            "target_chembl_id": "CHEMBL1862",
+            "pref_name": "Tyrosine-protein kinase ABL1",
+            "organism": "Homo sapiens"
+          },
+          {
+            "target_chembl_id": "CHEMBL4523750",
+            "pref_name": "Protein cereblon/Tyrosine-protein kinase ABL1",
+            "organism": "Homo sapiens"
+          },
+          {
+            "target_chembl_id": "CHEMBL2096618",
+            "pref_name": "Bcr/Abl fusion protein",
+            "organism": "Homo sapiens"
+          },
+          {
+            "target_chembl_id": "CHEMBL3885630",
+            "pref_name": "Ras and Rab interactor 1/Tyrosine-protein kinase ABL1",
+            "organism": "Homo sapiens"
+          },
+          {
+            "target_chembl_id": "CHEMBL4523725",
+            "pref_name": "von Hippel-Lindau disease tumor suppressor/Tyrosine-protein kinase ABL1",
+            "organism": "Homo sapiens"
+          },
+          {
+            "target_chembl_id": "CHEMBL6067090",
+            "pref_name": "CDK5 and ABL1 enzyme substrate 1",
+            "organism": "Homo sapiens"
+          },
+          {
+            "target_chembl_id": "CHEMBL3885645",
+            "pref_name": "Transcription factor ETV6/Tyrosine-protein kinase ABL1",
+            "organism": "Homo sapiens"
+          },
+          {
+            "target_chembl_id": "CHEMBL4296137",
+            "pref_name": "Protein cereblon/Tyrosine-protein kinase ABL1/Breakpoint cluster region protein",
+            "organism": "Homo sapiens"
+          },
+          {
+            "target_chembl_id": "CHEMBL4523751",
+            "pref_name": "von Hippel-Lindau disease tumor suppressor/Tyrosine-protein kinase ABL1/Breakpoint cluster region protein",
+            "organism": "Homo sapiens"
+          },
+          {
+            "target_chembl_id": "CHEMBL2111414",
+            "pref_name": "Tyrosine-protein kinase ABL",
+            "organism": "Homo sapiens"
+          },
+          {
+            "target_chembl_id": "CHEMBL4296119",
+            "pref_name": "Baculoviral IAP repeat-containing protein 2/Tyrosine-protein kinase ABL1/Breakpoint cluster region protein",
+            "organism": "Homo sapiens"
+          },
+          {
+            "target_chembl_id": "CHEMBL4296120",
+            "pref_name": "E3 ubiquitin-protein ligase XIAP/Tyrosine-protein kinase ABL1/Breakpoint cluster region protein",
+            "organism": "Homo sapiens"
+          },
+          {
+            "target_chembl_id": "CHEMBL6193843",
+            "pref_name": "Baculoviral IAP repeat-containing protein 2/E3 ubiquitin-protein ligase XIAP/Breakpoint cluster region protein/Tyrosine-protein kinase ABL1",
+            "organism": "Homo sapiens"
+          }
+        ]
+      }
+    },
+    "hgnc_rest": {
+      "url": "https://rest.genenames.org/fetch/symbol/ABL1",
+      "data": [
+        {
+          "symbol": "ABL1",
+          "hgnc_id": "HGNC:76",
+          "entrez_id": "25",
+          "ensembl_gene_id": "ENSG00000097007",
+          "status": "Approved"
+        }
+      ]
+    },
+    "gtex_reference": {
+      "url": "https://gtexportal.org/api/v2/reference/gene?geneId=ABL1",
+      "data": [
+        {
+          "geneSymbol": "ABL1",
+          "geneId": null,
+          "gencodeId": "ENSG00000097007.17",
+          "entrezGeneId": 25
+        }
+      ]
+    },
+    "reactome": {
+      "url": "https://reactome.org/ContentService/data/mapping/UniProt/P00519/pathways",
+      "data": [
+        {
+          "stId": "R-HSA-2029482",
+          "displayName": "Regulation of actin dynamics for phagocytic cup formation",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-428890",
+          "displayName": "Role of ABL in ROBO-SLIT signaling",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-525793",
+          "displayName": "Myogenesis",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-5663213",
+          "displayName": "RHO GTPases Activate WASPs and WAVEs",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-5685938",
+          "displayName": "HDR through Single Strand Annealing (SSA)",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-5693565",
+          "displayName": "Recruitment and ATM-mediated phosphorylation of repair and signaling proteins at DNA double strand breaks",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-69231",
+          "displayName": "Cyclin D associated events in G1",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-8939236",
+          "displayName": "RUNX1 regulates transcription of genes involved in differentiation of HSCs",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-8940973",
+          "displayName": "RUNX2 regulates osteoblast differentiation",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-9664422",
+          "displayName": "FCGR3A-mediated phagocytosis",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-983231",
+          "displayName": "Factors involved in megakaryocyte development and platelet production",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-9841922",
+          "displayName": "MLL4 and MLL3 complexes regulate expression of PPARG target genes in adipogenesis and hepatic steatosis",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-9860927",
+          "displayName": "Turbulent (oscillatory, disturbed) flow shear stress activates signaling by PIEZO1 and integrins in endothelial cells",
+          "speciesName": "Homo sapiens"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,246 @@
+{
+  "gene": "E2F1",
+  "module": "M6_cell_state_g2m",
+  "prereg": "projects/interstitial_cystitis/prereg/ic_p48_module_genesets.json",
+  "retrieved_at_utc": "2026-09-25T20:21:41.334147+00:00",
+  "sources": {
+    "ensembl": {
+      "url": "https://rest.ensembl.org/lookup/symbol/homo_sapiens/E2F1?content-type=application/json",
+      "data": {
+        "id": "ENSG00000101412",
+        "display_name": "E2F1",
+        "description": "E2F transcription factor 1 [Source:HGNC Symbol;Acc:HGNC:3113]",
+        "biotype": "protein_coding",
+        "seq_region_name": "20"
+      }
+    },
+    "uniprot": {
+      "url": "https://rest.uniprot.org/uniprotkb/search?query=gene_exact%3AE2F1%20AND%20organism_id%3A9606%20AND%20reviewed%3Atrue&size=3&format=json",
+      "data": [
+        {
+          "primaryAccession": "Q01094",
+          "uniProtkbId": "E2F1_HUMAN",
+          "entryType": "UniProtKB reviewed (Swiss-Prot)"
+        }
+      ]
+    },
+    "europe_pmc": {
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=E2F1%20AND%20%22interstitial%20cystitis%22&format=json&pageSize=10",
+      "data": {
+        "hit_count": 30,
+        "papers": [
+          {
+            "id": "41777894",
+            "title": "miRNA expression profile as a potential tool for discrimination between bacterial and interstitial cystitis.",
+            "doi": "10.3389/fimmu.2026.1738839",
+            "pubYear": "2026"
+          },
+          {
+            "id": "40497148",
+            "title": "Identification and Validation of Oxidative Stress-Related Diagnostic Marker Genes and Immune Landscape in Ulcerative Interstitial Cystitis by Integrating Bioinformatics and Machine Learning.",
+            "doi": "10.2147/jir.s524653",
+            "pubYear": "2025"
+          },
+          {
+            "id": "34943467",
+            "title": "Biomarkers in the Light of the Etiopathology of IC/BPS.",
+            "doi": "10.3390/diagnostics11122231",
+            "pubYear": "2021"
+          },
+          {
+            "id": "41791709",
+            "title": "The SWI/SNF complex in tumor metabolism: Mechanisms and therapeutic implications.",
+            "doi": "10.1016/j.jbc.2026.111342",
+            "pubYear": "2026"
+          },
+          {
+            "id": "29531336",
+            "title": "Molecular pathogenesis of interstitial cystitis based on microRNA expression signature: miR-320 family-regulated molecular pathways and targets.",
+            "doi": "10.1038/s10038-018-0419-x",
+            "pubYear": "2018"
+          },
+          {
+            "id": "36944905",
+            "title": "A network map of cytoskeleton-associated protein 4 (CKAP4) mediated signaling pathway in cancer.",
+            "doi": "10.1007/s12079-023-00739-w",
+            "pubYear": "2023"
+          },
+          {
+            "id": "35682695",
+            "title": "Expression and Biological Functions of miRNAs in Chronic Pain: A Review on Human Studies.",
+            "doi": "10.3390/ijms23116016",
+            "pubYear": "2022"
+          },
+          {
+            "id": "36051251",
+            "title": "Pharmacologic Therapies for Non-Muscle Invasive Bladder Cancer: Current and Future Treatments.",
+            "doi": "10.33696/pharmacol.4.030",
+            "pubYear": "2022"
+          },
+          {
+            "id": "34094648",
+            "title": "Non-Muscular Invasive Bladder Cancer: Re-envisioning Therapeutic Journey from Traditional to Regenerative Interventions.",
+            "doi": "10.14336/ad.2020.1109",
+            "pubYear": "2021"
+          },
+          {
+            "id": "37878209",
+            "title": "The microbiota and renal cell carcinoma.",
+            "doi": "10.1007/s13402-023-00876-9",
+            "pubYear": "2024"
+          }
+        ]
+      }
+    },
+    "mygene": {
+      "url": "https://mygene.info/v3/query?q=symbol%3AE2F1&species=human&size=3",
+      "data": {
+        "total": 1,
+        "hits": [
+          {
+            "_id": "1869",
+            "symbol": "E2F1",
+            "name": "E2F transcription factor 1",
+            "taxid": 9606
+          }
+        ]
+      }
+    },
+    "chembl": {
+      "url": "https://www.ebi.ac.uk/chembl/api/data/target/search.json?q=E2F1&limit=20",
+      "data": {
+        "total": 3,
+        "human_targets": [
+          {
+            "target_chembl_id": "CHEMBL4382",
+            "pref_name": "Transcription factor E2F1",
+            "organism": "Homo sapiens"
+          },
+          {
+            "target_chembl_id": "CHEMBL4630726",
+            "pref_name": "E2F",
+            "organism": "Homo sapiens"
+          },
+          {
+            "target_chembl_id": "CHEMBL4105871",
+            "pref_name": "Ubiquitin-conjugating enzyme E2 L3",
+            "organism": "Homo sapiens"
+          }
+        ]
+      }
+    },
+    "hgnc_rest": {
+      "url": "https://rest.genenames.org/fetch/symbol/E2F1",
+      "data": [
+        {
+          "symbol": "E2F1",
+          "hgnc_id": "HGNC:3113",
+          "entrez_id": "1869",
+          "ensembl_gene_id": "ENSG00000101412",
+          "status": "Approved"
+        }
+      ]
+    },
+    "gtex_reference": {
+      "url": "https://gtexportal.org/api/v2/reference/gene?geneId=E2F1",
+      "data": [
+        {
+          "geneSymbol": "E2F1",
+          "geneId": null,
+          "gencodeId": "ENSG00000101412.12",
+          "entrezGeneId": 1869
+        }
+      ]
+    },
+    "reactome": {
+      "url": "https://reactome.org/ContentService/data/mapping/UniProt/Q01094/pathways",
+      "data": [
+        {
+          "stId": "R-HSA-111448",
+          "displayName": "Activation of NOXA and translocation to mitochondria",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-113501",
+          "displayName": "Inhibition of replication initiation of damaged DNA by RB1/E2F1",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-1362277",
+          "displayName": "Transcription of E2F targets under negative control by DREAM complex",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-1362300",
+          "displayName": "Transcription of E2F targets under negative control by p107 (RBL1) and p130 (RBL2) in complex with HDAC1",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-139915",
+          "displayName": "Activation of PUMA and translocation to mitochondria",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-1912408",
+          "displayName": "Pre-NOTCH Transcription and Translation",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-2559580",
+          "displayName": "Oxidative Stress Induced Senescence",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-2559585",
+          "displayName": "Oncogene Induced Senescence",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-6804116",
+          "displayName": "TP53 Regulates Transcription of Genes Involved in G1 Cell Cycle Arrest",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-68911",
+          "displayName": "G2 Phase",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-69202",
+          "displayName": "Cyclin E associated events during G1/S transition ",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-69205",
+          "displayName": "G1/S-Specific Transcription",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-69231",
+          "displayName": "Cyclin D associated events in G1",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-69656",
+          "displayName": "Cyclin A:Cdk2-associated events at S phase entry",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-8953750",
+          "displayName": "Transcriptional Regulation by E2F6",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-9616222",
+          "displayName": "Transcriptional regulation of granulopoiesis",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-9661069",
+          "displayName": "Defective binding of RB1 mutants to E2F1,(E2F2, E2F3)",
+          "speciesName": "Homo sapiens"
+        }
+      ]
+    }
+  }
+}

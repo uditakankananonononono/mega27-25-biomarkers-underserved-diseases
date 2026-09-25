@@ -1,0 +1,110 @@
+{
+  "gene": "KMT5A",
+  "module": "M6_cell_state_g2m",
+  "prereg": "projects/interstitial_cystitis/prereg/ic_p48_module_genesets.json",
+  "retrieved_at_utc": "2026-09-25T20:27:25.451214+00:00",
+  "sources": {
+    "ensembl": {
+      "url": "https://rest.ensembl.org/lookup/symbol/homo_sapiens/KMT5A?content-type=application/json",
+      "data": {
+        "id": "ENSG00000183955",
+        "display_name": "KMT5A",
+        "description": "lysine methyltransferase 5A [Source:HGNC Symbol;Acc:HGNC:29489]",
+        "biotype": "protein_coding",
+        "seq_region_name": "12"
+      }
+    },
+    "uniprot": {
+      "url": "https://rest.uniprot.org/uniprotkb/search?query=gene_exact%3AKMT5A%20AND%20organism_id%3A9606%20AND%20reviewed%3Atrue&size=3&format=json",
+      "data": [
+        {
+          "primaryAccession": "Q9NQR1",
+          "uniProtkbId": "KMT5A_HUMAN",
+          "entryType": "UniProtKB reviewed (Swiss-Prot)"
+        }
+      ]
+    },
+    "europe_pmc": {
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=KMT5A%20AND%20%22interstitial%20cystitis%22&format=json&pageSize=10",
+      "data": {
+        "hit_count": 0,
+        "papers": []
+      }
+    },
+    "mygene": {
+      "url": "https://mygene.info/v3/query?q=symbol%3AKMT5A&species=human&size=3",
+      "data": {
+        "total": 1,
+        "hits": [
+          {
+            "_id": "387893",
+            "symbol": "KMT5A",
+            "name": "lysine methyltransferase 5A",
+            "taxid": 9606
+          }
+        ]
+      }
+    },
+    "chembl": {
+      "url": "https://www.ebi.ac.uk/chembl/api/data/target/search.json?q=KMT5A&limit=20",
+      "data": {
+        "total": 2,
+        "human_targets": [
+          {
+            "target_chembl_id": "CHEMBL1795176",
+            "pref_name": "N-lysine methyltransferase KMT5A",
+            "organism": "Homo sapiens"
+          }
+        ]
+      }
+    },
+    "hgnc_rest": {
+      "url": "https://rest.genenames.org/fetch/symbol/KMT5A",
+      "data": [
+        {
+          "symbol": "KMT5A",
+          "hgnc_id": "HGNC:29489",
+          "entrez_id": "387893",
+          "ensembl_gene_id": "ENSG00000183955",
+          "status": "Approved"
+        }
+      ]
+    },
+    "gtex_reference": {
+      "url": "https://gtexportal.org/api/v2/reference/gene?geneId=KMT5A",
+      "data": [
+        {
+          "geneSymbol": "KMT5A",
+          "geneId": null,
+          "gencodeId": "ENSG00000183955.12",
+          "entrezGeneId": 387893
+        }
+      ]
+    },
+    "reactome": {
+      "url": "https://reactome.org/ContentService/data/mapping/UniProt/Q9NQR1/pathways",
+      "data": [
+        {
+          "stId": "R-HSA-2299718",
+          "displayName": "Condensation of Prophase Chromosomes",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-3214841",
+          "displayName": "PKMTs methylate histone lysines",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-6804760",
+          "displayName": "Regulation of TP53 Activity through Methylation",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-9764725",
+          "displayName": "Negative Regulation of CDH1 Gene Transcription",
+          "speciesName": "Homo sapiens"
+        }
+      ]
+    }
+  }
+}

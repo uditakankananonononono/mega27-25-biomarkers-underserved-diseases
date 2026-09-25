@@ -1,0 +1,316 @@
+{
+  "gene": "MYC",
+  "module": "M6_cell_state_g2m",
+  "prereg": "projects/interstitial_cystitis/prereg/ic_p48_module_genesets.json",
+  "retrieved_at_utc": "2026-09-25T20:28:44.094365+00:00",
+  "sources": {
+    "ensembl": {
+      "url": "https://rest.ensembl.org/lookup/symbol/homo_sapiens/MYC?content-type=application/json",
+      "data": {
+        "id": "ENSG00000136997",
+        "display_name": "MYC",
+        "description": "MYC proto-oncogene, bHLH transcription factor [Source:HGNC Symbol;Acc:HGNC:7553]",
+        "biotype": "protein_coding",
+        "seq_region_name": "8"
+      }
+    },
+    "uniprot": {
+      "url": "https://rest.uniprot.org/uniprotkb/search?query=gene_exact%3AMYC%20AND%20organism_id%3A9606%20AND%20reviewed%3Atrue&size=3&format=json",
+      "data": [
+        {
+          "primaryAccession": "P01106",
+          "uniProtkbId": "MYC_HUMAN",
+          "entryType": "UniProtKB reviewed (Swiss-Prot)"
+        }
+      ]
+    },
+    "europe_pmc": {
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=MYC%20AND%20%22interstitial%20cystitis%22&format=json&pageSize=10",
+      "data": {
+        "hit_count": 135,
+        "papers": [
+          {
+            "id": "41694379",
+            "title": "Enhanced CHI3L1 promotes macrophage activation in persistent inflammatory events of ulcerative interstitial cystitis.",
+            "doi": "10.3389/fimmu.2026.1716297",
+            "pubYear": "2026"
+          },
+          {
+            "id": "42062411",
+            "title": "Role of Bruton's Tyrosine Kinase in mast cell driven urothelial barrier injury in an LL-37 induced model of interstitial cystitis.",
+            "doi": "10.1038/s41598-026-50443-z",
+            "pubYear": "2026"
+          },
+          {
+            "id": "41777894",
+            "title": "miRNA expression profile as a potential tool for discrimination between bacterial and interstitial cystitis.",
+            "doi": "10.3389/fimmu.2026.1738839",
+            "pubYear": "2026"
+          },
+          {
+            "id": "41516009",
+            "title": "Pilot Proteomic Analysis of Urinary Extracellular Vesicles Supports the \"Toxic Urine Hypothesis\" as a Vicious Cycle in Refractory IC/BPS Pathogenesis.",
+            "doi": "10.3390/ijms27010130",
+            "pubYear": "2025"
+          },
+          {
+            "id": "40896536",
+            "title": "NRF2 Deficiency in Bladder Epithelial Cells Owing to Ubiquitination by N6-Methyladenosine-Modified TRIM21 Induces Oxidative Stress and Inflammation to Aggravate IC/BPS.",
+            "doi": "10.2147/jir.s545880",
+            "pubYear": "2025"
+          },
+          {
+            "id": "40954350",
+            "title": "A prospective evaluation of hidden bacterial involvement and antibiotic efficacy in nonbacterial CP/CPPS: addressing an underexplored therapeutic approach.",
+            "doi": "10.1007/s00345-025-05936-3",
+            "pubYear": "2025"
+          },
+          {
+            "id": "40034247",
+            "title": "Single-cell RNA sequencing and spatial transcriptome analysis in bladder cancer: Current status and future perspectives.",
+            "doi": "10.1177/23523735251322017",
+            "pubYear": "2025"
+          },
+          {
+            "id": "41751823",
+            "title": "Characterization, Preconditioning, Safety, and Other Issues of MSC-Derived EVs and Secretome.",
+            "doi": "10.3390/ijms27041688",
+            "pubYear": "2026"
+          },
+          {
+            "id": "41961104",
+            "title": "The hidden players: LncRNA-Encoded micropeptides in cancer hallmarks.",
+            "doi": "10.1007/s00018-026-06151-y",
+            "pubYear": "2026"
+          },
+          {
+            "id": "40854667",
+            "title": "In-silico investigation reveals microbial metabolic biomarkers and their regulatory roles in hormone sensitive cancers.",
+            "doi": "10.1016/j.jgeb.2025.100549",
+            "pubYear": "2025"
+          }
+        ]
+      }
+    },
+    "mygene": {
+      "url": "https://mygene.info/v3/query?q=symbol%3AMYC&species=human&size=3",
+      "data": {
+        "total": 1,
+        "hits": [
+          {
+            "_id": "4609",
+            "symbol": "MYC",
+            "name": "MYC proto-oncogene, bHLH transcription factor",
+            "taxid": 9606
+          }
+        ]
+      }
+    },
+    "chembl": {
+      "url": "https://www.ebi.ac.uk/chembl/api/data/target/search.json?q=MYC&limit=20",
+      "data": {
+        "total": 30,
+        "human_targets": [
+          {
+            "target_chembl_id": "CHEMBL1250348",
+            "pref_name": "Myc proto-oncogene protein",
+            "organism": "Homo sapiens"
+          },
+          {
+            "target_chembl_id": "CHEMBL6067196",
+            "pref_name": "c-Myc-binding protein",
+            "organism": "Homo sapiens"
+          },
+          {
+            "target_chembl_id": "CHEMBL3301395",
+            "pref_name": "c-Myc/Max",
+            "organism": "Homo sapiens"
+          },
+          {
+            "target_chembl_id": "CHEMBL4106127",
+            "pref_name": "c-Myc/c-Max",
+            "organism": "Homo sapiens"
+          },
+          {
+            "target_chembl_id": "CHEMBL4296141",
+            "pref_name": "von Hippel-Lindau disease tumor suppressor/Myc proto-oncogene protein",
+            "organism": "Homo sapiens"
+          },
+          {
+            "target_chembl_id": "CHEMBL5465202",
+            "pref_name": "Protein cereblon/Myc proto-oncogene protein",
+            "organism": "Homo sapiens"
+          },
+          {
+            "target_chembl_id": "CHEMBL5465553",
+            "pref_name": "WDR5-MYC",
+            "organism": "Homo sapiens"
+          },
+          {
+            "target_chembl_id": "CHEMBL6067006",
+            "pref_name": "E3 ubiquitin-protein ligase MYCBP2",
+            "organism": "Homo sapiens"
+          },
+          {
+            "target_chembl_id": "CHEMBL4888452",
+            "pref_name": "MAP2K3/Myc proto-oncogene protein",
+            "organism": "Homo sapiens"
+          },
+          {
+            "target_chembl_id": "CHEMBL5060",
+            "pref_name": "ATP-dependent RNA helicase DDX18",
+            "organism": "Homo sapiens"
+          },
+          {
+            "target_chembl_id": "CHEMBL1250363",
+            "pref_name": "Protein max",
+            "organism": "Homo sapiens"
+          },
+          {
+            "target_chembl_id": "CHEMBL4523165",
+            "pref_name": "N-myc proto-oncogene protein",
+            "organism": "Homo sapiens"
+          },
+          {
+            "target_chembl_id": "CHEMBL3351218",
+            "pref_name": "5-hydroxymethyl-dUMP N-hydrolase",
+            "organism": "Homo sapiens"
+          },
+          {
+            "target_chembl_id": "CHEMBL6067536",
+            "pref_name": "NADH dehydrogenase [ubiquinone] 1 alpha subcomplex assembly factor 2",
+            "organism": "Homo sapiens"
+          },
+          {
+            "target_chembl_id": "CHEMBL2160",
+            "pref_name": "Nucleoside diphosphate kinase B",
+            "organism": "Homo sapiens"
+          }
+        ]
+      }
+    },
+    "hgnc_rest": {
+      "url": "https://rest.genenames.org/fetch/symbol/MYC",
+      "data": [
+        {
+          "symbol": "MYC",
+          "hgnc_id": "HGNC:7553",
+          "entrez_id": "4609",
+          "ensembl_gene_id": "ENSG00000136997",
+          "status": "Approved"
+        }
+      ]
+    },
+    "gtex_reference": {
+      "url": "https://gtexportal.org/api/v2/reference/gene?geneId=MYC",
+      "data": [
+        {
+          "geneSymbol": "MYC",
+          "geneId": null,
+          "gencodeId": "ENSG00000136997.16",
+          "entrezGeneId": 4609
+        }
+      ]
+    },
+    "reactome": {
+      "url": "https://reactome.org/ContentService/data/mapping/UniProt/P01106/pathways",
+      "data": [
+        {
+          "stId": "R-HSA-1362277",
+          "displayName": "Transcription of E2F targets under negative control by DREAM complex",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-201556",
+          "displayName": "Signaling by ALK",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-2122947",
+          "displayName": "NOTCH1 Intracellular Domain Regulates Transcription",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-2173796",
+          "displayName": "SMAD2/SMAD3:SMAD4 heterotrimer regulates transcription",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-2644606",
+          "displayName": "Constitutive Signaling by NOTCH1 PEST Domain Mutants",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-2894862",
+          "displayName": "Constitutive Signaling by NOTCH1 HD+PEST Domain Mutants",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-4411364",
+          "displayName": "Binding of TCF/LEF:CTNNB1 to target gene promoters",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-5687128",
+          "displayName": "MAPK6/MAPK4 signaling",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-5689880",
+          "displayName": "Ub-specific processing proteases",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-6785807",
+          "displayName": "Interleukin-4 and Interleukin-13 signaling",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-69202",
+          "displayName": "Cyclin E associated events during G1/S transition ",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-69656",
+          "displayName": "Cyclin A:Cdk2-associated events at S phase entry",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-8866911",
+          "displayName": "TFAP2 (AP-2) family regulates transcription of cell cycle factors",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-8951430",
+          "displayName": "RUNX3 regulates WNT signaling",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-9018519",
+          "displayName": "Estrogen-dependent gene expression",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-9616222",
+          "displayName": "Transcriptional regulation of granulopoiesis",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-9764562",
+          "displayName": "Regulation of CDH1 mRNA translation by microRNAs",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-9818749",
+          "displayName": "Regulation of NFE2L2 gene expression",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-9909649",
+          "displayName": "Regulation of PD-L1(CD274) transcription",
+          "speciesName": "Homo sapiens"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,131 @@
+{
+  "gene": "TOP1",
+  "module": "M6_cell_state_g2m",
+  "prereg": "projects/interstitial_cystitis/prereg/ic_p48_module_genesets.json",
+  "retrieved_at_utc": "2026-09-25T20:24:19.340363+00:00",
+  "sources": {
+    "ensembl": {
+      "url": "https://rest.ensembl.org/lookup/symbol/homo_sapiens/TOP1?content-type=application/json",
+      "data": {
+        "id": "ENSG00000198900",
+        "display_name": "TOP1",
+        "description": "DNA topoisomerase I [Source:HGNC Symbol;Acc:HGNC:11986]",
+        "biotype": "protein_coding",
+        "seq_region_name": "20"
+      }
+    },
+    "uniprot": {
+      "url": "https://rest.uniprot.org/uniprotkb/search?query=gene_exact%3ATOP1%20AND%20organism_id%3A9606%20AND%20reviewed%3Atrue&size=3&format=json",
+      "data": [
+        {
+          "primaryAccession": "P11387",
+          "uniProtkbId": "TOP1_HUMAN",
+          "entryType": "UniProtKB reviewed (Swiss-Prot)"
+        }
+      ]
+    },
+    "europe_pmc": {
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=TOP1%20AND%20%22interstitial%20cystitis%22&format=json&pageSize=10",
+      "data": {
+        "hit_count": 5,
+        "papers": [
+          {
+            "id": "41782384",
+            "title": "Piezo1 Channel Mediates Mechanically Programmable Drug Delivery to Potentiate Intravesical Chemotherapy.",
+            "doi": "10.1002/advs.202522936",
+            "pubYear": "2026"
+          },
+          {
+            "id": "29312794",
+            "title": "Camptothecin (CPT) and its derivatives are known to target topoisomerase I (Top1) as their mechanism of action: did we miss something in CPT analogue molecular targets for treating human disease such as cancer?",
+            "doi": null,
+            "pubYear": "2017"
+          },
+          {
+            "id": "PMC10902613",
+            "title": "Abstracts",
+            "doi": null,
+            "pubYear": "2024"
+          },
+          {
+            "id": "PMC7104549",
+            "title": "Scientific Abstracts",
+            "doi": null,
+            "pubYear": "2012"
+          },
+          {
+            "id": "24085684",
+            "title": "Abstracts of the 2013 Annual Meeting of the American College of Rheumatology. October 25-30, 2013. San Diego, California, USA.",
+            "doi": "10.1002/art.38216",
+            "pubYear": "2013"
+          }
+        ]
+      }
+    },
+    "mygene": {
+      "url": "https://mygene.info/v3/query?q=symbol%3ATOP1&species=human&size=3",
+      "data": {
+        "total": 1,
+        "hits": [
+          {
+            "_id": "7150",
+            "symbol": "TOP1",
+            "name": "DNA topoisomerase I",
+            "taxid": 9606
+          }
+        ]
+      }
+    },
+    "chembl": {
+      "url": "https://www.ebi.ac.uk/chembl/api/data/target/search.json?q=TOP1&limit=20",
+      "data": {
+        "total": 8,
+        "human_targets": [
+          {
+            "target_chembl_id": "CHEMBL1781",
+            "pref_name": "DNA topoisomerase 1",
+            "organism": "Homo sapiens"
+          },
+          {
+            "target_chembl_id": "CHEMBL4106174",
+            "pref_name": "Topoisomerase I/II",
+            "organism": "Homo sapiens"
+          }
+        ]
+      }
+    },
+    "hgnc_rest": {
+      "url": "https://rest.genenames.org/fetch/symbol/TOP1",
+      "data": [
+        {
+          "symbol": "TOP1",
+          "hgnc_id": "HGNC:11986",
+          "entrez_id": "7150",
+          "ensembl_gene_id": "ENSG00000198900",
+          "status": "Approved"
+        }
+      ]
+    },
+    "gtex_reference": {
+      "url": "https://gtexportal.org/api/v2/reference/gene?geneId=TOP1",
+      "data": [
+        {
+          "geneSymbol": "TOP1",
+          "geneId": null,
+          "gencodeId": "ENSG00000198900.5",
+          "entrezGeneId": 7150
+        }
+      ]
+    },
+    "reactome": {
+      "url": "https://reactome.org/ContentService/data/mapping/UniProt/P11387/pathways",
+      "data": [
+        {
+          "stId": "R-HSA-4615885",
+          "displayName": "SUMOylation of DNA replication proteins",
+          "speciesName": "Homo sapiens"
+        }
+      ]
+    }
+  }
+}

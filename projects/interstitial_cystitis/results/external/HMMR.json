@@ -1,0 +1,124 @@
+{
+  "gene": "HMMR",
+  "module": "M6_cell_state_g2m",
+  "prereg": "projects/interstitial_cystitis/prereg/ic_p48_module_genesets.json",
+  "retrieved_at_utc": "2026-09-25T19:55:05.026123+00:00",
+  "sources": {
+    "ensembl": {
+      "url": "https://rest.ensembl.org/lookup/symbol/homo_sapiens/HMMR?content-type=application/json",
+      "data": {
+        "id": "ENSG00000072571",
+        "display_name": "HMMR",
+        "description": "hyaluronan mediated motility receptor [Source:HGNC Symbol;Acc:HGNC:5012]",
+        "biotype": "protein_coding",
+        "seq_region_name": "5"
+      }
+    },
+    "uniprot": {
+      "url": "https://rest.uniprot.org/uniprotkb/search?query=gene_exact%3AHMMR%20AND%20organism_id%3A9606%20AND%20reviewed%3Atrue&size=3&format=json",
+      "data": [
+        {
+          "primaryAccession": "O75330",
+          "uniProtkbId": "HMMR_HUMAN",
+          "entryType": "UniProtKB reviewed (Swiss-Prot)"
+        }
+      ]
+    },
+    "europe_pmc": {
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=HMMR%20AND%20%22interstitial%20cystitis%22&format=json&pageSize=10",
+      "data": {
+        "hit_count": 3,
+        "papers": [
+          {
+            "id": "33390947",
+            "title": "Effect of Glycosaminoglycan Replacement on Markers of Interstitial Cystitis <i>In Vitro</i>.",
+            "doi": "10.3389/fphar.2020.575043",
+            "pubYear": "2020"
+          },
+          {
+            "id": "28871206",
+            "title": "Gold nanoparticles approach to detect chondroitin sulphate and hyaluronic acid urothelial coating.",
+            "doi": "10.1038/s41598-017-09872-0",
+            "pubYear": "2017"
+          },
+          {
+            "id": "26541745",
+            "title": "Hyaluronan as a therapeutic target in human diseases.",
+            "doi": "10.1016/j.addr.2015.10.017",
+            "pubYear": "2016"
+          }
+        ]
+      }
+    },
+    "mygene": {
+      "url": "https://mygene.info/v3/query?q=symbol%3AHMMR&species=human&size=3",
+      "data": {
+        "total": 1,
+        "hits": [
+          {
+            "_id": "3161",
+            "symbol": "HMMR",
+            "name": "hyaluronan mediated motility receptor",
+            "taxid": 9606
+          }
+        ]
+      }
+    },
+    "chembl": {
+      "url": "https://www.ebi.ac.uk/chembl/api/data/target/search.json?q=HMMR&limit=20",
+      "data": {
+        "total": 1,
+        "human_targets": [
+          {
+            "target_chembl_id": "CHEMBL4295676",
+            "pref_name": "Hyaluronan mediated motility receptor",
+            "organism": "Homo sapiens"
+          }
+        ]
+      }
+    },
+    "hgnc_rest": {
+      "url": "https://rest.genenames.org/fetch/symbol/HMMR",
+      "data": [
+        {
+          "symbol": "HMMR",
+          "hgnc_id": "HGNC:5012",
+          "entrez_id": "3161",
+          "ensembl_gene_id": "ENSG00000072571",
+          "status": "Approved"
+        }
+      ]
+    },
+    "gtex_reference": {
+      "url": "https://gtexportal.org/api/v2/reference/gene?geneId=HMMR",
+      "data": [
+        {
+          "geneSymbol": "HMMR",
+          "geneId": null,
+          "gencodeId": "ENSG00000072571.19",
+          "entrezGeneId": 3161
+        }
+      ]
+    },
+    "reactome": {
+      "url": "https://reactome.org/ContentService/data/mapping/UniProt/O75330/pathways",
+      "data": [
+        {
+          "stId": "R-HSA-2142845",
+          "displayName": "Hyaluronan metabolism",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-2160916",
+          "displayName": "Hyaluronan degradation",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-8854518",
+          "displayName": "AURKA Activation by TPX2",
+          "speciesName": "Homo sapiens"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,120 @@
+{
+  "gene": "STMN1",
+  "module": "M6_cell_state_g2m",
+  "prereg": "projects/interstitial_cystitis/prereg/ic_p48_module_genesets.json",
+  "retrieved_at_utc": "2026-09-25T20:21:18.062923+00:00",
+  "sources": {
+    "ensembl": {
+      "url": "https://rest.ensembl.org/lookup/symbol/homo_sapiens/STMN1?content-type=application/json",
+      "data": {
+        "id": "ENSG00000117632",
+        "display_name": "STMN1",
+        "description": "stathmin 1 [Source:HGNC Symbol;Acc:HGNC:6510]",
+        "biotype": "protein_coding",
+        "seq_region_name": "1"
+      }
+    },
+    "uniprot": {
+      "url": "https://rest.uniprot.org/uniprotkb/search?query=gene_exact%3ASTMN1%20AND%20organism_id%3A9606%20AND%20reviewed%3Atrue&size=3&format=json",
+      "data": [
+        {
+          "primaryAccession": "P16949",
+          "uniProtkbId": "STMN1_HUMAN",
+          "entryType": "UniProtKB reviewed (Swiss-Prot)"
+        }
+      ]
+    },
+    "europe_pmc": {
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=STMN1%20AND%20%22interstitial%20cystitis%22&format=json&pageSize=10",
+      "data": {
+        "hit_count": 4,
+        "papers": [
+          {
+            "id": "40034247",
+            "title": "Single-cell RNA sequencing and spatial transcriptome analysis in bladder cancer: Current status and future perspectives.",
+            "doi": "10.1177/23523735251322017",
+            "pubYear": "2025"
+          },
+          {
+            "id": "40380233",
+            "title": "Single-cell transcriptomic analysis deciphers the inflammatory microenvironment characterized by CXCL9+ fibroblasts and ACKR1+ endothelial cells in immune-related myocarditis.",
+            "doi": "10.1186/s12967-025-06551-x",
+            "pubYear": "2025"
+          },
+          {
+            "id": "42121909",
+            "title": "Mosaic: Single-Cell Atlas of Stress.",
+            "doi": "10.3390/cells15090807",
+            "pubYear": "2026"
+          },
+          {
+            "id": "32030671",
+            "title": "Vision 20/20 for the Second Leap of Reproductive Sciences.",
+            "doi": "10.1007/s43032-019-00138-w",
+            "pubYear": "2020"
+          }
+        ]
+      }
+    },
+    "mygene": {
+      "url": "https://mygene.info/v3/query?q=symbol%3ASTMN1&species=human&size=3",
+      "data": {
+        "total": 1,
+        "hits": [
+          {
+            "_id": "3925",
+            "symbol": "STMN1",
+            "name": "stathmin 1",
+            "taxid": 9606
+          }
+        ]
+      }
+    },
+    "chembl": {
+      "url": "https://www.ebi.ac.uk/chembl/api/data/target/search.json?q=STMN1&limit=20",
+      "data": {
+        "total": 1,
+        "human_targets": [
+          {
+            "target_chembl_id": "CHEMBL3879843",
+            "pref_name": "Stathmin",
+            "organism": "Homo sapiens"
+          }
+        ]
+      }
+    },
+    "hgnc_rest": {
+      "url": "https://rest.genenames.org/fetch/symbol/STMN1",
+      "data": [
+        {
+          "symbol": "STMN1",
+          "hgnc_id": "HGNC:6510",
+          "entrez_id": "3925",
+          "ensembl_gene_id": "ENSG00000117632",
+          "status": "Approved"
+        }
+      ]
+    },
+    "gtex_reference": {
+      "url": "https://gtexportal.org/api/v2/reference/gene?geneId=STMN1",
+      "data": [
+        {
+          "geneSymbol": "STMN1",
+          "geneId": null,
+          "gencodeId": "ENSG00000117632.22",
+          "entrezGeneId": 3925
+        }
+      ]
+    },
+    "reactome": {
+      "url": "https://reactome.org/ContentService/data/mapping/UniProt/P16949/pathways",
+      "data": [
+        {
+          "stId": "R-HSA-1251985",
+          "displayName": "Nuclear signaling by ERBB4",
+          "speciesName": "Homo sapiens"
+        }
+      ]
+    }
+  }
+}

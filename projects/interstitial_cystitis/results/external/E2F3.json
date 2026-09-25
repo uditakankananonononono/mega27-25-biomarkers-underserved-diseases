@@ -1,0 +1,151 @@
+{
+  "gene": "E2F3",
+  "module": "M6_cell_state_g2m",
+  "prereg": "projects/interstitial_cystitis/prereg/ic_p48_module_genesets.json",
+  "retrieved_at_utc": "2026-09-25T20:17:58.520889+00:00",
+  "sources": {
+    "ensembl": {
+      "url": "https://rest.ensembl.org/lookup/symbol/homo_sapiens/E2F3?content-type=application/json",
+      "data": {
+        "id": "ENSG00000112242",
+        "display_name": "E2F3",
+        "description": "E2F transcription factor 3 [Source:HGNC Symbol;Acc:HGNC:3115]",
+        "biotype": "protein_coding",
+        "seq_region_name": "6"
+      }
+    },
+    "uniprot": {
+      "url": "https://rest.uniprot.org/uniprotkb/search?query=gene_exact%3AE2F3%20AND%20organism_id%3A9606%20AND%20reviewed%3Atrue&size=3&format=json",
+      "data": [
+        {
+          "primaryAccession": "O00716",
+          "uniProtkbId": "E2F3_HUMAN",
+          "entryType": "UniProtKB reviewed (Swiss-Prot)"
+        }
+      ]
+    },
+    "europe_pmc": {
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=E2F3%20AND%20%22interstitial%20cystitis%22&format=json&pageSize=10",
+      "data": {
+        "hit_count": 5,
+        "papers": [
+          {
+            "id": "41438366",
+            "title": "HLA-DQB1-mediated B cell-epithelial crosstalk drives EBV-associated inflammation in Hunner-type interstitial cystitis.",
+            "doi": "10.1016/j.omtn.2025.102783",
+            "pubYear": "2025"
+          },
+          {
+            "id": "39589812",
+            "title": "Tamm-Horsfall protein augments neutrophil NETosis during urinary tract infection.",
+            "doi": "10.1172/jci.insight.180024",
+            "pubYear": "2025"
+          },
+          {
+            "id": "32438606",
+            "title": "Exosomal Long Non-Coding RNAs in Lung Diseases.",
+            "doi": "10.3390/ijms21103580",
+            "pubYear": "2020"
+          },
+          {
+            "id": "12057914",
+            "title": "Gene expression profiling of mouse bladder inflammatory responses to LPS, substance P, and antigen-stimulation.",
+            "doi": "10.1016/s0002-9440(10)61159-5",
+            "pubYear": "2002"
+          },
+          {
+            "id": "25769533",
+            "title": "Abstracts of the 62nd Annual Scientific Meeting, March 26-28, 2015, San Francisco, California.",
+            "doi": "10.1177/1933719115579631",
+            "pubYear": "2015"
+          }
+        ]
+      }
+    },
+    "mygene": {
+      "url": "https://mygene.info/v3/query?q=symbol%3AE2F3&species=human&size=3",
+      "data": {
+        "total": 1,
+        "hits": [
+          {
+            "_id": "1871",
+            "symbol": "E2F3",
+            "name": "E2F transcription factor 3",
+            "taxid": 9606
+          }
+        ]
+      }
+    },
+    "chembl": {
+      "url": "https://www.ebi.ac.uk/chembl/api/data/target/search.json?q=E2F3&limit=20",
+      "data": {
+        "total": 1,
+        "human_targets": [
+          {
+            "target_chembl_id": "CHEMBL4630726",
+            "pref_name": "E2F",
+            "organism": "Homo sapiens"
+          }
+        ]
+      }
+    },
+    "hgnc_rest": {
+      "url": "https://rest.genenames.org/fetch/symbol/E2F3",
+      "data": [
+        {
+          "symbol": "E2F3",
+          "hgnc_id": "HGNC:3115",
+          "entrez_id": "1871",
+          "ensembl_gene_id": "ENSG00000112242",
+          "status": "Approved"
+        }
+      ]
+    },
+    "gtex_reference": {
+      "url": "https://gtexportal.org/api/v2/reference/gene?geneId=E2F3",
+      "data": [
+        {
+          "geneSymbol": "E2F3",
+          "geneId": null,
+          "gencodeId": "ENSG00000112242.14",
+          "entrezGeneId": 1871
+        }
+      ]
+    },
+    "reactome": {
+      "url": "https://reactome.org/ContentService/data/mapping/UniProt/O00716/pathways",
+      "data": [
+        {
+          "stId": "R-HSA-1912408",
+          "displayName": "Pre-NOTCH Transcription and Translation",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-2559580",
+          "displayName": "Oxidative Stress Induced Senescence",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-2559585",
+          "displayName": "Oncogene Induced Senescence",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-68911",
+          "displayName": "G2 Phase",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-69231",
+          "displayName": "Cyclin D associated events in G1",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-9661069",
+          "displayName": "Defective binding of RB1 mutants to E2F1,(E2F2, E2F3)",
+          "speciesName": "Homo sapiens"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,100 @@
+{
+  "gene": "DKC1",
+  "module": "M6_cell_state_g2m",
+  "prereg": "projects/interstitial_cystitis/prereg/ic_p48_module_genesets.json",
+  "retrieved_at_utc": "2026-09-25T20:29:19.639351+00:00",
+  "sources": {
+    "ensembl": {
+      "url": "https://rest.ensembl.org/lookup/symbol/homo_sapiens/DKC1?content-type=application/json",
+      "data": {
+        "id": "ENSG00000130826",
+        "display_name": "DKC1",
+        "description": "dyskerin pseudouridine synthase 1 [Source:HGNC Symbol;Acc:HGNC:2890]",
+        "biotype": "protein_coding",
+        "seq_region_name": "X"
+      }
+    },
+    "uniprot": {
+      "url": "https://rest.uniprot.org/uniprotkb/search?query=gene_exact%3ADKC1%20AND%20organism_id%3A9606%20AND%20reviewed%3Atrue&size=3&format=json",
+      "data": [
+        {
+          "primaryAccession": "O60832",
+          "uniProtkbId": "DKC1_HUMAN",
+          "entryType": "UniProtKB reviewed (Swiss-Prot)"
+        }
+      ]
+    },
+    "europe_pmc": {
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=DKC1%20AND%20%22interstitial%20cystitis%22&format=json&pageSize=10",
+      "data": {
+        "hit_count": 0,
+        "papers": []
+      }
+    },
+    "mygene": {
+      "url": "https://mygene.info/v3/query?q=symbol%3ADKC1&species=human&size=3",
+      "data": {
+        "total": 1,
+        "hits": [
+          {
+            "_id": "1736",
+            "symbol": "DKC1",
+            "name": "dyskerin pseudouridine synthase 1",
+            "taxid": 9606
+          }
+        ]
+      }
+    },
+    "chembl": {
+      "url": "https://www.ebi.ac.uk/chembl/api/data/target/search.json?q=DKC1&limit=20",
+      "data": {
+        "total": 1,
+        "human_targets": [
+          {
+            "target_chembl_id": "CHEMBL5724912",
+            "pref_name": "H/ACA ribonucleoprotein complex subunit DKC1",
+            "organism": "Homo sapiens"
+          }
+        ]
+      }
+    },
+    "hgnc_rest": {
+      "url": "https://rest.genenames.org/fetch/symbol/DKC1",
+      "data": [
+        {
+          "symbol": "DKC1",
+          "hgnc_id": "HGNC:2890",
+          "entrez_id": "1736",
+          "ensembl_gene_id": "ENSG00000130826",
+          "status": "Approved"
+        }
+      ]
+    },
+    "gtex_reference": {
+      "url": "https://gtexportal.org/api/v2/reference/gene?geneId=DKC1",
+      "data": [
+        {
+          "geneSymbol": "DKC1",
+          "geneId": null,
+          "gencodeId": "ENSG00000130826.17",
+          "entrezGeneId": 1736
+        }
+      ]
+    },
+    "reactome": {
+      "url": "https://reactome.org/ContentService/data/mapping/UniProt/O60832/pathways",
+      "data": [
+        {
+          "stId": "R-HSA-171319",
+          "displayName": "Telomere Extension By Telomerase",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-6790901",
+          "displayName": "rRNA modification in the nucleus and cytosol",
+          "speciesName": "Homo sapiens"
+        }
+      ]
+    }
+  }
+}

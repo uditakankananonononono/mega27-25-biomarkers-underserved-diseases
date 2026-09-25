@@ -1,0 +1,190 @@
+{
+  "gene": "UBE2S",
+  "module": "M6_cell_state_g2m",
+  "prereg": "projects/interstitial_cystitis/prereg/ic_p48_module_genesets.json",
+  "retrieved_at_utc": "2026-09-25T20:18:28.506199+00:00",
+  "sources": {
+    "ensembl": {
+      "url": "https://rest.ensembl.org/lookup/symbol/homo_sapiens/UBE2S?content-type=application/json",
+      "data": {
+        "id": "ENSG00000108106",
+        "display_name": "UBE2S",
+        "description": "ubiquitin conjugating enzyme E2 S [Source:HGNC Symbol;Acc:HGNC:17895]",
+        "biotype": "protein_coding",
+        "seq_region_name": "19"
+      }
+    },
+    "uniprot": {
+      "url": "https://rest.uniprot.org/uniprotkb/search?query=gene_exact%3AUBE2S%20AND%20organism_id%3A9606%20AND%20reviewed%3Atrue&size=3&format=json",
+      "data": [
+        {
+          "primaryAccession": "Q16763",
+          "uniProtkbId": "UBE2S_HUMAN",
+          "entryType": "UniProtKB reviewed (Swiss-Prot)"
+        }
+      ]
+    },
+    "europe_pmc": {
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=UBE2S%20AND%20%22interstitial%20cystitis%22&format=json&pageSize=10",
+      "data": {
+        "hit_count": 0,
+        "papers": []
+      }
+    },
+    "mygene": {
+      "url": "https://mygene.info/v3/query?q=symbol%3AUBE2S&species=human&size=3",
+      "data": {
+        "total": 1,
+        "hits": [
+          {
+            "_id": "27338",
+            "symbol": "UBE2S",
+            "name": "ubiquitin conjugating enzyme E2 S",
+            "taxid": 9606
+          }
+        ]
+      }
+    },
+    "chembl": {
+      "url": "https://www.ebi.ac.uk/chembl/api/data/target/search.json?q=UBE2S&limit=20",
+      "data": {
+        "total": 2,
+        "human_targets": [
+          {
+            "target_chembl_id": "CHEMBL6196092",
+            "pref_name": "Ubiquitin-conjugating enzyme E2 S",
+            "organism": "Homo sapiens"
+          },
+          {
+            "target_chembl_id": "CHEMBL2321623",
+            "pref_name": "Ubiquitin-like modifier-activating enzyme 7",
+            "organism": "Homo sapiens"
+          }
+        ]
+      }
+    },
+    "hgnc_rest": {
+      "url": "https://rest.genenames.org/fetch/symbol/UBE2S",
+      "data": [
+        {
+          "symbol": "UBE2S",
+          "hgnc_id": "HGNC:17895",
+          "entrez_id": "27338",
+          "ensembl_gene_id": "ENSG00000108106",
+          "status": "Approved"
+        }
+      ]
+    },
+    "gtex_reference": {
+      "url": "https://gtexportal.org/api/v2/reference/gene?geneId=UBE2S",
+      "data": [
+        {
+          "geneSymbol": "UBE2S",
+          "geneId": null,
+          "gencodeId": "ENSG00000108106.13",
+          "entrezGeneId": 27338
+        }
+      ]
+    },
+    "reactome": {
+      "url": "https://reactome.org/ContentService/data/mapping/UniProt/Q16763/pathways",
+      "data": [
+        {
+          "stId": "R-HSA-141430",
+          "displayName": "Inactivation of APC/C via direct inhibition of the APC/C complex",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-174048",
+          "displayName": "APC/C:Cdc20 mediated degradation of Cyclin B",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-174084",
+          "displayName": "Autodegradation of Cdh1 by Cdh1:APC/C",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-174154",
+          "displayName": "APC/C:Cdc20 mediated degradation of Securin",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-174178",
+          "displayName": "APC/C:Cdh1 mediated degradation of Cdc20 and other APC/C:Cdh1 targeted proteins in late mitosis/early G1",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-174184",
+          "displayName": "Cdc20:Phospho-APC/C mediated degradation of Cyclin A",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-176407",
+          "displayName": "Conversion from APC/C:Cdc20 to APC/C:Cdh1 in late anaphase",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-176408",
+          "displayName": "Regulation of APC/C activators between G1/S and early anaphase",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-176409",
+          "displayName": "APC/C:Cdc20 mediated degradation of mitotic proteins",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-176412",
+          "displayName": "Phosphorylation of the APC/C",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-179409",
+          "displayName": "APC-Cdc20 mediated degradation of Nek2A",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-2467813",
+          "displayName": "Separation of Sister Chromatids",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-2559582",
+          "displayName": "Senescence-Associated Secretory Phenotype (SASP)",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-68867",
+          "displayName": "Assembly of the pre-replicative complex",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-69017",
+          "displayName": "CDK-mediated phosphorylation and removal of Cdc6",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-8853884",
+          "displayName": "Transcriptional Regulation by VENTX",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-8866652",
+          "displayName": "Synthesis of active ubiquitin: roles of E1 and E2 enzymes",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-9687136",
+          "displayName": "Aberrant regulation of mitotic exit in cancer due to RB1 defects",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-983168",
+          "displayName": "Antigen processing: Ubiquitination & Proteasome degradation",
+          "speciesName": "Homo sapiens"
+        }
+      ]
+    }
+  }
+}

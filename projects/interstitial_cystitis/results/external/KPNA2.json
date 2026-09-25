@@ -1,0 +1,164 @@
+{
+  "gene": "KPNA2",
+  "module": "M6_cell_state_g2m",
+  "prereg": "projects/interstitial_cystitis/prereg/ic_p48_module_genesets.json",
+  "retrieved_at_utc": "2026-09-25T19:55:29.999479+00:00",
+  "sources": {
+    "ensembl": {
+      "url": "https://rest.ensembl.org/lookup/symbol/homo_sapiens/KPNA2?content-type=application/json",
+      "data": {
+        "id": "ENSG00000182481",
+        "display_name": "KPNA2",
+        "description": "karyopherin subunit alpha 2 [Source:HGNC Symbol;Acc:HGNC:6395]",
+        "biotype": "protein_coding",
+        "seq_region_name": "17"
+      }
+    },
+    "uniprot": {
+      "url": "https://rest.uniprot.org/uniprotkb/search?query=gene_exact%3AKPNA2%20AND%20organism_id%3A9606%20AND%20reviewed%3Atrue&size=3&format=json",
+      "data": [
+        {
+          "primaryAccession": "P52292",
+          "uniProtkbId": "IMA1_HUMAN",
+          "entryType": "UniProtKB reviewed (Swiss-Prot)"
+        }
+      ]
+    },
+    "europe_pmc": {
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=KPNA2%20AND%20%22interstitial%20cystitis%22&format=json&pageSize=10",
+      "data": {
+        "hit_count": 3,
+        "papers": [
+          {
+            "id": "41474729",
+            "title": "Exploring the molecular link between obstructive sleep apnea and interstitial cystitis/bladder pain syndrome: A bioinformatics and machine learning study.",
+            "doi": "10.1371/journal.pone.0339824",
+            "pubYear": "2025"
+          },
+          {
+            "id": "26250800",
+            "title": "Assess the expression of ubiquitin specific protease USP2a for bladder cancer diagnosis.",
+            "doi": "10.1186/s12894-015-0074-x",
+            "pubYear": "2015"
+          },
+          {
+            "id": "33916038",
+            "title": "Noninvasive Urine-Based Tests to Diagnose or Detect Recurrence of Bladder Cancer.",
+            "doi": "10.3390/cancers13071650",
+            "pubYear": "2021"
+          }
+        ]
+      }
+    },
+    "mygene": {
+      "url": "https://mygene.info/v3/query?q=symbol%3AKPNA2&species=human&size=3",
+      "data": {
+        "total": 1,
+        "hits": [
+          {
+            "_id": "3838",
+            "symbol": "KPNA2",
+            "name": "karyopherin subunit alpha 2",
+            "taxid": 9606
+          }
+        ]
+      }
+    },
+    "chembl": {
+      "url": "https://www.ebi.ac.uk/chembl/api/data/target/search.json?q=KPNA2&limit=20",
+      "data": {
+        "total": 3,
+        "human_targets": [
+          {
+            "target_chembl_id": "CHEMBL1741187",
+            "pref_name": "Importin subunit alpha-1",
+            "organism": "Homo sapiens"
+          },
+          {
+            "target_chembl_id": "CHEMBL6195538",
+            "pref_name": "Protein cereblon/Importin subunit alpha-1",
+            "organism": "Homo sapiens"
+          },
+          {
+            "target_chembl_id": "CHEMBL6195522",
+            "pref_name": "von Hippel-Lindau disease tumor suppressor/Importin subunit alpha-1",
+            "organism": "Homo sapiens"
+          }
+        ]
+      }
+    },
+    "hgnc_rest": {
+      "url": "https://rest.genenames.org/fetch/symbol/KPNA2",
+      "data": [
+        {
+          "symbol": "KPNA2",
+          "hgnc_id": "HGNC:6395",
+          "entrez_id": "3838",
+          "ensembl_gene_id": "ENSG00000182481",
+          "status": "Approved"
+        }
+      ]
+    },
+    "gtex_reference": {
+      "url": "https://gtexportal.org/api/v2/reference/gene?geneId=KPNA2",
+      "data": [
+        {
+          "geneSymbol": "KPNA2",
+          "geneId": null,
+          "gencodeId": "ENSG00000182481.8",
+          "entrezGeneId": 3838
+        }
+      ]
+    },
+    "reactome": {
+      "url": "https://reactome.org/ContentService/data/mapping/UniProt/P52292/pathways",
+      "data": [
+        {
+          "stId": "R-HSA-111932",
+          "displayName": "CaMK IV-mediated phosphorylation of CREB",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-1169408",
+          "displayName": "ISG15 antiviral mechanism",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-168276",
+          "displayName": "NS1 Mediated Effects on Host Pathways",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-442729",
+          "displayName": "CREB1 phosphorylation through the activation of CaMKII/CaMKK/CaMKIV cascasde",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-5693548",
+          "displayName": "Sensing of DNA Double Strand Breaks",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-9018519",
+          "displayName": "Estrogen-dependent gene expression",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-9692916",
+          "displayName": "SARS-CoV-1 activates/modulates innate immune responses",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-9705671",
+          "displayName": "SARS-CoV-2 activates/modulates innate and adaptive immune responses",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-9918432",
+          "displayName": "Maturation of DENV proteins",
+          "speciesName": "Homo sapiens"
+        }
+      ]
+    }
+  }
+}

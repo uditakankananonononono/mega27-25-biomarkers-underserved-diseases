@@ -1,0 +1,226 @@
+{
+  "gene": "BRCA2",
+  "module": "M6_cell_state_g2m",
+  "prereg": "projects/interstitial_cystitis/prereg/ic_p48_module_genesets.json",
+  "retrieved_at_utc": "2026-09-25T20:26:57.659539+00:00",
+  "sources": {
+    "ensembl": {
+      "url": "https://rest.ensembl.org/lookup/symbol/homo_sapiens/BRCA2?content-type=application/json",
+      "data": {
+        "id": "ENSG00000139618",
+        "display_name": "BRCA2",
+        "description": "BRCA2 DNA repair associated [Source:HGNC Symbol;Acc:HGNC:1101]",
+        "biotype": "protein_coding",
+        "seq_region_name": "13"
+      }
+    },
+    "uniprot": {
+      "url": "https://rest.uniprot.org/uniprotkb/search?query=gene_exact%3ABRCA2%20AND%20organism_id%3A9606%20AND%20reviewed%3Atrue&size=3&format=json",
+      "data": [
+        {
+          "primaryAccession": "P51587",
+          "uniProtkbId": "BRCA2_HUMAN",
+          "entryType": "UniProtKB reviewed (Swiss-Prot)"
+        }
+      ]
+    },
+    "europe_pmc": {
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=BRCA2%20AND%20%22interstitial%20cystitis%22&format=json&pageSize=10",
+      "data": {
+        "hit_count": 32,
+        "papers": [
+          {
+            "id": "40005682",
+            "title": "The Urogenital System Microbiota: Is It a New Gamechanger in Urogenital Cancers?",
+            "doi": "10.3390/microorganisms13020315",
+            "pubYear": "2025"
+          },
+          {
+            "id": "36013285",
+            "title": "History of Endometriosis Is Independently Associated with an Increased Risk of Ovarian Cancer.",
+            "doi": "10.3390/jpm12081337",
+            "pubYear": "2022"
+          },
+          {
+            "id": "40029246",
+            "title": "A Polygenic Risk Score for Late Bladder Toxicity Following Radiotherapy for Non-Metastatic Prostate Cancer.",
+            "doi": "10.1158/1055-9965.epi-24-1228",
+            "pubYear": "2025"
+          },
+          {
+            "id": "39678505",
+            "title": "Bladder cancer biomarkers: current approaches and future directions.",
+            "doi": "10.3389/fonc.2024.1453278",
+            "pubYear": "2024"
+          },
+          {
+            "id": "32878054",
+            "title": "The Crosstalk between Prostate Cancer and Microbiota Inflammation: Nutraceutical Products Are Useful to Balance This Interplay?",
+            "doi": "10.3390/nu12092648",
+            "pubYear": "2020"
+          },
+          {
+            "id": "27833468",
+            "title": "Best of the 2016 AUA Annual Meeting: Highlights From the 2016 American Urological Association Annual Meeting, May 6-10, 2016, San Diego, CA.",
+            "doi": "10.3909/riu0717",
+            "pubYear": "2016"
+          },
+          {
+            "id": "39194478",
+            "title": "Biomimetic Hyaluronan Binding Biomaterials to Capture the Complex Regulation of Hyaluronan in Tissue Development and Function.",
+            "doi": "10.3390/biomimetics9080499",
+            "pubYear": "2024"
+          },
+          {
+            "id": "40877572",
+            "title": "Damage-associated molecular patterns (DAMPs) in diseases: implications for therapy.",
+            "doi": "10.1186/s43556-025-00305-3",
+            "pubYear": "2025"
+          },
+          {
+            "id": "28893943",
+            "title": "Merkel cell polyomavirus and Merkel cell carcinoma.",
+            "doi": "10.1098/rstb.2016.0276",
+            "pubYear": "2017"
+          },
+          {
+            "id": "41625014",
+            "title": "Abstracts selected for poster presentation [listed in alphabetical order by presenter].",
+            "doi": "10.1177/23523735251412131",
+            "pubYear": "2026"
+          }
+        ]
+      }
+    },
+    "mygene": {
+      "url": "https://mygene.info/v3/query?q=symbol%3ABRCA2&species=human&size=3",
+      "data": {
+        "total": 1,
+        "hits": [
+          {
+            "_id": "675",
+            "symbol": "BRCA2",
+            "name": "BRCA2 DNA repair associated",
+            "taxid": 9606
+          }
+        ]
+      }
+    },
+    "chembl": {
+      "url": "https://www.ebi.ac.uk/chembl/api/data/target/search.json?q=BRCA2&limit=20",
+      "data": {
+        "total": 2,
+        "human_targets": [
+          {
+            "target_chembl_id": "CHEMBL4105965",
+            "pref_name": "Lys-63-specific deubiquitinase BRCC36",
+            "organism": "Homo sapiens"
+          },
+          {
+            "target_chembl_id": "CHEMBL6067087",
+            "pref_name": "BRCA2 and CDKN1A-interacting protein",
+            "organism": "Homo sapiens"
+          }
+        ]
+      }
+    },
+    "hgnc_rest": {
+      "url": "https://rest.genenames.org/fetch/symbol/BRCA2",
+      "data": [
+        {
+          "symbol": "BRCA2",
+          "hgnc_id": "HGNC:1101",
+          "entrez_id": "675",
+          "ensembl_gene_id": "ENSG00000139618",
+          "status": "Approved"
+        }
+      ]
+    },
+    "gtex_reference": {
+      "url": "https://gtexportal.org/api/v2/reference/gene?geneId=BRCA2",
+      "data": [
+        {
+          "geneSymbol": "BRCA2",
+          "geneId": null,
+          "gencodeId": "ENSG00000139618.14",
+          "entrezGeneId": 675
+        }
+      ]
+    },
+    "reactome": {
+      "url": "https://reactome.org/ContentService/data/mapping/UniProt/P51587/pathways",
+      "data": [
+        {
+          "stId": "R-HSA-5685939",
+          "displayName": "HDR through MMEJ (alt-NHEJ)",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-5685942",
+          "displayName": "HDR through Homologous Recombination (HRR)",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-5693554",
+          "displayName": "Resolution of D-loop Structures through Synthesis-Dependent Strand Annealing (SDSA)",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-5693568",
+          "displayName": "Resolution of D-loop Structures through Holliday Junction Intermediates",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-5693579",
+          "displayName": "Homologous DNA Pairing and Strand Exchange",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-5693616",
+          "displayName": "Presynaptic phase of homologous DNA pairing and strand exchange",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-912446",
+          "displayName": "Meiotic recombination",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-9701192",
+          "displayName": "Defective homologous recombination repair (HRR) due to BRCA1 loss of function",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-9704331",
+          "displayName": "Defective HDR through Homologous Recombination Repair (HRR) due to PALB2 loss of BRCA1 binding function",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-9704646",
+          "displayName": "Defective HDR through Homologous Recombination Repair (HRR) due to PALB2 loss of BRCA2/RAD51/RAD51C binding function",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-9709275",
+          "displayName": "Impaired BRCA2 translocation to the nucleus",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-9709570",
+          "displayName": "Impaired BRCA2 binding to RAD51",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-9709603",
+          "displayName": "Impaired BRCA2 binding to PALB2",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-9763198",
+          "displayName": "Impaired BRCA2 binding to SEM1 (DSS1)",
+          "speciesName": "Homo sapiens"
+        }
+      ]
+    }
+  }
+}

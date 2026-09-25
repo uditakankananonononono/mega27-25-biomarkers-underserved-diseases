@@ -1,0 +1,202 @@
+{
+  "gene": "BARD1",
+  "module": "M6_cell_state_g2m",
+  "prereg": "projects/interstitial_cystitis/prereg/ic_p48_module_genesets.json",
+  "retrieved_at_utc": "2026-09-25T20:25:42.409301+00:00",
+  "sources": {
+    "ensembl": {
+      "url": "https://rest.ensembl.org/lookup/symbol/homo_sapiens/BARD1?content-type=application/json",
+      "data": {
+        "id": "ENSG00000138376",
+        "display_name": "BARD1",
+        "description": "BRCA1 associated RING domain 1 [Source:HGNC Symbol;Acc:HGNC:952]",
+        "biotype": "protein_coding",
+        "seq_region_name": "2"
+      }
+    },
+    "uniprot": {
+      "url": "https://rest.uniprot.org/uniprotkb/search?query=gene_exact%3ABARD1%20AND%20organism_id%3A9606%20AND%20reviewed%3Atrue&size=3&format=json",
+      "data": [
+        {
+          "primaryAccession": "Q99728",
+          "uniProtkbId": "BARD1_HUMAN",
+          "entryType": "UniProtKB reviewed (Swiss-Prot)"
+        }
+      ]
+    },
+    "europe_pmc": {
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=BARD1%20AND%20%22interstitial%20cystitis%22&format=json&pageSize=10",
+      "data": {
+        "hit_count": 2,
+        "papers": [
+          {
+            "id": "PMC10902613",
+            "title": "Abstracts",
+            "doi": null,
+            "pubYear": "2024"
+          },
+          {
+            "id": "PMC7163937",
+            "title": "Poster Sessions",
+            "doi": null,
+            "pubYear": "2014"
+          }
+        ]
+      }
+    },
+    "mygene": {
+      "url": "https://mygene.info/v3/query?q=symbol%3ABARD1&species=human&size=3",
+      "data": {
+        "total": 1,
+        "hits": [
+          {
+            "_id": "580",
+            "symbol": "BARD1",
+            "name": "BRCA1 associated RING domain 1",
+            "taxid": 9606
+          }
+        ]
+      }
+    },
+    "chembl": {
+      "url": "https://www.ebi.ac.uk/chembl/api/data/target/search.json?q=BARD1&limit=20",
+      "data": {
+        "total": 0,
+        "human_targets": []
+      }
+    },
+    "hgnc_rest": {
+      "url": "https://rest.genenames.org/fetch/symbol/BARD1",
+      "data": [
+        {
+          "symbol": "BARD1",
+          "hgnc_id": "HGNC:952",
+          "entrez_id": "580",
+          "ensembl_gene_id": "ENSG00000138376",
+          "status": "Approved"
+        }
+      ]
+    },
+    "gtex_reference": {
+      "url": "https://gtexportal.org/api/v2/reference/gene?geneId=BARD1",
+      "data": [
+        {
+          "geneSymbol": "BARD1",
+          "geneId": null,
+          "gencodeId": "ENSG00000138376.10",
+          "entrezGeneId": 580
+        }
+      ]
+    },
+    "reactome": {
+      "url": "https://reactome.org/ContentService/data/mapping/UniProt/Q99728/pathways",
+      "data": [
+        {
+          "stId": "R-HSA-5685938",
+          "displayName": "HDR through Single Strand Annealing (SSA)",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-5685942",
+          "displayName": "HDR through Homologous Recombination (HRR)",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-5689603",
+          "displayName": "UCH proteinases",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-5689901",
+          "displayName": "Metalloprotease DUBs",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-5693554",
+          "displayName": "Resolution of D-loop Structures through Synthesis-Dependent Strand Annealing (SDSA)",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-5693565",
+          "displayName": "Recruitment and ATM-mediated phosphorylation of repair and signaling proteins at DNA double strand breaks",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-5693568",
+          "displayName": "Resolution of D-loop Structures through Holliday Junction Intermediates",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-5693571",
+          "displayName": "Nonhomologous End-Joining (NHEJ)",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-5693579",
+          "displayName": "Homologous DNA Pairing and Strand Exchange",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-5693607",
+          "displayName": "Processing of DNA double-strand break ends",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-5693616",
+          "displayName": "Presynaptic phase of homologous DNA pairing and strand exchange",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-6804756",
+          "displayName": "Regulation of TP53 Activity through Phosphorylation",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-69473",
+          "displayName": "G2/M DNA damage checkpoint",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-9663199",
+          "displayName": "Defective DNA double strand break response due to BRCA1 loss of function",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-9699150",
+          "displayName": "Defective DNA double strand break response due to BARD1 loss of function",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-9701192",
+          "displayName": "Defective homologous recombination repair (HRR) due to BRCA1 loss of function",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-9704331",
+          "displayName": "Defective HDR through Homologous Recombination Repair (HRR) due to PALB2 loss of BRCA1 binding function",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-9704646",
+          "displayName": "Defective HDR through Homologous Recombination Repair (HRR) due to PALB2 loss of BRCA2/RAD51/RAD51C binding function",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-9709570",
+          "displayName": "Impaired BRCA2 binding to RAD51",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-9709603",
+          "displayName": "Impaired BRCA2 binding to PALB2",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-9974237",
+          "displayName": "Negative Regulation of DNA Double Strand Break Response",
+          "speciesName": "Homo sapiens"
+        }
+      ]
+    }
+  }
+}

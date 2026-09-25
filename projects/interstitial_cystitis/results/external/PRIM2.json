@@ -1,0 +1,142 @@
+{
+  "gene": "PRIM2",
+  "module": "M6_cell_state_g2m",
+  "prereg": "projects/interstitial_cystitis/prereg/ic_p48_module_genesets.json",
+  "retrieved_at_utc": "2026-09-25T20:21:31.530257+00:00",
+  "sources": {
+    "ensembl": {
+      "url": "https://rest.ensembl.org/lookup/symbol/homo_sapiens/PRIM2?content-type=application/json",
+      "data": {
+        "id": "ENSG00000146143",
+        "display_name": "PRIM2",
+        "description": "DNA primase subunit 2 [Source:HGNC Symbol;Acc:HGNC:9370]",
+        "biotype": "protein_coding",
+        "seq_region_name": "6"
+      }
+    },
+    "uniprot": {
+      "url": "https://rest.uniprot.org/uniprotkb/search?query=gene_exact%3APRIM2%20AND%20organism_id%3A9606%20AND%20reviewed%3Atrue&size=3&format=json",
+      "data": [
+        {
+          "primaryAccession": "P49643",
+          "uniProtkbId": "PRI2_HUMAN",
+          "entryType": "UniProtKB reviewed (Swiss-Prot)"
+        }
+      ]
+    },
+    "europe_pmc": {
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=PRIM2%20AND%20%22interstitial%20cystitis%22&format=json&pageSize=10",
+      "data": {
+        "hit_count": 1,
+        "papers": [
+          {
+            "id": "36439482",
+            "title": "Identification of a naturally-occurring canine model for early detection and intervention research in high grade urothelial carcinoma.",
+            "doi": "10.3389/fonc.2022.1011969",
+            "pubYear": "2022"
+          }
+        ]
+      }
+    },
+    "mygene": {
+      "url": "https://mygene.info/v3/query?q=symbol%3APRIM2&species=human&size=3",
+      "data": {
+        "total": 1,
+        "hits": [
+          {
+            "_id": "5558",
+            "symbol": "PRIM2",
+            "name": "DNA primase subunit 2",
+            "taxid": 9606
+          }
+        ]
+      }
+    },
+    "chembl": {
+      "url": "https://www.ebi.ac.uk/chembl/api/data/target/search.json?q=PRIM2&limit=20",
+      "data": {
+        "total": 1,
+        "human_targets": [
+          {
+            "target_chembl_id": "CHEMBL2363042",
+            "pref_name": "DNA polymerase (alpha/delta/epsilon)",
+            "organism": "Homo sapiens"
+          }
+        ]
+      }
+    },
+    "hgnc_rest": {
+      "url": "https://rest.genenames.org/fetch/symbol/PRIM2",
+      "data": [
+        {
+          "symbol": "PRIM2",
+          "hgnc_id": "HGNC:9370",
+          "entrez_id": "5558",
+          "ensembl_gene_id": "ENSG00000146143",
+          "status": "Approved"
+        }
+      ]
+    },
+    "gtex_reference": {
+      "url": "https://gtexportal.org/api/v2/reference/gene?geneId=PRIM2",
+      "data": [
+        {
+          "geneSymbol": "PRIM2",
+          "geneId": null,
+          "gencodeId": "ENSG00000146143.17",
+          "entrezGeneId": 5558
+        }
+      ]
+    },
+    "reactome": {
+      "url": "https://reactome.org/ContentService/data/mapping/UniProt/P49643/pathways",
+      "data": [
+        {
+          "stId": "R-HSA-113501",
+          "displayName": "Inhibition of replication initiation of damaged DNA by RB1/E2F1",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-174411",
+          "displayName": "Polymerase switching on the C-strand of the telomere",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-174430",
+          "displayName": "Telomere C-strand synthesis initiation",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-68952",
+          "displayName": "DNA replication initiation",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-68962",
+          "displayName": "Activation of the pre-replicative complex",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-69091",
+          "displayName": "Polymerase switching",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-69166",
+          "displayName": "Removal of the Flap Intermediate",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-69183",
+          "displayName": "Processive synthesis on the lagging strand",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-9710421",
+          "displayName": "Defective pyroptosis",
+          "speciesName": "Homo sapiens"
+        }
+      ]
+    }
+  }
+}

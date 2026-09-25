@@ -1,0 +1,92 @@
+{
+  "gene": "STIL",
+  "module": "M6_cell_state_g2m",
+  "prereg": "projects/interstitial_cystitis/prereg/ic_p48_module_genesets.json",
+  "retrieved_at_utc": "2026-09-25T20:24:45.284539+00:00",
+  "sources": {
+    "ensembl": {
+      "url": "https://rest.ensembl.org/lookup/symbol/homo_sapiens/STIL?content-type=application/json",
+      "data": {
+        "id": "ENSG00000123473",
+        "display_name": "STIL",
+        "description": "STIL centriolar assembly protein [Source:HGNC Symbol;Acc:HGNC:10879]",
+        "biotype": "protein_coding",
+        "seq_region_name": "1"
+      }
+    },
+    "uniprot": {
+      "url": "https://rest.uniprot.org/uniprotkb/search?query=gene_exact%3ASTIL%20AND%20organism_id%3A9606%20AND%20reviewed%3Atrue&size=3&format=json",
+      "data": [
+        {
+          "primaryAccession": "Q15468",
+          "uniProtkbId": "STIL_HUMAN",
+          "entryType": "UniProtKB reviewed (Swiss-Prot)"
+        }
+      ]
+    },
+    "europe_pmc": {
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=STIL%20AND%20%22interstitial%20cystitis%22&format=json&pageSize=10",
+      "data": {
+        "hit_count": 1,
+        "papers": [
+          {
+            "id": "11153410",
+            "title": "Interstitial cystitis. Etiology, diagnosis, and treatment.",
+            "doi": null,
+            "pubYear": "2000"
+          }
+        ]
+      }
+    },
+    "mygene": {
+      "url": "https://mygene.info/v3/query?q=symbol%3ASTIL&species=human&size=3",
+      "data": {
+        "total": 1,
+        "hits": [
+          {
+            "_id": "6491",
+            "symbol": "STIL",
+            "name": "STIL centriolar assembly protein",
+            "taxid": 9606
+          }
+        ]
+      }
+    },
+    "chembl": {
+      "url": "https://www.ebi.ac.uk/chembl/api/data/target/search.json?q=STIL&limit=20",
+      "data": {
+        "total": 0,
+        "human_targets": []
+      }
+    },
+    "hgnc_rest": {
+      "url": "https://rest.genenames.org/fetch/symbol/STIL",
+      "data": [
+        {
+          "symbol": "STIL",
+          "hgnc_id": "HGNC:10879",
+          "entrez_id": "6491",
+          "ensembl_gene_id": "ENSG00000123473",
+          "status": "Approved"
+        }
+      ]
+    },
+    "gtex_reference": {
+      "url": "https://gtexportal.org/api/v2/reference/gene?geneId=STIL",
+      "data": [
+        {
+          "geneSymbol": "STIL",
+          "geneId": null,
+          "gencodeId": "ENSG00000123473.15",
+          "entrezGeneId": 6491
+        }
+      ]
+    },
+    "reactome": {
+      "url": "https://reactome.org/ContentService/data/mapping/UniProt/Q15468/pathways",
+      "data": {
+        "error": "HTTP Error 404: Not Found"
+      }
+    }
+  }
+}

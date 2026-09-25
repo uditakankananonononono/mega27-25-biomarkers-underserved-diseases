@@ -1,0 +1,236 @@
+{
+  "gene": "EZH2",
+  "module": "M6_cell_state_g2m",
+  "prereg": "projects/interstitial_cystitis/prereg/ic_p48_module_genesets.json",
+  "retrieved_at_utc": "2026-09-25T20:21:00.027337+00:00",
+  "sources": {
+    "ensembl": {
+      "url": "https://rest.ensembl.org/lookup/symbol/homo_sapiens/EZH2?content-type=application/json",
+      "data": {
+        "id": "ENSG00000106462",
+        "display_name": "EZH2",
+        "description": "enhancer of zeste 2 polycomb repressive complex 2 subunit [Source:HGNC Symbol;Acc:HGNC:3527]",
+        "biotype": "protein_coding",
+        "seq_region_name": "7"
+      }
+    },
+    "uniprot": {
+      "url": "https://rest.uniprot.org/uniprotkb/search?query=gene_exact%3AEZH2%20AND%20organism_id%3A9606%20AND%20reviewed%3Atrue&size=3&format=json",
+      "data": [
+        {
+          "primaryAccession": "Q15910",
+          "uniProtkbId": "EZH2_HUMAN",
+          "entryType": "UniProtKB reviewed (Swiss-Prot)"
+        }
+      ]
+    },
+    "europe_pmc": {
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=EZH2%20AND%20%22interstitial%20cystitis%22&format=json&pageSize=10",
+      "data": {
+        "hit_count": 39,
+        "papers": [
+          {
+            "id": "42558631",
+            "title": "Mechanistic insights into the lncRNA-Notch signaling axis in tumors.",
+            "doi": "10.3389/fcell.2026.1903203",
+            "pubYear": "2026"
+          },
+          {
+            "id": "38179216",
+            "title": "Stem cells and pain.",
+            "doi": "10.4252/wjsc.v15.i12.1035",
+            "pubYear": "2023"
+          },
+          {
+            "id": "33292225",
+            "title": "EZH2 promotes the expression of LPA1 by mediating microRNA-139 promoter methylation to accelerate the development of ovarian cancer.",
+            "doi": "10.1186/s12935-020-01622-z",
+            "pubYear": "2020"
+          },
+          {
+            "id": "39544361",
+            "title": "Chemical approaches targeting the hurdles of hepatocyte transplantation: mechanisms, applications, and advances.",
+            "doi": "10.3389/fcell.2024.1480226",
+            "pubYear": "2024"
+          },
+          {
+            "id": "41725014",
+            "title": "Activation of Nrf2 with natural flavonoids and mesenchymal stromal/stem cells: mechanisms and therapeutic potential for inflammatory diseases.",
+            "doi": "10.1186/s13287-026-04925-6",
+            "pubYear": "2026"
+          },
+          {
+            "id": "34522182",
+            "title": "Roles of the miR-139-5p/CCT5 axis in hepatocellular carcinoma: a bioinformatic analysis.",
+            "doi": "10.7150/ijms.57504",
+            "pubYear": "2021"
+          },
+          {
+            "id": "34094648",
+            "title": "Non-Muscular Invasive Bladder Cancer: Re-envisioning Therapeutic Journey from Traditional to Regenerative Interventions.",
+            "doi": "10.14336/ad.2020.1109",
+            "pubYear": "2021"
+          },
+          {
+            "id": "40787071",
+            "title": "Molecular Mechanisms of Chronic Pain and Therapeutic Interventions.",
+            "doi": "10.1002/mco2.70325",
+            "pubYear": "2025"
+          },
+          {
+            "id": "35456223",
+            "title": "Text-Mining Approach to Identify Hub Genes of Cancer Metastasis and Potential Drug Repurposing to Target Them.",
+            "doi": "10.3390/jcm11082130",
+            "pubYear": "2022"
+          },
+          {
+            "id": "28122714",
+            "title": "Sleeping beauty: awakening urothelium from its slumber.",
+            "doi": "10.1152/ajprenal.00337.2016",
+            "pubYear": "2017"
+          }
+        ]
+      }
+    },
+    "mygene": {
+      "url": "https://mygene.info/v3/query?q=symbol%3AEZH2&species=human&size=3",
+      "data": {
+        "total": 1,
+        "hits": [
+          {
+            "_id": "2146",
+            "symbol": "EZH2",
+            "name": "enhancer of zeste 2 polycomb repressive complex 2 subunit",
+            "taxid": 9606
+          }
+        ]
+      }
+    },
+    "chembl": {
+      "url": "https://www.ebi.ac.uk/chembl/api/data/target/search.json?q=EZH2&limit=20",
+      "data": {
+        "total": 11,
+        "human_targets": [
+          {
+            "target_chembl_id": "CHEMBL2189110",
+            "pref_name": "Histone-lysine N-methyltransferase EZH2",
+            "organism": "Homo sapiens"
+          },
+          {
+            "target_chembl_id": "CHEMBL5169086",
+            "pref_name": "Protein cereblon/Histone-lysine N-methyltransferase EZH2",
+            "organism": "Homo sapiens"
+          },
+          {
+            "target_chembl_id": "CHEMBL5169073",
+            "pref_name": "von Hippel-Lindau disease tumor suppressor/Histone-lysine N-methyltransferase EZH2",
+            "organism": "Homo sapiens"
+          },
+          {
+            "target_chembl_id": "CHEMBL3137286",
+            "pref_name": "EZH2/SUZ12/EED complex",
+            "organism": "Homo sapiens"
+          },
+          {
+            "target_chembl_id": "CHEMBL6195579",
+            "pref_name": "Microtubule-associated protein 1 light chain 3 beta/Histone-lysine N-methyltransferase EZH2",
+            "organism": "Homo sapiens"
+          },
+          {
+            "target_chembl_id": "CHEMBL3301388",
+            "pref_name": "EZH2/SUZ12/EED/RBBP7/RBBP4",
+            "organism": "Homo sapiens"
+          },
+          {
+            "target_chembl_id": "CHEMBL6066587",
+            "pref_name": "Histone-binding protein RBBP4/Histone-lysine N-methyltransferase EZH2/Polycomb protein EED/Polycomb protein SUZ12",
+            "organism": "Homo sapiens"
+          },
+          {
+            "target_chembl_id": "CHEMBL6066550",
+            "pref_name": "Histone-binding protein RBBP4/Histone-lysine N-methyltransferase EZH2/Polycomb protein EED/Polycomb protein SUZ12/Zinc finger protein AEBP2",
+            "organism": "Homo sapiens"
+          }
+        ]
+      }
+    },
+    "hgnc_rest": {
+      "url": "https://rest.genenames.org/fetch/symbol/EZH2",
+      "data": [
+        {
+          "symbol": "EZH2",
+          "hgnc_id": "HGNC:3527",
+          "entrez_id": "2146",
+          "ensembl_gene_id": "ENSG00000106462",
+          "status": "Approved"
+        }
+      ]
+    },
+    "gtex_reference": {
+      "url": "https://gtexportal.org/api/v2/reference/gene?geneId=EZH2",
+      "data": [
+        {
+          "geneSymbol": "EZH2",
+          "geneId": null,
+          "gencodeId": "ENSG00000106462.10",
+          "entrezGeneId": 2146
+        }
+      ]
+    },
+    "reactome": {
+      "url": "https://reactome.org/ContentService/data/mapping/UniProt/Q15910/pathways",
+      "data": [
+        {
+          "stId": "R-HSA-212300",
+          "displayName": "PRC2 methylates histones and DNA",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-2559580",
+          "displayName": "Oxidative Stress Induced Senescence",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-3214841",
+          "displayName": "PKMTs methylate histone lysines",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-5617472",
+          "displayName": "Activation of anterior HOX genes in hindbrain development during early embryogenesis",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-8943724",
+          "displayName": "Regulation of PTEN gene transcription",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-8953750",
+          "displayName": "Transcriptional Regulation by E2F6",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-9609690",
+          "displayName": "HCMV Early Events",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-9710421",
+          "displayName": "Defective pyroptosis",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-9764725",
+          "displayName": "Negative Regulation of CDH1 Gene Transcription",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-9909649",
+          "displayName": "Regulation of PD-L1(CD274) transcription",
+          "speciesName": "Homo sapiens"
+        }
+      ]
+    }
+  }
+}

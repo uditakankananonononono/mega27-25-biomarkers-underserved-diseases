@@ -1,0 +1,104 @@
+{
+  "gene": "NOLC1",
+  "module": "M6_cell_state_g2m",
+  "prereg": "projects/interstitial_cystitis/prereg/ic_p48_module_genesets.json",
+  "retrieved_at_utc": "2026-09-25T20:22:02.749870+00:00",
+  "sources": {
+    "ensembl": {
+      "url": "https://rest.ensembl.org/lookup/symbol/homo_sapiens/NOLC1?content-type=application/json",
+      "data": {
+        "id": "ENSG00000166197",
+        "display_name": "NOLC1",
+        "description": "nucleolar and coiled-body phosphoprotein 1 [Source:HGNC Symbol;Acc:HGNC:15608]",
+        "biotype": "protein_coding",
+        "seq_region_name": "10"
+      }
+    },
+    "uniprot": {
+      "url": "https://rest.uniprot.org/uniprotkb/search?query=gene_exact%3ANOLC1%20AND%20organism_id%3A9606%20AND%20reviewed%3Atrue&size=3&format=json",
+      "data": [
+        {
+          "primaryAccession": "Q14978",
+          "uniProtkbId": "NOLC1_HUMAN",
+          "entryType": "UniProtKB reviewed (Swiss-Prot)"
+        }
+      ]
+    },
+    "europe_pmc": {
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=NOLC1%20AND%20%22interstitial%20cystitis%22&format=json&pageSize=10",
+      "data": {
+        "hit_count": 2,
+        "papers": [
+          {
+            "id": "29540744",
+            "title": "Alpha-oxoglutarate inhibits the proliferation of immortalized normal bladder epithelial cells via an epigenetic switch involving ARID1A.",
+            "doi": "10.1038/s41598-018-22771-2",
+            "pubYear": "2018"
+          },
+          {
+            "id": "PMC4575917",
+            "title": "Origins of cancer symposium 2015: posttranslational modifications and cancer",
+            "doi": null,
+            "pubYear": "2015"
+          }
+        ]
+      }
+    },
+    "mygene": {
+      "url": "https://mygene.info/v3/query?q=symbol%3ANOLC1&species=human&size=3",
+      "data": {
+        "total": 1,
+        "hits": [
+          {
+            "_id": "9221",
+            "symbol": "NOLC1",
+            "name": "nucleolar and coiled-body phosphoprotein 1",
+            "taxid": 9606
+          }
+        ]
+      }
+    },
+    "chembl": {
+      "url": "https://www.ebi.ac.uk/chembl/api/data/target/search.json?q=NOLC1&limit=20",
+      "data": {
+        "total": 1,
+        "human_targets": [
+          {
+            "target_chembl_id": "CHEMBL5724612",
+            "pref_name": "Nucleolar and coiled-body phosphoprotein 1",
+            "organism": "Homo sapiens"
+          }
+        ]
+      }
+    },
+    "hgnc_rest": {
+      "url": "https://rest.genenames.org/fetch/symbol/NOLC1",
+      "data": [
+        {
+          "symbol": "NOLC1",
+          "hgnc_id": "HGNC:15608",
+          "entrez_id": "9221",
+          "ensembl_gene_id": "ENSG00000166197",
+          "status": "Approved"
+        }
+      ]
+    },
+    "gtex_reference": {
+      "url": "https://gtexportal.org/api/v2/reference/gene?geneId=NOLC1",
+      "data": [
+        {
+          "geneSymbol": "NOLC1",
+          "geneId": null,
+          "gencodeId": "ENSG00000166197.16",
+          "entrezGeneId": 9221
+        }
+      ]
+    },
+    "reactome": {
+      "url": "https://reactome.org/ContentService/data/mapping/UniProt/Q14978/pathways",
+      "data": {
+        "error": "HTTP Error 404: Not Found"
+      }
+    }
+  }
+}

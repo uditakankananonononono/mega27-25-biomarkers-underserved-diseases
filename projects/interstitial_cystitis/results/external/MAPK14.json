@@ -1,0 +1,247 @@
+{
+  "gene": "MAPK14",
+  "module": "M6_cell_state_g2m",
+  "prereg": "projects/interstitial_cystitis/prereg/ic_p48_module_genesets.json",
+  "retrieved_at_utc": "2026-09-25T20:28:19.600224+00:00",
+  "sources": {
+    "ensembl": {
+      "url": "https://rest.ensembl.org/lookup/symbol/homo_sapiens/MAPK14?content-type=application/json",
+      "data": {
+        "id": "ENSG00000112062",
+        "display_name": "MAPK14",
+        "description": "mitogen-activated protein kinase 14 [Source:HGNC Symbol;Acc:HGNC:6876]",
+        "biotype": "protein_coding",
+        "seq_region_name": "6"
+      }
+    },
+    "uniprot": {
+      "url": "https://rest.uniprot.org/uniprotkb/search?query=gene_exact%3AMAPK14%20AND%20organism_id%3A9606%20AND%20reviewed%3Atrue&size=3&format=json",
+      "data": [
+        {
+          "primaryAccession": "Q16539",
+          "uniProtkbId": "MK14_HUMAN",
+          "entryType": "UniProtKB reviewed (Swiss-Prot)"
+        }
+      ]
+    },
+    "europe_pmc": {
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=MAPK14%20AND%20%22interstitial%20cystitis%22&format=json&pageSize=10",
+      "data": {
+        "hit_count": 6,
+        "papers": [
+          {
+            "id": "36944905",
+            "title": "A network map of cytoskeleton-associated protein 4 (CKAP4) mediated signaling pathway in cancer.",
+            "doi": "10.1007/s12079-023-00739-w",
+            "pubYear": "2023"
+          },
+          {
+            "id": "42650215",
+            "title": "Functional Foods and Micro- and Nanoplastics: Advances in Precision Nutritional Medicine for Oral-Gut-Brain Axis Health.",
+            "doi": "10.3390/antiox15080951",
+            "pubYear": "2026"
+          },
+          {
+            "id": "42121909",
+            "title": "Mosaic: Single-Cell Atlas of Stress.",
+            "doi": "10.3390/cells15090807",
+            "pubYear": "2026"
+          },
+          {
+            "id": "40919133",
+            "title": "Ferroptosis in Cancer and Inflammatory Diseases: Mechanisms and Therapeutic Implications.",
+            "doi": "10.1002/mco2.70349",
+            "pubYear": "2025"
+          },
+          {
+            "id": "PMC7104455",
+            "title": "Scientific Abstracts",
+            "doi": null,
+            "pubYear": "2013"
+          },
+          {
+            "id": "25769533",
+            "title": "Abstracts of the 62nd Annual Scientific Meeting, March 26-28, 2015, San Francisco, California.",
+            "doi": "10.1177/1933719115579631",
+            "pubYear": "2015"
+          }
+        ]
+      }
+    },
+    "mygene": {
+      "url": "https://mygene.info/v3/query?q=symbol%3AMAPK14&species=human&size=3",
+      "data": {
+        "total": 1,
+        "hits": [
+          {
+            "_id": "1432",
+            "symbol": "MAPK14",
+            "name": "mitogen-activated protein kinase 14",
+            "taxid": 9606
+          }
+        ]
+      }
+    },
+    "chembl": {
+      "url": "https://www.ebi.ac.uk/chembl/api/data/target/search.json?q=MAPK14&limit=20",
+      "data": {
+        "total": 10,
+        "human_targets": [
+          {
+            "target_chembl_id": "CHEMBL260",
+            "pref_name": "Mitogen-activated protein kinase 14",
+            "organism": "Homo sapiens"
+          },
+          {
+            "target_chembl_id": "CHEMBL6177902",
+            "pref_name": "Protein cereblon/Mitogen-activated protein kinase 14",
+            "organism": "Homo sapiens"
+          },
+          {
+            "target_chembl_id": "CHEMBL5465522",
+            "pref_name": "von Hippel-Lindau disease tumor suppressor/Mitogen-activated protein kinase 14",
+            "organism": "Homo sapiens"
+          },
+          {
+            "target_chembl_id": "CHEMBL4106180",
+            "pref_name": "p38 MAP kinase alpha/beta",
+            "organism": "Homo sapiens"
+          },
+          {
+            "target_chembl_id": "CHEMBL6066552",
+            "pref_name": "Mitogen-activated protein kinase 14/Mitogen-activated protein kinase 1",
+            "organism": "Homo sapiens"
+          },
+          {
+            "target_chembl_id": "CHEMBL6066553",
+            "pref_name": "Mitogen-activated protein kinase 14/MAP kinase-activated protein kinase 5",
+            "organism": "Homo sapiens"
+          },
+          {
+            "target_chembl_id": "CHEMBL2094115",
+            "pref_name": "MAP kinase p38",
+            "organism": "Homo sapiens"
+          }
+        ]
+      }
+    },
+    "hgnc_rest": {
+      "url": "https://rest.genenames.org/fetch/symbol/MAPK14",
+      "data": [
+        {
+          "symbol": "MAPK14",
+          "hgnc_id": "HGNC:6876",
+          "entrez_id": "1432",
+          "ensembl_gene_id": "ENSG00000112062",
+          "status": "Approved"
+        }
+      ]
+    },
+    "gtex_reference": {
+      "url": "https://gtexportal.org/api/v2/reference/gene?geneId=MAPK14",
+      "data": [
+        {
+          "geneSymbol": "MAPK14",
+          "geneId": null,
+          "gencodeId": "ENSG00000112062.10",
+          "entrezGeneId": 1432
+        }
+      ]
+    },
+    "reactome": {
+      "url": "https://reactome.org/ContentService/data/mapping/UniProt/Q16539/pathways",
+      "data": [
+        {
+          "stId": "R-HSA-168638",
+          "displayName": "NOD1/2 Signaling Pathway",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-171007",
+          "displayName": "p38MAPK events",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-198753",
+          "displayName": "ERK/MAPK targets",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-2151209",
+          "displayName": "Activation of PPARGC1A (PGC-1alpha) by phosphorylation",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-2559580",
+          "displayName": "Oxidative Stress Induced Senescence",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-418592",
+          "displayName": "ADP signalling through P2Y purinoceptor 1",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-432142",
+          "displayName": "Platelet sensitization by LDL",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-4420097",
+          "displayName": "VEGFA-VEGFR2 Pathway",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-450302",
+          "displayName": "activated TAK1 mediates p38 MAPK activation",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-450341",
+          "displayName": "Activation of the AP-1 family of transcription factors",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-450604",
+          "displayName": "KSRP (KHSRP) binds and destabilizes mRNA",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-525793",
+          "displayName": "Myogenesis",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-5668599",
+          "displayName": "RHO GTPases Activate NADPH Oxidases",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-6798695",
+          "displayName": "Neutrophil degranulation",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-6804756",
+          "displayName": "Regulation of TP53 Activity through Phosphorylation",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-69601",
+          "displayName": "Ubiquitin-Mediated Degradation of Phosphorylated Cdc25A",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-9662834",
+          "displayName": "CD163 mediating an anti-inflammatory response",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-9824585",
+          "displayName": "Regulation of MITF-M-dependent genes involved in pigmentation",
+          "speciesName": "Homo sapiens"
+        }
+      ]
+    }
+  }
+}

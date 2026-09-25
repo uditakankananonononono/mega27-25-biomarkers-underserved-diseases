@@ -1,0 +1,152 @@
+{
+  "gene": "BUB3",
+  "module": "M6_cell_state_g2m",
+  "prereg": "projects/interstitial_cystitis/prereg/ic_p48_module_genesets.json",
+  "retrieved_at_utc": "2026-09-25T20:22:20.552906+00:00",
+  "sources": {
+    "ensembl": {
+      "url": "https://rest.ensembl.org/lookup/symbol/homo_sapiens/BUB3?content-type=application/json",
+      "data": {
+        "id": "ENSG00000154473",
+        "display_name": "BUB3",
+        "description": "BUB3 mitotic checkpoint protein [Source:HGNC Symbol;Acc:HGNC:1151]",
+        "biotype": "protein_coding",
+        "seq_region_name": "10"
+      }
+    },
+    "uniprot": {
+      "url": "https://rest.uniprot.org/uniprotkb/search?query=gene_exact%3ABUB3%20AND%20organism_id%3A9606%20AND%20reviewed%3Atrue&size=3&format=json",
+      "data": [
+        {
+          "primaryAccession": "O43684",
+          "uniProtkbId": "BUB3_HUMAN",
+          "entryType": "UniProtKB reviewed (Swiss-Prot)"
+        }
+      ]
+    },
+    "europe_pmc": {
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=BUB3%20AND%20%22interstitial%20cystitis%22&format=json&pageSize=10",
+      "data": {
+        "hit_count": 1,
+        "papers": [
+          {
+            "id": "PMC7104427",
+            "title": "Abstracts",
+            "doi": null,
+            "pubYear": "2018"
+          }
+        ]
+      }
+    },
+    "mygene": {
+      "url": "https://mygene.info/v3/query?q=symbol%3ABUB3&species=human&size=3",
+      "data": {
+        "total": 1,
+        "hits": [
+          {
+            "_id": "9184",
+            "symbol": "BUB3",
+            "name": "BUB3 mitotic checkpoint protein",
+            "taxid": 9606
+          }
+        ]
+      }
+    },
+    "chembl": {
+      "url": "https://www.ebi.ac.uk/chembl/api/data/target/search.json?q=BUB3&limit=20",
+      "data": {
+        "total": 2,
+        "human_targets": [
+          {
+            "target_chembl_id": "CHEMBL5724769",
+            "pref_name": "Mitotic checkpoint protein BUB3",
+            "organism": "Homo sapiens"
+          },
+          {
+            "target_chembl_id": "CHEMBL5724610",
+            "pref_name": "BUB3-interacting and GLEBS motif-containing protein ZNF207",
+            "organism": "Homo sapiens"
+          }
+        ]
+      }
+    },
+    "hgnc_rest": {
+      "url": "https://rest.genenames.org/fetch/symbol/BUB3",
+      "data": [
+        {
+          "symbol": "BUB3",
+          "hgnc_id": "HGNC:1151",
+          "entrez_id": "9184",
+          "ensembl_gene_id": "ENSG00000154473",
+          "status": "Approved"
+        }
+      ]
+    },
+    "gtex_reference": {
+      "url": "https://gtexportal.org/api/v2/reference/gene?geneId=BUB3",
+      "data": [
+        {
+          "geneSymbol": "BUB3",
+          "geneId": null,
+          "gencodeId": "ENSG00000154473.17",
+          "entrezGeneId": 9184
+        }
+      ]
+    },
+    "reactome": {
+      "url": "https://reactome.org/ContentService/data/mapping/UniProt/O43684/pathways",
+      "data": [
+        {
+          "stId": "R-HSA-141430",
+          "displayName": "Inactivation of APC/C via direct inhibition of the APC/C complex",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-141444",
+          "displayName": "Amplification  of signal from unattached  kinetochores via a MAD2  inhibitory signal",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-174184",
+          "displayName": "Cdc20:Phospho-APC/C mediated degradation of Cyclin A",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-176409",
+          "displayName": "APC/C:Cdc20 mediated degradation of mitotic proteins",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-179409",
+          "displayName": "APC-Cdc20 mediated degradation of Nek2A",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-2467813",
+          "displayName": "Separation of Sister Chromatids",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-2500257",
+          "displayName": "Resolution of Sister Chromatid Cohesion",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-5663220",
+          "displayName": "RHO GTPases Activate Formins",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-68877",
+          "displayName": "Mitotic Prometaphase",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-9648025",
+          "displayName": "EML4 and NUDC in mitotic spindle formation",
+          "speciesName": "Homo sapiens"
+        }
+      ]
+    }
+  }
+}

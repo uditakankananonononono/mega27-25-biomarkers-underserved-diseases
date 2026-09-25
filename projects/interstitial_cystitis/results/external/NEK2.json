@@ -1,0 +1,175 @@
+{
+  "gene": "NEK2",
+  "module": "M6_cell_state_g2m",
+  "prereg": "projects/interstitial_cystitis/prereg/ic_p48_module_genesets.json",
+  "retrieved_at_utc": "2026-09-25T19:54:49.882775+00:00",
+  "sources": {
+    "ensembl": {
+      "url": "https://rest.ensembl.org/lookup/symbol/homo_sapiens/NEK2?content-type=application/json",
+      "data": {
+        "id": "ENSG00000117650",
+        "display_name": "NEK2",
+        "description": "NIMA related kinase 2 [Source:HGNC Symbol;Acc:HGNC:7745]",
+        "biotype": "protein_coding",
+        "seq_region_name": "1"
+      }
+    },
+    "uniprot": {
+      "url": "https://rest.uniprot.org/uniprotkb/search?query=gene_exact%3ANEK2%20AND%20organism_id%3A9606%20AND%20reviewed%3Atrue&size=3&format=json",
+      "data": [
+        {
+          "primaryAccession": "P51955",
+          "uniProtkbId": "NEK2_HUMAN",
+          "entryType": "UniProtKB reviewed (Swiss-Prot)"
+        }
+      ]
+    },
+    "europe_pmc": {
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=NEK2%20AND%20%22interstitial%20cystitis%22&format=json&pageSize=10",
+      "data": {
+        "hit_count": 4,
+        "papers": [
+          {
+            "id": "41713163",
+            "title": "Interstitial cystitis: a phenotype and rare variant exome sequencing study.",
+            "doi": "10.1016/j.ebiom.2026.106150",
+            "pubYear": "2026"
+          },
+          {
+            "id": "42763701",
+            "title": "Dimethyl Sulfoxide Modulates T Cell-Mediated Immunity to Attenuate Influenza A Virus Infection.",
+            "doi": "10.2147/jir.s626876",
+            "pubYear": "2026"
+          },
+          {
+            "id": "41303269",
+            "title": "Mitochondrial Macular Dystrophy-A Case Report and Mini Review of Retinal Dystrophies.",
+            "doi": "10.3390/jcm14228236",
+            "pubYear": "2025"
+          },
+          {
+            "id": "PMC10902613",
+            "title": "Abstracts",
+            "doi": null,
+            "pubYear": "2024"
+          }
+        ]
+      }
+    },
+    "mygene": {
+      "url": "https://mygene.info/v3/query?q=symbol%3ANEK2&species=human&size=3",
+      "data": {
+        "total": 1,
+        "hits": [
+          {
+            "_id": "4751",
+            "symbol": "NEK2",
+            "name": "NIMA related kinase 2",
+            "taxid": 9606
+          }
+        ]
+      }
+    },
+    "chembl": {
+      "url": "https://www.ebi.ac.uk/chembl/api/data/target/search.json?q=NEK2&limit=20",
+      "data": {
+        "total": 3,
+        "human_targets": [
+          {
+            "target_chembl_id": "CHEMBL3835",
+            "pref_name": "Serine/threonine-protein kinase Nek2",
+            "organism": "Homo sapiens"
+          },
+          {
+            "target_chembl_id": "CHEMBL4802034",
+            "pref_name": "HEC1/NEK2",
+            "organism": "Homo sapiens"
+          },
+          {
+            "target_chembl_id": "CHEMBL4524130",
+            "pref_name": "NEK kinase",
+            "organism": "Homo sapiens"
+          }
+        ]
+      }
+    },
+    "hgnc_rest": {
+      "url": "https://rest.genenames.org/fetch/symbol/NEK2",
+      "data": [
+        {
+          "symbol": "NEK2",
+          "hgnc_id": "HGNC:7745",
+          "entrez_id": "4751",
+          "ensembl_gene_id": "ENSG00000117650",
+          "status": "Approved"
+        }
+      ]
+    },
+    "gtex_reference": {
+      "url": "https://gtexportal.org/api/v2/reference/gene?geneId=NEK2",
+      "data": [
+        {
+          "geneSymbol": "NEK2",
+          "geneId": null,
+          "gencodeId": "ENSG00000117650.12",
+          "entrezGeneId": 4751
+        }
+      ]
+    },
+    "reactome": {
+      "url": "https://reactome.org/ContentService/data/mapping/UniProt/P51955/pathways",
+      "data": [
+        {
+          "stId": "R-HSA-179409",
+          "displayName": "APC-Cdc20 mediated degradation of Nek2A",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-2565942",
+          "displayName": "Regulation of PLK1 Activity at G2/M Transition",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-380259",
+          "displayName": "Loss of Nlp from mitotic centrosomes",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-380270",
+          "displayName": "Recruitment of mitotic centrosome proteins and complexes",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-380284",
+          "displayName": "Loss of proteins required for interphase microtubule organization from the centrosome",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-380320",
+          "displayName": "Recruitment of NuMA to mitotic centrosomes",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-5620912",
+          "displayName": "Anchoring of the basal body to the plasma membrane",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-8854518",
+          "displayName": "AURKA Activation by TPX2",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-9918481",
+          "displayName": "Dengue Virus-Host Interactions",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-9929356",
+          "displayName": "GSK3B-mediated proteasomal degradation of PD-L1(CD274)",
+          "speciesName": "Homo sapiens"
+        }
+      ]
+    }
+  }
+}

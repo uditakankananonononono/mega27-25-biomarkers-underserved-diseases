@@ -1,0 +1,117 @@
+{
+  "gene": "CDKN2C",
+  "module": "M6_cell_state_g2m",
+  "prereg": "projects/interstitial_cystitis/prereg/ic_p48_module_genesets.json",
+  "retrieved_at_utc": "2026-09-25T20:19:25.323637+00:00",
+  "sources": {
+    "ensembl": {
+      "url": "https://rest.ensembl.org/lookup/symbol/homo_sapiens/CDKN2C?content-type=application/json",
+      "data": {
+        "id": "ENSG00000123080",
+        "display_name": "CDKN2C",
+        "description": "cyclin dependent kinase inhibitor 2C [Source:HGNC Symbol;Acc:HGNC:1789]",
+        "biotype": "protein_coding",
+        "seq_region_name": "1"
+      }
+    },
+    "uniprot": {
+      "url": "https://rest.uniprot.org/uniprotkb/search?query=gene_exact%3ACDKN2C%20AND%20organism_id%3A9606%20AND%20reviewed%3Atrue&size=3&format=json",
+      "data": [
+        {
+          "primaryAccession": "P42773",
+          "uniProtkbId": "CDN2C_HUMAN",
+          "entryType": "UniProtKB reviewed (Swiss-Prot)"
+        }
+      ]
+    },
+    "europe_pmc": {
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=CDKN2C%20AND%20%22interstitial%20cystitis%22&format=json&pageSize=10",
+      "data": {
+        "hit_count": 2,
+        "papers": [
+          {
+            "id": "40207138",
+            "title": "Pathogenic effects of &lt;i&gt;Streptococcus oralis&lt;/i&gt; intestinal colonization on bladder health in mice.",
+            "doi": "10.1016/j.crmicr.2025.100375",
+            "pubYear": "2025"
+          },
+          {
+            "id": "PMC7104427",
+            "title": "Abstracts",
+            "doi": null,
+            "pubYear": "2018"
+          }
+        ]
+      }
+    },
+    "mygene": {
+      "url": "https://mygene.info/v3/query?q=symbol%3ACDKN2C&species=human&size=3",
+      "data": {
+        "total": 1,
+        "hits": [
+          {
+            "_id": "1031",
+            "symbol": "CDKN2C",
+            "name": "cyclin dependent kinase inhibitor 2C",
+            "taxid": 9606
+          }
+        ]
+      }
+    },
+    "chembl": {
+      "url": "https://www.ebi.ac.uk/chembl/api/data/target/search.json?q=CDKN2C&limit=20",
+      "data": {
+        "total": 0,
+        "human_targets": []
+      }
+    },
+    "hgnc_rest": {
+      "url": "https://rest.genenames.org/fetch/symbol/CDKN2C",
+      "data": [
+        {
+          "symbol": "CDKN2C",
+          "hgnc_id": "HGNC:1789",
+          "entrez_id": "1031",
+          "ensembl_gene_id": "ENSG00000123080",
+          "status": "Approved"
+        }
+      ]
+    },
+    "gtex_reference": {
+      "url": "https://gtexportal.org/api/v2/reference/gene?geneId=CDKN2C",
+      "data": [
+        {
+          "geneSymbol": "CDKN2C",
+          "geneId": null,
+          "gencodeId": "ENSG00000123080.10",
+          "entrezGeneId": 1031
+        }
+      ]
+    },
+    "reactome": {
+      "url": "https://reactome.org/ContentService/data/mapping/UniProt/P42773/pathways",
+      "data": [
+        {
+          "stId": "R-HSA-2559580",
+          "displayName": "Oxidative Stress Induced Senescence",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-2559582",
+          "displayName": "Senescence-Associated Secretory Phenotype (SASP)",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-2559585",
+          "displayName": "Oncogene Induced Senescence",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-69231",
+          "displayName": "Cyclin D associated events in G1",
+          "speciesName": "Homo sapiens"
+        }
+      ]
+    }
+  }
+}

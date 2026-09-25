@@ -1,0 +1,138 @@
+{
+  "gene": "NSD2",
+  "module": "M6_cell_state_g2m",
+  "prereg": "projects/interstitial_cystitis/prereg/ic_p48_module_genesets.json",
+  "retrieved_at_utc": "2026-09-25T20:18:34.594251+00:00",
+  "sources": {
+    "ensembl": {
+      "url": "https://rest.ensembl.org/lookup/symbol/homo_sapiens/NSD2?content-type=application/json",
+      "data": {
+        "id": "ENSG00000109685",
+        "display_name": "NSD2",
+        "description": "nuclear receptor binding SET domain protein 2 [Source:HGNC Symbol;Acc:HGNC:12766]",
+        "biotype": "protein_coding",
+        "seq_region_name": "4"
+      }
+    },
+    "uniprot": {
+      "url": "https://rest.uniprot.org/uniprotkb/search?query=gene_exact%3ANSD2%20AND%20organism_id%3A9606%20AND%20reviewed%3Atrue&size=3&format=json",
+      "data": [
+        {
+          "primaryAccession": "O96028",
+          "uniProtkbId": "NSD2_HUMAN",
+          "entryType": "UniProtKB reviewed (Swiss-Prot)"
+        }
+      ]
+    },
+    "europe_pmc": {
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=NSD2%20AND%20%22interstitial%20cystitis%22&format=json&pageSize=10",
+      "data": {
+        "hit_count": 2,
+        "papers": [
+          {
+            "id": "PMC10902613",
+            "title": "Abstracts",
+            "doi": null,
+            "pubYear": "2024"
+          },
+          {
+            "id": "24085684",
+            "title": "Abstracts of the 2013 Annual Meeting of the American College of Rheumatology. October 25-30, 2013. San Diego, California, USA.",
+            "doi": "10.1002/art.38216",
+            "pubYear": "2013"
+          }
+        ]
+      }
+    },
+    "mygene": {
+      "url": "https://mygene.info/v3/query?q=symbol%3ANSD2&species=human&size=3",
+      "data": {
+        "total": 1,
+        "hits": [
+          {
+            "_id": "7468",
+            "symbol": "NSD2",
+            "name": "nuclear receptor binding SET domain protein 2",
+            "taxid": 9606
+          }
+        ]
+      }
+    },
+    "chembl": {
+      "url": "https://www.ebi.ac.uk/chembl/api/data/target/search.json?q=NSD2&limit=20",
+      "data": {
+        "total": 3,
+        "human_targets": [
+          {
+            "target_chembl_id": "CHEMBL3108645",
+            "pref_name": "Histone-lysine N-methyltransferase NSD2",
+            "organism": "Homo sapiens"
+          },
+          {
+            "target_chembl_id": "CHEMBL6066047",
+            "pref_name": "Protein cereblon/Histone-lysine N-methyltransferase NSD2",
+            "organism": "Homo sapiens"
+          },
+          {
+            "target_chembl_id": "CHEMBL5169064",
+            "pref_name": "von Hippel-Lindau disease tumor suppressor/Histone-lysine N-methyltransferase NSD2",
+            "organism": "Homo sapiens"
+          }
+        ]
+      }
+    },
+    "hgnc_rest": {
+      "url": "https://rest.genenames.org/fetch/symbol/NSD2",
+      "data": [
+        {
+          "symbol": "NSD2",
+          "hgnc_id": "HGNC:12766",
+          "entrez_id": "7468",
+          "ensembl_gene_id": "ENSG00000109685",
+          "status": "Approved"
+        }
+      ]
+    },
+    "gtex_reference": {
+      "url": "https://gtexportal.org/api/v2/reference/gene?geneId=NSD2",
+      "data": [
+        {
+          "geneSymbol": "NSD2",
+          "geneId": null,
+          "gencodeId": "ENSG00000109685.17",
+          "entrezGeneId": 7468
+        }
+      ]
+    },
+    "reactome": {
+      "url": "https://reactome.org/ContentService/data/mapping/UniProt/O96028/pathways",
+      "data": [
+        {
+          "stId": "R-HSA-3214841",
+          "displayName": "PKMTs methylate histone lysines",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-5693565",
+          "displayName": "Recruitment and ATM-mediated phosphorylation of repair and signaling proteins at DNA double strand breaks",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-5693571",
+          "displayName": "Nonhomologous End-Joining (NHEJ)",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-5693607",
+          "displayName": "Processing of DNA double-strand break ends",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-69473",
+          "displayName": "G2/M DNA damage checkpoint",
+          "speciesName": "Homo sapiens"
+        }
+      ]
+    }
+  }
+}

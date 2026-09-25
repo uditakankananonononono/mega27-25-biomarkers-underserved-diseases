@@ -1,0 +1,94 @@
+{
+  "gene": "CCNF",
+  "module": "M6_cell_state_g2m",
+  "prereg": "projects/interstitial_cystitis/prereg/ic_p48_module_genesets.json",
+  "retrieved_at_utc": "2026-09-25T20:17:35.499644+00:00",
+  "sources": {
+    "ensembl": {
+      "url": "https://rest.ensembl.org/lookup/symbol/homo_sapiens/CCNF?content-type=application/json",
+      "data": {
+        "id": "ENSG00000162063",
+        "display_name": "CCNF",
+        "description": "cyclin F [Source:HGNC Symbol;Acc:HGNC:1591]",
+        "biotype": "protein_coding",
+        "seq_region_name": "16"
+      }
+    },
+    "uniprot": {
+      "url": "https://rest.uniprot.org/uniprotkb/search?query=gene_exact%3ACCNF%20AND%20organism_id%3A9606%20AND%20reviewed%3Atrue&size=3&format=json",
+      "data": [
+        {
+          "primaryAccession": "P41002",
+          "uniProtkbId": "CCNF_HUMAN",
+          "entryType": "UniProtKB reviewed (Swiss-Prot)"
+        }
+      ]
+    },
+    "europe_pmc": {
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=CCNF%20AND%20%22interstitial%20cystitis%22&format=json&pageSize=10",
+      "data": {
+        "hit_count": 0,
+        "papers": []
+      }
+    },
+    "mygene": {
+      "url": "https://mygene.info/v3/query?q=symbol%3ACCNF&species=human&size=3",
+      "data": {
+        "total": 1,
+        "hits": [
+          {
+            "_id": "899",
+            "symbol": "CCNF",
+            "name": "cyclin F",
+            "taxid": 9606
+          }
+        ]
+      }
+    },
+    "chembl": {
+      "url": "https://www.ebi.ac.uk/chembl/api/data/target/search.json?q=CCNF&limit=20",
+      "data": {
+        "total": 0,
+        "human_targets": []
+      }
+    },
+    "hgnc_rest": {
+      "url": "https://rest.genenames.org/fetch/symbol/CCNF",
+      "data": [
+        {
+          "symbol": "CCNF",
+          "hgnc_id": "HGNC:1591",
+          "entrez_id": "899",
+          "ensembl_gene_id": "ENSG00000162063",
+          "status": "Approved"
+        }
+      ]
+    },
+    "gtex_reference": {
+      "url": "https://gtexportal.org/api/v2/reference/gene?geneId=CCNF",
+      "data": [
+        {
+          "geneSymbol": "CCNF",
+          "geneId": null,
+          "gencodeId": "ENSG00000162063.12",
+          "entrezGeneId": 899
+        }
+      ]
+    },
+    "reactome": {
+      "url": "https://reactome.org/ContentService/data/mapping/UniProt/P41002/pathways",
+      "data": [
+        {
+          "stId": "R-HSA-8951664",
+          "displayName": "Neddylation",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-983168",
+          "displayName": "Antigen processing: Ubiquitination & Proteasome degradation",
+          "speciesName": "Homo sapiens"
+        }
+      ]
+    }
+  }
+}

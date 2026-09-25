@@ -1,0 +1,197 @@
+{
+  "gene": "CCNT1",
+  "module": "M6_cell_state_g2m",
+  "prereg": "projects/interstitial_cystitis/prereg/ic_p48_module_genesets.json",
+  "retrieved_at_utc": "2026-09-25T20:29:36.255192+00:00",
+  "sources": {
+    "ensembl": {
+      "url": "https://rest.ensembl.org/lookup/symbol/homo_sapiens/CCNT1?content-type=application/json",
+      "data": {
+        "id": "ENSG00000129315",
+        "display_name": "CCNT1",
+        "description": "cyclin T1 [Source:HGNC Symbol;Acc:HGNC:1599]",
+        "biotype": "protein_coding",
+        "seq_region_name": "12"
+      }
+    },
+    "uniprot": {
+      "url": "https://rest.uniprot.org/uniprotkb/search?query=gene_exact%3ACCNT1%20AND%20organism_id%3A9606%20AND%20reviewed%3Atrue&size=3&format=json",
+      "data": [
+        {
+          "primaryAccession": "O60563",
+          "uniProtkbId": "CCNT1_HUMAN",
+          "entryType": "UniProtKB reviewed (Swiss-Prot)"
+        }
+      ]
+    },
+    "europe_pmc": {
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=CCNT1%20AND%20%22interstitial%20cystitis%22&format=json&pageSize=10",
+      "data": {
+        "hit_count": 1,
+        "papers": [
+          {
+            "id": "32587588",
+            "title": "<i>In vivo</i> Screen Identifies <i>Zdhhc2</i> as a Critical Regulator of Germinal Center B Cell Differentiation.",
+            "doi": "10.3389/fimmu.2020.01025",
+            "pubYear": "2020"
+          }
+        ]
+      }
+    },
+    "mygene": {
+      "url": "https://mygene.info/v3/query?q=symbol%3ACCNT1&species=human&size=3",
+      "data": {
+        "total": 1,
+        "hits": [
+          {
+            "_id": "904",
+            "symbol": "CCNT1",
+            "name": "cyclin T1",
+            "taxid": 9606
+          }
+        ]
+      }
+    },
+    "chembl": {
+      "url": "https://www.ebi.ac.uk/chembl/api/data/target/search.json?q=CCNT1&limit=20",
+      "data": {
+        "total": 5,
+        "human_targets": [
+          {
+            "target_chembl_id": "CHEMBL2108",
+            "pref_name": "Cyclin-T1",
+            "organism": "Homo sapiens"
+          },
+          {
+            "target_chembl_id": "CHEMBL2111389",
+            "pref_name": "CDK9/cyclin T1",
+            "organism": "Homo sapiens"
+          },
+          {
+            "target_chembl_id": "CHEMBL3885549",
+            "pref_name": "Cyclin-T1/Cyclin-dependent-like kinase 5",
+            "organism": "Homo sapiens"
+          },
+          {
+            "target_chembl_id": "CHEMBL5291961",
+            "pref_name": "CDK9/Cyclin T",
+            "organism": "Homo sapiens"
+          },
+          {
+            "target_chembl_id": "CHEMBL6195585",
+            "pref_name": "Microtubule-associated protein 1 light chain 3 beta/Cyclin-T1/Cyclin-dependent kinase 9",
+            "organism": "Homo sapiens"
+          }
+        ]
+      }
+    },
+    "hgnc_rest": {
+      "url": "https://rest.genenames.org/fetch/symbol/CCNT1",
+      "data": [
+        {
+          "symbol": "CCNT1",
+          "hgnc_id": "HGNC:1599",
+          "entrez_id": "904",
+          "ensembl_gene_id": "ENSG00000129315",
+          "status": "Approved"
+        }
+      ]
+    },
+    "gtex_reference": {
+      "url": "https://gtexportal.org/api/v2/reference/gene?geneId=CCNT1",
+      "data": [
+        {
+          "geneSymbol": "CCNT1",
+          "geneId": null,
+          "gencodeId": "ENSG00000129315.10",
+          "entrezGeneId": 904
+        }
+      ]
+    },
+    "reactome": {
+      "url": "https://reactome.org/ContentService/data/mapping/UniProt/O60563/pathways",
+      "data": [
+        {
+          "stId": "R-HSA-112382",
+          "displayName": "Formation of RNA Pol II elongation complex ",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-167152",
+          "displayName": "Formation of HIV elongation complex in the absence of HIV Tat",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-167200",
+          "displayName": "Formation of HIV-1 elongation complex containing HIV-1 Tat",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-167238",
+          "displayName": "Pausing and recovery of Tat-mediated HIV elongation",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-167243",
+          "displayName": "Tat-mediated HIV elongation arrest and recovery",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-167246",
+          "displayName": "Tat-mediated elongation of the HIV-1 transcript",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-167287",
+          "displayName": "HIV elongation arrest and recovery",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-167290",
+          "displayName": "Pausing and recovery of HIV elongation",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-176034",
+          "displayName": "Interactions of Tat with host cellular proteins",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-2173796",
+          "displayName": "SMAD2/SMAD3:SMAD4 heterotrimer regulates transcription",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-674695",
+          "displayName": "RNA Polymerase II Pre-transcription Events",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-6796648",
+          "displayName": "TP53 Regulates Transcription of DNA Repair Genes",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-6807505",
+          "displayName": "RNA polymerase II transcribes snRNA genes",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-75955",
+          "displayName": "RNA Polymerase II Transcription Elongation",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-9018519",
+          "displayName": "Estrogen-dependent gene expression",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-9938024",
+          "displayName": "Somatic hypermutation of immunoglobulin genes",
+          "speciesName": "Homo sapiens"
+        }
+      ]
+    }
+  }
+}

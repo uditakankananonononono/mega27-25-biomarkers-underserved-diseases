@@ -1,0 +1,105 @@
+{
+  "gene": "DBF4",
+  "module": "M6_cell_state_g2m",
+  "prereg": "projects/interstitial_cystitis/prereg/ic_p48_module_genesets.json",
+  "retrieved_at_utc": "2026-09-25T20:18:58.932150+00:00",
+  "sources": {
+    "ensembl": {
+      "url": "https://rest.ensembl.org/lookup/symbol/homo_sapiens/DBF4?content-type=application/json",
+      "data": {
+        "id": "ENSG00000006634",
+        "display_name": "DBF4",
+        "description": "DBF4-CDC7 kinase regulatory subunit [Source:HGNC Symbol;Acc:HGNC:17364]",
+        "biotype": "protein_coding",
+        "seq_region_name": "7"
+      }
+    },
+    "uniprot": {
+      "url": "https://rest.uniprot.org/uniprotkb/search?query=gene_exact%3ADBF4%20AND%20organism_id%3A9606%20AND%20reviewed%3Atrue&size=3&format=json",
+      "data": [
+        {
+          "primaryAccession": "Q9UBU7",
+          "uniProtkbId": "DBF4A_HUMAN",
+          "entryType": "UniProtKB reviewed (Swiss-Prot)"
+        }
+      ]
+    },
+    "europe_pmc": {
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=DBF4%20AND%20%22interstitial%20cystitis%22&format=json&pageSize=10",
+      "data": {
+        "hit_count": 0,
+        "papers": []
+      }
+    },
+    "mygene": {
+      "url": "https://mygene.info/v3/query?q=symbol%3ADBF4&species=human&size=3",
+      "data": {
+        "total": 1,
+        "hits": [
+          {
+            "_id": "10926",
+            "symbol": "DBF4",
+            "name": "DBF4-CDC7 kinase regulatory subunit",
+            "taxid": 9606
+          }
+        ]
+      }
+    },
+    "chembl": {
+      "url": "https://www.ebi.ac.uk/chembl/api/data/target/search.json?q=DBF4&limit=20",
+      "data": {
+        "total": 2,
+        "human_targets": [
+          {
+            "target_chembl_id": "CHEMBL4483",
+            "pref_name": "Protein DBF4 homolog A",
+            "organism": "Homo sapiens"
+          },
+          {
+            "target_chembl_id": "CHEMBL2111377",
+            "pref_name": "CDC7/DBF4 (Cell division cycle 7-related protein kinase/Activator of S phase kinase)",
+            "organism": "Homo sapiens"
+          }
+        ]
+      }
+    },
+    "hgnc_rest": {
+      "url": "https://rest.genenames.org/fetch/symbol/DBF4",
+      "data": [
+        {
+          "symbol": "DBF4",
+          "hgnc_id": "HGNC:17364",
+          "entrez_id": "10926",
+          "ensembl_gene_id": "ENSG00000006634",
+          "status": "Approved"
+        }
+      ]
+    },
+    "gtex_reference": {
+      "url": "https://gtexportal.org/api/v2/reference/gene?geneId=DBF4",
+      "data": [
+        {
+          "geneSymbol": "DBF4",
+          "geneId": null,
+          "gencodeId": "ENSG00000006634.7",
+          "entrezGeneId": 10926
+        }
+      ]
+    },
+    "reactome": {
+      "url": "https://reactome.org/ContentService/data/mapping/UniProt/Q9UBU7/pathways",
+      "data": [
+        {
+          "stId": "R-HSA-176187",
+          "displayName": "Activation of ATR in response to replication stress",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-68962",
+          "displayName": "Activation of the pre-replicative complex",
+          "speciesName": "Homo sapiens"
+        }
+      ]
+    }
+  }
+}

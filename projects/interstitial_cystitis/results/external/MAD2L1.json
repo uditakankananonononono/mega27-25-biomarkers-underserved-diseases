@@ -1,0 +1,139 @@
+{
+  "gene": "MAD2L1",
+  "module": "M6_cell_state_g2m",
+  "prereg": "projects/interstitial_cystitis/prereg/ic_p48_module_genesets.json",
+  "retrieved_at_utc": "2026-09-25T19:54:41.939900+00:00",
+  "sources": {
+    "ensembl": {
+      "url": "https://rest.ensembl.org/lookup/symbol/homo_sapiens/MAD2L1?content-type=application/json",
+      "data": {
+        "id": "ENSG00000164109",
+        "display_name": "MAD2L1",
+        "description": "mitotic arrest deficient 2 like 1 [Source:HGNC Symbol;Acc:HGNC:6763]",
+        "biotype": "protein_coding",
+        "seq_region_name": "4"
+      }
+    },
+    "uniprot": {
+      "url": "https://rest.uniprot.org/uniprotkb/search?query=gene_exact%3AMAD2L1%20AND%20organism_id%3A9606%20AND%20reviewed%3Atrue&size=3&format=json",
+      "data": [
+        {
+          "primaryAccession": "Q13257",
+          "uniProtkbId": "MD2L1_HUMAN",
+          "entryType": "UniProtKB reviewed (Swiss-Prot)"
+        }
+      ]
+    },
+    "europe_pmc": {
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=MAD2L1%20AND%20%22interstitial%20cystitis%22&format=json&pageSize=10",
+      "data": {
+        "hit_count": 0,
+        "papers": []
+      }
+    },
+    "mygene": {
+      "url": "https://mygene.info/v3/query?q=symbol%3AMAD2L1&species=human&size=3",
+      "data": {
+        "total": 1,
+        "hits": [
+          {
+            "_id": "4085",
+            "symbol": "MAD2L1",
+            "name": "mitotic arrest deficient 2 like 1",
+            "taxid": 9606
+          }
+        ]
+      }
+    },
+    "chembl": {
+      "url": "https://www.ebi.ac.uk/chembl/api/data/target/search.json?q=MAD2L1&limit=20",
+      "data": {
+        "total": 0,
+        "human_targets": []
+      }
+    },
+    "hgnc_rest": {
+      "url": "https://rest.genenames.org/fetch/symbol/MAD2L1",
+      "data": [
+        {
+          "symbol": "MAD2L1",
+          "hgnc_id": "HGNC:6763",
+          "entrez_id": "4085",
+          "ensembl_gene_id": "ENSG00000164109",
+          "status": "Approved"
+        }
+      ]
+    },
+    "gtex_reference": {
+      "url": "https://gtexportal.org/api/v2/reference/gene?geneId=MAD2L1",
+      "data": [
+        {
+          "geneSymbol": "MAD2L1",
+          "geneId": null,
+          "gencodeId": "ENSG00000164109.13",
+          "entrezGeneId": 4085
+        }
+      ]
+    },
+    "reactome": {
+      "url": "https://reactome.org/ContentService/data/mapping/UniProt/Q13257/pathways",
+      "data": [
+        {
+          "stId": "R-HSA-141405",
+          "displayName": "Inhibition of the proteolytic activity of APC/C required for the onset of anaphase by mitotic spindle checkpoint components",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-141430",
+          "displayName": "Inactivation of APC/C via direct inhibition of the APC/C complex",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-141444",
+          "displayName": "Amplification  of signal from unattached  kinetochores via a MAD2  inhibitory signal",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-174184",
+          "displayName": "Cdc20:Phospho-APC/C mediated degradation of Cyclin A",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-176409",
+          "displayName": "APC/C:Cdc20 mediated degradation of mitotic proteins",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-179409",
+          "displayName": "APC-Cdc20 mediated degradation of Nek2A",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-2467813",
+          "displayName": "Separation of Sister Chromatids",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-2500257",
+          "displayName": "Resolution of Sister Chromatid Cohesion",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-5663220",
+          "displayName": "RHO GTPases Activate Formins",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-68877",
+          "displayName": "Mitotic Prometaphase",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-9648025",
+          "displayName": "EML4 and NUDC in mitotic spindle formation",
+          "speciesName": "Homo sapiens"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,119 @@
+{
+  "gene": "SFPQ",
+  "module": "M6_cell_state_g2m",
+  "prereg": "projects/interstitial_cystitis/prereg/ic_p48_module_genesets.json",
+  "retrieved_at_utc": "2026-09-25T20:26:31.972483+00:00",
+  "sources": {
+    "ensembl": {
+      "url": "https://rest.ensembl.org/lookup/symbol/homo_sapiens/SFPQ?content-type=application/json",
+      "data": {
+        "id": "ENSG00000116560",
+        "display_name": "SFPQ",
+        "description": "splicing factor proline and glutamine rich [Source:HGNC Symbol;Acc:HGNC:10774]",
+        "biotype": "protein_coding",
+        "seq_region_name": "1"
+      }
+    },
+    "uniprot": {
+      "url": "https://rest.uniprot.org/uniprotkb/search?query=gene_exact%3ASFPQ%20AND%20organism_id%3A9606%20AND%20reviewed%3Atrue&size=3&format=json",
+      "data": [
+        {
+          "primaryAccession": "P23246",
+          "uniProtkbId": "SFPQ_HUMAN",
+          "entryType": "UniProtKB reviewed (Swiss-Prot)"
+        }
+      ]
+    },
+    "europe_pmc": {
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=SFPQ%20AND%20%22interstitial%20cystitis%22&format=json&pageSize=10",
+      "data": {
+        "hit_count": 3,
+        "papers": [
+          {
+            "id": "38776178",
+            "title": "A systematic review with meta-analyses of the association between stigma and chronic pain outcomes.",
+            "doi": "10.1097/j.pain.0000000000003243",
+            "pubYear": "2024"
+          },
+          {
+            "id": "34448894",
+            "title": "33&lt;sup&gt;rd&lt;/sup&gt; European Congress of Pathology - Abstracts.",
+            "doi": "10.1007/s00428-021-03157-8",
+            "pubYear": "2021"
+          },
+          {
+            "id": "PMC7163937",
+            "title": "Poster Sessions",
+            "doi": null,
+            "pubYear": "2014"
+          }
+        ]
+      }
+    },
+    "mygene": {
+      "url": "https://mygene.info/v3/query?q=symbol%3ASFPQ&species=human&size=3",
+      "data": {
+        "total": 1,
+        "hits": [
+          {
+            "_id": "6421",
+            "symbol": "SFPQ",
+            "name": "splicing factor proline and glutamine rich",
+            "taxid": 9606
+          }
+        ]
+      }
+    },
+    "chembl": {
+      "url": "https://www.ebi.ac.uk/chembl/api/data/target/search.json?q=SFPQ&limit=20",
+      "data": {
+        "total": 1,
+        "human_targets": [
+          {
+            "target_chembl_id": "CHEMBL5725114",
+            "pref_name": "Splicing factor, proline- and glutamine-rich",
+            "organism": "Homo sapiens"
+          }
+        ]
+      }
+    },
+    "hgnc_rest": {
+      "url": "https://rest.genenames.org/fetch/symbol/SFPQ",
+      "data": [
+        {
+          "symbol": "SFPQ",
+          "hgnc_id": "HGNC:10774",
+          "entrez_id": "6421",
+          "ensembl_gene_id": "ENSG00000116560",
+          "status": "Approved"
+        }
+      ]
+    },
+    "gtex_reference": {
+      "url": "https://gtexportal.org/api/v2/reference/gene?geneId=SFPQ",
+      "data": [
+        {
+          "geneSymbol": "SFPQ",
+          "geneId": null,
+          "gencodeId": "ENSG00000116560.10",
+          "entrezGeneId": 6421
+        }
+      ]
+    },
+    "reactome": {
+      "url": "https://reactome.org/ContentService/data/mapping/UniProt/P23246/pathways",
+      "data": [
+        {
+          "stId": "R-HSA-8849468",
+          "displayName": "PTK6 Regulates Proteins Involved in RNA Processing",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-9635465",
+          "displayName": "Suppression of apoptosis",
+          "speciesName": "Homo sapiens"
+        }
+      ]
+    }
+  }
+}

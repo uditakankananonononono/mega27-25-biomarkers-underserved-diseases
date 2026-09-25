@@ -1,0 +1,125 @@
+{
+  "gene": "SMC1A",
+  "module": "M6_cell_state_g2m",
+  "prereg": "projects/interstitial_cystitis/prereg/ic_p48_module_genesets.json",
+  "retrieved_at_utc": "2026-09-25T20:22:26.256567+00:00",
+  "sources": {
+    "ensembl": {
+      "url": "https://rest.ensembl.org/lookup/symbol/homo_sapiens/SMC1A?content-type=application/json",
+      "data": {
+        "id": "ENSG00000072501",
+        "display_name": "SMC1A",
+        "description": "structural maintenance of chromosomes 1A [Source:HGNC Symbol;Acc:HGNC:11111]",
+        "biotype": "protein_coding",
+        "seq_region_name": "X"
+      }
+    },
+    "uniprot": {
+      "url": "https://rest.uniprot.org/uniprotkb/search?query=gene_exact%3ASMC1A%20AND%20organism_id%3A9606%20AND%20reviewed%3Atrue&size=3&format=json",
+      "data": [
+        {
+          "primaryAccession": "Q14683",
+          "uniProtkbId": "SMC1A_HUMAN",
+          "entryType": "UniProtKB reviewed (Swiss-Prot)"
+        }
+      ]
+    },
+    "europe_pmc": {
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=SMC1A%20AND%20%22interstitial%20cystitis%22&format=json&pageSize=10",
+      "data": {
+        "hit_count": 0,
+        "papers": []
+      }
+    },
+    "mygene": {
+      "url": "https://mygene.info/v3/query?q=symbol%3ASMC1A&species=human&size=3",
+      "data": {
+        "total": 1,
+        "hits": [
+          {
+            "_id": "8243",
+            "symbol": "SMC1A",
+            "name": "structural maintenance of chromosomes 1A",
+            "taxid": 9606
+          }
+        ]
+      }
+    },
+    "chembl": {
+      "url": "https://www.ebi.ac.uk/chembl/api/data/target/search.json?q=SMC1A&limit=20",
+      "data": {
+        "total": 1,
+        "human_targets": [
+          {
+            "target_chembl_id": "CHEMBL4105747",
+            "pref_name": "Structural maintenance of chromosomes protein 1A",
+            "organism": "Homo sapiens"
+          }
+        ]
+      }
+    },
+    "hgnc_rest": {
+      "url": "https://rest.genenames.org/fetch/symbol/SMC1A",
+      "data": [
+        {
+          "symbol": "SMC1A",
+          "hgnc_id": "HGNC:11111",
+          "entrez_id": "8243",
+          "ensembl_gene_id": "ENSG00000072501",
+          "status": "Approved"
+        }
+      ]
+    },
+    "gtex_reference": {
+      "url": "https://gtexportal.org/api/v2/reference/gene?geneId=SMC1A",
+      "data": [
+        {
+          "geneSymbol": "SMC1A",
+          "geneId": null,
+          "gencodeId": "ENSG00000072501.17",
+          "entrezGeneId": 8243
+        }
+      ]
+    },
+    "reactome": {
+      "url": "https://reactome.org/ContentService/data/mapping/UniProt/Q14683/pathways",
+      "data": [
+        {
+          "stId": "R-HSA-1221632",
+          "displayName": "Meiotic synapsis",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-2467813",
+          "displayName": "Separation of Sister Chromatids",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-2468052",
+          "displayName": "Establishment of Sister Chromatid Cohesion",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-2470946",
+          "displayName": "Cohesin Loading onto Chromatin",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-2500257",
+          "displayName": "Resolution of Sister Chromatid Cohesion",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-3108214",
+          "displayName": "SUMOylation of DNA damage response and repair proteins",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-9018519",
+          "displayName": "Estrogen-dependent gene expression",
+          "speciesName": "Homo sapiens"
+        }
+      ]
+    }
+  }
+}

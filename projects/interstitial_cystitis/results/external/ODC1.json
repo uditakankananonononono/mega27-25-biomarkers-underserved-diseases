@@ -1,0 +1,100 @@
+{
+  "gene": "ODC1",
+  "module": "M6_cell_state_g2m",
+  "prereg": "projects/interstitial_cystitis/prereg/ic_p48_module_genesets.json",
+  "retrieved_at_utc": "2026-09-25T20:26:11.464295+00:00",
+  "sources": {
+    "ensembl": {
+      "url": "https://rest.ensembl.org/lookup/symbol/homo_sapiens/ODC1?content-type=application/json",
+      "data": {
+        "id": "ENSG00000115758",
+        "display_name": "ODC1",
+        "description": "ornithine decarboxylase 1 [Source:HGNC Symbol;Acc:HGNC:8109]",
+        "biotype": "protein_coding",
+        "seq_region_name": "2"
+      }
+    },
+    "uniprot": {
+      "url": "https://rest.uniprot.org/uniprotkb/search?query=gene_exact%3AODC1%20AND%20organism_id%3A9606%20AND%20reviewed%3Atrue&size=3&format=json",
+      "data": [
+        {
+          "primaryAccession": "P11926",
+          "uniProtkbId": "DCOR_HUMAN",
+          "entryType": "UniProtKB reviewed (Swiss-Prot)"
+        }
+      ]
+    },
+    "europe_pmc": {
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=ODC1%20AND%20%22interstitial%20cystitis%22&format=json&pageSize=10",
+      "data": {
+        "hit_count": 0,
+        "papers": []
+      }
+    },
+    "mygene": {
+      "url": "https://mygene.info/v3/query?q=symbol%3AODC1&species=human&size=3",
+      "data": {
+        "total": 1,
+        "hits": [
+          {
+            "_id": "4953",
+            "symbol": "ODC1",
+            "name": "ornithine decarboxylase 1",
+            "taxid": 9606
+          }
+        ]
+      }
+    },
+    "chembl": {
+      "url": "https://www.ebi.ac.uk/chembl/api/data/target/search.json?q=ODC1&limit=20",
+      "data": {
+        "total": 4,
+        "human_targets": [
+          {
+            "target_chembl_id": "CHEMBL1869",
+            "pref_name": "Ornithine decarboxylase",
+            "organism": "Homo sapiens"
+          }
+        ]
+      }
+    },
+    "hgnc_rest": {
+      "url": "https://rest.genenames.org/fetch/symbol/ODC1",
+      "data": [
+        {
+          "symbol": "ODC1",
+          "hgnc_id": "HGNC:8109",
+          "entrez_id": "4953",
+          "ensembl_gene_id": "ENSG00000115758",
+          "status": "Approved"
+        }
+      ]
+    },
+    "gtex_reference": {
+      "url": "https://gtexportal.org/api/v2/reference/gene?geneId=ODC1",
+      "data": [
+        {
+          "geneSymbol": "ODC1",
+          "geneId": null,
+          "gencodeId": "ENSG00000115758.12",
+          "entrezGeneId": 4953
+        }
+      ]
+    },
+    "reactome": {
+      "url": "https://reactome.org/ContentService/data/mapping/UniProt/P11926/pathways",
+      "data": [
+        {
+          "stId": "R-HSA-350562",
+          "displayName": "Regulation of ornithine decarboxylase (ODC)",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-351202",
+          "displayName": "Metabolism of polyamines",
+          "speciesName": "Homo sapiens"
+        }
+      ]
+    }
+  }
+}

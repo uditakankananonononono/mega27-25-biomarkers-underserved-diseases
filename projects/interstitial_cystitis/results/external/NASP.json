@@ -1,0 +1,98 @@
+{
+  "gene": "NASP",
+  "module": "M6_cell_state_g2m",
+  "prereg": "projects/interstitial_cystitis/prereg/ic_p48_module_genesets.json",
+  "retrieved_at_utc": "2026-09-25T20:19:57.721645+00:00",
+  "sources": {
+    "ensembl": {
+      "url": "https://rest.ensembl.org/lookup/symbol/homo_sapiens/NASP?content-type=application/json",
+      "data": {
+        "id": "ENSG00000132780",
+        "display_name": "NASP",
+        "description": "nuclear autoantigenic sperm protein [Source:HGNC Symbol;Acc:HGNC:7644]",
+        "biotype": "protein_coding",
+        "seq_region_name": "1"
+      }
+    },
+    "uniprot": {
+      "url": "https://rest.uniprot.org/uniprotkb/search?query=gene_exact%3ANASP%20AND%20organism_id%3A9606%20AND%20reviewed%3Atrue&size=3&format=json",
+      "data": [
+        {
+          "primaryAccession": "P49321",
+          "uniProtkbId": "NASP_HUMAN",
+          "entryType": "UniProtKB reviewed (Swiss-Prot)"
+        }
+      ]
+    },
+    "europe_pmc": {
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=NASP%20AND%20%22interstitial%20cystitis%22&format=json&pageSize=10",
+      "data": {
+        "hit_count": 1,
+        "papers": [
+          {
+            "id": "34303757",
+            "title": "Anesthetic Bladder Capacity is a Clinical Biomarker for Interstitial Cystitis/Bladder Pain Syndrome Subtypes.",
+            "doi": "10.1016/j.urology.2021.07.009",
+            "pubYear": "2021"
+          }
+        ]
+      }
+    },
+    "mygene": {
+      "url": "https://mygene.info/v3/query?q=symbol%3ANASP&species=human&size=3",
+      "data": {
+        "total": 1,
+        "hits": [
+          {
+            "_id": "4678",
+            "symbol": "NASP",
+            "name": "nuclear autoantigenic sperm protein",
+            "taxid": 9606
+          }
+        ]
+      }
+    },
+    "chembl": {
+      "url": "https://www.ebi.ac.uk/chembl/api/data/target/search.json?q=NASP&limit=20",
+      "data": {
+        "total": 1,
+        "human_targets": [
+          {
+            "target_chembl_id": "CHEMBL5724618",
+            "pref_name": "Nuclear autoantigenic sperm protein",
+            "organism": "Homo sapiens"
+          }
+        ]
+      }
+    },
+    "hgnc_rest": {
+      "url": "https://rest.genenames.org/fetch/symbol/NASP",
+      "data": [
+        {
+          "symbol": "NASP",
+          "hgnc_id": "HGNC:7644",
+          "entrez_id": "4678",
+          "ensembl_gene_id": "ENSG00000132780",
+          "status": "Approved"
+        }
+      ]
+    },
+    "gtex_reference": {
+      "url": "https://gtexportal.org/api/v2/reference/gene?geneId=NASP",
+      "data": [
+        {
+          "geneSymbol": "NASP",
+          "geneId": null,
+          "gencodeId": "ENSG00000132780.16",
+          "entrezGeneId": 4678
+        }
+      ]
+    },
+    "reactome": {
+      "url": "https://reactome.org/ContentService/data/mapping/UniProt/P49321/pathways",
+      "data": {
+        "error": "HTTP Error 404: Not Found"
+      }
+    }
+  }
+}

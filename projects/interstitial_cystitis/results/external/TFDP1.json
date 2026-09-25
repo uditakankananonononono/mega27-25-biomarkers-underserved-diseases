@@ -1,0 +1,185 @@
+{
+  "gene": "TFDP1",
+  "module": "M6_cell_state_g2m",
+  "prereg": "projects/interstitial_cystitis/prereg/ic_p48_module_genesets.json",
+  "retrieved_at_utc": "2026-09-25T20:23:19.718416+00:00",
+  "sources": {
+    "ensembl": {
+      "url": "https://rest.ensembl.org/lookup/symbol/homo_sapiens/TFDP1?content-type=application/json",
+      "data": {
+        "id": "ENSG00000198176",
+        "display_name": "TFDP1",
+        "description": "transcription factor Dp-1 [Source:HGNC Symbol;Acc:HGNC:11749]",
+        "biotype": "protein_coding",
+        "seq_region_name": "13"
+      }
+    },
+    "uniprot": {
+      "url": "https://rest.uniprot.org/uniprotkb/search?query=gene_exact%3ATFDP1%20AND%20organism_id%3A9606%20AND%20reviewed%3Atrue&size=3&format=json",
+      "data": [
+        {
+          "primaryAccession": "Q14186",
+          "uniProtkbId": "TFDP1_HUMAN",
+          "entryType": "UniProtKB reviewed (Swiss-Prot)"
+        }
+      ]
+    },
+    "europe_pmc": {
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=TFDP1%20AND%20%22interstitial%20cystitis%22&format=json&pageSize=10",
+      "data": {
+        "hit_count": 0,
+        "papers": []
+      }
+    },
+    "mygene": {
+      "url": "https://mygene.info/v3/query?q=symbol%3ATFDP1&species=human&size=3",
+      "data": {
+        "total": 1,
+        "hits": [
+          {
+            "_id": "7027",
+            "symbol": "TFDP1",
+            "name": "transcription factor Dp-1",
+            "taxid": 9606
+          }
+        ]
+      }
+    },
+    "chembl": {
+      "url": "https://www.ebi.ac.uk/chembl/api/data/target/search.json?q=TFDP1&limit=20",
+      "data": {
+        "total": 1,
+        "human_targets": [
+          {
+            "target_chembl_id": "CHEMBL4523289",
+            "pref_name": "Transcription factor Dp-1",
+            "organism": "Homo sapiens"
+          }
+        ]
+      }
+    },
+    "hgnc_rest": {
+      "url": "https://rest.genenames.org/fetch/symbol/TFDP1",
+      "data": [
+        {
+          "symbol": "TFDP1",
+          "hgnc_id": "HGNC:11749",
+          "entrez_id": "7027",
+          "ensembl_gene_id": "ENSG00000198176",
+          "status": "Approved"
+        }
+      ]
+    },
+    "gtex_reference": {
+      "url": "https://gtexportal.org/api/v2/reference/gene?geneId=TFDP1",
+      "data": [
+        {
+          "geneSymbol": "TFDP1",
+          "geneId": null,
+          "gencodeId": "ENSG00000198176.12",
+          "entrezGeneId": 7027
+        }
+      ]
+    },
+    "reactome": {
+      "url": "https://reactome.org/ContentService/data/mapping/UniProt/Q14186/pathways",
+      "data": [
+        {
+          "stId": "R-HSA-111448",
+          "displayName": "Activation of NOXA and translocation to mitochondria",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-113501",
+          "displayName": "Inhibition of replication initiation of damaged DNA by RB1/E2F1",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-1362277",
+          "displayName": "Transcription of E2F targets under negative control by DREAM complex",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-1362300",
+          "displayName": "Transcription of E2F targets under negative control by p107 (RBL1) and p130 (RBL2) in complex with HDAC1",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-139915",
+          "displayName": "Activation of PUMA and translocation to mitochondria",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-1538133",
+          "displayName": "G0 and Early G1",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-1912408",
+          "displayName": "Pre-NOTCH Transcription and Translation",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-2173796",
+          "displayName": "SMAD2/SMAD3:SMAD4 heterotrimer regulates transcription",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-2559580",
+          "displayName": "Oxidative Stress Induced Senescence",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-2559585",
+          "displayName": "Oncogene Induced Senescence",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-6804114",
+          "displayName": "TP53 Regulates Transcription of Genes Involved in G2 Cell Cycle Arrest",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-69202",
+          "displayName": "Cyclin E associated events during G1/S transition ",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-69205",
+          "displayName": "G1/S-Specific Transcription",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-69231",
+          "displayName": "Cyclin D associated events in G1",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-69656",
+          "displayName": "Cyclin A:Cdk2-associated events at S phase entry",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-8953750",
+          "displayName": "Transcriptional Regulation by E2F6",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-9616222",
+          "displayName": "Transcriptional regulation of granulopoiesis",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-9661069",
+          "displayName": "Defective binding of RB1 mutants to E2F1,(E2F2, E2F3)",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-9945556",
+          "displayName": "Transcriptional regulation of multiciliogenesis",
+          "speciesName": "Homo sapiens"
+        }
+      ]
+    }
+  }
+}

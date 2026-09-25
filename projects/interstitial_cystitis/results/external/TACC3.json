@@ -1,0 +1,118 @@
+{
+  "gene": "TACC3",
+  "module": "M6_cell_state_g2m",
+  "prereg": "projects/interstitial_cystitis/prereg/ic_p48_module_genesets.json",
+  "retrieved_at_utc": "2026-09-25T20:19:12.301052+00:00",
+  "sources": {
+    "ensembl": {
+      "url": "https://rest.ensembl.org/lookup/symbol/homo_sapiens/TACC3?content-type=application/json",
+      "data": {
+        "id": "ENSG00000013810",
+        "display_name": "TACC3",
+        "description": "transforming acidic coiled-coil containing protein 3 [Source:HGNC Symbol;Acc:HGNC:11524]",
+        "biotype": "protein_coding",
+        "seq_region_name": "4"
+      }
+    },
+    "uniprot": {
+      "url": "https://rest.uniprot.org/uniprotkb/search?query=gene_exact%3ATACC3%20AND%20organism_id%3A9606%20AND%20reviewed%3Atrue&size=3&format=json",
+      "data": [
+        {
+          "primaryAccession": "Q9Y6A5",
+          "uniProtkbId": "TACC3_HUMAN",
+          "entryType": "UniProtKB reviewed (Swiss-Prot)"
+        }
+      ]
+    },
+    "europe_pmc": {
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=TACC3%20AND%20%22interstitial%20cystitis%22&format=json&pageSize=10",
+      "data": {
+        "hit_count": 2,
+        "papers": [
+          {
+            "id": "34448894",
+            "title": "33&lt;sup&gt;rd&lt;/sup&gt; European Congress of Pathology - Abstracts.",
+            "doi": "10.1007/s00428-021-03157-8",
+            "pubYear": "2021"
+          },
+          {
+            "id": "PMC7163937",
+            "title": "Poster Sessions",
+            "doi": null,
+            "pubYear": "2014"
+          }
+        ]
+      }
+    },
+    "mygene": {
+      "url": "https://mygene.info/v3/query?q=symbol%3ATACC3&species=human&size=3",
+      "data": {
+        "total": 1,
+        "hits": [
+          {
+            "_id": "10460",
+            "symbol": "TACC3",
+            "name": "transforming acidic coiled-coil containing protein 3",
+            "taxid": 9606
+          }
+        ]
+      }
+    },
+    "chembl": {
+      "url": "https://www.ebi.ac.uk/chembl/api/data/target/search.json?q=TACC3&limit=20",
+      "data": {
+        "total": 2,
+        "human_targets": [
+          {
+            "target_chembl_id": "CHEMBL5291560",
+            "pref_name": "Transforming acidic coiled-coil-containing protein 3",
+            "organism": "Homo sapiens"
+          },
+          {
+            "target_chembl_id": "CHEMBL6193807",
+            "pref_name": "Baculoviral IAP repeat-containing protein 2/Transforming acidic coiled-coil-containing protein 3",
+            "organism": "Homo sapiens"
+          }
+        ]
+      }
+    },
+    "hgnc_rest": {
+      "url": "https://rest.genenames.org/fetch/symbol/TACC3",
+      "data": [
+        {
+          "symbol": "TACC3",
+          "hgnc_id": "HGNC:11524",
+          "entrez_id": "10460",
+          "ensembl_gene_id": "ENSG00000013810",
+          "status": "Approved"
+        }
+      ]
+    },
+    "gtex_reference": {
+      "url": "https://gtexportal.org/api/v2/reference/gene?geneId=TACC3",
+      "data": [
+        {
+          "geneSymbol": "TACC3",
+          "geneId": null,
+          "gencodeId": "ENSG00000013810.18",
+          "entrezGeneId": 10460
+        }
+      ]
+    },
+    "reactome": {
+      "url": "https://reactome.org/ContentService/data/mapping/UniProt/Q9Y6A5/pathways",
+      "data": [
+        {
+          "stId": "R-HSA-9013507",
+          "displayName": "NOTCH3 Activation and Transmission of Signal to the Nucleus",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-9604323",
+          "displayName": "Negative regulation of NOTCH4 signaling",
+          "speciesName": "Homo sapiens"
+        }
+      ]
+    }
+  }
+}

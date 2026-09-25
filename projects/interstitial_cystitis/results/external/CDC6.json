@@ -1,0 +1,143 @@
+{
+  "gene": "CDC6",
+  "module": "M6_cell_state_g2m",
+  "prereg": "projects/interstitial_cystitis/prereg/ic_p48_module_genesets.json",
+  "retrieved_at_utc": "2026-09-25T19:57:32.989527+00:00",
+  "sources": {
+    "ensembl": {
+      "url": "https://rest.ensembl.org/lookup/symbol/homo_sapiens/CDC6?content-type=application/json",
+      "error": "<urlopen error _ssl.c:990: The handshake operation timed out>"
+    },
+    "uniprot": {
+      "url": "https://rest.uniprot.org/uniprotkb/search?query=gene_exact%3ACDC6%20AND%20organism_id%3A9606%20AND%20reviewed%3Atrue&size=3&format=json",
+      "data": [
+        {
+          "primaryAccession": "Q99741",
+          "uniProtkbId": "CDC6_HUMAN",
+          "entryType": "UniProtKB reviewed (Swiss-Prot)"
+        }
+      ]
+    },
+    "europe_pmc": {
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=CDC6%20AND%20%22interstitial%20cystitis%22&format=json&pageSize=10",
+      "data": {
+        "hit_count": 3,
+        "papers": [
+          {
+            "id": "40881352",
+            "title": "Research progress on NAT10-mediated acetylation in normal development and disease.",
+            "doi": "10.3389/fcell.2025.1623276",
+            "pubYear": "2025"
+          },
+          {
+            "id": "36439482",
+            "title": "Identification of a naturally-occurring canine model for early detection and intervention research in high grade urothelial carcinoma.",
+            "doi": "10.3389/fonc.2022.1011969",
+            "pubYear": "2022"
+          },
+          {
+            "id": "PMC10800223",
+            "title": "2023 ACVIM Forum Research Abstract Program",
+            "doi": null,
+            "pubYear": "2023"
+          }
+        ]
+      }
+    },
+    "mygene": {
+      "url": "https://mygene.info/v3/query?q=symbol%3ACDC6&species=human&size=3",
+      "data": {
+        "total": 1,
+        "hits": [
+          {
+            "_id": "990",
+            "symbol": "CDC6",
+            "name": "cell division cycle 6",
+            "taxid": 9606
+          }
+        ]
+      }
+    },
+    "chembl": {
+      "url": "https://www.ebi.ac.uk/chembl/api/data/target/search.json?q=CDC6&limit=20",
+      "data": {
+        "total": 1,
+        "human_targets": [
+          {
+            "target_chembl_id": "CHEMBL2311228",
+            "pref_name": "Cell division control protein 6 homolog",
+            "organism": "Homo sapiens"
+          }
+        ]
+      }
+    },
+    "hgnc_rest": {
+      "url": "https://rest.genenames.org/fetch/symbol/CDC6",
+      "data": [
+        {
+          "symbol": "CDC6",
+          "hgnc_id": "HGNC:1744",
+          "entrez_id": "990",
+          "ensembl_gene_id": "ENSG00000094804",
+          "status": "Approved"
+        }
+      ]
+    },
+    "gtex_reference": {
+      "url": "https://gtexportal.org/api/v2/reference/gene?geneId=CDC6",
+      "data": [
+        {
+          "geneSymbol": "CDC6",
+          "geneId": null,
+          "gencodeId": "ENSG00000094804.9",
+          "entrezGeneId": 990
+        }
+      ]
+    },
+    "reactome": {
+      "url": "https://reactome.org/ContentService/data/mapping/UniProt/Q99741/pathways",
+      "data": [
+        {
+          "stId": "R-HSA-1362277",
+          "displayName": "Transcription of E2F targets under negative control by DREAM complex",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-176187",
+          "displayName": "Activation of ATR in response to replication stress",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-68689",
+          "displayName": "CDC6 association with the ORC:origin complex",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-68867",
+          "displayName": "Assembly of the pre-replicative complex",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-68949",
+          "displayName": "Orc1 removal from chromatin",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-68962",
+          "displayName": "Activation of the pre-replicative complex",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-69017",
+          "displayName": "CDK-mediated phosphorylation and removal of Cdc6",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-69205",
+          "displayName": "G1/S-Specific Transcription",
+          "speciesName": "Homo sapiens"
+        }
+      ]
+    }
+  }
+}

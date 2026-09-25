@@ -1,0 +1,95 @@
+{
+  "gene": "POLQ",
+  "module": "M6_cell_state_g2m",
+  "prereg": "projects/interstitial_cystitis/prereg/ic_p48_module_genesets.json",
+  "retrieved_at_utc": "2026-09-25T20:20:44.063663+00:00",
+  "sources": {
+    "ensembl": {
+      "url": "https://rest.ensembl.org/lookup/symbol/homo_sapiens/POLQ?content-type=application/json",
+      "data": {
+        "id": "ENSG00000051341",
+        "display_name": "POLQ",
+        "description": "DNA polymerase theta [Source:HGNC Symbol;Acc:HGNC:9186]",
+        "biotype": "protein_coding",
+        "seq_region_name": "3"
+      }
+    },
+    "uniprot": {
+      "url": "https://rest.uniprot.org/uniprotkb/search?query=gene_exact%3APOLQ%20AND%20organism_id%3A9606%20AND%20reviewed%3Atrue&size=3&format=json",
+      "data": [
+        {
+          "primaryAccession": "O75417",
+          "uniProtkbId": "DPOLQ_HUMAN",
+          "entryType": "UniProtKB reviewed (Swiss-Prot)"
+        }
+      ]
+    },
+    "europe_pmc": {
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=POLQ%20AND%20%22interstitial%20cystitis%22&format=json&pageSize=10",
+      "data": {
+        "hit_count": 0,
+        "papers": []
+      }
+    },
+    "mygene": {
+      "url": "https://mygene.info/v3/query?q=symbol%3APOLQ&species=human&size=3",
+      "data": {
+        "total": 1,
+        "hits": [
+          {
+            "_id": "10721",
+            "symbol": "POLQ",
+            "name": "DNA polymerase theta",
+            "taxid": 9606
+          }
+        ]
+      }
+    },
+    "chembl": {
+      "url": "https://www.ebi.ac.uk/chembl/api/data/target/search.json?q=POLQ&limit=20",
+      "data": {
+        "total": 1,
+        "human_targets": [
+          {
+            "target_chembl_id": "CHEMBL6025",
+            "pref_name": "DNA polymerase theta",
+            "organism": "Homo sapiens"
+          }
+        ]
+      }
+    },
+    "hgnc_rest": {
+      "url": "https://rest.genenames.org/fetch/symbol/POLQ",
+      "data": [
+        {
+          "symbol": "POLQ",
+          "hgnc_id": "HGNC:9186",
+          "entrez_id": "10721",
+          "ensembl_gene_id": "ENSG00000051341",
+          "status": "Approved"
+        }
+      ]
+    },
+    "gtex_reference": {
+      "url": "https://gtexportal.org/api/v2/reference/gene?geneId=POLQ",
+      "data": [
+        {
+          "geneSymbol": "POLQ",
+          "geneId": null,
+          "gencodeId": "ENSG00000051341.13",
+          "entrezGeneId": 10721
+        }
+      ]
+    },
+    "reactome": {
+      "url": "https://reactome.org/ContentService/data/mapping/UniProt/O75417/pathways",
+      "data": [
+        {
+          "stId": "R-HSA-5685939",
+          "displayName": "HDR through MMEJ (alt-NHEJ)",
+          "speciesName": "Homo sapiens"
+        }
+      ]
+    }
+  }
+}

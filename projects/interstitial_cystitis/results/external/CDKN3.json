@@ -1,0 +1,121 @@
+{
+  "gene": "CDKN3",
+  "module": "M6_cell_state_g2m",
+  "prereg": "projects/interstitial_cystitis/prereg/ic_p48_module_genesets.json",
+  "retrieved_at_utc": "2026-09-25T19:55:58.091855+00:00",
+  "sources": {
+    "ensembl": {
+      "url": "https://rest.ensembl.org/lookup/symbol/homo_sapiens/CDKN3?content-type=application/json",
+      "data": {
+        "id": "ENSG00000100526",
+        "display_name": "CDKN3",
+        "description": "cyclin dependent kinase inhibitor 3 [Source:HGNC Symbol;Acc:HGNC:1791]",
+        "biotype": "protein_coding",
+        "seq_region_name": "14"
+      }
+    },
+    "uniprot": {
+      "url": "https://rest.uniprot.org/uniprotkb/search?query=gene_exact%3ACDKN3%20AND%20organism_id%3A9606%20AND%20reviewed%3Atrue&size=3&format=json",
+      "data": [
+        {
+          "primaryAccession": "Q00526",
+          "uniProtkbId": "CDK3_HUMAN",
+          "entryType": "UniProtKB reviewed (Swiss-Prot)"
+        },
+        {
+          "primaryAccession": "Q16667",
+          "uniProtkbId": "CDKN3_HUMAN",
+          "entryType": "UniProtKB reviewed (Swiss-Prot)"
+        }
+      ]
+    },
+    "europe_pmc": {
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=CDKN3%20AND%20%22interstitial%20cystitis%22&format=json&pageSize=10",
+      "data": {
+        "hit_count": 0,
+        "papers": []
+      }
+    },
+    "mygene": {
+      "url": "https://mygene.info/v3/query?q=symbol%3ACDKN3&species=human&size=3",
+      "data": {
+        "total": 1,
+        "hits": [
+          {
+            "_id": "1033",
+            "symbol": "CDKN3",
+            "name": "cyclin dependent kinase inhibitor 3",
+            "taxid": 9606
+          }
+        ]
+      }
+    },
+    "chembl": {
+      "url": "https://www.ebi.ac.uk/chembl/api/data/target/search.json?q=CDKN3&limit=20",
+      "data": {
+        "total": 6,
+        "human_targets": [
+          {
+            "target_chembl_id": "CHEMBL4442",
+            "pref_name": "Cyclin-dependent kinase 3",
+            "organism": "Homo sapiens"
+          },
+          {
+            "target_chembl_id": "CHEMBL4523635",
+            "pref_name": "CDK3/Cyclin-E2",
+            "organism": "Homo sapiens"
+          },
+          {
+            "target_chembl_id": "CHEMBL4888443",
+            "pref_name": "Cyclin-dependent kinase 3/Cyclin-C",
+            "organism": "Homo sapiens"
+          },
+          {
+            "target_chembl_id": "CHEMBL3038471",
+            "pref_name": "CDK3/Cyclin E",
+            "organism": "Homo sapiens"
+          },
+          {
+            "target_chembl_id": "CHEMBL2111444",
+            "pref_name": "CDK3/cyclin E",
+            "organism": "Homo sapiens"
+          },
+          {
+            "target_chembl_id": "CHEMBL3559691",
+            "pref_name": "Cyclin-dependent kinase",
+            "organism": "Homo sapiens"
+          }
+        ]
+      }
+    },
+    "hgnc_rest": {
+      "url": "https://rest.genenames.org/fetch/symbol/CDKN3",
+      "data": [
+        {
+          "symbol": "CDKN3",
+          "hgnc_id": "HGNC:1791",
+          "entrez_id": "1033",
+          "ensembl_gene_id": "ENSG00000100526",
+          "status": "Approved"
+        }
+      ]
+    },
+    "gtex_reference": {
+      "url": "https://gtexportal.org/api/v2/reference/gene?geneId=CDKN3",
+      "data": [
+        {
+          "geneSymbol": "CDKN3",
+          "geneId": null,
+          "gencodeId": "ENSG00000100526.19",
+          "entrezGeneId": 1033
+        }
+      ]
+    },
+    "reactome": {
+      "url": "https://reactome.org/ContentService/data/mapping/UniProt/Q00526/pathways",
+      "data": {
+        "error": "HTTP Error 404: Not Found"
+      }
+    }
+  }
+}

@@ -1,0 +1,119 @@
+{
+  "gene": "ATF5",
+  "module": "M6_cell_state_g2m",
+  "prereg": "projects/interstitial_cystitis/prereg/ic_p48_module_genesets.json",
+  "retrieved_at_utc": "2026-09-25T20:25:55.459235+00:00",
+  "sources": {
+    "ensembl": {
+      "url": "https://rest.ensembl.org/lookup/symbol/homo_sapiens/ATF5?content-type=application/json",
+      "data": {
+        "id": "ENSG00000169136",
+        "display_name": "ATF5",
+        "description": "activating transcription factor 5 [Source:HGNC Symbol;Acc:HGNC:790]",
+        "biotype": "protein_coding",
+        "seq_region_name": "19"
+      }
+    },
+    "uniprot": {
+      "url": "https://rest.uniprot.org/uniprotkb/search?query=gene_exact%3AATF5%20AND%20organism_id%3A9606%20AND%20reviewed%3Atrue&size=3&format=json",
+      "data": [
+        {
+          "primaryAccession": "Q9Y2D1",
+          "uniProtkbId": "ATF5_HUMAN",
+          "entryType": "UniProtKB reviewed (Swiss-Prot)"
+        }
+      ]
+    },
+    "europe_pmc": {
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=ATF5%20AND%20%22interstitial%20cystitis%22&format=json&pageSize=10",
+      "data": {
+        "hit_count": 4,
+        "papers": [
+          {
+            "id": "41680842",
+            "title": "Multi-tyrosine kinase inhibitors: exploring immunomodulatory effects on various immune cell types in cancer.",
+            "doi": "10.1186/s12935-025-04141-x",
+            "pubYear": "2026"
+          },
+          {
+            "id": "22567321",
+            "title": "Schizophrenia: a pathogenetic autoimmune disease caused by viruses and pathogens and dependent on genes.",
+            "doi": "10.4061/2011/128318",
+            "pubYear": "2011"
+          },
+          {
+            "id": "PMC11077711",
+            "title": "Proceedings of the 101st Annual Meeting of The Physiological Society of Japan",
+            "doi": null,
+            "pubYear": "2024"
+          },
+          {
+            "id": "PMC7163937",
+            "title": "Poster Sessions",
+            "doi": null,
+            "pubYear": "2014"
+          }
+        ]
+      }
+    },
+    "mygene": {
+      "url": "https://mygene.info/v3/query?q=symbol%3AATF5&species=human&size=3",
+      "data": {
+        "total": 1,
+        "hits": [
+          {
+            "_id": "22809",
+            "symbol": "ATF5",
+            "name": "activating transcription factor 5",
+            "taxid": 9606
+          }
+        ]
+      }
+    },
+    "chembl": {
+      "url": "https://www.ebi.ac.uk/chembl/api/data/target/search.json?q=ATF5&limit=20",
+      "data": {
+        "total": 0,
+        "human_targets": []
+      }
+    },
+    "hgnc_rest": {
+      "url": "https://rest.genenames.org/fetch/symbol/ATF5",
+      "data": [
+        {
+          "symbol": "ATF5",
+          "hgnc_id": "HGNC:790",
+          "entrez_id": "22809",
+          "ensembl_gene_id": "ENSG00000169136",
+          "status": "Approved"
+        }
+      ]
+    },
+    "gtex_reference": {
+      "url": "https://gtexportal.org/api/v2/reference/gene?geneId=ATF5",
+      "data": [
+        {
+          "geneSymbol": "ATF5",
+          "geneId": null,
+          "gencodeId": "ENSG00000169136.10",
+          "entrezGeneId": 22809
+        }
+      ]
+    },
+    "reactome": {
+      "url": "https://reactome.org/ContentService/data/mapping/UniProt/Q9Y2D1/pathways",
+      "data": [
+        {
+          "stId": "R-HSA-9648895",
+          "displayName": "Response of EIF2AK1 (HRI) to heme deficiency",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-9841251",
+          "displayName": "Mitochondrial unfolded protein response (UPRmt)",
+          "speciesName": "Homo sapiens"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,110 @@
+{
+  "gene": "CKS1B",
+  "module": "M6_cell_state_g2m",
+  "prereg": "projects/interstitial_cystitis/prereg/ic_p48_module_genesets.json",
+  "retrieved_at_utc": "2026-09-25T20:22:59.882841+00:00",
+  "sources": {
+    "ensembl": {
+      "url": "https://rest.ensembl.org/lookup/symbol/homo_sapiens/CKS1B?content-type=application/json",
+      "data": {
+        "id": "ENSG00000173207",
+        "display_name": "CKS1B",
+        "description": "CDC28 protein kinase regulatory subunit 1B [Source:HGNC Symbol;Acc:HGNC:19083]",
+        "biotype": "protein_coding",
+        "seq_region_name": "1"
+      }
+    },
+    "uniprot": {
+      "url": "https://rest.uniprot.org/uniprotkb/search?query=gene_exact%3ACKS1B%20AND%20organism_id%3A9606%20AND%20reviewed%3Atrue&size=3&format=json",
+      "data": [
+        {
+          "primaryAccession": "P61024",
+          "uniProtkbId": "CKS1_HUMAN",
+          "entryType": "UniProtKB reviewed (Swiss-Prot)"
+        }
+      ]
+    },
+    "europe_pmc": {
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=CKS1B%20AND%20%22interstitial%20cystitis%22&format=json&pageSize=10",
+      "data": {
+        "hit_count": 0,
+        "papers": []
+      }
+    },
+    "mygene": {
+      "url": "https://mygene.info/v3/query?q=symbol%3ACKS1B&species=human&size=3",
+      "data": {
+        "total": 1,
+        "hits": [
+          {
+            "_id": "1163",
+            "symbol": "CKS1B",
+            "name": "CDC28 protein kinase regulatory subunit 1B",
+            "taxid": 9606
+          }
+        ]
+      }
+    },
+    "chembl": {
+      "url": "https://www.ebi.ac.uk/chembl/api/data/target/search.json?q=CKS1B&limit=20",
+      "data": {
+        "total": 3,
+        "human_targets": [
+          {
+            "target_chembl_id": "CHEMBL3632457",
+            "pref_name": "Cyclin-dependent kinases regulatory subunit 1",
+            "organism": "Homo sapiens"
+          },
+          {
+            "target_chembl_id": "CHEMBL3885558",
+            "pref_name": "Cyclin-dependent kinases regulatory subunit 1/S-phase kinase-associated protein 2",
+            "organism": "Homo sapiens"
+          },
+          {
+            "target_chembl_id": "CHEMBL5482973",
+            "pref_name": "S-phase kinase-associated protein 2/Cyclin-dependent kinases regulatory subunit 1/S-phase kinase-associated protein 1",
+            "organism": "Homo sapiens"
+          }
+        ]
+      }
+    },
+    "hgnc_rest": {
+      "url": "https://rest.genenames.org/fetch/symbol/CKS1B",
+      "data": [
+        {
+          "symbol": "CKS1B",
+          "hgnc_id": "HGNC:19083",
+          "entrez_id": "1163",
+          "ensembl_gene_id": "ENSG00000173207",
+          "status": "Approved"
+        }
+      ]
+    },
+    "gtex_reference": {
+      "url": "https://gtexportal.org/api/v2/reference/gene?geneId=CKS1B",
+      "data": [
+        {
+          "geneSymbol": "CKS1B",
+          "geneId": null,
+          "gencodeId": "ENSG00000173207.12",
+          "entrezGeneId": 1163
+        }
+      ]
+    },
+    "reactome": {
+      "url": "https://reactome.org/ContentService/data/mapping/UniProt/P61024/pathways",
+      "data": [
+        {
+          "stId": "R-HSA-187577",
+          "displayName": "SCF(Skp2)-mediated degradation of p27/p21",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-69231",
+          "displayName": "Cyclin D associated events in G1",
+          "speciesName": "Homo sapiens"
+        }
+      ]
+    }
+  }
+}

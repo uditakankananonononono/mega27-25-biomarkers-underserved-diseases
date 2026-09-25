@@ -1,0 +1,154 @@
+{
+  "gene": "GSPT1",
+  "module": "M6_cell_state_g2m",
+  "prereg": "projects/interstitial_cystitis/prereg/ic_p48_module_genesets.json",
+  "retrieved_at_utc": "2026-09-25T20:22:09.298391+00:00",
+  "sources": {
+    "ensembl": {
+      "url": "https://rest.ensembl.org/lookup/symbol/homo_sapiens/GSPT1?content-type=application/json",
+      "data": {
+        "id": "ENSG00000103342",
+        "display_name": "GSPT1",
+        "description": "G1 to S phase transition 1 [Source:HGNC Symbol;Acc:HGNC:4621]",
+        "biotype": "protein_coding",
+        "seq_region_name": "16"
+      }
+    },
+    "uniprot": {
+      "url": "https://rest.uniprot.org/uniprotkb/search?query=gene_exact%3AGSPT1%20AND%20organism_id%3A9606%20AND%20reviewed%3Atrue&size=3&format=json",
+      "data": [
+        {
+          "primaryAccession": "P15170",
+          "uniProtkbId": "ERF3A_HUMAN",
+          "entryType": "UniProtKB reviewed (Swiss-Prot)"
+        }
+      ]
+    },
+    "europe_pmc": {
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=GSPT1%20AND%20%22interstitial%20cystitis%22&format=json&pageSize=10",
+      "data": {
+        "hit_count": 3,
+        "papers": [
+          {
+            "id": "27032552",
+            "title": "Update on the Pathology and Diagnosis of Interstitial Cystitis/Bladder Pain Syndrome: A Review.",
+            "doi": "10.5213/inj.1632522.261",
+            "pubYear": "2016"
+          },
+          {
+            "id": "22738385",
+            "title": "Integration analysis of quantitative proteomics and transcriptomics data identifies potential targets of frizzled-8 protein-related antiproliferative factor in vivo.",
+            "doi": "10.1111/j.1464-410x.2012.11299.x",
+            "pubYear": "2012"
+          },
+          {
+            "id": "PMC10902613",
+            "title": "Abstracts",
+            "doi": null,
+            "pubYear": "2024"
+          }
+        ]
+      }
+    },
+    "mygene": {
+      "url": "https://mygene.info/v3/query?q=symbol%3AGSPT1&species=human&size=3",
+      "data": {
+        "total": 1,
+        "hits": [
+          {
+            "_id": "2935",
+            "symbol": "GSPT1",
+            "name": "G1 to S phase transition 1",
+            "taxid": 9606
+          }
+        ]
+      }
+    },
+    "chembl": {
+      "url": "https://www.ebi.ac.uk/chembl/api/data/target/search.json?q=GSPT1&limit=20",
+      "data": {
+        "total": 7,
+        "human_targets": [
+          {
+            "target_chembl_id": "CHEMBL4523593",
+            "pref_name": "Eukaryotic peptide chain release factor GTP-binding subunit ERF3A",
+            "organism": "Homo sapiens"
+          },
+          {
+            "target_chembl_id": "CHEMBL4523720",
+            "pref_name": "GSPT1/E3 ubiquitin-protein ligase Mdm2",
+            "organism": "Homo sapiens"
+          },
+          {
+            "target_chembl_id": "CHEMBL4296168",
+            "pref_name": "Protein cereblon/Eukaryotic peptide chain release factor GTP-binding subunit ERF3A",
+            "organism": "Homo sapiens"
+          },
+          {
+            "target_chembl_id": "CHEMBL4523714",
+            "pref_name": "Protein cereblon/Eukaryotic peptide chain release factor GTP-binding subunit ERF3A/Cullin-4A",
+            "organism": "Homo sapiens"
+          },
+          {
+            "target_chembl_id": "CHEMBL5169066",
+            "pref_name": "von Hippel-Lindau disease tumor suppressor/Eukaryotic peptide chain release factor GTP-binding subunit ERF3A",
+            "organism": "Homo sapiens"
+          },
+          {
+            "target_chembl_id": "CHEMBL4524003",
+            "pref_name": "Protein cereblon/Eukaryotic peptide chain release factor GTP-binding subunit ERF3A/DNA damage-binding protein 1/Cullin-4A",
+            "organism": "Homo sapiens"
+          }
+        ]
+      }
+    },
+    "hgnc_rest": {
+      "url": "https://rest.genenames.org/fetch/symbol/GSPT1",
+      "data": [
+        {
+          "symbol": "GSPT1",
+          "hgnc_id": "HGNC:4621",
+          "entrez_id": "2935",
+          "ensembl_gene_id": "ENSG00000103342",
+          "status": "Approved"
+        }
+      ]
+    },
+    "gtex_reference": {
+      "url": "https://gtexportal.org/api/v2/reference/gene?geneId=GSPT1",
+      "data": [
+        {
+          "geneSymbol": "GSPT1",
+          "geneId": null,
+          "gencodeId": "ENSG00000103342.12",
+          "entrezGeneId": 2935
+        }
+      ]
+    },
+    "reactome": {
+      "url": "https://reactome.org/ContentService/data/mapping/UniProt/P15170/pathways",
+      "data": [
+        {
+          "stId": "R-HSA-72764",
+          "displayName": "Eukaryotic Translation Termination",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-9010553",
+          "displayName": "Regulation of expression of SLITs and ROBOs",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-975956",
+          "displayName": "Nonsense Mediated Decay (NMD) independent of the Exon Junction Complex (EJC)",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-975957",
+          "displayName": "Nonsense Mediated Decay (NMD) enhanced by the Exon Junction Complex (EJC)",
+          "speciesName": "Homo sapiens"
+        }
+      ]
+    }
+  }
+}

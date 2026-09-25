@@ -1,0 +1,236 @@
+{
+  "gene": "CDKN1B",
+  "module": "M6_cell_state_g2m",
+  "prereg": "projects/interstitial_cystitis/prereg/ic_p48_module_genesets.json",
+  "retrieved_at_utc": "2026-09-25T20:19:34.290167+00:00",
+  "sources": {
+    "ensembl": {
+      "url": "https://rest.ensembl.org/lookup/symbol/homo_sapiens/CDKN1B?content-type=application/json",
+      "data": {
+        "id": "ENSG00000111276",
+        "display_name": "CDKN1B",
+        "description": "cyclin dependent kinase inhibitor 1B [Source:HGNC Symbol;Acc:HGNC:1785]",
+        "biotype": "protein_coding",
+        "seq_region_name": "12"
+      }
+    },
+    "uniprot": {
+      "url": "https://rest.uniprot.org/uniprotkb/search?query=gene_exact%3ACDKN1B%20AND%20organism_id%3A9606%20AND%20reviewed%3Atrue&size=3&format=json",
+      "data": [
+        {
+          "primaryAccession": "P46527",
+          "uniProtkbId": "CDN1B_HUMAN",
+          "entryType": "UniProtKB reviewed (Swiss-Prot)"
+        }
+      ]
+    },
+    "europe_pmc": {
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=CDKN1B%20AND%20%22interstitial%20cystitis%22&format=json&pageSize=10",
+      "data": {
+        "hit_count": 10,
+        "papers": [
+          {
+            "id": "29729649",
+            "title": "Oncosuppressor protein p53 and cyclin-dependent kinase inhibitor p21 regulate interstitial cystitis associated gene expression.",
+            "doi": "10.1016/j.cyto.2018.04.029",
+            "pubYear": "2018"
+          },
+          {
+            "id": "36944905",
+            "title": "A network map of cytoskeleton-associated protein 4 (CKAP4) mediated signaling pathway in cancer.",
+            "doi": "10.1007/s12079-023-00739-w",
+            "pubYear": "2023"
+          },
+          {
+            "id": "32878054",
+            "title": "The Crosstalk between Prostate Cancer and Microbiota Inflammation: Nutraceutical Products Are Useful to Balance This Interplay?",
+            "doi": "10.3390/nu12092648",
+            "pubYear": "2020"
+          },
+          {
+            "id": "29298465",
+            "title": "Near-Normalized Gene Expression Profiles in Bladder With Detrusor Overactivity in Rats With Bladder Outlet Obstruction After Deobstruction.",
+            "doi": "10.5213/inj.1732774.387",
+            "pubYear": "2017"
+          },
+          {
+            "id": "30294592",
+            "title": "Gene Expression Signatures Can Aid Diagnosis of Sexually Transmitted Infection-Induced Endometritis in Women.",
+            "doi": "10.3389/fcimb.2018.00307",
+            "pubYear": "2018"
+          },
+          {
+            "id": "32438606",
+            "title": "Exosomal Long Non-Coding RNAs in Lung Diseases.",
+            "doi": "10.3390/ijms21103580",
+            "pubYear": "2020"
+          },
+          {
+            "id": "26879937",
+            "title": "Elevated urinary urea by high-protein diet could be one of the inducements of bladder disorders.",
+            "doi": "10.1186/s12967-016-0809-9",
+            "pubYear": "2016"
+          },
+          {
+            "id": "19454350",
+            "title": "Bone morphogenetic protein 4 signaling regulates epithelial renewal in the urinary tract in response to uropathogenic infection.",
+            "doi": "10.1016/j.chom.2009.04.005",
+            "pubYear": "2009"
+          },
+          {
+            "id": "22772769",
+            "title": "A compulsory examination in pathology: redundant or necessary?",
+            "doi": "10.1007/s00428-012-1278-z",
+            "pubYear": "2012"
+          },
+          {
+            "id": "PMC7104427",
+            "title": "Abstracts",
+            "doi": null,
+            "pubYear": "2018"
+          }
+        ]
+      }
+    },
+    "mygene": {
+      "url": "https://mygene.info/v3/query?q=symbol%3ACDKN1B&species=human&size=3",
+      "data": {
+        "total": 1,
+        "hits": [
+          {
+            "_id": "1027",
+            "symbol": "CDKN1B",
+            "name": "cyclin dependent kinase inhibitor 1B",
+            "taxid": 9606
+          }
+        ]
+      }
+    },
+    "chembl": {
+      "url": "https://www.ebi.ac.uk/chembl/api/data/target/search.json?q=CDKN1B&limit=20",
+      "data": {
+        "total": 2,
+        "human_targets": [
+          {
+            "target_chembl_id": "CHEMBL3758070",
+            "pref_name": "Cyclin-dependent kinase inhibitor 1B",
+            "organism": "Homo sapiens"
+          },
+          {
+            "target_chembl_id": "CHEMBL3885557",
+            "pref_name": "Cyclin-dependent kinase inhibitor 1B/S-phase kinase-associated protein 2",
+            "organism": "Homo sapiens"
+          }
+        ]
+      }
+    },
+    "hgnc_rest": {
+      "url": "https://rest.genenames.org/fetch/symbol/CDKN1B",
+      "data": [
+        {
+          "symbol": "CDKN1B",
+          "hgnc_id": "HGNC:1785",
+          "entrez_id": "1027",
+          "ensembl_gene_id": "ENSG00000111276",
+          "status": "Approved"
+        }
+      ]
+    },
+    "gtex_reference": {
+      "url": "https://gtexportal.org/api/v2/reference/gene?geneId=CDKN1B",
+      "data": [
+        {
+          "geneSymbol": "CDKN1B",
+          "geneId": null,
+          "gencodeId": "ENSG00000111276.10",
+          "entrezGeneId": 1027
+        }
+      ]
+    },
+    "reactome": {
+      "url": "https://reactome.org/ContentService/data/mapping/UniProt/P46527/pathways",
+      "data": [
+        {
+          "stId": "R-HSA-187577",
+          "displayName": "SCF(Skp2)-mediated degradation of p27/p21",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-198323",
+          "displayName": "AKT phosphorylates targets in the cytosol",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-2559582",
+          "displayName": "Senescence-Associated Secretory Phenotype (SASP)",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-2559586",
+          "displayName": "DNA Damage/Telomere Stress Induced Senescence",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-5625900",
+          "displayName": "RHO GTPases activate CIT",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-5674400",
+          "displayName": "Constitutive Signaling by AKT1 E17K in Cancer",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-6804116",
+          "displayName": "TP53 Regulates Transcription of Genes Involved in G1 Cell Cycle Arrest",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-69202",
+          "displayName": "Cyclin E associated events during G1/S transition ",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-69231",
+          "displayName": "Cyclin D associated events in G1",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-69563",
+          "displayName": "p53-Dependent G1 DNA Damage Response",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-69656",
+          "displayName": "Cyclin A:Cdk2-associated events at S phase entry",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-8849470",
+          "displayName": "PTK6 Regulates Cell Cycle",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-9607240",
+          "displayName": "FLT3 Signaling",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-9617828",
+          "displayName": "FOXO-mediated transcription of cell cycle genes",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-9634638",
+          "displayName": "Estrogen-dependent nuclear events downstream of ESR-membrane signaling",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-9661069",
+          "displayName": "Defective binding of RB1 mutants to E2F1,(E2F2, E2F3)",
+          "speciesName": "Homo sapiens"
+        }
+      ]
+    }
+  }
+}

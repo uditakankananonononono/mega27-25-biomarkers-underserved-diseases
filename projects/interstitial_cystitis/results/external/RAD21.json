@@ -1,0 +1,150 @@
+{
+  "gene": "RAD21",
+  "module": "M6_cell_state_g2m",
+  "prereg": "projects/interstitial_cystitis/prereg/ic_p48_module_genesets.json",
+  "retrieved_at_utc": "2026-09-25T20:21:09.970919+00:00",
+  "sources": {
+    "ensembl": {
+      "url": "https://rest.ensembl.org/lookup/symbol/homo_sapiens/RAD21?content-type=application/json",
+      "data": {
+        "id": "ENSG00000164754",
+        "display_name": "RAD21",
+        "description": "RAD21 cohesin complex component [Source:HGNC Symbol;Acc:HGNC:9811]",
+        "biotype": "protein_coding",
+        "seq_region_name": "8"
+      }
+    },
+    "uniprot": {
+      "url": "https://rest.uniprot.org/uniprotkb/search?query=gene_exact%3ARAD21%20AND%20organism_id%3A9606%20AND%20reviewed%3Atrue&size=3&format=json",
+      "data": [
+        {
+          "primaryAccession": "O60216",
+          "uniProtkbId": "RAD21_HUMAN",
+          "entryType": "UniProtKB reviewed (Swiss-Prot)"
+        }
+      ]
+    },
+    "europe_pmc": {
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=RAD21%20AND%20%22interstitial%20cystitis%22&format=json&pageSize=10",
+      "data": {
+        "hit_count": 5,
+        "papers": [
+          {
+            "id": "33538002",
+            "title": "Single-cell transcriptomes of mouse bladder urothelium uncover novel cell type markers and urothelial differentiation characteristics.",
+            "doi": "10.1111/cpr.13007",
+            "pubYear": "2021"
+          },
+          {
+            "id": "41052277",
+            "title": "Navigating the 3D genome at single-cell resolution: techniques, computation, and mechanistic landscapes.",
+            "doi": "10.1093/bib/bbaf520",
+            "pubYear": "2025"
+          },
+          {
+            "id": "36439482",
+            "title": "Identification of a naturally-occurring canine model for early detection and intervention research in high grade urothelial carcinoma.",
+            "doi": "10.3389/fonc.2022.1011969",
+            "pubYear": "2022"
+          },
+          {
+            "id": "PMC10902613",
+            "title": "Abstracts",
+            "doi": null,
+            "pubYear": "2024"
+          },
+          {
+            "id": "PMC4669991",
+            "title": "UEG Week 2015 Poster Presentations",
+            "doi": null,
+            "pubYear": "2015"
+          }
+        ]
+      }
+    },
+    "mygene": {
+      "url": "https://mygene.info/v3/query?q=symbol%3ARAD21&species=human&size=3",
+      "data": {
+        "total": 1,
+        "hits": [
+          {
+            "_id": "5885",
+            "symbol": "RAD21",
+            "name": "RAD21 cohesin complex component",
+            "taxid": 9606
+          }
+        ]
+      }
+    },
+    "chembl": {
+      "url": "https://www.ebi.ac.uk/chembl/api/data/target/search.json?q=RAD21&limit=20",
+      "data": {
+        "total": 0,
+        "human_targets": []
+      }
+    },
+    "hgnc_rest": {
+      "url": "https://rest.genenames.org/fetch/symbol/RAD21",
+      "data": [
+        {
+          "symbol": "RAD21",
+          "hgnc_id": "HGNC:9811",
+          "entrez_id": "5885",
+          "ensembl_gene_id": "ENSG00000164754",
+          "status": "Approved"
+        }
+      ]
+    },
+    "gtex_reference": {
+      "url": "https://gtexportal.org/api/v2/reference/gene?geneId=RAD21",
+      "data": [
+        {
+          "geneSymbol": "RAD21",
+          "geneId": null,
+          "gencodeId": "ENSG00000164754.14",
+          "entrezGeneId": 5885
+        }
+      ]
+    },
+    "reactome": {
+      "url": "https://reactome.org/ContentService/data/mapping/UniProt/O60216/pathways",
+      "data": [
+        {
+          "stId": "R-HSA-1221632",
+          "displayName": "Meiotic synapsis",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-2467813",
+          "displayName": "Separation of Sister Chromatids",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-2468052",
+          "displayName": "Establishment of Sister Chromatid Cohesion",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-2470946",
+          "displayName": "Cohesin Loading onto Chromatin",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-2500257",
+          "displayName": "Resolution of Sister Chromatid Cohesion",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-3108214",
+          "displayName": "SUMOylation of DNA damage response and repair proteins",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-9018519",
+          "displayName": "Estrogen-dependent gene expression",
+          "speciesName": "Homo sapiens"
+        }
+      ]
+    }
+  }
+}

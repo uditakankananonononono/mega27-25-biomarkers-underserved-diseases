@@ -1,0 +1,201 @@
+{
+  "gene": "PML",
+  "module": "M6_cell_state_g2m",
+  "prereg": "projects/interstitial_cystitis/prereg/ic_p48_module_genesets.json",
+  "retrieved_at_utc": "2026-09-25T20:26:48.957382+00:00",
+  "sources": {
+    "ensembl": {
+      "url": "https://rest.ensembl.org/lookup/symbol/homo_sapiens/PML?content-type=application/json",
+      "data": {
+        "id": "ENSG00000140464",
+        "display_name": "PML",
+        "description": "PML nuclear body scaffold [Source:HGNC Symbol;Acc:HGNC:9113]",
+        "biotype": "protein_coding",
+        "seq_region_name": "15"
+      }
+    },
+    "uniprot": {
+      "url": "https://rest.uniprot.org/uniprotkb/search?query=gene_exact%3APML%20AND%20organism_id%3A9606%20AND%20reviewed%3Atrue&size=3&format=json",
+      "data": [
+        {
+          "primaryAccession": "P29590",
+          "uniProtkbId": "PML_HUMAN",
+          "entryType": "UniProtKB reviewed (Swiss-Prot)"
+        }
+      ]
+    },
+    "europe_pmc": {
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=PML%20AND%20%22interstitial%20cystitis%22&format=json&pageSize=10",
+      "data": {
+        "hit_count": 24,
+        "papers": [
+          {
+            "id": "40143330",
+            "title": "Polyomaviruses After Allogeneic Hematopoietic Stem Cell Transplantation.",
+            "doi": "10.3390/v17030403",
+            "pubYear": "2025"
+          },
+          {
+            "id": "39744265",
+            "title": "Systemic Medications and Their Ocular Side Effects.",
+            "doi": "10.7759/cureus.74976",
+            "pubYear": "2024"
+          },
+          {
+            "id": "29091757",
+            "title": "Infectious Entry and Neutralization of Pathogenic JC Polyomaviruses.",
+            "doi": "10.1016/j.celrep.2017.10.027",
+            "pubYear": "2017"
+          },
+          {
+            "id": "26642800",
+            "title": "Complementary therapies for bladder pain syndrome: a systematic review.",
+            "doi": "10.1007/s00192-015-2886-3",
+            "pubYear": "2016"
+          },
+          {
+            "id": "28893943",
+            "title": "Merkel cell polyomavirus and Merkel cell carcinoma.",
+            "doi": "10.1098/rstb.2016.0276",
+            "pubYear": "2017"
+          },
+          {
+            "id": "34674717",
+            "title": "Huanglianjiedu Decoction as an effective treatment for oral squamous cell carcinoma based on network pharmacology and experimental validation.",
+            "doi": "10.1186/s12935-021-02201-6",
+            "pubYear": "2021"
+          },
+          {
+            "id": "30352098",
+            "title": "Seroprevalence of fourteen human polyomaviruses determined in blood donors.",
+            "doi": "10.1371/journal.pone.0206273",
+            "pubYear": "2018"
+          },
+          {
+            "id": "32532082",
+            "title": "Gene Expression Profiling in Fibromyalgia Indicates an Autoimmune Origin of the Disease and Opens New Avenues for Targeted Therapy.",
+            "doi": "10.3390/jcm9061814",
+            "pubYear": "2020"
+          },
+          {
+            "id": "33983615",
+            "title": "Targeting Sphingosine-1-Phosphate Signaling in Immune-Mediated Diseases: Beyond Multiple Sclerosis.",
+            "doi": "10.1007/s40265-021-01528-8",
+            "pubYear": "2021"
+          },
+          {
+            "id": "16824213",
+            "title": "WHO systematic review of prevalence of chronic pelvic pain: a neglected reproductive health morbidity.",
+            "doi": "10.1186/1471-2458-6-177",
+            "pubYear": "2006"
+          }
+        ]
+      }
+    },
+    "mygene": {
+      "url": "https://mygene.info/v3/query?q=symbol%3APML&species=human&size=3",
+      "data": {
+        "total": 1,
+        "hits": [
+          {
+            "_id": "5371",
+            "symbol": "PML",
+            "name": "PML nuclear body scaffold",
+            "taxid": 9606
+          }
+        ]
+      }
+    },
+    "chembl": {
+      "url": "https://www.ebi.ac.uk/chembl/api/data/target/search.json?q=PML&limit=20",
+      "data": {
+        "total": 2,
+        "human_targets": [
+          {
+            "target_chembl_id": "CHEMBL6067625",
+            "pref_name": "Protein PML",
+            "organism": "Homo sapiens"
+          },
+          {
+            "target_chembl_id": "CHEMBL5465238",
+            "pref_name": "PML-RARalpha",
+            "organism": "Homo sapiens"
+          }
+        ]
+      }
+    },
+    "hgnc_rest": {
+      "url": "https://rest.genenames.org/fetch/symbol/PML",
+      "data": [
+        {
+          "symbol": "PML",
+          "hgnc_id": "HGNC:9113",
+          "entrez_id": "5371",
+          "ensembl_gene_id": "ENSG00000140464",
+          "status": "Approved"
+        }
+      ]
+    },
+    "gtex_reference": {
+      "url": "https://gtexportal.org/api/v2/reference/gene?geneId=PML",
+      "data": [
+        {
+          "geneSymbol": "PML",
+          "geneId": null,
+          "gencodeId": "ENSG00000140464.19",
+          "entrezGeneId": 5371
+        }
+      ]
+    },
+    "reactome": {
+      "url": "https://reactome.org/ContentService/data/mapping/UniProt/P29590/pathways",
+      "data": [
+        {
+          "stId": "R-HSA-3108214",
+          "displayName": "SUMOylation of DNA damage response and repair proteins",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-3232142",
+          "displayName": "SUMOylation of ubiquitinylation proteins",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-6804758",
+          "displayName": "Regulation of TP53 Activity through Acetylation",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-877300",
+          "displayName": "Interferon gamma signaling",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-8934593",
+          "displayName": "Regulation of RUNX1 Expression and Activity",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-8948747",
+          "displayName": "Regulation of PTEN localization",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-9609690",
+          "displayName": "HCMV Early Events",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-9616222",
+          "displayName": "Transcriptional regulation of granulopoiesis",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-9920588",
+          "displayName": "Dengue virus activates/modulates innate and adaptive immune responses",
+          "speciesName": "Homo sapiens"
+        }
+      ]
+    }
+  }
+}

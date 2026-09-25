@@ -1,0 +1,144 @@
+{
+  "gene": "MCM5",
+  "module": "M6_cell_state_g2m",
+  "prereg": "projects/interstitial_cystitis/prereg/ic_p48_module_genesets.json",
+  "retrieved_at_utc": "2026-09-25T20:17:41.051125+00:00",
+  "sources": {
+    "ensembl": {
+      "url": "https://rest.ensembl.org/lookup/symbol/homo_sapiens/MCM5?content-type=application/json",
+      "data": {
+        "id": "ENSG00000100297",
+        "display_name": "MCM5",
+        "description": "minichromosome maintenance complex component 5 [Source:HGNC Symbol;Acc:HGNC:6948]",
+        "biotype": "protein_coding",
+        "seq_region_name": "22"
+      }
+    },
+    "uniprot": {
+      "url": "https://rest.uniprot.org/uniprotkb/search?query=gene_exact%3AMCM5%20AND%20organism_id%3A9606%20AND%20reviewed%3Atrue&size=3&format=json",
+      "data": [
+        {
+          "primaryAccession": "P33992",
+          "uniProtkbId": "MCM5_HUMAN",
+          "entryType": "UniProtKB reviewed (Swiss-Prot)"
+        }
+      ]
+    },
+    "europe_pmc": {
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=MCM5%20AND%20%22interstitial%20cystitis%22&format=json&pageSize=10",
+      "data": {
+        "hit_count": 3,
+        "papers": [
+          {
+            "id": "40029246",
+            "title": "A Polygenic Risk Score for Late Bladder Toxicity Following Radiotherapy for Non-Metastatic Prostate Cancer.",
+            "doi": "10.1158/1055-9965.epi-24-1228",
+            "pubYear": "2025"
+          },
+          {
+            "id": "39678505",
+            "title": "Bladder cancer biomarkers: current approaches and future directions.",
+            "doi": "10.3389/fonc.2024.1453278",
+            "pubYear": "2024"
+          },
+          {
+            "id": "30443561",
+            "title": "A Festschrift in Honor of Edward M. Messing, MD, FACS.",
+            "doi": "10.3233/blc-189037",
+            "pubYear": "2018"
+          }
+        ]
+      }
+    },
+    "mygene": {
+      "url": "https://mygene.info/v3/query?q=symbol%3AMCM5&species=human&size=3",
+      "data": {
+        "total": 1,
+        "hits": [
+          {
+            "_id": "4174",
+            "symbol": "MCM5",
+            "name": "minichromosome maintenance complex component 5",
+            "taxid": 9606
+          }
+        ]
+      }
+    },
+    "chembl": {
+      "url": "https://www.ebi.ac.uk/chembl/api/data/target/search.json?q=MCM5&limit=20",
+      "data": {
+        "total": 1,
+        "human_targets": [
+          {
+            "target_chembl_id": "CHEMBL4630815",
+            "pref_name": "DNA replication licensing factor MCM5",
+            "organism": "Homo sapiens"
+          }
+        ]
+      }
+    },
+    "hgnc_rest": {
+      "url": "https://rest.genenames.org/fetch/symbol/MCM5",
+      "data": [
+        {
+          "symbol": "MCM5",
+          "hgnc_id": "HGNC:6948",
+          "entrez_id": "4174",
+          "ensembl_gene_id": "ENSG00000100297",
+          "status": "Approved"
+        }
+      ]
+    },
+    "gtex_reference": {
+      "url": "https://gtexportal.org/api/v2/reference/gene?geneId=MCM5",
+      "data": [
+        {
+          "geneSymbol": "MCM5",
+          "geneId": null,
+          "gencodeId": "ENSG00000100297.15",
+          "entrezGeneId": 4174
+        }
+      ]
+    },
+    "reactome": {
+      "url": "https://reactome.org/ContentService/data/mapping/UniProt/P33992/pathways",
+      "data": [
+        {
+          "stId": "R-HSA-176187",
+          "displayName": "Activation of ATR in response to replication stress",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-176974",
+          "displayName": "Unwinding of DNA",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-68867",
+          "displayName": "Assembly of the pre-replicative complex",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-68949",
+          "displayName": "Orc1 removal from chromatin",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-68962",
+          "displayName": "Activation of the pre-replicative complex",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-69052",
+          "displayName": "Switching of origins to a post-replicative state",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-9825895",
+          "displayName": "Regulation of MITF-M-dependent genes involved in DNA replication, damage repair and senescence",
+          "speciesName": "Homo sapiens"
+        }
+      ]
+    }
+  }
+}

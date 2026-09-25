@@ -1,0 +1,108 @@
+{
+  "gene": "YTHDC1",
+  "module": "M6_cell_state_g2m",
+  "prereg": "projects/interstitial_cystitis/prereg/ic_p48_module_genesets.json",
+  "retrieved_at_utc": "2026-09-25T20:29:26.496850+00:00",
+  "sources": {
+    "ensembl": {
+      "url": "https://rest.ensembl.org/lookup/symbol/homo_sapiens/YTHDC1?content-type=application/json",
+      "data": {
+        "id": "ENSG00000083896",
+        "display_name": "YTHDC1",
+        "description": "YTH N6-methyladenosine RNA binding protein C1 [Source:HGNC Symbol;Acc:HGNC:30626]",
+        "biotype": "protein_coding",
+        "seq_region_name": "4"
+      }
+    },
+    "uniprot": {
+      "url": "https://rest.uniprot.org/uniprotkb/search?query=gene_exact%3AYTHDC1%20AND%20organism_id%3A9606%20AND%20reviewed%3Atrue&size=3&format=json",
+      "data": [
+        {
+          "primaryAccession": "Q96MU7",
+          "uniProtkbId": "YTDC1_HUMAN",
+          "entryType": "UniProtKB reviewed (Swiss-Prot)"
+        }
+      ]
+    },
+    "europe_pmc": {
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=YTHDC1%20AND%20%22interstitial%20cystitis%22&format=json&pageSize=10",
+      "data": {
+        "hit_count": 2,
+        "papers": [
+          {
+            "id": "PMC9931621",
+            "title": "N1-methyladenosine formation, gene regulation, biological functions, and clinical relevance",
+            "doi": null,
+            "pubYear": "2022"
+          },
+          {
+            "id": "PMC10902613",
+            "title": "Abstracts",
+            "doi": null,
+            "pubYear": "2024"
+          }
+        ]
+      }
+    },
+    "mygene": {
+      "url": "https://mygene.info/v3/query?q=symbol%3AYTHDC1&species=human&size=3",
+      "data": {
+        "total": 1,
+        "hits": [
+          {
+            "_id": "91746",
+            "symbol": "YTHDC1",
+            "name": "YTH N6-methyladenosine RNA binding protein C1",
+            "taxid": 9606
+          }
+        ]
+      }
+    },
+    "chembl": {
+      "url": "https://www.ebi.ac.uk/chembl/api/data/target/search.json?q=YTHDC1&limit=20",
+      "data": {
+        "total": 1,
+        "human_targets": [
+          {
+            "target_chembl_id": "CHEMBL5169187",
+            "pref_name": "YTH domain-containing protein 1",
+            "organism": "Homo sapiens"
+          }
+        ]
+      }
+    },
+    "hgnc_rest": {
+      "url": "https://rest.genenames.org/fetch/symbol/YTHDC1",
+      "data": [
+        {
+          "symbol": "YTHDC1",
+          "hgnc_id": "HGNC:30626",
+          "entrez_id": "91746",
+          "ensembl_gene_id": "ENSG00000083896",
+          "status": "Approved"
+        }
+      ]
+    },
+    "gtex_reference": {
+      "url": "https://gtexportal.org/api/v2/reference/gene?geneId=YTHDC1",
+      "data": [
+        {
+          "geneSymbol": "YTHDC1",
+          "geneId": null,
+          "gencodeId": "ENSG00000083896.12",
+          "entrezGeneId": 91746
+        }
+      ]
+    },
+    "reactome": {
+      "url": "https://reactome.org/ContentService/data/mapping/UniProt/Q96MU7/pathways",
+      "data": [
+        {
+          "stId": "R-HSA-9930044",
+          "displayName": "Nuclear RNA decay",
+          "speciesName": "Homo sapiens"
+        }
+      ]
+    }
+  }
+}

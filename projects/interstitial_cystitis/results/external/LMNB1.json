@@ -1,0 +1,153 @@
+{
+  "gene": "LMNB1",
+  "module": "M6_cell_state_g2m",
+  "prereg": "projects/interstitial_cystitis/prereg/ic_p48_module_genesets.json",
+  "retrieved_at_utc": "2026-09-25T20:17:51.699584+00:00",
+  "sources": {
+    "ensembl": {
+      "url": "https://rest.ensembl.org/lookup/symbol/homo_sapiens/LMNB1?content-type=application/json",
+      "data": {
+        "id": "ENSG00000113368",
+        "display_name": "LMNB1",
+        "description": "lamin B1 [Source:HGNC Symbol;Acc:HGNC:6637]",
+        "biotype": "protein_coding",
+        "seq_region_name": "5"
+      }
+    },
+    "uniprot": {
+      "url": "https://rest.uniprot.org/uniprotkb/search?query=gene_exact%3ALMNB1%20AND%20organism_id%3A9606%20AND%20reviewed%3Atrue&size=3&format=json",
+      "data": [
+        {
+          "primaryAccession": "P20700",
+          "uniProtkbId": "LMNB1_HUMAN",
+          "entryType": "UniProtKB reviewed (Swiss-Prot)"
+        }
+      ]
+    },
+    "europe_pmc": {
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=LMNB1%20AND%20%22interstitial%20cystitis%22&format=json&pageSize=10",
+      "data": {
+        "hit_count": 2,
+        "papers": [
+          {
+            "id": "30646511",
+            "title": "The Role of Dimethyl Sulfoxide (DMSO) in Gene Expression Modulation and Glycosaminoglycan Metabolism in Lysosomal Storage Disorders on an Example of Mucopolysaccharidosis.",
+            "doi": "10.3390/ijms20020304",
+            "pubYear": "2019"
+          },
+          {
+            "id": "37476290",
+            "title": "The 27th Scientific Conference of the Society on NeuroImmune Pharmacology: New Delhi, India, March 15-18, 2023.",
+            "doi": "10.1515/nipt-2023-0006",
+            "pubYear": "2023"
+          }
+        ]
+      }
+    },
+    "mygene": {
+      "url": "https://mygene.info/v3/query?q=symbol%3ALMNB1&species=human&size=3",
+      "data": {
+        "total": 1,
+        "hits": [
+          {
+            "_id": "4001",
+            "symbol": "LMNB1",
+            "name": "lamin B1",
+            "taxid": 9606
+          }
+        ]
+      }
+    },
+    "chembl": {
+      "url": "https://www.ebi.ac.uk/chembl/api/data/target/search.json?q=LMNB1&limit=20",
+      "data": {
+        "total": 1,
+        "human_targets": [
+          {
+            "target_chembl_id": "CHEMBL5725026",
+            "pref_name": "Lamin-B1",
+            "organism": "Homo sapiens"
+          }
+        ]
+      }
+    },
+    "hgnc_rest": {
+      "url": "https://rest.genenames.org/fetch/symbol/LMNB1",
+      "data": [
+        {
+          "symbol": "LMNB1",
+          "hgnc_id": "HGNC:6637",
+          "entrez_id": "4001",
+          "ensembl_gene_id": "ENSG00000113368",
+          "status": "Approved"
+        }
+      ]
+    },
+    "gtex_reference": {
+      "url": "https://gtexportal.org/api/v2/reference/gene?geneId=LMNB1",
+      "data": [
+        {
+          "geneSymbol": "LMNB1",
+          "geneId": null,
+          "gencodeId": "ENSG00000113368.11",
+          "entrezGeneId": 4001
+        }
+      ]
+    },
+    "reactome": {
+      "url": "https://reactome.org/ContentService/data/mapping/UniProt/P20700/pathways",
+      "data": [
+        {
+          "stId": "R-HSA-1221632",
+          "displayName": "Meiotic synapsis",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-2559584",
+          "displayName": "Formation of Senescence-Associated Heterochromatin Foci (SAHF)",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-2980766",
+          "displayName": "Nuclear Envelope Breakdown",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-2995383",
+          "displayName": "Initiation of Nuclear Envelope (NE) Reformation",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-352238",
+          "displayName": "Breakdown of the nuclear lamina",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-4419969",
+          "displayName": "Depolymerization of the Nuclear Lamina",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-8862803",
+          "displayName": "Deregulated CDK5 triggers multiple neurodegenerative pathways in Alzheimer's disease models",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-8950505",
+          "displayName": "Gene and protein expression by JAK-STAT signaling after Interleukin-12 stimulation",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-9013405",
+          "displayName": "RHOD GTPase cycle",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-9035034",
+          "displayName": "RHOF GTPase cycle",
+          "speciesName": "Homo sapiens"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,266 @@
+{
+  "gene": "TGFB1",
+  "module": "M6_cell_state_g2m",
+  "prereg": "projects/interstitial_cystitis/prereg/ic_p48_module_genesets.json",
+  "retrieved_at_utc": "2026-09-25T20:29:50.172032+00:00",
+  "sources": {
+    "ensembl": {
+      "url": "https://rest.ensembl.org/lookup/symbol/homo_sapiens/TGFB1?content-type=application/json",
+      "data": {
+        "id": "ENSG00000105329",
+        "display_name": "TGFB1",
+        "description": "transforming growth factor beta 1 [Source:HGNC Symbol;Acc:HGNC:11766]",
+        "biotype": "protein_coding",
+        "seq_region_name": "19"
+      }
+    },
+    "uniprot": {
+      "url": "https://rest.uniprot.org/uniprotkb/search?query=gene_exact%3ATGFB1%20AND%20organism_id%3A9606%20AND%20reviewed%3Atrue&size=3&format=json",
+      "data": [
+        {
+          "primaryAccession": "P01137",
+          "uniProtkbId": "TGFB1_HUMAN",
+          "entryType": "UniProtKB reviewed (Swiss-Prot)"
+        }
+      ]
+    },
+    "europe_pmc": {
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=TGFB1%20AND%20%22interstitial%20cystitis%22&format=json&pageSize=10",
+      "data": {
+        "hit_count": 42,
+        "papers": [
+          {
+            "id": "41174026",
+            "title": "Molecular characterization of chronic inflammatory diseases of the urinary bladder based on next-generation RNA sequencing and digital image analysis.",
+            "doi": "10.1038/s41598-025-22053-8",
+            "pubYear": "2025"
+          },
+          {
+            "id": "40983604",
+            "title": "Key role of KRT6A in interstitial cystitis: Machine learning-identified feature genes for bladder pain, immunity and fibrosis.",
+            "doi": "10.1097/cm9.0000000000003728",
+            "pubYear": "2025"
+          },
+          {
+            "id": "40133553",
+            "title": "Platelet-rich plasma improves cyclophosphamide-induced interstitial cystitis in rat models through the toll-like receptor 4/nuclear factor-kappa B signalling pathway.",
+            "doi": "10.1007/s10157-025-02660-5",
+            "pubYear": "2025"
+          },
+          {
+            "id": "38026177",
+            "title": "Th1/17 polarization and potential treatment by an anti-interferon-γ DNA aptamer in Hunner-type interstitial cystitis.",
+            "doi": "10.1016/j.isci.2023.108262",
+            "pubYear": "2023"
+          },
+          {
+            "id": "34311526",
+            "title": "Therapeutic effect of modulating the NLRP3-regulated transforming growth factor-β signaling pathway on interstitial cystitis/bladder pain syndrome.",
+            "doi": "10.1016/j.biopha.2021.111522",
+            "pubYear": "2021"
+          },
+          {
+            "id": "36944905",
+            "title": "A network map of cytoskeleton-associated protein 4 (CKAP4) mediated signaling pathway in cancer.",
+            "doi": "10.1007/s12079-023-00739-w",
+            "pubYear": "2023"
+          },
+          {
+            "id": "40380233",
+            "title": "Single-cell transcriptomic analysis deciphers the inflammatory microenvironment characterized by CXCL9+ fibroblasts and ACKR1+ endothelial cells in immune-related myocarditis.",
+            "doi": "10.1186/s12967-025-06551-x",
+            "pubYear": "2025"
+          },
+          {
+            "id": "34774759",
+            "title": "The Urinary Proteomic Profile Implicates Key Regulators for Urologic Chronic Pelvic Pain Syndrome (UCPPS): A MAPP Research Network Study.",
+            "doi": "10.1016/j.mcpro.2021.100176",
+            "pubYear": "2022"
+          },
+          {
+            "id": "36493381",
+            "title": "Challenges Facing the Translation of Embryonic Stem Cell Therapy for the Treatment of Cartilage Lesions.",
+            "doi": "10.1093/stcltm/szac078",
+            "pubYear": "2022"
+          },
+          {
+            "id": "42121909",
+            "title": "Mosaic: Single-Cell Atlas of Stress.",
+            "doi": "10.3390/cells15090807",
+            "pubYear": "2026"
+          }
+        ]
+      }
+    },
+    "mygene": {
+      "url": "https://mygene.info/v3/query?q=symbol%3ATGFB1&species=human&size=3",
+      "data": {
+        "total": 1,
+        "hits": [
+          {
+            "_id": "7040",
+            "symbol": "TGFB1",
+            "name": "transforming growth factor beta 1",
+            "taxid": 9606
+          }
+        ]
+      }
+    },
+    "chembl": {
+      "url": "https://www.ebi.ac.uk/chembl/api/data/target/search.json?q=TGFB1&limit=20",
+      "data": {
+        "total": 7,
+        "human_targets": [
+          {
+            "target_chembl_id": "CHEMBL1795178",
+            "pref_name": "Transforming growth factor beta-1 proprotein",
+            "organism": "Homo sapiens"
+          },
+          {
+            "target_chembl_id": "CHEMBL4296077",
+            "pref_name": "Transforming growth factor beta-1 proprotein/Mothers against decapentaplegic homolog 3",
+            "organism": "Homo sapiens"
+          },
+          {
+            "target_chembl_id": "CHEMBL3988637",
+            "pref_name": "Transforming growth factor beta",
+            "organism": "Homo sapiens"
+          }
+        ]
+      }
+    },
+    "hgnc_rest": {
+      "url": "https://rest.genenames.org/fetch/symbol/TGFB1",
+      "data": [
+        {
+          "symbol": "TGFB1",
+          "hgnc_id": "HGNC:11766",
+          "entrez_id": "7040",
+          "ensembl_gene_id": "ENSG00000105329",
+          "status": "Approved"
+        }
+      ]
+    },
+    "gtex_reference": {
+      "url": "https://gtexportal.org/api/v2/reference/gene?geneId=TGFB1",
+      "data": [
+        {
+          "geneSymbol": "TGFB1",
+          "geneId": null,
+          "gencodeId": "ENSG00000105329.9",
+          "entrezGeneId": 7040
+        }
+      ]
+    },
+    "reactome": {
+      "url": "https://reactome.org/ContentService/data/mapping/UniProt/P01137/pathways",
+      "data": [
+        {
+          "stId": "R-HSA-114608",
+          "displayName": "Platelet degranulation ",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-168277",
+          "displayName": "Influenza Virus Induced Apoptosis",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-202733",
+          "displayName": "Cell surface interactions at the vascular wall",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-2129379",
+          "displayName": "Molecules associated with elastic fibres",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-2173788",
+          "displayName": "Downregulation of TGF-beta receptor signaling",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-2173789",
+          "displayName": "TGF-beta receptor signaling activates SMADs",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-2173791",
+          "displayName": "TGF-beta receptor signaling in EMT (epithelial to mesenchymal transition)",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-3000170",
+          "displayName": "Syndecan interactions",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-3000178",
+          "displayName": "ECM proteoglycans",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-3304356",
+          "displayName": "SMAD2/3 Phosphorylation Motif Mutants in Cancer",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-3642279",
+          "displayName": "TGFBR2 MSI Frameshift Mutants in Cancer",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-3645790",
+          "displayName": "TGFBR2 Kinase Domain Mutants in Cancer",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-3656532",
+          "displayName": "TGFBR1 KD Mutants in Cancer",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-3656535",
+          "displayName": "TGFBR1 LBD Mutants in Cancer",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-381340",
+          "displayName": "Transcriptional regulation of white adipocyte differentiation",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-5689603",
+          "displayName": "UCH proteinases",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-6785807",
+          "displayName": "Interleukin-4 and Interleukin-13 signaling",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-8941855",
+          "displayName": "RUNX3 regulates CDKN1A transcription",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-8941858",
+          "displayName": "Regulation of RUNX3 expression and activity",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-8951936",
+          "displayName": "RUNX3 regulates p14-ARF",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-9839389",
+          "displayName": "TGFBR3 regulates TGF-beta signaling",
+          "speciesName": "Homo sapiens"
+        }
+      ]
+    }
+  }
+}

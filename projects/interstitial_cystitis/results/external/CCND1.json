@@ -1,0 +1,286 @@
+{
+  "gene": "CCND1",
+  "module": "M6_cell_state_g2m",
+  "prereg": "projects/interstitial_cystitis/prereg/ic_p48_module_genesets.json",
+  "retrieved_at_utc": "2026-09-25T20:23:28.494546+00:00",
+  "sources": {
+    "ensembl": {
+      "url": "https://rest.ensembl.org/lookup/symbol/homo_sapiens/CCND1?content-type=application/json",
+      "data": {
+        "id": "ENSG00000110092",
+        "display_name": "CCND1",
+        "description": "cyclin D1 [Source:HGNC Symbol;Acc:HGNC:1582]",
+        "biotype": "protein_coding",
+        "seq_region_name": "11"
+      }
+    },
+    "uniprot": {
+      "url": "https://rest.uniprot.org/uniprotkb/search?query=gene_exact%3ACCND1%20AND%20organism_id%3A9606%20AND%20reviewed%3Atrue&size=3&format=json",
+      "data": [
+        {
+          "primaryAccession": "P24385",
+          "uniProtkbId": "CCND1_HUMAN",
+          "entryType": "UniProtKB reviewed (Swiss-Prot)"
+        }
+      ]
+    },
+    "europe_pmc": {
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=CCND1%20AND%20%22interstitial%20cystitis%22&format=json&pageSize=10",
+      "data": {
+        "hit_count": 28,
+        "papers": [
+          {
+            "id": "40226969",
+            "title": "Active Compounds, Targets, and Mechanisms of Salvia miltiorrhiza Bunge in Treating Interstitial Cystitis/Bladder Pain Syndrome.",
+            "doi": "10.1002/iid3.70173",
+            "pubYear": "2025"
+          },
+          {
+            "id": "38610945",
+            "title": "Anti-Proliferative Effects of Lidocaine as an Autophagy Inducer in Bladder Cancer via Intravesical Instillation: In Vitro and Xenograft Mouse Model Experiments.",
+            "doi": "10.3390/cancers16071267",
+            "pubYear": "2024"
+          },
+          {
+            "id": "35648087",
+            "title": "Periostin Attenuates Cyclophosphamide-induced Bladder Injury by Promoting Urothelial Stem Cell Proliferation and Macrophage Polarization.",
+            "doi": "10.1093/stcltm/szac025",
+            "pubYear": "2022"
+          },
+          {
+            "id": "36944905",
+            "title": "A network map of cytoskeleton-associated protein 4 (CKAP4) mediated signaling pathway in cancer.",
+            "doi": "10.1007/s12079-023-00739-w",
+            "pubYear": "2023"
+          },
+          {
+            "id": "38191820",
+            "title": "Circulating exosomal miR-16-5p and let-7e-5p are associated with bladder fibrosis of diabetic cystopathy.",
+            "doi": "10.1038/s41598-024-51451-7",
+            "pubYear": "2024"
+          },
+          {
+            "id": "42121909",
+            "title": "Mosaic: Single-Cell Atlas of Stress.",
+            "doi": "10.3390/cells15090807",
+            "pubYear": "2026"
+          },
+          {
+            "id": "35456223",
+            "title": "Text-Mining Approach to Identify Hub Genes of Cancer Metastasis and Potential Drug Repurposing to Target Them.",
+            "doi": "10.3390/jcm11082130",
+            "pubYear": "2022"
+          },
+          {
+            "id": "33361432",
+            "title": "Single-Cell Transcriptomics Reveals a Heterogeneous Cellular Response to BK Virus Infection.",
+            "doi": "10.1128/jvi.02237-20",
+            "pubYear": "2021"
+          },
+          {
+            "id": "39644167",
+            "title": "Polyploid superficial uroepithelial bladder barrier cells express features of cellular senescence across the lifespan and are insensitive to senolytics.",
+            "doi": "10.1111/acel.14399",
+            "pubYear": "2025"
+          },
+          {
+            "id": "38861914",
+            "title": "Unlocking the potential of tranilast: Targeting fibrotic signaling pathways for therapeutic benefit.",
+            "doi": "10.1016/j.intimp.2024.112423",
+            "pubYear": "2024"
+          }
+        ]
+      }
+    },
+    "mygene": {
+      "url": "https://mygene.info/v3/query?q=symbol%3ACCND1&species=human&size=3",
+      "data": {
+        "total": 1,
+        "hits": [
+          {
+            "_id": "595",
+            "symbol": "CCND1",
+            "name": "cyclin D1",
+            "taxid": 9606
+          }
+        ]
+      }
+    },
+    "chembl": {
+      "url": "https://www.ebi.ac.uk/chembl/api/data/target/search.json?q=CCND1&limit=20",
+      "data": {
+        "total": 10,
+        "human_targets": [
+          {
+            "target_chembl_id": "CHEMBL3610",
+            "pref_name": "G1/S-specific cyclin-D1",
+            "organism": "Homo sapiens"
+          },
+          {
+            "target_chembl_id": "CHEMBL4523688",
+            "pref_name": "Protein cereblon/G1/S-specific cyclin-D1",
+            "organism": "Homo sapiens"
+          },
+          {
+            "target_chembl_id": "CHEMBL1907601",
+            "pref_name": "Cyclin-dependent kinase 4/cyclin D1",
+            "organism": "Homo sapiens"
+          },
+          {
+            "target_chembl_id": "CHEMBL2111455",
+            "pref_name": "CDK6/cyclin D1",
+            "organism": "Homo sapiens"
+          },
+          {
+            "target_chembl_id": "CHEMBL3885552",
+            "pref_name": "Cyclin-dependent kinase 2/G1/S-specific cyclin-D1",
+            "organism": "Homo sapiens"
+          },
+          {
+            "target_chembl_id": "CHEMBL2095942",
+            "pref_name": "Cyclin-dependent kinase 4/cyclin D",
+            "organism": "Homo sapiens"
+          },
+          {
+            "target_chembl_id": "CHEMBL3885551",
+            "pref_name": "Cyclin-dependent kinase 1/G1/S-specific cyclin-D1",
+            "organism": "Homo sapiens"
+          },
+          {
+            "target_chembl_id": "CHEMBL5483183",
+            "pref_name": "CDK6/Cyclin D",
+            "organism": "Homo sapiens"
+          },
+          {
+            "target_chembl_id": "CHEMBL6195584",
+            "pref_name": "Microtubule-associated protein 1 light chain 3 beta/G1/S-specific cyclin-D1/Cyclin-dependent kinase 6",
+            "organism": "Homo sapiens"
+          },
+          {
+            "target_chembl_id": "CHEMBL6195586",
+            "pref_name": "Microtubule-associated protein 1 light chain 3 beta/Cyclin-dependent kinase 4/G1/S-specific cyclin-D1",
+            "organism": "Homo sapiens"
+          }
+        ]
+      }
+    },
+    "hgnc_rest": {
+      "url": "https://rest.genenames.org/fetch/symbol/CCND1",
+      "data": [
+        {
+          "symbol": "CCND1",
+          "hgnc_id": "HGNC:1582",
+          "entrez_id": "595",
+          "ensembl_gene_id": "ENSG00000110092",
+          "status": "Approved"
+        }
+      ]
+    },
+    "gtex_reference": {
+      "url": "https://gtexportal.org/api/v2/reference/gene?geneId=CCND1",
+      "data": [
+        {
+          "geneSymbol": "CCND1",
+          "geneId": null,
+          "gencodeId": "ENSG00000110092.3",
+          "entrezGeneId": 595
+        }
+      ]
+    },
+    "reactome": {
+      "url": "https://reactome.org/ContentService/data/mapping/UniProt/P24385/pathways",
+      "data": [
+        {
+          "stId": "R-HSA-187577",
+          "displayName": "SCF(Skp2)-mediated degradation of p27/p21",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-1912408",
+          "displayName": "Pre-NOTCH Transcription and Translation",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-3214858",
+          "displayName": "RMTs methylate histone arginines",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-6785807",
+          "displayName": "Interleukin-4 and Interleukin-13 signaling",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-69231",
+          "displayName": "Cyclin D associated events in G1",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-75815",
+          "displayName": "Ubiquitin-dependent degradation of Cyclin D",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-8849470",
+          "displayName": "PTK6 Regulates Cell Cycle",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-8853884",
+          "displayName": "Transcriptional Regulation by VENTX",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-8878166",
+          "displayName": "Transcriptional regulation by RUNX2",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-8934593",
+          "displayName": "Regulation of RUNX1 Expression and Activity",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-8951430",
+          "displayName": "RUNX3 regulates WNT signaling",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-8951936",
+          "displayName": "RUNX3 regulates p14-ARF",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-9018519",
+          "displayName": "Estrogen-dependent gene expression",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-9634638",
+          "displayName": "Estrogen-dependent nuclear events downstream of ESR-membrane signaling",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-9661069",
+          "displayName": "Defective binding of RB1 mutants to E2F1,(E2F2, E2F3)",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-9754119",
+          "displayName": "Drug-mediated inhibition of CDK4/CDK6 activity",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-9825892",
+          "displayName": "Regulation of MITF-M-dependent genes involved in cell cycle and proliferation",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-9929491",
+          "displayName": "SPOP-mediated proteasomal degradation of PD-L1(CD274)",
+          "speciesName": "Homo sapiens"
+        }
+      ]
+    }
+  }
+}

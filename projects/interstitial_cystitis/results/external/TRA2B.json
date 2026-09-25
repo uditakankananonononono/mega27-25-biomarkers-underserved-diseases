@@ -1,0 +1,122 @@
+{
+  "gene": "TRA2B",
+  "module": "M6_cell_state_g2m",
+  "prereg": "projects/interstitial_cystitis/prereg/ic_p48_module_genesets.json",
+  "retrieved_at_utc": "2026-09-25T20:27:41.353897+00:00",
+  "sources": {
+    "ensembl": {
+      "url": "https://rest.ensembl.org/lookup/symbol/homo_sapiens/TRA2B?content-type=application/json",
+      "data": {
+        "id": "ENSG00000136527",
+        "display_name": "TRA2B",
+        "description": "transformer 2 beta homolog [Source:HGNC Symbol;Acc:HGNC:10781]",
+        "biotype": "protein_coding",
+        "seq_region_name": "3"
+      }
+    },
+    "uniprot": {
+      "url": "https://rest.uniprot.org/uniprotkb/search?query=gene_exact%3ATRA2B%20AND%20organism_id%3A9606%20AND%20reviewed%3Atrue&size=3&format=json",
+      "data": [
+        {
+          "primaryAccession": "P62995",
+          "uniProtkbId": "TRA2B_HUMAN",
+          "entryType": "UniProtKB reviewed (Swiss-Prot)"
+        }
+      ]
+    },
+    "europe_pmc": {
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=TRA2B%20AND%20%22interstitial%20cystitis%22&format=json&pageSize=10",
+      "data": {
+        "hit_count": 1,
+        "papers": [
+          {
+            "id": "PMC7104549",
+            "title": "Scientific Abstracts",
+            "doi": null,
+            "pubYear": "2012"
+          }
+        ]
+      }
+    },
+    "mygene": {
+      "url": "https://mygene.info/v3/query?q=symbol%3ATRA2B&species=human&size=3",
+      "data": {
+        "total": 1,
+        "hits": [
+          {
+            "_id": "6434",
+            "symbol": "TRA2B",
+            "name": "transformer 2 beta homolog",
+            "taxid": 9606
+          }
+        ]
+      }
+    },
+    "chembl": {
+      "url": "https://www.ebi.ac.uk/chembl/api/data/target/search.json?q=TRA2B&limit=20",
+      "data": {
+        "total": 1,
+        "human_targets": [
+          {
+            "target_chembl_id": "CHEMBL5725060",
+            "pref_name": "Transformer-2 protein homolog beta",
+            "organism": "Homo sapiens"
+          }
+        ]
+      }
+    },
+    "hgnc_rest": {
+      "url": "https://rest.genenames.org/fetch/symbol/TRA2B",
+      "data": [
+        {
+          "symbol": "TRA2B",
+          "hgnc_id": "HGNC:10781",
+          "entrez_id": "6434",
+          "ensembl_gene_id": "ENSG00000136527",
+          "status": "Approved"
+        }
+      ]
+    },
+    "gtex_reference": {
+      "url": "https://gtexportal.org/api/v2/reference/gene?geneId=TRA2B",
+      "data": [
+        {
+          "geneSymbol": "TRA2B",
+          "geneId": null,
+          "gencodeId": "ENSG00000136527.17",
+          "entrezGeneId": 6434
+        }
+      ]
+    },
+    "reactome": {
+      "url": "https://reactome.org/ContentService/data/mapping/UniProt/P62995/pathways",
+      "data": [
+        {
+          "stId": "R-HSA-72163",
+          "displayName": "mRNA Splicing - Major Pathway",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-72203",
+          "displayName": "Processing of Capped Intron-Containing Pre-mRNA",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-9013418",
+          "displayName": "RHOBTB2 GTPase cycle",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-9013422",
+          "displayName": "RHOBTB1 GTPase cycle",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-9770562",
+          "displayName": "mRNA Polyadenylation",
+          "speciesName": "Homo sapiens"
+        }
+      ]
+    }
+  }
+}

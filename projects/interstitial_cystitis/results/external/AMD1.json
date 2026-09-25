@@ -1,0 +1,95 @@
+{
+  "gene": "AMD1",
+  "module": "M6_cell_state_g2m",
+  "prereg": "projects/interstitial_cystitis/prereg/ic_p48_module_genesets.json",
+  "retrieved_at_utc": "2026-09-25T20:28:54.236071+00:00",
+  "sources": {
+    "ensembl": {
+      "url": "https://rest.ensembl.org/lookup/symbol/homo_sapiens/AMD1?content-type=application/json",
+      "data": {
+        "id": "ENSG00000123505",
+        "display_name": "AMD1",
+        "description": "adenosylmethionine decarboxylase 1 [Source:HGNC Symbol;Acc:HGNC:457]",
+        "biotype": "protein_coding",
+        "seq_region_name": "6"
+      }
+    },
+    "uniprot": {
+      "url": "https://rest.uniprot.org/uniprotkb/search?query=gene_exact%3AAMD1%20AND%20organism_id%3A9606%20AND%20reviewed%3Atrue&size=3&format=json",
+      "data": [
+        {
+          "primaryAccession": "P17707",
+          "uniProtkbId": "DCAM_HUMAN",
+          "entryType": "UniProtKB reviewed (Swiss-Prot)"
+        }
+      ]
+    },
+    "europe_pmc": {
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=AMD1%20AND%20%22interstitial%20cystitis%22&format=json&pageSize=10",
+      "data": {
+        "hit_count": 0,
+        "papers": []
+      }
+    },
+    "mygene": {
+      "url": "https://mygene.info/v3/query?q=symbol%3AAMD1&species=human&size=3",
+      "data": {
+        "total": 1,
+        "hits": [
+          {
+            "_id": "262",
+            "symbol": "AMD1",
+            "name": "adenosylmethionine decarboxylase 1",
+            "taxid": 9606
+          }
+        ]
+      }
+    },
+    "chembl": {
+      "url": "https://www.ebi.ac.uk/chembl/api/data/target/search.json?q=AMD1&limit=20",
+      "data": {
+        "total": 3,
+        "human_targets": [
+          {
+            "target_chembl_id": "CHEMBL4181",
+            "pref_name": "S-adenosylmethionine decarboxylase proenzyme",
+            "organism": "Homo sapiens"
+          }
+        ]
+      }
+    },
+    "hgnc_rest": {
+      "url": "https://rest.genenames.org/fetch/symbol/AMD1",
+      "data": [
+        {
+          "symbol": "AMD1",
+          "hgnc_id": "HGNC:457",
+          "entrez_id": "262",
+          "ensembl_gene_id": "ENSG00000123505",
+          "status": "Approved"
+        }
+      ]
+    },
+    "gtex_reference": {
+      "url": "https://gtexportal.org/api/v2/reference/gene?geneId=AMD1",
+      "data": [
+        {
+          "geneSymbol": "AMD1",
+          "geneId": null,
+          "gencodeId": "ENSG00000123505.15",
+          "entrezGeneId": 262
+        }
+      ]
+    },
+    "reactome": {
+      "url": "https://reactome.org/ContentService/data/mapping/UniProt/P17707/pathways",
+      "data": [
+        {
+          "stId": "R-HSA-351202",
+          "displayName": "Metabolism of polyamines",
+          "speciesName": "Homo sapiens"
+        }
+      ]
+    }
+  }
+}

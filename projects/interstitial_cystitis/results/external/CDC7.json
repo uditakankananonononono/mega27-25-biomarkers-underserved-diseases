@@ -1,0 +1,157 @@
+{
+  "gene": "CDC7",
+  "module": "M6_cell_state_g2m",
+  "prereg": "projects/interstitial_cystitis/prereg/ic_p48_module_genesets.json",
+  "retrieved_at_utc": "2026-09-25T20:22:42.889781+00:00",
+  "sources": {
+    "ensembl": {
+      "url": "https://rest.ensembl.org/lookup/symbol/homo_sapiens/CDC7?content-type=application/json",
+      "data": {
+        "id": "ENSG00000097046",
+        "display_name": "CDC7",
+        "description": "cell division cycle 7 [Source:HGNC Symbol;Acc:HGNC:1745]",
+        "biotype": "protein_coding",
+        "seq_region_name": "1"
+      }
+    },
+    "uniprot": {
+      "url": "https://rest.uniprot.org/uniprotkb/search?query=gene_exact%3ACDC7%20AND%20organism_id%3A9606%20AND%20reviewed%3Atrue&size=3&format=json",
+      "data": [
+        {
+          "primaryAccession": "O00311",
+          "uniProtkbId": "CDC7_HUMAN",
+          "entryType": "UniProtKB reviewed (Swiss-Prot)"
+        }
+      ]
+    },
+    "europe_pmc": {
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=CDC7%20AND%20%22interstitial%20cystitis%22&format=json&pageSize=10",
+      "data": {
+        "hit_count": 6,
+        "papers": [
+          {
+            "id": "29686987",
+            "title": "Recognition and Relevance of Anti-DFS70 Autoantibodies in Routine Antinuclear Autoantibodies Testing at a Community Hospital.",
+            "doi": "10.3389/fmed.2018.00088",
+            "pubYear": "2018"
+          },
+          {
+            "id": "32127038",
+            "title": "Twenty years of research on the DFS70/LEDGF autoantibody-autoantigen system: many lessons learned but still many questions.",
+            "doi": "10.1186/s13317-020-0126-4",
+            "pubYear": "2020"
+          },
+          {
+            "id": "26088181",
+            "title": "The significance of autoantibodies to DFS70/LEDGFp75 in health and disease: integrating basic science with clinical understanding.",
+            "doi": "10.1007/s10238-015-0367-0",
+            "pubYear": "2016"
+          },
+          {
+            "id": "26235378",
+            "title": "Specificity of antinuclear autoantibodies recognizing the dense fine speckled nuclear pattern: Preferential targeting of DFS70/LEDGFp75 over its interacting partner MeCP2.",
+            "doi": "10.1016/j.clim.2015.07.014",
+            "pubYear": "2015"
+          },
+          {
+            "id": "PMC7104427",
+            "title": "Abstracts",
+            "doi": null,
+            "pubYear": "2018"
+          },
+          {
+            "id": "PMC7163937",
+            "title": "Poster Sessions",
+            "doi": null,
+            "pubYear": "2014"
+          }
+        ]
+      }
+    },
+    "mygene": {
+      "url": "https://mygene.info/v3/query?q=symbol%3ACDC7&species=human&size=3",
+      "data": {
+        "total": 1,
+        "hits": [
+          {
+            "_id": "8317",
+            "symbol": "CDC7",
+            "name": "cell division cycle 7",
+            "taxid": 9606
+          }
+        ]
+      }
+    },
+    "chembl": {
+      "url": "https://www.ebi.ac.uk/chembl/api/data/target/search.json?q=CDC7&limit=20",
+      "data": {
+        "total": 4,
+        "human_targets": [
+          {
+            "target_chembl_id": "CHEMBL5443",
+            "pref_name": "Cell division cycle 7-related protein kinase",
+            "organism": "Homo sapiens"
+          },
+          {
+            "target_chembl_id": "CHEMBL4523630",
+            "pref_name": "CDC7/Cyclin B1",
+            "organism": "Homo sapiens"
+          },
+          {
+            "target_chembl_id": "CHEMBL6067412",
+            "pref_name": "Periphilin-1",
+            "organism": "Homo sapiens"
+          },
+          {
+            "target_chembl_id": "CHEMBL2111377",
+            "pref_name": "CDC7/DBF4 (Cell division cycle 7-related protein kinase/Activator of S phase kinase)",
+            "organism": "Homo sapiens"
+          }
+        ]
+      }
+    },
+    "hgnc_rest": {
+      "url": "https://rest.genenames.org/fetch/symbol/CDC7",
+      "data": [
+        {
+          "symbol": "CDC7",
+          "hgnc_id": "HGNC:1745",
+          "entrez_id": "8317",
+          "ensembl_gene_id": "ENSG00000097046",
+          "status": "Approved"
+        }
+      ]
+    },
+    "gtex_reference": {
+      "url": "https://gtexportal.org/api/v2/reference/gene?geneId=CDC7",
+      "data": [
+        {
+          "geneSymbol": "CDC7",
+          "geneId": null,
+          "gencodeId": "ENSG00000097046.12",
+          "entrezGeneId": 8317
+        }
+      ]
+    },
+    "reactome": {
+      "url": "https://reactome.org/ContentService/data/mapping/UniProt/O00311/pathways",
+      "data": [
+        {
+          "stId": "R-HSA-176187",
+          "displayName": "Activation of ATR in response to replication stress",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-68962",
+          "displayName": "Activation of the pre-replicative complex",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-8953750",
+          "displayName": "Transcriptional Regulation by E2F6",
+          "speciesName": "Homo sapiens"
+        }
+      ]
+    }
+  }
+}

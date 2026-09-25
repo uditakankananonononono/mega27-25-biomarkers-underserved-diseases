@@ -1,0 +1,180 @@
+{
+  "gene": "SRSF1",
+  "module": "M6_cell_state_g2m",
+  "prereg": "projects/interstitial_cystitis/prereg/ic_p48_module_genesets.json",
+  "retrieved_at_utc": "2026-09-25T20:24:39.684204+00:00",
+  "sources": {
+    "ensembl": {
+      "url": "https://rest.ensembl.org/lookup/symbol/homo_sapiens/SRSF1?content-type=application/json",
+      "data": {
+        "id": "ENSG00000136450",
+        "display_name": "SRSF1",
+        "description": "serine and arginine rich splicing factor 1 [Source:HGNC Symbol;Acc:HGNC:10780]",
+        "biotype": "protein_coding",
+        "seq_region_name": "17"
+      }
+    },
+    "uniprot": {
+      "url": "https://rest.uniprot.org/uniprotkb/search?query=gene_exact%3ASRSF1%20AND%20organism_id%3A9606%20AND%20reviewed%3Atrue&size=3&format=json",
+      "data": [
+        {
+          "primaryAccession": "Q07955",
+          "uniProtkbId": "SRSF1_HUMAN",
+          "entryType": "UniProtKB reviewed (Swiss-Prot)"
+        }
+      ]
+    },
+    "europe_pmc": {
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=SRSF1%20AND%20%22interstitial%20cystitis%22&format=json&pageSize=10",
+      "data": {
+        "hit_count": 9,
+        "papers": [
+          {
+            "id": "38509987",
+            "title": "Urine-derived stem cells: Promising advancements and applications in regenerative medicine and beyond.",
+            "doi": "10.1016/j.heliyon.2024.e27306",
+            "pubYear": "2024"
+          },
+          {
+            "id": "42558631",
+            "title": "Mechanistic insights into the lncRNA-Notch signaling axis in tumors.",
+            "doi": "10.3389/fcell.2026.1903203",
+            "pubYear": "2026"
+          },
+          {
+            "id": "32127038",
+            "title": "Twenty years of research on the DFS70/LEDGF autoantibody-autoantigen system: many lessons learned but still many questions.",
+            "doi": "10.1186/s13317-020-0126-4",
+            "pubYear": "2020"
+          },
+          {
+            "id": "26088181",
+            "title": "The significance of autoantibodies to DFS70/LEDGFp75 in health and disease: integrating basic science with clinical understanding.",
+            "doi": "10.1007/s10238-015-0367-0",
+            "pubYear": "2016"
+          },
+          {
+            "id": "32438606",
+            "title": "Exosomal Long Non-Coding RNAs in Lung Diseases.",
+            "doi": "10.3390/ijms21103580",
+            "pubYear": "2020"
+          },
+          {
+            "id": "37759552",
+            "title": "Insight and Recommendations for Fragile X-Premutation-Associated Conditions from the Fifth International Conference on &lt;i&gt;FMR1&lt;/i&gt; Premutation.",
+            "doi": "10.3390/cells12182330",
+            "pubYear": "2023"
+          },
+          {
+            "id": "34448894",
+            "title": "33&lt;sup&gt;rd&lt;/sup&gt; European Congress of Pathology - Abstracts.",
+            "doi": "10.1007/s00428-021-03157-8",
+            "pubYear": "2021"
+          },
+          {
+            "id": "PMC7104455",
+            "title": "Scientific Abstracts",
+            "doi": null,
+            "pubYear": "2013"
+          },
+          {
+            "id": "25769533",
+            "title": "Abstracts of the 62nd Annual Scientific Meeting, March 26-28, 2015, San Francisco, California.",
+            "doi": "10.1177/1933719115579631",
+            "pubYear": "2015"
+          }
+        ]
+      }
+    },
+    "mygene": {
+      "url": "https://mygene.info/v3/query?q=symbol%3ASRSF1&species=human&size=3",
+      "data": {
+        "total": 1,
+        "hits": [
+          {
+            "_id": "6426",
+            "symbol": "SRSF1",
+            "name": "serine and arginine rich splicing factor 1",
+            "taxid": 9606
+          }
+        ]
+      }
+    },
+    "chembl": {
+      "url": "https://www.ebi.ac.uk/chembl/api/data/target/search.json?q=SRSF1&limit=20",
+      "data": {
+        "total": 1,
+        "human_targets": [
+          {
+            "target_chembl_id": "CHEMBL4295805",
+            "pref_name": "Serine/arginine-rich splicing factor 1",
+            "organism": "Homo sapiens"
+          }
+        ]
+      }
+    },
+    "hgnc_rest": {
+      "url": "https://rest.genenames.org/fetch/symbol/SRSF1",
+      "data": [
+        {
+          "symbol": "SRSF1",
+          "hgnc_id": "HGNC:10780",
+          "entrez_id": "6426",
+          "ensembl_gene_id": "ENSG00000136450",
+          "status": "Approved"
+        }
+      ]
+    },
+    "gtex_reference": {
+      "url": "https://gtexportal.org/api/v2/reference/gene?geneId=SRSF1",
+      "data": [
+        {
+          "geneSymbol": "SRSF1",
+          "geneId": null,
+          "gencodeId": "ENSG00000136450.12",
+          "entrezGeneId": 6426
+        }
+      ]
+    },
+    "reactome": {
+      "url": "https://reactome.org/ContentService/data/mapping/UniProt/Q07955/pathways",
+      "data": [
+        {
+          "stId": "R-HSA-159236",
+          "displayName": "Transport of Mature mRNA derived from an Intron-Containing Transcript",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-72163",
+          "displayName": "mRNA Splicing - Major Pathway",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-72165",
+          "displayName": "mRNA Splicing - Minor Pathway",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-72187",
+          "displayName": "mRNA 3'-end processing",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-72203",
+          "displayName": "Processing of Capped Intron-Containing Pre-mRNA",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-9770562",
+          "displayName": "mRNA Polyadenylation",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-9918481",
+          "displayName": "Dengue Virus-Host Interactions",
+          "speciesName": "Homo sapiens"
+        }
+      ]
+    }
+  }
+}

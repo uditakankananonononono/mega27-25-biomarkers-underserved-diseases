@@ -1,0 +1,188 @@
+{
+  "gene": "KPNB1",
+  "module": "M6_cell_state_g2m",
+  "prereg": "projects/interstitial_cystitis/prereg/ic_p48_module_genesets.json",
+  "retrieved_at_utc": "2026-09-25T20:23:41.417381+00:00",
+  "sources": {
+    "ensembl": {
+      "url": "https://rest.ensembl.org/lookup/symbol/homo_sapiens/KPNB1?content-type=application/json",
+      "data": {
+        "id": "ENSG00000108424",
+        "display_name": "KPNB1",
+        "description": "karyopherin subunit beta 1 [Source:HGNC Symbol;Acc:HGNC:6400]",
+        "biotype": "protein_coding",
+        "seq_region_name": "17"
+      }
+    },
+    "uniprot": {
+      "url": "https://rest.uniprot.org/uniprotkb/search?query=gene_exact%3AKPNB1%20AND%20organism_id%3A9606%20AND%20reviewed%3Atrue&size=3&format=json",
+      "data": [
+        {
+          "primaryAccession": "Q14974",
+          "uniProtkbId": "IMB1_HUMAN",
+          "entryType": "UniProtKB reviewed (Swiss-Prot)"
+        }
+      ]
+    },
+    "europe_pmc": {
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=KPNB1%20AND%20%22interstitial%20cystitis%22&format=json&pageSize=10",
+      "data": {
+        "hit_count": 2,
+        "papers": [
+          {
+            "id": "41625014",
+            "title": "Abstracts selected for poster presentation [listed in alphabetical order by presenter].",
+            "doi": "10.1177/23523735251412131",
+            "pubYear": "2026"
+          },
+          {
+            "id": "32687918",
+            "title": "Contribution of monocytes and macrophages to the local tissue inflammation and cytokine storm in COVID-19: Lessons from SARS and MERS, and potential therapeutic interventions.",
+            "doi": "10.1016/j.lfs.2020.118102",
+            "pubYear": "2020"
+          }
+        ]
+      }
+    },
+    "mygene": {
+      "url": "https://mygene.info/v3/query?q=symbol%3AKPNB1&species=human&size=3",
+      "data": {
+        "total": 1,
+        "hits": [
+          {
+            "_id": "3837",
+            "symbol": "KPNB1",
+            "name": "karyopherin subunit beta 1",
+            "taxid": 9606
+          }
+        ]
+      }
+    },
+    "chembl": {
+      "url": "https://www.ebi.ac.uk/chembl/api/data/target/search.json?q=KPNB1&limit=20",
+      "data": {
+        "total": 3,
+        "human_targets": [
+          {
+            "target_chembl_id": "CHEMBL1741199",
+            "pref_name": "Importin subunit beta-1",
+            "organism": "Homo sapiens"
+          },
+          {
+            "target_chembl_id": "CHEMBL3885594",
+            "pref_name": "Importin subunit beta-1/Snurportin-1",
+            "organism": "Homo sapiens"
+          },
+          {
+            "target_chembl_id": "CHEMBL3885569",
+            "pref_name": "GTP-binding nuclear protein Ran/Importin subunit beta-1/Snurportin-1",
+            "organism": "Homo sapiens"
+          }
+        ]
+      }
+    },
+    "hgnc_rest": {
+      "url": "https://rest.genenames.org/fetch/symbol/KPNB1",
+      "data": [
+        {
+          "symbol": "KPNB1",
+          "hgnc_id": "HGNC:6400",
+          "entrez_id": "3837",
+          "ensembl_gene_id": "ENSG00000108424",
+          "status": "Approved"
+        }
+      ]
+    },
+    "gtex_reference": {
+      "url": "https://gtexportal.org/api/v2/reference/gene?geneId=KPNB1",
+      "data": [
+        {
+          "geneSymbol": "KPNB1",
+          "geneId": null,
+          "gencodeId": "ENSG00000108424.9",
+          "entrezGeneId": 3837
+        }
+      ]
+    },
+    "reactome": {
+      "url": "https://reactome.org/ContentService/data/mapping/UniProt/Q14974/pathways",
+      "data": [
+        {
+          "stId": "R-HSA-1169408",
+          "displayName": "ISG15 antiviral mechanism",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-140342",
+          "displayName": "Apoptosis induced DNA fragmentation",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-1655829",
+          "displayName": "Regulation of cholesterol biosynthesis by SREBP (SREBF)",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-168271",
+          "displayName": "Transport of Ribonucleoproteins into the Host Nucleus",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-168276",
+          "displayName": "NS1 Mediated Effects on Host Pathways",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-180746",
+          "displayName": "Nuclear import of Rev protein",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-2995383",
+          "displayName": "Initiation of Nuclear Envelope (NE) Reformation",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-6798695",
+          "displayName": "Neutrophil degranulation",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-68616",
+          "displayName": "Assembly of the ORC complex at the origin of replication",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-909733",
+          "displayName": "Interferon alpha/beta signaling",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-9615933",
+          "displayName": "Postmitotic nuclear pore complex (NPC) reformation",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-9636249",
+          "displayName": "Inhibition of nitric oxide production",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-9692916",
+          "displayName": "SARS-CoV-1 activates/modulates innate immune responses",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-9828806",
+          "displayName": "Maturation of hRSV A proteins",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-9918432",
+          "displayName": "Maturation of DENV proteins",
+          "speciesName": "Homo sapiens"
+        }
+      ]
+    }
+  }
+}

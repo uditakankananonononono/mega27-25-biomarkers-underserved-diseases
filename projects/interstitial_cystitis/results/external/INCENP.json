@@ -1,0 +1,166 @@
+{
+  "gene": "INCENP",
+  "module": "M6_cell_state_g2m",
+  "prereg": "projects/interstitial_cystitis/prereg/ic_p48_module_genesets.json",
+  "retrieved_at_utc": "2026-09-25T20:22:49.210876+00:00",
+  "sources": {
+    "ensembl": {
+      "url": "https://rest.ensembl.org/lookup/symbol/homo_sapiens/INCENP?content-type=application/json",
+      "data": {
+        "id": "ENSG00000149503",
+        "display_name": "INCENP",
+        "description": "inner centromere protein [Source:HGNC Symbol;Acc:HGNC:6058]",
+        "biotype": "protein_coding",
+        "seq_region_name": "11"
+      }
+    },
+    "uniprot": {
+      "url": "https://rest.uniprot.org/uniprotkb/search?query=gene_exact%3AINCENP%20AND%20organism_id%3A9606%20AND%20reviewed%3Atrue&size=3&format=json",
+      "data": [
+        {
+          "primaryAccession": "Q9NQS7",
+          "uniProtkbId": "INCE_HUMAN",
+          "entryType": "UniProtKB reviewed (Swiss-Prot)"
+        }
+      ]
+    },
+    "europe_pmc": {
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=INCENP%20AND%20%22interstitial%20cystitis%22&format=json&pageSize=10",
+      "data": {
+        "hit_count": 5,
+        "papers": [
+          {
+            "id": "37834333",
+            "title": "The Molecular Mechanism and Therapeutic Application of Autophagy for Urological Disease.",
+            "doi": "10.3390/ijms241914887",
+            "pubYear": "2023"
+          },
+          {
+            "id": "26620895",
+            "title": "Interleukin-33 and Mast Cells Bridge Innate and Adaptive Immunity: From the Allergologist's Perspective.",
+            "doi": "10.5213/inj.2015.19.3.142",
+            "pubYear": "2015"
+          },
+          {
+            "id": "22808290",
+            "title": "Free fatty acid palmitate impairs the vitality and function of cultured human bladder smooth muscle cells.",
+            "doi": "10.1371/journal.pone.0041026",
+            "pubYear": "2012"
+          },
+          {
+            "id": "PMC538662",
+            "title": "Sunday: Poster Sessions, Pt.II",
+            "doi": null,
+            "pubYear": "1995"
+          },
+          {
+            "id": "PMC10902613",
+            "title": "Abstracts",
+            "doi": null,
+            "pubYear": "2024"
+          }
+        ]
+      }
+    },
+    "mygene": {
+      "url": "https://mygene.info/v3/query?q=symbol%3AINCENP&species=human&size=3",
+      "data": {
+        "total": 1,
+        "hits": [
+          {
+            "_id": "3619",
+            "symbol": "INCENP",
+            "name": "inner centromere protein",
+            "taxid": 9606
+          }
+        ]
+      }
+    },
+    "chembl": {
+      "url": "https://www.ebi.ac.uk/chembl/api/data/target/search.json?q=INCENP&limit=20",
+      "data": {
+        "total": 3,
+        "human_targets": [
+          {
+            "target_chembl_id": "CHEMBL5177",
+            "pref_name": "Inner centromere protein",
+            "organism": "Homo sapiens"
+          },
+          {
+            "target_chembl_id": "CHEMBL4106141",
+            "pref_name": "Aurora-C/INCENP",
+            "organism": "Homo sapiens"
+          },
+          {
+            "target_chembl_id": "CHEMBL3430907",
+            "pref_name": "Aurora kinase B/Inner centromere protein",
+            "organism": "Homo sapiens"
+          }
+        ]
+      }
+    },
+    "hgnc_rest": {
+      "url": "https://rest.genenames.org/fetch/symbol/INCENP",
+      "data": [
+        {
+          "symbol": "INCENP",
+          "hgnc_id": "HGNC:6058",
+          "entrez_id": "3619",
+          "ensembl_gene_id": "ENSG00000149503",
+          "status": "Approved"
+        }
+      ]
+    },
+    "gtex_reference": {
+      "url": "https://gtexportal.org/api/v2/reference/gene?geneId=INCENP",
+      "data": [
+        {
+          "geneSymbol": "INCENP",
+          "geneId": null,
+          "gencodeId": "ENSG00000149503.12",
+          "entrezGeneId": 3619
+        }
+      ]
+    },
+    "reactome": {
+      "url": "https://reactome.org/ContentService/data/mapping/UniProt/Q9NQS7/pathways",
+      "data": [
+        {
+          "stId": "R-HSA-141444",
+          "displayName": "Amplification  of signal from unattached  kinetochores via a MAD2  inhibitory signal",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-2467813",
+          "displayName": "Separation of Sister Chromatids",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-2500257",
+          "displayName": "Resolution of Sister Chromatid Cohesion",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-4615885",
+          "displayName": "SUMOylation of DNA replication proteins",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-5663220",
+          "displayName": "RHO GTPases Activate Formins",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-68877",
+          "displayName": "Mitotic Prometaphase",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-9648025",
+          "displayName": "EML4 and NUDC in mitotic spindle formation",
+          "speciesName": "Homo sapiens"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,95 @@
+{
+  "gene": "DTYMK",
+  "module": "M6_cell_state_g2m",
+  "prereg": "projects/interstitial_cystitis/prereg/ic_p48_module_genesets.json",
+  "retrieved_at_utc": "2026-09-25T20:25:23.191361+00:00",
+  "sources": {
+    "ensembl": {
+      "url": "https://rest.ensembl.org/lookup/symbol/homo_sapiens/DTYMK?content-type=application/json",
+      "data": {
+        "id": "ENSG00000168393",
+        "display_name": "DTYMK",
+        "description": "deoxythymidylate kinase [Source:HGNC Symbol;Acc:HGNC:3061]",
+        "biotype": "protein_coding",
+        "seq_region_name": "2"
+      }
+    },
+    "uniprot": {
+      "url": "https://rest.uniprot.org/uniprotkb/search?query=gene_exact%3ADTYMK%20AND%20organism_id%3A9606%20AND%20reviewed%3Atrue&size=3&format=json",
+      "data": [
+        {
+          "primaryAccession": "P23919",
+          "uniProtkbId": "KTHY_HUMAN",
+          "entryType": "UniProtKB reviewed (Swiss-Prot)"
+        }
+      ]
+    },
+    "europe_pmc": {
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=DTYMK%20AND%20%22interstitial%20cystitis%22&format=json&pageSize=10",
+      "data": {
+        "hit_count": 0,
+        "papers": []
+      }
+    },
+    "mygene": {
+      "url": "https://mygene.info/v3/query?q=symbol%3ADTYMK&species=human&size=3",
+      "data": {
+        "total": 1,
+        "hits": [
+          {
+            "_id": "1841",
+            "symbol": "DTYMK",
+            "name": "deoxythymidylate kinase",
+            "taxid": 9606
+          }
+        ]
+      }
+    },
+    "chembl": {
+      "url": "https://www.ebi.ac.uk/chembl/api/data/target/search.json?q=DTYMK&limit=20",
+      "data": {
+        "total": 1,
+        "human_targets": [
+          {
+            "target_chembl_id": "CHEMBL4388",
+            "pref_name": "Thymidylate kinase",
+            "organism": "Homo sapiens"
+          }
+        ]
+      }
+    },
+    "hgnc_rest": {
+      "url": "https://rest.genenames.org/fetch/symbol/DTYMK",
+      "data": [
+        {
+          "symbol": "DTYMK",
+          "hgnc_id": "HGNC:3061",
+          "entrez_id": "1841",
+          "ensembl_gene_id": "ENSG00000168393",
+          "status": "Approved"
+        }
+      ]
+    },
+    "gtex_reference": {
+      "url": "https://gtexportal.org/api/v2/reference/gene?geneId=DTYMK",
+      "data": [
+        {
+          "geneSymbol": "DTYMK",
+          "geneId": null,
+          "gencodeId": "ENSG00000168393.12",
+          "entrezGeneId": 1841
+        }
+      ]
+    },
+    "reactome": {
+      "url": "https://reactome.org/ContentService/data/mapping/UniProt/P23919/pathways",
+      "data": [
+        {
+          "stId": "R-HSA-499943",
+          "displayName": "Interconversion of nucleotide di- and triphosphates",
+          "speciesName": "Homo sapiens"
+        }
+      ]
+    }
+  }
+}

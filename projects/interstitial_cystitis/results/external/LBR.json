@@ -1,0 +1,206 @@
+{
+  "gene": "LBR",
+  "module": "M6_cell_state_g2m",
+  "prereg": "projects/interstitial_cystitis/prereg/ic_p48_module_genesets.json",
+  "retrieved_at_utc": "2026-09-25T20:23:56.820829+00:00",
+  "sources": {
+    "ensembl": {
+      "url": "https://rest.ensembl.org/lookup/symbol/homo_sapiens/LBR?content-type=application/json",
+      "data": {
+        "id": "ENSG00000143815",
+        "display_name": "LBR",
+        "description": "lamin B receptor [Source:HGNC Symbol;Acc:HGNC:6518]",
+        "biotype": "protein_coding",
+        "seq_region_name": "1"
+      }
+    },
+    "uniprot": {
+      "url": "https://rest.uniprot.org/uniprotkb/search?query=gene_exact%3ALBR%20AND%20organism_id%3A9606%20AND%20reviewed%3Atrue&size=3&format=json",
+      "data": [
+        {
+          "primaryAccession": "Q14739",
+          "uniProtkbId": "LBR_HUMAN",
+          "entryType": "UniProtKB reviewed (Swiss-Prot)"
+        }
+      ]
+    },
+    "europe_pmc": {
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=LBR%20AND%20%22interstitial%20cystitis%22&format=json&pageSize=10",
+      "data": {
+        "hit_count": 11,
+        "papers": [
+          {
+            "id": "36249659",
+            "title": "Platelet-Rich Plasma: A Promising Regenerative Therapy in Gynecological Disorders.",
+            "doi": "10.7759/cureus.28998",
+            "pubYear": "2022"
+          },
+          {
+            "id": "33325785",
+            "title": "Safety and immunogenicity of an adjuvanted <i>Escherichia coli</i> adhesin vaccine in healthy women with and without histories of recurrent urinary tract infections: results from a first-in-human phase 1 study.",
+            "doi": "10.1080/21645515.2020.1834807",
+            "pubYear": "2021"
+          },
+          {
+            "id": "37511861",
+            "title": "An Overview of the Microbiota of the Human Urinary Tract in Health and Disease: Current Issues and Perspectives.",
+            "doi": "10.3390/life13071486",
+            "pubYear": "2023"
+          },
+          {
+            "id": "32030671",
+            "title": "Vision 20/20 for the Second Leap of Reproductive Sciences.",
+            "doi": "10.1007/s43032-019-00138-w",
+            "pubYear": "2020"
+          },
+          {
+            "id": "PMC7151902",
+            "title": "Veterinary Herbal Medicine: A Systems-Based Approach",
+            "doi": null,
+            "pubYear": "2007"
+          },
+          {
+            "id": "PMC7104455",
+            "title": "Scientific Abstracts",
+            "doi": null,
+            "pubYear": "2013"
+          },
+          {
+            "id": "10513265",
+            "title": "17th European Congress of Pathology and XIX Spanish Congress of Pathology. Barcelona, Spain, September 18-23, 1999. Abstracts.",
+            "doi": null,
+            "pubYear": "1999"
+          },
+          {
+            "id": "PMC7104427",
+            "title": "Abstracts",
+            "doi": null,
+            "pubYear": "2018"
+          },
+          {
+            "id": "25769533",
+            "title": "Abstracts of the 62nd Annual Scientific Meeting, March 26-28, 2015, San Francisco, California.",
+            "doi": "10.1177/1933719115579631",
+            "pubYear": "2015"
+          },
+          {
+            "id": "PMC7163937",
+            "title": "Poster Sessions",
+            "doi": null,
+            "pubYear": "2014"
+          }
+        ]
+      }
+    },
+    "mygene": {
+      "url": "https://mygene.info/v3/query?q=symbol%3ALBR&species=human&size=3",
+      "data": {
+        "total": 1,
+        "hits": [
+          {
+            "_id": "3930",
+            "symbol": "LBR",
+            "name": "lamin B receptor",
+            "taxid": 9606
+          }
+        ]
+      }
+    },
+    "chembl": {
+      "url": "https://www.ebi.ac.uk/chembl/api/data/target/search.json?q=LBR&limit=20",
+      "data": {
+        "total": 1,
+        "human_targets": [
+          {
+            "target_chembl_id": "CHEMBL6067271",
+            "pref_name": "Delta(14)-sterol reductase LBR",
+            "organism": "Homo sapiens"
+          }
+        ]
+      }
+    },
+    "hgnc_rest": {
+      "url": "https://rest.genenames.org/fetch/symbol/LBR",
+      "data": [
+        {
+          "symbol": "LBR",
+          "hgnc_id": "HGNC:6518",
+          "entrez_id": "3930",
+          "ensembl_gene_id": "ENSG00000143815",
+          "status": "Approved"
+        }
+      ]
+    },
+    "gtex_reference": {
+      "url": "https://gtexportal.org/api/v2/reference/gene?geneId=LBR",
+      "data": [
+        {
+          "geneSymbol": "LBR",
+          "geneId": null,
+          "gencodeId": "ENSG00000143815.14",
+          "entrezGeneId": 3930
+        }
+      ]
+    },
+    "reactome": {
+      "url": "https://reactome.org/ContentService/data/mapping/UniProt/Q14739/pathways",
+      "data": [
+        {
+          "stId": "R-HSA-2995383",
+          "displayName": "Initiation of Nuclear Envelope (NE) Reformation",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-6807047",
+          "displayName": "Cholesterol biosynthesis via desmosterol (Bloch pathway)",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-8980692",
+          "displayName": "RHOA GTPase cycle",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-9013106",
+          "displayName": "RHOC GTPase cycle",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-9013148",
+          "displayName": "CDC42 GTPase cycle",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-9013149",
+          "displayName": "RAC1 GTPase cycle",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-9013404",
+          "displayName": "RAC2 GTPase cycle",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-9013405",
+          "displayName": "RHOD GTPase cycle",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-9013408",
+          "displayName": "RHOG GTPase cycle",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-9013423",
+          "displayName": "RAC3 GTPase cycle",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-9022692",
+          "displayName": "Regulation of MECP2 expression and activity",
+          "speciesName": "Homo sapiens"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,95 @@
+{
+  "gene": "CHMP1A",
+  "module": "M6_cell_state_g2m",
+  "prereg": "projects/interstitial_cystitis/prereg/ic_p48_module_genesets.json",
+  "retrieved_at_utc": "2026-09-25T20:29:09.375282+00:00",
+  "sources": {
+    "ensembl": {
+      "url": "https://rest.ensembl.org/lookup/symbol/homo_sapiens/CHMP1A?content-type=application/json",
+      "data": {
+        "id": "ENSG00000131165",
+        "display_name": "CHMP1A",
+        "description": "charged multivesicular body protein 1A [Source:HGNC Symbol;Acc:HGNC:8740]",
+        "biotype": "protein_coding",
+        "seq_region_name": "16"
+      }
+    },
+    "uniprot": {
+      "url": "https://rest.uniprot.org/uniprotkb/search?query=gene_exact%3ACHMP1A%20AND%20organism_id%3A9606%20AND%20reviewed%3Atrue&size=3&format=json",
+      "data": [
+        {
+          "primaryAccession": "Q9HD42",
+          "uniProtkbId": "CHM1A_HUMAN",
+          "entryType": "UniProtKB reviewed (Swiss-Prot)"
+        }
+      ]
+    },
+    "europe_pmc": {
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=CHMP1A%20AND%20%22interstitial%20cystitis%22&format=json&pageSize=10",
+      "data": {
+        "hit_count": 0,
+        "papers": []
+      }
+    },
+    "mygene": {
+      "url": "https://mygene.info/v3/query?q=symbol%3ACHMP1A&species=human&size=3",
+      "data": {
+        "total": 1,
+        "hits": [
+          {
+            "_id": "5119",
+            "symbol": "CHMP1A",
+            "name": "charged multivesicular body protein 1A",
+            "taxid": 9606
+          }
+        ]
+      }
+    },
+    "chembl": {
+      "url": "https://www.ebi.ac.uk/chembl/api/data/target/search.json?q=CHMP1A&limit=20",
+      "data": {
+        "total": 1,
+        "human_targets": [
+          {
+            "target_chembl_id": "CHEMBL5724785",
+            "pref_name": "Charged multivesicular body protein 1a",
+            "organism": "Homo sapiens"
+          }
+        ]
+      }
+    },
+    "hgnc_rest": {
+      "url": "https://rest.genenames.org/fetch/symbol/CHMP1A",
+      "data": [
+        {
+          "symbol": "CHMP1A",
+          "hgnc_id": "HGNC:8740",
+          "entrez_id": "5119",
+          "ensembl_gene_id": "ENSG00000131165",
+          "status": "Approved"
+        }
+      ]
+    },
+    "gtex_reference": {
+      "url": "https://gtexportal.org/api/v2/reference/gene?geneId=CHMP1A",
+      "data": [
+        {
+          "geneSymbol": "CHMP1A",
+          "geneId": null,
+          "gencodeId": "ENSG00000131165.14",
+          "entrezGeneId": 5119
+        }
+      ]
+    },
+    "reactome": {
+      "url": "https://reactome.org/ContentService/data/mapping/UniProt/Q9HD42/pathways",
+      "data": [
+        {
+          "stId": "R-HSA-9610379",
+          "displayName": "HCMV Late Events",
+          "speciesName": "Homo sapiens"
+        }
+      ]
+    }
+  }
+}

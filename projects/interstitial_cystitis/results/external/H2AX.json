@@ -1,0 +1,398 @@
+{
+  "gene": "H2AX",
+  "module": "M6_cell_state_g2m",
+  "prereg": "projects/interstitial_cystitis/prereg/ic_p48_module_genesets.json",
+  "retrieved_at_utc": "2026-09-25T19:56:30.355671+00:00",
+  "sources": {
+    "ensembl": {
+      "url": "https://rest.ensembl.org/lookup/symbol/homo_sapiens/H2AX?content-type=application/json",
+      "data": {
+        "id": "ENSG00000188486",
+        "display_name": "H2AX",
+        "description": "H2A.X variant histone [Source:HGNC Symbol;Acc:HGNC:4739]",
+        "biotype": "protein_coding",
+        "seq_region_name": "11"
+      }
+    },
+    "uniprot": {
+      "url": "https://rest.uniprot.org/uniprotkb/search?query=gene_exact%3AH2AX%20AND%20organism_id%3A9606%20AND%20reviewed%3Atrue&size=3&format=json",
+      "data": [
+        {
+          "primaryAccession": "P16104",
+          "uniProtkbId": "H2AX_HUMAN",
+          "entryType": "UniProtKB reviewed (Swiss-Prot)"
+        }
+      ]
+    },
+    "europe_pmc": {
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=H2AX%20AND%20%22interstitial%20cystitis%22&format=json&pageSize=10",
+      "data": {
+        "hit_count": 26,
+        "papers": [
+          {
+            "id": "42104425",
+            "title": "Self-propelled nanozyme motors for targeted therapy of radiation cystitis by disrupting the inflammation-cfDNA vicious cycle.",
+            "doi": "10.1186/s12951-026-04508-w",
+            "pubYear": "2026"
+          },
+          {
+            "id": "39869384",
+            "title": "Extracorporeal shockwave therapy rescued mouse critical limb ischemia via upregulating GPR120 against inflammation and promoting angiogenesis for restoring the blood flow in ischemic zone-experimental study.",
+            "doi": "10.1097/js9.0000000000002243",
+            "pubYear": "2025"
+          },
+          {
+            "id": "42210251",
+            "title": "Taming the \"death receptor\": translating the first-in-class p75&lt;sup&gt;NTR&lt;/sup&gt; modulator LM11A-31 from basic biology, across broad preclinical models, to clinical proof-of-concept.",
+            "doi": "10.1186/s12967-026-08276-x",
+            "pubYear": "2026"
+          },
+          {
+            "id": "41827953",
+            "title": "Menstrual Effluent in the Pathogenesis and Diagnosis of Endometriosis-A Systematic Review.",
+            "doi": "10.3390/diagnostics16050677",
+            "pubYear": "2026"
+          },
+          {
+            "id": "38179216",
+            "title": "Stem cells and pain.",
+            "doi": "10.4252/wjsc.v15.i12.1035",
+            "pubYear": "2023"
+          },
+          {
+            "id": "30482157",
+            "title": "Extracorporeal shockwave against inflammation mediated by GPR120 receptor in cyclophosphamide-induced rat cystitis model.",
+            "doi": "10.1186/s10020-018-0062-1",
+            "pubYear": "2018"
+          },
+          {
+            "id": "34680507",
+            "title": "Extracorporeal Shock Wave Therapy Protected the Functional and Architectural Integrity of Rodent Urinary Bladder against Ketamine-Induced Damage.",
+            "doi": "10.3390/biomedicines9101391",
+            "pubYear": "2021"
+          },
+          {
+            "id": "42131125",
+            "title": "Source-Specific Extracellular Vesicle Functions and Engineering Strategies for Chronic Pain Management: A Comprehensive Review.",
+            "doi": "10.2147/ijn.s598699",
+            "pubYear": "2026"
+          },
+          {
+            "id": "29636892",
+            "title": "Extracorporeal shock wave markedly alleviates radiation-induced chronic cystitis in rat.",
+            "doi": null,
+            "pubYear": "2018"
+          },
+          {
+            "id": "26885256",
+            "title": "Extracorporeal shock wave therapy effectively prevented diabetic neuropathy.",
+            "doi": null,
+            "pubYear": "2015"
+          }
+        ]
+      }
+    },
+    "mygene": {
+      "url": "https://mygene.info/v3/query?q=symbol%3AH2AX&species=human&size=3",
+      "data": {
+        "total": 1,
+        "hits": [
+          {
+            "_id": "3014",
+            "symbol": "H2AX",
+            "name": "H2A.X variant histone",
+            "taxid": 9606
+          }
+        ]
+      }
+    },
+    "chembl": {
+      "url": "https://www.ebi.ac.uk/chembl/api/data/target/search.json?q=H2AX&limit=20",
+      "data": {
+        "total": 0,
+        "human_targets": []
+      }
+    },
+    "hgnc_rest": {
+      "url": "https://rest.genenames.org/fetch/symbol/H2AX",
+      "data": [
+        {
+          "symbol": "H2AX",
+          "hgnc_id": "HGNC:4739",
+          "entrez_id": "3014",
+          "ensembl_gene_id": "ENSG00000188486",
+          "status": "Approved"
+        }
+      ]
+    },
+    "gtex_reference": {
+      "url": "https://gtexportal.org/api/v2/reference/gene?geneId=H2AX",
+      "data": []
+    },
+    "reactome": {
+      "url": "https://reactome.org/ContentService/data/mapping/UniProt/P16104/pathways",
+      "data": [
+        {
+          "stId": "R-HSA-110328",
+          "displayName": "Recognition and association of DNA glycosylase with site containing an affected pyrimidine",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-110329",
+          "displayName": "Cleavage of the damaged pyrimidine ",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-110330",
+          "displayName": "Recognition and association of DNA glycosylase with site containing an affected purine",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-110331",
+          "displayName": "Cleavage of the damaged purine",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-1221632",
+          "displayName": "Meiotic synapsis",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-171306",
+          "displayName": "Packaging Of Telomere Ends",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-1912408",
+          "displayName": "Pre-NOTCH Transcription and Translation",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-201722",
+          "displayName": "Formation of the beta-catenin:TCF transactivating complex",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-212300",
+          "displayName": "PRC2 methylates histones and DNA",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-2299718",
+          "displayName": "Condensation of Prophase Chromosomes",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-2559580",
+          "displayName": "Oxidative Stress Induced Senescence",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-2559582",
+          "displayName": "Senescence-Associated Secretory Phenotype (SASP)",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-2559586",
+          "displayName": "DNA Damage/Telomere Stress Induced Senescence",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-3214858",
+          "displayName": "RMTs methylate histone arginines",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-427359",
+          "displayName": "SIRT1 negatively regulates rRNA expression",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-427389",
+          "displayName": "ERCC6 (CSB) and EHMT2 (G9a) positively regulate rRNA expression",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-427413",
+          "displayName": "NoRC negatively regulates rRNA expression",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-5250924",
+          "displayName": "B-WICH complex positively regulates rRNA expression",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-5334118",
+          "displayName": "DNA methylation",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-5578749",
+          "displayName": "Transcriptional regulation by small RNAs",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-5617472",
+          "displayName": "Activation of anterior HOX genes in hindbrain development during early embryogenesis",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-5625886",
+          "displayName": "Activated PKN1 stimulates transcription of AR (androgen receptor) regulated genes KLK2 and KLK3",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-5693565",
+          "displayName": "Recruitment and ATM-mediated phosphorylation of repair and signaling proteins at DNA double strand breaks",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-5693571",
+          "displayName": "Nonhomologous End-Joining (NHEJ)",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-5693607",
+          "displayName": "Processing of DNA double-strand break ends",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-606279",
+          "displayName": "Deposition of new CENPA-containing nucleosomes at the centromere",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-68616",
+          "displayName": "Assembly of the ORC complex at the origin of replication",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-69473",
+          "displayName": "G2/M DNA damage checkpoint",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-73728",
+          "displayName": "RNA Polymerase I Promoter Opening",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-73772",
+          "displayName": "RNA Polymerase I Promoter Escape",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-8936459",
+          "displayName": "RUNX1 regulates genes involved in megakaryocyte differentiation and platelet function",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-8939236",
+          "displayName": "RUNX1 regulates transcription of genes involved in differentiation of HSCs",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-9018519",
+          "displayName": "Estrogen-dependent gene expression",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-912446",
+          "displayName": "Meiotic recombination",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-9616222",
+          "displayName": "Transcriptional regulation of granulopoiesis",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-9670095",
+          "displayName": "Inhibition of DNA recombination at telomere",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-9710421",
+          "displayName": "Defective pyroptosis",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-9764725",
+          "displayName": "Negative Regulation of CDH1 Gene Transcription",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-977225",
+          "displayName": "Amyloid fiber formation",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-9821002",
+          "displayName": "Chromatin modifications during the maternal to zygotic transition (MZT)",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-9821993",
+          "displayName": "Replacement of protamines by nucleosomes in the male pronucleus",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-9841922",
+          "displayName": "MLL4 and MLL3 complexes regulate expression of PPARG target genes in adipogenesis and hepatic steatosis",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-9843940",
+          "displayName": "Regulation of endogenous retroelements by KRAB-ZFP proteins",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-9843970",
+          "displayName": "Regulation of endogenous retroelements by the Human Silencing Hub (HUSH) complex",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-9845323",
+          "displayName": "Regulation of endogenous retroelements by Piwi-interacting RNAs (piRNAs)",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-9909649",
+          "displayName": "Regulation of PD-L1(CD274) transcription",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-9937850",
+          "displayName": "NuRD complex assembly",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-9940465",
+          "displayName": "ChAHP complex assembly",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-9940951",
+          "displayName": "Interaction of NuRD complexes with transcription factors",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-9943411",
+          "displayName": "CHD1 and CHD2 subfamily",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-9943962",
+          "displayName": "CHD6, CHD7, CHD8, CHD9 subfamily",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-9970672",
+          "displayName": "FXIIa activates plasma kallikrein-kinin system",
+          "speciesName": "Homo sapiens"
+        }
+      ]
+    }
+  }
+}

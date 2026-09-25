@@ -1,0 +1,100 @@
+{
+  "gene": "KIF20B",
+  "module": "M6_cell_state_g2m",
+  "prereg": "projects/interstitial_cystitis/prereg/ic_p48_module_genesets.json",
+  "retrieved_at_utc": "2026-09-25T20:24:11.919265+00:00",
+  "sources": {
+    "ensembl": {
+      "url": "https://rest.ensembl.org/lookup/symbol/homo_sapiens/KIF20B?content-type=application/json",
+      "data": {
+        "id": "ENSG00000138182",
+        "display_name": "KIF20B",
+        "description": "kinesin family member 20B [Source:HGNC Symbol;Acc:HGNC:7212]",
+        "biotype": "protein_coding",
+        "seq_region_name": "10"
+      }
+    },
+    "uniprot": {
+      "url": "https://rest.uniprot.org/uniprotkb/search?query=gene_exact%3AKIF20B%20AND%20organism_id%3A9606%20AND%20reviewed%3Atrue&size=3&format=json",
+      "data": [
+        {
+          "primaryAccession": "Q96Q89",
+          "uniProtkbId": "KI20B_HUMAN",
+          "entryType": "UniProtKB reviewed (Swiss-Prot)"
+        }
+      ]
+    },
+    "europe_pmc": {
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=KIF20B%20AND%20%22interstitial%20cystitis%22&format=json&pageSize=10",
+      "data": {
+        "hit_count": 0,
+        "papers": []
+      }
+    },
+    "mygene": {
+      "url": "https://mygene.info/v3/query?q=symbol%3AKIF20B&species=human&size=3",
+      "data": {
+        "total": 1,
+        "hits": [
+          {
+            "_id": "9585",
+            "symbol": "KIF20B",
+            "name": "kinesin family member 20B",
+            "taxid": 9606
+          }
+        ]
+      }
+    },
+    "chembl": {
+      "url": "https://www.ebi.ac.uk/chembl/api/data/target/search.json?q=KIF20B&limit=20",
+      "data": {
+        "total": 2,
+        "human_targets": [
+          {
+            "target_chembl_id": "CHEMBL2021752",
+            "pref_name": "Kinesin-like protein KIF20B",
+            "organism": "Homo sapiens"
+          }
+        ]
+      }
+    },
+    "hgnc_rest": {
+      "url": "https://rest.genenames.org/fetch/symbol/KIF20B",
+      "data": [
+        {
+          "symbol": "KIF20B",
+          "hgnc_id": "HGNC:7212",
+          "entrez_id": "9585",
+          "ensembl_gene_id": "ENSG00000138182",
+          "status": "Approved"
+        }
+      ]
+    },
+    "gtex_reference": {
+      "url": "https://gtexportal.org/api/v2/reference/gene?geneId=KIF20B",
+      "data": [
+        {
+          "geneSymbol": "KIF20B",
+          "geneId": null,
+          "gencodeId": "ENSG00000138182.14",
+          "entrezGeneId": 9585
+        }
+      ]
+    },
+    "reactome": {
+      "url": "https://reactome.org/ContentService/data/mapping/UniProt/Q96Q89/pathways",
+      "data": [
+        {
+          "stId": "R-HSA-6811434",
+          "displayName": "COPI-dependent Golgi-to-ER retrograde traffic",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-983189",
+          "displayName": "Kinesins",
+          "speciesName": "Homo sapiens"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,12 @@
+disease,gse,matrix,gpl,status,n_case,n_control,n_genes,n_dropped,note
+chagas,GSE107376,GSE107376_series_matrix.txt.gz,GPL16791,candidate_unprocessed,6,3,,,RNA-seq; matrix file present
+chagas,GSE129676,GSE129676_series_matrix.txt.gz,GPL17301,candidate_unprocessed,8,8,,,RNA-seq; matrix file present
+chagas,GSE158986,,GPL16791;GPL29219,candidate_unprocessed,0,6,,,dual-organism RNA-seq; no series matrix file (supplementary counts only); in-vitro contrast labels infected=6
+chagas,GSE203525,GSE203525_series_matrix.txt.gz,GPL18573,candidate_unprocessed,20,0,,,RNA-seq; matrix file present
+chagas,GSE244827,GSE244827_series_matrix.txt.gz,GPL24676,candidate_unprocessed,10,23,,,RNA-seq; matrix file present
+chagas,GSE295194,GSE295194_series_matrix.txt.gz,GPL24676,candidate_unprocessed,16,0,,,RNA-seq; matrix file present
+chagas,GSE299582,GSE299582_series_matrix.txt.gz,GPL30173,candidate_unprocessed,150,42,,,RNA-seq; matrix file present
+chagas,GSE311812,GSE311812_series_matrix.txt.gz,GPL24676,candidate_unprocessed,25,21,,,RNA-seq; matrix file present
+chagas,GSE328447,GSE328447_series_matrix.txt.gz,GPL16791,candidate_unprocessed,0,2,,,RNA-seq; matrix file present; in-vitro contrast labels treated=2
+chagas,GSE333874,GSE333874_series_matrix.txt.gz,GPL24676,candidate_unprocessed,31,0,,,RNA-seq; matrix file present
+chagas,GSE348071,GSE348071_series_matrix.txt.gz,GPL30173,candidate_unprocessed,0,0,,,"RNA-seq; matrix file present; in-vitro contrast labels reference=16,variant=16"

@@ -56,3 +56,12 @@ Prior: 53 (2 GSE + 50 GSM + 1 other). Added: 422 (11 GSE + 411 GSM).
 New total: 475 tagged records = 13 GSE + 461 GSM + 1 other. Floor 120: PASS.
 GSMs remain nested sample records within their GSE, per program counting rules;
 this does not claim 475 independent studies (13 independent series total).
+
+## Post-commit validation (same branch)
+- Live re-verification of 21 randomly sampled GSMs (seed 25, ~5% of 411): 21/21
+  refetched bytes match recorded sha256, 0 mismatches.
+- Series-matrix availability checked on GEO FTP: 10/11 have
+  <GSE>_series_matrix.txt.gz; GSE158986 (dual-organism RNA-seq) ships
+  supplementary count files only. Candidate pipeline rows in
+  sources/new_series_manifest_rows.csv (status candidate_unprocessed; schema
+  matches results/series_manifest.csv for the shared-core owner to adopt).

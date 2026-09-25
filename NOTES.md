@@ -61,3 +61,10 @@ Parent clarified that genuine analysis libraries count; infra (Git, curl, pytest
 
 ## Parent clarification 11:11
 Program gate is record-level: individually fetched/verified/used GSM accessions count even when nested in eight GSE studies. Thus 130/120 accession-record gate MET; the eight-study concentration remains a paper limitation, not an adjustment to the record tally.
+
+## State 11:14 (commit 5f0e13d)
+- Parent has full public key line (sent 11:13); waiting for GitHub key installation. Still no remote in original checkout; after access, fresh SSH clone plus bundle fetch is the sanctioned workaround. Do not edit managed git remote.
+- 25/40 program-count genuinely used scientific services/libraries, 130/120 unique accession records (32 nested GSM labels audited; eight studies), 11/10 numbered formulas; PDF only 6/20 substantive pages, inspected. Tests 14 pass (tiny-group warning). No proven benchmark break or named new biomarker yet.
+- All pending prioritize.py runs ended with seven per-disease outputs now committed; PPD GNN remains below RWR. User's no-failure instruction means pivot, preserve negative results.
+- Uncounted catalog probes (unrelated BioStudies, PRIDE, MetaboLights, CZ CellxGene) in results/external/context_multimodal.json are exploratory and NOT gate tools. AlphaFold candidate protein structure metadata counted once; not clinical validation.
+- Fresh RNA summary combines eight cohorts, P3 falsified, PCOS small-cohort sign-set replication mixed. Check manuscript against updated results before final. Expand to real 20 pages with sources, no padding. Keep Drive bundles after material commits.

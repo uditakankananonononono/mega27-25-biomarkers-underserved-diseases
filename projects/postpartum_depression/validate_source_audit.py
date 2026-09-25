@@ -8,6 +8,11 @@ def check():
  old=list(csv.DictReader((P.parents[1]/'results/dataset_manifest.csv').open(newline='')))
  used=[r for r in old if 'postpartum_depression' in r['role']]
  assert len(used)==51, ('baseline changed, re-audit this report',len(used))
+ ledger=list(csv.DictReader((S/'methylation_used_record_manifest.csv').open(newline='')))
+ assert len(ledger)==139 and len({x['accession'] for x in ledger})==139
+ assert len({x['accession'] for x in ledger} & {x['accession'] for x in used})==0
+ assert sum(x['analytic_sample']=='yes' for x in ledger)==91
+ assert sum(x['record_unit']=='GEO series accession' for x in ledger)==2
  all_gsm=set()
  for acc,expected,people,platform in [('GSE44132',55,51,'GPL13534'),('GSE335141',82,41,'GPL33022')]:
   rows=load(acc);summary=json.loads((S/f'{acc}_analysis_summary.json').read_text())

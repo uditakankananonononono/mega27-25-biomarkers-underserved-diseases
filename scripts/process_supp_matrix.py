@@ -19,6 +19,13 @@ SPECS = {
                      unit='FPKM', sep='\t', key='gene_name', title_prefix='',
                      label_field='Sample_characteristics_ch1_1', case='cell line: PE high-risk', control='cell line: control',
                      tissue='peripheral blood'),
+    'GSE306864': dict(disease='preeclampsia', file='GSE306864_rawCounts.txt.gz',
+                     unit='counts', sep='\t', key='ensembl_id', title_prefix='',
+                     label_field='Sample_characteristics_ch1_2', case='treatment: Preeclampsia', control='treatment: Control',
+                     tissue='chorionic villus'),
+    'GSE303840': dict(disease='preeclampsia', file='GSE303840_merged_Raw.csv.gz',
+                     unit='counts', sep=',', key='hgnc_symbol', title_prefix='',
+                     label_field='Sample_title', case='Preeclamptic', control='Normal', tissue='placenta'),
     'GSE277906': dict(disease='pcos', file='GSE277906_counts_anno.txt.gz',
                      unit='counts', sep='\t', key='id', title_prefix='',
                      label_field='Sample_characteristics_ch1_1', case='treatment: pcos', control='treatment: control',
@@ -30,6 +37,8 @@ def load(gse):
     p = SPECS[gse]
     _, ann, _ = geo.parse_series_matrix(geo.download_matrices(gse)[0])
     lab = ann[p['label_field']].map({p['case']: 'case', p['control']: 'control'})
+    if gse == 'GSE303840':
+        lab = ann.Sample_title.map(lambda t: 'case' if 'Preeclamptic' in t else 'control' if 'Normal' in t else None)
     spec = p['file']; path = os.path.join('data/raw/rnaseq', gse, spec)
     os.makedirs(os.path.dirname(path), exist_ok=True)
     if not os.path.exists(path):
@@ -40,6 +49,9 @@ def load(gse):
         # Count header N.BAM corresponds exactly to GEO title "Sample N".
         cols = {v: k for k, v in ann.Sample_title.str.replace(p['title_prefix'], '', regex=False).items()}
         sample = {c: cols[c.split('.')[0]] for c in x if c.endswith('.BAM') and c.split('.')[0] in cols}
+    elif gse == 'GSE303840':
+        cols = {v.split()[0][0] + ('P' if 'Preeclamptic' in v else 'N') + v.split()[-1]: k for k, v in ann.Sample_title.items()}
+        sample = {c: cols[c] for c in x if c in cols}
     elif gse == 'GSE296973':
         cols = {v.lower(): k for k, v in ann.Sample_title.items()}
         cols.update({v.lower().replace('control_', 'ctl_'): k for k, v in ann.Sample_title.items()})
@@ -53,6 +65,10 @@ def load(gse):
     if gse == 'GSE204835':
         h = pd.read_csv(geo.HGNC_PATH, sep='\t', dtype=str, usecols=['symbol','entrez_id']).dropna()
         mapping = dict(zip(h.entrez_id, h.symbol)); x[p['key']] = x[p['key']].astype(str).map(mapping)
+    if p['key'] == 'ensembl_id':
+        h = pd.read_csv(geo.HGNC_PATH, sep='\t', dtype=str, usecols=['symbol','ensembl_gene_id']).dropna()
+        mapping = dict(zip(h.ensembl_gene_id, h.symbol))
+        x[p['key']] = x[p['key']].astype(str).str.split('.').str[0].map(mapping)
     x = x.dropna(subset=[p['key']]); x = x.set_index(p['key'])
     x = x.apply(pd.to_numeric, errors='coerce').fillna(0)
     x = x.groupby(level=0).sum()

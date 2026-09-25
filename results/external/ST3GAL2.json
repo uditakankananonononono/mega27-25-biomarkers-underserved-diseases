@@ -1,0 +1,100 @@
+{
+  "gene": "ST3GAL2",
+  "retrieved_at_utc": "2026-09-25T05:21:47.280427+00:00",
+  "sources": {
+    "ensembl": {
+      "url": "https://rest.ensembl.org/lookup/symbol/homo_sapiens/ST3GAL2?content-type=application/json",
+      "data": {
+        "id": "ENSG00000157350",
+        "display_name": "ST3GAL2",
+        "description": "ST3 beta-galactoside alpha-2,3-sialyltransferase 2 [Source:HGNC Symbol;Acc:HGNC:10863]",
+        "biotype": "protein_coding",
+        "seq_region_name": "16"
+      }
+    },
+    "uniprot": {
+      "url": "https://rest.uniprot.org/uniprotkb/search?query=gene_exact%3AST3GAL2%20AND%20organism_id%3A9606%20AND%20reviewed%3Atrue&size=3&format=json",
+      "data": [
+        {
+          "primaryAccession": "Q16842",
+          "uniProtkbId": "SIA4B_HUMAN",
+          "entryType": "UniProtKB reviewed (Swiss-Prot)"
+        }
+      ]
+    },
+    "europe_pmc": {
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=ST3GAL2%20AND%20preeclampsia&format=json&pageSize=10",
+      "data": {
+        "hit_count": 2,
+        "papers": [
+          {
+            "id": "36660474",
+            "title": "Perturbation of placental protein glycosylation by endoplasmic reticulum stress promotes maladaptation of maternal hepatic glucose metabolism.",
+            "doi": "10.1016/j.isci.2022.105911",
+            "pubYear": "2023"
+          },
+          {
+            "id": "32612607",
+            "title": "Expression of S100A Alarmins in Cord Blood Monocytes Is Highly Associated With Chorioamnionitis and Fetal Inflammation in Preterm Infants.",
+            "doi": "10.3389/fimmu.2020.01194",
+            "pubYear": "2020"
+          }
+        ]
+      }
+    },
+    "mygene": {
+      "url": "https://mygene.info/v3/query?q=symbol%3AST3GAL2&species=human&size=3",
+      "data": {
+        "total": 1,
+        "hits": [
+          {
+            "_id": "6483",
+            "symbol": "ST3GAL2",
+            "name": "ST3 beta-galactoside alpha-2,3-sialyltransferase 2",
+            "taxid": 9606
+          }
+        ]
+      }
+    },
+    "reactome": {
+      "url": "https://reactome.org/ContentService/data/mapping/UniProt/Q16842/pathways",
+      "data": [
+        {
+          "stId": "R-HSA-2022854",
+          "displayName": "Keratan sulfate biosynthesis",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-4085001",
+          "displayName": "Sialic acid metabolism",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-9683673",
+          "displayName": "Maturation of protein 3a",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-9694548",
+          "displayName": "Maturation of spike protein",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-9694719",
+          "displayName": "Maturation of protein 3a",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-977068",
+          "displayName": "Termination of O-glycan biosynthesis",
+          "speciesName": "Homo sapiens"
+        },
+        {
+          "stId": "R-HSA-9840309",
+          "displayName": "Glycosphingolipid biosynthesis",
+          "speciesName": "Homo sapiens"
+        }
+      ]
+    }
+  }
+}

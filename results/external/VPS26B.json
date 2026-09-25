@@ -1,0 +1,66 @@
+{
+  "gene": "VPS26B",
+  "retrieved_at_utc": "2026-09-25T05:22:01.643207+00:00",
+  "sources": {
+    "ensembl": {
+      "url": "https://rest.ensembl.org/lookup/symbol/homo_sapiens/VPS26B?content-type=application/json",
+      "data": {
+        "id": "ENSG00000151502",
+        "display_name": "VPS26B",
+        "description": "VPS26 retromer complex component B [Source:HGNC Symbol;Acc:HGNC:28119]",
+        "biotype": "protein_coding",
+        "seq_region_name": "11"
+      }
+    },
+    "uniprot": {
+      "url": "https://rest.uniprot.org/uniprotkb/search?query=gene_exact%3AVPS26B%20AND%20organism_id%3A9606%20AND%20reviewed%3Atrue&size=3&format=json",
+      "data": [
+        {
+          "primaryAccession": "Q4G0F5",
+          "uniProtkbId": "VP26B_HUMAN",
+          "entryType": "UniProtKB reviewed (Swiss-Prot)"
+        }
+      ]
+    },
+    "europe_pmc": {
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=VPS26B%20AND%20preeclampsia&format=json&pageSize=10",
+      "data": {
+        "hit_count": 2,
+        "papers": [
+          {
+            "id": "33275518",
+            "title": "Endothelial cell disruption drives increased blood-brain barrier permeability and cerebral edema in the Dahl SS/jr rat model of superimposed preeclampsia.",
+            "doi": "10.1152/ajpheart.00383.2020",
+            "pubYear": "2021"
+          },
+          {
+            "id": "23691101",
+            "title": "Tobacco smoking leads to extensive genome-wide changes in DNA methylation.",
+            "doi": "10.1371/journal.pone.0063812",
+            "pubYear": "2013"
+          }
+        ]
+      }
+    },
+    "mygene": {
+      "url": "https://mygene.info/v3/query?q=symbol%3AVPS26B&species=human&size=3",
+      "data": {
+        "total": 1,
+        "hits": [
+          {
+            "_id": "112936",
+            "symbol": "VPS26B",
+            "name": "VPS26 retromer complex component B",
+            "taxid": 9606
+          }
+        ]
+      }
+    },
+    "reactome": {
+      "url": "https://reactome.org/ContentService/data/mapping/UniProt/Q4G0F5/pathways",
+      "data": {
+        "error": "HTTP Error 404: Not Found"
+      }
+    }
+  }
+}

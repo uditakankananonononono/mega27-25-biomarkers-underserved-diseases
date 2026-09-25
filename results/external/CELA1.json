@@ -1,0 +1,102 @@
+{
+  "gene": "CELA1",
+  "retrieved_at_utc": "2026-09-25T05:21:55.344404+00:00",
+  "sources": {
+    "ensembl": {
+      "url": "https://rest.ensembl.org/lookup/symbol/homo_sapiens/CELA1?content-type=application/json",
+      "data": {
+        "id": "ENSG00000139610",
+        "display_name": "CELA1",
+        "description": "chymotrypsin like elastase 1 [Source:HGNC Symbol;Acc:HGNC:3308]",
+        "biotype": "protein_coding",
+        "seq_region_name": "12"
+      }
+    },
+    "uniprot": {
+      "url": "https://rest.uniprot.org/uniprotkb/search?query=gene_exact%3ACELA1%20AND%20organism_id%3A9606%20AND%20reviewed%3Atrue&size=3&format=json",
+      "data": [
+        {
+          "primaryAccession": "Q9UNI1",
+          "uniProtkbId": "CELA1_HUMAN",
+          "entryType": "UniProtKB reviewed (Swiss-Prot)"
+        }
+      ]
+    },
+    "europe_pmc": {
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=CELA1%20AND%20preeclampsia&format=json&pageSize=10",
+      "data": {
+        "hit_count": 8,
+        "papers": [
+          {
+            "id": "39493813",
+            "title": "Cloning, bioinformatics analysis and expression of the cysteine dioxygenase type 1 (CDO1) gene in domestic yak.",
+            "doi": "10.3389/fvets.2024.1488782",
+            "pubYear": "2024"
+          },
+          {
+            "id": "34073067",
+            "title": "Mining the Biomarker Potential of the Urine Peptidome: From Amino Acids Properties to Proteases.",
+            "doi": "10.3390/ijms22115940",
+            "pubYear": "2021"
+          },
+          {
+            "id": "30925895",
+            "title": "The identification of differentially expressed genes between extremes of placental efficiency in maternal line gilts on day 95 of gestation.",
+            "doi": "10.1186/s12864-019-5626-0",
+            "pubYear": "2019"
+          },
+          {
+            "id": "40283676",
+            "title": "Short-Term and Long-Term Effects of Inhaled Ultrafine Particles on Blood Markers of Cardiovascular Diseases: A Systematic Review and Meta-Analysis.",
+            "doi": "10.3390/jcm14082846",
+            "pubYear": "2025"
+          },
+          {
+            "id": "PMC11664321",
+            "title": "Annual Sickle Cell & Thalassaemia Conference (ASCAT) ‐ October 2023",
+            "doi": null,
+            "pubYear": "2024"
+          },
+          {
+            "id": "41147645",
+            "title": "ISEV2025 Abstract Book.",
+            "doi": "10.1002/jev2.70157",
+            "pubYear": "2025"
+          },
+          {
+            "id": "35920845",
+            "title": "58<sup>th</sup> EASD Annual Meeting of the European Association for the Study of Diabetes : Stockholm, Sweden, 19 - 23 September 2022.",
+            "doi": "10.1007/s00125-022-05755-w",
+            "pubYear": "2022"
+          },
+          {
+            "id": "PMC11231130",
+            "title": "Abstracts from the 2024 Annual Meeting of the Society of General Internal Medicine",
+            "doi": null,
+            "pubYear": "2024"
+          }
+        ]
+      }
+    },
+    "mygene": {
+      "url": "https://mygene.info/v3/query?q=symbol%3ACELA1&species=human&size=3",
+      "data": {
+        "total": 1,
+        "hits": [
+          {
+            "_id": "1990",
+            "symbol": "CELA1",
+            "name": "chymotrypsin like elastase 1",
+            "taxid": 9606
+          }
+        ]
+      }
+    },
+    "reactome": {
+      "url": "https://reactome.org/ContentService/data/mapping/UniProt/Q9UNI1/pathways",
+      "data": {
+        "error": "HTTP Error 404: Not Found"
+      }
+    }
+  }
+}

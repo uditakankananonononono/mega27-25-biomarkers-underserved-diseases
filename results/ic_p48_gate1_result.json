@@ -1,0 +1,58 @@
+{
+ "preregistration": "projects/interstitial_cystitis/prereg/IC_P48_preregistration.md",
+ "data": "GSE238208 author FPKM, 25 paired HIC; unit of inference = patient",
+ "primary_M1_M6": {
+  "modules": [
+   "M1_barrier_apical_junction",
+   "M2_ecm_remodeling",
+   "M3_neuronal_sensory_pain",
+   "M4_metabolism_oxphos",
+   "M5_stress_repair_hypoxia",
+   "M6_cell_state_g2m"
+  ],
+  "n_genes_present": {
+   "M1_barrier_apical_junction": 193,
+   "M2_ecm_remodeling": 197,
+   "M3_neuronal_sensory_pain": 20,
+   "M4_metabolism_oxphos": 184,
+   "M5_stress_repair_hypoxia": 192,
+   "M6_cell_state_g2m": 190
+  },
+  "n_pairs": 25,
+  "n_positive_D": 19,
+  "binom_p_one_sided": 0.007316648960113525,
+  "median_D": 0.27298915519512273,
+  "median_D_boot_ci95": [
+   0.06845121192358429,
+   0.643888833022159
+  ],
+  "pass_threshold": ">=18/25 and p<0.025",
+  "pass": true
+ },
+ "novelty_control_M0_only": {
+  "modules": [
+   "M0_known_inflammatory_IFNg"
+  ],
+  "n_genes_present": {
+   "M0_known_inflammatory_IFNg": 197
+  },
+  "n_pairs": 25,
+  "n_positive_D": 14,
+  "binom_p_one_sided": 0.34501898288726807,
+  "median_D": 0.012237186429981686,
+  "median_D_boot_ci95": [
+   0.0,
+   0.2698862600544593
+  ],
+  "pass_threshold": ">=18/25 and p<0.025",
+  "pass": false
+ },
+ "novelty_rule": "if M0-alone passes and M1-M6 fails => known-inflammatory rediscovery = NEGATIVE for novelty",
+ "exploratory_posthoc_sensitivity": {
+  "note": "post-hoc, NOT part of the locked gates; exploratory only",
+  "pearson_r_M2_vs_M0_paired_effects": -0.07758501809132823,
+  "r_p": 0.7124100983761666,
+  "M0_adjusted_M2_positive_patients": "12/25",
+  "interpretation": "attenuated after adjustment"
+ }
+}

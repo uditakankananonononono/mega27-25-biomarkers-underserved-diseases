@@ -27,3 +27,11 @@ Pipeline order:
 - Remaining prio: pcos leishmaniasis interstitial_cystitis me_cfs chagas fibromyalgia postpartum_depression (endometriosis may be done: check results/prio).
 - CNN cross-cohort: results/cnn_crosscohort.csv (re-run if missing). Early read: CNN not better than logreg/ablation - honest negative.
 - Tools to add genuinely: g:Profiler enrichment of replicated genes, Ensembl REST, UniProt, GTEx/HPA tissue expression of ST3GAL2, GWAS Catalog, DGIdb/ChEMBL druggability, Reactome, MyGene, Europe PMC, ClinVar, matplotlib figures, LaTeX.
+
+## State 10:44 (commit ec30c1d) - READ FIRST
+- Dedup done: all scripts use results/split_final.csv. Pre-dedup replication INVALID.
+- Surviving: PCOS top-50 replicates (p=0.010); IC (tiny validation). Everything else fails. No discovery yet.
+- PCOS prio candidates must be recomputed (discovery meta changed; pcos now 0 genes q<0.05 -> candidates filter q<0.05 yields none; consider q<0.2 or top-by-score, pre-register before testing).
+- Re-run cnn_classify.py (split_final) and prioritize for remaining diseases.
+- Pivot: generic RNA-seq processor + fresh cohorts (PE + PCOS) for independent tests; pre-register each prediction in results/preregistered_predictions.md BEFORE processing.
+- Recount dataset_manifest after dedup (dropped series still processed/used? count only series in split_final + addendum).

@@ -27,3 +27,4 @@ ChEMBL REST target search,external API,check human target accession coverage and
 HGNC REST API,external API,independent approved symbol and gene identifier cross-check,results/external/*.json
 GTEx Portal reference API,external API,verify gene reference identifiers; no expression inference from reference call,results/external/*.json
 Matplotlib,visualisation library,generate source-traceable figures from committed result tables,scripts/figures.py
+pdfLaTeX,document compiler,"compiled current Times-family manuscript PDF, 6 rendered pages (not final)",paper/manuscript.pdf

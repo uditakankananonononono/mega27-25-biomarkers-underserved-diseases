@@ -1,0 +1,28 @@
+{
+  "source_url": "https://service.azul.data.humancellatlas.org/index/projects/ea9eec5a-4fc2-4c58-94d0-2fcb598732bc",
+  "human_portal_url": "https://explore.data.humancellatlas.org/projects/ea9eec5a-4fc2-4c58-94d0-2fcb598732bc",
+  "retrieved_ist": "2026-09-25 20:26",
+  "project_id": "ea9eec5a-4fc2-4c58-94d0-2fcb598732bc",
+  "title": "Immune cell profiling of preeclamptic pregnant and postpartum women by single-cell RNA sequencing",
+  "estimated_cells": 80429,
+  "donor_count": 5,
+  "donor_disease_categories": [
+    "normal",
+    "preeclampsia"
+  ],
+  "sample_disease_categories": [
+    "normal",
+    "preeclampsia"
+  ],
+  "sample_tissue": [
+    "blood"
+  ],
+  "selected_cell_type": [
+    "peripheral blood mononuclear cell"
+  ],
+  "library_method": [
+    "10x 5' transcription profiling"
+  ],
+  "last_modified": "2025-02-14T12:22:41.267000Z",
+  "interpretation": "Five donors, not 80,429 independent patients. Metadata only; no downloaded expression matrix, test result, biomarker validation or new accession-backed count."
+}

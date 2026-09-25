@@ -1,9 +1,2 @@
 disease,gse,n_case,n_control,n_genes,tissue,unit,source_url
-pcos,GSE155489,4,4,22064,cumulus granulosa cells,counts,https://ftp.ncbi.nlm.nih.gov/geo/series/GSE155nnn/GSE155489/suppl/GSE155489_gc_pcos_counts.csv.gz
-pcos,GSE262735,9,9,16655,PBMC monocytes,counts,https://ftp.ncbi.nlm.nih.gov/geo/series/GSE262nnn/GSE262735/suppl/GSE262735_counts_table.txt.gz
-pcos,GSE277906,23,17,13716,cumulus cells,counts,https://ftp.ncbi.nlm.nih.gov/geo/series/GSE277nnn/GSE277906/suppl/GSE277906_counts_anno.txt.gz
-pcos,GSE304677,5,5,17439,ovarian granulosa cells,counts,https://ftp.ncbi.nlm.nih.gov/geo/series/GSE304nnn/GSE304677/suppl/GSE304677_1_genes_fpkm_expression.xlsx
-preeclampsia,GSE204835,16,12,16247,placenta (paraffin-embedded),counts,https://ftp.ncbi.nlm.nih.gov/geo/series/GSE204nnn/GSE204835/suppl/GSE204835_Human_paraffin-embedded_placental_tissue_counts.csv.gz
-preeclampsia,GSE296973,10,10,33326,peripheral blood,FPKM,https://ftp.ncbi.nlm.nih.gov/geo/series/GSE296nnn/GSE296973/suppl/GSE296973_gene_FPKM.txt.gz
-preeclampsia,GSE303840,12,12,16264,placenta,counts,https://ftp.ncbi.nlm.nih.gov/geo/series/GSE303nnn/GSE303840/suppl/GSE303840_merged_Raw.csv.gz
-preeclampsia,GSE306864,13,45,15118,chorionic villus,counts,https://ftp.ncbi.nlm.nih.gov/geo/series/GSE306nnn/GSE306864/suppl/GSE306864_rawCounts.txt.gz
+pcos,GSE193123,3,3,16137,ovarian granulosa cells pooled libraries,counts,https://ftp.ncbi.nlm.nih.gov/geo/series/GSE193nnn/GSE193123/suppl/GSE193123_gene_count.txt.gz

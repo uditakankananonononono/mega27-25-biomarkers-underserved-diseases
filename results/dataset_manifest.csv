@@ -4,13 +4,10 @@ GSE106724,GEO series,pcos:validation
 GSE11783,GEO series,interstitial_cystitis:discovery
 GSE120103,GEO series,endometriosis:validation
 GSE124226,GEO series,pcos:validation
-GSE125991,GEO series,leishmaniasis:discovery
-GSE125992,GEO series,leishmaniasis:validation
 GSE125993,GEO series,leishmaniasis:validation
 GSE137684,GEO series,pcos:validation
 GSE14577,GEO series,me_cfs:discovery
 GSE147776,GEO series,preeclampsia:validation
-GSE149437,GEO series,preeclampsia:validation
 GSE149440,GEO series,preeclampsia:validation
 GSE16059,GEO series,me_cfs:validation
 GSE186819,GEO series,preeclampsia:validation
@@ -24,7 +21,6 @@ GSE30186,GEO series,preeclampsia:discovery
 GSE34526,GEO series,pcos:discovery
 GSE35287,GEO series,endometriosis:discovery
 GSE35574,GEO series,preeclampsia:discovery
-GSE43264,GEO series,pcos:discovery
 GSE43322,GEO series,pcos:discovery
 GSE43942,GEO series,preeclampsia:discovery
 GSE45603,GEO series,postpartum_depression:discovery
@@ -55,7 +51,6 @@ GSE84796,GEO series,chagas:discovery
 GSE91189,GEO series,preeclampsia:discovery
 GSE93839,GEO series,preeclampsia:discovery
 GSE94643,GEO series,preeclampsia:validation
-GSE98224,GEO series,preeclampsia:validation
 GPL10191,GEO platform,probe->gene annotation
 GPL10558,GEO platform,probe->gene annotation
 GPL11532,GEO platform,probe->gene annotation
@@ -88,7 +83,6 @@ MONDO_0005546,Open Targets disease associations,known genes fibromyalgia
 MONDO_0005133,Open Targets disease associations,known genes endometriosis
 MONDO_0005081,Open Targets disease associations,known genes preeclampsia
 MONDO_0008487,Open Targets disease associations,known genes pcos
-MONDO_0100233,Open Targets disease associations,known genes long_covid
 EFO_0008559,Open Targets disease associations,known genes chagas
 MONDO_0011989,Open Targets disease associations,known genes leishmaniasis
 EFO_1000869,Open Targets disease associations,known genes interstitial_cystitis

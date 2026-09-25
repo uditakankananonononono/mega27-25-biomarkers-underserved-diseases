@@ -5,16 +5,3 @@ interstitial_cystitis,GO:BP,GO:1903659,regulation of complement-dependent cytoto
 interstitial_cystitis,KEGG,KEGG:00532,Glycosaminoglycan biosynthesis - chondroitin sulfate / dermatan sulfate,0.037678551019229484,2,15
 interstitial_cystitis,GO:BP,GO:0002823,negative regulation of adaptive immune response based on somatic recombination of immune receptors built from immunoglobulin superfamily domains,0.04026067532084561,3,20
 interstitial_cystitis,GO:BP,GO:0002460,adaptive immune response based on somatic recombination of immune receptors built from immunoglobulin superfamily domains,0.041201265725716515,5,20
-leishmaniasis,GO:BP,GO:0045860,positive regulation of protein kinase activity,0.01266037437769701,5,30
-leishmaniasis,GO:BP,GO:0036211,protein modification process,0.014040646953657957,13,30
-leishmaniasis,GO:BP,GO:0033674,positive regulation of kinase activity,0.01615756147949947,5,30
-leishmaniasis,GO:BP,GO:1902533,positive regulation of intracellular signal transduction,0.02700684227250304,9,30
-leishmaniasis,GO:BP,GO:0043412,macromolecule modification,0.032449360829190636,13,30
-leishmaniasis,GO:BP,GO:0006796,phosphate-containing compound metabolic process,0.03990064861003839,12,30
-leishmaniasis,GO:BP,GO:0006793,phosphorus metabolic process,0.0404561377347984,12,30
-leishmaniasis,GO:BP,GO:0048518,positive regulation of biological process,0.041997637734631124,20,30
-pcos,GO:BP,GO:0044087,regulation of cellular component biogenesis,0.012994475615107772,5,8
-pcos,GO:BP,GO:1902905,positive regulation of supramolecular fiber organization,0.030151800564242964,3,8
-pcos,GO:BP,GO:0042659,regulation of cell fate specification,0.03342245057082645,2,8
-pcos,GO:BP,GO:0051495,positive regulation of cytoskeleton organization,0.03875373325153567,3,8
-preeclampsia,GO:BP,GO:0045730,respiratory burst,0.0404526129411436,2,6

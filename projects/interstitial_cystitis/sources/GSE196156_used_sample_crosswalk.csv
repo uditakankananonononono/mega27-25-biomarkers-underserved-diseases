@@ -1,0 +1,21 @@
+gsm,title,group,organism,sex,age,symptom_score,problem_score,platform,column_in_series_matrix
+GSM5861368,Urine_Cystitis_1,Cystitis,Homo sapiens,Female,71,11,10,GPL29077,True
+GSM5861369,Urine_Cystitis_2,Cystitis,Homo sapiens,Female,48,16,12,GPL29077,True
+GSM5861370,Urine_Cystitis_3,Cystitis,Homo sapiens,Female,69,12,11,GPL29077,True
+GSM5861371,Urine_Cystitis_4,Cystitis,Homo sapiens,Male,68,8,4,GPL29077,True
+GSM5861372,Urine_Cystitis_5,Cystitis,Homo sapiens,Female,63,17,16,GPL29077,True
+GSM5861373,Urine_Cystitis_6,Cystitis,Homo sapiens,Male,48,15,14,GPL29077,True
+GSM5861374,Urine_Cystitis_7,Cystitis,Homo sapiens,Female,46,9,9,GPL29077,True
+GSM5861375,Urine_Cystitis_8,Cystitis,Homo sapiens,Female,66,18,16,GPL29077,True
+GSM5861376,Urine_BPS_1,BPS,Homo sapiens,Female,45,8,10,GPL29077,True
+GSM5861377,Urine_BPS_2,BPS,Homo sapiens,Male,53,9,10,GPL29077,True
+GSM5861378,Urine_Control_1,Control,Homo sapiens,Female,48,,,GPL29077,True
+GSM5861379,Urine_Control_2,Control,Homo sapiens,Female,39,6,2,GPL29077,True
+GSM5861380,Urine_Control_3,Control,Homo sapiens,Female,26,,,GPL29077,True
+GSM5861381,Urine_Control_4,Control,Homo sapiens,Female,43,,,GPL29077,True
+GSM5861382,Urine_Control_5,Control,Homo sapiens,Female,56,,,GPL29077,True
+GSM5861383,Urine_Control_6,Control,Homo sapiens,Female,73,,,GPL29077,True
+GSM5861384,Urine_Control_7,Control,Homo sapiens,Female,72,,,GPL29077,True
+GSM5861385,Urine_Control_8,Control,Homo sapiens,Female,39,,,GPL29077,True
+GSM5861386,Urine_Control_9,Control,Homo sapiens,Female,23,,,GPL29077,True
+GSM5861387,Urine_Control_10,Control,Homo sapiens,Female,70,,,GPL29077,True

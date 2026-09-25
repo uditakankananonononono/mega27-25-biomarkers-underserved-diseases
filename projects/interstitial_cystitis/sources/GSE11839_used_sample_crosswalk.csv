@@ -1,0 +1,13 @@
+gsm,title,group,subject_token,medium,organism,platform,column_in_series_matrix
+GSM299095,"human cultured bladder HB DM, subject 8",control cultured urothelial,subject 8,DM (differentiating),Homo sapiens,GPL570,True
+GSM299096,"human cultured bladder HB DM, subject 12",control cultured urothelial,subject 12,DM (differentiating),Homo sapiens,GPL570,True
+GSM299097,"human cultured bladder HB DM, subject 13",control cultured urothelial,subject 13,DM (differentiating),Homo sapiens,GPL570,True
+GSM299098,"human cultured bladder HB KM, subject 8",control cultured urothelial,subject 8,KM (proliferating),Homo sapiens,GPL570,True
+GSM299099,"human cultured bladder HB KM, subject 12",control cultured urothelial,subject 12,KM (proliferating),Homo sapiens,GPL570,True
+GSM299100,"human cultured bladder HB KM, subject 13",control cultured urothelial,subject 13,KM (proliferating),Homo sapiens,GPL570,True
+GSM299101,"human cultured bladder IC DM, subject 1",IC cultured urothelial,subject 1,DM (differentiating),Homo sapiens,GPL570,True
+GSM299102,"human cultured bladder IC DM, subject 3",IC cultured urothelial,subject 3,DM (differentiating),Homo sapiens,GPL570,True
+GSM299103,"human cultured bladder IC DM, subject 10",IC cultured urothelial,subject 10,DM (differentiating),Homo sapiens,GPL570,True
+GSM299104,"human cultured bladder IC KM, subject 1",IC cultured urothelial,subject 1,KM (proliferating),Homo sapiens,GPL570,True
+GSM299105,"human cultured bladder IC KM, subject 3",IC cultured urothelial,subject 3,KM (proliferating),Homo sapiens,GPL570,True
+GSM299106,"human cultured bladder IC KM, subject 10",IC cultured urothelial,subject 10,KM (proliferating),Homo sapiens,GPL570,True

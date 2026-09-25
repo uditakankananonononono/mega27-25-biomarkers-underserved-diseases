@@ -1,0 +1,67 @@
+{
+ "audit_type": "IC accession acquisition audit P45-P47; record units, not independent studies or patients",
+ "prior_state": {
+  "ic_records_reported_by_lane_owner": 55,
+  "global_manifest_reported": 1508,
+  "already_credited_series": [
+   "GSE621",
+   "GSE11783",
+   "GSE28242",
+   "GSE57560"
+  ],
+  "note": "new acquisitions below are distinct accessions; no GSE621/GSE11783/GSE28242/GSE57560 records duplicated"
+ },
+ "new_series": {
+  "GSE238208": {
+   "project_tag": "P45",
+   "url": "https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE238208",
+   "design": "25 Hunner-type IC patients, paired Hunner-lesion and non-lesion bladder biopsies (50 GSM), plus 13 BCG-cystitis inflammatory comparator biopsies; 38 people, 63 GSM",
+   "organism": "Homo sapiens",
+   "assay": "RNA-seq FPKM (GPL24676, Illumina NovaSeq 6000)",
+   "checks": [
+    "series SOFT fetched (2026-09-26)",
+    "each of 63 GSM sample SOFT sections split and stored individually",
+    "Sample_description PR identifiers matched 63/63 to named columns of the author FPKM matrix GSE238208_gene_expression_yoshiyukiakiyama.txt.gz",
+    "all 63 matched columns fully finite across 27,339 gene rows"
+   ],
+   "record_units": 64,
+   "caveat": "paired biopsies share patients; 25 HIC people and 13 BCG people, not 63 independent participants"
+  },
+  "GSE196156": {
+   "project_tag": "P46",
+   "url": "https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE196156",
+   "design": "urinary extracellular-vesicle miRNA array; 8 cystitis, 2 BPS, 10 controls; 20 people, 20 GSM",
+   "organism": "Homo sapiens",
+   "assay": "non-coding RNA profiling by array (miRNA)",
+   "checks": [
+    "series SOFT fetched (2026-09-26)",
+    "each of 20 GSM sample SOFT sections split and stored individually",
+    "all 20 GSMs present as columns of the GEO series matrix",
+    "each column carries 464 finite miRNA measurements of 2,632 rows; remaining rows empty across all samples (detection-gated miRNA output), uniform across columns"
+   ],
+   "record_units": 21,
+   "caveat": "miRNA detection-sparse matrix; 2 BPS samples too few for a BPS-only contrast"
+  },
+  "GSE11839": {
+   "project_tag": "P47",
+   "url": "https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE11839",
+   "design": "cultured bladder urothelial cells, 3 IC and 3 control subjects, each in differentiating (DM) and proliferating (KM) medium; 6 people, 12 GSM",
+   "organism": "Homo sapiens",
+   "assay": "expression profiling array (series also carries methylation profiling; methylation excluded from processing per repo platform rule)",
+   "checks": [
+    "series SOFT fetched (2026-09-26)",
+    "each of 12 GSM sample SOFT sections split and stored individually",
+    "all 12 GSMs present as columns of the GEO series matrix",
+    "all 12 columns fully finite across 54,675 rows"
+   ],
+   "record_units": 13,
+   "caveat": "in-vitro cultured cells from 6 people; two media per person are not independent samples"
+  }
+ },
+ "totals": {
+  "new_record_units": 98,
+  "projected_ic_records": 153,
+  "gate": 120,
+  "statement": "record-unit gate 120 is met with margin; these are nested record units with the stated people counts, not 98 independent studies"
+ }
+}

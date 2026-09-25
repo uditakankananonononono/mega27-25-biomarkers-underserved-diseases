@@ -42,6 +42,7 @@ def load(gse):
         sample = {c: cols[c.split('.')[0]] for c in x if c.endswith('.BAM') and c.split('.')[0] in cols}
     elif gse == 'GSE296973':
         cols = {v.lower(): k for k, v in ann.Sample_title.items()}
+        cols.update({v.lower().replace('control_', 'ctl_'): k for k, v in ann.Sample_title.items()})
         sample = {c: cols[c.lower()] for c in x if c.lower() in cols}
     else:
         cols = {v: k for k, v in ann.Sample_title.items()}

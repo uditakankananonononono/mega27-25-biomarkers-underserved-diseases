@@ -2,5 +2,5 @@ disease,gse,n_case,n_control,n_genes,tissue,unit,source_url
 preeclampsia,GSE204835,16,12,16247,placenta (paraffin-embedded),counts,https://ftp.ncbi.nlm.nih.gov/geo/series/GSE204nnn/GSE204835/suppl/GSE204835_Human_paraffin-embedded_placental_tissue_counts.csv.gz
 preeclampsia,GSE296973,10,10,33326,peripheral blood,FPKM,https://ftp.ncbi.nlm.nih.gov/geo/series/GSE296nnn/GSE296973/suppl/GSE296973_gene_FPKM.txt.gz
 pcos,GSE277906,23,17,13716,cumulus cells,counts,https://ftp.ncbi.nlm.nih.gov/geo/series/GSE277nnn/GSE277906/suppl/GSE277906_counts_anno.txt.gz
-preeclampsia,GSE306864,13,45,15935,chorionic villus,counts,https://ftp.ncbi.nlm.nih.gov/geo/series/GSE306nnn/GSE306864/suppl/GSE306864_rawCounts.txt.gz
+preeclampsia,GSE306864,13,45,15118,chorionic villus,counts,https://ftp.ncbi.nlm.nih.gov/geo/series/GSE306nnn/GSE306864/suppl/GSE306864_rawCounts.txt.gz
 preeclampsia,GSE303840,12,12,16264,placenta,counts,https://ftp.ncbi.nlm.nih.gov/geo/series/GSE303nnn/GSE303840/suppl/GSE303840_merged_Raw.csv.gz

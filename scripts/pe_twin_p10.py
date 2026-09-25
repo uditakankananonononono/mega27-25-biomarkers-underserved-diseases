@@ -73,3 +73,24 @@ res={'cohort':GSE,'unit':'pregnancy','case':7,'control':9,'observed_welch_t':dic
 Path('results/pe_twin_p10_sensitivity.json').write_text(json.dumps(res,indent=2)+'\n')
 print('Exact pregnancy-label permutation max-|Welch t| familywise p:',family_p)
 print('Leave-one-pregnancy-out negative counts:',{k:v['negative_loocv'] for k,v in loo.items()})
+
+# Secondary post-outcome gestational-age sensitivity. Delivery week.days is not decimal weeks.
+from scipy.stats import norm
+meta=ann.groupby('pregnancy').first().loc[preg.columns]
+def week_days(v):
+    raw=v.split(': ',1)[1]; pieces=raw.split('.')
+    assert len(pieces) in (1,2) and (len(pieces)==1 or (len(pieces[1])==1 and int(pieces[1])<=6))
+    return int(pieces[0])+(int(pieces[1])/7 if len(pieces)>1 else 0)
+weeks=meta.Sample_characteristics_ch1_3.map(week_days).to_numpy(float)
+y=lab.eq('case').to_numpy(float)
+Xreg=np.column_stack([np.ones(16),y,weeks-weeks.mean()]);
+beta=np.linalg.lstsq(Xreg,preg.loc[sel].T.to_numpy(float),rcond=None)[0]
+err=preg.loc[sel].T.to_numpy(float)-Xreg@beta
+se=np.sqrt(np.diag(np.linalg.inv(Xreg.T@Xreg))[1] * (err**2).sum(axis=0)/(16-3))
+from scipy.stats import t as tdist
+p=2*tdist.sf(abs(beta[1]/se),df=13)
+res['posthoc_delivery_age_adjusted']={gene:{'case_coefficient_log2cpm':float(b),'t_p':float(pp)} for gene,b,pp in zip(sel,beta[1],p)}
+res['delivery_age_weeks']={str(k):float(v) for k,v in zip(preg.columns,weeks)}
+res['gestational_caveat']='Delivery age is post-outcome and potentially affected by disease; adjustment is descriptive only, may induce bias, and is not matched first-trimester replication.'
+Path('results/pe_twin_p10_sensitivity.json').write_text(json.dumps(res,indent=2)+'\n')
+print('Post-outcome delivery-age adjusted associations:',res['posthoc_delivery_age_adjusted'])

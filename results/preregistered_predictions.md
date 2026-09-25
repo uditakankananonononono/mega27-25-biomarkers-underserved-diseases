@@ -124,3 +124,37 @@ P12 (registered 2026-09-25 12:37 IST, before any GSE190971 count-matrix inspecti
     earlier six-gene selection or an independent maternal early prediction test.
     Pre-count source metadata: https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE190971
     Raw PLAC source: https://ftp.ncbi.nlm.nih.gov/geo/series/GSE190nnn/GSE190971/suppl/GSE190971_Raw_gene_counts_matrix_PLAC.txt.gz
+
+### P12 observed outcome (2026-09-25 12:38 IST)
+The raw PLAC count matrix mapped its 13 columns exactly to 13 distinct GEO V-person
+PLAC titles and GSMs, with 7 PE and 6 NP and consistent condition in the related
+EV records. All six panel genes measured: FES g=-2.800 (Welch p=.000372), GPAT3
++.161 (.757), FURIN -.753 (.204), GRAMD1A -.918 (.112), ZNF467 -.512 (.347),
+LPGAT1 -.121 (.826). The registered 6/6 down panel criterion **failed** at 5/6.
+The favorable FES component is not a new gene discovery after repeated looks,
+and the other two study arms share women. Exact source checksum, sample map and
+all effects are in results/pe_plac_p12*.
+
+## P13 frozen-panel transport to two additional independent placental deposits (registered 2026-09-25 12:39 IST)
+The six-gene panel and P9-P12 outcomes (including FES's repeated placental
+associations) have already been inspected. Before opening expression values in
+GSE114691 or GSE186257, freeze the exact six DOWN signs and the same panel.
+GSE114691 is placenta RNA-seq at birth: predefine the primary 20 PE-only versus
+21 controls, excluding 18 IUGR-only and 20 PE+IUGR from the primary analysis.
+Report PE+IUGR separately as descriptive sensitivity, sharing the controls and
+therefore NOT independent validation. Map four named count files to exact GEO
+GSM titles and clinical group without assuming column order. GSE186257 is an
+independent placenta deposit with 26 severe PE and 18 nonhypertensive controls;
+use its deposited normalized-filtered gene matrix only if all columns map
+unambiguously to GEO titles/GSM and phenotype; otherwise exclude it. Verify no
+GSM overlap with earlier processed cohorts, and no person crosswalk suggesting
+study reuse. For each independent study report Hedges effects and Welch p for
+all measurable genes, and the six-gene count of DOWN directions; a panel pass
+requires 6/6 measured and down with an individually Bonferroni-significant down
+association in BOTH studies. FES-specific findings are descriptive and
+post-selected, even if both pass: published novelty, plausible pregnancy-related
+confounding and ideally a future prospectively sampled cohort remain necessary
+before a named biomarker claim. Do not call normalized source matrices raw counts;
+report modalities and preprocessing separately.
+Sources: https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE114691 ;
+https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE186257 .

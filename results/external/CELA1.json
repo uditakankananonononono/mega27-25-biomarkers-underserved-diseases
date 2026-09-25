@@ -1,6 +1,6 @@
 {
   "gene": "CELA1",
-  "retrieved_at_utc": "2026-09-25T05:21:55.344404+00:00",
+  "retrieved_at_utc": "2026-09-25T05:23:16.590823+00:00",
   "sources": {
     "ensembl": {
       "url": "https://rest.ensembl.org/lookup/symbol/homo_sapiens/CELA1?content-type=application/json",
@@ -91,6 +91,42 @@
           }
         ]
       }
+    },
+    "chembl": {
+      "url": "https://www.ebi.ac.uk/chembl/api/data/target/search.json?q=CELA1&limit=20",
+      "data": {
+        "total": 3,
+        "human_targets": [
+          {
+            "target_chembl_id": "CHEMBL3000",
+            "pref_name": "Chymotrypsin-like elastase family member 1",
+            "organism": "Homo sapiens"
+          }
+        ]
+      }
+    },
+    "hgnc_rest": {
+      "url": "https://rest.genenames.org/fetch/symbol/CELA1",
+      "data": [
+        {
+          "symbol": "CELA1",
+          "hgnc_id": "HGNC:3308",
+          "entrez_id": "1990",
+          "ensembl_gene_id": "ENSG00000139610",
+          "status": "Approved"
+        }
+      ]
+    },
+    "gtex_reference": {
+      "url": "https://gtexportal.org/api/v2/reference/gene?geneId=CELA1",
+      "data": [
+        {
+          "geneSymbol": "CELA1",
+          "geneId": null,
+          "gencodeId": "ENSG00000139610.1",
+          "entrezGeneId": 1990
+        }
+      ]
     },
     "reactome": {
       "url": "https://reactome.org/ContentService/data/mapping/UniProt/Q9UNI1/pathways",

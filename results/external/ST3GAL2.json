@@ -1,6 +1,6 @@
 {
   "gene": "ST3GAL2",
-  "retrieved_at_utc": "2026-09-25T05:21:47.280427+00:00",
+  "retrieved_at_utc": "2026-09-25T05:23:12.539296+00:00",
   "sources": {
     "ensembl": {
       "url": "https://rest.ensembl.org/lookup/symbol/homo_sapiens/ST3GAL2?content-type=application/json",
@@ -55,6 +55,36 @@
           }
         ]
       }
+    },
+    "chembl": {
+      "url": "https://www.ebi.ac.uk/chembl/api/data/target/search.json?q=ST3GAL2&limit=20",
+      "data": {
+        "total": 1,
+        "human_targets": []
+      }
+    },
+    "hgnc_rest": {
+      "url": "https://rest.genenames.org/fetch/symbol/ST3GAL2",
+      "data": [
+        {
+          "symbol": "ST3GAL2",
+          "hgnc_id": "HGNC:10863",
+          "entrez_id": "6483",
+          "ensembl_gene_id": "ENSG00000157350",
+          "status": "Approved"
+        }
+      ]
+    },
+    "gtex_reference": {
+      "url": "https://gtexportal.org/api/v2/reference/gene?geneId=ST3GAL2",
+      "data": [
+        {
+          "geneSymbol": "ST3GAL2",
+          "geneId": null,
+          "gencodeId": "ENSG00000157350.12",
+          "entrezGeneId": 6483
+        }
+      ]
     },
     "reactome": {
       "url": "https://reactome.org/ContentService/data/mapping/UniProt/Q16842/pathways",

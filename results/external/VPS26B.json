@@ -1,6 +1,6 @@
 {
   "gene": "VPS26B",
-  "retrieved_at_utc": "2026-09-25T05:22:01.643207+00:00",
+  "retrieved_at_utc": "2026-09-25T05:23:22.191386+00:00",
   "sources": {
     "ensembl": {
       "url": "https://rest.ensembl.org/lookup/symbol/homo_sapiens/VPS26B?content-type=application/json",
@@ -55,6 +55,42 @@
           }
         ]
       }
+    },
+    "chembl": {
+      "url": "https://www.ebi.ac.uk/chembl/api/data/target/search.json?q=VPS26B&limit=20",
+      "data": {
+        "total": 1,
+        "human_targets": [
+          {
+            "target_chembl_id": "CHEMBL6067157",
+            "pref_name": "Vacuolar protein sorting-associated protein 26B",
+            "organism": "Homo sapiens"
+          }
+        ]
+      }
+    },
+    "hgnc_rest": {
+      "url": "https://rest.genenames.org/fetch/symbol/VPS26B",
+      "data": [
+        {
+          "symbol": "VPS26B",
+          "hgnc_id": "HGNC:28119",
+          "entrez_id": "112936",
+          "ensembl_gene_id": "ENSG00000151502",
+          "status": "Approved"
+        }
+      ]
+    },
+    "gtex_reference": {
+      "url": "https://gtexportal.org/api/v2/reference/gene?geneId=VPS26B",
+      "data": [
+        {
+          "geneSymbol": "VPS26B",
+          "geneId": null,
+          "gencodeId": "ENSG00000151502.10",
+          "entrezGeneId": 112936
+        }
+      ]
     },
     "reactome": {
       "url": "https://reactome.org/ContentService/data/mapping/UniProt/Q4G0F5/pathways",

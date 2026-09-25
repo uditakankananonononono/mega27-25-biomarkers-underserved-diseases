@@ -23,3 +23,6 @@ Europe PMC REST search,external API,preeclampsia co-mentions and paper metadata;
 MyGene.info API,external API,cross-check symbol and Entrez identifiers,results/external/*.json
 Reactome ContentService,external API,retrieve mapped human pathways for reviewed UniProt accessions,results/external/*.json
 NCBI GEO supplementary FTP,external data service,fetch RNA-seq supplementary counts and FPKM matrices,scripts/process_supp_matrix.py
+ChEMBL REST target search,external API,check human target accession coverage and avoid cross-species false matches,results/external/*.json
+HGNC REST API,external API,independent approved symbol and gene identifier cross-check,results/external/*.json
+GTEx Portal reference API,external API,verify gene reference identifiers; no expression inference from reference call,results/external/*.json

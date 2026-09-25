@@ -1,0 +1,11 @@
+disease,current_open_targets_id,otrec_temporal_pairs,otrec_temporal_positive_pairs,comparable_positive_test
+postpartum_depression,MONDO_0005929,0,0,False
+me_cfs,MONDO_0005404,0,0,False
+fibromyalgia,MONDO_0005546,0,0,False
+endometriosis,MONDO_0005133,0,0,False
+preeclampsia,MONDO_0005081,0,0,False
+pcos,MONDO_0008487,0,0,False
+long_covid,MONDO_0100233,186,90,True
+chagas,EFO_0008559,32,0,False
+leishmaniasis,MONDO_0011989,0,0,False
+interstitial_cystitis,EFO_1000869,17,0,False

@@ -26,6 +26,10 @@ SPECS = {
     'GSE303840': dict(disease='preeclampsia', file='GSE303840_merged_Raw.csv.gz',
                      unit='counts', sep=',', key='hgnc_symbol', title_prefix='',
                      label_field='Sample_title', case='Preeclamptic', control='Normal', tissue='placenta'),
+    'GSE304677': dict(disease='pcos', file='GSE304677_1_genes_fpkm_expression.xlsx',
+                     unit='counts', sep=None, key='gene_name', title_prefix='',
+                     label_field='Sample_characteristics_ch1_2', case='group: PCOS', control='group: control',
+                     tissue='ovarian granulosa cells'),
     'GSE277906': dict(disease='pcos', file='GSE277906_counts_anno.txt.gz',
                      unit='counts', sep='\t', key='id', title_prefix='',
                      label_field='Sample_characteristics_ch1_1', case='treatment: pcos', control='treatment: control',
@@ -44,7 +48,10 @@ def load(gse):
     if not os.path.exists(path):
         url = f'https://ftp.ncbi.nlm.nih.gov/geo/series/{gse[:-3]}nnn/{gse}/suppl/{spec}'
         geo._fetch(url, path)
-    x = pd.read_csv(path, sep=p['sep'], low_memory=False)
+    if spec.endswith('.xlsx'):
+        x = pd.read_excel(path, usecols=lambda c: c == p['key'] or c.startswith('count.'))
+    else:
+        x = pd.read_csv(path, sep=p['sep'], low_memory=False)
     if gse == 'GSE204835':
         # Count header N.BAM corresponds exactly to GEO title "Sample N".
         cols = {v: k for k, v in ann.Sample_title.str.replace(p['title_prefix'], '', regex=False).items()}
@@ -52,6 +59,9 @@ def load(gse):
     elif gse == 'GSE303840':
         cols = {v.split()[0][0] + ('P' if 'Preeclamptic' in v else 'N') + v.split()[-1]: k for k, v in ann.Sample_title.items()}
         sample = {c: cols[c] for c in x if c in cols}
+    elif gse == 'GSE304677':
+        cols = {v: k for k, v in ann.Sample_title.items()}
+        sample = {c: cols[c.removeprefix('count.')] for c in x if c.startswith('count.') and c.removeprefix('count.') in cols}
     elif gse == 'GSE296973':
         cols = {v.lower(): k for k, v in ann.Sample_title.items()}
         cols.update({v.lower().replace('control_', 'ctl_'): k for k, v in ann.Sample_title.items()})

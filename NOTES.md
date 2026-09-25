@@ -89,3 +89,7 @@ Program gate is record-level: individually fetched/verified/used GSM accessions 
 
 ## State 11:38
 - BioStudies archive E-GEOD-4707 checked as PE placenta study-context (early/late onset, pooled normal reference) and saved exact API response: https://www.ebi.ac.uk/biostudies/api/v1/studies/E-GEOD-4707 . It is not a new validation cohort or novel candidate evidence. Science tool audit now 29/40; no duplicate canonical names. Exact TNR working PDF remains 12 pages, no overflow.
+
+## State 11:41 (paper audit expansion pending commit)
+- Generated full retained split (54 GEO series tags), all nine phenotype-based exclusions, all nine disease-level deduplicated signature replication outcomes, and curated 29-tool ledger as source-derived paper tables. Exact-TNR PDF now **16 rendered pages**; visual inspection of pages 4-7 and 13-16 confirms legible tables/formulas/no clipping, `pdffonts` embeds Times New Roman regular/bold, LaTeX has no overfull or undefined references. Page 16 is sparse, so this is not 16 substantive pages; do not fill to 20 with padding. 14 tests pass.
+- Discovery endpoint still unmet; careful source-ledger expansion isn't a benchmark win or a named new biomarker. No new record-count changes (130). Push and Drive backup the forthcoming commit.

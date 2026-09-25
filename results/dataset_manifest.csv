@@ -37,6 +37,7 @@ GSE137684,GEO series,pcos:validation
 GSE14577,GEO series,me_cfs:discovery
 GSE147776,GEO series,preeclampsia:validation
 GSE149440,GEO series,preeclampsia:validation
+GSE155489,GEO series supplementary matrix,pcos:prospective_followup (cumulus granulosa)
 GSE16059,GEO series,me_cfs:validation
 GSE186819,GEO series,preeclampsia:validation
 GSE190639,GEO series,preeclampsia:validation
@@ -46,6 +47,7 @@ GSE24129,GEO series,preeclampsia:discovery
 GSE248593,GEO series,endometriosis:validation
 GSE25628,GEO series,endometriosis:discovery
 GSE25906,GEO series,preeclampsia:discovery
+GSE262735,GEO series supplementary matrix,pcos:prospective_followup (PBMC monocytes)
 GSE277906,GEO series supplementary matrix,pcos:fresh_validation (cumulus cells)
 GSE290313,GEO series,postpartum_depression:validation (RNA-seq)
 GSE296973,GEO series supplementary matrix,preeclampsia:fresh_validation (peripheral blood)

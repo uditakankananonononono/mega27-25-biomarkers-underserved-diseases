@@ -1,0 +1,117 @@
+{
+  "retrieved_at_utc": "2026-09-25T05:42:42.783495+00:00",
+  "sources": {
+    "AlphaFold": [
+      {
+        "url": "https://alphafold.ebi.ac.uk/api/prediction/Q16842",
+        "data": [
+          {
+            "entryId": "AF-Q16842-F1",
+            "latestVersion": 6,
+            "globalMetricValue": 85.44,
+            "uniprotAccession": "Q16842",
+            "modelCreatedDate": "2025-08-01T00:00:00Z",
+            "pdbUrl": "https://alphafold.ebi.ac.uk/files/AF-Q16842-F1-model_v6.pdb"
+          }
+        ]
+      },
+      {
+        "url": "https://alphafold.ebi.ac.uk/api/prediction/O75056",
+        "data": [
+          {
+            "entryId": "AF-O75056-F1",
+            "latestVersion": 6,
+            "globalMetricValue": 52.75,
+            "uniprotAccession": "O75056",
+            "modelCreatedDate": "2025-08-01T00:00:00Z",
+            "pdbUrl": "https://alphafold.ebi.ac.uk/files/AF-O75056-F1-model_v6.pdb"
+          }
+        ]
+      }
+    ],
+    "BioStudies": [
+      {
+        "url": "https://www.ebi.ac.uk/biostudies/api/v1/studies/S-BSST140",
+        "data": {
+          "accession": "S-BSST140",
+          "title": "Antidiabetic properties of fenugreek and its interaction with glibenclamide in an animal model of type 2 diabetes mellitus"
+        }
+      }
+    ],
+    "PRIDE": [
+      {
+        "url": "https://www.ebi.ac.uk/pride/ws/archive/v3/projects?keyword=preeclampsia&pageSize=20",
+        "data": {
+          "n_returned": 20,
+          "matches": [
+            {
+              "accession": "PXD001357",
+              "title": "Direct evidence of milk consumption from ancient human dental calculus, St Helena"
+            },
+            {
+              "accession": "PXD000035",
+              "title": "Surface Proteins of Listeria monocytogenes"
+            },
+            {
+              "accession": "PXD000030",
+              "title": "Annexin A1 interacting proteins in chronic myeloid leukemia KCL22 cells"
+            },
+            {
+              "accession": "PXD000027",
+              "title": "maize leaf ESI-Q-TOF MS -  Comparative analysis of salt-responsive phosphoproteins in maize leaves using Ti(4+)--IMAC enrichment and ESI-Q-TOF MS"
+            },
+            {
+              "accession": "PXD000045",
+              "title": "LC-MS/MS of cultured Mycobacterium tuberculosis in a hypoxia/reaeration timecourse"
+            },
+            {
+              "accession": "PXD001362",
+              "title": "Direct evidence of milk consumption from ancient human dental calculus, UK"
+            },
+            {
+              "accession": "PXD001359",
+              "title": "Direct evidence of milk consumption from ancient human dental calculus, northern southwest Asia"
+            },
+            {
+              "accession": "PXD000026",
+              "title": "Analysis of E2F2 interacting proteins"
+            },
+            {
+              "accession": "PXD000047",
+              "title": "Endogenous Purification Reveals GREB1 as a Key Estrogen Receptor Regulatory Factor"
+            },
+            {
+              "accession": "PXD002694",
+              "title": "Direct and Absolute Quantification of over 1800 Yeast Proteins via Selected Reaction Monitoring HUB_MAN C4PR_LIV"
+            }
+          ]
+        }
+      }
+    ],
+    "MetaboLights": [
+      {
+        "url": "https://www.ebi.ac.uk/metabolights/ws/studies/MTBLS1",
+        "data": {
+          "accession": "MTBLS1",
+          "title": null,
+          "status": "Public"
+        }
+      }
+    ],
+    "CZ CellxGene": [
+      {
+        "url": "https://api.cellxgene.cziscience.com/dp/v1/datasets/index",
+        "data": {
+          "dataset_count": 2235,
+          "preview_accessions": [
+            null,
+            null,
+            null,
+            null,
+            null
+          ]
+        }
+      }
+    ]
+  }
+}

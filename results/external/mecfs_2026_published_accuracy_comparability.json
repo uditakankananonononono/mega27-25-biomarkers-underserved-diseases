@@ -117,6 +117,7 @@
         "in_new_index_pool": true,
         "n": 10
       }
-    ]
+    ],
+    "cross_protocol_intersection_warning": "A descriptive overlap of 15 subjects between the new LLM seed-22 held-out 38 and P33 seed-22 held-out 60 is not an admissible paired performance set: the remaining 23 new-paper held-out subjects were in P33 training, and P33 model selection/feature VST was designed for its own split. Do not compute or present a matched win from the overlapping subset."
   }
 }

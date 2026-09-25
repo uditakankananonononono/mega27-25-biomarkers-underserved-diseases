@@ -62,3 +62,15 @@ def test_conflicting_disease_indicators_abstain_in_either_order():
     for text in ("pcos: n | pcos: y", "pcos: yes | pcos: no"):
         assert labels.label_one(text, "pcos") is None
     assert labels.label_one("ppd: yes | ppd: yes", "postpartum_depression") == "case"
+
+
+def test_file_parser_multiline_quoted_summary_preserves_exact_gsm_header(tmp_path):
+    import gzip
+    source = MATRIX.replace('!Series_title\t"Toy"', '!Series_title\t"Toy"\n!Series_summary\t"A multiline summary\ncontinued on next line"')
+    path = tmp_path / 'toy_series_matrix.txt.gz'
+    with gzip.open(path, 'wt') as f:
+        f.write(source)
+    e, a, _ = geo.parse_series_matrix(str(path))
+    assert e.shape == (2, 4)
+    assert list(e.columns) == list(a.index) == ['GSM1', 'GSM2', 'GSM3', 'GSM4']
+    assert e.loc['p2', 'GSM4'] == 8

@@ -89,14 +89,38 @@ def _parse_matrix_file(path: str):
                 break
             head.append(ln.rstrip("\n"))
     _, ann, meta = parse_series_matrix("\n".join(head))
-    nskip = len(head) + 1
-    try:
-        expr = pd.read_csv(path, sep="\t", skiprows=nskip, index_col=0, quotechar='"', low_memory=True,
-                           na_values=["null", "NA", ""], dtype={c: "float32" for c in ann.index})
-    except Exception:
-        expr = pd.read_csv(path, sep="\t", skiprows=nskip, index_col=0, quotechar='"', low_memory=False)
-        expr = expr.apply(pd.to_numeric, errors="coerce").astype("float32")
-    expr = expr[~expr.index.astype(str).str.startswith("!")]
+    # Read the matrix table from its physical boundary. pandas skiprows counts CSV
+    # records, not physical lines, when a quoted GEO metadata field spans lines;
+    # passing the original file and a physical line count can silently skip the
+    # actual ID_REF/GSM header (as in GSE621).
+    with opener(path, "rt", errors="replace") as fh:
+        for ln in fh:
+            if ln.startswith("!series_matrix_table_begin"):
+                break
+        else:
+            raise ValueError(f"GEO series matrix table start not found: {path}")
+        header = next(fh).rstrip("\r\n")
+        ids = header.split("\t")[1:]
+        ids = [v.strip().strip('"') for v in ids]
+        if ids != list(ann.index):
+            raise ValueError(f"GEO matrix header/annotation GSM mismatch: {path}")
+        # Stream only table rows into a temporary file so pandas sees the exact
+        # header and no multiline metadata or trailing GEO marker.
+        import tempfile
+        with tempfile.TemporaryFile(mode="w+t") as matrix:
+            matrix.write(header + "\n")
+            for ln in fh:
+                if ln.startswith("!series_matrix_table_end"):
+                    break
+                matrix.write(ln)
+            else:
+                raise ValueError(f"GEO series matrix table end not found: {path}")
+            matrix.seek(0)
+            expr = pd.read_csv(matrix, sep="\t", index_col=0, quotechar='"',
+                               low_memory=False, na_values=["null", "NA", ""])
+    if list(expr.columns) != list(ann.index):
+        raise ValueError(f"Parsed GEO matrix header/annotation GSM mismatch: {path}")
+    expr = expr.apply(pd.to_numeric, errors="coerce").astype("float32")
     return expr, ann, meta
 
 

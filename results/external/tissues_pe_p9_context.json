@@ -1,0 +1,42 @@
+{
+  "url": "https://download.jensenlab.org/human_tissue_knowledge_full.tsv",
+  "retrieved_ist": "2026-09-25 20:28",
+  "source_sha256": "227fbe702646c96309d36a0b0a43263828a5b7f0b6c69abf34e394de7311fcdb",
+  "source_bytes": 24995360,
+  "n_rows": 339455,
+  "target_tissues": [
+    "Blood",
+    "Decidua",
+    "Peripheral blood mononuclear cell",
+    "Placenta",
+    "Plasma",
+    "Serum",
+    "Trophoblast"
+  ],
+  "fixed_genes": [
+    "FES",
+    "GPAT3",
+    "FURIN",
+    "GRAMD1A",
+    "ZNF467",
+    "LPGAT1"
+  ],
+  "exact_tissue_rows": {
+    "FES": [],
+    "GPAT3": [],
+    "FURIN": [
+      {
+        "protein": "ENSP00000483552",
+        "tissue_id": "BTO:0000089",
+        "tissue": "Blood",
+        "source": "UniProtKB-RC",
+        "evidence": "CURATED",
+        "confidence": "4"
+      }
+    ],
+    "GRAMD1A": [],
+    "ZNF467": [],
+    "LPGAT1": []
+  },
+  "limitations": "Knowledge-channel curated tissue occurrence only; not PE-specific or quantified expression, and lack of a row is not protein absence."
+}

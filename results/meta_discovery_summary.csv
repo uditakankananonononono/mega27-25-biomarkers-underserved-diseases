@@ -1,0 +1,10 @@
+disease,n_series,n_case,n_control,n_genes,n_q05,median_I2
+chagas,1,10,7,21752,2287,0.0
+endometriosis,7,155,158,19392,1172,0.4899200506579755
+fibromyalgia,1,67,75,19699,8,0.0
+interstitial_cystitis,2,16,14,21824,2745,0.0
+leishmaniasis,3,55,28,19382,585,0.6068225784772037
+me_cfs,2,16,14,19037,49,0.0
+pcos,8,76,50,18973,212,0.24388800136383057
+postpartum_depression,1,16,32,9744,0,0.0
+preeclampsia,16,271,401,19188,648,0.48953854243339295

@@ -217,3 +217,6 @@ Program gate is record-level: individually fetched/verified/used GSM accessions 
 - P17 null wording corrected after audit: the 10,000 random panels preserve UP/DOWN counts and require discovery k>=4; they do not exactly match target k distribution. Thus p=.5811 is a limited direction-preserving/minimum-coverage reference. Failure also follows the registered 10/20 gene coverage and 6/10 sign count regardless of null precision.
 
 - P17 source reconciliation check: publication describes cohort-one six NC/six EU/ten EC while public matrix and GEO GSM map six NC/seven EU/seven EC. No source crosswalk resolves the discrepancy. Source says normal cycles/no recent hormone treatment, not donor-level cycle phase. Do not compare numerically with published sample counts or claim phase-controlled result.
+
+## State 14:24 P18 registration before expression download
+- Identified GSE315857 proliferative-phase eutopic endometrium 4 endometriosis, 4 controls, histologically dated. Frozen unchanged P17 top-20 genes and P18 processing/threshold before reading matrix; cohort's published study already names YWHAZ, so not novelty. GEO https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE315857 . No P18 result, accession-count change, or scientific-endpoint claim yet.

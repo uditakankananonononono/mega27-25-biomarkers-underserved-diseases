@@ -1,0 +1,64 @@
+{
+  "source_url": "https://raw.githubusercontent.com/adb258/cfrna_ai_manuscript/main/data/joined_df_MECFS.csv",
+  "paper_url": "https://www.nature.com/articles/s41467-026-74077-x",
+  "retrieved_ist": "2026-09-25 20:54",
+  "sha256": "0db5609dfb0529587bc84e075a606603813f376af75f99c3bd2728b025097fd7",
+  "seed_count": 50,
+  "accuracy_by_method": {
+    "EXTRATREES_accuracy": {
+      "mean_accuracy": 0.5757894736842105,
+      "sd_over_seeds": 0.06675235226895646,
+      "min": 0.447368421052632,
+      "max": 0.736842105263158
+    },
+    "GLMNETLasso_accuracy": {
+      "mean_accuracy": 0.5794736842105263,
+      "sd_over_seeds": 0.06797965530190056,
+      "min": 0.447368421052632,
+      "max": 0.736842105263158
+    },
+    "GLMNETRidge_accuracy": {
+      "mean_accuracy": 0.5994736842105262,
+      "sd_over_seeds": 0.05951022137477788,
+      "min": 0.473684210526316,
+      "max": 0.710526315789474
+    },
+    "NNET_accuracy": {
+      "mean_accuracy": 0.5768421052631578,
+      "sd_over_seeds": 0.06464416619610433,
+      "min": 0.473684210526316,
+      "max": 0.736842105263158
+    },
+    "RF_accuracy": {
+      "mean_accuracy": 0.5794736842105261,
+      "sd_over_seeds": 0.07022934735666438,
+      "min": 0.421052631578947,
+      "max": 0.736842105263158
+    },
+    "gpt_naive_accuracy": {
+      "mean_accuracy": 0.5773684210526315,
+      "sd_over_seeds": 0.0739388724951147,
+      "min": 0.421052631578947,
+      "max": 0.789473684210526
+    },
+    "gpt_informed_accuracy": {
+      "mean_accuracy": 0.5499999999999999,
+      "sd_over_seeds": 0.07078259542767934,
+      "min": 0.368421052631579,
+      "max": 0.684210526315789
+    },
+    "claude_naive_accuracy": {
+      "mean_accuracy": 0.49975817923186355,
+      "sd_over_seeds": 0.08674106701562596,
+      "min": 0.342105263157895,
+      "max": 0.710526315789474
+    },
+    "claude_informed_accuracy": {
+      "mean_accuracy": 0.5205405405405404,
+      "sd_over_seeds": 0.0676366147685871,
+      "min": 0.394736842105263,
+      "max": 0.684210526315789
+    }
+  },
+  "caveats": "Source paper uses 50 stratified 70:30 splits of an ME/CFS subset and its own feature-selection/classifier workflow. Its mean accuracy is not P33 authors seed-22 108/60 test AUROC or 17-GEO-cohort CNN AUROC. Source table has only seed-level accuracies, not patient-level predictions here. Accuracy and AUROC are different metrics; no claim of beating these models is possible without identical split and feature-selection availability."
+}

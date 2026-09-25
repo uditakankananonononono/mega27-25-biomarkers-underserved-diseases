@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """Source-level and matrix-level audit of two GEO PPD methylation studies; no clinical claims."""
-import csv,gzip,hashlib,json,pathlib,collections,re,requests,os,urllib.request
+import csv,gzip,hashlib,json,pathlib,os,urllib.request
 import numpy as np
 from scipy.stats import ttest_ind
 R=pathlib.Path(__file__).resolve().parent/'sources'
@@ -18,14 +18,12 @@ for acc,filename in [('GSE44132','GSE44132_series_matrix.txt.gz'),('GSE335141','
    import shutil;shutil.copyfileobj(response,out)
  assert hashlib.sha256(p.read_bytes()).hexdigest()==EXPECTED_SHA256[acc], f'{acc}: source matrix digest differs; stop before analysis'
  if acc=='GSE44132':
-  # GEO matrix columns are GSM; omit four extra technical repeats of participant PR01-084.
+  # GEO matrix columns are GSM; exclude all five PR01-084 cross-batch technical controls.
   with gzip.open(p,'rt') as f:
    for line in f:
     if line.startswith('"ID_REF"'):
      header=next(csv.reader([line],delimiter='\t'));break
-  key='gsm';colmap={x['gsm']:x['gsm'] for x in records}
-  keep=[x for x in records if x['patient_token']!='PR01-084' or x['gsm']=='GSM1079493']
-  # technical control excluded altogether from prospective PPD analysis.
+  colmap={x['gsm']:x['gsm'] for x in records}
   keep=[x for x in records if x['patient_token']!='PR01-084']
   case=[x for x in keep if x['phenotype']=='yes'];control=[x for x in keep if x['phenotype']=='no']
   selected=case+control

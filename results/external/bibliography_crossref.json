@@ -1,5 +1,5 @@
 {
-  "retrieved_at_utc": "2026-09-25T06:32:19.389165+00:00",
+  "retrieved_at_utc": "2026-09-25T06:37:22.091156+00:00",
   "works": [
     {
       "doi": "10.3389/fimmu.2025.1511529",
@@ -259,6 +259,25 @@
       ],
       "url": "https://doi.org/10.1016/j.juro.2011.09.142",
       "metadata_api": "https://api.crossref.org/works/10.1016/j.juro.2011.09.142",
+      "type": "journal-article"
+    },
+    {
+      "doi": "10.2147/IJWH.S618420",
+      "title": "Peripheral Blood Transcriptomic Features Distinguishing Postpartum Depression from Major Depressive Disorder and Healthy Postpartum Controls",
+      "journal": "International Journal of Women's Health",
+      "published": [
+        2026,
+        9
+      ],
+      "authors": [
+        "Lin",
+        "Tang",
+        "Kuang",
+        "Yang",
+        "Zhao"
+      ],
+      "url": "https://doi.org/10.2147/ijwh.s618420",
+      "metadata_api": "https://api.crossref.org/works/10.2147/IJWH.S618420",
       "type": "journal-article"
     }
   ]

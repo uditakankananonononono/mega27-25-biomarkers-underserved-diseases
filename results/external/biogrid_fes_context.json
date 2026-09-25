@@ -1,0 +1,31 @@
+{
+  "retrieved": "2026-09-25",
+  "gene": "FES",
+  "species": "Homo sapiens",
+  "summary_url": "https://thebiogrid.org/108533/summary/homo-sapiens/fes.html",
+  "biogrid_id": "108533",
+  "interactors": 40,
+  "curated_interactions": 53,
+  "chemical_interactions": 1,
+  "example": [
+    {
+      "interaction_id": "317111",
+      "url": "https://thebiogrid.org/interaction/317111",
+      "partner": "BCR",
+      "page_has_affinity_capture_western": true,
+      "page_has_two_hybrid": false,
+      "page_has_low_throughput": true,
+      "last_pubmed_excerpt": "Pubmed: 7529874 ] Throughput Low Throughput Related interactions Interaction Experimental Evidence C"
+    },
+    {
+      "interaction_id": "314767",
+      "url": "https://thebiogrid.org/interaction/314767",
+      "partner": "HSH2D",
+      "page_has_affinity_capture_western": true,
+      "page_has_two_hybrid": true,
+      "page_has_low_throughput": true,
+      "last_pubmed_excerpt": "Pubmed: 11700021 ] Throughput Low Throughput Related interactions Interaction Experimental Evidence "
+    }
+  ],
+  "caveat": "Aggregated curated interaction counts are not a PE-specific mechanism, diagnosis or therapeutic safety evidence; may include different tissues, methods and species in individual interactions."
+}

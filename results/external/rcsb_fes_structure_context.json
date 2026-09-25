@@ -1,0 +1,32 @@
+{
+  "retrieved": "2026-09-25",
+  "entries": [
+    {
+      "pdb": "8XKP",
+      "source_page": "https://www.rcsb.org/structure/8XKP",
+      "entry_api": "https://data.rcsb.org/rest/v1/core/entry/8XKP",
+      "title": "Crystal structure of human tyrosine-protein kinase Fes/Fps in complex with compound 17c",
+      "release_date": "2025-01-01T00:00:00.000+00:00",
+      "resolution_A": 2.05,
+      "primary_citation": "Optimization of Novel Pyrido-pyridazinone Derivatives as FER Tyrosine Kinase Inhibitors, Leading to the Potent DS08701581.",
+      "citation_pubmed": 39015278,
+      "entity_api": "https://data.rcsb.org/rest/v1/core/polymer_entity/8XKP/1",
+      "protein_description": "Tyrosine-protein kinase Fes/Fps",
+      "interpretation": "A solved FES kinase structure/protein context, not evidence that FES is a preeclampsia biomarker or drug target in pregnancy."
+    },
+    {
+      "pdb": "3BKB",
+      "source_page": "https://www.rcsb.org/structure/3BKB",
+      "entry_api": "https://data.rcsb.org/rest/v1/core/entry/3BKB",
+      "title": "Crystal structure of human Feline Sarcoma Viral Oncogene Homologue (v-FES)",
+      "release_date": "2007-12-25T00:00:00.000+00:00",
+      "resolution_A": 1.78,
+      "primary_citation": "Structural Coupling of SH2-Kinase Domains Links Fes and Abl Substrate Recognition and Kinase Activation",
+      "citation_pubmed": 18775312,
+      "entity_api": "https://data.rcsb.org/rest/v1/core/polymer_entity/3BKB/1",
+      "protein_description": "Proto-oncogene tyrosine-protein kinase Fes/Fps",
+      "interpretation": "A solved FES kinase structure/protein context, not evidence that FES is a preeclampsia biomarker or drug target in pregnancy."
+    }
+  ],
+  "caveat": "RCSB PDB is a distinct curated structural data service. Structures can aid residue/domain context, not validate disease association or clinical safety."
+}

@@ -40,3 +40,5 @@ NetworkX,-,1,analysis library,scripts/signature_network_context.py,Physical STRI
 seaborn,-,1,analysis visualization library,scripts/figures.py,Rendered empirical matched-null distributions for PCOS P8 and IC P7 failures using observed draws
 Crossref,-,1,scholarly metadata registry,results/external/bibliography_crossref.json,Verified titles and publication dates of eight DOI research studies cited in manuscript
 NHGRI-EBI GWAS Catalog,-,1,external scientific association database,results/external/gwas_pe_context.json,Exact preeclampsia trait MONDO_0005081 association-gene audit; no independent expression validation inferred
+RCSB Protein Data Bank,-,1,external scientific structure archive,results/external/rcsb_fes_structure_context.json,Exact human FES kinase structures 8XKP and 3BKB checked for protein/domain context; neither validates a PE biomarker
+BioGRID,-,1,external scientific interaction database,results/external/biogrid_fes_context.json,Human FES record 108533: 40 interactors and 53 curated interactions with primary interaction pages checked; not PE-specific evidence

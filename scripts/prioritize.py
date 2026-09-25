@@ -55,7 +55,9 @@ for d in diseases:
             scores["gcn"] = models.train_node_model(models.seeded_node_model(models.GCN, F.shape[1], seed=seed), x, Ahat, y, trm, seed=seed)
             scores["sage"] = models.train_node_model(models.seeded_node_model(models.SAGE, F.shape[1], seed=seed), x, Amean, y, trm, seed=seed)
             # hybrid: SAGE with the fold's RWR score as an extra input feature
-            rw = scores["rwr"]; rwz = (np.log(rw + 1e-12) - np.log(rw + 1e-12).mean()) / np.log(rw + 1e-12).std()
+            rw = scores["rwr"]
+            log_rw = np.log(rw + 1e-12)
+            rwz = (log_rw - log_rw[tr].mean()) / (log_rw[tr].std() + 1e-6)
             xh = torch.tensor(np.column_stack([F_fold, rwz]).astype(np.float32))
             scores["sage_rwr"] = models.train_node_model(models.seeded_node_model(models.SAGE, xh.shape[1], seed=seed), xh, Amean, y, trm, seed=seed)
             for mth, s in scores.items():

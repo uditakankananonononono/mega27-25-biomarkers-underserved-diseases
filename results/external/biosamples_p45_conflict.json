@@ -1,0 +1,13 @@
+{
+  "source_url": "https://www.ebi.ac.uk/biosamples/samples/SAMN40568562",
+  "retrieved_ist": "2026-09-25 20:29",
+  "biosample": "SAMN40568562",
+  "geo_name": "GSM8158605",
+  "sra": "SRS20810958",
+  "source_sha256": "e8f804d103c7ce1f959a47b939a7024d5f391412b307ed3660d1bae0c79569b7",
+  "title": "T_10_V1",
+  "source_name": "PE = Preeclampsia event during pregnancy; V1 = Blood sample at detection of preeclampsia",
+  "experimental_group": "PE = Preeclampsia event during pregnancy; V1 = Blood sample at detection of preeclampsia",
+  "last_update": "2025-01-25T03:18:20.907Z",
+  "interpretation": "INSDC BioSamples mirrors the same submitted conflicting GEO metadata (title T, group PE). It is not independent adjudication; P45 remains paused."
+}

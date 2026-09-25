@@ -9,3 +9,10 @@ Pipeline order:
 5. scripts/prioritize.py -> results/benchmark_gene_prioritization.csv, results/candidates_discovery.csv
 6. meta_analysis.py validation ONLY after candidates are committed -> replication test
 7. CNN sample classifier (leave-one-series-out), PubMed novelty check, CLI tool, paper.
+
+## State 10:34 (commit 9d2bf0c)
+- Pass-2 processing done: 69 ok series; 9 excluded (results/series_exclusions.csv); split LOCKED (15406e5).
+- Discovery meta done: results/meta_discovery/*, summary results/meta_discovery_summary.csv.
+- Running: prioritize.py preeclampsia then endometriosis (outputs results/prio/benchmark_<d>.csv, candidates_<d>.csv). Remaining: pcos leishmaniasis interstitial_cystitis me_cfs chagas fibromyalgia postpartum_depression.
+- TODO: PPD needs more cohorts (RNA-seq GSE290313 etc.); then validation meta (scripts/meta_analysis.py validation) ONLY after candidates committed; replication test (sign concordance + p<0.05 vs permutation null of random discovery-significant genes).
+- TODO: CNN sample classifier (leave-one-series-out) using data/processed/*.pkl.gz; PubMed novelty for candidates; more external tools (Ensembl, UniProt, Reactome/g:Profiler, GTEx, HPA, GWAS Catalog, ChEMBL/DGIdb, MyGene, Enrichr, KEGG...), paper (LaTeX Times, 50pp, 10+ derivations), Drive upload via parent.

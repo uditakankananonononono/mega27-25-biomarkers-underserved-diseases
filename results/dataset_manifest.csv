@@ -1324,3 +1324,6 @@ GSM8579743,GEO individually fetched GSM full-text record,preeclampsia:P44 PE exa
 GSM8579744,GEO individually fetched GSM full-text record,preeclampsia:P44 PE exact FPKM column; nested in GSE279757
 GSM8579745,GEO individually fetched GSM full-text record,preeclampsia:P44 PE exact FPKM column; nested in GSE279757
 GSM8579746,GEO individually fetched GSM full-text record,preeclampsia:P44 PE exact FPKM column; nested in GSE279757
+GSE226260,GEO separately fetched full series accession,long_covid:parent series for P36 expression-used GSM cohort; not an extra independent sample
+GSE275334,GEO separately fetched full series accession,long_covid:parent series for P37 expression-used GSM cohort; not an extra independent sample
+GSE334857,GEO separately fetched full series accession,long_covid:parent series for P38 expression-used GSM cohort; not an extra independent sample

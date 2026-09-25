@@ -1,0 +1,30 @@
+{
+  "GSE44132": {
+    "source_matrix_sha256": "b2d715ec45c250426c8b2a4e5317bf589f581f8425d1101d9f6d752ba6dc19b9",
+    "total_sample_columns": 55,
+    "loci": {
+      "cg00058938": {
+        "n_columns": 55,
+        "finite_beta_cells": 55
+      },
+      "cg21326881": {
+        "n_columns": 55,
+        "finite_beta_cells": 55
+      }
+    }
+  },
+  "GSE335141": {
+    "source_matrix_sha256": "13002634be22d3b58529402b07b89a57610479f18f3208ebd8ce94c6fc12b5b2",
+    "total_sample_columns": 82,
+    "loci": {
+      "cg00058938_TC21": {
+        "n_columns": 82,
+        "finite_beta_cells": 82
+      },
+      "cg21326881_TC21": {
+        "n_columns": 82,
+        "finite_beta_cells": 82
+      }
+    }
+  }
+}

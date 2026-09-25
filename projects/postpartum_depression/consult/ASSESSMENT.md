@@ -22,6 +22,6 @@ Conditional direction: compare a clinical prenatal-mood baseline to a fixed, pub
 
 No numerical claim, external citation, published coefficient or biological finding from ChatGPT was adopted without independent source verification. This consultation does not satisfy 40 genuinely used external scientific services; ChatGPT is not counted as a validation source.
 
-### New source-grounded blocker after consultation
+### Corrected source check after consultation
 
-The original paper names cg21326881 and cg00058938 (https://pmc.ncbi.nlm.nih.gov/articles/PMC7039252/). Direct scan of the pinned GEO matrices found **neither** in GSE44132's 483,266-row deposited series matrix; both occur only as EPICv2-suffixed rows in GSE335141, which is postpartum. Thus ChatGPT's most prominent proposed "build now" HP1BP3/TTC9B comparator in GSE44132 is currently **not executable as stated**. Do not improvise proxy CpGs. Need primary raw/pyrosequencing assay mapping or a different honest baseline and a new preregistration. See `PUBLISHED_LOCUS_LOOKUP.md`.
+The original paper names cg21326881 and cg00058938 (https://pmc.ncbi.nlm.nih.gov/articles/PMC7039252/). Proper CSV parsing of the pinned GEO series matrix confirms each exact CpG occurs once in GSE44132; GSE335141 has EPICv2-suffixed versions but postpartum timing prevents antenatal validation. An earlier raw text-prefix grep incorrectly said the rows were absent because GEO puts quotes around probe IDs; it was immediately rechecked, withdrawn and corrected before any benchmark. Published coefficients, normalization and original cohort allocation still need source grounding before attempting a faithful model replication. See `PUBLISHED_LOCUS_LOOKUP.md`.

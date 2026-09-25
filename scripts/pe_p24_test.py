@@ -47,6 +47,16 @@ for row in rows:
  if str(row[0]) in targets:targets[str(row[0])].append(vals)
 assert count>10000 and (totals>0).all()
 case1=np.array([out[x]=='Preterm Preeclampsia' for x in sample_order]);control=np.array([out[x]=='Normotensive control' for x in sample_order]);allcase=np.array([out[x] in ('Preterm Preeclampsia','Term Preeclampsia') for x in sample_order]);assert (case1.sum(),control.sum(),allcase.sum())==(4,9,10)
+conflicts=[]
+for gsm,row in small.iterrows():
+ token=str(row['Sample_title']).split('gestation, ',1)[1].split(', small RNAseq')[0]
+ assert token in titles
+ mrna_gsm=titles[token]
+ mrna_label=out[mrna_gsm]
+ small_label=str(row['Sample_characteristics_ch1_1']).split(': ',1)[-1]
+ if mrna_label!=small_label:
+  conflicts.append(dict(token=token,mrna_gsm=mrna_gsm,mrna_outcome=mrna_label,small_rna_gsm=gsm,small_rna_outcome=small_label))
+assert len(conflicts)==4, f'Cross-modality labels changed: {conflicts}'
 result=[]
 for gene in fixed:
  if len(targets[gene])!=1:
@@ -58,7 +68,7 @@ for gene in fixed:
   r.update({label+'_g':g,label+'_p':p,label+'_down':bool(g<0),label+'_bonferroni':bool(g<0 and p<.05/6)})
  result.append(r)
 passrule=bool(all(r.get('preterm_down') for r in result) and any(r.get('preterm_bonferroni') for r in result))
-rec=dict(source='https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE295760',matrix_sha256=hashlib.sha256(matrix.read_bytes()).hexdigest(),workbook_sha256=hashlib.sha256(workbook.read_bytes()).hexdigest(),n_genes=count,n_samples=19,source_summary_says='14 samples (4 preterm PE, 4 term PE, 6 controls)',actual_mrna_metadata=dict(Counter(out.values())),sample_library_totals=totals.tolist(),panel=result,registered_primary_rule_pass=passrule)
+rec=dict(source='https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE295760',matrix_sha256=hashlib.sha256(matrix.read_bytes()).hexdigest(),workbook_sha256=hashlib.sha256(workbook.read_bytes()).hexdigest(),n_genes=count,n_samples=19,source_summary_says='14 samples (4 preterm PE, 4 term PE, 6 controls)',actual_mrna_metadata=dict(Counter(out.values())),sample_library_totals=totals.tolist(),panel=result,registered_primary_rule_pass=None,calculated_rule_under_mrna_labels=passrule,interpretation='uninterpretable: four same-token cross-modality outcome-label conflicts',label_conflicts=conflicts)
 (root/'results/pe_p24_result.json').write_text(json.dumps(rec,indent=2)+'\n')
 with (root/'results/pe_p24_panel.csv').open('w',newline='') as f:
  field=['gene','status','rows','preterm_g','preterm_p','preterm_down','preterm_bonferroni','all_pe_secondary_g','all_pe_secondary_p','all_pe_secondary_down','all_pe_secondary_bonferroni'];w=csv.DictWriter(f,fieldnames=field);w.writeheader();w.writerows(result)

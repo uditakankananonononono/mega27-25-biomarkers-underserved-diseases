@@ -111,5 +111,37 @@
       "all_pe_secondary_bonferroni": false
     }
   ],
-  "registered_primary_rule_pass": false
+  "registered_primary_rule_pass": null,
+  "calculated_rule_under_mrna_labels": false,
+  "interpretation": "uninterpretable: four same-token cross-modality outcome-label conflicts",
+  "label_conflicts": [
+    {
+      "token": "C1934",
+      "mrna_gsm": "GSM8956905",
+      "mrna_outcome": "Preterm Preeclampsia",
+      "small_rna_gsm": "GSM8956924",
+      "small_rna_outcome": "Normotensive control"
+    },
+    {
+      "token": "C1941",
+      "mrna_gsm": "GSM8956906",
+      "mrna_outcome": "Normotensive control",
+      "small_rna_gsm": "GSM8956925",
+      "small_rna_outcome": "Preterm Preeclampsia"
+    },
+    {
+      "token": "C3729",
+      "mrna_gsm": "GSM8956908",
+      "mrna_outcome": "Term Preeclampsia",
+      "small_rna_gsm": "GSM8956927",
+      "small_rna_outcome": "Normotensive control"
+    },
+    {
+      "token": "C4144",
+      "mrna_gsm": "GSM8956910",
+      "mrna_outcome": "Normotensive control",
+      "small_rna_gsm": "GSM8956929",
+      "small_rna_outcome": "Term Preeclampsia"
+    }
+  ]
 }

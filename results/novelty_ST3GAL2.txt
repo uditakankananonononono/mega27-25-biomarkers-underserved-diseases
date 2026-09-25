@@ -1,0 +1,3 @@
+ST3GAL2 PE 0
+ST3GAL2 any pregnancy 1
+ST3GAL2 total 52

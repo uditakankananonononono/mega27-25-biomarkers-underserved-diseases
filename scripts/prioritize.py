@@ -1,9 +1,8 @@
-import warnings; warnings.filterwarnings("ignore")
 """Gene-prioritisation benchmark (GNN vs propagation/feature baselines) + novel-candidate ranking.
 
 Positives: genes with an Open Targets non-expression evidence score >= POS_T for the disease
 (rna_expression is excluded because it is derived from GEO data like our features -> leakage).
-Protocol: 5-fold stratified gene CV x 3 seeds; AUROC / AUPRC on held-out genes."""
+Protocol: 5-fold stratified gene CV x 2 seeds; AUROC / AUPRC on held-out genes."""
 import json, os, sys, numpy as np, pandas as pd, torch
 from sklearn.linear_model import LogisticRegression
 from sklearn.metrics import roc_auc_score, average_precision_score
@@ -40,21 +39,25 @@ for d in diseases:
             i = idx[g]
             F[i] = [r.mu, r.z, abs(r.z), -np.log10(max(r.p, 1e-300)), r.I2, r.k / kmax, 1]
     F = np.column_stack([F, np.log1p(deg)]).astype(np.float32)
-    F = (F - F.mean(0)) / (F.std(0) + 1e-6)
-    x = torch.tensor(F)
+    # Fit standardization on the training genes within each fold: even an
+    # unsupervised test-gene transformation leaks the held-out feature distribution.
+    F = F.astype(np.float32)
     for seed in range(2):
         skf = StratifiedKFold(5, shuffle=True, random_state=seed)
         for fold, (tr, te) in enumerate(skf.split(np.zeros(len(y)), y)):
             trm = np.zeros(len(y), bool); trm[tr] = True
+            mean, std = F[tr].mean(0), F[tr].std(0)
+            F_fold = (F - mean) / (std + 1e-6)
+            x = torch.tensor(F_fold)
             scores = {"meta_abs_z": np.abs(F[:, 2]),
                       "rwr": network.rwr(A, y * trm),
-                      "logreg": LogisticRegression(max_iter=500, class_weight="balanced").fit(F[tr], y[tr]).predict_proba(F)[:, 1]}
+                      "logreg": LogisticRegression(max_iter=500, class_weight="balanced").fit(F_fold[tr], y[tr]).predict_proba(F_fold)[:, 1]}
             scores["mlp"] = models.train_node_model(models.seeded_node_model(models.MLP, F.shape[1], seed=seed), x, None, y, trm, seed=seed)
             scores["gcn"] = models.train_node_model(models.seeded_node_model(models.GCN, F.shape[1], seed=seed), x, Ahat, y, trm, seed=seed)
             scores["sage"] = models.train_node_model(models.seeded_node_model(models.SAGE, F.shape[1], seed=seed), x, Amean, y, trm, seed=seed)
             # hybrid: SAGE with the fold's RWR score as an extra input feature
             rw = scores["rwr"]; rwz = (np.log(rw + 1e-12) - np.log(rw + 1e-12).mean()) / np.log(rw + 1e-12).std()
-            xh = torch.tensor(np.column_stack([F, rwz]).astype(np.float32))
+            xh = torch.tensor(np.column_stack([F_fold, rwz]).astype(np.float32))
             scores["sage_rwr"] = models.train_node_model(models.seeded_node_model(models.SAGE, xh.shape[1], seed=seed), xh, Amean, y, trm, seed=seed)
             for mth, s in scores.items():
                 bench.append({"disease": d, "method": mth, "seed": seed, "fold": fold, "npos": npos,
@@ -63,7 +66,8 @@ for d in diseases:
     # final model on all labels -> candidates not linked to the disease in Open Targets at all
     allm = np.ones(len(y), bool)
     rw = network.rwr(A, y); rwz = (np.log(rw + 1e-12) - np.log(rw + 1e-12).mean()) / np.log(rw + 1e-12).std()
-    xh = torch.tensor(np.column_stack([F, rwz]).astype(np.float32))
+    F_all = (F - F.mean(0)) / (F.std(0) + 1e-6)
+    xh = torch.tensor(np.column_stack([F_all, rwz]).astype(np.float32))
     s = np.mean([models.train_node_model(models.seeded_node_model(models.SAGE, xh.shape[1], seed=k), xh, Amean, y, allm, seed=k) for k in range(3)], axis=0)
     c = pd.DataFrame({"gene": genes, "score": s, "known_ot": known_any})
     c = c.join(meta[["mu", "z", "p", "q", "I2", "k"]], on="gene")

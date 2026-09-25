@@ -229,6 +229,23 @@ redirect mode only; verbatim prompts and responses are preserved in
 incorrect threshold suggested by the consult ($\geq21/25$) was corrected to
 $\geq18/25$ with the correction recorded in \texttt{redirect/round2\_meta.json}.
 
+\subsection{Inference procedures}
+All gated statistics were computed with the same three primitives. (1)
+Leave-one-patient-out scoring: for each of the 25 patients in turn, module
+gene weights and any reference offsets are refit on the other 24 patients, the
+held-out patient's lesion and non-lesion libraries are scored without that
+patient contributing to any parameter, and $D$ is the lesion-minus-non-lesion
+difference of the module composite. (2) Sign inference: the primary statistic
+is the count of positive $D$ values, tested by an exact one-sided binomial
+against $p_0=0.5$; the locked pass bar is $\geq 18/25$ with $p<0.025$ (the
+count tail, not an asymptotic approximation). (3) Effect-size context: a
+bootstrap 95\% confidence interval on the median $D$ is reported alongside,
+and for the urine legs - where the design is a group contrast, not a paired
+sign test - a one-sided permutation null with 20,000 shuffles and fixed seed
+20260926. No other inferential machinery is used anywhere in the locked
+analysis; every number quoted in the gates derives from these primitives
+applied to the committed fold and composite files.
+
 \subsection{Module coverage and symbol nomenclature}
 Of the 200 committed M6 genes, 190 are present in the author FPKM matrix. The
 ten absent - H2AX, H2AZ1, H2AZ2, H2BC12, JPT1, KMT5A, KNL1, MAP3K20, NSD2,
@@ -274,6 +291,24 @@ D^{\mathrm{res}}_i=\sum_{m:\,\mathrm{selected}}\left(\Delta_{m,i}-b_m\right).
 BCG never enters a HIC training fold; the block is exchangeable.
 
 \section{Gate A2.1: the G2/M residual replicates}
+
+\subsection{Per-patient effect narrative}
+Across the 25 leave-one-patient-out folds, the Gate 1 lesion-versus-non-lesion
+contrast (M2) has median $D=0.273$ and range $[-0.687,+1.546]$, with 19 of 25
+patients positive. The strongest individual effects are patients 25
+($D=1.546$), 18 ($1.139$) and 13 ($1.126$); the six negative patients are led
+in magnitude by 24 ($-0.687$), 9 ($-0.543$) and 21 ($-0.466$). The A2.1
+net-of-BCG residual (M6) has median $D_{\mathrm{resid}}=0.180$ and range
+$[-0.680,+2.047]$, with 18 of 25 positive. Its three strongest patients are
+21 ($2.047$), 24 ($1.158$) and 9 ($0.888$) - precisely the three most negative
+patients of the M2 contrast. The anti-correspondence is not an artifact of the
+residual construction: the residual subtracts the fixed BCG offset, identical
+for every patient, so it cannot invert a per-patient ranking by itself. What
+the folds show is that the patients whose lesion tissue looks least like
+inflammatory remodeling are the ones whose tissue shows the strongest G2/M
+cell-state program relative to BCG inflammation. This is descriptive only; no
+test was run on the inversion itself.
+
 Only module M6 (G2/M checkpoint, 190 matrix-covered genes) is selected in every
 fold. The residual replication passes the locked bar exactly: 18/25 held-out
 patients positive, $p=.0216$ ($P(X\geq18\mid25,.5)=.02164$), median residual
@@ -359,6 +394,24 @@ manuscript's evidence, un-claimed by the existing IC literature - context for
 novelty, not proof of it.
 
 \section{Gene-level anatomy of the M6 regulator set}
+
+\subsection{Platform coverage of the measured regulator slice}
+The A2.3b regulator universe is large and densely connected: 87,627 validated
+human miRNA-target pairs name 2,807 distinct regulators against the 200 M6
+genes, and per-gene files show a median of 676.5 distinct regulator families
+per M6 gene. The families targeting at least 100 of the 200 genes are
+miR-548 (180 genes), miR-29 (172), miR-15 (166), miR-30 (164), miR-16 (162),
+miR-103 (153), miR-92 (150), miR-17 (150), miR-24 (147) and miR-181 (144) -
+broadly pleiotropic families, not M6-specific ones. Against that universe, the
+urine array measures 262 mature forms. These map to 221 distinct miRNA
+families; 182 of those families contribute a single measured member, and the
+largest measured family (miR-4433) contributes four. By arm, 162 measured
+forms are 5p and 100 are 3p. The measured slice is therefore thin and
+family-sparse relative to the regulator space the module presents, and the
+A2.3b negative is a statement about that platform's slice - not about urinary
+miRNA regulation of the program in general. A panel with denser family
+coverage would be a different, separately preregisterable test.
+
 The 87{,}627 validated human miRNA-target pairs behind A2.3b distribute very
 unevenly across the 200 M6 genes (per-gene counts committed as
 \texttt{results/ic\_p48\_a2\_m6\_gene\_mirna\_pairs.csv}; 87{,}632
@@ -406,6 +459,40 @@ with the urothelial hyperproliferation described in HIC histology, and shows a
 directionally consistent but statistically weak noninvasive correlate in two
 independent urine modalities. The honest summary is: a replicated tissue
 residual program with an unproven urinary marker path.
+
+\subsection{What the M0 control does and does not rule out}
+The novelty control asks whether a known IFN$\gamma$-inflammatory module
+(M0) alone would have passed the Gate 1 bar. It does not: 14 of 25 patients
+positive ($p=0.345$), median $D=0.012$. So the M2 pass (19/25) is not
+explained by the generic observation that inflamed tissue looks inflamed -
+the canonical inflammatory program does not itself separate lesion from
+non-lesion in this cohort. The post-hoc per-patient correlation between the
+M2 and M0 effects is $r=-0.078$ ($p=0.71$), meaning the patients who drive
+the M2 pass are not the patients with the strongest inflammatory-module
+contrast. What the M0 control cannot rule out is the reverse direction:
+non-lesion tissue in a Hunner bladder may itself be inflamed, compressing any
+inflammation-based contrast. The control's failure is therefore evidence
+about module identity, not about the biology of the non-lesion state.
+
+\subsection{What an independent validation cohort requires}
+The falsifiable contribution of this work is a claim about what a future
+cohort must show, and the cohort requirements follow directly from how the
+current gates are built. First, paired Hunner-lesion and non-lesion tissue
+from the same bladders, with patient as the unit of inference - the LOPO
+design exists because libraries are not independent of donors. Second,
+BCG-exposure metadata recorded per patient, since the residual program is
+defined against a BCG-inflammation offset and a cohort without exposure data
+cannot replicate the net-of-BCG construction. Third, the module membership,
+weights, offset and endpoint locked in a preregistration before the cohort is
+unblinded or, for a public accession, before its matrix is opened - the A2.3b
+episode in this project is a worked example of why: two individually
+exploratory directional results do not license a post-hoc combination, and
+any combined-urine variant requires an untouched cohort with fixed weights
+and a fixed endpoint locked in advance. Fourth, coverage: at least 190 of the
+200 M6 genes measurable, and a regulator panel denser than 262 forms if the
+urinary transfer is to be retested. A cohort meeting those four requirements
+turns the residual program from a replicated-in-one-cohort finding into a
+testable prediction.
 
 \subsection{Module-level reading of the two gates}
 The two positive gates select different modules for consistent reasons. Gate 1

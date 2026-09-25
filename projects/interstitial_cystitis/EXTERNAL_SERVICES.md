@@ -42,12 +42,20 @@ preregistered M6 program, not independent replication.
 | 30 | WikiPathways JSON API | Human pathway search per hub (e.g. MAPK14 in 1,131 human pathway text hits) | same |
 | 31 | PGS Catalog REST | Trait search "cystitis"/"bladder pain syndrome": 0 PGS traits - honest empty | same |
 
-Status: 31 genuinely used services with repo-resident evidence. Not counted:
+| 32 | Monarch Initiative v3 | IC disease record (MONDO:0018301) + association predicates + disease phenotypes (bladder/urethra/pain features recorded) | results/external/quaternary_annotations_m6.json |
+| 33 | NCBI ClinVar (eutils) | Clinical variant record counts per hub (RASAL2 222 ... DR1 20); distinct NCBI database, GEO-vs-PubMed counting precedent | same |
+| 34 | NCBI dbSNP (eutils) | Human variant counts per hub (RASAL2 145,551 ... SRSF1 9,441); distinct NCBI database | same |
+| 35 | NCBI Gene (eutils) | Gene records/summaries per hub; distinct NCBI database | same |
+| 36 | UCSC Genome Browser API | hg38 locus search per hub (position matches recorded) | same |
+| 37 | Signor | Full-network download (43,570 rows) filtered to human hub edges: MAPK14 239, G3BP1 11, SRSF1 9, DR1 1, RASAL2 0 (per-protein params verified ignored; network filtered locally) | same |
+
+Status: 37 genuinely used services with repo-resident evidence. Not counted:
 Git/GitHub/SSH/curl (infrastructure), Python/numpy/pandas/scipy (already counted
 in the program-wide audit, not re-claimed here as IC-lane evidence), GEO web
 pages vs GEO FTP (one service), Enrichr's two libraries (one service, two rows
 above kept for provenance of the two distinct locked gene sets - counted once).
-Next candidates, genuine use only: Monarch Initiative (disease-gene associations),
-UCSC Genome Browser API (locus context), ClinVar eutils (hub variant counts),
-DepMap (dependency context), Expression Atlas (baseline bladder expression),
-Signor (causal signaling), CORUM (complexes), HMDB (bladder metabolomics refs).
+Next candidates, genuine use only: Pathway Commons, EBI Complex Portal,
+Expression Atlas, Bgee, OpenFDA (only if a genuinely relevant approved drug
+exists - p38 inhibitors are investigational), DepMap (bot-wall observed).
+Rejected with evidence: CORUM (endpoint dead), HMDB (Cloudflare 403), DepMap
+(verification wall), OpenFDA for investigational p38 inhibitors (no labels).

@@ -1,0 +1,2748 @@
+{
+  "retrieved_at_utc": "2026-09-25T21:28:25.781918+00:00",
+  "hubs": [
+    "G3BP1",
+    "SRSF1",
+    "DR1",
+    "RASAL2",
+    "MAPK14"
+  ],
+  "services": {
+    "monarch": {
+      "url": "https://api-v3.monarchinitiative.org/v3/api/",
+      "data": {
+        "disease": {
+          "id": "MONDO:0018301",
+          "name": "interstitial cystitis",
+          "description": "A rare chronic debilitating urogenital disease characterized by urinary frequency, urgency, and pelvic pain."
+        },
+        "association_predicates": {
+          "biolink:subclass_of": 2
+        },
+        "associated_gene_labels_sample": [],
+        "phenotypes": [
+          "Abnormal labia morphology",
+          "Abnormal vagina morphology",
+          "Abnormality of the bladder",
+          "Abnormality of the genital system",
+          "Abnormality of the menstrual cycle",
+          "Abnormality of the urethra",
+          "Abnormality of tumor necrosis factor secretion",
+          "Anal pain",
+          "Autoimmunity",
+          "Depression",
+          "Dyspareunia",
+          "Dysuria",
+          "Elevated circulating C-reactive protein concentration",
+          "Functional abnormality of the bladder",
+          "Nocturia",
+          "Pelvic pain",
+          "Pollakisuria",
+          "Urinary bladder inflammation",
+          "Urinary urgency"
+        ]
+      }
+    },
+    "clinvar": {
+      "url_template": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=clinvar&term=<GENE>[gene]",
+      "data": {
+        "G3BP1": 97,
+        "SRSF1": 67,
+        "DR1": 20,
+        "RASAL2": 222,
+        "MAPK14": 61
+      }
+    },
+    "dbsnp": {
+      "url_template": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=snp&term=<GENE>[gene]",
+      "data": {
+        "G3BP1": 19683,
+        "SRSF1": 9441,
+        "DR1": 10585,
+        "RASAL2": 145551,
+        "MAPK14": 37118
+      }
+    },
+    "ncbi_gene": {
+      "url_template": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esummary.fcgi?db=gene&id=<uid>",
+      "data": {
+        "G3BP1": {
+          "uid": "10146",
+          "name": "G3BP1",
+          "description": "G3BP stress granule assembly factor 1",
+          "summary": "This gene encodes one of the DNA-unwinding enzymes which prefers partially unwound 3'-tailed substrates and can also unwind partial RNA/DNA and RNA/RNA duplexes in an ATP-dependent fashion. This enzyme is a member of the heterogeneous nuclear RNA-binding proteins and is also an element of the Ras si"
+        },
+        "SRSF1": {
+          "uid": "6426",
+          "name": "SRSF1",
+          "description": "serine and arginine rich splicing factor 1",
+          "summary": "This gene encodes a member of the arginine/serine-rich splicing factor protein family. The encoded protein can either activate or repress splicing, depending on its phosphorylation state and its interaction partners. Multiple transcript variants have been found for this gene. There is a pseudogene o"
+        },
+        "DR1": {
+          "uid": "1810",
+          "name": "DR1",
+          "description": "down-regulator of transcription 1",
+          "summary": "This gene encodes a TBP- (TATA box-binding protein) associated phosphoprotein that represses both basal and activated levels of transcription. The encoded protein is phosphorylated in vivo and this phosphorylation affects its interaction with TBP. This protein contains a histone fold motif at the am"
+        },
+        "RASAL2": {
+          "uid": "9462",
+          "name": "RASAL2",
+          "description": "RAS protein activator like 2",
+          "summary": "This gene encodes a protein that contains the GAP-related domain (GRD), a characteristic domain of GTPase-activating proteins (GAPs). GAPs function as activators of Ras superfamily of small GTPases. The protein encoded by this gene is able to complement the defective RasGAP function in a yeast syste"
+        },
+        "MAPK14": {
+          "uid": "1432",
+          "name": "MAPK14",
+          "description": "mitogen-activated protein kinase 14",
+          "summary": "The protein encoded by this gene is a member of the MAP kinase family. MAP kinases act as an integration point for multiple biochemical signals, and are involved in a wide variety of cellular processes such as proliferation, differentiation, transcription regulation and development. This kinase is a"
+        }
+      }
+    },
+    "ucsc_genome_api": {
+      "url_template": "https://api.genome.ucsc.edu/search?search=<GENE>;genome=hg38",
+      "data": {
+        "G3BP1": {
+          "search_keys": [
+            "genome",
+            "positionMatches"
+          ],
+          "position_matches": [
+            {
+              "name": "mane",
+              "trackName": "mane",
+              "description": "MANE Select Plus Clinical: Representative transcript from RefSeq & GENCODE",
+              "vis": "pack",
+              "matches": [
+                {
+                  "position": "chr5:151771954-151812785",
+                  "hgFindMatches": "ENST00000356245.8",
+                  "posName": "G3BP1 (NM_005754.3 &#x2F; ENST00000356245.8)",
+                  "highlight": null,
+                  "canonical": false,
+                  "description": "ras GTPase-activating protein-binding protein 1"
+                }
+              ]
+            },
+            {
+              "name": "hgnc",
+              "trackName": "hgnc",
+              "description": "HUGO Gene Nomenclature",
+              "vis": "pack",
+              "matches": [
+                {
+                  "position": "chr5:151771045-151812911",
+                  "hgFindMatches": "HGNC%3A30292",
+                  "posName": "G3BP1",
+                  "highlight": null,
+                  "canonical": false,
+                  "description": "G3BP stress granule assembly factor 1"
+                },
+                {
+                  "position": "chr2:135510546-135511943",
+                  "hgFindMatches": "HGNC%3A54590",
+                  "posName": "G3BP1P1",
+                  "highlight": null,
+                  "canonical": false,
+                  "description": "G3BP1 pseudogene 1"
+                }
+              ]
+            },
+            {
+              "name": "knownGene",
+              "trackName": "knownGene",
+              "description": "Gencode Genes",
+              "vis": "pack",
+              "matches": [
+                {
+                  "position": "chr5:151771954-151812785",
+                  "hgFindMatches": "ENST00000356245.8",
+                  "posName": "G3BP1 (ENST00000356245.8)",
+                  "highlight": null,
+                  "canonical": true,
+                  "description": "G3BP1 ENST00000356245.8 G3BP stress granule assembly factor 1 transcript variant "
+                },
+                {
+                  "position": "chr7:75996342-76048000",
+                  "hgFindMatches": "ENST00000359697.8",
+                  "posName": "STYXL1 (ENST00000359697.8)",
+                  "highlight": null,
+                  "canonical": true,
+                  "description": " ... Catalytically inactive phosphatase PubMed 20180778 PubMed 23163895 By binding to G3BP1 inhibits the formation of G3BP1 induced stress granules PubMed "
+                },
+                {
+                  "position": "chr13:60397220-60573871",
+                  "hgFindMatches": "ENST00000377881.8",
+                  "posName": "TDRD3 (ENST00000377881.8)",
+                  "highlight": null,
+                  "canonical": true,
+                  "description": " ... that participates in the assembly of stress granules together with G3BP1 PubMed 35085371 Component of mRNA stress granules Interacts with "
+                },
+                {
+                  "position": "chr1:154220955-154270847",
+                  "hgFindMatches": "ENST00000428931.6",
+                  "posName": "UBAP2L (ENST00000428931.6)",
+                  "highlight": null,
+                  "canonical": true,
+                  "description": " ... consisting of UBAP2L BMI1 and RNF2 PubMed 25185265 Interacts with G3BP1 via NTF2 domain promoting stress granule formation PubMed 32302570 "
+                },
+                {
+                  "position": "chr16:28822999-28837232",
+                  "hgFindMatches": "ENST00000336783.9",
+                  "posName": "ATXN2L (ENST00000336783.9)",
+                  "highlight": null,
+                  "canonical": true,
+                  "description": " ... and dissociates after ligand stimulation PubMed 11784712 Interacts with DDX6 G3BP1 and ATXN2 PubMed 23209657 Interacts with PRMT1 PubMed 25748791 "
+                },
+                {
+                  "position": "chr8:81701337-81721300",
+                  "hgFindMatches": "ENST00000220669.10",
+                  "posName": "ZFAND1 (ENST00000220669.10)",
+                  "highlight": null,
+                  "canonical": true,
+                  "description": " ... SGs PubMed 29804830 Cytoplasm Stress granule Note Colocalizes with TIA1 G3BP1 VCP and 26S proteasome in cytoplasmic stress granules SGs "
+                },
+                {
+                  "position": "chr5:176448385-176510074",
+                  "hgFindMatches": "ENST00000261942.7",
+                  "posName": "FAF2 (ENST00000261942.7)",
+                  "highlight": null,
+                  "canonical": true,
+                  "description": " ... PubMed 23297223 Involved in stress granule disassembly associates with ubiquitinated G3BP1 in response to heat shock thereby promoting interaction between "
+                },
+                {
+                  "position": "chr4:75642786-75673411",
+                  "hgFindMatches": "ENST00000359707.9",
+                  "posName": "G3BP2 (ENST00000359707.9)",
+                  "highlight": null,
+                  "canonical": true,
+                  "description": " ... phase separation LLPS Forms homooligomers PubMed 23279204 Forms heterodimers with G3BP1 PubMed 23279204 Interacts with NFKBIA via N-terminus PubMed 10969074 "
+                },
+                {
+                  "position": "chr11:34051731-34102610",
+                  "hgFindMatches": "ENST00000341394.9",
+                  "posName": "CAPRIN1 (ENST00000341394.9)",
+                  "highlight": null,
+                  "canonical": true,
+                  "description": " ... of phase separation May form homomultimers PubMed 14764709 Interacts with G3BP1 interaction is direct and promotes stress granule formation PubMed "
+                },
+                {
+                  "position": "chr17:28577574-28599025",
+                  "hgFindMatches": "ENST00000321765.10",
+                  "posName": "SPAG5 (ENST00000321765.10)",
+                  "highlight": null,
+                  "canonical": true,
+                  "description": " ... binding to MTOR resulting in decreased mTORC1 formation Interacts with G3BP1 The complex formed with G3BP1 AND RPTOR is increased "
+                },
+                {
+                  "position": "chr16:84700000-84779922",
+                  "hgFindMatches": "ENST00000219473.12",
+                  "posName": "USP10 (ENST00000219473.12)",
+                  "highlight": null,
+                  "canonical": true,
+                  "description": " ... as a negative regulator of stress granules formation by lowering G3BP1 and G3BP2 valence thereby preventing G3BP1 and G3BP2 ability "
+                },
+                {
+                  "position": "chr7:127652194-128092593",
+                  "hgFindMatches": "ENST00000354725.8",
+                  "posName": "SND1 (ENST00000354725.8)",
+                  "highlight": null,
+                  "canonical": true,
+                  "description": " ... PubMed 7651391 Interacts with SARS-CoV-2 NSP9 PubMed 37794589 Q7KZF4 Q13283 G3BP1 NbExp 3 IntAct EBI-1044112 EBI-1047359 Q7KZF4 Q86UE4 MTDH NbExp "
+                },
+                {
+                  "position": "chr9:35056064-35072625",
+                  "hgFindMatches": "ENST00000358901.11",
+                  "posName": "VCP (ENST00000358901.11)",
+                  "highlight": null,
+                  "canonical": true,
+                  "description": " ... proteasomal degradation PubMed 26565908 Involved in clearance process by mediating G3BP1 extraction from stress granules PubMed 29804830 PubMed 34739333 Also "
+                },
+                {
+                  "position": "chr11:4384897-4393702",
+                  "hgFindMatches": "ENST00000254436.8",
+                  "posName": "TRIM21 (ENST00000254436.8)",
+                  "highlight": null,
+                  "canonical": true,
+                  "description": " ... of innate immunity PubMed 29743353 Mediates Lys-63 linked polyubiquitination of G3BP1 in response to heat shock leading to stress granule "
+                },
+                {
+                  "position": "chr6:163414718-163578592",
+                  "hgFindMatches": "ENST00000361752.8",
+                  "posName": "QKI (ENST00000361752.8)",
+                  "highlight": null,
+                  "canonical": true,
+                  "description": " ... by internal N 7 methylguanine m7G PubMed 37379838 Interaction with G3BP1 promotes localization of m7G-containing mRNAs into stress granules in "
+                },
+                {
+                  "position": "chr17:80544838-80966368",
+                  "hgFindMatches": "ENST00000306801.8",
+                  "posName": "RPTOR (ENST00000306801.8)",
+                  "highlight": null,
+                  "canonical": true,
+                  "description": " ... mTORC1 complex and its subsequent activation PubMed 26812014 Interacts with G3BP1 PubMed 23953116 The complex formed with G3BP1 and SPAG5 "
+                },
+                {
+                  "position": "chr8:100702916-100722088",
+                  "hgFindMatches": "ENST00000318607.10",
+                  "posName": "PABPC1 (ENST00000318607.10)",
+                  "highlight": null,
+                  "canonical": true,
+                  "description": " ... on TENT5C poly A polymerase function PubMed 28931820 Interacts with G3BP1 and G3BP2 PubMed 23279204 Interacts with ENDOV the interaction "
+                },
+                {
+                  "position": "chr17:56887909-56914049",
+                  "hgFindMatches": "ENST00000316881.9",
+                  "posName": "TRIM25 (ENST00000316881.9)",
+                  "highlight": null,
+                  "canonical": true,
+                  "description": " ... suppresses RIGI ubiquitination thereby suppressing RIGI signal transduction Q14258 Q13283 G3BP1 NbExp 2 IntAct EBI-2341129 EBI-1047359 Q14258 O95786 RIGI NbExp "
+                },
+                {
+                  "position": "chrX:147911919-147951125",
+                  "hgFindMatches": "ENST00000370475.9",
+                  "posName": "FMR1 (ENST00000370475.9)",
+                  "highlight": null,
+                  "canonical": true,
+                  "description": " ... Q06787 P51116 FXR2 NbExp 3 IntAct EBI-366305 EBI-740459 Q06787 Q13283 G3BP1 NbExp 7 IntAct EBI-366305 EBI-1047359 Q06787 Q7Z417 NUFIP2 NbExp "
+                },
+                {
+                  "position": "chr4:3074681-3243957",
+                  "hgFindMatches": "ENST00000355072.11",
+                  "posName": "HTT (ENST00000355072.11)",
+                  "highlight": null,
+                  "canonical": true,
+                  "description": " ... P42858 Q7L622 G2E3 NbExp 6 IntAct EBI-466029 EBI-751757 P42858 Q13283 G3BP1 NbExp 16 IntAct EBI-466029 EBI-1047359 P42858 Q9UQC2 GAB2 NbExp "
+                }
+              ]
+            }
+          ]
+        },
+        "SRSF1": {
+          "search_keys": [
+            "genome",
+            "positionMatches"
+          ],
+          "position_matches": [
+            {
+              "name": "mane",
+              "trackName": "mane",
+              "description": "MANE Select Plus Clinical: Representative transcript from RefSeq & GENCODE",
+              "vis": "pack",
+              "matches": [
+                {
+                  "position": "chr17:58000919-58007246",
+                  "hgFindMatches": "ENST00000258962.5",
+                  "posName": "SRSF1 (NM_006924.5 &#x2F; ENST00000258962.5)",
+                  "highlight": null,
+                  "canonical": false,
+                  "description": "serine/arginine-rich splicing factor 1 isoform 1"
+                },
+                {
+                  "position": "chr1:23964347-23980327",
+                  "hgFindMatches": "ENST00000492112.3",
+                  "posName": "SRSF10 (NM_054016.4 &#x2F; ENST00000492112.3)",
+                  "highlight": null,
+                  "canonical": false,
+                  "description": "serine/arginine-rich splicing factor 10 isoform 2"
+                },
+                {
+                  "position": "chr1:70221380-70253052",
+                  "hgFindMatches": "ENST00000370949.2",
+                  "posName": "SRSF11 (NM_001350605.2 &#x2F; ENST00000370949.2)",
+                  "highlight": null,
+                  "canonical": false,
+                  "description": "serine/arginine-rich splicing factor 11 isoform 1"
+                },
+                {
+                  "position": "chr6:89095959-89118071",
+                  "hgFindMatches": "ENST00000452027.3",
+                  "posName": "SRSF12 (NM_080743.5 &#x2F; ENST00000452027.3)",
+                  "highlight": null,
+                  "canonical": false,
+                  "description": "serine/arginine-rich splicing factor 12 isoform a"
+                }
+              ]
+            },
+            {
+              "name": "hgnc",
+              "trackName": "hgnc",
+              "description": "HUGO Gene Nomenclature",
+              "vis": "pack",
+              "matches": [
+                {
+                  "position": "chr17:58000919-58007346",
+                  "hgFindMatches": "HGNC%3A10780",
+                  "posName": "SRSF1",
+                  "highlight": null,
+                  "canonical": false,
+                  "description": "serine and arginine rich splicing factor 1"
+                },
+                {
+                  "position": "chr1:23964347-23980927",
+                  "hgFindMatches": "HGNC%3A16713",
+                  "posName": "SRSF10",
+                  "highlight": null,
+                  "canonical": false,
+                  "description": "serine and arginine rich splicing factor 10"
+                },
+                {
+                  "position": "chr1:70205682-70253052",
+                  "hgFindMatches": "HGNC%3A10782",
+                  "posName": "SRSF11",
+                  "highlight": null,
+                  "canonical": false,
+                  "description": "serine and arginine rich splicing factor 11"
+                },
+                {
+                  "position": "chr6:89093949-89118071",
+                  "hgFindMatches": "HGNC%3A21220",
+                  "posName": "SRSF12",
+                  "highlight": null,
+                  "canonical": false,
+                  "description": "serine and arginine rich splicing factor 12"
+                },
+                {
+                  "position": "chr13:69408216-69408735",
+                  "hgFindMatches": "HGNC%3A39417",
+                  "posName": "SRSF1P1",
+                  "highlight": null,
+                  "canonical": false,
+                  "description": "serine and arginine rich splicing factor 1 pseudogene 1"
+                }
+              ]
+            },
+            {
+              "name": "knownGene",
+              "trackName": "knownGene",
+              "description": "Gencode Genes",
+              "vis": "pack",
+              "matches": [
+                {
+                  "position": "chr17:58000919-58007246",
+                  "hgFindMatches": "ENST00000258962.5",
+                  "posName": "SRSF1 (ENST00000258962.5)",
+                  "highlight": null,
+                  "canonical": true,
+                  "description": "SRSF1 ENST00000258962.5 serine and arginine rich splicing factor 1 transcript "
+                },
+                {
+                  "position": "chr9:15464066-15510970",
+                  "hgFindMatches": "ENST00000380733.9",
+                  "posName": "PSIP1 (ENST00000380733.9)",
+                  "highlight": null,
+                  "canonical": true,
+                  "description": "PSIP1 ENST00000380733.9 PC4 and SRSF1 interacting protein 1 transcript variant 2 from RefSeq NM_033222.5 "
+                },
+                {
+                  "position": "chr17:30116816-30186475",
+                  "hgFindMatches": "ENST00000247026.10",
+                  "posName": "NSRP1 (ENST00000247026.10)",
+                  "highlight": null,
+                  "canonical": true,
+                  "description": " ... that mediates pre-mRNA alternative splicing regulation Interacts via C-terminus with SRSF1 Interacts via C terminus with SRSF2 Nucleus Nucleus speckle "
+                },
+                {
+                  "position": "chr21:14216157-14228372",
+                  "hgFindMatches": "ENST00000400577.4",
+                  "posName": "RBM11 (ENST00000400577.4)",
+                  "highlight": null,
+                  "canonical": true,
+                  "description": " ... of alternative splicing during neuron and germ cell differentiation Antagonizes SRSF1-mediated BCL-X splicing May affect the choice of alternative 5 "
+                },
+                {
+                  "position": "chr17:39461486-39534544",
+                  "hgFindMatches": "ENST00000447079.6",
+                  "posName": "CDK12 (ENST00000447079.6)",
+                  "highlight": null,
+                  "canonical": true,
+                  "description": " ... also phosphorylate Ser-2 Required for RNA splicing possibly by phosphorylating SRSF1 SF2 Involved in regulation of MAP kinase activity possibly "
+                },
+                {
+                  "position": "chr1:166908187-166975540",
+                  "hgFindMatches": "ENST00000271417.8",
+                  "posName": "ILDR2 (ENST00000271417.8)",
+                  "highlight": null,
+                  "canonical": true,
+                  "description": " ... regulate alternative pre-mRNA splicing via binding to TRA2A TRA2B and SRSF1 By similarity Interacts with MARVELD2 and OCLN Interacts with "
+                },
+                {
+                  "position": "chr2:174348022-174395712",
+                  "hgFindMatches": "ENST00000342016.8",
+                  "posName": "CIRSR (ENST00000342016.8)",
+                  "highlight": null,
+                  "canonical": true,
+                  "description": " ... Q86X95 Q8TAP6 CEP76 NbExp 3 IntAct EBI-627102 EBI-742887 Q86X95 Q07955 SRSF1 NbExp 3 IntAct EBI-627102 EBI-398920 Q86X95 Q01130 SRSF2 NbExp "
+                },
+                {
+                  "position": "chrX:153781041-153785730",
+                  "hgFindMatches": "ENST00000370101.8",
+                  "posName": "SRPK3 (ENST00000370101.8)",
+                  "highlight": null,
+                  "canonical": true,
+                  "description": " ... dipeptides known as RS domains Phosphorylates the SR splicing factor SRSF1 and the lamin-B receptor LBR in vitro Required for "
+                },
+                {
+                  "position": "chr15:74615836-74630201",
+                  "hgFindMatches": "ENST00000395066.9",
+                  "posName": "CLK3 (ENST00000395066.9)",
+                  "highlight": null,
+                  "canonical": true,
+                  "description": " ... SR proteins from speckles to a diffuse nucleoplasmic distribution Phosphorylates SRSF1 and SRSF3 Regulates the alternative splicing of tissue factor "
+                },
+                {
+                  "position": "chr3:121987323-122022247",
+                  "hgFindMatches": "ENST00000344209.10",
+                  "posName": "ILDR1 (ENST00000344209.10)",
+                  "highlight": null,
+                  "canonical": true,
+                  "description": " ... regulate alternative pre-mRNA splicing via binding to TRA2A TRA2B and SRSF1 By similarity Microbial infection Promotes influenza virus infection by "
+                },
+                {
+                  "position": "chr3:157147553-157160147",
+                  "hgFindMatches": "ENST00000295926.8",
+                  "posName": "CCNL1 (ENST00000295926.8)",
+                  "highlight": null,
+                  "canonical": true,
+                  "description": " ... PubMed 18216018 Interacts with pre-mRNA splicing factors including at least SRSF1 SRSF2 and SRSF7 SLU7 PubMed 11980906 PubMed 18216018 Q9UK58 "
+                },
+                {
+                  "position": "chr2:200853009-200864658",
+                  "hgFindMatches": "ENST00000321356.9",
+                  "posName": "CLK1 (ENST00000321356.9)",
+                  "highlight": null,
+                  "canonical": true,
+                  "description": " ... mechanisms that enable SR proteins to control RNA splicing Phosphorylates SRSF1 SRSF3 and PTPN1 PubMed 10480872 PubMed 19168442 Regulates the "
+                },
+                {
+                  "position": "chr7:39950256-40099580",
+                  "hgFindMatches": "ENST00000181839.10",
+                  "posName": "CDK13 (ENST00000181839.10)",
+                  "highlight": null,
+                  "canonical": true,
+                  "description": " ... of transcription elongation Required for RNA splicing probably by phosphorylating SRSF1 SF2 Required during hematopoiesis In case of infection by "
+                },
+                {
+                  "position": "chr1:1385711-1399335",
+                  "hgFindMatches": "ENST00000400809.8",
+                  "posName": "CCNL2 (ENST00000400809.8)",
+                  "highlight": null,
+                  "canonical": true,
+                  "description": " ... CKII PubMed 18216018 Interacts with pre-mRNA-splicing factors including at least SRSF1 SRSF2 AND SRSF7 SLU7 PubMed 14684736 PubMed 18216018 Q96S94 "
+                },
+                {
+                  "position": "chr21:43659560-43696079",
+                  "hgFindMatches": "ENST00000340648.6",
+                  "posName": "RRP1B (ENST00000340648.6)",
+                  "highlight": null,
+                  "canonical": true,
+                  "description": " ... NPM1 B23 PubMed 20926688 PubMed 19710015 Interacts with splicing factor SRSF1 and with LUC7L3 CROP PubMed 23604122 Interacts with GTPase "
+                },
+                {
+                  "position": "chr5:178602664-178627050",
+                  "hgFindMatches": "ENST00000316308.9",
+                  "posName": "CLK4 (ENST00000316308.9)",
+                  "highlight": null,
+                  "canonical": true,
+                  "description": " ... mechanisms that enable SR proteins to control RNA splicing Phosphorylates SRSF1 and SRSF3 Required for the regulation of alternative splicing "
+                },
+                {
+                  "position": "chrX:15790484-15823260",
+                  "hgFindMatches": "ENST00000307771.8",
+                  "posName": "ZRSR2 (ENST00000307771.8)",
+                  "highlight": null,
+                  "canonical": true,
+                  "description": " ... part of the U12-type spliceosome Interacts via RS domain with SRSF1 and SRSF2 Interacts with U2AF2 U2AF65 Q15696 Q9UK58 CCNL1 "
+                },
+                {
+                  "position": "chr6:35832966-35921098",
+                  "hgFindMatches": "ENST00000373825.7",
+                  "posName": "SRPK1 (ENST00000373825.7)",
+                  "highlight": null,
+                  "canonical": true,
+                  "description": " ... 2 phosphorylates SFRS2 ZRSR2 LBR and PRM1 Isoform 2 phosphorylates SRSF1 using a directional C-terminal to N-terminal and a dual-track "
+                },
+                {
+                  "position": "chrX:101408222-101414133",
+                  "hgFindMatches": "ENST00000316594.6",
+                  "posName": "HNRNPH2 (ENST00000316594.6)",
+                  "highlight": null,
+                  "canonical": true,
+                  "description": " ... complex containing mRNAs and RNA-binding proteins including DDX5 HNRNPH2 and SRSF1 as well as splicing regulator ARVCF PubMed 24644279 Interacts "
+                },
+                {
+                  "position": "chr1_GL383519v1_alt:67891-78539",
+                  "hgFindMatches": "ENST00000574445.5",
+                  "posName": "CLK2 (ENST00000574445.5)",
+                  "highlight": null,
+                  "canonical": true,
+                  "description": " ... the PPP2R5B-AKT1 complex leading to dephosphorylation of AKT1 Phosphorylates PTPN1 SRSF1 and SRSF3 Regulates the alternative splicing of tissue factor "
+                },
+                {
+                  "position": "chr9:33041765-33076674",
+                  "hgFindMatches": "ENST00000397149.4",
+                  "posName": "SMU1 (ENST00000397149.4)",
+                  "highlight": null,
+                  "canonical": true,
+                  "description": " ... IntAct EBI-298027 EBI-720609 Cytoplasm Nucleus Nucleus speckle Note Colocalizes with SRSF1 in nuclear speckles Event Alternative splicing Named isoforms 2 "
+                },
+                {
+                  "position": "chr1:155262868-155273504",
+                  "hgFindMatches": "ENST00000368361.9",
+                  "posName": "CLK2 (ENST00000368361.9)",
+                  "highlight": null,
+                  "canonical": true,
+                  "description": " ... the PPP2R5B-AKT1 complex leading to dephosphorylation of AKT1 Phosphorylates PTPN1 SRSF1 and SRSF3 Regulates the alternative splicing of tissue factor "
+                },
+                {
+                  "position": "chr22:19969896-20016823",
+                  "hgFindMatches": "ENST00000263207.8",
+                  "posName": "ARVCF (ENST00000263207.8)",
+                  "highlight": null,
+                  "canonical": true,
+                  "description": " ... complex containing mRNAs and RNA-binding proteins including DDX5 HNRNPH2 and SRSF1 as well as ARVCF PubMed 24644279 Interacts via the "
+                },
+                {
+                  "position": "chr3:185914558-185938014",
+                  "hgFindMatches": "ENST00000453386.7",
+                  "posName": "TRA2B (ENST00000453386.7)",
+                  "highlight": null,
+                  "canonical": true,
+                  "description": " ... P62995 P78362 SRPK2 NbExp 5 IntAct EBI-725485 EBI-593303 P62995 Q07955 SRSF1 NbExp 3 IntAct EBI-725485 EBI-398920 P62995 Q08170 SRSF4 NbExp "
+                },
+                {
+                  "position": "chr17:76734115-76737331",
+                  "hgFindMatches": "ENST00000359995.10",
+                  "posName": "SRSF2 (ENST00000359995.10)",
+                  "highlight": null,
+                  "canonical": true,
+                  "description": " ... Interacts with BRDT By similarity In vitro self-associates and binds SRSF1 SFRS1 ASF SF2 SNRNP70 and U2AF1 but not U2AF2 "
+                },
+                {
+                  "position": "chr19:5623083-5668478",
+                  "hgFindMatches": "ENST00000588852.2",
+                  "posName": "SAFB (ENST00000588852.2)",
+                  "highlight": null,
+                  "canonical": true,
+                  "description": " ... By similarity Interacts with CLK2 By similarity Interacts with POLR2A SRSF1 ASF SRSF9 SRp30c and SFSF10 TRA2B PubMed 9671816 Interacts "
+                },
+                {
+                  "position": "chr1:1635225-1659004",
+                  "hgFindMatches": "ENST00000341832.11",
+                  "posName": "CDK11B (ENST00000341832.11)",
+                  "highlight": null,
+                  "canonical": true,
+                  "description": " ... and CCNL2 Forms complexes with pre-mRNA-splicing factors including at least SRSF1 SRSF2 and SRSF7 SLU7 Interacts with isoform 5 of "
+                },
+                {
+                  "position": "chr6:41072974-41102403",
+                  "hgFindMatches": "ENST00000341376.11",
+                  "posName": "NFYA (ENST00000341376.11)",
+                  "highlight": null,
+                  "canonical": true,
+                  "description": " ... P23511 Q7Z3K3 POGZ NbExp 3 IntAct EBI-389739 EBI-1389308 P23511 Q07955 SRSF1 NbExp 5 IntAct EBI-389739 EBI-398920 P23511 P04637 TP53 NbExp "
+                },
+                {
+                  "position": "chr19:49085451-49108604",
+                  "hgFindMatches": "ENST00000598441.6",
+                  "posName": "SNRNP70 (ENST00000598441.6)",
+                  "highlight": null,
+                  "canonical": true,
+                  "description": " ... P08621 A7MD48 SRRM4 NbExp 3 IntAct EBI-1049228 EBI-3867173 P08621 Q07955 SRSF1 NbExp 3 IntAct EBI-1049228 EBI-398920 P08621 P31483 TIA1 NbExp "
+                },
+                {
+                  "position": "chr12:120461672-120469748",
+                  "hgFindMatches": "ENST00000229390.8",
+                  "posName": "SRSF9 (ENST00000229390.8)",
+                  "highlight": null,
+                  "canonical": true,
+                  "description": " ... SNBs HAP bodies or stress bodies Numerous splicing factors including SRSF1 SFRS1 SF2 SRSF7 SFRS7 SAFB and KHDRBS1 SAM68 accumulate "
+                },
+                {
+                  "position": "chr17:64498254-64506289",
+                  "hgFindMatches": "ENST00000225792.10",
+                  "posName": "DDX5 (ENST00000225792.10)",
+                  "highlight": null,
+                  "canonical": true,
+                  "description": " ... containing mRNAs and RNA binding proteins including DDX5 HNRNPH2 and SRSF1 as well as splicing regulator ARVCF PubMed 24644279 Interacts "
+                },
+                {
+                  "position": "chr21:43092956-43107570",
+                  "hgFindMatches": "ENST00000291552.9",
+                  "posName": "U2AF1 (ENST00000291552.9)",
+                  "highlight": null,
+                  "canonical": true,
+                  "description": " ... Q01081 A7MD48 SRRM4 NbExp 3 IntAct EBI-632461 EBI-3867173 Q01081 Q07955 SRSF1 NbExp 4 IntAct EBI-632461 EBI-398920 Q01081 Q01130 SRSF2 NbExp "
+                },
+                {
+                  "position": "chr17:5432777-5439155",
+                  "hgFindMatches": "ENST00000225698.8",
+                  "posName": "C1QBP (ENST00000225698.8)",
+                  "highlight": null,
+                  "canonical": true,
+                  "description": " ... regulation of RNA splicing by inhibiting the RNA-binding capacity of SRSF1 and its phosphorylation Is required for the nuclear translocation "
+                },
+                {
+                  "position": "chr1:211326833-211374946",
+                  "hgFindMatches": "ENST00000261464.10",
+                  "posName": "TRAF5 (ENST00000261464.10)",
+                  "highlight": null,
+                  "canonical": true,
+                  "description": " ... O00463 Q7Z699 SPRED1 NbExp 3 IntAct EBI-523498 EBI-5235340 O00463 Q07955 SRSF1 NbExp 2 IntAct EBI-523498 EBI-398920 O00463 P31948 STIP1 NbExp "
+                },
+                {
+                  "position": "chr11:62792130-62805440",
+                  "hgFindMatches": "ENST00000294172.7",
+                  "posName": "NXF1 (ENST00000294172.7)",
+                  "highlight": null,
+                  "canonical": true,
+                  "description": " ... Q9UBU9 Q9H0A9-2 SPATC1L NbExp 3 IntAct EBI-398874 EBI-11995806 Q9UBU9 Q07955 SRSF1 NbExp 5 IntAct EBI-398874 EBI-398920 Q9UBU9 P84103 SRSF3 NbExp "
+                },
+                {
+                  "position": "chr1:23964347-23980327",
+                  "hgFindMatches": "ENST00000492112.3",
+                  "posName": "SRSF10 (ENST00000492112.3)",
+                  "highlight": null,
+                  "canonical": true,
+                  "description": "SRSF10 ENST00000492112.3 serine and arginine rich splicing factor 10 transcript "
+                },
+                {
+                  "position": "chr1:70221380-70253052",
+                  "hgFindMatches": "ENST00000370949.2",
+                  "posName": "SRSF11 (ENST00000370949.2)",
+                  "highlight": null,
+                  "canonical": true,
+                  "description": "SRSF11 ENST00000370949.2 serine and arginine rich splicing factor 11 transcript "
+                },
+                {
+                  "position": "chr6:89095959-89118071",
+                  "hgFindMatches": "ENST00000452027.3",
+                  "posName": "SRSF12 (ENST00000452027.3)",
+                  "highlight": null,
+                  "canonical": true,
+                  "description": "SRSF12 ENST00000452027.3 serine and arginine rich splicing factor 12 transcript "
+                },
+                {
+                  "position": "chr4_GL000257v2_alt:4029-43731",
+                  "hgFindMatches": "ENST00000615500.4",
+                  "posName": "YTHDC1 (ENST00000615500.4)",
+                  "highlight": null,
+                  "canonical": true,
+                  "description": " ... alternative splicing via interaction with mRNA splicing factors SRSF3 and SRSF10 PubMed 26876937 Specifically binds m6A-containing mRNAs and promotes recruitment "
+                },
+                {
+                  "position": "chr1:43450989-43453931",
+                  "hgFindMatches": "ENST00000372430.9",
+                  "posName": "HYI (ENST00000372430.9)",
+                  "highlight": null,
+                  "canonical": true,
+                  "description": " ... ChEBI CHEBI 17180 ChEBI CHEBI 57978 EC 5.3.1.22 Q5T013 Q05519 SRSF11 NbExp 3 IntAct EBI-749235 EBI-1051785 Q5T013 Q8IYF3 TEX11 NbExp "
+                },
+                {
+                  "position": "chr4:68310387-68350090",
+                  "hgFindMatches": "ENST00000344157.9",
+                  "posName": "YTHDC1 (ENST00000344157.9)",
+                  "highlight": null,
+                  "canonical": true,
+                  "description": " ... alternative splicing via interaction with mRNA splicing factors SRSF3 and SRSF10 PubMed 26876937 Specifically binds m6A-containing mRNAs and promotes recruitment "
+                },
+                {
+                  "position": "chr12:122980681-122982909",
+                  "hgFindMatches": "ENST00000315580.10",
+                  "posName": "ARL6IP4 (ENST00000315580.10)",
+                  "highlight": null,
+                  "canonical": true,
+                  "description": " ... Q66PJ3-3 Q9H4P4 RNF41 NbExp 3 IntAct EBI-10248982 EBI-2130266 Q66PJ3-3 Q05519 SRSF11 NbExp 3 IntAct EBI-10248982 EBI-1051785 Q66PJ3-3 Q9NVV9 THAP1 NbExp "
+                },
+                {
+                  "position": "chr12:120446444-120463749",
+                  "hgFindMatches": "ENST00000551765.6",
+                  "posName": "GATC (ENST00000551765.6)",
+                  "highlight": null,
+                  "canonical": true,
+                  "description": " ... O43716 Q9H0R6 QRSL1 NbExp 3 IntAct EBI-6929453 EBI-2856796 O43716 Q05519 SRSF11 NbExp 3 IntAct EBI-6929453 EBI-1051785 O43716 Q05519-2 SRSF11 NbExp "
+                },
+                {
+                  "position": "chr5:66144300-66183615",
+                  "hgFindMatches": "ENST00000334121.11",
+                  "posName": "SREK1 (ENST00000334121.11)",
+                  "highlight": null,
+                  "canonical": true,
+                  "description": " ... Q8WXA9 P78362 SRPK2 NbExp 2 IntAct EBI-1044237 EBI-593303 Q8WXA9 Q05519 SRSF11 NbExp 3 IntAct EBI-1044237 EBI-1051785 Q8WXA9 Q05519-2 SRSF11 NbExp "
+                },
+                {
+                  "position": "chr13:71437966-71867204",
+                  "hgFindMatches": "ENST00000613252.5",
+                  "posName": "DACH1 (ENST00000613252.5)",
+                  "highlight": null,
+                  "canonical": true,
+                  "description": " ... Q9UI36-2 Q9UBS8 RNF14 NbExp 6 IntAct EBI-10186082 EBI-2130308 Q9UI36-2 Q05519-2 SRSF11 NbExp 3 IntAct EBI-10186082 EBI-11975029 Q9UI36-2 P26368 U2AF2 NbExp "
+                },
+                {
+                  "position": "chr10_KN196480v1_fix:242512-263190",
+                  "hgFindMatches": "ENST00000625469.1",
+                  "posName": "DUSP29 (ENST00000625469.1)",
+                  "highlight": null,
+                  "canonical": true,
+                  "description": " ... Q68J44 O75150 RNF40 NbExp 3 IntAct EBI-1054321 EBI-744408 Q68J44 Q05519-2 SRSF11 NbExp 3 IntAct EBI-1054321 EBI-11975029 Q68J44 O75558 STX11 NbExp "
+                },
+                {
+                  "position": "chr10:75037472-75073642",
+                  "hgFindMatches": "ENST00000338487.6",
+                  "posName": "DUSP29 (ENST00000338487.6)",
+                  "highlight": null,
+                  "canonical": true,
+                  "description": " ... Q68J44 O75150 RNF40 NbExp 3 IntAct EBI-1054321 EBI-744408 Q68J44 Q05519-2 SRSF11 NbExp 3 IntAct EBI-1054321 EBI-11975029 Q68J44 O75558 STX11 NbExp "
+                },
+                {
+                  "position": "chr11:128458765-128587558",
+                  "hgFindMatches": "ENST00000392668.8",
+                  "posName": "ETS1 (ENST00000392668.8)",
+                  "highlight": null,
+                  "canonical": true,
+                  "description": " ... P14921 P23497 SP100 NbExp 4 IntAct EBI-913209 EBI-751145 P14921 Q05519 SRSF11 NbExp 2 IntAct EBI-913209 EBI-1051785 P14921 P17542 TAL1 NbExp "
+                },
+                {
+                  "position": "chr8:143816344-143829315",
+                  "hgFindMatches": "ENST00000526683.6",
+                  "posName": "PUF60 (ENST00000526683.6)",
+                  "highlight": null,
+                  "canonical": true,
+                  "description": " ... 11239393 Interacts with CDK7 and GTF2H1 PubMed 10882074 Interacts with SRSF11 P54 PubMed 10606266 Does not interact with ERCC3 in "
+                },
+                {
+                  "position": "chrX:154778684-154805485",
+                  "hgFindMatches": "ENST00000369534.8",
+                  "posName": "MPP1 (ENST00000369534.8)",
+                  "highlight": null,
+                  "canonical": true,
+                  "description": " ... Q00013 Q96K37 SLC35E1 NbExp 3 IntAct EBI-711788 EBI-720094 Q00013 R4GMP8 SRSF10 NbExp 3 IntAct EBI-711788 EBI-16433464 Q00013 O43761 SYNGR3 NbExp "
+                },
+                {
+                  "position": "chr19:1241751-1244825",
+                  "hgFindMatches": "ENST00000215375.7",
+                  "posName": "ATP5F1D (ENST00000215375.7)",
+                  "highlight": null,
+                  "canonical": true,
+                  "description": " ... P30049 P0DPK4 NOTCH2NLC NbExp 3 IntAct EBI-1049505 EBI-22310682 P30049 Q05519-2 SRSF11 NbExp 3 IntAct EBI-1049505 EBI-11975029 P30049 Q63HR2 TNS2 NbExp "
+                },
+                {
+                  "position": "chr20:35701347-35742260",
+                  "hgFindMatches": "ENST00000253363.11",
+                  "posName": "RBM39 (ENST00000253363.11)",
+                  "highlight": null,
+                  "canonical": true,
+                  "description": " ... Q14498 A7MD48 SRRM4 NbExp 3 IntAct EBI-395290 EBI-3867173 Q14498 Q05519 SRSF11 NbExp 3 IntAct EBI-395290 EBI-1051785 Q14498 Q05519-2 SRSF11 NbExp "
+                },
+                {
+                  "position": "chr2:161160428-161236230",
+                  "hgFindMatches": "ENST00000392749.7",
+                  "posName": "TANK (ENST00000392749.7)",
+                  "highlight": null,
+                  "canonical": true,
+                  "description": " ... Q92844 P53350 PLK1 NbExp 3 IntAct EBI-356349 EBI-476768 Q92844 Q05519 SRSF11 NbExp 3 IntAct EBI-356349 EBI-1051785 Q92844 P63165 SUMO1 NbExp "
+                },
+                {
+                  "position": "chr16:2253120-2268126",
+                  "hgFindMatches": "ENST00000320225.10",
+                  "posName": "RNPS1 (ENST00000320225.10)",
+                  "highlight": null,
+                  "canonical": true,
+                  "description": " ... Q15287 A7MD48 SRRM4 NbExp 3 IntAct EBI-395959 EBI-3867173 Q15287 O75494 SRSF10 NbExp 3 IntAct EBI-395959 EBI-353655 Q15287 P84103 SRSF3 NbExp "
+                },
+                {
+                  "position": "chr7:105116374-105388921",
+                  "hgFindMatches": "ENST00000393651.8",
+                  "posName": "SRPK2 (ENST00000393651.8)",
+                  "highlight": null,
+                  "canonical": true,
+                  "description": " ... P78362 Q8IYB3 SRRM1 NbExp 3 IntAct EBI-593303 EBI-1055880 P78362 O75494 SRSF10 NbExp 2 IntAct EBI-593303 EBI-353655 P78362 Q05519-2 SRSF11 NbExp "
+                },
+                {
+                  "position": "chr11:31789026-31811322",
+                  "hgFindMatches": "ENST00000640368.2",
+                  "posName": "PAX6 (ENST00000640368.2)",
+                  "highlight": null,
+                  "canonical": true,
+                  "description": " ... P26367 Q9NZD8 SPG21 NbExp 3 IntAct EBI-747278 EBI-742688 P26367 Q05519-2 SRSF11 NbExp 3 IntAct EBI-747278 EBI-11975029 P26367 Q99469 STAC NbExp "
+                },
+                {
+                  "position": "chr1:26863149-26864456",
+                  "hgFindMatches": "ENST00000339276.6",
+                  "posName": "SFN (ENST00000339276.6)",
+                  "highlight": null,
+                  "canonical": true,
+                  "description": " ... P31947 O94875 SORBS2 NbExp 4 IntAct EBI-476295 EBI-311323 P31947 O75494 SRSF10 NbExp 3 IntAct EBI-476295 EBI-353655 P31947 O60343 TBC1D4 NbExp "
+                },
+                {
+                  "position": "chr7:76326799-76358991",
+                  "hgFindMatches": "ENST00000307630.5",
+                  "posName": "YWHAG (ENST00000307630.5)",
+                  "highlight": null,
+                  "canonical": true,
+                  "description": " ... P61981 Q96JI7 SPG11 NbExp 2 IntAct EBI-359832 EBI-2822128 P61981 O75494 SRSF10 NbExp 4 IntAct EBI-359832 EBI-353655 P61981 Q13586 STIM1 NbExp "
+                },
+                {
+                  "position": "chr8:58553261-58582858",
+                  "hgFindMatches": "ENST00000260130.9",
+                  "posName": "SDCBP (ENST00000260130.9)",
+                  "highlight": null,
+                  "canonical": true,
+                  "description": " ... O00560 Q8N9Q2 SREK1IP1 NbExp 6 IntAct EBI-727004 EBI-10268630 O00560 Q05519 SRSF11 NbExp 3 IntAct EBI-727004 EBI-1051785 O00560 Q05519-2 SRSF11 NbExp "
+                }
+              ]
+            }
+          ]
+        },
+        "DR1": {
+          "search_keys": [
+            "genome",
+            "positionMatches"
+          ],
+          "position_matches": [
+            {
+              "name": "mane",
+              "trackName": "mane",
+              "description": "MANE Select Plus Clinical: Representative transcript from RefSeq & GENCODE",
+              "vis": "pack",
+              "matches": [
+                {
+                  "position": "chr1:93345907-93369493",
+                  "hgFindMatches": "ENST00000370272.9",
+                  "posName": "DR1 (NM_001938.3 &#x2F; ENST00000370272.9)",
+                  "highlight": null,
+                  "canonical": false,
+                  "description": "protein Dr1"
+                }
+              ]
+            },
+            {
+              "name": "hgnc",
+              "trackName": "hgnc",
+              "description": "HUGO Gene Nomenclature",
+              "vis": "pack",
+              "matches": [
+                {
+                  "position": "chr1:93345907-93369493",
+                  "hgFindMatches": "HGNC%3A3017",
+                  "posName": "DR1",
+                  "highlight": null,
+                  "canonical": false,
+                  "description": "down-regulator of transcription 1"
+                }
+              ]
+            },
+            {
+              "name": "knownGene",
+              "trackName": "knownGene",
+              "description": "Gencode Genes",
+              "vis": "pack",
+              "matches": [
+                {
+                  "position": "chr1:93345907-93369493",
+                  "hgFindMatches": "ENST00000370272.9",
+                  "posName": "DR1 (ENST00000370272.9)",
+                  "highlight": null,
+                  "canonical": true,
+                  "description": "DR1 ENST00000370272.9 down-regulator of transcription 1 from RefSeq NM_001938.3 D3DT41 "
+                },
+                {
+                  "position": "chr11:65919426-65921563",
+                  "hgFindMatches": "ENST00000312515.7",
+                  "posName": "DRAP1 (ENST00000312515.7)",
+                  "highlight": null,
+                  "canonical": true,
+                  "description": "DRAP1 ENST00000312515.7 DR1 associated protein 1 from RefSeq NM_006442.4 ENST00000312515.1 ENST00000312515.2 ENST00000312515.3 "
+                },
+                {
+                  "position": "chr19:38403093-38409084",
+                  "hgFindMatches": "ENST00000252530.10",
+                  "posName": "FAM98C (ENST00000252530.10)",
+                  "highlight": null,
+                  "canonical": true,
+                  "description": " ... Q17RN3 G5E9A7 DMWD NbExp 3 IntAct EBI-5461838 EBI-10976677 Q17RN3 Q01658 DR1 NbExp 3 IntAct EBI-5461838 EBI-750300 Q17RN3 P28799 GRN NbExp "
+                },
+                {
+                  "position": "chr14:22985894-23010143",
+                  "hgFindMatches": "ENST00000299088.11",
+                  "posName": "C14orf93 (ENST00000299088.11)",
+                  "highlight": null,
+                  "canonical": true,
+                  "description": " ... Q9H972 Q9Y605 MRFAP1 NbExp 3 IntAct EBI-10329620 EBI-995714 Q9H972-2 Q01658 DR1 NbExp 3 IntAct EBI-11524174 EBI-750300 Q9H972-2 Q00403 GTF2B NbExp "
+                },
+                {
+                  "position": "chr8:13566869-13568288",
+                  "hgFindMatches": "ENST00000297324.5",
+                  "posName": "C8orf48 (ENST00000297324.5)",
+                  "highlight": null,
+                  "canonical": true,
+                  "description": " ... Q96LL4 G5E9A7 DMWD NbExp 3 IntAct EBI-751596 EBI-10976677 Q96LL4 Q01658 DR1 NbExp 3 IntAct EBI-751596 EBI-750300 Q96LL4 P22607 FGFR3 NbExp "
+                },
+                {
+                  "position": "chr1:998964-1000097",
+                  "hgFindMatches": "ENST00000304952.11",
+                  "posName": "HES4 (ENST00000304952.11)",
+                  "highlight": null,
+                  "canonical": true,
+                  "description": " ... a corepressor protein of the Groucho TLE family Q9HCC6 Q01658 DR1 NbExp 3 IntAct EBI-2680288 EBI-750300 Q9HCC6 Q00403 GTF2B NbExp "
+                },
+                {
+                  "position": "chr19:58326994-58342332",
+                  "hgFindMatches": "ENST00000329665.5",
+                  "posName": "ZSCAN22 (ENST00000329665.5)",
+                  "highlight": null,
+                  "canonical": true,
+                  "description": " ... P10073 G5E9A7 DMWD NbExp 3 IntAct EBI-10178224 EBI-10976677 P10073 Q01658 DR1 NbExp 3 IntAct EBI-10178224 EBI-750300 P10073 Q92997 DVL3 NbExp "
+                },
+                {
+                  "position": "chr19:58034025-58054631",
+                  "hgFindMatches": "ENST00000282326.6",
+                  "posName": "ZSCAN1 (ENST00000282326.6)",
+                  "highlight": null,
+                  "canonical": true,
+                  "description": " ... Q8NBB4-2 O75190 DNAJB6 NbExp 3 IntAct EBI-12021938 EBI-1053164 Q8NBB4-2 Q01658 DR1 NbExp 3 IntAct EBI-12021938 EBI-750300 Q8NBB4-2 Q00403 GTF2B NbExp "
+                },
+                {
+                  "position": "chr3:126394909-126436556",
+                  "hgFindMatches": "ENST00000352312.6",
+                  "posName": "CFAP100 (ENST00000352312.6)",
+                  "highlight": null,
+                  "canonical": true,
+                  "description": " ... Q494V2-2 O75190 DNAJB6 NbExp 3 IntAct EBI-11953200 EBI-1053164 Q494V2-2 Q01658 DR1 NbExp 3 IntAct EBI-11953200 EBI-750300 Q494V2-2 P11171-7 EPB41 NbExp "
+                },
+                {
+                  "position": "chr17:3440019-3471819",
+                  "hgFindMatches": "ENST00000572969.6",
+                  "posName": "SPATA22 (ENST00000572969.6)",
+                  "highlight": null,
+                  "canonical": true,
+                  "description": " ... Q8NHS9 O75190 DNAJB6 NbExp 3 IntAct EBI-7067260 EBI-1053164 Q8NHS9 Q01658 DR1 NbExp 3 IntAct EBI-7067260 EBI-750300 Q8NHS9 P35637 FUS NbExp "
+                },
+                {
+                  "position": "chr19:46719511-46746450",
+                  "hgFindMatches": "ENST00000263280.11",
+                  "posName": "STRN4 (ENST00000263280.11)",
+                  "highlight": null,
+                  "canonical": true,
+                  "description": " ... interaction with CTTNBP2 By similarity Interacts with CTTNBP2NL Q9NRL3 Q01658 DR1 NbExp 3 IntAct EBI-717245 EBI-750300 Q9NRL3 Q9Y5Q9 GTF3C3 NbExp "
+                },
+                {
+                  "position": "chr2:202634969-202769757",
+                  "hgFindMatches": "ENST00000392238.3",
+                  "posName": "FAM117B (ENST00000392238.3)",
+                  "highlight": null,
+                  "canonical": true,
+                  "description": " ... Q6P1L5 O75190 DNAJB6 NbExp 3 IntAct EBI-3893327 EBI-1053164 Q6P1L5 Q01658 DR1 NbExp 3 IntAct EBI-3893327 EBI-750300 Q6P1L5 P63167 DYNLL1 NbExp "
+                },
+                {
+                  "position": "chr19:36888124-36916291",
+                  "hgFindMatches": "ENST00000391711.8",
+                  "posName": "ZNF829 (ENST00000391711.8)",
+                  "highlight": null,
+                  "canonical": true,
+                  "description": " ... Q3KNS6-3 O75190 DNAJB6 NbExp 3 IntAct EBI-18036029 EBI-1053164 Q3KNS6-3 Q01658 DR1 NbExp 3 IntAct EBI-18036029 EBI-750300 Q3KNS6-3 P41091 EIF2S3 NbExp "
+                },
+                {
+                  "position": "chr14:36298564-36320637",
+                  "hgFindMatches": "ENST00000416007.9",
+                  "posName": "MBIP (ENST00000416007.9)",
+                  "highlight": null,
+                  "canonical": true,
+                  "description": " ... KAT14 KAT2A TADA2L TADA3L ZZ3 MBIP WDR5 YEATS2 CCDC101 and DR1 In the complex it probably interacts directly with KAT2A "
+                },
+                {
+                  "position": "chrX:141838316-141897832",
+                  "hgFindMatches": "ENST00000298296.1",
+                  "posName": "MAGEC3 (ENST00000298296.1)",
+                  "highlight": null,
+                  "canonical": true,
+                  "description": " ... Q8TD91-2 O75190 DNAJB6 NbExp 3 IntAct EBI-10694180 EBI-1053164 Q8TD91-2 Q01658 DR1 NbExp 3 IntAct EBI-10694180 EBI-750300 Q8TD91-2 P21333-2 FLNA NbExp "
+                },
+                {
+                  "position": "chr1:77562416-77682658",
+                  "hgFindMatches": "ENST00000370801.8",
+                  "posName": "ZZZ3 (ENST00000370801.8)",
+                  "highlight": null,
+                  "canonical": true,
+                  "description": " ... KAT14 KAT2A TADA2L TADA3L ZZ3 MBIP WDR5 YEATS2 CCDC101 and DR1 PubMed 19103755 Interacts via ZZ-type zinc finger with histone "
+                },
+                {
+                  "position": "chr19:361747-376026",
+                  "hgFindMatches": "ENST00000342640.9",
+                  "posName": "SPMAP2 (ENST00000342640.9)",
+                  "highlight": null,
+                  "canonical": true,
+                  "description": " ... but not essential in spermatogenesis Interacts with CCT5 Q9P2T0 Q01658 DR1 NbExp 3 IntAct EBI-751020 EBI-750300 Q9P2T0 Q13643 FHL3 NbExp "
+                },
+                {
+                  "position": "chr6_GL000250v2_alt:3523365-3528122",
+                  "hgFindMatches": "ENST00000457070.1",
+                  "posName": "GPSM3 (ENST00000457070.1)",
+                  "highlight": null,
+                  "canonical": true,
+                  "description": " ... Q9Y4H4 P78358 CTAG1B NbExp 5 IntAct EBI-347538 EBI-1188472 Q9Y4H4 Q01658 DR1 NbExp 3 IntAct EBI-347538 EBI-750300 Q9Y4H4 Q9NVL1-2 FAM86C1P NbExp "
+                },
+                {
+                  "position": "chr6_GL000251v2_alt:3629115-3633872",
+                  "hgFindMatches": "ENST00000420041.1",
+                  "posName": "GPSM3 (ENST00000420041.1)",
+                  "highlight": null,
+                  "canonical": true,
+                  "description": " ... Q9Y4H4 P78358 CTAG1B NbExp 5 IntAct EBI-347538 EBI-1188472 Q9Y4H4 Q01658 DR1 NbExp 3 IntAct EBI-347538 EBI-750300 Q9Y4H4 Q9NVL1-2 FAM86C1P NbExp "
+                },
+                {
+                  "position": "chr6_GL000253v2_alt:3495744-3500501",
+                  "hgFindMatches": "ENST00000448684.1",
+                  "posName": "GPSM3 (ENST00000448684.1)",
+                  "highlight": null,
+                  "canonical": true,
+                  "description": " ... Q9Y4H4 P78358 CTAG1B NbExp 5 IntAct EBI-347538 EBI-1188472 Q9Y4H4 Q01658 DR1 NbExp 3 IntAct EBI-347538 EBI-750300 Q9Y4H4 Q9NVL1-2 FAM86C1P NbExp "
+                },
+                {
+                  "position": "chr6_GL000254v2_alt:3532782-3537539",
+                  "hgFindMatches": "ENST00000441705.1",
+                  "posName": "GPSM3 (ENST00000441705.1)",
+                  "highlight": null,
+                  "canonical": true,
+                  "description": " ... Q9Y4H4 P78358 CTAG1B NbExp 5 IntAct EBI-347538 EBI-1188472 Q9Y4H4 Q01658 DR1 NbExp 3 IntAct EBI-347538 EBI-750300 Q9Y4H4 Q9NVL1-2 FAM86C1P NbExp "
+                },
+                {
+                  "position": "chr6_GL000256v2_alt:3506971-3511728",
+                  "hgFindMatches": "ENST00000445326.1",
+                  "posName": "GPSM3 (ENST00000445326.1)",
+                  "highlight": null,
+                  "canonical": true,
+                  "description": " ... Q9Y4H4 P78358 CTAG1B NbExp 5 IntAct EBI-347538 EBI-1188472 Q9Y4H4 Q01658 DR1 NbExp 3 IntAct EBI-347538 EBI-750300 Q9Y4H4 Q9NVL1-2 FAM86C1P NbExp "
+                },
+                {
+                  "position": "chr6_GL000255v2_alt:3413965-3418722",
+                  "hgFindMatches": "ENST00000383269.2",
+                  "posName": "GPSM3 (ENST00000383269.2)",
+                  "highlight": null,
+                  "canonical": true,
+                  "description": " ... Q9Y4H4 P78358 CTAG1B NbExp 5 IntAct EBI-347538 EBI-1188472 Q9Y4H4 Q01658 DR1 NbExp 3 IntAct EBI-347538 EBI-750300 Q9Y4H4 Q9NVL1-2 FAM86C1P NbExp "
+                },
+                {
+                  "position": "chrX:46912421-47061242",
+                  "hgFindMatches": "ENST00000614628.5",
+                  "posName": "JADE3 (ENST00000614628.5)",
+                  "highlight": null,
+                  "canonical": true,
+                  "description": " ... Q92613 P55212 CASP6 NbExp 3 IntAct EBI-10278909 EBI-718729 Q92613 Q01658 DR1 NbExp 3 IntAct EBI-10278909 EBI-750300 Q92613 P14136 GFAP NbExp "
+                },
+                {
+                  "position": "chr6:32190766-32192643",
+                  "hgFindMatches": "ENST00000375040.8",
+                  "posName": "GPSM3 (ENST00000375040.8)",
+                  "highlight": null,
+                  "canonical": true,
+                  "description": " ... Q9Y4H4 P78358 CTAG1B NbExp 5 IntAct EBI-347538 EBI-1188472 Q9Y4H4 Q01658 DR1 NbExp 3 IntAct EBI-347538 EBI-750300 Q9Y4H4 Q9NVL1-2 FAM86C1P NbExp "
+                },
+                {
+                  "position": "chr2:219498891-219506989",
+                  "hgFindMatches": "ENST00000313597.10",
+                  "posName": "GMPPA (ENST00000313597.10)",
+                  "highlight": null,
+                  "canonical": true,
+                  "description": " ... Q96IJ6 O14645 DNALI1 NbExp 3 IntAct EBI-750953 EBI-395638 Q96IJ6 Q01658 DR1 NbExp 3 IntAct EBI-750953 EBI-750300 Q96IJ6 Q9Y5P6 GMPPB NbExp "
+                },
+                {
+                  "position": "chrX:17800049-17861298",
+                  "hgFindMatches": "ENST00000451717.6",
+                  "posName": "RAI2 (ENST00000451717.6)",
+                  "highlight": null,
+                  "canonical": true,
+                  "description": " ... Q9Y5P3 P56545-3 CTBP2 NbExp 3 IntAct EBI-746228 EBI-10171902 Q9Y5P3 Q01658 DR1 NbExp 3 IntAct EBI-746228 EBI-750300 Q9Y5P3 Q14192 FHL2 NbExp "
+                },
+                {
+                  "position": "chr1:167916675-167937072",
+                  "hgFindMatches": "ENST00000271373.9",
+                  "posName": "MPC2 (ENST00000271373.9)",
+                  "highlight": null,
+                  "canonical": true,
+                  "description": " ... O95563 O00429-3 DNM1L NbExp 3 IntAct EBI-719403 EBI-6896746 O95563 Q01658 DR1 NbExp 3 IntAct EBI-719403 EBI-750300 O95563 P29692-2 EEF1D NbExp "
+                },
+                {
+                  "position": "chr17:63600895-63608365",
+                  "hgFindMatches": "ENST00000258975.7",
+                  "posName": "TACO1 (ENST00000258975.7)",
+                  "highlight": null,
+                  "canonical": true,
+                  "description": " ... Q9BSH4 A0PJX0 CIB4 NbExp 3 IntAct EBI-747797 EBI-12868028 Q9BSH4 Q01658 DR1 NbExp 3 IntAct EBI-747797 EBI-750300 Q9BSH4 A6NEM1 GOLGA6L9 NbExp "
+                },
+                {
+                  "position": "chrX:8790795-8801383",
+                  "hgFindMatches": "ENST00000381003.7",
+                  "posName": "FAM9A (ENST00000381003.7)",
+                  "highlight": null,
+                  "canonical": true,
+                  "description": " ... Q8IZU1 G5E9A7 DMWD NbExp 3 IntAct EBI-8468186 EBI-10976677 Q8IZU1 Q01658 DR1 NbExp 3 IntAct EBI-8468186 EBI-750300 Q8IZU1 P11474 ESRRA NbExp "
+                },
+                {
+                  "position": "chr19:30372384-30558059",
+                  "hgFindMatches": "ENST00000355537.4",
+                  "posName": "ZNF536 (ENST00000355537.4)",
+                  "highlight": null,
+                  "canonical": true,
+                  "description": " ... elements RARE composed of tandem 5 AGGTCA-3 sites known as DR1-DR5 PubMed 19398580 Recognizes and binds 2 copies of the "
+                },
+                {
+                  "position": "chr22:50059391-50085426",
+                  "hgFindMatches": "ENST00000311597.10",
+                  "posName": "MLC1 (ENST00000311597.10)",
+                  "highlight": null,
+                  "canonical": true,
+                  "description": " ... Q15049 Q9UBB4 ATXN10 NbExp 3 IntAct EBI-8475277 EBI-702390 Q15049 Q01658 DR1 NbExp 3 IntAct EBI-8475277 EBI-750300 Q15049 P14136 GFAP NbExp "
+                },
+                {
+                  "position": "chr10:47467993-47484115",
+                  "hgFindMatches": "ENST00000585281.6",
+                  "posName": "ANXA8 (ENST00000585281.6)",
+                  "highlight": null,
+                  "canonical": true,
+                  "description": " ... P13928 O14645 DNALI1 NbExp 3 IntAct EBI-2556915 EBI-395638 P13928 Q01658 DR1 NbExp 3 IntAct EBI-2556915 EBI-750300 P13928 Q00403 GTF2B NbExp "
+                },
+                {
+                  "position": "chr12:107774704-107776644",
+                  "hgFindMatches": "ENST00000342331.5",
+                  "posName": "ASCL4 (ENST00000342331.5)",
+                  "highlight": null,
+                  "canonical": true,
+                  "description": " ... Q6XD76 O75190 DNAJB6 NbExp 3 IntAct EBI-10254793 EBI-1053164 Q6XD76 Q01658 DR1 NbExp 3 IntAct EBI-10254793 EBI-750300 Q6XD76 P03372 ESR1 NbExp "
+                },
+                {
+                  "position": "chr9:113297093-113303376",
+                  "hgFindMatches": "ENST00000489339.2",
+                  "posName": "RNF183 (ENST00000489339.2)",
+                  "highlight": null,
+                  "canonical": true,
+                  "description": " ... Q96D59 P50570-2 DNM2 NbExp 3 IntAct EBI-743938 EBI-10968534 Q96D59 Q01658 DR1 NbExp 3 IntAct EBI-743938 EBI-750300 Q96D59 Q13216-2 ERCC8 NbExp "
+                },
+                {
+                  "position": "chr1:165400922-165445126",
+                  "hgFindMatches": "ENST00000359842.10",
+                  "posName": "RXRG (ENST00000359842.10)",
+                  "highlight": null,
+                  "canonical": true,
+                  "description": " ... elements RARE composed of tandem 5 AGGTCA-3 sites known as DR1-DR5 The high affinity ligand for RXRs is 9-cis retinoic "
+                },
+                {
+                  "position": "chr14:21090077-21098655",
+                  "hgFindMatches": "ENST00000360947.8",
+                  "posName": "ZNF219 (ENST00000360947.8)",
+                  "highlight": null,
+                  "canonical": true,
+                  "description": " ... Q9P2Y4 Q7L5A3 ATOSB NbExp 3 IntAct EBI-3937106 EBI-745689 Q9P2Y4 Q01658 DR1 NbExp 3 IntAct EBI-3937106 EBI-750300 Q9P2Y4 Q4V328 GRIPAP1 NbExp "
+                },
+                {
+                  "position": "chr3:126342635-126357408",
+                  "hgFindMatches": "ENST00000296233.4",
+                  "posName": "KLF15 (ENST00000296233.4)",
+                  "highlight": null,
+                  "canonical": true,
+                  "description": " ... Q9UIH9 O14645 DNALI1 NbExp 3 IntAct EBI-2796400 EBI-395638 Q9UIH9 Q01658 DR1 NbExp 3 IntAct EBI-2796400 EBI-750300 Q9UIH9 Q92997 DVL3 NbExp "
+                },
+                {
+                  "position": "chr1:25834006-25859457",
+                  "hgFindMatches": "ENST00000374298.4",
+                  "posName": "AUNIP (ENST00000374298.4)",
+                  "highlight": null,
+                  "canonical": true,
+                  "description": " ... Q9H7T9 Q9NWQ9 C14orf119 NbExp 3 IntAct EBI-10693257 EBI-725606 Q9H7T9 Q01658 DR1 NbExp 3 IntAct EBI-10693257 EBI-750300 Q9H7T9 P22607 FGFR3 NbExp "
+                },
+                {
+                  "position": "chr3:183697797-183812624",
+                  "hgFindMatches": "ENST00000305135.10",
+                  "posName": "YEATS2 (ENST00000305135.10)",
+                  "highlight": null,
+                  "canonical": true,
+                  "description": " ... KAT14 KAT2A TADA2L TADA3L ZZ3 MBIP WDR5 YEATS2 SGF29 and DR1 Nucleus The YEATS domain specifically recognizes and binds crotonylated "
+                },
+                {
+                  "position": "chr19:55643649-55645623",
+                  "hgFindMatches": "ENST00000270451.6",
+                  "posName": "ZNF581 (ENST00000270451.6)",
+                  "highlight": null,
+                  "canonical": true,
+                  "description": " ... Q9P0T4 Q8NF50-2 DOCK8 NbExp 3 IntAct EBI-745520 EBI-10174653 Q9P0T4 Q01658 DR1 NbExp 3 IntAct EBI-745520 EBI-750300 Q9P0T4 Q92997 DVL3 NbExp "
+                },
+                {
+                  "position": "chr1:160215720-160262549",
+                  "hgFindMatches": "ENST00000368074.6",
+                  "posName": "DCAF8 (ENST00000368074.6)",
+                  "highlight": null,
+                  "canonical": true,
+                  "description": " ... Q5TAQ9-2 G5E9A7 DMWD NbExp 3 IntAct EBI-25842815 EBI-10976677 Q5TAQ9-2 Q01658 DR1 NbExp 3 IntAct EBI-25842815 EBI-750300 Q5TAQ9-2 P28799 GRN NbExp "
+                },
+                {
+                  "position": "chr19:19561713-19618687",
+                  "hgFindMatches": "ENST00000251203.14",
+                  "posName": "PBX4 (ENST00000251203.14)",
+                  "highlight": null,
+                  "canonical": true,
+                  "description": " ... Q9BYU1 Q9UBL6-2 CPNE7 NbExp 3 IntAct EBI-10302990 EBI-12012272 Q9BYU1 Q01658 DR1 NbExp 3 IntAct EBI-10302990 EBI-750300 Q9BYU1 Q8N9N8 EIF1AD NbExp "
+                },
+                {
+                  "position": "chr12:53210569-53232209",
+                  "hgFindMatches": "ENST00000425354.7",
+                  "posName": "RARG (ENST00000425354.7)",
+                  "highlight": null,
+                  "canonical": true,
+                  "description": " ... elements RARE composed of tandem 5 AGGTCA-3 sites known as DR1-DR5 In the absence of ligand acts mainly as an "
+                },
+                {
+                  "position": "chr3:25428263-25597932",
+                  "hgFindMatches": "ENST00000330688.9",
+                  "posName": "RARB (ENST00000330688.9)",
+                  "highlight": null,
+                  "canonical": true,
+                  "description": " ... elements RARE composed of tandem 5 AGGTCA-3 sites known as DR1-DR5 In the absence or presence of hormone ligand acts "
+                },
+                {
+                  "position": "chr9:134326455-134440585",
+                  "hgFindMatches": "ENST00000481739.2",
+                  "posName": "RXRA (ENST00000481739.2)",
+                  "highlight": null,
+                  "canonical": true,
+                  "description": " ... elements RARE composed of tandem 5 AGGTCA-3 sites known as DR1-DR5 to regulate transcription PubMed 10195690 PubMed 11162439 PubMed 11915042 "
+                },
+                {
+                  "position": "chr10:809497-931705",
+                  "hgFindMatches": "ENST00000316157.8",
+                  "posName": "LARP4B (ENST00000316157.8)",
+                  "highlight": null,
+                  "canonical": true,
+                  "description": " ... Q92615 P02489 CRYAA NbExp 3 IntAct EBI-1052558 EBI-6875961 Q92615 Q01658 DR1 NbExp 3 IntAct EBI-1052558 EBI-750300 Q92615 P41091 EIF2S3 NbExp "
+                },
+                {
+                  "position": "chr10:47365496-47384293",
+                  "hgFindMatches": "ENST00000585316.3",
+                  "posName": "ZNF488 (ENST00000585316.3)",
+                  "highlight": null,
+                  "canonical": true,
+                  "description": " ... Q96MN9-2 O14645 DNALI1 NbExp 3 IntAct EBI-25831733 EBI-395638 Q96MN9-2 Q01658 DR1 NbExp 3 IntAct EBI-25831733 EBI-750300 Q96MN9-2 P14136 GFAP NbExp "
+                },
+                {
+                  "position": "chr3:12557087-12583713",
+                  "hgFindMatches": "ENST00000170447.12",
+                  "posName": "MKRN2 (ENST00000170447.12)",
+                  "highlight": null,
+                  "canonical": true,
+                  "description": " ... Q9H000 Q9NX04 AIRIM NbExp 3 IntAct EBI-2341005 EBI-8643161 Q9H000 Q01658 DR1 NbExp 3 IntAct EBI-2341005 EBI-750300 Q9H000 O00303 EIF3F NbExp "
+                },
+                {
+                  "position": "chr12:100473866-100564414",
+                  "hgFindMatches": "ENST00000392986.8",
+                  "posName": "NR1H4 (ENST00000392986.8)",
+                  "highlight": null,
+                  "canonical": true,
+                  "description": " ... spaced by 1 nucleotide IR-1 but also to tandem repeat DR1 sites with lower affinity and can be activated by "
+                },
+                {
+                  "position": "chr12:95020229-95073618",
+                  "hgFindMatches": "ENST00000333003.10",
+                  "posName": "NR2C1 (ENST00000333003.10)",
+                  "highlight": null,
+                  "canonical": true,
+                  "description": " ... remodeling and for binding to promoter regions such as globin DR1 repeats By similarity Interacts with NRIP1 via its LXXLL "
+                },
+                {
+                  "position": "chr15:40440953-40468236",
+                  "hgFindMatches": "ENST00000416165.6",
+                  "posName": "BAHD1 (ENST00000416165.6)",
+                  "highlight": null,
+                  "canonical": true,
+                  "description": " ... Q8TBE0 A8MQ03 CYSRT1 NbExp 3 IntAct EBI-742750 EBI-3867333 Q8TBE0 Q01658 DR1 NbExp 3 IntAct EBI-742750 EBI-750300 Q8TBE0 Q92997 DVL3 NbExp "
+                },
+                {
+                  "position": "chr9:91409045-91423832",
+                  "hgFindMatches": "ENST00000297689.4",
+                  "posName": "NFIL3 (ENST00000297689.4)",
+                  "highlight": null,
+                  "canonical": true,
+                  "description": " ... 1620116 Binds DNA as a dimer PubMed 1620116 Interacts with DR1 PubMed 8836190 Interacts with PER2 and CRY2 By similarity "
+                },
+                {
+                  "position": "chr19:38211006-38224222",
+                  "hgFindMatches": "ENST00000355526.10",
+                  "posName": "DPF1 (ENST00000355526.10)",
+                  "highlight": null,
+                  "canonical": true,
+                  "description": " ... Q92782-2 G5E9A7 DMWD NbExp 3 IntAct EBI-23669343 EBI-10976677 Q92782-2 Q01658 DR1 NbExp 3 IntAct EBI-23669343 EBI-750300 Q92782-2 P41091 EIF2S3 NbExp "
+                },
+                {
+                  "position": "chr15:74954418-74956772",
+                  "hgFindMatches": "ENST00000322177.6",
+                  "posName": "RPP25 (ENST00000322177.6)",
+                  "highlight": null,
+                  "canonical": true,
+                  "description": " ... Q9BUL9 O75190 DNAJB6 NbExp 3 IntAct EBI-366570 EBI-1053164 Q9BUL9 Q01658 DR1 NbExp 3 IntAct EBI-366570 EBI-750300 Q9BUL9 P35637 FUS NbExp "
+                },
+                {
+                  "position": "chr1:40691704-40771603",
+                  "hgFindMatches": "ENST00000447388.8",
+                  "posName": "NFYC (ENST00000447388.8)",
+                  "highlight": null,
+                  "canonical": true,
+                  "description": " ... Q13952-2 Q8TB03 CXorf38 NbExp 3 IntAct EBI-11956831 EBI-12024320 Q13952-2 Q01658 DR1 NbExp 3 IntAct EBI-11956831 EBI-750300 Q13952-2 P32519 ELF1 NbExp "
+                },
+                {
+                  "position": "chr17_KI270857v1_alt:1646030-1718900",
+                  "hgFindMatches": "ENST00000633468.1",
+                  "posName": "TADA2A (ENST00000633468.1)",
+                  "highlight": null,
+                  "canonical": true,
+                  "description": " ... KAT14 KAT2A TADA2L TADA3L ZZ3 MBIP WDR5 YEATS2 CCDC101 and DR1 Interacts with CCDC134 PubMed 22644376 O75478 Q9NY61 AATF NbExp "
+                },
+                {
+                  "position": "chr3:196049284-196082090",
+                  "hgFindMatches": "ENST00000360110.9",
+                  "posName": "TFRC (ENST00000360110.9)",
+                  "highlight": null,
+                  "canonical": true,
+                  "description": " ... molecule per subunit Binds the HLA class II histocompatibility antigen DR1 Interacts with SH3BP3 Interacts with STEAP3 facilitates TFRC endocytosis "
+                },
+                {
+                  "position": "chr9:113407235-113410675",
+                  "hgFindMatches": "ENST00000374171.5",
+                  "posName": "POLE3 (ENST00000374171.5)",
+                  "highlight": null,
+                  "canonical": true,
+                  "description": " ... Q9NRF9 Q658N3 DKFZp666G145 NbExp 3 IntAct EBI-744901 EBI-10240005 Q9NRF9 Q01658 DR1 NbExp 7 IntAct EBI-744901 EBI-750300 Q9NRF9 Q14919 DRAP1 NbExp "
+                },
+                {
+                  "position": "chr19:2328684-2355095",
+                  "hgFindMatches": "ENST00000613503.5",
+                  "posName": "SPPL2B (ENST00000613503.5)",
+                  "highlight": null,
+                  "canonical": true,
+                  "description": " ... Q8TCT7-2 Q8WUW1 BRK1 NbExp 3 IntAct EBI-8345366 EBI-2837444 Q8TCT7-2 Q01658 DR1 NbExp 3 IntAct EBI-8345366 EBI-750300 Q8TCT7-2 P29692-2 EEF1D NbExp "
+                },
+                {
+                  "position": "chr1:224227345-224330172",
+                  "hgFindMatches": "ENST00000281701.11",
+                  "posName": "NVL (ENST00000281701.11)",
+                  "highlight": null,
+                  "canonical": true,
+                  "description": " ... O15381-5 Q14203-5 DCTN1 NbExp 3 IntAct EBI-18577082 EBI-25840379 O15381-5 Q01658 DR1 NbExp 3 IntAct EBI-18577082 EBI-750300 O15381-5 Q00403 GTF2B NbExp "
+                },
+                {
+                  "position": "chr4:173370954-173377532",
+                  "hgFindMatches": "ENST00000296504.4",
+                  "posName": "SAP30 (ENST00000296504.4)",
+                  "highlight": null,
+                  "canonical": true,
+                  "description": " ... O75446 O95817 BAG3 NbExp 3 IntAct EBI-632609 EBI-747185 O75446 Q01658 DR1 NbExp 3 IntAct EBI-632609 EBI-750300 O75446 P26378-2 ELAVL4 NbExp "
+                },
+                {
+                  "position": "chr1:116373244-116404774",
+                  "hgFindMatches": "ENST00000295598.10",
+                  "posName": "ATP1A1 (ENST00000295598.10)",
+                  "highlight": null,
+                  "canonical": true,
+                  "description": " ... SIK1 By similarity Binds the HLA class II histocompatibility antigen DR1 PubMed 1380674 Interacts with SLC35G1 and STIM1 PubMed 22084111 "
+                },
+                {
+                  "position": "chr3:14947583-15049273",
+                  "hgFindMatches": "ENST00000425241.6",
+                  "posName": "NR2C2 (ENST00000425241.6)",
+                  "highlight": null,
+                  "canonical": true,
+                  "description": " ... remodeling and for binding to promoter regions such as globin DR1 repeats Interacts with PCAF the interaction preferentially occurs on "
+                },
+                {
+                  "position": "chr9:120855651-120877188",
+                  "hgFindMatches": "ENST00000373896.8",
+                  "posName": "PHF19 (ENST00000373896.8)",
+                  "highlight": null,
+                  "canonical": true,
+                  "description": " ... Q5T6S3 P68400 CSNK2A1 NbExp 3 IntAct EBI-2339674 EBI-347804 Q5T6S3 Q01658 DR1 NbExp 3 IntAct EBI-2339674 EBI-750300 Q5T6S3 Q92997 DVL3 NbExp "
+                },
+                {
+                  "position": "chr16:28553920-28591790",
+                  "hgFindMatches": "ENST00000317058.8",
+                  "posName": "SGF29 (ENST00000317058.8)",
+                  "highlight": null,
+                  "canonical": true,
+                  "description": " ... KAT14 KAT2A TADA2L TADA3L ZZ3 MBIP WDR5 YEATS2 CCDC101 and DR1 PubMed 19103755 Interacts with methylated CGAS By similarity Interacts "
+                },
+                {
+                  "position": "chr1:155320894-155331114",
+                  "hgFindMatches": "ENST00000368352.10",
+                  "posName": "RUSC1 (ENST00000368352.10)",
+                  "highlight": null,
+                  "canonical": true,
+                  "description": " ... Q9BVN2 Q6PKX4 DOK6 NbExp 3 IntAct EBI-6257312 EBI-2880244 Q9BVN2 Q01658 DR1 NbExp 3 IntAct EBI-6257312 EBI-750300 Q9BVN2 Q86UW9 DTX2 NbExp "
+                },
+                {
+                  "position": "chr3:9779967-9792473",
+                  "hgFindMatches": "ENST00000301964.7",
+                  "posName": "TADA3 (ENST00000301964.7)",
+                  "highlight": null,
+                  "canonical": true,
+                  "description": " ... KAT14 KAT2A TADA2L TADA3L ZZ3 MBIP WDR5 YEATS2 CCDC101 and DR1 O75528 Q9NY61 AATF NbExp 2 IntAct EBI-473249 EBI-372428 O75528 "
+                },
+                {
+                  "position": "chr19:7926718-7943666",
+                  "hgFindMatches": "ENST00000270538.8",
+                  "posName": "TIMM44 (ENST00000270538.8)",
+                  "highlight": null,
+                  "canonical": true,
+                  "description": " ... O43615 Q96DZ9-2 CMTM5 NbExp 3 IntAct EBI-861737 EBI-11522780 O43615 Q01658 DR1 NbExp 3 IntAct EBI-861737 EBI-750300 O43615 Q00403 GTF2B NbExp "
+                },
+                {
+                  "position": "chr12:31791185-31792298",
+                  "hgFindMatches": "ENST00000340398.5",
+                  "posName": "H3-5 (ENST00000340398.5)",
+                  "highlight": null,
+                  "canonical": true,
+                  "description": " ... Q6NXT2 Q8WXX5 DNAJC9 NbExp 3 IntAct EBI-2868501 EBI-2349100 Q6NXT2 Q01658 DR1 NbExp 3 IntAct EBI-2868501 EBI-750300 Q6NXT2 Q8WUP2 FBLIM1 NbExp "
+                },
+                {
+                  "position": "chr14:75069641-75079988",
+                  "hgFindMatches": "ENST00000524913.3",
+                  "posName": "ZC2HC1C (ENST00000524913.3)",
+                  "highlight": null,
+                  "canonical": true,
+                  "description": " ... Q53FD0-2 P26196 DDX6 NbExp 3 IntAct EBI-14104088 EBI-351257 Q53FD0-2 Q01658 DR1 NbExp 3 IntAct EBI-14104088 EBI-750300 Q53FD0-2 Q9Y6C2-2 EMILIN1 NbExp "
+                },
+                {
+                  "position": "chr5:140647829-140662480",
+                  "hgFindMatches": "ENST00000417647.7",
+                  "posName": "IK (ENST00000417647.7)",
+                  "highlight": null,
+                  "canonical": true,
+                  "description": " ... Q13123 O75190 DNAJB6 NbExp 3 IntAct EBI-713456 EBI-1053164 Q13123 Q01658 DR1 NbExp 3 IntAct EBI-713456 EBI-750300 Q13123 Q15029 EFTUD2 NbExp "
+                },
+                {
+                  "position": "chr12:121400118-121424348",
+                  "hgFindMatches": "ENST00000361234.10",
+                  "posName": "RNF34 (ENST00000361234.10)",
+                  "highlight": null,
+                  "canonical": true,
+                  "description": " ... Q969K3 G5E9A7 DMWD NbExp 3 IntAct EBI-2340642 EBI-10976677 Q969K3 Q01658 DR1 NbExp 3 IntAct EBI-2340642 EBI-750300 Q969K3 O14908-2 GIPC1 NbExp "
+                },
+                {
+                  "position": "chr2:27078615-27086403",
+                  "hgFindMatches": "ENST00000380320.9",
+                  "posName": "EMILIN1 (ENST00000380320.9)",
+                  "highlight": null,
+                  "canonical": true,
+                  "description": " ... Q9Y6C2-2 Q96D03 DDIT4L NbExp 3 IntAct EBI-11748557 EBI-742054 Q9Y6C2-2 Q01658 DR1 NbExp 3 IntAct EBI-11748557 EBI-750300 Q9Y6C2-2 P26378-2 ELAVL4 NbExp "
+                },
+                {
+                  "position": "chr3:72371825-72446621",
+                  "hgFindMatches": "ENST00000477973.5",
+                  "posName": "RYBP (ENST00000477973.5)",
+                  "highlight": null,
+                  "canonical": true,
+                  "description": " ... Q8N488 G5E9A7 DMWD NbExp 3 IntAct EBI-752324 EBI-10976677 Q8N488 Q01658 DR1 NbExp 3 IntAct EBI-752324 EBI-750300 Q8N488 Q96JC9 EAF1 NbExp "
+                },
+                {
+                  "position": "chr3_KN538364v1_fix:49171-122044",
+                  "hgFindMatches": "ENST00000643872.4",
+                  "posName": "RYBP (ENST00000643872.4)",
+                  "highlight": null,
+                  "canonical": true,
+                  "description": " ... Q8N488 G5E9A7 DMWD NbExp 3 IntAct EBI-752324 EBI-10976677 Q8N488 Q01658 DR1 NbExp 3 IntAct EBI-752324 EBI-750300 Q8N488 Q96JC9 EAF1 NbExp "
+                },
+                {
+                  "position": "chr14:74239449-74262738",
+                  "hgFindMatches": "ENST00000261980.3",
+                  "posName": "VSX2 (ENST00000261980.3)",
+                  "highlight": null,
+                  "canonical": true,
+                  "description": " ... P58304 P50570-2 DNM2 NbExp 3 IntAct EBI-6427899 EBI-10968534 P58304 Q01658 DR1 NbExp 3 IntAct EBI-6427899 EBI-750300 P58304 P26378-2 ELAVL4 NbExp "
+                },
+                {
+                  "position": "chrX:72272042-72277248",
+                  "hgFindMatches": "ENST00000316084.10",
+                  "posName": "RPS4X (ENST00000316084.10)",
+                  "highlight": null,
+                  "canonical": true,
+                  "description": " ... P62701 G5E9A7 DMWD NbExp 3 IntAct EBI-354303 EBI-10976677 P62701 Q01658 DR1 NbExp 3 IntAct EBI-354303 EBI-750300 P62701 P22607 FGFR3 NbExp "
+                },
+                {
+                  "position": "chr19:1086574-1095375",
+                  "hgFindMatches": "ENST00000615234.5",
+                  "posName": "POLR2E (ENST00000615234.5)",
+                  "highlight": null,
+                  "canonical": true,
+                  "description": " ... P19388 P02489 CRYAA NbExp 3 IntAct EBI-395189 EBI-6875961 P19388 Q01658 DR1 NbExp 3 IntAct EBI-395189 EBI-750300 P19388 Q14204 DYNC1H1 NbExp "
+                },
+                {
+                  "position": "chr3:105655461-105869012",
+                  "hgFindMatches": "ENST00000394030.8",
+                  "posName": "CBLB (ENST00000394030.8)",
+                  "highlight": null,
+                  "canonical": true,
+                  "description": " ... Q13191 O75190 DNAJB6 NbExp 3 IntAct EBI-744027 EBI-1053164 Q13191 Q01658 DR1 NbExp 3 IntAct EBI-744027 EBI-750300 Q13191 P35637 FUS NbExp "
+                },
+                {
+                  "position": "chr9:134136082-134159968",
+                  "hgFindMatches": "ENST00000358625.4",
+                  "posName": "WDR5 (ENST00000358625.4)",
+                  "highlight": null,
+                  "canonical": true,
+                  "description": " ... KAT14 KAT2A TADA2L TADA3L ZZ3 MBIP WDR5 YEATS2 CCDC101 and DR1 PubMed 19103755 In the complex it probably interacts directly "
+                },
+                {
+                  "position": "chr8:127736231-127742951",
+                  "hgFindMatches": "ENST00000621592.8",
+                  "posName": "MYC (ENST00000621592.8)",
+                  "highlight": null,
+                  "canonical": true,
+                  "description": " ... P01106 Q8TCG1 CIP2A NbExp 2 IntAct EBI-447544 EBI-1379376 P01106 Q01658 DR1 NbExp 3 IntAct EBI-447544 EBI-750300 P01106 Q15029 EFTUD2 NbExp "
+                },
+                {
+                  "position": "chr6:170554369-170572859",
+                  "hgFindMatches": "ENST00000392092.7",
+                  "posName": "TBP (ENST00000392092.7)",
+                  "highlight": null,
+                  "canonical": true,
+                  "description": " ... TAF1B and TAF1C PubMed 7801123 Interacts with TFIIB NCOA6 DRAP1 DR1 and ELF3 PubMed 11461703 PubMed 10391676 PubMed 10567404 Interacts "
+                },
+                {
+                  "position": "chr3:10141778-10153667",
+                  "hgFindMatches": "ENST00000256474.3",
+                  "posName": "VHL (ENST00000256474.3)",
+                  "highlight": null,
+                  "canonical": true,
+                  "description": " ... P40337-2 G5E9A7 DMWD NbExp 3 IntAct EBI-12157263 EBI-10976677 P40337-2 Q01658 DR1 NbExp 3 IntAct EBI-12157263 EBI-750300 P40337-2 Q9NZJ0 DTL NbExp "
+                },
+                {
+                  "position": "chr6:85613976-85642886",
+                  "hgFindMatches": "ENST00000369622.8",
+                  "posName": "SYNCRIP (ENST00000369622.8)",
+                  "highlight": null,
+                  "canonical": true,
+                  "description": " ... O60506-4 P02489 CRYAA NbExp 3 IntAct EBI-11123832 EBI-6875961 O60506-4 Q01658 DR1 NbExp 3 IntAct EBI-11123832 EBI-750300 O60506-4 Q14204 DYNC1H1 NbExp "
+                },
+                {
+                  "position": "chr19:4675227-4723842",
+                  "hgFindMatches": "ENST00000262960.14",
+                  "posName": "DPP9 (ENST00000262960.14)",
+                  "highlight": null,
+                  "canonical": true,
+                  "description": " ... Q86TI2-2 O14645 DNALI1 NbExp 3 IntAct EBI-21529239 EBI-395638 Q86TI2-2 Q01658 DR1 NbExp 3 IntAct EBI-21529239 EBI-750300 Q86TI2-2 P29692-2 EEF1D NbExp "
+                },
+                {
+                  "position": "chr17:42113111-42121367",
+                  "hgFindMatches": "ENST00000225916.10",
+                  "posName": "KAT2A (ENST00000225916.10)",
+                  "highlight": null,
+                  "canonical": true,
+                  "description": " ... KAT14 KAT2A TADA2L TADA3L ZZ3 MBIP WDR5 YEATS2 CCDC101 and DR1 PubMed 19103755 In the complex it probably interacts directly "
+                },
+                {
+                  "position": "chr19:49677271-49688447",
+                  "hgFindMatches": "ENST00000454376.7",
+                  "posName": "PRMT1 (ENST00000454376.7)",
+                  "highlight": null,
+                  "canonical": true,
+                  "description": " ... P0DTC9 N Xeno NbExp 3 IntAct EBI-78738 EBI-25475856 Q99873-2 Q01658 DR1 NbExp 3 IntAct EBI-16399024 EBI-750300 Q99873-3 Q16543 CDC37 NbExp "
+                },
+                {
+                  "position": "chr17:82242667-82273700",
+                  "hgFindMatches": "ENST00000314028.11",
+                  "posName": "CSNK1D (ENST00000314028.11)",
+                  "highlight": null,
+                  "canonical": true,
+                  "description": " ... P48730-2 P06850 CRH NbExp 3 IntAct EBI-9087876 EBI-3870390 P48730-2 Q01658 DR1 NbExp 3 IntAct EBI-9087876 EBI-750300 P48730-2 Q9BS26 ERP44 NbExp "
+                },
+                {
+                  "position": "chr6:31639028-31652661",
+                  "hgFindMatches": "ENST00000676615.2",
+                  "posName": "BAG6 (ENST00000676615.2)",
+                  "highlight": null,
+                  "canonical": true,
+                  "description": " ... P46379-2 Q14117 DPYS NbExp 3 IntAct EBI-10988864 EBI-12275416 P46379-2 Q01658 DR1 NbExp 3 IntAct EBI-10988864 EBI-750300 P46379-2 Q9H410 DSN1 NbExp "
+                },
+                {
+                  "position": "chr6_GL000251v2_alt:3116310-3129995",
+                  "hgFindMatches": "ENST00000417144.5",
+                  "posName": "BAG6 (ENST00000417144.5)",
+                  "highlight": null,
+                  "canonical": true,
+                  "description": " ... P46379-2 Q14117 DPYS NbExp 3 IntAct EBI-10988864 EBI-12275416 P46379-2 Q01658 DR1 NbExp 3 IntAct EBI-10988864 EBI-750300 P46379-2 Q9H410 DSN1 NbExp "
+                },
+                {
+                  "position": "chr6_GL000256v2_alt:2938304-2951983",
+                  "hgFindMatches": "ENST00000419847.5",
+                  "posName": "BAG6 (ENST00000419847.5)",
+                  "highlight": null,
+                  "canonical": true,
+                  "description": " ... P46379-2 Q14117 DPYS NbExp 3 IntAct EBI-10988864 EBI-12275416 P46379-2 Q01658 DR1 NbExp 3 IntAct EBI-10988864 EBI-750300 P46379-2 Q9H410 DSN1 NbExp "
+                },
+                {
+                  "position": "chr6_GL000255v2_alt:2894841-2908524",
+                  "hgFindMatches": "ENST00000383448.6",
+                  "posName": "BAG6 (ENST00000383448.6)",
+                  "highlight": null,
+                  "canonical": true,
+                  "description": " ... P46379-2 Q14117 DPYS NbExp 3 IntAct EBI-10988864 EBI-12275416 P46379-2 Q01658 DR1 NbExp 3 IntAct EBI-10988864 EBI-750300 P46379-2 Q9H410 DSN1 NbExp "
+                },
+                {
+                  "position": "chr11:119355215-119381690",
+                  "hgFindMatches": "ENST00000260187.7",
+                  "posName": "USP2 (ENST00000260187.7)",
+                  "highlight": null,
+                  "canonical": true,
+                  "description": " ... O75604-3 G5E9A7 DMWD NbExp 3 IntAct EBI-10696113 EBI-10976677 O75604-3 Q01658 DR1 NbExp 3 IntAct EBI-10696113 EBI-750300 O75604-3 Q00403 GTF2B NbExp "
+                },
+                {
+                  "position": "chr21:25880550-26170770",
+                  "hgFindMatches": "ENST00000346798.8",
+                  "posName": "APP (ENST00000346798.8)",
+                  "highlight": null,
+                  "canonical": true,
+                  "description": " ... P05067 O14645 DNALI1 NbExp 3 IntAct EBI-77613 EBI-395638 P05067 Q01658 DR1 NbExp 3 IntAct EBI-77613 EBI-750300 P05067 P21917 DRD4 NbExp "
+                },
+                {
+                  "position": "chr2:11746632-11827409",
+                  "hgFindMatches": "ENST00000674199.1",
+                  "posName": "LPIN1 (ENST00000674199.1)",
+                  "highlight": null,
+                  "canonical": true,
+                  "description": " ... Q14693 P09172 DBH NbExp 3 IntAct EBI-5278370 EBI-8589586 Q14693 Q01658 DR1 NbExp 3 IntAct EBI-5278370 EBI-750300 Q14693 P21333-2 FLNA NbExp "
+                },
+                {
+                  "position": "chr6_GL000251v2_alt:3024196-3036142",
+                  "hgFindMatches": "ENST00000434332.6",
+                  "posName": "NFKBIL1 (ENST00000434332.6)",
+                  "highlight": null,
+                  "canonical": true,
+                  "description": " ... is found in the MHC 7.1 haplotype HLA A3 B7 DR15 population Rheumatoid arthritis RA MIM 180300 An inflammatory disease "
+                },
+                {
+                  "position": "chr6_GL000252v2_alt:2795346-2806586",
+                  "hgFindMatches": "ENST00000455376.6",
+                  "posName": "NFKBIL1 (ENST00000455376.6)",
+                  "highlight": null,
+                  "canonical": true,
+                  "description": " ... is found in the MHC 7.1 haplotype HLA A3 B7 DR15 population Rheumatoid arthritis RA MIM 180300 An inflammatory disease "
+                },
+                {
+                  "position": "chr6_GL000253v2_alt:2852629-2863876",
+                  "hgFindMatches": "ENST00000432160.6",
+                  "posName": "NFKBIL1 (ENST00000432160.6)",
+                  "highlight": null,
+                  "canonical": true,
+                  "description": " ... is found in the MHC 7.1 haplotype HLA A3 B7 DR15 population Rheumatoid arthritis RA MIM 180300 An inflammatory disease "
+                },
+                {
+                  "position": "chr6_GL000254v2_alt:2889515-2900754",
+                  "hgFindMatches": "ENST00000442947.6",
+                  "posName": "NFKBIL1 (ENST00000442947.6)",
+                  "highlight": null,
+                  "canonical": true,
+                  "description": " ... is found in the MHC 7.1 haplotype HLA A3 B7 DR15 population Rheumatoid arthritis RA MIM 180300 An inflammatory disease "
+                },
+                {
+                  "position": "chr6_GL000256v2_alt:2846154-2858110",
+                  "hgFindMatches": "ENST00000428467.6",
+                  "posName": "NFKBIL1 (ENST00000428467.6)",
+                  "highlight": null,
+                  "canonical": true,
+                  "description": " ... is found in the MHC 7.1 haplotype HLA A3 B7 DR15 population Rheumatoid arthritis RA MIM 180300 An inflammatory disease "
+                },
+                {
+                  "position": "chr6_GL000255v2_alt:2802722-2814673",
+                  "hgFindMatches": "ENST00000400279.7",
+                  "posName": "NFKBIL1 (ENST00000400279.7)",
+                  "highlight": null,
+                  "canonical": true,
+                  "description": " ... is found in the MHC 7.1 haplotype HLA A3 B7 DR15 population Rheumatoid arthritis RA MIM 180300 An inflammatory disease "
+                },
+                {
+                  "position": "chr6:31547608-31558829",
+                  "hgFindMatches": "ENST00000376148.9",
+                  "posName": "NFKBIL1 (ENST00000376148.9)",
+                  "highlight": null,
+                  "canonical": true,
+                  "description": " ... is found in the MHC 7.1 haplotype HLA A3 B7 DR15 population Rheumatoid arthritis RA MIM 180300 An inflammatory disease "
+                }
+              ]
+            }
+          ]
+        },
+        "RASAL2": {
+          "search_keys": [
+            "genome",
+            "positionMatches"
+          ],
+          "position_matches": [
+            {
+              "name": "mane",
+              "trackName": "mane",
+              "description": "MANE Select Plus Clinical: Representative transcript from RefSeq & GENCODE",
+              "vis": "pack",
+              "matches": [
+                {
+                  "position": "chr1:178094104-178478850",
+                  "hgFindMatches": "ENST00000367649.8",
+                  "posName": "RASAL2 (NM_170692.4 &#x2F; ENST00000367649.8)",
+                  "highlight": null,
+                  "canonical": false,
+                  "description": "ras GTPase-activating protein nGAP isoform 2"
+                }
+              ]
+            },
+            {
+              "name": "hgnc",
+              "trackName": "hgnc",
+              "description": "HUGO Gene Nomenclature",
+              "vis": "pack",
+              "matches": [
+                {
+                  "position": "chr1:178094104-178484147",
+                  "hgFindMatches": "HGNC%3A9874",
+                  "posName": "RASAL2",
+                  "highlight": null,
+                  "canonical": false,
+                  "description": "RAS protein activator like 2"
+                },
+                {
+                  "position": "chr1:178090677-178094444",
+                  "hgFindMatches": "HGNC%3A44170",
+                  "posName": "RASAL2-AS1",
+                  "highlight": null,
+                  "canonical": false,
+                  "description": "RASAL2 antisense RNA 1"
+                }
+              ]
+            },
+            {
+              "name": "knownGene",
+              "trackName": "knownGene",
+              "description": "Gencode Genes",
+              "vis": "pack",
+              "matches": [
+                {
+                  "position": "chr1:178090677-178093655",
+                  "hgFindMatches": "ENST00000654141.1",
+                  "posName": "RASAL2-AS1 (ENST00000654141.1)",
+                  "highlight": null,
+                  "canonical": true,
+                  "description": "RASAL2-AS1 ENST00000654141.1 RASAL2 antisense RNA 1 from HGNC RASAL2-AS1 BC027927 "
+                },
+                {
+                  "position": "chr1:178094104-178478850",
+                  "hgFindMatches": "ENST00000367649.8",
+                  "posName": "RASAL2 (ENST00000367649.8)",
+                  "highlight": null,
+                  "canonical": true,
+                  "description": "RASAL2 ENST00000367649.8 RAS protein activator like 2 transcript variant 2 "
+                },
+                {
+                  "position": "chr15:77108158-77420104",
+                  "hgFindMatches": "ENST00000682557.1",
+                  "posName": "PEAK1 (ENST00000682557.1)",
+                  "highlight": null,
+                  "canonical": true,
+                  "description": " ... and mediates their association with PEAK1 PubMed 35687021 Interacts with RASAL2 and GRB2 PubMed 35687021 Q9H792 P56945 BCAR1 NbExp 3 "
+                },
+                {
+                  "position": "chr14:39233915-39350694",
+                  "hgFindMatches": "ENST00000640607.2",
+                  "posName": "MIA2 (ENST00000640607.2)",
+                  "highlight": null,
+                  "canonical": true,
+                  "description": " ... Q96PC5 P25788 PSMA3 NbExp 3 IntAct EBI-1050253 EBI-348380 Q96PC5 Q9UJF2 RASAL2 NbExp 3 IntAct EBI-1050253 EBI-359444 Q96PC5 O75177 SS18L1 NbExp "
+                },
+                {
+                  "position": "chr5:113022106-113488453",
+                  "hgFindMatches": "ENST00000408903.7",
+                  "posName": "MCC (ENST00000408903.7)",
+                  "highlight": null,
+                  "canonical": true,
+                  "description": " ... P23508 P26045 PTPN3 NbExp 2 IntAct EBI-307531 EBI-1047946 P23508 Q9UJF2-2 RASAL2 NbExp 3 IntAct EBI-307531 EBI-12171247 P23508 Q9P2K3-2 RCOR3 NbExp "
+                },
+                {
+                  "position": "chr9:120902393-120926796",
+                  "hgFindMatches": "ENST00000373887.8",
+                  "posName": "TRAF1 (ENST00000373887.8)",
+                  "highlight": null,
+                  "canonical": true,
+                  "description": " ... Q13077 Q2TAL8 QRICH1 NbExp 6 IntAct EBI-359224 EBI-2798044 Q13077 Q9UJF2 RASAL2 NbExp 3 IntAct EBI-359224 EBI-359444 Q13077 Q8WWW0 RASSF5 NbExp "
+                },
+                {
+                  "position": "chr19:17249171-17264745",
+                  "hgFindMatches": "ENST00000252597.8",
+                  "posName": "USHBP1 (ENST00000252597.8)",
+                  "highlight": null,
+                  "canonical": true,
+                  "description": " ... Q8N6Y0 P47897 QARS1 NbExp 3 IntAct EBI-739895 EBI-347462 Q8N6Y0 Q9UJF2 RASAL2 NbExp 3 IntAct EBI-739895 EBI-359444 Q8N6Y0 Q9P2K3-2 RCOR3 NbExp "
+                }
+              ]
+            }
+          ]
+        },
+        "MAPK14": {
+          "search_keys": [
+            "genome",
+            "positionMatches"
+          ],
+          "position_matches": [
+            {
+              "name": "mane",
+              "trackName": "mane",
+              "description": "MANE Select Plus Clinical: Representative transcript from RefSeq & GENCODE",
+              "vis": "pack",
+              "matches": [
+                {
+                  "position": "chr6:36027808-36111236",
+                  "hgFindMatches": "ENST00000229794.9",
+                  "posName": "MAPK14 (NM_139012.3 &#x2F; ENST00000229794.9)",
+                  "highlight": null,
+                  "canonical": false,
+                  "description": "mitogen-activated protein kinase 14 isoform 2"
+                }
+              ]
+            },
+            {
+              "name": "hgnc",
+              "trackName": "hgnc",
+              "description": "HUGO Gene Nomenclature",
+              "vis": "pack",
+              "matches": [
+                {
+                  "position": "chr6:36027752-36122511",
+                  "hgFindMatches": "HGNC%3A6876",
+                  "posName": "MAPK14",
+                  "highlight": null,
+                  "canonical": false,
+                  "description": "mitogen-activated protein kinase 14"
+                }
+              ]
+            },
+            {
+              "name": "knownGene",
+              "trackName": "knownGene",
+              "description": "Gencode Genes",
+              "vis": "pack",
+              "matches": [
+                {
+                  "position": "chr6:36027808-36111236",
+                  "hgFindMatches": "ENST00000229794.9",
+                  "posName": "MAPK14 (ENST00000229794.9)",
+                  "highlight": null,
+                  "canonical": true,
+                  "description": "MAPK14 ENST00000229794.9 mitogen-activated protein kinase 14 transcript variant 2 from "
+                },
+                {
+                  "position": "chr4:37610634-37686376",
+                  "hgFindMatches": "ENST00000454158.7",
+                  "posName": "RELL1 (ENST00000454158.7)",
+                  "highlight": null,
+                  "canonical": true,
+                  "description": " ... Q8NBK1 RELL1_HUMAN uc010ifc.1 uc010ifc.2 uc010ifc.3 uc010ifc.4 uc010ifc.5 Induces activation of MAPK14 p38 cascade when overexpressed PubMed 28688764 Induces apoptosis when "
+                },
+                {
+                  "position": "chr5:141636997-141641064",
+                  "hgFindMatches": "ENST00000297164.8",
+                  "posName": "RELL2 (ENST00000297164.8)",
+                  "highlight": null,
+                  "canonical": true,
+                  "description": " ... UNQ9423 PRO34565 uc003llh.1 uc003llh.2 uc003llh.3 uc003llh.4 uc003llh.5 Induces activation of MAPK14 p38 cascade when overexpressed PubMed 28688764 Induces apoptosis when "
+                },
+                {
+                  "position": "chr11:73376399-73397474",
+                  "hgFindMatches": "ENST00000064780.7",
+                  "posName": "RELT (ENST00000064780.7)",
+                  "highlight": null,
+                  "canonical": true,
+                  "description": " ... role in apoptosis PubMed 28688764 PubMed 19969290 Induces activation of MAPK14 p38 and MAPK8 JNK MAPK cascades when overexpressed PubMed "
+                },
+                {
+                  "position": "chr17:29390363-29551903",
+                  "hgFindMatches": "ENST00000261716.8",
+                  "posName": "TAOK1 (ENST00000261716.8)",
+                  "highlight": null,
+                  "canonical": true,
+                  "description": " ... Serine threonine-protein kinase involved in various processes such as p38 MAPK14 stress-activated MAPK cascade DNA damage response and regulation of "
+                },
+                {
+                  "position": "chr13:37009312-37059688",
+                  "hgFindMatches": "ENST00000350612.11",
+                  "posName": "SUPT20H (ENST00000350612.11)",
+                  "highlight": null,
+                  "canonical": true,
+                  "description": " ... Required for MAP kinase p38 MAPK11 MAPK12 MAPK13 and or MAPK14 activation during gastrulation Required for down-regulation of E-cadherin during "
+                },
+                {
+                  "position": "chr1:233327724-233385148",
+                  "hgFindMatches": "ENST00000366624.8",
+                  "posName": "MAP3K21 (ENST00000366624.8)",
+                  "highlight": null,
+                  "canonical": true,
+                  "description": " ... of TLR4 signaling Does not activate JNK1 MAPK8 pathway p38 MAPK14 nor ERK2 MAPK1 pathways Reaction ATP L-seryl protein ADP "
+                },
+                {
+                  "position": "chr12:118149801-118372907",
+                  "hgFindMatches": "ENST00000392533.8",
+                  "posName": "TAOK3 (ENST00000392533.8)",
+                  "highlight": null,
+                  "canonical": true,
+                  "description": " ... is a serine threonine protein kinase that activates the p38 MAPK14 stress-activated MAPK cascade but inhibits the basal activity of "
+                },
+                {
+                  "position": "chr1:159780962-159782543",
+                  "hgFindMatches": "ENST00000368107.2",
+                  "posName": "DUSP23 (ENST00000368107.2)",
+                  "highlight": null,
+                  "canonical": true,
+                  "description": " ... in vitro Able to enhance activation of JNK and p38 MAPK14 Reaction H2O O-phospho-L-tyrosyl protein L-tyrosyl protein phosphate Xref Rhea "
+                },
+                {
+                  "position": "chr12:111842228-111902222",
+                  "hgFindMatches": "ENST00000550735.7",
+                  "posName": "MAPKAPK5 (ENST00000550735.7)",
+                  "highlight": null,
+                  "canonical": true,
+                  "description": " ... activated through its phosphorylation by MAP kinases including MAPK1 ERK MAPK14 p38-alpha and MAPK11 p38-beta The encoded protein is found "
+                },
+                {
+                  "position": "chr17:21284711-21315232",
+                  "hgFindMatches": "ENST00000342679.9",
+                  "posName": "MAP2K3 (ENST00000342679.9)",
+                  "highlight": null,
+                  "canonical": true,
+                  "description": " ... the MAP kinase-mediated signaling cascade It phosphorylates and thus activates MAPK14 p38-MAPK This kinase can be activated by insulin and "
+                },
+                {
+                  "position": "chr1:20482391-20486210",
+                  "hgFindMatches": "ENST00000375078.4",
+                  "posName": "CAMK2N1 (ENST00000375078.4)",
+                  "highlight": null,
+                  "canonical": true,
+                  "description": " ... inflammasome in cardiomyocytes via acting as an inhibitor of the MAPK14 p38 and MAPK8 JNK pathways thereby regulating ventricular remodeling "
+                },
+                {
+                  "position": "chr12:108288046-108339311",
+                  "hgFindMatches": "ENST00000550402.6",
+                  "posName": "CMKLR1 (ENST00000550402.6)",
+                  "highlight": null,
+                  "canonical": true,
+                  "description": " ... mobilization phosphorylation of MAP kinases MAPK1 MAPK3 ERK1 2 TYRO3 MAPK14 P38MAPK and PI3K leading to multifunctional effects like reduction "
+                },
+                {
+                  "position": "chr6:7541671-7586714",
+                  "hgFindMatches": "ENST00000379802.8",
+                  "posName": "DSP (ENST00000379802.8)",
+                  "highlight": null,
+                  "canonical": true,
+                  "description": " ... Regulates profibrotic gene expression in cardiomyocytes via activation of the MAPK14 p38 MAPK signaling cascade and increase in TGFB1 protein "
+                },
+                {
+                  "position": "chr16:29973868-29988393",
+                  "hgFindMatches": "ENST00000308893.9",
+                  "posName": "TAOK2 (ENST00000308893.9)",
+                  "highlight": null,
+                  "canonical": true,
+                  "description": " ... membrane blebbing and apoptotic bodies formation DNA damage response and MAPK14 p38 MAPK stress-activated MAPK cascade Phosphorylates itself MBP activated "
+                },
+                {
+                  "position": "chr1:155897808-155911349",
+                  "hgFindMatches": "ENST00000368323.8",
+                  "posName": "RIT1 (ENST00000368323.8)",
+                  "highlight": null,
+                  "canonical": true,
+                  "description": " ... coupling NGF stimulation to the activation of both EPHB2 and MAPK14 signaling pathways and in NGF dependent neuronal differentiation Involved "
+                },
+                {
+                  "position": "chr13:98445185-98577107",
+                  "hgFindMatches": "ENST00000539966.6",
+                  "posName": "STK24 (ENST00000539966.6)",
+                  "highlight": null,
+                  "canonical": true,
+                  "description": " ... of JNK1-JNK2 MAPK8 and MAPK9 p38 MAPK11 MAPK12 MAPK13 and MAPK14 during oxidative stress Plays a role in a staurosporine-induced "
+                },
+                {
+                  "position": "chr1:221701424-221742089",
+                  "hgFindMatches": "ENST00000366899.4",
+                  "posName": "DUSP10 (ENST00000366899.4)",
+                  "highlight": null,
+                  "canonical": true,
+                  "description": " ... MAP kinases Has a specificity for the MAPK11 MAPK12 MAPK13 MAPK14 subfamily It preferably dephosphorylates p38 Reaction H2O O-phospho-L-tyrosyl protein "
+                },
+                {
+                  "position": "chr22:39399780-39431882",
+                  "hgFindMatches": "ENST00000216160.11",
+                  "posName": "TAB1 (ENST00000216160.11)",
+                  "highlight": null,
+                  "canonical": true,
+                  "description": " ... also interact with and activate the mitogen-activated protein kinase 14 MAPK14 p38alpha and thus represents an alternative activation pathway in "
+                },
+                {
+                  "position": "chr17:30477408-30527592",
+                  "hgFindMatches": "ENST00000451249.7",
+                  "posName": "GOSR1 (ENST00000451249.7)",
+                  "highlight": null,
+                  "canonical": true,
+                  "description": " ... levels via inhibition of p38 MAPK MAPK11 MAPK12 MAPK13 and MAPK14 Participates in docking and fusion stage of ER to "
+                },
+                {
+                  "position": "chr1:206684905-206734281",
+                  "hgFindMatches": "ENST00000367103.4",
+                  "posName": "MAPKAPK2 (ENST00000367103.4)",
+                  "highlight": null,
+                  "canonical": true,
+                  "description": " ... stress it is phosphorylated and activated by MAP kinase p38-alpha MAPK14 leading to phosphorylation of substrates Phosphorylates serine in the "
+                },
+                {
+                  "position": "chr12:32790755-32896777",
+                  "hgFindMatches": "ENST00000340811.9",
+                  "posName": "PKP2 (ENST00000340811.9)",
+                  "highlight": null,
+                  "canonical": true,
+                  "description": " ... of DSP expression and subsequent activation of downstream TGFB1 and MAPK14 p38 MAPK signaling By similarity May play a role "
+                },
+                {
+                  "position": "chr12:70638079-70920738",
+                  "hgFindMatches": "ENST00000283228.7",
+                  "posName": "PTPRR (ENST00000283228.7)",
+                  "highlight": null,
+                  "canonical": true,
+                  "description": " ... Sequesters mitogen-activated protein kinases MAPKs such as MAPK1 MAPK3 and MAPK14 in the cytoplasm in an inactive form The MAPKs "
+                },
+                {
+                  "position": "chr5:138285269-138331804",
+                  "hgFindMatches": "ENST00000323760.11",
+                  "posName": "CDC25C (ENST00000323760.11)",
+                  "highlight": null,
+                  "canonical": true,
+                  "description": " ... ChEBI CHEBI 46858 ChEBI CHEBI 82620 EC 3.1.3.48 Interacts with MAPK14 and 14-3-3 proteins PubMed 11333986 When phosphorylated on Ser-129 "
+                },
+                {
+                  "position": "chr1:67685201-67688334",
+                  "hgFindMatches": "ENST00000370986.9",
+                  "posName": "GADD45A (ENST00000370986.9)",
+                  "highlight": null,
+                  "canonical": true,
+                  "description": " ... and inhibits entry of cells into S phase Interacts with MAPK14 By similarity Predominantly monomeric but also forms dimers and "
+                },
+                {
+                  "position": "chr17:4833340-4898061",
+                  "hgFindMatches": "ENST00000355280.11",
+                  "posName": "MINK1 (ENST00000355280.11)",
+                  "highlight": null,
+                  "canonical": true,
+                  "description": " ... receptor expression in hippocampal neurons Can activate the JNK and MAPK14 p38 pathways and mediates stimulation of the stress-activated protein "
+                },
+                {
+                  "position": "chr2:102311563-102352037",
+                  "hgFindMatches": "ENST00000233954.6",
+                  "posName": "IL1RL1 (ENST00000233954.6)",
+                  "highlight": null,
+                  "canonical": true,
+                  "description": " ... followed by phosphorylation of MAPK3 ERK1 and or MAPK1 ERK2 MAPK14 and MAPK8 Possibly involved in helper T-cell function PubMed "
+                },
+                {
+                  "position": "chr16:4803203-4847288",
+                  "hgFindMatches": "ENST00000321919.14",
+                  "posName": "GLYR1 (ENST00000321919.14)",
+                  "highlight": null,
+                  "canonical": true,
+                  "description": " ... Regulates p38 MAP kinase activity by mediating stress activation of MAPK14 p38alpha and specifically regulating MAPK14 signaling PubMed 16352664 Indirectly "
+                },
+                {
+                  "position": "chr19:14433306-14471859",
+                  "hgFindMatches": "ENST00000242783.11",
+                  "posName": "PKN1 (ENST00000242783.11)",
+                  "highlight": null,
+                  "canonical": true,
+                  "description": " ... the adrenergic receptor ADRA1B and leads to the activation of MAPK14 Regulates the cytoskeletal network by phosphorylating proteins such as "
+                },
+                {
+                  "position": "chr11:65597757-65614221",
+                  "hgFindMatches": "ENST00000309100.8",
+                  "posName": "MAP3K11 (ENST00000309100.8)",
+                  "highlight": null,
+                  "canonical": true,
+                  "description": " ... stimulated cell proliferation and for mitogen and cytokine activation of MAPK14 p38 MAPK3 ERK and MAPK8 JNK1 through phosphorylation and "
+                },
+                {
+                  "position": "chr17:50962174-51120868",
+                  "hgFindMatches": "ENST00000262013.12",
+                  "posName": "SPAG9 (ENST00000262013.12)",
+                  "highlight": null,
+                  "canonical": true,
+                  "description": " ... a heterotetramer PubMed 19644450 Homooligomer PubMed 19644450 Interacts with MAX MAPK14 MAP3K3 MYC KNS2 and MAP2K4 By similarity Interaction with "
+                },
+                {
+                  "position": "chr3:50617151-50649291",
+                  "hgFindMatches": "ENST00000621469.5",
+                  "posName": "MAPKAPK3 (ENST00000621469.5)",
+                  "highlight": null,
+                  "canonical": true,
+                  "description": " ... stress it is phosphorylated and activated by MAP kinase p38-alpha MAPK14 leading to phosphorylation of substrates Phosphorylates serine in the "
+                },
+                {
+                  "position": "chr17:28371694-28404049",
+                  "hgFindMatches": "ENST00000585482.6",
+                  "posName": "SARM1 (ENST00000585482.6)",
+                  "highlight": null,
+                  "canonical": true,
+                  "description": " ... TRIF-dependent activation of NF-kappa-B and IRF3 and the phosphorylation of MAPK14 p38 PubMed 16964262 Reaction H2O NAD ADP-D-ribose H nicotinamide "
+                },
+                {
+                  "position": "chr10:75105669-75109157",
+                  "hgFindMatches": "ENST00000713560.1",
+                  "posName": "DUSP13A (ENST00000713560.1)",
+                  "highlight": null,
+                  "canonical": true,
+                  "description": " ... AKT1 Shows no phosphatase activity on MAPK1 ERK2 MAPK8 JNK MAPK14 p38 and MAP3K5 ASK1 Reaction H2O O-phospho-L-tyrosyl protein L-tyrosyl "
+                },
+                {
+                  "position": "chr22:50263713-50270380",
+                  "hgFindMatches": "ENST00000330651.11",
+                  "posName": "MAPK11 (ENST00000330651.11)",
+                  "highlight": null,
+                  "canonical": true,
+                  "description": " ... PubMed 35857590 MAPK11 functions are mostly redundant with those of MAPK14 PubMed 12452429 PubMed 20626350 PubMed 35857590 Some of the "
+                },
+                {
+                  "position": "chr1:85265776-85276632",
+                  "hgFindMatches": "ENST00000648566.1",
+                  "posName": "BCL10 (ENST00000648566.1)",
+                  "highlight": null,
+                  "canonical": true,
+                  "description": " ... NF-kappa-B and MAP kinase p38 MAPK11 MAPK12 MAPK13 and or MAPK14 pathways which stimulate expression of genes encoding pro-inflammatory cytokines "
+                },
+                {
+                  "position": "chr3:52048919-52056571",
+                  "hgFindMatches": "ENST00000495880.2",
+                  "posName": "DUSP7 (ENST00000495880.2)",
+                  "highlight": null,
+                  "canonical": true,
+                  "description": " ... towards MAPK1 ERK2 PubMed 9788880 Also has lower activity towards MAPK14 and MAPK8 PubMed 9788880 In arrested oocytes plays a "
+                },
+                {
+                  "position": "chr2:173075846-173268015",
+                  "hgFindMatches": "ENST00000375213.8",
+                  "posName": "MAP3K20 (ENST00000375213.8)",
+                  "highlight": null,
+                  "canonical": true,
+                  "description": " ... JNK3 and MAP kinase p38 MAPK11 MAPK12 MAPK13 and or MAPK14 pathways PubMed 11042189 PubMed 11836244 PubMed 12220515 PubMed 14521931 "
+                },
+                {
+                  "position": "chr7:2906142-3043867",
+                  "hgFindMatches": "ENST00000396946.9",
+                  "posName": "CARD11 (ENST00000396946.9)",
+                  "highlight": null,
+                  "canonical": true,
+                  "description": " ... NF-kappa-B and MAP kinase p38 MAPK11 MAPK12 MAPK13 and or MAPK14 pathways PubMed 11356195 Upon activation in response to TCR "
+                },
+                {
+                  "position": "chr17:69414697-69553865",
+                  "hgFindMatches": "ENST00000590474.7",
+                  "posName": "MAP2K6 (ENST00000590474.7)",
+                  "highlight": null,
+                  "canonical": true,
+                  "description": " ... residue in the MAP kinases p38 MAPK11 MAPK12 MAPK13 and MAPK14 and plays an important role in the regulation of "
+                },
+                {
+                  "position": "chr20:3796310-3806115",
+                  "hgFindMatches": "ENST00000245960.10",
+                  "posName": "CDC25B (ENST00000245960.10)",
+                  "highlight": null,
+                  "canonical": true,
+                  "description": " ... CHEBI 82620 EC 3.1.3.48 Stimulated by B-type cyclins Interacts with MAPK14 and 14-3-3 proteins P30305 P61289 PSME3 NbExp 3 IntAct "
+                },
+                {
+                  "position": "chrX:84058350-84188199",
+                  "hgFindMatches": "ENST00000262752.5",
+                  "posName": "RPS6KA6 (ENST00000262752.5)",
+                  "highlight": null,
+                  "canonical": true,
+                  "description": " ... a complex with MAPK3 ERK1 but not with MAPK9 or MAPK14 in serum-starved cells Q9UK32 Q7Z698 SPRED2 NbExp 3 IntAct "
+                },
+                {
+                  "position": "chr17:47971113-47981781",
+                  "hgFindMatches": "ENST00000338399.9",
+                  "posName": "CDK5RAP3 (ENST00000338399.9)",
+                  "highlight": null,
+                  "canonical": true,
+                  "description": " ... of the nuclear envelope during apoptosis PubMed 23478299 May regulate MAPK14 activity by regulating its dephosphorylation by PPM1D WIP1 PubMed "
+                },
+                {
+                  "position": "chr12:10116777-10130199",
+                  "hgFindMatches": "ENST00000304084.13",
+                  "posName": "CLEC7A (ENST00000304084.13)",
+                  "highlight": null,
+                  "canonical": true,
+                  "description": " ... NF-kappa-B and MAP kinase p38 MAPK11 MAPK12 MAPK13 and or MAPK14 pathways which stimulate expression of genes encoding pro-inflammatory cytokines "
+                },
+                {
+                  "position": "chr1:202147016-202160602",
+                  "hgFindMatches": "ENST00000691036.1",
+                  "posName": "PTPN7 (ENST00000691036.1)",
+                  "highlight": null,
+                  "canonical": true,
+                  "description": " ... P35236 P28482 MAPK1 NbExp 6 IntAct EBI-2265723 EBI-959949 P35236 P47811 Mapk14 Xeno NbExp 2 IntAct EBI-2265723 EBI-298727 P35236-2 Q96IK5 GMCL1 "
+                },
+                {
+                  "position": "chr12:11649674-11895377",
+                  "hgFindMatches": "ENST00000396373.9",
+                  "posName": "ETV6 (ENST00000396373.9)",
+                  "highlight": null,
+                  "canonical": true,
+                  "description": " ... 3 IntAct EBI-1372759 EBI-714158 Nucleus Ubiquitous Phosphorylation of Ser-257 by MAPK14 p38 inhibits ETV6 transcriptional repression Note A chromosomal aberration "
+                },
+                {
+                  "position": "chr10:75094436-75099512",
+                  "hgFindMatches": "ENST00000478873.7",
+                  "posName": "DUSP13B (ENST00000478873.7)",
+                  "highlight": null,
+                  "canonical": true,
+                  "description": " ... expression RefSeq-Attributes-END Dual specificity phosphatase that dephosphorylates MAPK8 JNK and MAPK14 p38 but not MAPK1 ERK2 in vitro PubMed 21360282 "
+                },
+                {
+                  "position": "chr12:57516593-57520514",
+                  "hgFindMatches": "ENST00000346473.8",
+                  "posName": "DDIT3 (ENST00000346473.8)",
+                  "highlight": null,
+                  "canonical": true,
+                  "description": " ... leads to its nuclear accumulation Phosphorylation at serine residues by MAPK14 enhances its transcriptional activation activity while phosphorylation at serine "
+                },
+                {
+                  "position": "chr15:85380603-85749355",
+                  "hgFindMatches": "ENST00000394518.7",
+                  "posName": "AKAP13 (ENST00000394518.7)",
+                  "highlight": null,
+                  "canonical": true,
+                  "description": " ... activation of downstream p38 MAP kinases such as MAPK11 and MAPK14 PubMed 17537920 PubMed 23716597 PubMed 21224381 Part of a "
+                },
+                {
+                  "position": "chr1:203305519-203309602",
+                  "hgFindMatches": "ENST00000290551.5",
+                  "posName": "BTG2 (ENST00000290551.5)",
+                  "highlight": null,
+                  "canonical": true,
+                  "description": " ... by MAPK1 ERK2 and MAPK3 ERK1 and at Ser-149 by MAPK14 leading to PIN1-binding and mitochondrial depolarization Belongs to the "
+                },
+                {
+                  "position": "chrX:153647203-153651326",
+                  "hgFindMatches": "ENST00000342782.4",
+                  "posName": "DUSP9 (ENST00000342782.4)",
+                  "highlight": null,
+                  "canonical": true,
+                  "description": " ... Q99956 P28482 MAPK1 NbExp 4 IntAct EBI-3906678 EBI-959949 Q99956 Q16539 MAPK14 NbExp 4 IntAct EBI-3906678 EBI-73946 Q99956 P47811 Mapk14 Xeno "
+                },
+                {
+                  "position": "chr3:53161209-53192717",
+                  "hgFindMatches": "ENST00000330452.8",
+                  "posName": "PRKCD (ENST00000330452.8)",
+                  "highlight": null,
+                  "canonical": true,
+                  "description": " ... 21406692 In cytosol can trigger apoptosis by activating MAPK11 or MAPK14 inhibiting AKT1 and decreasing the level of X-linked inhibitor "
+                },
+                {
+                  "position": "chr1:156934840-157045742",
+                  "hgFindMatches": "ENST00000368194.8",
+                  "posName": "ARHGEF11 (ENST00000368194.8)",
+                  "highlight": null,
+                  "canonical": true,
+                  "description": " ... Phosphorylated by MAP kinase p38 MAPK11 MAPK12 MAPK13 and or MAPK14 Ubiquitinated by the BCR KLHL20 E3 ubiquitin ligase complex "
+                },
+                {
+                  "position": "chr9:136363956-136373669",
+                  "hgFindMatches": "ENST00000371732.10",
+                  "posName": "CARD9 (ENST00000371732.10)",
+                  "highlight": null,
+                  "canonical": true,
+                  "description": " ... NF-kappa-B and MAP kinase p38 MAPK11 MAPK12 MAPK13 and or MAPK14 pathways which stimulate expression of genes encoding pro-inflammatory cytokines "
+                },
+                {
+                  "position": "chr5:172768096-172771195",
+                  "hgFindMatches": "ENST00000239223.4",
+                  "posName": "DUSP1 (ENST00000239223.4)",
+                  "highlight": null,
+                  "canonical": true,
+                  "description": " ... P28562 P28482 MAPK1 NbExp 3 IntAct EBI-975493 EBI-959949 P28562 Q16539 MAPK14 NbExp 4 IntAct EBI-975493 EBI-73946 P28562 P27361 MAPK3 NbExp "
+                },
+                {
+                  "position": "chr2:96143169-96145440",
+                  "hgFindMatches": "ENST00000288943.5",
+                  "posName": "DUSP2 (ENST00000288943.5)",
+                  "highlight": null,
+                  "canonical": true,
+                  "description": " ... Evidence PhysiologicalDirection left-to-right Xref Rhea RHEA 47005 Evidence Interacts with MAPK14 this interaction does not lead to catalytic activation of "
+                },
+                {
+                  "position": "chr17:60600193-60666280",
+                  "hgFindMatches": "ENST00000305921.8",
+                  "posName": "PPM1D (ENST00000305921.8)",
+                  "highlight": null,
+                  "canonical": true,
+                  "description": " ... functional inactivation of these proteins PubMed 15870257 PubMed 16311512 Mediates MAPK14 dephosphorylation and inactivation PubMed 21283629 Is also an important "
+                },
+                {
+                  "position": "chr22:50252901-50261683",
+                  "hgFindMatches": "ENST00000215659.13",
+                  "posName": "MAPK12 (ENST00000215659.13)",
+                  "highlight": null,
+                  "canonical": true,
+                  "description": " ... in adult skeletal muscle C-Jun JUN phosphorylation is stimulated by MAPK14 and inhibited by MAPK12 leading to a distinct AP-1 "
+                },
+                {
+                  "position": "chr5:111224384-111494886",
+                  "hgFindMatches": "ENST00000282356.9",
+                  "posName": "CAMK4 (ENST00000282356.9)",
+                  "highlight": null,
+                  "canonical": true,
+                  "description": " ... Can activate the MAP kinases MAPK1 ERK2 MAPK8 JNK1 and MAPK14 p38 and stimulate transcription through the phosphorylation of ELK1 "
+                },
+                {
+                  "position": "chr8:96142333-96160806",
+                  "hgFindMatches": "ENST00000287020.7",
+                  "posName": "GDF6 (ENST00000287020.7)",
+                  "highlight": null,
+                  "canonical": true,
+                  "description": " ... BMPR2 and ACVR2A and the activation of SMAD1-SMAD5-SMAD8 complex and MAPK14 p38 By similarity Homodimer disulfide-linked PRO_0000042253 P98066 TNFAIP6 NbExp "
+                },
+                {
+                  "position": "chr17:12020877-12143828",
+                  "hgFindMatches": "ENST00000353533.10",
+                  "posName": "MAP2K4 (ENST00000353533.10)",
+                  "highlight": null,
+                  "canonical": true,
+                  "description": " ... MKK4 additionally activates the p38 MAPKs MAPK11 MAPK12 MAPK13 and MAPK14 Reaction ATP L-seryl protein ADP H O-phospho-L-seryl protein Xref "
+                },
+                {
+                  "position": "chr2:219206782-219209648",
+                  "hgFindMatches": "ENST00000289528.10",
+                  "posName": "ZFAND2B (ENST00000289528.10)",
+                  "highlight": null,
+                  "canonical": true,
+                  "description": " ... The UIM domains mediate interaction with polyubiquitinated proteins Phosphorylated by MAPK14 Phosphorylation has no effect on association with the proteasome "
+                },
+                {
+                  "position": "chr11:64359162-64372215",
+                  "hgFindMatches": "ENST00000334205.9",
+                  "posName": "RPS6KA4 (ENST00000334205.9)",
+                  "highlight": null,
+                  "canonical": true,
+                  "description": " ... Ser-343 Thr-568 and Thr-687 by MAPK1 ERK2 MAPK3 ERK1 and MAPK14 p38-alpha and by further autophosphorylation of Ser-196 Ser-360 and "
+                },
+                {
+                  "position": "chr15:99565984-99716488",
+                  "hgFindMatches": "ENST00000557942.6",
+                  "posName": "MEF2A (ENST00000557942.6)",
+                  "highlight": null,
+                  "canonical": true,
+                  "description": " ... MAPK signaling and activate transcription Phosphorylated on these sites by MAPK14 p38alpha and MAPK11 p38beta but not by MAPK13 p38delta "
+                },
+                {
+                  "position": "chrX:47635521-47650563",
+                  "hgFindMatches": "ENST00000376983.8",
+                  "posName": "ELK1 (ENST00000376983.8)",
+                  "highlight": null,
+                  "canonical": true,
+                  "description": " ... activator activity Phosphorylated and activated by CAMK4 MAPK11 MAPK12 and MAPK14 Upon bFGF stimulus phosphorylated by PAK1 By similarity Belongs "
+                },
+                {
+                  "position": "chr14:60249221-60299087",
+                  "hgFindMatches": "ENST00000395076.9",
+                  "posName": "PPM1A (ENST00000395076.9)",
+                  "highlight": null,
+                  "canonical": true,
+                  "description": " ... P35813 P28482 MAPK1 NbExp 19 IntAct EBI-989143 EBI-959949 P35813 Q16539 MAPK14 NbExp 2 IntAct EBI-989143 EBI-73946 P35813 Q9H6Z4 RANBP3 NbExp "
+                },
+                {
+                  "position": "chr5:141620881-141636849",
+                  "hgFindMatches": "ENST00000305264.8",
+                  "posName": "HDAC3 (ENST00000305264.8)",
+                  "highlight": null,
+                  "canonical": true,
+                  "description": " ... as a deacetylase for non-histone targets such as KAT5 MEF2D MAPK14 and RARA PubMed 21030595 PubMed 21444723 PubMed 25301942 PubMed "
+                },
+                {
+                  "position": "chr14:90847861-91060641",
+                  "hgFindMatches": "ENST00000614987.5",
+                  "posName": "RPS6KA5 (ENST00000614987.5)",
+                  "highlight": null,
+                  "canonical": true,
+                  "description": " ... Ser-360 Thr-581 and Thr-700 by MAPK1 ERK2 MAPK3 ERK1 and MAPK14 p38-alpha and by further autophosphorylation of Ser-212 Ser-376 and "
+                },
+                {
+                  "position": "chr6:17615037-17706925",
+                  "hgFindMatches": "ENST00000262077.3",
+                  "posName": "NUP153 (ENST00000262077.3)",
+                  "highlight": null,
+                  "canonical": true,
+                  "description": " ... P49790 Q14974 KPNB1 NbExp 7 IntAct EBI-286779 EBI-286758 P49790 Q16539-3 MAPK14 NbExp 2 IntAct EBI-286779 EBI-6932370 P49790 P49790 NUP153 NbExp "
+                },
+                {
+                  "position": "chr7:101218165-101224190",
+                  "hgFindMatches": "ENST00000305105.3",
+                  "posName": "ZNHIT1 (ENST00000305105.3)",
+                  "highlight": null,
+                  "canonical": true,
+                  "description": " ... and ZNHIT1 PubMed 15647280 PubMed 20473270 Interacts with MAPK11 and MAPK14 PubMed 17380123 Interacts with NR1D1 and NR2D2 PubMed 17892483 "
+                },
+                {
+                  "position": "chr19:2037471-2051244",
+                  "hgFindMatches": "ENST00000250896.9",
+                  "posName": "MKNK2 (ENST00000250896.9)",
+                  "highlight": null,
+                  "canonical": true,
+                  "description": " ... interacts with ESR2 and EIF4E in the nucleus Q9HBH9 Q16539 MAPK14 NbExp 4 IntAct EBI-2864341 EBI-73946 Q9HBH9-2 P46379-2 BAG6 NbExp "
+                },
+                {
+                  "position": "chr2:9488486-9555830",
+                  "hgFindMatches": "ENST00000310823.8",
+                  "posName": "ADAM17 (ENST00000310823.8)",
+                  "highlight": null,
+                  "canonical": true,
+                  "description": " ... Note Binds 1 zinc ion per subunit Interacts with MAD2L1 MAPK14 and MUC1 PubMed 12441351 PubMed 20188673 Interacts with iRhom1 "
+                },
+                {
+                  "position": "chr7:128241278-128257629",
+                  "hgFindMatches": "ENST00000308868.5",
+                  "posName": "LEP (ENST00000308868.5)",
+                  "highlight": null,
+                  "canonical": true,
+                  "description": " ... a signaling pathway that involves JAK2 PI3K MAP2K1 MEK1 and MAPK14 p38 PubMed 15899045 PubMed 19688109 In adaptive immunity promotes "
+                },
+                {
+                  "position": "chr3:150741125-150763169",
+                  "hgFindMatches": "ENST00000312960.4",
+                  "posName": "SIAH2 (ENST00000312960.4)",
+                  "highlight": null,
+                  "canonical": true,
+                  "description": " ... is related to the TRAF family Phosphorylated at Ser-28 by MAPK14 which mediates the degradation by the proteasome of EGLN3 "
+                },
+                {
+                  "position": "chr10:119573465-119596964",
+                  "hgFindMatches": "ENST00000436547.7",
+                  "posName": "TIAL1 (ENST00000436547.7)",
+                  "highlight": null,
+                  "canonical": true,
+                  "description": " ... localization in a manner dependent on RNA binding Phosphorylated by MAPK14 following DNA damage releasing TIAR from GADD45A mRNA nucleic "
+                },
+                {
+                  "position": "chr12:52051442-52059503",
+                  "hgFindMatches": "ENST00000394825.6",
+                  "posName": "NR4A1 (ENST00000394825.6)",
+                  "highlight": null,
+                  "canonical": true,
+                  "description": " ... P22736-1 O60238 BNIP3L NbExp 4 IntAct EBI-16085263 EBI-849893 P22736-1 Q16539-1 MAPK14 NbExp 5 IntAct EBI-16085263 EBI-15834191 P22736-1 Q04206 RELA NbExp "
+                },
+                {
+                  "position": "chr14:29576479-29927847",
+                  "hgFindMatches": "ENST00000331968.11",
+                  "posName": "PRKD1 (ENST00000331968.11)",
+                  "highlight": null,
+                  "canonical": true,
+                  "description": " ... inflammatory responses by binding and phosphorylating TLR5 which contributes to MAPK14 p38 activation and production of inflammatory cytokines PubMed 17442957 "
+                },
+                {
+                  "position": "chr14:68787662-68793067",
+                  "hgFindMatches": "ENST00000439696.3",
+                  "posName": "ZFP36L1 (ENST00000439696.3)",
+                  "highlight": null,
+                  "canonical": true,
+                  "description": " ... a p38 MAPK and AKT-signaling pathways By similarity Q07352 Q16539 MAPK14 NbExp 2 IntAct EBI-721823 EBI-73946 Q07352 P61981 YWHAG NbExp "
+                },
+                {
+                  "position": "chr18:76978833-77132783",
+                  "hgFindMatches": "ENST00000355994.7",
+                  "posName": "MBP (ENST00000355994.7)",
+                  "highlight": null,
+                  "canonical": true,
+                  "description": " ... MBP-specific autoreactive T cells Phosphorylated by TAOK2 VRK2 MAPK11 MAPK12 MAPK14 and MINK1 Note The reduction in the surface charge "
+                },
+                {
+                  "position": "chr13:48303751-48481890",
+                  "hgFindMatches": "ENST00000267163.6",
+                  "posName": "RB1 (ENST00000267163.6)",
+                  "highlight": null,
+                  "canonical": true,
+                  "description": " ... P06400 P29375 KDM5A NbExp 2 IntAct EBI-491274 EBI-1560836 P06400 Q16539 MAPK14 NbExp 4 IntAct EBI-491274 EBI-73946 P06400 Q00987 MDM2 NbExp "
+                },
+                {
+                  "position": "chr17:8140472-8152404",
+                  "hgFindMatches": "ENST00000317276.9",
+                  "posName": "PER1 (ENST00000317276.9)",
+                  "highlight": null,
+                  "canonical": true,
+                  "description": " ... as CCL2 and IL6 In spinal astrocytes negatively regulates the MAPK14 p38 and MAPK8 JNK MAPK cascades as well as "
+                },
+                {
+                  "position": "chr16:30114105-30123220",
+                  "hgFindMatches": "ENST00000263025.9",
+                  "posName": "MAPK3 (ENST00000263025.9)",
+                  "highlight": null,
+                  "canonical": true,
+                  "description": " ... P27361 Q02750 MAP2K1 NbExp 2 IntAct EBI-73995 EBI-492564 P27361 Q16539 MAPK14 NbExp 5 IntAct EBI-73995 EBI-73946 P27361 P27361 MAPK3 NbExp "
+                },
+                {
+                  "position": "chr2:175072259-175168203",
+                  "hgFindMatches": "ENST00000264110.7",
+                  "posName": "ATF2 (ENST00000264110.7)",
+                  "highlight": null,
+                  "canonical": true,
+                  "description": " ... its nuclear localization and transcriptional activity Phosphorylation of Thr-69 by MAPK14 and MAPK11 and at Thr-71 by MAPK1 ERK2 MAPK3 "
+                },
+                {
+                  "position": "chr14_KZ208920v1_fix:667889-680582",
+                  "hgFindMatches": "ENST00000644376.1",
+                  "posName": "NFATC4 (ENST00000644376.1)",
+                  "highlight": null,
+                  "canonical": true,
+                  "description": " ... on Ser-168 and Ser-170 by MTOR IRAK1 MAPK7 ERK5 and MAPK14 p38 on Ser-213 and Ser-217 by MAPK8 JNK1 and "
+                },
+                {
+                  "position": "chr14:24368184-24379601",
+                  "hgFindMatches": "ENST00000250373.9",
+                  "posName": "NFATC4 (ENST00000250373.9)",
+                  "highlight": null,
+                  "canonical": true,
+                  "description": " ... on Ser-168 and Ser-170 by MTOR IRAK1 MAPK7 ERK5 and MAPK14 p38 on Ser-213 and Ser-217 by MAPK8 JNK1 and "
+                },
+                {
+                  "position": "chr17:82242667-82273700",
+                  "hgFindMatches": "ENST00000314028.11",
+                  "posName": "CSNK1D (ENST00000314028.11)",
+                  "highlight": null,
+                  "canonical": true,
+                  "description": " ... P48730-2 Q5S007 LRRK2 NbExp 3 IntAct EBI-9087876 EBI-5323863 P48730-2 Q16539 MAPK14 NbExp 3 IntAct EBI-9087876 EBI-73946 P48730-2 Q96L34 MARK4 NbExp "
+                },
+                {
+                  "position": "chr2:190969149-191014171",
+                  "hgFindMatches": "ENST00000361099.8",
+                  "posName": "STAT1 (ENST00000361099.8)",
+                  "highlight": null,
+                  "canonical": true,
+                  "description": " ... 17561467 PubMed 19088846 Phosphorylation on Ser-727 by several kinases including MAPK14 ERK1 2 CAMK2 CAMKII and CK2 in response to "
+                },
+                {
+                  "position": "chr2:45651675-46187990",
+                  "hgFindMatches": "ENST00000306156.8",
+                  "posName": "PRKCE (ENST00000306156.8)",
+                  "highlight": null,
+                  "canonical": true,
+                  "description": " ... Phosphorylation in the hinge domain at Ser-350 by MAPK11 or MAPK14 Ser-346 by GSK3B and Ser-368 by autophosphorylation is required "
+                },
+                {
+                  "position": "chr2:96536752-96552634",
+                  "hgFindMatches": "ENST00000357485.8",
+                  "posName": "ARID5A (ENST00000357485.8)",
+                  "highlight": null,
+                  "canonical": true,
+                  "description": " ... Sequence Displayed Name 2 IsoId Q03989-5 Sequence VSP_058969 Phosphorylated by MAPK14 on serine residues involving a TLR4 signaling pathway upon "
+                },
+                {
+                  "position": "chr20:49363877-49482668",
+                  "hgFindMatches": "ENST00000371741.6",
+                  "posName": "KCNB1 (ENST00000371741.6)",
+                  "highlight": null,
+                  "canonical": true,
+                  "description": " ... Phosphorylated on Tyr 128 by Src and on Ser-805 by MAPK14 P38MAPK phosphorylations are necessary and sufficient for an increase "
+                },
+                {
+                  "position": "chr17:5514118-5584509",
+                  "hgFindMatches": "ENST00000572272.6",
+                  "posName": "NLRP1 (ENST00000572272.6)",
+                  "highlight": null,
+                  "canonical": true,
+                  "description": " ... the NLRP1 inflammasome Phosphorylated by MAP3K20 isoform ZAKalpha MAPK11 and MAPK14 in response to UV-B irradiation and ribosome collisions promoting "
+                }
+              ]
+            }
+          ]
+        }
+      }
+    },
+    "signor": {
+      "url": "https://signor.uniroma2.it/getData.php",
+      "data": {
+        "full_network_rows": 43570,
+        "human_rows": 33372,
+        "per_hub": {
+          "G3BP1": {
+            "n_human_edges": 11,
+            "partners": [
+              "CAPRIN1",
+              "CSNK2A1",
+              "DDX58",
+              "EIF2AK2",
+              "G3BP2",
+              "PARP10",
+              "Stress_granules"
+            ],
+            "sample_effects": [
+              "down-regulates activity",
+              "up-regulates",
+              "up-regulates activity",
+              "up-regulates quantity"
+            ]
+          },
+          "SRSF1": {
+            "n_human_edges": 9,
+            "partners": [
+              "Alternative_Splicing_Regulation",
+              "CDK11B",
+              "CLK1",
+              "DYRK1A",
+              "IRAK2",
+              "NEK2",
+              "PRKACA",
+              "SRPK1",
+              "SRPK2"
+            ],
+            "sample_effects": [
+              "down-regulates activity",
+              "unknown",
+              "up-regulates",
+              "up-regulates activity"
+            ]
+          },
+          "DR1": {
+            "n_human_edges": 1,
+            "partners": [
+              "NC2 complex"
+            ],
+            "sample_effects": [
+              "form complex"
+            ]
+          },
+          "RASAL2": {
+            "n_human_edges": 0,
+            "partners": [],
+            "sample_effects": []
+          },
+          "MAPK14": {
+            "n_human_edges": 239,
+            "partners": [
+              "(-)-anisomycin",
+              "4-[4-(2-fluorophenyl)phenyl]-N-(4-hydroxyphenyl)butanamide",
+              "6-(N-carbamoyl-2,6-difluoroanilino)-2-(2,4-difluorophenyl)-3-pyridinecarboxamide",
+              "AKT",
+              "AKT2",
+              "ATF2",
+              "BAZ1B",
+              "BCL2",
+              "BMP2",
+              "BMP7",
+              "CASP3",
+              "CASP8",
+              "CCND1",
+              "CDC42",
+              "CDKN1A"
+            ],
+            "sample_effects": [
+              "down-regulates",
+              "down-regulates activity",
+              "down-regulates quantity by destabilization",
+              "down-regulates quantity by repression",
+              "unknown",
+              "up-regulates"
+            ]
+          }
+        }
+      }
+    }
+  }
+}

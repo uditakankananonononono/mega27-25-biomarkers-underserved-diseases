@@ -50,6 +50,8 @@ GSE277906,GEO series supplementary matrix,pcos:fresh_validation (cumulus cells)
 GSE290313,GEO series,postpartum_depression:validation (RNA-seq)
 GSE296973,GEO series supplementary matrix,preeclampsia:fresh_validation (peripheral blood)
 GSE30186,GEO series,preeclampsia:discovery
+GSE303840,GEO series supplementary matrix,preeclampsia:fresh_validation (placenta)
+GSE306864,GEO series supplementary matrix,preeclampsia:fresh_validation (chorionic villus)
 GSE34526,GEO series,pcos:discovery
 GSE35287,GEO series,endometriosis:discovery
 GSE35574,GEO series,preeclampsia:discovery

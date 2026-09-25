@@ -26,7 +26,7 @@ Endpoint: composite = per-sample mean of per-miRNA z-scores (z over all 20
   mean difference (Cystitis - Control), 20000 label reshuffles, seed 20260926.
 EXPLORATORY per the amendment; not an independent validation, not a claim.
 """
-import csv, gzip, io, json, sys, urllib.parse, urllib.request
+import csv, gzip, io, json, subprocess, sys, urllib.parse
 import numpy as np
 
 MATURE_FA = sys.argv[1] if len(sys.argv) > 1 else '/tmp/mature.fa'
@@ -44,10 +44,10 @@ def fetch_gene_csv(gene, cache):
     os.makedirs(cache, exist_ok=True)
     p = os.path.join(cache, f'{gene}.csv')
     if not os.path.exists(p):
+        # urllib TLS handshake fails against this host from this runtime; curl is
+        # the transport instead (same endpoint, same rows - transport only).
         url = MTB_URL + urllib.parse.quote(gene)
-        req = urllib.request.Request(url, headers={'User-Agent': 'ubiomark-research/0.1'})
-        with urllib.request.urlopen(req, timeout=60) as r:
-            open(p, 'wb').write(r.read())
+        subprocess.run(['curl', '-s', '--fail', '--max-time', '60', '-o', p, url], check=True)
     return p
 
 def load_regulator_names(genes, cache):

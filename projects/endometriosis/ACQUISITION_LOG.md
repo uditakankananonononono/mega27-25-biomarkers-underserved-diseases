@@ -50,3 +50,6 @@ Record units nested within 16 independent series, not 227 independent studies.
 ## Post-acquisition validation
 Live re-verification of 12 randomly sampled GSMs (seed 26, ~10% of 124):
 12/12 refetched bytes match recorded sha256, 0 mismatches.
+Second independent live re-verification sample (seed 927, 12 GSMs, ~10%):
+12/12 refetched bytes match recorded sha256, 0 mismatches. Cumulative live
+re-verification: 24/24 across two independent samples.

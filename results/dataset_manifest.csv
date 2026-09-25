@@ -50,6 +50,7 @@ GSE190971,GEO series,"preeclampsia:P12 PLAC 13 people, 13 of 41 series GSMs"
 GSE192902,GEO cfRNA postQC gene counts,"preeclampsia:P11 first prenatal draw, three nested cohorts, failed panel transport"
 GSE204835,GEO series supplementary matrix,preeclampsia:fresh_validation (placenta (paraffin-embedded))
 GSE212787,GEO series,"endometriosis:P17 processed cohort, 13 unique primary GSMs nested"
+GSE214397,GEO series and processed expression matrix,leishmaniasis:P30 selected two-gene descriptive follow-up
 GSE216638,GEO series and count workbook,leishmaniasis:P28 cross-parasite lesion panel transport
 GSE221921,GEO series supplementary expression files,"fibromyalgia:P16 exploratory independent deposit, 189 GSM nested in this GSE; transcriptomic signatures already published"
 GSE23339,GEO series,endometriosis:discovery
@@ -618,6 +619,63 @@ GSM6909941,GEO GSM per-sample expression record,"fibromyalgia:P16 fetched and us
 GSM6909942,GEO GSM per-sample expression record,"fibromyalgia:P16 fetched and used individual processed expression, 189 samples nested in GSE221921"
 GSM6909943,GEO GSM per-sample expression record,"fibromyalgia:P16 fetched and used individual processed expression, 189 samples nested in GSE221921"
 GSM6909944,GEO GSM per-sample expression record,"fibromyalgia:P16 fetched and used individual processed expression, 189 samples nested in GSE221921"
+GSM6919123,GEO individually fetched GSM full-text record,leishmaniasis:P30 lesion or healthy expression column; nested in GSE214397; not independent cohort
+GSM6919124,GEO individually fetched GSM full-text record,leishmaniasis:P30 lesion or healthy expression column; nested in GSE214397; not independent cohort
+GSM6919125,GEO individually fetched GSM full-text record,leishmaniasis:P30 lesion or healthy expression column; nested in GSE214397; not independent cohort
+GSM6919126,GEO individually fetched GSM full-text record,leishmaniasis:P30 lesion or healthy expression column; nested in GSE214397; not independent cohort
+GSM6919127,GEO individually fetched GSM full-text record,leishmaniasis:P30 lesion or healthy expression column; nested in GSE214397; not independent cohort
+GSM6919128,GEO individually fetched GSM full-text record,leishmaniasis:P30 lesion or healthy expression column; nested in GSE214397; not independent cohort
+GSM6919129,GEO individually fetched GSM full-text record,leishmaniasis:P30 lesion or healthy expression column; nested in GSE214397; not independent cohort
+GSM6919130,GEO individually fetched GSM full-text record,leishmaniasis:P30 lesion or healthy expression column; nested in GSE214397; not independent cohort
+GSM6919131,GEO individually fetched GSM full-text record,leishmaniasis:P30 lesion or healthy expression column; nested in GSE214397; not independent cohort
+GSM6919132,GEO individually fetched GSM full-text record,leishmaniasis:P30 lesion or healthy expression column; nested in GSE214397; not independent cohort
+GSM6919133,GEO individually fetched GSM full-text record,leishmaniasis:P30 lesion or healthy expression column; nested in GSE214397; not independent cohort
+GSM6919134,GEO individually fetched GSM full-text record,leishmaniasis:P30 lesion or healthy expression column; nested in GSE214397; not independent cohort
+GSM6919135,GEO individually fetched GSM full-text record,leishmaniasis:P30 lesion or healthy expression column; nested in GSE214397; not independent cohort
+GSM6919136,GEO individually fetched GSM full-text record,leishmaniasis:P30 lesion or healthy expression column; nested in GSE214397; not independent cohort
+GSM6919137,GEO individually fetched GSM full-text record,leishmaniasis:P30 lesion or healthy expression column; nested in GSE214397; not independent cohort
+GSM6919138,GEO individually fetched GSM full-text record,leishmaniasis:P30 lesion or healthy expression column; nested in GSE214397; not independent cohort
+GSM6919139,GEO individually fetched GSM full-text record,leishmaniasis:P30 lesion or healthy expression column; nested in GSE214397; not independent cohort
+GSM6919140,GEO individually fetched GSM full-text record,leishmaniasis:P30 lesion or healthy expression column; nested in GSE214397; not independent cohort
+GSM6919141,GEO individually fetched GSM full-text record,leishmaniasis:P30 lesion or healthy expression column; nested in GSE214397; not independent cohort
+GSM6919142,GEO individually fetched GSM full-text record,leishmaniasis:P30 lesion or healthy expression column; nested in GSE214397; not independent cohort
+GSM6919143,GEO individually fetched GSM full-text record,leishmaniasis:P30 lesion or healthy expression column; nested in GSE214397; not independent cohort
+GSM6919144,GEO individually fetched GSM full-text record,leishmaniasis:P30 lesion or healthy expression column; nested in GSE214397; not independent cohort
+GSM6919145,GEO individually fetched GSM full-text record,leishmaniasis:P30 lesion or healthy expression column; nested in GSE214397; not independent cohort
+GSM6919146,GEO individually fetched GSM full-text record,leishmaniasis:P30 lesion or healthy expression column; nested in GSE214397; not independent cohort
+GSM6919147,GEO individually fetched GSM full-text record,leishmaniasis:P30 lesion or healthy expression column; nested in GSE214397; not independent cohort
+GSM6919148,GEO individually fetched GSM full-text record,leishmaniasis:P30 lesion or healthy expression column; nested in GSE214397; not independent cohort
+GSM6919149,GEO individually fetched GSM full-text record,leishmaniasis:P30 lesion or healthy expression column; nested in GSE214397; not independent cohort
+GSM6919150,GEO individually fetched GSM full-text record,leishmaniasis:P30 lesion or healthy expression column; nested in GSE214397; not independent cohort
+GSM6919151,GEO individually fetched GSM full-text record,leishmaniasis:P30 lesion or healthy expression column; nested in GSE214397; not independent cohort
+GSM6919152,GEO individually fetched GSM full-text record,leishmaniasis:P30 lesion or healthy expression column; nested in GSE214397; not independent cohort
+GSM6919153,GEO individually fetched GSM full-text record,leishmaniasis:P30 lesion or healthy expression column; nested in GSE214397; not independent cohort
+GSM6919154,GEO individually fetched GSM full-text record,leishmaniasis:P30 lesion or healthy expression column; nested in GSE214397; not independent cohort
+GSM6919155,GEO individually fetched GSM full-text record,leishmaniasis:P30 lesion or healthy expression column; nested in GSE214397; not independent cohort
+GSM6919156,GEO individually fetched GSM full-text record,leishmaniasis:P30 lesion or healthy expression column; nested in GSE214397; not independent cohort
+GSM6919157,GEO individually fetched GSM full-text record,leishmaniasis:P30 lesion or healthy expression column; nested in GSE214397; not independent cohort
+GSM6919158,GEO individually fetched GSM full-text record,leishmaniasis:P30 lesion or healthy expression column; nested in GSE214397; not independent cohort
+GSM6919159,GEO individually fetched GSM full-text record,leishmaniasis:P30 lesion or healthy expression column; nested in GSE214397; not independent cohort
+GSM6919160,GEO individually fetched GSM full-text record,leishmaniasis:P30 lesion or healthy expression column; nested in GSE214397; not independent cohort
+GSM6919161,GEO individually fetched GSM full-text record,leishmaniasis:P30 lesion or healthy expression column; nested in GSE214397; not independent cohort
+GSM6919162,GEO individually fetched GSM full-text record,leishmaniasis:P30 lesion or healthy expression column; nested in GSE214397; not independent cohort
+GSM6919163,GEO individually fetched GSM full-text record,leishmaniasis:P30 lesion or healthy expression column; nested in GSE214397; not independent cohort
+GSM6919164,GEO individually fetched GSM full-text record,leishmaniasis:P30 lesion or healthy expression column; nested in GSE214397; not independent cohort
+GSM6919165,GEO individually fetched GSM full-text record,leishmaniasis:P30 lesion or healthy expression column; nested in GSE214397; not independent cohort
+GSM6919166,GEO individually fetched GSM full-text record,leishmaniasis:P30 lesion or healthy expression column; nested in GSE214397; not independent cohort
+GSM6919167,GEO individually fetched GSM full-text record,leishmaniasis:P30 lesion or healthy expression column; nested in GSE214397; not independent cohort
+GSM6919168,GEO individually fetched GSM full-text record,leishmaniasis:P30 lesion or healthy expression column; nested in GSE214397; not independent cohort
+GSM6919169,GEO individually fetched GSM full-text record,leishmaniasis:P30 lesion or healthy expression column; nested in GSE214397; not independent cohort
+GSM6919170,GEO individually fetched GSM full-text record,leishmaniasis:P30 lesion or healthy expression column; nested in GSE214397; not independent cohort
+GSM6919171,GEO individually fetched GSM full-text record,leishmaniasis:P30 lesion or healthy expression column; nested in GSE214397; not independent cohort
+GSM6919172,GEO individually fetched GSM full-text record,leishmaniasis:P30 lesion or healthy expression column; nested in GSE214397; not independent cohort
+GSM6919173,GEO individually fetched GSM full-text record,leishmaniasis:P30 lesion or healthy expression column; nested in GSE214397; not independent cohort
+GSM6919174,GEO individually fetched GSM full-text record,leishmaniasis:P30 lesion or healthy expression column; nested in GSE214397; not independent cohort
+GSM6919175,GEO individually fetched GSM full-text record,leishmaniasis:P30 lesion or healthy expression column; nested in GSE214397; not independent cohort
+GSM6919176,GEO individually fetched GSM full-text record,leishmaniasis:P30 lesion or healthy expression column; nested in GSE214397; not independent cohort
+GSM6919177,GEO individually fetched GSM full-text record,leishmaniasis:P30 lesion or healthy expression column; nested in GSE214397; not independent cohort
+GSM6919178,GEO individually fetched GSM full-text record,leishmaniasis:P30 lesion or healthy expression column; nested in GSE214397; not independent cohort
+GSM6919179,GEO individually fetched GSM full-text record,leishmaniasis:P30 lesion or healthy expression column; nested in GSE214397; not independent cohort
 GSM8174669,GEO sample full-text record,pcos:GSE262735:label_identity_audit
 GSM8174670,GEO sample full-text record,pcos:GSE262735:label_identity_audit
 GSM8174678,GEO sample full-text record,pcos:GSE262735:label_identity_audit

@@ -1,0 +1,12 @@
+{
+  "retrieved": "2026-09-25",
+  "service": "iPTMnet",
+  "source": "https://research.bioinformatics.udel.edu/iptmnet/entry/P07332/",
+  "exact_entry": "P07332 FES_HUMAN",
+  "selected_evidence": {
+    "FES_as_substrate_Y713": "Y713 Phosphorylation P07332 (FES) score4 IntAct neXtProt phospho.ELM PhosphoSitePlus RLIMS-P Signor UniProt 19369195 , 7687763 , 8334128 , ... 8955135 , 19382747 , 8663427 , 15485904 , 18775312 , 18046454 S716 Phosphorylation score2 PhosphoSitePlus UniProt 19369195 K725 Ubiquitination score1 PhosphoSitePlus Y734 Phosphorylation score1 Pho",
+    "FES_as_enzyme_BCR_Y177": "P11274 (BCR) Y177 score4 HPRD neXtProt phospho.ELM Signor 10405761 , 9178913 , 9407116 , ... 8955135 , 15302586 , 12522270 , 16497976 P11274 (BCR) Y246 score4 HPRD neXtProt phospho.ELM PhosphoSitePlus Signor 16497976 , 8955135 P11274-2 (BCR",
+    "FES_as_enzyme_PECAM1_Y690": "P16284 (PECAM1) Y690 score1 Signor 12972546 P16284 (PECAM1) Y713 score1 Signor 12972546 P46459 (NSF) Y83 score"
+  },
+  "caveat": "Phosphorylation knowledge aggregated from multiple databases and experiments; overlap with GlyGen/UniProt/IntAct and BioGRID is not independent PE-specific evidence. No placenta-specific kinase assay or clinical inference."
+}

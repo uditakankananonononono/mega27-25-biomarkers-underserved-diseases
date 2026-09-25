@@ -1,0 +1,8 @@
+# PPD source and analysis decisions (2026-09-26)
+
+1. Keep existing `results/dataset_manifest.csv` at **51 PPD-tagged records**. It is a conservative expression-led used manifest with 2 GSE, 48 validated GSE45603 GSM and one ontology record. The 119 GSE290313 libraries had source checks but no established patient mapping, so they do not enter the conservative count.
+2. Register GSE44132 and GSE335141 in a separate methylation accession ledger: 2 new GSE + 137 distinct GSM = **139 accession records**, not 139 independent datasets. These sample records were individually fetched, hashed and connected to public beta matrices. The cross-ledger inventory is 190 record IDs, but it is a mix of nested samples, series and ontology, **not** an independent-dataset gate.
+3. Analyze 91 source-matched mother/person-level methylation samples (GSE44132 23 future PPD + 27 controls; GSE335141 17 PPD + 24 controls at T0). Five technical-control array replicates and 41 later T4 repeat draws do not become independent people. Null multiple-testing outcomes are retained.
+4. Published comparator is HP1BP3/TTC9B, with prior prospective validation. The present scans did not show a new significant locus or comparative clinical performance; no claim of novelty, paper completion or numeric gate completion is justified. No feature suggestions from an LLM have yet been impact-filtered; three-mode judge/redirect/features loop remains pending once access and a substantive manuscript are available.
+
+Evidence: `SOURCE_AUDIT_STATUS.md`, per-record CSVs and source/matrix hashes in `sources/`, `PUBLISHED_COMPARATOR.md`, and `validate_source_audit.py`. URLs and caveats in those records are part of this decision, not optional footnotes.

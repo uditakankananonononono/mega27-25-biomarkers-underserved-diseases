@@ -105,3 +105,22 @@ Test the same six frozen PE genes from P9 in a different modality, independent G
 
 ### P11 observed outcome
 The 404 GEO GSMs mapped exactly to all post-QC count-matrix columns across the three internal cohorts, without cross-cohort mother reuse; eight `.1` suffix sample titles are genuine distinct records and mapped exactly. First <=12-week draw per mother gave Discovery 13 PE/36 controls, Validation 1 3/19, Validation 2 16/40. GPAT3 is absent in all three count matrices; five of six frozen genes are measured. Direction signs matching DOWN were 2/5, 1/5, and 3/5 respectively, far below the registered >=5/5 in all three criterion, so P11 fails. FES effects were +.036 (p=.912), -.402 (p=.680), -.361 (p=.215). No gene reaches p<.00833 in two internal cohorts. Neither the 127 selected GSMs nor the three internal cohorts imply 127 independent studies; they are individual first draws nested in one GSE. Full effects and mapping are retained in `results/pe_cfrna_p11.csv`, `results/pe_cfrna_p11.json`, and three sample files. This cfRNA modality differs from villous placenta; failure adds caution on portability, not proof of no placental effect. Source https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE192902 .
+
+P12 (registered 2026-09-25 12:37 IST, before any GSE190971 count-matrix inspection):
+    Transport the same six previously selected down-direction PE genes (FES, GPAT3,
+    FURIN, GRAMD1A, ZNF467, LPGAT1) to only the PLAC placenta mRNA arm of GSE190971.
+    GEO metadata label 13 PLAC mRNA samples from 13 distinct V participant tokens:
+    six normal-pregnancy controls and seven PE cases. Neither the 10K nor 150K
+    extracellular-vesicle arms is an independent cohort, as these reuse women.
+    Use raw PLAC gene counts, log2(CPM+1), one effect per gene; map each count
+    column to GEO's PLAC title and each title to one GSM. Exclude before testing if
+    case labels or person IDs are discordant, count columns do not map exactly,
+    or a PLAC GSM overlaps earlier tested cohorts. The six-gene transport criterion
+    is all 6/6 available and down, with at least one individually significant
+    down gene at Bonferroni two-sided p<.05/6. Also report every missing gene,
+    effect and uncorrected Welch p, never infer an independent prospective
+    screening biomarker from term placental tissue or reuse EV arms as replication.
+    This is a new test after P9-P11 outcomes, not a prospective test of the
+    earlier six-gene selection or an independent maternal early prediction test.
+    Pre-count source metadata: https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE190971
+    Raw PLAC source: https://ftp.ncbi.nlm.nih.gov/geo/series/GSE190nnn/GSE190971/suppl/GSE190971_Raw_gene_counts_matrix_PLAC.txt.gz

@@ -1,6 +1,6 @@
 """Read Crossref primary metadata for DOI sources cited in the working manuscript."""
 import json,urllib.request,datetime,os
-DOIS=['10.3389/fimmu.2025.1511529','10.1371/journal.pone.0161504','10.1371/journal.pone.0068991','10.1186/s13048-025-01956-0','10.1038/s41380-025-03068-z']
+DOIS=['10.3389/fimmu.2025.1511529','10.1371/journal.pone.0161504','10.1371/journal.pone.0068991','10.1186/s13048-025-01956-0','10.1038/s41380-025-03068-z','10.1093/bioinformatics/btag159','10.1016/j.juro.2011.09.142']
 rows=[]
 for doi in DOIS:
  u='https://api.crossref.org/works/'+doi

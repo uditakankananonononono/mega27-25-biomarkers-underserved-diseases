@@ -121,3 +121,7 @@ Program gate is record-level: individually fetched/verified/used GSM accessions 
 
 ## State 12:01
 - Crossref registry checked five DOI article titles and publication dates. Corrected the PCOS cited paper's publication date to January 2026 even though its DOI string contains 2025. Metadata with exact DOI URLs is saved in `results/external/bibliography_crossref.json`. Tool ledger 35/40 distinct used science services/libraries. Source-derived paper-tool caption is dynamic, not stale 31. Exact-TNR draft is 19 rendered pages but the final page remains mostly blank, so this is not 19 substantive pages and the 20-page gate is NOT met. No discovery/benchmark endpoint. Further bibliography and substantive paper work needed.
+
+## State 12:03
+- Added a documented exploratory P8 signed-expression score after viewing gene outcomes: AUROC .8148, AUPRC .8574 in the same 18 patients; random-sign baseline empirical p=.05994. Not registered, within-cohort normalization uses evaluation distribution, no deployable threshold, and P8's registered sign-set failure remains. Script/result and paper label it exploratory, not a discovery or benchmark win.
+- Seven DOI primary sources verified via Crossref including KG-Bench and original GSE28242 paper; 19 rendered exact-TNR pages with sparse final page, still short of 20 substantive. Tool ledger 35/40, accession 132/120; no qualifying discovery.

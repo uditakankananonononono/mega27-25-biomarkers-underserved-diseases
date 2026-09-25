@@ -19,6 +19,7 @@ w = csv.DictWriter(mf, fieldnames=fields)
 if new:
     w.writeheader()
 p2s_cache = {}
+NON_EXPRESSION_GPL = {"GPL13534", "GPL21145", "GPL8490", "GPL16304", "GPL23976", "GPL18809", "GPL33022"}
 only = sys.argv[1:] or list(cand)
 for disease in only:
     for r in cand[disease]:
@@ -44,6 +45,9 @@ for disease in only:
                 row.update(n_case=nc, n_control=nn, n_dropped=int(lab.isna().sum()))
                 if nc < 3 or nn < 3 or expr.empty:
                     row.update(status="skip_labels" if not expr.empty else "skip_noexpr")
+                    w.writerow(row); mf.flush(); continue
+                if gpl in NON_EXPRESSION_GPL:
+                    row.update(status="skip_platform", note="methylation/non-expression platform")
                     w.writerow(row); mf.flush(); continue
                 if gpl not in p2s_cache:
                     p2s_cache[gpl] = geo.probe_to_symbol(gpl)

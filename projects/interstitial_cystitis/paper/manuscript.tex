@@ -89,6 +89,47 @@ is a unique accession-backed record, not an independent cohort.
 \input{generated/ic_accessions.tex}
 \end{table}
 
+\subsection{Per-dataset provenance and verification}
+\textbf{GSE238208} (P45; RNA-seq, GPL24676 NovaSeq 6000; iScience 2023
+\cite{akiyama2023}). Twenty-five Hunner-type IC patients contribute paired
+lesion and non-lesion bladder biopsies (50 GSM), and thirteen BCG-cystitis
+biopsies form the inflammatory comparator block; 38 people, 63 GSM total. Each
+of the 63 sample SOFT sections was split and stored individually; the deposited
+\texttt{Sample\_description} PR identifiers were matched 63/63 to the named
+columns of the author FPKM matrix, and every matched column is fully finite
+across all 27{,}339 gene rows. This is the primary inference dataset; the unit
+of inference is the patient, never the library.
+
+\textbf{GSE196156} (P46; urinary extracellular-vesicle miRNA-seq, GPL29077).
+Eight cystitis, two BPS and ten control urine-EV profiles (20 GSM). The series
+matrix holds 2{,}632 miRNA rows, of which 464 are fully measured across all 20
+samples; rows with missing calls are excluded by the locked definition of the
+measured set, and the group order was verified against the individually stored
+sample records. The two BPS profiles are retained for description only.
+
+\textbf{GSE11839} (P47; cultured urothelium array; J.\ Urology 2008
+\cite{blalock2008}). Three IC and three control urothelial cultures under two
+media (13 GSM). Used for acquisition completeness and context; cultured cells
+are not a lesion surrogate, and no gate is run on this series.
+
+\textbf{GSE28242} (urine sediment array; J.\ Urology 2012 \cite{colaco2012}).
+Five control, five without-lesion and three with-lesion urine-sediment profiles
+(13 GSM), individually re-checked against their sample records. Hosts the
+exploratory A2.3a transfer; the with-lesion arm is three donors.
+
+\textbf{GSE57560} (bladder biopsies; J.\ Urology 2014 \cite{walker2014}).
+All seven historically analyzed GSMs were individually checked against source
+title, disease state, bladder-capacity phenotype, platform and matrix column
+(four low-capacity IC, three controls); they are the previously seen
+sensitivity series for the re-audit and are never described as fresh
+validation.
+
+\textbf{GSE621} \cite{keay2003} and \textbf{GSE11783} \cite{gamo2009}
+(historical discovery arrays). The audit found two IC-derived mock-APF samples
+in GSE621 had been mislabeled as normal controls, and GSE11783's ten IC
+libraries nest in five patients; both corrections are applied before any
+re-analysis, and the consequences are reported as negatives.
+
 \section{The corrected two-source replication is negative}
 After the audit corrections, discovery was restricted to GSE621 and GSE11783
 with mislabeled and nested samples handled, and sensitivity was recomputed in
@@ -137,14 +178,33 @@ a novelty negative by construction.
 \input{generated/ic_modules.tex}
 \end{table}
 
+\section{Expression processing and verification protocol}
+The author FPKM matrix of GSE238208 is used as deposited; no re-quantification
+was attempted, and the deposited values are treated as the study's own
+summary. Within each leave-one-patient-out fold, $z$-scores are recomputed
+over the 48 training columns only, so no held-out patient contributes to any
+normalization constant, module weight, or threshold. Module gene sets are used
+exactly as committed; coverage is reported per module (Table~\ref{tab:modules})
+and never silently filled. For the urinary legs, platform annotation is the
+bottleneck and is therefore evidenced: A2.3a maps M6 symbols through the full
+GPL6244 platform table (190/190 recovered), and A2.3b maps the 464 measured
+MIMAT accessions to mature miRNA names through miRBase \texttt{mature.fa}
+(2{,}789 human entries). Every fetch URL is logged in the result JSON at
+analysis time, per the amendment. ChatGPT consults (rounds 1--2) were used in
+redirect mode only; verbatim prompts and responses are preserved in
+\texttt{redirect/}, all numerical thresholds were recomputed locally, and one
+incorrect threshold suggested by the consult ($\geq21/25$) was corrected to
+$\geq18/25$ with the correction recorded in \texttt{redirect/round2\_meta.json}.
+
 \section{Gate 1: the lesion axis replicates across patients}
 Leave-one-patient-out over the 25 HIC patients, refitting every quantity per
 fold, gives 19/25 held-out patients with $D_i>0$ (exact one-sided binomial
 $p=.0073$, threshold $.025$), median $D=0.273$ with bootstrap 95\% CI
 $[0.068,0.644]$. The frozen weight rule selected only module M2 (ECM/EMT
 remodeling) in the training folds. The M0-only novelty control fails (14/25,
-$p=.345$), so the pass is not known-inflammatory rediscovery. Per-fold values
-are in Appendix~\ref{app:folds}.
+$p=.345$), so the pass is not known-inflammatory rediscovery. The frozen rule selected M2 in all 25 of 25 training folds (no other module was ever
+selected), and held-out $D$ ranges from $-0.687$ to $1.546$ with median $0.273$.
+Per-fold values are in Appendix~\ref{app:folds}.
 
 \section{Gate 2: the replicating axis is shared with BCG inflammation}
 Applying the frozen Gate-1 score to the BCG block is negative for Hunner
@@ -174,7 +234,9 @@ BCG never enters a HIC training fold; the block is exchangeable.
 Only module M6 (G2/M checkpoint, 190 matrix-covered genes) is selected in every
 fold. The residual replication passes the locked bar exactly: 18/25 held-out
 patients positive, $p=.0216$ ($P(X\geq18\mid25,.5)=.02164$), median residual
-$0.180$, bootstrap 95\% CI $[0.0027,0.423]$ excluding zero. Reading: after
+$0.180$, bootstrap 95\% CI $[0.0027,0.423]$ excluding zero.
+M6 was the only module selected in any fold (25/25), and held-out residual
+values range from $-0.680$ to $2.047$ with median $0.180$. Reading: after
 removing the module-level biology that BCG inflammatory cystitis also induces,
 Hunner lesions retain a reproducible within-patient proliferative residual.
 
@@ -233,6 +295,23 @@ directionally consistent but statistically weak noninvasive correlate in two
 independent urine modalities. The honest summary is: a replicated tissue
 residual program with an unproven urinary marker path.
 
+\subsection{Module-level reading of the two gates}
+The two positive gates select different modules for consistent reasons. Gate 1
+rewards the largest reproducible lesion-versus-non-lesion contrast, which is
+the ECM/EMT remodeling module M2: fibrotic remodeling is the dominant
+within-patient axis in HIC tissue, but the BCG block shows the same axis, so it
+carries no Hunner specificity. The residual design subtracts exactly this
+shared component at module level; what remains is M6, a G2/M proliferative
+cell-state program. That the residual is proliferative rather than
+barrier-specific (M1), metabolic (M4), stress-related (M5) or pain-related (M3)
+is itself an empirical result of the locked selection rule, not a modeling
+choice: in 25/25 folds no other module cleared the residual bar. The pain
+module M3 (21 genes, GO:0019233) never enters either score, consistent with
+lesion biology being separable from pain biology in this cohort. The
+interferon-$\gamma$ module M0 fails its novelty control, which keeps the
+positive gates from being reinterpreted as rediscovery of the known Th1/17
+axis \cite{akiyama2023}.
+
 \section{Limitations}
 The HIC cohort is 25 patients from one study; the BCG comparator is 13 samples;
 the urine-sediment case arm is three donors; the urinary-EV arm is eight cases
@@ -242,6 +321,42 @@ correlated with each other through shared evidence bases; and the historical
 sensitivity reuses a previously seen validation series. Nothing here is a
 clinical test, and the exploratory urine legs must not be quoted without their
 threshold failures.
+
+\clearpage
+\begin{thebibliography}{9}\small
+\bibitem{akiyama2023} Akiyama Y.\ et al. Th1/17 polarization and potential
+treatment by an anti-interferon-$\gamma$ DNA aptamer in Hunner-type
+interstitial cystitis. \emph{iScience} (2023). PMID 38026177; series GSE238208.
+\bibitem{blalock2008} Blalock E.M.\ et al. Differentiation associated changes
+in gene expression profiles of interstitial cystitis and control urothelial
+cells. \emph{J.\ Urology} (2008). PMID 18951569; series GSE11839.
+\bibitem{colaco2012} Colaco M.\ et al. Gene expression analysis of urine
+sediment: evaluation for potential noninvasive markers of interstitial
+cystitis/bladder pain syndrome. \emph{J.\ Urology} (2012). PMID 22177197;
+series GSE28242.
+\bibitem{walker2014} Walker S.J.\ et al. Correlation of gene expression with
+bladder capacity in interstitial cystitis/bladder pain syndrome.
+\emph{J.\ Urology} (2014). PMID 24840534; series GSE57560.
+\bibitem{keay2003} Keay S.\ et al. Changes in human bladder epithelial cell
+gene expression associated with interstitial cystitis and antiproliferative
+factor treatment. \emph{Physiological Genomics} (2003). PMID 12847144; series
+GSE621.
+\bibitem{gamo2009} Gamper M.\ et al. Gene expression profile of bladder
+tissue of patients with ulcerative interstitial cystitis. \emph{BMC Genomics}
+(2009). PMID 19400928; series GSE11783.
+\bibitem{gse196156} Urinary extracellular vesicle microRNA profiling for
+detection in patients with interstitial cystitis. GEO series GSE196156
+(deposited record; no PubMed identifier deposited in the series SOFT).
+\bibitem{liberzon2015} Liberzon A.\ et al. The Molecular Signatures Database
+Hallmark gene set collection. \emph{Cell Systems} (2015); Hallmark library as
+distributed by Enrichr (MSigDB\_Hallmark\_2020).
+\bibitem{huang2025} Huang H.Y.\ et al. miRTarBase 2025: an update to the
+experimentally validated microRNA-target interaction database. \emph{Nucleic
+Acids Research} (2025), doi:10.1093/nar/gkae1072; v10.0 per-gene exports used.
+\bibitem{kozomara2019} Kozomara A., Birgaoanu M., Griffiths-Jones S.\ miRBase:
+from microRNA sequences to function. \emph{Nucleic Acids Research} (2019);
+\texttt{mature.fa} accession mapping used.
+\end{thebibliography}
 
 \clearpage
 \appendix

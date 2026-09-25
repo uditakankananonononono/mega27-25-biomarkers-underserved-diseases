@@ -70,8 +70,8 @@ for d in diseases:
     c = c[(~c.known_ot) & (c.q < 0.05)].sort_values("score", ascending=False).head(30)
     c.insert(0, "disease", d)
     cands.append(c)
-pd.DataFrame(bench).to_csv("results/benchmark_gene_prioritization.csv", index=False)
+tag = "_".join(diseases); pd.DataFrame(bench).to_csv(f"results/prio/benchmark_{tag}.csv", index=False)
 if cands:
-    pd.concat(cands).to_csv("results/candidates_discovery.csv", index=False)
+    pd.concat(cands).to_csv(f"results/prio/candidates_{tag}.csv", index=False)
 b = pd.DataFrame(bench).dropna(subset=["auroc"])
 print(b.groupby(["disease", "method"])[["auroc", "auprc"]].mean().round(3).to_string())

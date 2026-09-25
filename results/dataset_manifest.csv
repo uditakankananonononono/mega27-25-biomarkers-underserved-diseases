@@ -1,0 +1,96 @@
+accession,source,role
+GSE10588,GEO series,preeclampsia:discovery
+GSE106724,GEO series,pcos:validation
+GSE11783,GEO series,interstitial_cystitis:discovery
+GSE120103,GEO series,endometriosis:validation
+GSE124226,GEO series,pcos:validation
+GSE125991,GEO series,leishmaniasis:discovery
+GSE125992,GEO series,leishmaniasis:validation
+GSE125993,GEO series,leishmaniasis:validation
+GSE137684,GEO series,pcos:validation
+GSE14577,GEO series,me_cfs:discovery
+GSE147776,GEO series,preeclampsia:validation
+GSE149437,GEO series,preeclampsia:validation
+GSE149440,GEO series,preeclampsia:validation
+GSE16059,GEO series,me_cfs:validation
+GSE186819,GEO series,preeclampsia:validation
+GSE190639,GEO series,preeclampsia:validation
+GSE23339,GEO series,endometriosis:discovery
+GSE24129,GEO series,preeclampsia:discovery
+GSE248593,GEO series,endometriosis:validation
+GSE25628,GEO series,endometriosis:discovery
+GSE25906,GEO series,preeclampsia:discovery
+GSE30186,GEO series,preeclampsia:discovery
+GSE34526,GEO series,pcos:discovery
+GSE35287,GEO series,endometriosis:discovery
+GSE35574,GEO series,preeclampsia:discovery
+GSE43264,GEO series,pcos:discovery
+GSE43322,GEO series,pcos:discovery
+GSE43942,GEO series,preeclampsia:discovery
+GSE45603,GEO series,postpartum_depression:discovery
+GSE47360,GEO series,endometriosis:discovery
+GSE48424,GEO series,preeclampsia:discovery
+GSE5090,GEO series,pcos:discovery
+GSE51981,GEO series,endometriosis:discovery
+GSE54248,GEO series,pcos:discovery
+GSE54250,GEO series,pcos:discovery
+GSE54400,GEO series,preeclampsia:discovery
+GSE54618,GEO series,preeclampsia:discovery
+GSE55664,GEO series,leishmaniasis:discovery
+GSE57560,GEO series,interstitial_cystitis:validation
+GSE58178,GEO series,endometriosis:validation
+GSE60438,GEO series,preeclampsia:discovery
+GSE621,GEO series,interstitial_cystitis:discovery
+GSE6364,GEO series,endometriosis:discovery
+GSE66273,GEO series,preeclampsia:discovery
+GSE67311,GEO series,fibromyalgia:discovery
+GSE6798,GEO series,pcos:discovery
+GSE73374,GEO series,preeclampsia:discovery
+GSE73622,GEO series,endometriosis:validation
+GSE75010,GEO series,preeclampsia:discovery
+GSE7846,GEO series,endometriosis:discovery
+GSE80008,GEO series,leishmaniasis:discovery
+GSE80432,GEO series,pcos:validation
+GSE84796,GEO series,chagas:discovery
+GSE91189,GEO series,preeclampsia:discovery
+GSE93839,GEO series,preeclampsia:discovery
+GSE94643,GEO series,preeclampsia:validation
+GSE98224,GEO series,preeclampsia:validation
+GPL10191,GEO platform,probe->gene annotation
+GPL10558,GEO platform,probe->gene annotation
+GPL11532,GEO platform,probe->gene annotation
+GPL14550,GEO platform,probe->gene annotation
+GPL15362,GEO platform,probe->gene annotation
+GPL16686,GEO platform,probe->gene annotation
+GPL16699,GEO platform,probe->gene annotation
+GPL17077,GEO platform,probe->gene annotation
+GPL20844,GEO platform,probe->gene annotation
+GPL21096,GEO platform,probe->gene annotation
+GPL25759,GEO platform,probe->gene annotation
+GPL262,GEO platform,probe->gene annotation
+GPL28460,GEO platform,probe->gene annotation
+GPL2986,GEO platform,probe->gene annotation
+GPL31059,GEO platform,probe->gene annotation
+GPL4133,GEO platform,probe->gene annotation
+GPL570,GEO platform,probe->gene annotation
+GPL571,GEO platform,probe->gene annotation
+GPL6102,GEO platform,probe->gene annotation
+GPL6244,GEO platform,probe->gene annotation
+GPL6480,GEO platform,probe->gene annotation
+GPL6884,GEO platform,probe->gene annotation
+GPL6947,GEO platform,probe->gene annotation
+GPL8979,GEO platform,probe->gene annotation
+GPL96,GEO platform,probe->gene annotation
+GPL97,GEO platform,probe->gene annotation
+MONDO_0005929,Open Targets disease associations,known genes postpartum_depression
+MONDO_0005404,Open Targets disease associations,known genes me_cfs
+MONDO_0005546,Open Targets disease associations,known genes fibromyalgia
+MONDO_0005133,Open Targets disease associations,known genes endometriosis
+MONDO_0005081,Open Targets disease associations,known genes preeclampsia
+MONDO_0008487,Open Targets disease associations,known genes pcos
+MONDO_0100233,Open Targets disease associations,known genes long_covid
+EFO_0008559,Open Targets disease associations,known genes chagas
+MONDO_0011989,Open Targets disease associations,known genes leishmaniasis
+EFO_1000869,Open Targets disease associations,known genes interstitial_cystitis
+STRING v12.0 9606 physical links,STRING,PPI graph
+HGNC complete set,HGNC,ID mapping

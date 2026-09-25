@@ -93,3 +93,6 @@ Program gate is record-level: individually fetched/verified/used GSM accessions 
 ## State 11:41 (paper audit expansion pending commit)
 - Generated full retained split (54 GEO series tags), all nine phenotype-based exclusions, all nine disease-level deduplicated signature replication outcomes, and curated 29-tool ledger as source-derived paper tables. Exact-TNR PDF now **16 rendered pages**; visual inspection of pages 4-7 and 13-16 confirms legible tables/formulas/no clipping, `pdffonts` embeds Times New Roman regular/bold, LaTeX has no overfull or undefined references. Page 16 is sparse, so this is not 16 substantive pages; do not fill to 20 with padding. 14 tests pass.
 - Discovery endpoint still unmet; careful source-ledger expansion isn't a benchmark win or a named new biomarker. No new record-count changes (130). Push and Drive backup the forthcoming commit.
+
+## State 11:43
+- MetaboLights MTBLS12367 is a relevant human PCOS granulosa-cell LC-MS context study (glutamine/SLC1A5); exact API study metadata captured, not expression-panel replication. This corrects an earlier irrelevant MTBLS1 probe and brings the curated genuine science tool ledger to 30/40. Source https://www.ebi.ac.uk/metabolights/ws/studies/MTBLS12367 . Exact-TNR paper still 16 pages; no overfull/undefined references, still no defensible discovery or published benchmark break.

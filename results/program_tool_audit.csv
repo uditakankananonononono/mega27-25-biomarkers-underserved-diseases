@@ -30,7 +30,7 @@ OpenAlex,-,1,external scholarly database,results/external/secondary_annotations.
 EMBL-EBI OLS,-,1,external ontology service,results/external/secondary_annotations.json,MONDO PCOS exact identifier validation
 AlphaFold Protein Structure Database,-,1,external scientific database,results/external/context_multimodal.json,Structure prediction metadata for ST3GAL2 and SDC3; not a disease validation
 EMBL-EBI BioStudies,-,1,external scientific study archive,results/external/biostudies_pe_study.json,Relevant PE placenta array E-GEOD-4707 checked for early/late onset and pooled reference design; no independent new validation inferred
-MetaboLights,-,0,external scientific database,results/external/context_multimodal.json,Queried unrelated MTBLS1; not counted
+MetaboLights,-,1,external metabolomics archive,results/external/pcos_metabolights_context.json,Relevant human PCOS granulosa-cell LC-MS study MTBLS12367 checked; distinct metabolite endpoint does not validate expression sign set
 CZ CellxGene,-,0,external scientific database,results/external/context_multimodal.json,Indexed datasets but no relevant dataset used; not counted
 Human Protein Atlas,-,1,external scientific database,results/external/st3gal2_context_checks.json,ST3GAL2 protein-evidence and exact Ensembl identifier checked; not clinical validation
 NCBI ClinVar,-,1,external scientific database,results/external/st3gal2_context_checks.json,105 ST3GAL2 gene-associated records checked to reject inference that candidate lacks clinical variant reports; no preeclampsia link inferred

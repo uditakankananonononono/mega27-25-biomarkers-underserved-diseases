@@ -35,8 +35,10 @@ GSE120103,GEO series,endometriosis:validation
 GSE124226,GEO series,pcos:validation
 GSE125993,GEO series,leishmaniasis:validation
 GSE137684,GEO series,pcos:validation
+GSE143953,GEO series,"preeclampsia:P19 processed eight-sample cohort, panel failed"
 GSE14577,GEO series,me_cfs:discovery
 GSE147776,GEO series,preeclampsia:validation
+GSE148241,GEO series and individual raw-count files,preeclampsia:P21 severe EOSPE placenta fixed-panel diagnostic
 GSE149440,GEO series,preeclampsia:validation
 GSE155489,GEO series supplementary matrix,pcos:prospective_followup (cumulus granulosa)
 GSE16059,GEO series,me_cfs:validation
@@ -46,6 +48,8 @@ GSE190639,GEO series,preeclampsia:validation
 GSE190971,GEO series,"preeclampsia:P12 PLAC 13 people, 13 of 41 series GSMs"
 GSE192902,GEO cfRNA postQC gene counts,"preeclampsia:P11 first prenatal draw, three nested cohorts, failed panel transport"
 GSE204835,GEO series supplementary matrix,preeclampsia:fresh_validation (placenta (paraffin-embedded))
+GSE212787,GEO series,"endometriosis:P17 processed cohort, 13 unique primary GSMs nested"
+GSE221921,GEO series supplementary expression files,"fibromyalgia:P16 exploratory independent deposit, 189 GSM nested in this GSE; transcriptomic signatures already published"
 GSE23339,GEO series,endometriosis:discovery
 GSE24129,GEO series,preeclampsia:discovery
 GSE248593,GEO series,endometriosis:validation
@@ -136,6 +140,53 @@ GSM3147362,GEO GSM mapped count/normalized matrix record,"preeclampsia:P13 PE-on
 GSM3147363,GEO GSM mapped count/normalized matrix record,"preeclampsia:P13 PE-only vs controls, 41 of 79 series GSMs; nested in GSE114691"
 GSM3147364,GEO GSM mapped count/normalized matrix record,"preeclampsia:P13 PE-only vs controls, 41 of 79 series GSMs; nested in GSE114691"
 GSM3147365,GEO GSM mapped count/normalized matrix record,"preeclampsia:P13 PE-only vs controls, 41 of 79 series GSMs; nested in GSE114691"
+GSM4277245,GEO GSM mapped FPKM record,preeclampsia:P19 used expression column in GSE143953; eight records nested in one study
+GSM4277246,GEO GSM mapped FPKM record,preeclampsia:P19 used expression column in GSE143953; eight records nested in one study
+GSM4277247,GEO GSM mapped FPKM record,preeclampsia:P19 used expression column in GSE143953; eight records nested in one study
+GSM4277248,GEO GSM mapped FPKM record,preeclampsia:P19 used expression column in GSE143953; eight records nested in one study
+GSM4277249,GEO GSM mapped FPKM record,preeclampsia:P19 used expression column in GSE143953; eight records nested in one study
+GSM4277250,GEO GSM mapped FPKM record,preeclampsia:P19 used expression column in GSE143953; eight records nested in one study
+GSM4277251,GEO GSM mapped FPKM record,preeclampsia:P19 used expression column in GSE143953; eight records nested in one study
+GSM4277252,GEO GSM mapped FPKM record,preeclampsia:P19 used expression column in GSE143953; eight records nested in one study
+GSM4458410,GEO sample and raw-count file,preeclampsia:GSE148241:P21 analyzed placenta
+GSM4458411,GEO sample and raw-count file,preeclampsia:GSE148241:P21 analyzed placenta
+GSM4458412,GEO sample and raw-count file,preeclampsia:GSE148241:P21 analyzed placenta
+GSM4458413,GEO sample and raw-count file,preeclampsia:GSE148241:P21 analyzed placenta
+GSM4458414,GEO sample and raw-count file,preeclampsia:GSE148241:P21 analyzed placenta
+GSM4458415,GEO sample and raw-count file,preeclampsia:GSE148241:P21 analyzed placenta
+GSM4458416,GEO sample and raw-count file,preeclampsia:GSE148241:P21 analyzed placenta
+GSM4458417,GEO sample and raw-count file,preeclampsia:GSE148241:P21 analyzed placenta
+GSM4458418,GEO sample and raw-count file,preeclampsia:GSE148241:P21 analyzed placenta
+GSM4458419,GEO sample and raw-count file,preeclampsia:GSE148241:P21 analyzed placenta
+GSM4458420,GEO sample and raw-count file,preeclampsia:GSE148241:P21 analyzed placenta
+GSM4458421,GEO sample and raw-count file,preeclampsia:GSE148241:P21 analyzed placenta
+GSM4458422,GEO sample and raw-count file,preeclampsia:GSE148241:P21 analyzed placenta
+GSM4458423,GEO sample and raw-count file,preeclampsia:GSE148241:P21 analyzed placenta
+GSM4458424,GEO sample and raw-count file,preeclampsia:GSE148241:P21 analyzed placenta
+GSM4458425,GEO sample and raw-count file,preeclampsia:GSE148241:P21 analyzed placenta
+GSM4458426,GEO sample and raw-count file,preeclampsia:GSE148241:P21 analyzed placenta
+GSM4458427,GEO sample and raw-count file,preeclampsia:GSE148241:P21 analyzed placenta
+GSM4458428,GEO sample and raw-count file,preeclampsia:GSE148241:P21 analyzed placenta
+GSM4458429,GEO sample and raw-count file,preeclampsia:GSE148241:P21 analyzed placenta
+GSM4458430,GEO sample and raw-count file,preeclampsia:GSE148241:P21 analyzed placenta
+GSM4458431,GEO sample and raw-count file,preeclampsia:GSE148241:P21 analyzed placenta
+GSM4458432,GEO sample and raw-count file,preeclampsia:GSE148241:P21 analyzed placenta
+GSM4458433,GEO sample and raw-count file,preeclampsia:GSE148241:P21 analyzed placenta
+GSM4458434,GEO sample and raw-count file,preeclampsia:GSE148241:P21 analyzed placenta
+GSM4458435,GEO sample and raw-count file,preeclampsia:GSE148241:P21 analyzed placenta
+GSM4458437,GEO sample and raw-count file,preeclampsia:GSE148241:P21 analyzed placenta
+GSM4458438,GEO sample and raw-count file,preeclampsia:GSE148241:P21 analyzed placenta
+GSM4458439,GEO sample and raw-count file,preeclampsia:GSE148241:P21 analyzed placenta
+GSM4458440,GEO sample and raw-count file,preeclampsia:GSE148241:P21 analyzed placenta
+GSM4458441,GEO sample and raw-count file,preeclampsia:GSE148241:P21 analyzed placenta
+GSM4458442,GEO sample and raw-count file,preeclampsia:GSE148241:P21 analyzed placenta
+GSM4458443,GEO sample and raw-count file,preeclampsia:GSE148241:P21 analyzed placenta
+GSM4458444,GEO sample and raw-count file,preeclampsia:GSE148241:P21 analyzed placenta
+GSM4458445,GEO sample and raw-count file,preeclampsia:GSE148241:P21 analyzed placenta
+GSM4458446,GEO sample and raw-count file,preeclampsia:GSE148241:P21 analyzed placenta
+GSM4458447,GEO sample and raw-count file,preeclampsia:GSE148241:P21 analyzed placenta
+GSM4458449,GEO sample and raw-count file,preeclampsia:GSE148241:P21 analyzed placenta
+GSM4458450,GEO sample and raw-count file,preeclampsia:GSE148241:P21 analyzed placenta
 GSM4705199,GEO sample full-text record,pcos:GSE155489:label_identity_audit
 GSM4705200,GEO sample full-text record,pcos:GSE155489:label_identity_audit
 GSM4705203,GEO sample full-text record,pcos:GSE155489:label_identity_audit
@@ -328,72 +379,19 @@ GSM6198397,GEO sample full-text record,preeclampsia:GSE204835:label_identity_aud
 GSM6198398,GEO sample full-text record,preeclampsia:GSE204835:label_identity_audit
 GSM6198411,GEO sample full-text record,preeclampsia:GSE204835:label_identity_audit
 GSM6198412,GEO sample full-text record,preeclampsia:GSE204835:label_identity_audit
-GSM8174669,GEO sample full-text record,pcos:GSE262735:label_identity_audit
-GSM8174670,GEO sample full-text record,pcos:GSE262735:label_identity_audit
-GSM8174678,GEO sample full-text record,pcos:GSE262735:label_identity_audit
-GSM8174679,GEO sample full-text record,pcos:GSE262735:label_identity_audit
-GSM8398792,GEO GSM count record in GSE272342_RAW.tar,"preeclampsia:P10 nested twin sample used; 32 GSM, 16 pregnancies"
-GSM8398793,GEO GSM count record in GSE272342_RAW.tar,"preeclampsia:P10 nested twin sample used; 32 GSM, 16 pregnancies"
-GSM8398794,GEO GSM count record in GSE272342_RAW.tar,"preeclampsia:P10 nested twin sample used; 32 GSM, 16 pregnancies"
-GSM8398795,GEO GSM count record in GSE272342_RAW.tar,"preeclampsia:P10 nested twin sample used; 32 GSM, 16 pregnancies"
-GSM8398796,GEO GSM count record in GSE272342_RAW.tar,"preeclampsia:P10 nested twin sample used; 32 GSM, 16 pregnancies"
-GSM8398797,GEO GSM count record in GSE272342_RAW.tar,"preeclampsia:P10 nested twin sample used; 32 GSM, 16 pregnancies"
-GSM8398798,GEO GSM count record in GSE272342_RAW.tar,"preeclampsia:P10 nested twin sample used; 32 GSM, 16 pregnancies"
-GSM8398799,GEO GSM count record in GSE272342_RAW.tar,"preeclampsia:P10 nested twin sample used; 32 GSM, 16 pregnancies"
-GSM8398800,GEO GSM count record in GSE272342_RAW.tar,"preeclampsia:P10 nested twin sample used; 32 GSM, 16 pregnancies"
-GSM8398801,GEO GSM count record in GSE272342_RAW.tar,"preeclampsia:P10 nested twin sample used; 32 GSM, 16 pregnancies"
-GSM8398802,GEO GSM count record in GSE272342_RAW.tar,"preeclampsia:P10 nested twin sample used; 32 GSM, 16 pregnancies"
-GSM8398803,GEO GSM count record in GSE272342_RAW.tar,"preeclampsia:P10 nested twin sample used; 32 GSM, 16 pregnancies"
-GSM8398804,GEO GSM count record in GSE272342_RAW.tar,"preeclampsia:P10 nested twin sample used; 32 GSM, 16 pregnancies"
-GSM8398805,GEO GSM count record in GSE272342_RAW.tar,"preeclampsia:P10 nested twin sample used; 32 GSM, 16 pregnancies"
-GSM8398806,GEO GSM count record in GSE272342_RAW.tar,"preeclampsia:P10 nested twin sample used; 32 GSM, 16 pregnancies"
-GSM8398807,GEO GSM count record in GSE272342_RAW.tar,"preeclampsia:P10 nested twin sample used; 32 GSM, 16 pregnancies"
-GSM8398808,GEO GSM count record in GSE272342_RAW.tar,"preeclampsia:P10 nested twin sample used; 32 GSM, 16 pregnancies"
-GSM8398809,GEO GSM count record in GSE272342_RAW.tar,"preeclampsia:P10 nested twin sample used; 32 GSM, 16 pregnancies"
-GSM8398810,GEO GSM count record in GSE272342_RAW.tar,"preeclampsia:P10 nested twin sample used; 32 GSM, 16 pregnancies"
-GSM8398811,GEO GSM count record in GSE272342_RAW.tar,"preeclampsia:P10 nested twin sample used; 32 GSM, 16 pregnancies"
-GSM8398812,GEO GSM count record in GSE272342_RAW.tar,"preeclampsia:P10 nested twin sample used; 32 GSM, 16 pregnancies"
-GSM8398813,GEO GSM count record in GSE272342_RAW.tar,"preeclampsia:P10 nested twin sample used; 32 GSM, 16 pregnancies"
-GSM8398814,GEO GSM count record in GSE272342_RAW.tar,"preeclampsia:P10 nested twin sample used; 32 GSM, 16 pregnancies"
-GSM8398815,GEO GSM count record in GSE272342_RAW.tar,"preeclampsia:P10 nested twin sample used; 32 GSM, 16 pregnancies"
-GSM8398816,GEO GSM count record in GSE272342_RAW.tar,"preeclampsia:P10 nested twin sample used; 32 GSM, 16 pregnancies"
-GSM8398817,GEO GSM count record in GSE272342_RAW.tar,"preeclampsia:P10 nested twin sample used; 32 GSM, 16 pregnancies"
-GSM8398818,GEO GSM count record in GSE272342_RAW.tar,"preeclampsia:P10 nested twin sample used; 32 GSM, 16 pregnancies"
-GSM8398819,GEO GSM count record in GSE272342_RAW.tar,"preeclampsia:P10 nested twin sample used; 32 GSM, 16 pregnancies"
-GSM8398820,GEO GSM count record in GSE272342_RAW.tar,"preeclampsia:P10 nested twin sample used; 32 GSM, 16 pregnancies"
-GSM8398821,GEO GSM count record in GSE272342_RAW.tar,"preeclampsia:P10 nested twin sample used; 32 GSM, 16 pregnancies"
-GSM8398822,GEO GSM count record in GSE272342_RAW.tar,"preeclampsia:P10 nested twin sample used; 32 GSM, 16 pregnancies"
-GSM8398823,GEO GSM count record in GSE272342_RAW.tar,"preeclampsia:P10 nested twin sample used; 32 GSM, 16 pregnancies"
-GSM8534278,GEO sample full-text record,pcos:GSE277906:label_identity_audit
-GSM8534279,GEO sample full-text record,pcos:GSE277906:label_identity_audit
-GSM8534295,GEO sample full-text record,pcos:GSE277906:label_identity_audit
-GSM8534296,GEO sample full-text record,pcos:GSE277906:label_identity_audit
-GSM8980951,GEO sample full-text record,preeclampsia:GSE296973:label_identity_audit
-GSM8980952,GEO sample full-text record,preeclampsia:GSE296973:label_identity_audit
-GSM8980961,GEO sample full-text record,preeclampsia:GSE296973:label_identity_audit
-GSM8980962,GEO sample full-text record,preeclampsia:GSE296973:label_identity_audit
-GSM9136811,GEO sample full-text record,preeclampsia:GSE303840:label_identity_audit
-GSM9136812,GEO sample full-text record,preeclampsia:GSE303840:label_identity_audit
-GSM9136817,GEO sample full-text record,preeclampsia:GSE303840:label_identity_audit
-GSM9136818,GEO sample full-text record,preeclampsia:GSE303840:label_identity_audit
-GSM9155146,GEO sample full-text record,pcos:GSE304677:label_identity_audit
-GSM9155147,GEO sample full-text record,pcos:GSE304677:label_identity_audit
-GSM9155151,GEO sample full-text record,pcos:GSE304677:label_identity_audit
-GSM9155152,GEO sample full-text record,pcos:GSE304677:label_identity_audit
-GSM9210996,GEO sample full-text record,preeclampsia:GSE306864:label_identity_audit
-GSM9210997,GEO sample full-text record,preeclampsia:GSE306864:label_identity_audit
-GSM9210998,GEO sample full-text record,preeclampsia:GSE306864:label_identity_audit
-GSM9211004,GEO sample full-text record,preeclampsia:GSE306864:label_identity_audit
-HGNC complete set,HGNC,ID mapping
-MONDO_0005081,Open Targets disease associations,known genes preeclampsia
-MONDO_0005133,Open Targets disease associations,known genes endometriosis
-MONDO_0005404,Open Targets disease associations,known genes me_cfs
-MONDO_0005546,Open Targets disease associations,known genes fibromyalgia
-MONDO_0005929,Open Targets disease associations,known genes postpartum_depression
-MONDO_0008487,Open Targets disease associations,known genes pcos
-MONDO_0011989,Open Targets disease associations,known genes leishmaniasis
-STRING v12.0 9606 physical links,STRING,PPI graph
-GSE221921,GEO series supplementary expression files,"fibromyalgia:P16 exploratory independent deposit, 189 GSM nested in this GSE; transcriptomic signatures already published"
+GSM6552364,GEO GSM processed RNA count record,"endometriosis:P17 used eutopic donor count matrix, 13 GSMs nested in GSE212787; panel negative"
+GSM6552365,GEO GSM processed RNA count record,"endometriosis:P17 used eutopic donor count matrix, 13 GSMs nested in GSE212787; panel negative"
+GSM6552366,GEO GSM processed RNA count record,"endometriosis:P17 used eutopic donor count matrix, 13 GSMs nested in GSE212787; panel negative"
+GSM6552367,GEO GSM processed RNA count record,"endometriosis:P17 used eutopic donor count matrix, 13 GSMs nested in GSE212787; panel negative"
+GSM6552368,GEO GSM processed RNA count record,"endometriosis:P17 used eutopic donor count matrix, 13 GSMs nested in GSE212787; panel negative"
+GSM6552369,GEO GSM processed RNA count record,"endometriosis:P17 used eutopic donor count matrix, 13 GSMs nested in GSE212787; panel negative"
+GSM6552370,GEO GSM processed RNA count record,"endometriosis:P17 used eutopic donor count matrix, 13 GSMs nested in GSE212787; panel negative"
+GSM6552371,GEO GSM processed RNA count record,"endometriosis:P17 used eutopic donor count matrix, 13 GSMs nested in GSE212787; panel negative"
+GSM6552372,GEO GSM processed RNA count record,"endometriosis:P17 used eutopic donor count matrix, 13 GSMs nested in GSE212787; panel negative"
+GSM6552373,GEO GSM processed RNA count record,"endometriosis:P17 used eutopic donor count matrix, 13 GSMs nested in GSE212787; panel negative"
+GSM6552374,GEO GSM processed RNA count record,"endometriosis:P17 used eutopic donor count matrix, 13 GSMs nested in GSE212787; panel negative"
+GSM6552375,GEO GSM processed RNA count record,"endometriosis:P17 used eutopic donor count matrix, 13 GSMs nested in GSE212787; panel negative"
+GSM6552376,GEO GSM processed RNA count record,"endometriosis:P17 used eutopic donor count matrix, 13 GSMs nested in GSE212787; panel negative"
 GSM6909756,GEO GSM per-sample expression record,"fibromyalgia:P16 fetched and used individual processed expression, 189 samples nested in GSE221921"
 GSM6909757,GEO GSM per-sample expression record,"fibromyalgia:P16 fetched and used individual processed expression, 189 samples nested in GSE221921"
 GSM6909758,GEO GSM per-sample expression record,"fibromyalgia:P16 fetched and used individual processed expression, 189 samples nested in GSE221921"
@@ -583,26 +581,68 @@ GSM6909941,GEO GSM per-sample expression record,"fibromyalgia:P16 fetched and us
 GSM6909942,GEO GSM per-sample expression record,"fibromyalgia:P16 fetched and used individual processed expression, 189 samples nested in GSE221921"
 GSM6909943,GEO GSM per-sample expression record,"fibromyalgia:P16 fetched and used individual processed expression, 189 samples nested in GSE221921"
 GSM6909944,GEO GSM per-sample expression record,"fibromyalgia:P16 fetched and used individual processed expression, 189 samples nested in GSE221921"
-GSM6552364,GEO GSM processed RNA count record,"endometriosis:P17 used eutopic donor count matrix, 13 GSMs nested in GSE212787; panel negative"
-GSM6552365,GEO GSM processed RNA count record,"endometriosis:P17 used eutopic donor count matrix, 13 GSMs nested in GSE212787; panel negative"
-GSM6552366,GEO GSM processed RNA count record,"endometriosis:P17 used eutopic donor count matrix, 13 GSMs nested in GSE212787; panel negative"
-GSM6552367,GEO GSM processed RNA count record,"endometriosis:P17 used eutopic donor count matrix, 13 GSMs nested in GSE212787; panel negative"
-GSM6552368,GEO GSM processed RNA count record,"endometriosis:P17 used eutopic donor count matrix, 13 GSMs nested in GSE212787; panel negative"
-GSM6552369,GEO GSM processed RNA count record,"endometriosis:P17 used eutopic donor count matrix, 13 GSMs nested in GSE212787; panel negative"
-GSM6552370,GEO GSM processed RNA count record,"endometriosis:P17 used eutopic donor count matrix, 13 GSMs nested in GSE212787; panel negative"
-GSM6552371,GEO GSM processed RNA count record,"endometriosis:P17 used eutopic donor count matrix, 13 GSMs nested in GSE212787; panel negative"
-GSM6552372,GEO GSM processed RNA count record,"endometriosis:P17 used eutopic donor count matrix, 13 GSMs nested in GSE212787; panel negative"
-GSM6552373,GEO GSM processed RNA count record,"endometriosis:P17 used eutopic donor count matrix, 13 GSMs nested in GSE212787; panel negative"
-GSM6552374,GEO GSM processed RNA count record,"endometriosis:P17 used eutopic donor count matrix, 13 GSMs nested in GSE212787; panel negative"
-GSM6552375,GEO GSM processed RNA count record,"endometriosis:P17 used eutopic donor count matrix, 13 GSMs nested in GSE212787; panel negative"
-GSM6552376,GEO GSM processed RNA count record,"endometriosis:P17 used eutopic donor count matrix, 13 GSMs nested in GSE212787; panel negative"
-GSE212787,GEO series,"endometriosis:P17 processed cohort, 13 unique primary GSMs nested"
-GSM4277245,GEO GSM mapped FPKM record,preeclampsia:P19 used expression column in GSE143953; eight records nested in one study
-GSM4277246,GEO GSM mapped FPKM record,preeclampsia:P19 used expression column in GSE143953; eight records nested in one study
-GSM4277247,GEO GSM mapped FPKM record,preeclampsia:P19 used expression column in GSE143953; eight records nested in one study
-GSM4277248,GEO GSM mapped FPKM record,preeclampsia:P19 used expression column in GSE143953; eight records nested in one study
-GSM4277249,GEO GSM mapped FPKM record,preeclampsia:P19 used expression column in GSE143953; eight records nested in one study
-GSM4277250,GEO GSM mapped FPKM record,preeclampsia:P19 used expression column in GSE143953; eight records nested in one study
-GSM4277251,GEO GSM mapped FPKM record,preeclampsia:P19 used expression column in GSE143953; eight records nested in one study
-GSM4277252,GEO GSM mapped FPKM record,preeclampsia:P19 used expression column in GSE143953; eight records nested in one study
-GSE143953,GEO series,"preeclampsia:P19 processed eight-sample cohort, panel failed"
+GSM8174669,GEO sample full-text record,pcos:GSE262735:label_identity_audit
+GSM8174670,GEO sample full-text record,pcos:GSE262735:label_identity_audit
+GSM8174678,GEO sample full-text record,pcos:GSE262735:label_identity_audit
+GSM8174679,GEO sample full-text record,pcos:GSE262735:label_identity_audit
+GSM8398792,GEO GSM count record in GSE272342_RAW.tar,"preeclampsia:P10 nested twin sample used; 32 GSM, 16 pregnancies"
+GSM8398793,GEO GSM count record in GSE272342_RAW.tar,"preeclampsia:P10 nested twin sample used; 32 GSM, 16 pregnancies"
+GSM8398794,GEO GSM count record in GSE272342_RAW.tar,"preeclampsia:P10 nested twin sample used; 32 GSM, 16 pregnancies"
+GSM8398795,GEO GSM count record in GSE272342_RAW.tar,"preeclampsia:P10 nested twin sample used; 32 GSM, 16 pregnancies"
+GSM8398796,GEO GSM count record in GSE272342_RAW.tar,"preeclampsia:P10 nested twin sample used; 32 GSM, 16 pregnancies"
+GSM8398797,GEO GSM count record in GSE272342_RAW.tar,"preeclampsia:P10 nested twin sample used; 32 GSM, 16 pregnancies"
+GSM8398798,GEO GSM count record in GSE272342_RAW.tar,"preeclampsia:P10 nested twin sample used; 32 GSM, 16 pregnancies"
+GSM8398799,GEO GSM count record in GSE272342_RAW.tar,"preeclampsia:P10 nested twin sample used; 32 GSM, 16 pregnancies"
+GSM8398800,GEO GSM count record in GSE272342_RAW.tar,"preeclampsia:P10 nested twin sample used; 32 GSM, 16 pregnancies"
+GSM8398801,GEO GSM count record in GSE272342_RAW.tar,"preeclampsia:P10 nested twin sample used; 32 GSM, 16 pregnancies"
+GSM8398802,GEO GSM count record in GSE272342_RAW.tar,"preeclampsia:P10 nested twin sample used; 32 GSM, 16 pregnancies"
+GSM8398803,GEO GSM count record in GSE272342_RAW.tar,"preeclampsia:P10 nested twin sample used; 32 GSM, 16 pregnancies"
+GSM8398804,GEO GSM count record in GSE272342_RAW.tar,"preeclampsia:P10 nested twin sample used; 32 GSM, 16 pregnancies"
+GSM8398805,GEO GSM count record in GSE272342_RAW.tar,"preeclampsia:P10 nested twin sample used; 32 GSM, 16 pregnancies"
+GSM8398806,GEO GSM count record in GSE272342_RAW.tar,"preeclampsia:P10 nested twin sample used; 32 GSM, 16 pregnancies"
+GSM8398807,GEO GSM count record in GSE272342_RAW.tar,"preeclampsia:P10 nested twin sample used; 32 GSM, 16 pregnancies"
+GSM8398808,GEO GSM count record in GSE272342_RAW.tar,"preeclampsia:P10 nested twin sample used; 32 GSM, 16 pregnancies"
+GSM8398809,GEO GSM count record in GSE272342_RAW.tar,"preeclampsia:P10 nested twin sample used; 32 GSM, 16 pregnancies"
+GSM8398810,GEO GSM count record in GSE272342_RAW.tar,"preeclampsia:P10 nested twin sample used; 32 GSM, 16 pregnancies"
+GSM8398811,GEO GSM count record in GSE272342_RAW.tar,"preeclampsia:P10 nested twin sample used; 32 GSM, 16 pregnancies"
+GSM8398812,GEO GSM count record in GSE272342_RAW.tar,"preeclampsia:P10 nested twin sample used; 32 GSM, 16 pregnancies"
+GSM8398813,GEO GSM count record in GSE272342_RAW.tar,"preeclampsia:P10 nested twin sample used; 32 GSM, 16 pregnancies"
+GSM8398814,GEO GSM count record in GSE272342_RAW.tar,"preeclampsia:P10 nested twin sample used; 32 GSM, 16 pregnancies"
+GSM8398815,GEO GSM count record in GSE272342_RAW.tar,"preeclampsia:P10 nested twin sample used; 32 GSM, 16 pregnancies"
+GSM8398816,GEO GSM count record in GSE272342_RAW.tar,"preeclampsia:P10 nested twin sample used; 32 GSM, 16 pregnancies"
+GSM8398817,GEO GSM count record in GSE272342_RAW.tar,"preeclampsia:P10 nested twin sample used; 32 GSM, 16 pregnancies"
+GSM8398818,GEO GSM count record in GSE272342_RAW.tar,"preeclampsia:P10 nested twin sample used; 32 GSM, 16 pregnancies"
+GSM8398819,GEO GSM count record in GSE272342_RAW.tar,"preeclampsia:P10 nested twin sample used; 32 GSM, 16 pregnancies"
+GSM8398820,GEO GSM count record in GSE272342_RAW.tar,"preeclampsia:P10 nested twin sample used; 32 GSM, 16 pregnancies"
+GSM8398821,GEO GSM count record in GSE272342_RAW.tar,"preeclampsia:P10 nested twin sample used; 32 GSM, 16 pregnancies"
+GSM8398822,GEO GSM count record in GSE272342_RAW.tar,"preeclampsia:P10 nested twin sample used; 32 GSM, 16 pregnancies"
+GSM8398823,GEO GSM count record in GSE272342_RAW.tar,"preeclampsia:P10 nested twin sample used; 32 GSM, 16 pregnancies"
+GSM8534278,GEO sample full-text record,pcos:GSE277906:label_identity_audit
+GSM8534279,GEO sample full-text record,pcos:GSE277906:label_identity_audit
+GSM8534295,GEO sample full-text record,pcos:GSE277906:label_identity_audit
+GSM8534296,GEO sample full-text record,pcos:GSE277906:label_identity_audit
+GSM8980951,GEO sample full-text record,preeclampsia:GSE296973:label_identity_audit
+GSM8980952,GEO sample full-text record,preeclampsia:GSE296973:label_identity_audit
+GSM8980961,GEO sample full-text record,preeclampsia:GSE296973:label_identity_audit
+GSM8980962,GEO sample full-text record,preeclampsia:GSE296973:label_identity_audit
+GSM9136811,GEO sample full-text record,preeclampsia:GSE303840:label_identity_audit
+GSM9136812,GEO sample full-text record,preeclampsia:GSE303840:label_identity_audit
+GSM9136817,GEO sample full-text record,preeclampsia:GSE303840:label_identity_audit
+GSM9136818,GEO sample full-text record,preeclampsia:GSE303840:label_identity_audit
+GSM9155146,GEO sample full-text record,pcos:GSE304677:label_identity_audit
+GSM9155147,GEO sample full-text record,pcos:GSE304677:label_identity_audit
+GSM9155151,GEO sample full-text record,pcos:GSE304677:label_identity_audit
+GSM9155152,GEO sample full-text record,pcos:GSE304677:label_identity_audit
+GSM9210996,GEO sample full-text record,preeclampsia:GSE306864:label_identity_audit
+GSM9210997,GEO sample full-text record,preeclampsia:GSE306864:label_identity_audit
+GSM9210998,GEO sample full-text record,preeclampsia:GSE306864:label_identity_audit
+GSM9211004,GEO sample full-text record,preeclampsia:GSE306864:label_identity_audit
+HGNC complete set,HGNC,ID mapping
+MONDO_0005081,Open Targets disease associations,known genes preeclampsia
+MONDO_0005133,Open Targets disease associations,known genes endometriosis
+MONDO_0005404,Open Targets disease associations,known genes me_cfs
+MONDO_0005546,Open Targets disease associations,known genes fibromyalgia
+MONDO_0005929,Open Targets disease associations,known genes postpartum_depression
+MONDO_0008487,Open Targets disease associations,known genes pcos
+MONDO_0011989,Open Targets disease associations,known genes leishmaniasis
+STRING v12.0 9606 physical links,STRING,PPI graph

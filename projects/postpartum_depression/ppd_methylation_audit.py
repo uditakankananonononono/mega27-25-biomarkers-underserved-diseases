@@ -4,8 +4,9 @@ import csv,gzip,hashlib,json,pathlib,collections,re,requests,os,urllib.request
 import numpy as np
 from scipy.stats import ttest_ind
 R=pathlib.Path(__file__).resolve().parent/'sources'
-CACHE=pathlib.Path(os.getenv('PPD_GEO_CACHE', str(R)))
+CACHE=pathlib.Path(os.getenv('PPD_GEO_CACHE', '/tmp/ppd-geo-cache'))
 CACHE.mkdir(parents=True,exist_ok=True)
+EXPECTED_SHA256={'GSE44132':'b2d715ec45c250426c8b2a4e5317bf589f581f8425d1101d9f6d752ba6dc19b9','GSE335141':'13002634be22d3b58529402b07b89a57610479f18f3208ebd8ce94c6fc12b5b2'}
 URLS={'GSE44132':'https://ftp.ncbi.nlm.nih.gov/geo/series/GSE44nnn/GSE44132/matrix/GSE44132_series_matrix.txt.gz', 'GSE335141':'https://ftp.ncbi.nlm.nih.gov/geo/series/GSE335nnn/GSE335141/suppl/GSE335141_GEO_Upload_normalized_beta_matrix.tsv.gz'}
 for acc,filename in [('GSE44132','GSE44132_series_matrix.txt.gz'),('GSE335141','GSE335141_beta_matrix.tsv.gz')]:
  p=CACHE/filename;cross=R/f'{acc}_source_crosswalk.csv'; records=list(csv.DictReader(cross.open()))
@@ -15,6 +16,7 @@ for acc,filename in [('GSE44132','GSE44132_series_matrix.txt.gz'),('GSE335141','
  if not p.exists():
   with urllib.request.urlopen(URLS[acc],timeout=180) as response,p.open('wb') as out:
    import shutil;shutil.copyfileobj(response,out)
+ assert hashlib.sha256(p.read_bytes()).hexdigest()==EXPECTED_SHA256[acc], f'{acc}: source matrix digest differs; stop before analysis'
  if acc=='GSE44132':
   # GEO matrix columns are GSM; omit four extra technical repeats of participant PR01-084.
   with gzip.open(p,'rt') as f:
@@ -66,6 +68,7 @@ for acc,filename in [('GSE44132','GSE44132_series_matrix.txt.gz'),('GSE335141','
    if nprobes%200000==0:print(acc,'parsed',nprobes,flush=True)
  flush_batch()
  from scipy.stats import false_discovery_control
+ assert hits, f'{acc}: no finite probe tests'
  pvals=np.array([h[2] for h in hits]);qvals=false_discovery_control(pvals,method='bh')
  top=sorted(zip(hits,qvals),key=lambda x:(x[1],x[0][2]))[:30]
  with (CACHE/f'{acc}_exploratory_probes_reproduced.csv').open('w',newline='') as f:

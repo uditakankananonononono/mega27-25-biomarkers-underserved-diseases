@@ -1,0 +1,58 @@
+# Chagas dataset acquisition log - builder-25-chagas, 2026-09-26
+
+## Goal
+Close the 67-record shortfall to the 120-record floor (53 tagged at handoff) with
+real, public, individually verified GEO records, matching the provenance rigor of
+sources/GSE84796_used_sample_crosswalk.csv (canonical source URL + sha256 of the
+exact bytes returned, per record).
+
+## What was added (11 new series, 411 new GSM records, 422 new records total)
+
+| GSE | n GSM | Type | Human Chagas relevance | PMID |
+|-----|-------|------|------------------------|------|
+| GSE244827 | 33 | RNA-seq, whole blood | asymptomatic/early CCC vs seronegative; early-CCC blood biomarkers | 40290486 |
+| GSE299582 | 192 | miRNA-seq, serum | susceptibility + CCC severity (mild/moderate/severe) | 41574750 |
+| GSE311812 | 46 | RNA-seq + Visium spatial | congenital Chagas: maternal blood, placenta, transmitter contrast | 41648170 |
+| GSE333874 | 31 | small RNA-seq, placenta | congenital transmission miRNAs | 42523576 |
+| GSE348071 | 32 | RNA-seq, AC16 + patient iPSC-CM | DHODH R135C mitochondrial vulnerability in CCC | (unpublished) |
+| GSE203525 | 20 | RNA-seq, patient hiPSC-CM | CCC vs indeterminate lines +/- T. cruzi reinfection | 35873155 |
+| GSE129676 | 16 | RNA-seq, hiPSC-CM | Chagas-patient vs control cardiomyocyte infection timecourse | 31105048 |
+| GSE158986 | 12 | RNA-seq, monocyte-derived DCs | human dendritic cell first-contact response to T. cruzi | 33897690 |
+| GSE295194 | 16 | scRNA-seq PBMC (sample tags) | CCC vs indeterminate CD4 T-cell peptide response | 40391216 |
+| GSE107376 | 9 | expression array, placenta | seropositive vs seronegative mothers | 29545200 |
+| GSE328447 | 4 | small RNA-seq, THP1 macrophages | isomiR response in T. cruzi infection model | 42614816 |
+
+Selection rules: live NCBI GEO esearch (db=gds, "chagas", Homo sapiens, GSE entry
+type, 25 hits on 2026-09-26); series kept only when Chagas/T. cruzi is explicit in
+the series title or design and the six previously tagged series
+(GSE128270, GSE84796, GSE13791, GSE113155, GSE4470, GSE2596) are excluded.
+Rejected matches: GSE78975 (anxiety methylome, no Chagas), GSE27353 / GSE27054
+(thymocyte hormone studies, no Chagas), GSE191081/2/3 (Chagas methylation trio,
+360 GSMs - reserved as documented leads, different data modality than the
+expression core), GSE154421 (benznidazole SNP pharmacogenomics, 92 GSMs -
+reserved lead), GSE7047 (2007 infected-cell line array, platform GPL1053 already
+implicated in skip_labels exclusions).
+
+## Provenance and verification
+- Every GSM fetched from its canonical GEO full-text URL; exact response bytes
+  sha256-hashed and preserved under sources/soft/ (411 sample + 11 series files).
+- Crosswalks: sources/<GSE>_sample_crosswalk.csv, one row per GSM with
+  gsm, source_url, sha256, title, status, label, platform, organism, SRA
+  relation, parsed characteristics. Series ledger: sources/new_series_ledger.csv.
+- scripts/verify_crosswalks.py (hermetic) re-hashes every evidence file and
+  confirms: hash match, SOFT well-formedness, GSM uniqueness across series,
+  disjointness from the six previously tagged series, non-empty labels, record
+  accounting. Result: all checks passed, 475 project records (floor 120: PASS).
+- Spot re-verification: independent curl refetch of GSM9683415 reproduced the
+  recorded sha256 cbd75c56... exactly at acquisition time.
+- Labels assigned by scripts/label_crosswalks.py with explicit per-series rules;
+  zero unmapped rows. Vocabulary: case/control for clinical groups;
+  infected/treated/variant/reference for in-vitro mechanism contrasts.
+- GSE311812 title audit found 6 transmitter blood samples vs 5 stated in the
+  series design text; titles treated as record of truth (25 case / 21 control).
+
+## Count accounting
+Prior: 53 (2 GSE + 50 GSM + 1 other). Added: 422 (11 GSE + 411 GSM).
+New total: 475 tagged records = 13 GSE + 461 GSM + 1 other. Floor 120: PASS.
+GSMs remain nested sample records within their GSE, per program counting rules;
+this does not claim 475 independent studies (13 independent series total).

@@ -2,7 +2,7 @@
 
 Status: project scaffold and gate audit only, not a finished paper or a positive benchmark. The parent repository is shared core; this directory must hold a disease-specific protocol, accession and external-service evidence ledger, reproducible results and a 50-page substantive paper before its gates can be claimed.
 
-Current disease-tagged manifest records: 53 = 2 GSE studies + 50 nested GSM samples + 1 other. These are record units, not independent datasets or patients. The shared 40-service and 49-page PDF do not transfer as automatic per-project passes. Benchmark/discovery endpoint is open.
+Current disease-tagged manifest records: 475 = 13 GSE studies + 461 nested GSM samples + 1 other (as of 2026-09-26, branch builder-25-chagas; prior state was 53 = 2 GSE + 50 GSM + 1 other). These are record units, not independent datasets or patients. The shared 40-service and 49-page PDF do not transfer as automatic per-project passes. Benchmark/discovery endpoint is open.
 
 Disease-specific documents and source logs are not yet split from shared core; use the shared source code and result filenames by disease as leads, then verify original record attribution before copying.
 
@@ -13,3 +13,7 @@ A [2024 ten-year follow-up](https://pubmed.ncbi.nlm.nih.gov/38203212/) already r
 ## Individual records for the already analyzed end-stage heart series
 
 We fetched and audited every [GSE84796](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE84796) individual GSM against the historical expression matrix, source title, platform and status. Ten CCC heart-failure transplant specimens and seven healthy organ-donor hearts map uniquely; the source URL/hash crosswalk is `sources/GSE84796_used_sample_crosswalk.csv`. Adding those 17 previously used but unlisted nested sample accessions moves Chagas from 36 to 53 tagged records, 67 short of 120. They are heart specimens from one already counted series, not independent studies and not early blood or prospective progression data. The published longitudinal biomarker prior art still bars calling the old heart-to-blood signal a new prognostic discovery.
+
+## 2026-09-26 acquisition (builder-25-chagas)
+
+Eleven new public human Chagas series (411 individually hash-verified GSM records) were added toward the 120-record floor: GSE244827, GSE299582, GSE311812, GSE333874, GSE348071, GSE203525, GSE129676, GSE158986, GSE295194, GSE107376, GSE328447. Blood (GSE244827), serum miRNA severity (GSE299582) and congenital/placental cohorts (GSE311812, GSE333874, GSE107376) directly address the prior gap that only end-stage heart tissue was represented. Per-series crosswalks with per-record source URLs and sha256 hashes: `sources/<GSE>_sample_crosswalk.csv`; raw SOFT evidence under `sources/soft/`; series ledger `sources/new_series_ledger.csv`; details and rejection log in `ACQUISITION_LOG.md`; hermetic verifier `scripts/verify_crosswalks.py` (all checks passed). Reserved leads for later expansion: GSE191081/2/3 methylation trio (360 GSMs), GSE154421 benznidazole pharmacogenomics (92 GSMs). These 475 records are record units nested within 13 independent series, not 475 independent studies; the longitudinal progression prior-art bar in `sources/prior_prognosis_literature.json` still applies to any discovery claim.

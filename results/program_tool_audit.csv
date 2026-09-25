@@ -35,3 +35,4 @@ CZ CellxGene,-,1,external single-cell atlas,results/external/placenta_cellxgene_
 Human Protein Atlas,-,1,external scientific database,results/external/st3gal2_context_checks.json,ST3GAL2 protein-evidence and exact Ensembl identifier checked; not clinical validation
 NCBI ClinVar,-,1,external scientific database,results/external/st3gal2_context_checks.json,105 ST3GAL2 gene-associated records checked to reject inference that candidate lacks clinical variant reports; no preeclampsia link inferred
 PRIDE Archive,-,1,external scientific proteomics archive,results/external/preeclampsia_proteome_context.json,Relevant human first-trimester serum PE proteome PXD080843 identified as distinct modality and noncomparable benchmark; prior unrelated query excluded
+statsmodels,-,1,analysis library,scripts/pe_meta_sensitivity.py,Independent Paule-Mandel and DerSimonian-Laird pooled-effect sensitivity for falsified ST3GAL2 preeclampsia prediction

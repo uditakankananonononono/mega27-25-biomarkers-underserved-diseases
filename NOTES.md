@@ -109,3 +109,6 @@ Program gate is record-level: individually fetched/verified/used GSM accessions 
 
 ## State 11:52
 - P8 registration was committed BEFORE the GSE293353 count-matrix download. Follicular granulosa nine PCOS/nine control columns map exactly to GEO sample titles and clinical `group`, with no earlier PCOS GSM overlap. Ensembl IDs mapped via HGNC; three ambiguous IDs excluded. 19/20 fixed genes measured, 16 signs agreed, direction/coverage-matched null expects 15.725, empirical p=.588441: FAIL. Source https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE293353 ; detailed checksums/labels/gene effects in `results/pcos_p8*`. Paper adds negative result; rendered exact-TNR draft remains 17 pages, still short. Manifest adds two truly used unique GSE records (GSE28242, GSE293353), now 132/120 under record-level rule. No discovery/benchmark claim.
+
+## State 11:54
+- Independent `statsmodels` DerSimonian-Laird recomputation matched the project's four-cohort P3 ST3GAL2 estimate; iterative Paule-Mandel p=.3955 vs DL p=.3850. All iterative leave-one-out one-sided p values exceed .05 (best .0969). Genuine analysis library used, tool ledger 32/40 with unique canonical names. Exact-TNR working paper 17 pages, no overflow, still below substantive length gate. Citation/claims remain negative.

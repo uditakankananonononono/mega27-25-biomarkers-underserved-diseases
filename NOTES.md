@@ -135,3 +135,6 @@ Program gate is record-level: individually fetched/verified/used GSM accessions 
 
 ## State 12:12
 - GWAS Catalog exact preeclampsia MONDO_0005081 trait association endpoint returned 145 records, only 18 author-reported gene-name mentions; ST3GAL2/GNG2 not named in that limited field. This is context only, NOT evidence of absence or independent expression validation. Exact API metadata saved. Genuine service tool ledger 36/40. PDF now 21 rendered pages due to longer science-tool table, but page 21 is a dangling sentence: DO NOT claim 20 substantive pages or final completion. Source https://www.ebi.ac.uk/gwas/rest/api/efoTraits/MONDO_0005081/associations . No discovery/benchmark endpoint.
+
+## State 12:12 final in this run
+- Fixed last-page dangling line via concise null paragraph and science-tool table width. PDF 20 rendered pages, page 19-20 visually checked: readable, no clipping, but final page is chiefly inventory and formula, so substantive 20-page gate still not verified. GWAS source audit pushed through 84b3da8; width revision still uncommitted until next commit. Tool ledger 36/40, manifest 132/120, 14 tests, 11 formulas, no qualifying discovery/benchmark break. Remaining four tools and scientific endpoint are real gaps, not a reason to pad.

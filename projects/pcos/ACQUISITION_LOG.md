@@ -61,3 +61,6 @@ independent studies.
 ## Post-commit validation
 Live re-verification of 14 randomly sampled GSMs (seed 25, ~5% of 271):
 14/14 refetched bytes match recorded sha256, 0 mismatches.
+Second independent live re-verification sample (seed 926, 14 GSMs, ~5%):
+14/14 refetched bytes match recorded sha256, 0 mismatches. Cumulative live
+re-verification: 28/28 across two independent samples.

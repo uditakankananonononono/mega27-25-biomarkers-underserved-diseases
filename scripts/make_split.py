@@ -8,6 +8,8 @@ if os.path.exists("results/split_locked.csv"):
 m = pd.read_csv("results/series_manifest.csv")
 m = m[m.status == "ok"].copy()
 m["tag"] = m.matrix.str.replace("_series_matrix.txt.gz", "", regex=False)
+ex = pd.read_csv("results/series_exclusions.csv")
+m = m[~m.tag.isin(ex.tag)]
 m["num"] = m.gse.str[3:].astype(int)
 rows = []
 for d, g in m.groupby("disease"):

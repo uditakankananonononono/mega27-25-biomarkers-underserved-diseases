@@ -597,3 +597,12 @@ GSM6552374,GEO GSM processed RNA count record,"endometriosis:P17 used eutopic do
 GSM6552375,GEO GSM processed RNA count record,"endometriosis:P17 used eutopic donor count matrix, 13 GSMs nested in GSE212787; panel negative"
 GSM6552376,GEO GSM processed RNA count record,"endometriosis:P17 used eutopic donor count matrix, 13 GSMs nested in GSE212787; panel negative"
 GSE212787,GEO series,"endometriosis:P17 processed cohort, 13 unique primary GSMs nested"
+GSM4277245,GEO GSM mapped FPKM record,preeclampsia:P19 used expression column in GSE143953; eight records nested in one study
+GSM4277246,GEO GSM mapped FPKM record,preeclampsia:P19 used expression column in GSE143953; eight records nested in one study
+GSM4277247,GEO GSM mapped FPKM record,preeclampsia:P19 used expression column in GSE143953; eight records nested in one study
+GSM4277248,GEO GSM mapped FPKM record,preeclampsia:P19 used expression column in GSE143953; eight records nested in one study
+GSM4277249,GEO GSM mapped FPKM record,preeclampsia:P19 used expression column in GSE143953; eight records nested in one study
+GSM4277250,GEO GSM mapped FPKM record,preeclampsia:P19 used expression column in GSE143953; eight records nested in one study
+GSM4277251,GEO GSM mapped FPKM record,preeclampsia:P19 used expression column in GSE143953; eight records nested in one study
+GSM4277252,GEO GSM mapped FPKM record,preeclampsia:P19 used expression column in GSE143953; eight records nested in one study
+GSE143953,GEO series,"preeclampsia:P19 processed eight-sample cohort, panel failed"

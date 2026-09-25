@@ -224,3 +224,5 @@ Program gate is record-level: individually fetched/verified/used GSM accessions 
 
 ## State 14:26 P19 registration before frozen gene values
 - GSE143953 late placentas, four PE/four controls, GEO title and FPKM workbook metadata inspected. Workbook header and first 25 non-panel rows viewed for format; six old PE genes and descriptive threshold fixed before target values/effects. Cannot meet P9 early-pregnancy endpoint. No new record count or scientific claim yet. Source https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE143953 .
+
+- P19 GSE143953 eight late placenta FPKM columns mapped one-to-one to GSM titles/disease labels. Six frozen PE DOWN genes: five DOWN, LPGAT1 UP; FES g=-.713 p=.297, GPAT3 -.187 .773, FURIN -.944 .215, GRAMD1A -.177 .790, ZNF467 -1.341 .085, LPGAT1 +.443 .512. No p<.00833, registered descriptive panel fails. Source https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE143953 , workbook SHA256 42e900944734b1b461e86ff28c94c0767fae95fb74d97c52f534ab3757fa1136. Eight GSMs plus parent GSE add nine unique accession records, total 607 (499 GSM nested in 16 GSEs). No biological endpoint.

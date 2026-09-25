@@ -2,7 +2,7 @@
 
 Status: project scaffold and gate audit only, not a finished paper or a positive benchmark. The parent repository is shared core; this directory must hold a disease-specific protocol, accession and external-service evidence ledger, reproducible results and a 50-page substantive paper before its gates can be claimed.
 
-Current disease-tagged manifest records: 18 = 4 GSE studies + 13 nested GSM samples + 1 other. These are record units, not independent datasets or patients. The shared 40-service and 49-page PDF do not transfer as automatic per-project passes. Benchmark/discovery endpoint is open.
+Current disease-tagged manifest records: 25 = 4 GSE studies + 20 nested GSM samples + 1 other. These are record units, not independent datasets or patients. The shared 40-service and 49-page PDF do not transfer as automatic per-project passes. Benchmark/discovery endpoint is open.
 
 Disease-specific documents and source logs are not yet split from shared core; use the shared source code and result filenames by disease as leads, then verify original record attribution before copying.
 
@@ -21,3 +21,7 @@ The source [GSE11783](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE1178
 ## Corrected two-source historical signature sensitivity
 
 The post-audit GSE621 (six IC vs six normal controls) and GSE11783 (five IC vs six control people) effects were recombined for genes measured in **both** studies (`k=2`, 3,326 candidate genes). This coverage rule is essential: an initial scratch sensitivity accidentally let `k=1` genes dominate its list; its apparent 40/40 validation result must not be used. The corrected two-study top 50 overlaps **zero** of the old top 50. In the previously inspected seven-library [GSE57560](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE57560) holdout, 43/50 measured gene signs agree, with a 10,000-set empirical sign p=0.0469, above the prior 0.025 registered threshold. Five nominal directional hits are ordinary under the empirical null (p=0.3755). No gene in the corrected two-source discovery meta passes BH q<0.05 (smallest q=0.418). These are **post-outcome sensitivity results**, not a new untouched validation; their tiny holdout, prior published overlapping-cohort analysis and changed gene list preclude novelty or diagnostic claims. The old frozen run remains in the repo, clearly marked as invalid for clean patient-level inference. Exact script `scripts/ic_corrected_history_sensitivity.py`, data `results/ic_post_audit_discovery_meta_sensitivity.csv.gz` and JSON `results/ic_post_audit_replication_sensitivity.json` retain the method and negative conclusion.
+
+## Used seven-library validation source crosswalk
+
+All seven previously analyzed [GSE57560](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE57560) GSMs were individually checked against exact source title, disease state, bladder-capacity phenotype, platform and matrix column: four low-capacity IC and three controls. They are now included as nested used records, bringing the IC tag count from 18 to 25 (still 95 below 120). Nine other GSE57560 GSMs were not in the historical contrast and are not counted. This is a seven-library already-seen validation, not seven new studies or fresh external support for the corrected top 50. `sources/GSE57560_used_sample_crosswalk.csv` retains primary URLs and hashes.

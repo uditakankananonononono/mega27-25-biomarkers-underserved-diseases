@@ -41,7 +41,6 @@ for d in diseases:
     F = np.column_stack([F, np.log1p(deg)]).astype(np.float32)
     # Fit standardization on the training genes within each fold: even an
     # unsupervised test-gene transformation leaks the held-out feature distribution.
-    F = F.astype(np.float32)
     for seed in range(2):
         skf = StratifiedKFold(5, shuffle=True, random_state=seed)
         for fold, (tr, te) in enumerate(skf.split(np.zeros(len(y)), y)):

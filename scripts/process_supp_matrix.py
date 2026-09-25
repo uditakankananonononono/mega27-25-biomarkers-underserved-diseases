@@ -12,7 +12,7 @@ from ubiomark import geo, stats
 
 SPECS = {
     'GSE204835': dict(disease='preeclampsia', file='GSE204835_Human_paraffin-embedded_placental_tissue_counts.csv.gz',
-                     unit='counts', sep=',', key='entrez_id', title_prefix='Human_paraffin-embedded_placental_tissue_Sample ',
+                     unit='counts', sep=',', key='gene', title_prefix='Human_paraffin-embedded_placental_tissue_Sample ',
                      label_field='Sample_characteristics_ch1_2', case='disease state: Preeclampsia', control='disease state: Control',
                      tissue='placenta (paraffin-embedded)'),
     'GSE296973': dict(disease='preeclampsia', file='GSE296973_gene_FPKM.txt.gz',
@@ -49,7 +49,7 @@ def load(gse):
     assert set(sample.values()) == set(ann.index), (gse, len(sample), len(ann))
     assert len(set(sample.values())) == len(sample)
     x = x[[p['key'], *sample]].rename(columns=sample)
-    if p['key'] == 'entrez_id':
+    if gse == 'GSE204835':
         h = pd.read_csv(geo.HGNC_PATH, sep='\t', dtype=str, usecols=['symbol','entrez_id']).dropna()
         mapping = dict(zip(h.entrez_id, h.symbol)); x[p['key']] = x[p['key']].astype(str).map(mapping)
     x = x.dropna(subset=[p['key']]); x = x.set_index(p['key'])

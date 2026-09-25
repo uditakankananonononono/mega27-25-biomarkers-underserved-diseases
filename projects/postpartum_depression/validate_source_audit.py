@@ -28,6 +28,9 @@ def check():
   else:
    assert collections.Counter(collections.Counter(x['patient_token'] for x in rows).values())=={2:41}
    assert collections.Counter(x['timepoint'] for x in rows)=={'T0':41,'T4':41}
+   by_patient=collections.defaultdict(list)
+   for x in rows:by_patient[x['patient_token']].append(x)
+   assert all({z['timepoint'] for z in pair}=={'T0','T4'} and len({z['phenotype'] for z in pair})==1 for pair in by_patient.values())
    assert len({x['matrix_column'] for x in rows})==82
    assert all(x['matrix_column'] for x in rows)
    assert summary['analyzed_case']==17 and summary['analyzed_control']==24

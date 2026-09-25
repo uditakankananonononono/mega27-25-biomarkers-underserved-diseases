@@ -1,0 +1,43 @@
+^SAMPLE = GSM5226380
+!Sample_title = 106_V S1
+!Sample_geo_accession = GSM5226380
+!Sample_status = Public on Aug 18 2021
+!Sample_submission_date = Apr 05 2021
+!Sample_last_update_date = Aug 18 2021
+!Sample_type = SRA
+!Sample_channel_count = 1
+!Sample_source_name_ch1 = Endometrial stromal cells
+!Sample_organism_ch1 = Homo sapiens
+!Sample_taxid_ch1 = 9606
+!Sample_characteristics_ch1 = condition: control
+!Sample_characteristics_ch1 = treatment: V
+!Sample_treatment_protocol_ch1 = DE eSCs (0.5 mM 8-Br-cAMP, 96 h), as model of SE, were treated with E2 and P4 (E2P4) with/without (±) DHT; while non-DE eSCs, as model of PE, were subjected to E2 ± DHT (post-treatment). The 24-hour steroid hormone exposure was followed by RNA-seq.
+!Sample_growth_protocol_ch1 = Endometrial biopsy samples were collected at the proliferative phase (PE) of the menstrual cycle (cycle days [cd] 6–10) from Ctrl and from women with PCOS and eSCs were isolated as previously described Piltoen TT., Human Reproduction., 2015.
+!Sample_molecule_ch1 = total RNA
+!Sample_extract_protocol_ch1 = For decidualization (DE cells), eSCs from Ctrl (eSCCtrl, n=6) and PCOS (eSCPCOS, n=6) were treated with 8-Br-cAMP (0.5 mM, Sigma-Aldrich, Germany) for 96 h in a low serum medium (3), while pre-decidualised (non-DE cells) were cultured for 96 h using the 0.1% DMSO ( Sigma-Aldrich, Germany) as a vehicle only. Next, DE and non-DE eSCs were treated for 24 h with hormones: non-DE eSCs were post-treated with E2 (10 nM, Sigma-Aldrich, Germany) with or without (±) DHT (100 nM, Sigma-Aldrich, Germany); while the DE eSCs were post-treated with E2 (10 nM, Sigma-Aldrich, Germany) in combination with P4 (E2P4, 1 mM, Sigma-Aldrich, Germany) ± DHT.
+!Sample_extract_protocol_ch1 = Total RNA was extracted using RNeasy Mini Kits (Qiagen, Valencia, USA) and RNA sequencing (RNA-seq) libraries were prepared using the SMART-seq2 protocol with modification (Piselli S., 2014). Instead of single cells and original template-switching oligonucleotide (TSO), 12 ng of total RNA for cDNA synthesis and 1 μM TSO (biotin-AAGCAGTGGTATCAACGCAGAGTrGrGrG, Sigma, Schnelldorf, Germany) in combination with 200 nM anchored oligo-T primer (biotin-TTAAGCAGTGGTATCAACGCAGAGTCGACT30+V, where + is LNA nucleotide, Exiqon, Vedbaek, Denmark) was used. Ten cycles of PCR with Phusion High-Fidelity DNA Polymerase (Thermo Scientific, HL, Finland) compatible with the original protocol were used for pre-amplification. 5 µl of cDNA was applied to single-index library preparation using Nextera XT DNA Sample Preparation Kit (Illumina, FC-131-1024, San Diego, CA, USA). AMPure XP beads (Beckman Coulter, San Jose, CA, USA) were used for all clean-up steps. The quality of the resulting libraries was assessed with the 2200 TapeStation system (Agilent, Edinburg, UK). Libraries were pooled and sequenced on NextSeq500 using High Output Flow Cell v2.5 (single-end, 80 bp; Illumina).
+!Sample_description = 106_V
+!Sample_data_processing = Trimming adapters with Trimmomatic 0.38 with flags “SE CROP:57”
+!Sample_data_processing = Salmon 0.9.1 in “quant” mode with flags “-l A –gcBias”
+!Sample_data_processing = FastQC 0.11.5
+!Sample_data_processing = MultiQC 1.7
+!Sample_data_processing = Summarized to genes using R 3.5.1 packages tximport 1.10.1 (countsFromAbundance = “no”) and biomaRt 2.38.0 (for downloading Ensembl v95 annotation)
+!Sample_data_processing = Genome_build: GRCh38 Ensembl release 95 cdna – indexed with Salmon 0.9.1
+!Sample_data_processing = Supplementary_files_format_and_content: GEO_salmon_counts.tsv – TSV file of summarized Salmon pseudocounts per gene (marked with Ensembl Gene ID)
+!Sample_platform_id = GPL18573
+!Sample_contact_name = Alvin,,Meltsov
+!Sample_contact_institute = The Competence Centre on Health Technologies
+!Sample_contact_address = Teaduspargi tn 13
+!Sample_contact_city = Tartu
+!Sample_contact_state = Tartumaa
+!Sample_contact_zip/postal_code = 50411
+!Sample_contact_country = Estonia
+!Sample_instrument_model = NextSeq 500
+!Sample_library_selection = cDNA
+!Sample_library_source = transcriptomic
+!Sample_library_strategy = RNA-Seq
+!Sample_relation = BioSample: https://www.ncbi.nlm.nih.gov/biosample/SAMN18620322
+!Sample_relation = SRA: https://www.ncbi.nlm.nih.gov/sra?term=SRX10514915
+!Sample_supplementary_file_1 = NONE
+!Sample_series_id = GSE171507
+!Sample_data_row_count = 0

@@ -17,3 +17,9 @@ curl,tooling,endpoint and download checks,-
 HGNC complete set,external data service,Entrez/RefSeq -> approved symbol mapping for platforms without symbol columns,src/ubiomark/geo.py
 g:Profiler g:GOSt REST API,external API,GO/Reactome/KEGG enrichment of replicated genes,scripts/enrich_gprofiler.py
 PubMed (E-utilities esearch db=pubmed),external API,literature novelty co-mention counts,src/ubiomark/novelty.py
+Ensembl REST lookup,external API,verify HGNC symbol and stable Ensembl IDs for shortlisted genes,results/external/*.json
+UniProtKB REST search,external API,reviewed protein accession lookup for shortlisted genes,results/external/*.json
+Europe PMC REST search,external API,preeclampsia co-mentions and paper metadata; correct PubMed-only novelty assumption,results/external/*.json
+MyGene.info API,external API,cross-check symbol and Entrez identifiers,results/external/*.json
+Reactome ContentService,external API,retrieve mapped human pathways for reviewed UniProt accessions,results/external/*.json
+NCBI GEO supplementary FTP,external data service,fetch RNA-seq supplementary counts and FPKM matrices,scripts/process_supp_matrix.py

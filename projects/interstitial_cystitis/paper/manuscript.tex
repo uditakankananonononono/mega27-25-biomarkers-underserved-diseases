@@ -152,6 +152,17 @@ in GSE621 had been mislabeled as normal controls, and GSE11783's ten IC
 libraries nest in five patients; both corrections are applied before any
 re-analysis, and the consequences are reported as negatives.
 
+\subsection{Record roles and nesting}
+Manifest roles are explicit about dependence. GSE238208's 63 GSM are paired or
+comparator libraries from 38 people and are used as 25 patient pairs plus a
+13-sample block, never as 63 independent observations. GSE11783's ten IC
+libraries nest in five patients and enter the re-audit as such. GSE621
+contributes twelve patient samples and two IC-derived mock-APF samples whose
+historical ``normal control'' labels were wrong; those two records are kept
+with their corrected labels and the misclassification is reported as an audit
+finding. GSE57560's seven records are the previously seen sensitivity set.
+No record is counted twice, and no library is promoted to a person.
+
 \section{The corrected two-source replication is negative}
 After the audit corrections, discovery was restricted to GSE621 and GSE11783
 with mislabeled and nested samples handled, and sensitivity was recomputed in
@@ -217,6 +228,16 @@ redirect mode only; verbatim prompts and responses are preserved in
 \texttt{redirect/}, all numerical thresholds were recomputed locally, and one
 incorrect threshold suggested by the consult ($\geq21/25$) was corrected to
 $\geq18/25$ with the correction recorded in \texttt{redirect/round2\_meta.json}.
+
+\subsection{Module coverage and symbol nomenclature}
+Of the 200 committed M6 genes, 190 are present in the author FPKM matrix. The
+ten absent - H2AX, H2AZ1, H2AZ2, H2BC12, JPT1, KMT5A, KNL1, MAP3K20, NSD2,
+TENT4A - are older or alias symbol forms (for example H2AX vs H2AFX, JPT1 vs
+HN1, KNL1 vs CASC5) whose nomenclature does not match the matrix's symbols.
+No remapping was attempted after the lock: the committed gene list governs,
+coverage is reported, and the missing ten are treated as unmeasured rather than
+recovered by post-lock alias judgment. The same rule produced the other
+modules' coverage in Table~\ref{tab:modules}.
 
 \section{Gate 1: the lesion axis replicates across patients}
 Leave-one-patient-out over the 25 HIC patients, refitting every quantity per

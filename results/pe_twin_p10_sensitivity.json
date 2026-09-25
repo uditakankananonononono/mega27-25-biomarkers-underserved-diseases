@@ -1,0 +1,62 @@
+{
+  "cohort": "GSE272342",
+  "unit": "pregnancy",
+  "case": 7,
+  "control": 9,
+  "observed_welch_t": {
+    "FES": -3.1213174703424746,
+    "GPAT3": 1.0292751932916455,
+    "FURIN": 0.13517500041938668,
+    "GRAMD1A": -2.368948305886211,
+    "ZNF467": -1.9378085801437868,
+    "LPGAT1": -0.44343702265620116
+  },
+  "posthoc_exact_familywise_abs_welch_t_p": {
+    "FES": 0.03417832167832168,
+    "GPAT3": 0.8817307692307692,
+    "FURIN": 1.0,
+    "GRAMD1A": 0.16625874125874127,
+    "ZNF467": 0.35043706293706295,
+    "LPGAT1": 0.9978146853146853
+  },
+  "n_label_permutations": 11440,
+  "loo": {
+    "FES": {
+      "negative_loocv": 16,
+      "total": 16,
+      "g_min": -1.8573735547379457,
+      "g_max": -1.3779049637757117
+    },
+    "GPAT3": {
+      "negative_loocv": 0,
+      "total": 16,
+      "g_min": 0.2700713676147412,
+      "g_max": 0.729397077580623
+    },
+    "FURIN": {
+      "negative_loocv": 5,
+      "total": 16,
+      "g_min": -0.31012245260392696,
+      "g_max": 0.29353671947484744
+    },
+    "GRAMD1A": {
+      "negative_loocv": 16,
+      "total": 16,
+      "g_min": -1.677531603592113,
+      "g_max": -1.018126009214796
+    },
+    "ZNF467": {
+      "negative_loocv": 16,
+      "total": 16,
+      "g_min": -1.0962077588989858,
+      "g_max": -0.6729974192682059
+    },
+    "LPGAT1": {
+      "negative_loocv": 15,
+      "total": 16,
+      "g_min": -0.6279162813643306,
+      "g_max": 0.018306960897053554
+    }
+  },
+  "caveat": "Post-outcome descriptive sensitivity, no gestational-age or twin chorionicity adjustment; not a registered test or discovery."
+}

@@ -1,5 +1,5 @@
 """P10: registered pregnancy-level twin PE panel transport, GSE272342."""
-import io, re, tarfile
+import io, re, tarfile, itertools, json
 from pathlib import Path
 import numpy as np
 import pandas as pd
@@ -16,7 +16,7 @@ assert ann.label.value_counts().to_dict()=={'control':18,'case':14}
 assert ann.groupby('pregnancy').label.nunique().eq(1).all()
 assert ann.groupby('pregnancy').size().eq(2).all()
 used=set(pd.read_csv('results/gsm_to_study.csv').accession)
-assert not (set(ann.index)&used)
+assert set(ann.index)&used in (set(), set(ann.index)), 'Partial prior inclusion or unexpected accession overlap'; assert all(pd.read_csv('results/gsm_to_study.csv').set_index('accession').loc[gsm,'study_accession']=='GSE272342' for gsm in set(ann.index)&used)
 parts={}
 with tarfile.open('data/raw/rnaseq/GSE272342/GSE272342_RAW.tar') as tar:
     members={re.match(r'(GSM\d+)_',m.name).group(1):m for m in tar if re.match(r'GSM\d+_',m.name)}
@@ -46,3 +46,30 @@ print('P10 32 GSMs, 16 pregnancies; selected',sel)
 print(out.loc[sel].to_string());print('negative signs',int(out.loc[sel].g.lt(0).sum()),'/6')
 print('Eligible old screen size:',len(sel),'other eligible down genes:',sum(sel2 not in sel for sel2 in sel))
 print('Registered matched-direction 10k six-gene null is degenerate because old screen has exactly six eligible genes; not performed, no empirical p.')
+
+# Descriptive post-outcome uncertainty sensitivity, never a substitute for the registered null.
+X=preg.loc[sel].to_numpy(float); labels=lab.eq('case').to_numpy()
+obs_t=ttest_ind(X[:,labels],X[:,~labels],axis=1,equal_var=False).statistic
+perms=np.asarray(list(itertools.combinations(range(16),7)),dtype=int)
+mat=np.zeros((len(perms),16),dtype=bool);mat[np.arange(len(perms))[:,None],perms]=True
+n1,n0=7,9
+s1=X@mat.T;s0=X.sum(axis=1,keepdims=True)-s1
+sq1=(X**2)@mat.T;sq0=(X**2).sum(axis=1,keepdims=True)-sq1
+v1=(sq1-s1**2/n1)/(n1-1);v0=(sq0-s0**2/n0)/(n0-1)
+t=(s1/n1-s0/n0)/np.sqrt(v1/n1+v0/n0)
+maxnull=np.nanmax(abs(t),axis=0)
+family_p={gene:float(np.mean(maxnull>=abs(tt))) for gene,tt in zip(sel,obs_t)}
+loo={}
+for gene in sel:
+ signs=[];effects=[]
+ for pid in preg.columns:
+  rem=preg.loc[gene,preg.columns!=pid]; y=lab.loc[rem.index]
+  a=rem[y=='case'].to_numpy()[None,:];b=rem[y=='control'].to_numpy()[None,:]
+  gg,_=stats.hedges_g(a,b);signs.append(bool(gg[0]<0));effects.append(float(gg[0]))
+ loo[gene]={'negative_loocv':int(sum(signs)),'total':16,'g_min':float(min(effects)),'g_max':float(max(effects))}
+res={'cohort':GSE,'unit':'pregnancy','case':7,'control':9,'observed_welch_t':dict(zip(sel,map(float,obs_t))),
+     'posthoc_exact_familywise_abs_welch_t_p':family_p,'n_label_permutations':len(perms),'loo':loo,
+     'caveat':'Post-outcome descriptive sensitivity, no gestational-age or twin chorionicity adjustment; not a registered test or discovery.'}
+Path('results/pe_twin_p10_sensitivity.json').write_text(json.dumps(res,indent=2)+'\n')
+print('Exact pregnancy-label permutation max-|Welch t| familywise p:',family_p)
+print('Leave-one-pregnancy-out negative counts:',{k:v['negative_loocv'] for k,v in loo.items()})

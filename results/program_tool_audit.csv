@@ -1,0 +1,25 @@
+canonical_tool,raw_ledger_entries,counted,kind,evidence,notes
+NCBI GEO,1;2;3;4;24,1,external scientific database,"scripts/geo_discover.py; src/ubiomark/geo.py; scripts/process_supp_matrix.py","esearch/esummary/FTP are one GEO service, not separate tools"
+Open Targets Platform,5,1,external scientific database,scripts/fetch_opentargets.py,Disease-target evidence
+STRING,6,1,external scientific database,src/ubiomark/network.py,Human physical PPI
+PyTorch,7,1,analysis library,src/ubiomark/models.py,Neural models
+scikit-learn,8,1,analysis library,scripts/prioritize.py,Baselines and metrics
+NumPy,9,1,analysis library,src/ubiomark/stats.py,Numeric arrays
+SciPy,10,1,analysis library,src/ubiomark/stats.py,Sparse graphs and statistics
+pandas,11,1,analysis library,src/ubiomark/geo.py,Data tables
+pytest,12,0,testing infrastructure,tests/,Excluded per parent rule
+Git,13,0,infrastructure,.git,Excluded
+OpenSSH,14,0,infrastructure,-,Excluded
+curl,15,0,infrastructure,-,Excluded
+HGNC,16;26,1,external scientific database,"src/ubiomark/geo.py; results/external/*.json",Local download and REST same service
+g:Profiler,17,1,external scientific service,scripts/enrich_gprofiler.py,Enrichment
+NCBI PubMed,18,1,external scientific database,src/ubiomark/novelty.py,Distinct database from GEO
+Ensembl,19,1,external scientific database,results/external/*.json,Gene lookup
+UniProtKB,20,1,external scientific database,results/external/*.json,Protein lookup
+Europe PMC,21,1,external scientific database,results/external/*.json,Literature
+MyGene.info,22,1,external scientific service,results/external/*.json,Identifier cross-check
+Reactome,23,1,external scientific database,results/external/*.json,Pathways
+ChEMBL,25,1,external scientific database,results/external/*.json,Target lookup
+GTEx Portal,27,1,external scientific database,results/external/*.json,Reference gene lookup only
+Matplotlib,28,1,analysis library,scripts/figures.py,Real-data figures
+pdfLaTeX,29,0,document infrastructure,paper/manuscript.pdf,Excluded per parent rule

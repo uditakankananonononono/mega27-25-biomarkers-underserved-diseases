@@ -1,0 +1,49 @@
+{
+  "source_url": "https://bindingdb.org/rest/getLigandsByUniprots?uniprot=P07332&cutoff=1000&response=application%2Fjson",
+  "api_documentation": "https://www.bindingdb.org/rwd/bind/BindingDBRESTfulAPI.jsp",
+  "retrieved_ist": "2026-09-25 20:33",
+  "source_sha256": "468f68536b33b15820f2c1177ac8696d23e07e479b1781d9f47cd032a6fbc0e8",
+  "target_uniprot": "P07332",
+  "target_name": "Tyrosine-protein kinase Fes/Fps",
+  "n_binding_records": 53,
+  "n_unique_monomerids": 40,
+  "affinity_type_counts": {
+    "Ki": 1,
+    "IC50": 24,
+    "Kd": 27,
+    "EC50": 1
+  },
+  "assay_examples": [
+    {
+      "monomerid": "50341519",
+      "affinity_type": "Ki",
+      "affinity": ">1000",
+      "doi": "10.1021/jm101499u"
+    },
+    {
+      "monomerid": "50018830",
+      "affinity_type": "IC50",
+      "affinity": "6.0",
+      "doi": "10.1021/jm500261q"
+    },
+    {
+      "monomerid": "2579",
+      "affinity_type": "IC50",
+      "affinity": "8.1",
+      "doi": "10.1016/j.bmc.2016.05.057"
+    },
+    {
+      "monomerid": "4552",
+      "affinity_type": "IC50",
+      "affinity": "358",
+      "doi": "10.1038/leu.2008.334"
+    },
+    {
+      "monomerid": "50242740",
+      "affinity_type": "IC50",
+      "affinity": "1",
+      "doi": "10.1073/pnas.0707498104"
+    }
+  ],
+  "interpretation": "Biochemical affinity against FES is target tractability context only; IC50/Kd/Ki are heterogeneous and one cutoff response includes censored >1000, so no potency ranking, safety, PE efficacy or disease association is inferred."
+}

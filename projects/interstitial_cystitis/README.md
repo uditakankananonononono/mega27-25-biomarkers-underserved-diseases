@@ -2,7 +2,7 @@
 
 Status: project scaffold and gate audit only, not a finished paper or a positive benchmark. The parent repository is shared core; this directory must hold a disease-specific protocol, accession and external-service evidence ledger, reproducible results and a 50-page substantive paper before its gates can be claimed.
 
-Current disease-tagged manifest records: 25 = 4 GSE studies + 20 nested GSM samples + 1 other. These are record units, not independent datasets or patients. The shared 40-service and 49-page PDF do not transfer as automatic per-project passes. Benchmark/discovery endpoint is open.
+Current disease-tagged manifest records: 41 = 4 GSE studies + 36 nested GSM samples + 1 other. These are record units, not independent datasets or patients. The shared 40-service and 49-page PDF do not transfer as automatic per-project passes. Benchmark/discovery endpoint is open.
 
 Disease-specific documents and source logs are not yet split from shared core; use the shared source code and result filenames by disease as leads, then verify original record attribution before copying.
 
@@ -25,3 +25,7 @@ The post-audit GSE621 (six IC vs six normal controls) and GSE11783 (five IC vs s
 ## Used seven-library validation source crosswalk
 
 All seven previously analyzed [GSE57560](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE57560) GSMs were individually checked against exact source title, disease state, bladder-capacity phenotype, platform and matrix column: four low-capacity IC and three controls. They are now included as nested used records, bringing the IC tag count from 18 to 25 (still 95 below 120). Nine other GSE57560 GSMs were not in the historical contrast and are not counted. This is a seven-library already-seen validation, not seven new studies or fresh external support for the corrected top 50. `sources/GSE57560_used_sample_crosswalk.csv` retains primary URLs and hashes.
+
+## Individual source crosswalk for paired bladder biopsies
+
+All sixteen used [GSE11783](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE11783) GSMs now have individually fetched source title, patient token, disease state, GPL570 platform and expression-column checks in `sources/GSE11783_used_sample_crosswalk.csv`. There are only eleven people: ten IC biopsies in five paired patients, plus six healthy single-biopsy controls. The sixteen nested **records** move the IC inventory to 41, still 79 short, but cannot be counted as sixteen independent patients or studies. This provenance supports the donor-averaged sensitivity above, not its scientific endpoint.

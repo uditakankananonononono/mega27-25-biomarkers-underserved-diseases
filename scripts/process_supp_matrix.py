@@ -65,7 +65,7 @@ def load(gse):
     if gse == 'GSE204835':
         h = pd.read_csv(geo.HGNC_PATH, sep='\t', dtype=str, usecols=['symbol','entrez_id']).dropna()
         mapping = dict(zip(h.entrez_id, h.symbol)); x[p['key']] = x[p['key']].astype(str).map(mapping)
-    if p['key'] == 'ensembl_id':
+    if gse == 'GSE306864':
         h = pd.read_csv(geo.HGNC_PATH, sep='\t', dtype=str, usecols=['symbol','ensembl_gene_id']).dropna()
         mapping = dict(zip(h.ensembl_gene_id, h.symbol))
         x[p['key']] = x[p['key']].astype(str).str.split('.').str[0].map(mapping)

@@ -28,3 +28,8 @@ IntAct,-,1,external scientific database,results/external/secondary_annotations.j
 InterPro,-,1,external scientific database,results/external/secondary_annotations.json,Protein domain annotations
 OpenAlex,-,1,external scholarly database,results/external/secondary_annotations.json,PCOS co-mention literature metadata
 EMBL-EBI OLS,-,1,external ontology service,results/external/secondary_annotations.json,MONDO PCOS exact identifier validation
+AlphaFold Protein Structure Database,-,1,external scientific database,results/external/context_multimodal.json,Structure prediction metadata for ST3GAL2 and SDC3; not a disease validation
+EMBL-EBI BioStudies,-,0,external scientific database,results/external/context_multimodal.json,Queried unrelated study; not counted until actually used
+PRIDE Archive,-,0,external scientific database,results/external/context_multimodal.json,Keyword endpoint returned unrelated studies; not counted
+MetaboLights,-,0,external scientific database,results/external/context_multimodal.json,Queried unrelated MTBLS1; not counted
+CZ CellxGene,-,0,external scientific database,results/external/context_multimodal.json,Indexed datasets but no relevant dataset used; not counted

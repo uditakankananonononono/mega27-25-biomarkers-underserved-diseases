@@ -6,3 +6,5 @@
 4. Published comparator is HP1BP3/TTC9B, with prior prospective validation. The present scans did not show a new significant locus or comparative clinical performance; no claim of novelty, paper completion or numeric gate completion is justified. The ChatGPT three-mode judge/redirect/features loop remains pending; no such run is claimed here. Feature suggestions must be impact-filtered before use.
 
 Evidence: `SOURCE_AUDIT_STATUS.md`, per-record CSVs and source/matrix hashes in `sources/`, `PUBLISHED_COMPARATOR.md`, and `validate_source_audit.py`. URLs and caveats in those records are part of this decision, not optional footnotes.
+
+Resource provenance: `EXTERNAL_RESOURCE_LEDGER.csv` records only two genuinely used external resources for this PPD-specific audit (NCBI GEO and NCBI PubMed). FTP mirrors, individual GSM accession pages and local NumPy/SciPy are not separate external services. This is not a claim that the 40-service gate is near completion; additional independent services must be genuinely used on this lane, not copied from another disease's ledger.

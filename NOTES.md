@@ -169,3 +169,6 @@ Program gate is record-level: individually fetched/verified/used GSM accessions 
 
 ## State 12:46 confounding check
 - GEO metadata P12 PLAC: six controls all no IUGR and 38 to 41+2-week deliveries; six of seven PE IUGR yes and 27+1 to 35+5 weeks, seventh malformed/missing at positional fields. P13 GSE186257 SGA 25/26 severe PE versus 8/18 controls. This heightens PE specificity confounding; no adjustment, no discovery. Source https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE190971 and https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE186257 . Manuscript text amended; rebuild PDF before any updated PDF delivery.
+
+## State 12:48 post-outcome SGA sensitivity
+- GSE186257 SGA-only 25 severe PE vs 8 controls: FES g=-.629, nominal Welch p=.0718; non-SGA PE n=1 untestable. Male 12/12 -.857 p=.0440 and female 14/6 -.530 p=.227, both descriptive, not independent cohorts or causal adjustment. Source https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE186257 . GitHub deploy key authenticates but repository ls-remote says not found; last remote c15e880. Use private Drive full-history backup until access restored.

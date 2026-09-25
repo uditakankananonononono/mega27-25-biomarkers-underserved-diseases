@@ -1,0 +1,13 @@
+{
+  "round": 3,
+  "mode": "judge weaknesses (advisory, not verdict)",
+  "date_ist": "2026-09-26T05:26:52.878707",
+  "conversation_url": "https://chatgpt.com/c/6ab6c5ed-963c-83e8-ab63-2c132d9645a0",
+  "account": "uditakankana@gmail.com (Free tier), config-c read lease L-w4mavmopivmcprkgyyxirxkwwy",
+  "packet": "full substantive draft text of projects/interstitial_cystitis/paper/manuscript.pdf (40 pages at time of consult, HEAD 9fcb862f); appendices (fold tables, gene lists, regulator list, service ledger, annotation digest) omitted from paste, noted as repo-resident",
+  "delivery": "6 sequential messages (3 full-text chunks + plan-change chunk + final content chunk + question)",
+  "prompt_sha256": "7a067db86009566a770d787d407b56dcd4c6d3d3663a1843c85ec84aabcc229c",
+  "question_sha256": "73d56234e495c0d5cba72128dfc7c22c57e8f9a37b08e687bcff0e51ea142e7a",
+  "answer_sha256": "bc99e502f1c18a9a14a976cdcbba85169e3449e76be93c32f86b84ce8e954edb",
+  "answer_chars": 13261
+}

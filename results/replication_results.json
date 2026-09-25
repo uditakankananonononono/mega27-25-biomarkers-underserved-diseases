@@ -1,0 +1,222 @@
+{
+ "chagas": {
+  "status": "no validation cohort"
+ },
+ "endometriosis": {
+  "validation_tags": [
+   "GSE58178",
+   "GSE73622",
+   "GSE120103",
+   "GSE248593"
+  ],
+  "top50": {
+   "n": 47,
+   "T1_concordance": 0.6382978723404256,
+   "p_T1": 0.1401859814018598,
+   "null_T1_mean": 0.5486340425531915,
+   "T2_replicated": 2,
+   "p_T2": 0.6903309669033096,
+   "null_T2_mean": 2.3631,
+   "replicated_genes": [
+    "FLJ11710",
+    "COL11A2"
+   ]
+  }
+ },
+ "fibromyalgia": {
+  "status": "no validation cohort"
+ },
+ "interstitial_cystitis": {
+  "validation_tags": [
+   "GSE57560"
+  ],
+  "top50": {
+   "n": 40,
+   "T1_concordance": 1.0,
+   "p_T1": 9.999000099990002e-05,
+   "null_T1_mean": 0.71715,
+   "T2_replicated": 22,
+   "p_T2": 9.999000099990002e-05,
+   "null_T2_mean": 2.3648,
+   "replicated_genes": [
+    "CSF2RB",
+    "HOXD1",
+    "CR1",
+    "P2RY8",
+    "ST6GAL1",
+    "RELT",
+    "SNX10",
+    "CHST11",
+    "DOK3",
+    "JAK3",
+    "CHST15",
+    "KLHL6",
+    "CPNE5",
+    "LAMP3",
+    "SNX20",
+    "LY96",
+    "WIPF1",
+    "CR1L",
+    "FABP5",
+    "MFAP3L",
+    "PLXNC1",
+    "HHEX"
+   ]
+  }
+ },
+ "leishmaniasis": {
+  "validation_tags": [
+   "GSE125992",
+   "GSE125993"
+  ],
+  "top50": {
+   "n": 42,
+   "T1_concordance": 0.9761904761904762,
+   "p_T1": 9.999000099990002e-05,
+   "null_T1_mean": 0.5806976190476191,
+   "T2_replicated": 33,
+   "p_T2": 9.999000099990002e-05,
+   "null_T2_mean": 8.2289,
+   "replicated_genes": [
+    "EZH2",
+    "KNL1",
+    "BPGM",
+    "CHEK1",
+    "PAQR7",
+    "CACNA2D2",
+    "GABPB1",
+    "BCL2L11",
+    "GUCD1",
+    "PNP",
+    "FANCI",
+    "C14orf93",
+    "KCTD15",
+    "PYROXD2",
+    "UBE2F",
+    "SLC7A5",
+    "GLCE",
+    "TOP2A",
+    "FAM46C",
+    "SASH1",
+    "ALS2",
+    "MCM6",
+    "SUMF1",
+    "POLE2",
+    "SORBS3",
+    "PIM1",
+    "CENPE",
+    "RSC1A1",
+    "STK17A",
+    "DUSP22",
+    "RGCC",
+    "CCDC149",
+    "SSH3"
+   ]
+  }
+ },
+ "me_cfs": {
+  "validation_tags": [
+   "GSE16059"
+  ],
+  "top50": {
+   "n": 50,
+   "T1_concordance": 0.3,
+   "p_T1": 0.9849015098490151,
+   "null_T1_mean": 0.43875600000000003,
+   "T2_replicated": 0,
+   "p_T2": 1.0,
+   "null_T2_mean": 0.5624,
+   "replicated_genes": []
+  }
+ },
+ "pcos": {
+  "validation_tags": [
+   "GSE80432",
+   "GSE106724",
+   "GSE124226",
+   "GSE137684"
+  ],
+  "top50": {
+   "n": 50,
+   "T1_concordance": 0.72,
+   "p_T1": 0.0058994100589941,
+   "null_T1_mean": 0.537226,
+   "T2_replicated": 9,
+   "p_T2": 0.00019998000199980003,
+   "null_T2_mean": 2.1414,
+   "replicated_genes": [
+    "HSPA1A",
+    "CHD4",
+    "ZNFX1",
+    "LMO4",
+    "GRB2",
+    "SNRK",
+    "APOA1",
+    "H2AFY",
+    "ANXA11"
+   ]
+  }
+ },
+ "postpartum_depression": {
+  "validation_tags": [
+   "GSE290313-PP"
+  ],
+  "top50": {
+   "n": 40,
+   "T1_concordance": 0.6,
+   "p_T1": 0.12208779122087791,
+   "null_T1_mean": 0.4946725,
+   "T2_replicated": 2,
+   "p_T2": 0.38976102389761025,
+   "null_T2_mean": 1.3329,
+   "replicated_genes": [
+    "LINC01089",
+    "PICALM"
+   ]
+  }
+ },
+ "preeclampsia": {
+  "validation_tags": [
+   "GSE94643",
+   "GSE98224-GPL6244",
+   "GSE147776",
+   "GSE149437",
+   "GSE149440",
+   "GSE186819",
+   "GSE190639"
+  ],
+  "top50": {
+   "n": 50,
+   "T1_concordance": 0.74,
+   "p_T1": 0.00039996000399960006,
+   "null_T1_mean": 0.49017200000000005,
+   "T2_replicated": 7,
+   "p_T2": 0.025897410258974102,
+   "null_T2_mean": 2.9217,
+   "replicated_genes": [
+    "IGSF6",
+    "CYBB",
+    "MKNK1",
+    "MCTP1",
+    "APMAP",
+    "PIK3CG",
+    "F13A1"
+   ]
+  },
+  "novel_candidates": {
+   "n": 30,
+   "T1_concordance": 0.7666666666666667,
+   "p_T1": 0.0006999300069993001,
+   "null_T1_mean": 0.4905166666666666,
+   "T2_replicated": 4,
+   "p_T2": 0.09049095090490951,
+   "null_T2_mean": 1.7375,
+   "replicated_genes": [
+    "GNB1",
+    "SYK",
+    "ST3GAL2",
+    "CSNK1E"
+   ]
+  }
+ }
+}

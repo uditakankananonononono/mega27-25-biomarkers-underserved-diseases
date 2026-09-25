@@ -2,7 +2,7 @@
 
 Status: project scaffold and gate audit only, not a finished paper or a positive benchmark. The parent repository is shared core; this directory must hold a disease-specific protocol, accession and external-service evidence ledger, reproducible results and a 50-page substantive paper before its gates can be claimed.
 
-Current disease-tagged manifest records: 41 = 4 GSE studies + 36 nested GSM samples + 1 other. These are record units, not independent datasets or patients. The shared 40-service and 49-page PDF do not transfer as automatic per-project passes. Benchmark/discovery endpoint is open.
+Current disease-tagged manifest records: 55 = 4 GSE studies + 50 nested GSM samples + 1 other. These are record units, not independent datasets or patients. The shared 40-service and 49-page PDF do not transfer as automatic per-project passes. Benchmark/discovery endpoint is open.
 
 Disease-specific documents and source logs are not yet split from shared core; use the shared source code and result filenames by disease as leads, then verify original record attribution before copying.
 
@@ -29,3 +29,7 @@ All seven previously analyzed [GSE57560](https://www.ncbi.nlm.nih.gov/geo/query/
 ## Individual source crosswalk for paired bladder biopsies
 
 All sixteen used [GSE11783](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE11783) GSMs now have individually fetched source title, patient token, disease state, GPL570 platform and expression-column checks in `sources/GSE11783_used_sample_crosswalk.csv`. There are only eleven people: ten IC biopsies in five paired patients, plus six healthy single-biopsy controls. The sixteen nested **records** move the IC inventory to 41, still 79 short, but cannot be counted as sixteen independent patients or studies. This provenance supports the donor-averaged sensitivity above, not its scientific endpoint.
+
+## Historically used GSE621 record reconciliation
+
+The old analysis used fourteen [GSE621](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE621) GSM columns, individually checked against source titles, platform and corrected parser output. All fourteen are added as **historically used accession records**, bringing IC from 41 to 55 records, but two of them, GSM4869 and GSM4872, were IC-derived mock-APF samples incorrectly assigned to the old normal-control arm. They are counted as used provenance, **not** as valid clinical control data; the six-versus-six source-strict sensitivity excludes them. `sources/GSE621_historically_used_sample_crosswalk.csv` distinguishes old labels from valid units. Fourteen remaining source GSMs were not in the historical contrast and are not counted. The 120-record floor is still 65 away, and no scientific gate passes.

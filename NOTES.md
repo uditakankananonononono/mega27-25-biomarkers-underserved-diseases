@@ -115,3 +115,6 @@ Program gate is record-level: individually fetched/verified/used GSM accessions 
 
 ## State 11:57
 - NetworkX physical-STRING induced subgraphs: 35/50 top IC genes on graph but only one physical edge; all 20 PCOS genes on graph, zero edges. Degree-unmatched random comparison does not show enrichment and cannot prove statistical independence; manuscript removes unsupported implicit module claim. Seaborn graph renders actual matched-null draws for P7 all-PBS and P8 PCOS; those 10k draws are now committed separately. Tool ledger 34/40 genuinely used canonical entries. Paper exact-TNR 18 rendered pages, no overfull, page 14 chart visually inspected and legible. Still below 20 substantive pages; no discovery/benchmark break.
+
+## State 11:59
+- Paired GCN-vs-RWR internal gene-recovery folds across nine diseases and AUROC/AUPRC saved in `results/gene_fold_uncertainty.csv`; preeclampsia GCN modestly better within-project on both metrics, PPD and PCOS favor RWR; same label graph and repeated folds mean no published benchmark break. Paper adds measured comparison and limitations. Exact-TNR draft remains 18 pages, no overfull/undefined references. Tool count still 34/40; accession count 132/120. A BioStudies accession guess for GSE293353 returned 404 and is not counted or cited.

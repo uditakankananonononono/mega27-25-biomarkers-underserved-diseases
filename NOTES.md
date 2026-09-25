@@ -96,3 +96,6 @@ Program gate is record-level: individually fetched/verified/used GSM accessions 
 
 ## State 11:43
 - MetaboLights MTBLS12367 is a relevant human PCOS granulosa-cell LC-MS context study (glutamine/SLC1A5); exact API study metadata captured, not expression-panel replication. This corrects an earlier irrelevant MTBLS1 probe and brings the curated genuine science tool ledger to 30/40. Source https://www.ebi.ac.uk/metabolights/ws/studies/MTBLS12367 . Exact-TNR paper still 16 pages; no overfull/undefined references, still no defensible discovery or published benchmark break.
+
+## State 11:45
+- CellxGene dataset 6963899a (human normal trophoblast, decidua/placenta; secondary atlas, 75,042 cells) checked as tissue-composition context, not a PE case/control validation: https://cellxgene.cziscience.com/e/ecf2e08e-2032-4a9e-b466-b65b395f4a02.cxg/ . Captured exact index metadata. Tool ledger now 31/40. Exact-TNR paper still 16 pages with no overflow, not yet the required substantive 20 or a discovery.

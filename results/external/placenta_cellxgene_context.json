@@ -1,0 +1,41 @@
+{
+  "retrieved_at_utc": "2026-09-25T06:14:39.901581+00:00",
+  "index_url": "https://api.cellxgene.cziscience.com/dp/v1/datasets/index",
+  "dataset": {
+    "id": "6963899a-879d-4b63-abd5-b11ddb7f8bef",
+    "name": "All donors trophoblasts",
+    "cell_count": 75042,
+    "disease": [
+      {
+        "label": "normal",
+        "ontology_term_id": "PATO:0000461"
+      }
+    ],
+    "tissue": [
+      {
+        "label": "decidua",
+        "ontology_term_id": "UBERON:0002450",
+        "tissue_type": "tissue"
+      },
+      {
+        "label": "decidua basalis",
+        "ontology_term_id": "UBERON:0000453",
+        "tissue_type": "tissue"
+      },
+      {
+        "label": "placenta",
+        "ontology_term_id": "UBERON:0001987",
+        "tissue_type": "tissue"
+      }
+    ],
+    "organism": [
+      {
+        "label": "Homo sapiens",
+        "ontology_term_id": "NCBITaxon:9606"
+      }
+    ],
+    "is_primary_data": "SECONDARY",
+    "collection_id": "e2c257e7-6f79-487c-b81c-39451cd4ab3c",
+    "explorer_url": "https://cellxgene.cziscience.com/e/ecf2e08e-2032-4a9e-b466-b65b395f4a02.cxg/"
+  }
+}

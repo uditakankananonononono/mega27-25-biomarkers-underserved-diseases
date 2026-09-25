@@ -46,7 +46,7 @@ def load(gse):
     else:
         cols = {v: k for k, v in ann.Sample_title.items()}
         sample = {c: cols[c] for c in x if c in cols}
-    assert len(sample) == sum(lab.notna()), (gse, len(sample), int(sum(lab.notna())))
+    assert set(sample.values()) == set(ann.index), (gse, len(sample), len(ann))
     assert len(set(sample.values())) == len(sample)
     x = x[[p['key'], *sample]].rename(columns=sample)
     if p['key'] == 'entrez_id':

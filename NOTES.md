@@ -44,3 +44,6 @@ Pipeline order:
 - External literature comparison: KG-Bench 0.908 AUC uses a DIFFERENT drug-disease temporal label/split; cannot claim published-SOTA break. Local `/tmp/deep-research/mega27-biomarkers/` notes; key source https://pmc.ncbi.nlm.nih.gov/articles/PMC13171177/.
 - GitHub fresh clone still denied publickey. Latest Drive checkpoint covers 659d1d1; new commits since require new bundle/upload immediately. Drive folder https://drive.google.com/drive/folders/1qZzMzWqYeH_c7EvE87LAaxcKvEHN1iIi?authuser=uditakankana%40gmail.com.
 - Tests: 14 passed, one tiny-group variance warning; re-run after changes. Next: update bench, add genuine accessions, seek verified named discovery and published comparability; expand paper substantively, not by page padding; deliver final paper/results and push only when all gates clear.
+
+## State 11:05 external-tool correction
+The broad results/tools_used.csv is NOT a 40-external-tools ledger. It counts local libraries and project infrastructure and splits NCBI endpoints. Strict distinct scientific external service-family audit in results/external_service_audit.csv is 12/40 as of 11:05 (Google Drive/GitHub delivery excluded). Stop reporting broad 29 as X/40. Add genuinely used services with committed API responses and scientific purpose; no API calls merely to inflate count. Parent was promptly notified of correction.

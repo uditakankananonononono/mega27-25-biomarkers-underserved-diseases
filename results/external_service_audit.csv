@@ -1,0 +1,16 @@
+service,used,evidence,strict_count,notes
+NCBI GEO/E-utilities/PubMed,yes,"scripts/geo_discover.py; src/ubiomark/geo.py; src/ubiomark/novelty.py; scripts/process_supp_matrix.py",1,"One NCBI family; search and FTP endpoints not counted repeatedly"
+Open Targets Platform,yes,scripts/fetch_opentargets.py,1,Disease-target associations
+STRING,yes,src/ubiomark/network.py,1,Protein physical interaction network
+HGNC,yes,"src/ubiomark/geo.py; results/external/*.json",1,Identifier mapping local download and REST jointly
+G:Profiler,yes,scripts/enrich_gprofiler.py,1,Functional enrichment
+Ensembl REST,yes,results/external/*.json,1,Gene lookup
+UniProtKB,yes,results/external/*.json,1,Reviewed protein lookup
+Europe PMC,yes,results/external/*.json,1,Literature search
+MyGene.info,yes,results/external/*.json,1,Symbol lookup
+Reactome,yes,results/external/*.json,1,Pathway lookup
+ChEMBL,yes,results/external/*.json,1,Target lookup
+GTEx Portal,yes,results/external/*.json,1,Reference gene lookup only
+Google Drive,yes,Drive checkpoint links in NOTES.md,0,Delivery storage excluded from strict science-tool count
+GitHub,yes,Repository metadata via connected integration,0,Repository service excluded from strict science-tool count
+Local libraries and tooling,yes,results/tools_used.csv,0,PyTorch NumPy pandas SciPy sklearn pytest Matplotlib Git curl SSH pdfLaTeX excluded as nonexternal scientific services

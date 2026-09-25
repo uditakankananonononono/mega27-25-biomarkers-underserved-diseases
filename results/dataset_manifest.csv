@@ -42,6 +42,7 @@ GSE148241,GEO series and individual raw-count files,preeclampsia:P21 severe EOSP
 GSE149440,GEO series,preeclampsia:validation
 GSE155489,GEO series supplementary matrix,pcos:prospective_followup (cumulus granulosa)
 GSE16059,GEO series,me_cfs:validation
+GSE177049,GEO series and FPKM gene-expression workbook,preeclampsia:P22 five EOPE versus five preterm-birth placenta
 GSE186257,GEO series,preeclampsia:P13 placental 44 people
 GSE186819,GEO series,preeclampsia:validation
 GSE190639,GEO series,preeclampsia:validation
@@ -191,6 +192,16 @@ GSM4705199,GEO sample full-text record,pcos:GSE155489:label_identity_audit
 GSM4705200,GEO sample full-text record,pcos:GSE155489:label_identity_audit
 GSM4705203,GEO sample full-text record,pcos:GSE155489:label_identity_audit
 GSM4705204,GEO sample full-text record,pcos:GSE155489:label_identity_audit
+GSM5373514,GEO RNA-seq sample and FPKM workbook,preeclampsia:GSE177049:P22 analyzed placenta
+GSM5373516,GEO RNA-seq sample and FPKM workbook,preeclampsia:GSE177049:P22 analyzed placenta
+GSM5373518,GEO RNA-seq sample and FPKM workbook,preeclampsia:GSE177049:P22 analyzed placenta
+GSM5373520,GEO RNA-seq sample and FPKM workbook,preeclampsia:GSE177049:P22 analyzed placenta
+GSM5373522,GEO RNA-seq sample and FPKM workbook,preeclampsia:GSE177049:P22 analyzed placenta
+GSM5373524,GEO RNA-seq sample and FPKM workbook,preeclampsia:GSE177049:P22 analyzed placenta
+GSM5373526,GEO RNA-seq sample and FPKM workbook,preeclampsia:GSE177049:P22 analyzed placenta
+GSM5373528,GEO RNA-seq sample and FPKM workbook,preeclampsia:GSE177049:P22 analyzed placenta
+GSM5373530,GEO RNA-seq sample and FPKM workbook,preeclampsia:GSE177049:P22 analyzed placenta
+GSM5373532,GEO RNA-seq sample and FPKM workbook,preeclampsia:GSE177049:P22 analyzed placenta
 GSM5641743,GEO GSM mapped count/normalized matrix record,preeclampsia:P13 placental 44 people; nested in GSE186257
 GSM5641744,GEO GSM mapped count/normalized matrix record,preeclampsia:P13 placental 44 people; nested in GSE186257
 GSM5641745,GEO GSM mapped count/normalized matrix record,preeclampsia:P13 placental 44 people; nested in GSE186257

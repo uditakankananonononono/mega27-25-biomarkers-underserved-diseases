@@ -1,0 +1,92 @@
+{
+  "source_url": "https://www.wikipathways.org/json/findPathwaysByText.json",
+  "retrieved_ist": "2026-09-25 20:24",
+  "source_sha256": "6f31fc1aa5b13f0781d423013a16da78d7e3f4fe508a0b37204e45f3fe73bb52",
+  "n_pathways_all": 2218,
+  "n_human_pathways": 1131,
+  "candidate_set": "P9/P44 fixed six PE DOWN genes; pathway membership does not validate expression direction",
+  "exact_symbol_matches": {
+    "FES": [
+      {
+        "id": "WP2203",
+        "name": "Thymic stromal lymphopoietin (TSLP) signaling",
+        "url": "https://www.wikipathways.org/instance/WP2203",
+        "revision": "2025-03-08"
+      },
+      {
+        "id": "WP2332",
+        "name": "IL11 signaling",
+        "url": "https://www.wikipathways.org/instance/WP2332",
+        "revision": "2025-12-01"
+      },
+      {
+        "id": "WP395",
+        "name": "IL4 signaling",
+        "url": "https://www.wikipathways.org/instance/WP395",
+        "revision": "2025-12-01"
+      },
+      {
+        "id": "WP5289",
+        "name": "Axon guidance",
+        "url": "https://www.wikipathways.org/instance/WP5289",
+        "revision": "2025-07-28"
+      }
+    ],
+    "GPAT3": [
+      {
+        "id": "WP2456",
+        "name": "HIF1A and PPARG in hypertrophic cardiomyopathy",
+        "url": "https://www.wikipathways.org/instance/WP2456",
+        "revision": "2025-09-28"
+      },
+      {
+        "id": "WP2533",
+        "name": "Glycerophospholipid biosynthetic pathway",
+        "url": "https://www.wikipathways.org/instance/WP2533",
+        "revision": "2025-06-30"
+      },
+      {
+        "id": "WP5101",
+        "name": "Congenital generalized lipodystrophy",
+        "url": "https://www.wikipathways.org/instance/WP5101",
+        "revision": "2025-11-04"
+      }
+    ],
+    "FURIN": [
+      {
+        "id": "WP4846",
+        "name": "SARS-CoV-2 and COVID-19 pathway",
+        "url": "https://www.wikipathways.org/instance/WP4846",
+        "revision": "2025-08-06"
+      },
+      {
+        "id": "WP5065",
+        "name": "SARS-CoV-2 altering angiogenesis via NRP1",
+        "url": "https://www.wikipathways.org/instance/WP5065",
+        "revision": "2021-06-03"
+      },
+      {
+        "id": "WP5362",
+        "name": "TAR syndrome",
+        "url": "https://www.wikipathways.org/instance/WP5362",
+        "revision": "2024-07-25"
+      },
+      {
+        "id": "WP5485",
+        "name": "Post-COVID neuroinflammation",
+        "url": "https://www.wikipathways.org/instance/WP5485",
+        "revision": "2024-07-21"
+      }
+    ],
+    "GRAMD1A": [],
+    "ZNF467": [],
+    "LPGAT1": [
+      {
+        "id": "WP2877",
+        "name": "Vitamin D receptor pathway",
+        "url": "https://www.wikipathways.org/instance/WP2877",
+        "revision": "2025-03-08"
+      }
+    ]
+  }
+}

@@ -53,3 +53,15 @@ Live re-verification of 12 randomly sampled GSMs (seed 26, ~10% of 124):
 Second independent live re-verification sample (seed 927, 12 GSMs, ~10%):
 12/12 refetched bytes match recorded sha256, 0 mismatches. Cumulative live
 re-verification: 24/24 across two independent samples.
+
+## COUNT CORRECTION (2026-09-26, live re-verification under standing verification rules)
+The "227 tagged records = 16 GSE + 210 GSM + 1 other" figure DOUBLE-COUNTS
+GSE313775 (66 GSM + 1 GSE), which was already tagged on main by the P34
+circulating-Th1 work. Exact-match proof: main's 86 prior endometriosis GSMs =
+this branch's entire GSE313775 crosswalk (66) + 20 others (P17 GSE212787 13 +
+P40 GSE153739 7); comm overlap 66/66. GSE313775 was re-acquired without being
+on the previously-tagged exclusion list.
+CORRECTED unique lane total: 160 tagged records = 15 GSE + 144 GSM + 1 other
+(prior 101 + GSE135485: 1 GSE + 58 GSM). 120-record floor: still PASS,
+margin 40. Root cause same as the chagas GSE244827 correction: P-item series
+from main's dataset_manifest were missing from the exclusion set.

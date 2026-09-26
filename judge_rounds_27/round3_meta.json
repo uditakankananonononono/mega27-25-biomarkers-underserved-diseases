@@ -8,7 +8,13 @@
   "response_file": "round3_response.txt",
   "conversation_url": "https://chatgpt.com/c/6ab779b0-70f8-83e8-abeb-eeb07b037f57",
   "receipt_verification": "PASS - 12 quoted strings present in pasted document text and absent from prompt head, e.g. 'This is a simple two-hop graph heuristic, not a graph neural network', 'does not prove causal disease interactions'",
-  "questions_asked": ["weaknesses classified fixable/rewrite/inherent", "ISEF standing", "improvement ordered by impact"],
+  "questions_asked": [
+    "weaknesses classified fixable/rewrite/inherent",
+    "ISEF standing",
+    "improvement ordered by impact"
+  ],
   "verdict": "YES - honestly represents the work and its limits; main weakness is that current evidence supports a rigorous audit framework rather than a validated biological prediction system",
-  "timestamp_ist": "2026-09-26T13:22"
+  "timestamp_ist": "2026-09-26T13:22",
+  "record_introduced_in_commit": "bfdb69687ce891846c5e3306845dfd98e1cc48c0",
+  "provenance_note": "An interim chat report to parent carried a literal PLACEHOLDER_HASH token in its commit line (script ordering bug); no committed file ever contained the placeholder. Corrected report with the real hash was sent 13:22 IST. This amendment binds the round-3 record to its introducing commit."
 }

@@ -1,0 +1,526 @@
+{
+ "status": "POST-HOC DESCRIPTIVE - not a gated test; produced for judge-loop round-1 fixes 2026-09-26",
+ "p53_disease_x_batch": {
+  "2023.08.25": {
+   "HV": 30,
+   "MECFS": 30
+  },
+  "2024.03.05": {
+   "HV": 27,
+   "MECFS": 35
+  },
+  "2024.06.28": {
+   "HV": 18,
+   "MECFS": 28
+  }
+ },
+ "p53_disease_x_site": {
+  "Ithaca, NY": {
+   "HV": 57,
+   "MECFS": 51
+  },
+  "Los Angeles, CA": {
+   "HV": 5,
+   "MECFS": 23
+  },
+  "New York City, NY": {
+   "HV": 13,
+   "MECFS": 19
+  }
+ },
+ "p53_batch_x_site": {
+  "Ithaca, NY": {
+   "2023.08.25": 30,
+   "2024.03.05": 32,
+   "2024.06.28": 46
+  },
+  "Los Angeles, CA": {
+   "2023.08.25": 15,
+   "2024.03.05": 13,
+   "2024.06.28": 0
+  },
+  "New York City, NY": {
+   "2023.08.25": 15,
+   "2024.03.05": 17,
+   "2024.06.28": 0
+  }
+ },
+ "p53_disease_x_sex": {
+  "female": {
+   "HV": 52,
+   "MECFS": 74
+  },
+  "male": {
+   "HV": 23,
+   "MECFS": 19
+  }
+ },
+ "p53_disease_x_agebin": {
+  "1": {
+   "HV": 16,
+   "MECFS": 11
+  },
+  "19": {
+   "HV": 0,
+   "MECFS": 1
+  },
+  "2": {
+   "HV": 14,
+   "MECFS": 14
+  },
+  "20": {
+   "HV": 1,
+   "MECFS": 0
+  },
+  "21": {
+   "HV": 0,
+   "MECFS": 1
+  },
+  "23": {
+   "HV": 0,
+   "MECFS": 2
+  },
+  "27": {
+   "HV": 2,
+   "MECFS": 0
+  },
+  "28": {
+   "HV": 0,
+   "MECFS": 1
+  },
+  "29": {
+   "HV": 0,
+   "MECFS": 1
+  },
+  "3": {
+   "HV": 14,
+   "MECFS": 21
+  },
+  "30": {
+   "HV": 1,
+   "MECFS": 1
+  },
+  "31": {
+   "HV": 1,
+   "MECFS": 1
+  },
+  "32": {
+   "HV": 1,
+   "MECFS": 0
+  },
+  "35": {
+   "HV": 1,
+   "MECFS": 0
+  },
+  "37": {
+   "HV": 0,
+   "MECFS": 2
+  },
+  "38": {
+   "HV": 0,
+   "MECFS": 1
+  },
+  "39": {
+   "HV": 0,
+   "MECFS": 1
+  },
+  "4": {
+   "HV": 10,
+   "MECFS": 14
+  },
+  "40": {
+   "HV": 0,
+   "MECFS": 1
+  },
+  "42": {
+   "HV": 1,
+   "MECFS": 0
+  },
+  "43": {
+   "HV": 1,
+   "MECFS": 1
+  },
+  "44": {
+   "HV": 0,
+   "MECFS": 1
+  },
+  "45": {
+   "HV": 0,
+   "MECFS": 1
+  },
+  "46": {
+   "HV": 2,
+   "MECFS": 0
+  },
+  "47": {
+   "HV": 1,
+   "MECFS": 0
+  },
+  "48": {
+   "HV": 0,
+   "MECFS": 1
+  },
+  "49": {
+   "HV": 1,
+   "MECFS": 1
+  },
+  "50": {
+   "HV": 1,
+   "MECFS": 1
+  },
+  "52": {
+   "HV": 1,
+   "MECFS": 1
+  },
+  "53": {
+   "HV": 0,
+   "MECFS": 1
+  },
+  "54": {
+   "HV": 1,
+   "MECFS": 1
+  },
+  "55": {
+   "HV": 0,
+   "MECFS": 1
+  },
+  "56": {
+   "HV": 0,
+   "MECFS": 2
+  },
+  "58": {
+   "HV": 0,
+   "MECFS": 1
+  },
+  "59": {
+   "HV": 0,
+   "MECFS": 1
+  },
+  "60": {
+   "HV": 0,
+   "MECFS": 2
+  },
+  "61": {
+   "HV": 0,
+   "MECFS": 1
+  },
+  "62": {
+   "HV": 1,
+   "MECFS": 0
+  },
+  "64": {
+   "HV": 1,
+   "MECFS": 1
+  },
+  "66": {
+   "HV": 1,
+   "MECFS": 1
+  },
+  "68": {
+   "HV": 0,
+   "MECFS": 1
+  },
+  "69": {
+   "HV": 1,
+   "MECFS": 0
+  },
+  "NA": {
+   "HV": 1,
+   "MECFS": 0
+  }
+ },
+ "p53_cohort_characteristics": {
+  "MECFS": {
+   "n": 93,
+   "sex": {
+    "female": 74,
+    "male": 19
+   },
+   "age_bin": {
+    "1": 11,
+    "19": 1,
+    "2": 14,
+    "21": 1,
+    "23": 2,
+    "28": 1,
+    "29": 1,
+    "3": 21,
+    "30": 1,
+    "31": 1,
+    "37": 2,
+    "38": 1,
+    "39": 1,
+    "4": 14,
+    "40": 1,
+    "43": 1,
+    "44": 1,
+    "45": 1,
+    "48": 1,
+    "49": 1,
+    "50": 1,
+    "52": 1,
+    "53": 1,
+    "54": 1,
+    "55": 1,
+    "56": 2,
+    "58": 1,
+    "59": 1,
+    "60": 2,
+    "61": 1,
+    "64": 1,
+    "66": 1,
+    "68": 1
+   },
+   "site": {
+    "Ithaca, NY": 51,
+    "Los Angeles, CA": 23,
+    "New York City, NY": 19
+   }
+  },
+  "HV": {
+   "n": 75,
+   "sex": {
+    "female": 52,
+    "male": 23
+   },
+   "age_bin": {
+    "1": 16,
+    "2": 14,
+    "20": 1,
+    "27": 2,
+    "3": 14,
+    "30": 1,
+    "31": 1,
+    "32": 1,
+    "35": 1,
+    "4": 10,
+    "42": 1,
+    "43": 1,
+    "46": 2,
+    "47": 1,
+    "49": 1,
+    "50": 1,
+    "52": 1,
+    "54": 1,
+    "62": 1,
+    "64": 1,
+    "66": 1,
+    "69": 1,
+    "NA": 1
+   },
+   "site": {
+    "Ithaca, NY": 57,
+    "New York City, NY": 13,
+    "Los Angeles, CA": 5
+   }
+  }
+ },
+ "p53_module_correlation": {
+  "L1_ifna": {
+   "L1_ifna": 1.0,
+   "L2_ifng": 0.987,
+   "L3_inflammatory": 0.912,
+   "L4_tnfa_nfkb": 0.917,
+   "L5_il6_jakstat3": 0.921,
+   "L6_complement": 0.934,
+   "L7_oxphos": 0.895,
+   "L8_hypoxia": 0.916,
+   "L9_il2_stat5": 0.912
+  },
+  "L2_ifng": {
+   "L1_ifna": 0.987,
+   "L2_ifng": 1.0,
+   "L3_inflammatory": 0.952,
+   "L4_tnfa_nfkb": 0.95,
+   "L5_il6_jakstat3": 0.96,
+   "L6_complement": 0.959,
+   "L7_oxphos": 0.898,
+   "L8_hypoxia": 0.946,
+   "L9_il2_stat5": 0.954
+  },
+  "L3_inflammatory": {
+   "L1_ifna": 0.912,
+   "L2_ifng": 0.952,
+   "L3_inflammatory": 1.0,
+   "L4_tnfa_nfkb": 0.981,
+   "L5_il6_jakstat3": 0.988,
+   "L6_complement": 0.962,
+   "L7_oxphos": 0.824,
+   "L8_hypoxia": 0.951,
+   "L9_il2_stat5": 0.971
+  },
+  "L4_tnfa_nfkb": {
+   "L1_ifna": 0.917,
+   "L2_ifng": 0.95,
+   "L3_inflammatory": 0.981,
+   "L4_tnfa_nfkb": 1.0,
+   "L5_il6_jakstat3": 0.977,
+   "L6_complement": 0.962,
+   "L7_oxphos": 0.853,
+   "L8_hypoxia": 0.969,
+   "L9_il2_stat5": 0.968
+  },
+  "L5_il6_jakstat3": {
+   "L1_ifna": 0.921,
+   "L2_ifng": 0.96,
+   "L3_inflammatory": 0.988,
+   "L4_tnfa_nfkb": 0.977,
+   "L5_il6_jakstat3": 1.0,
+   "L6_complement": 0.969,
+   "L7_oxphos": 0.836,
+   "L8_hypoxia": 0.958,
+   "L9_il2_stat5": 0.976
+  },
+  "L6_complement": {
+   "L1_ifna": 0.934,
+   "L2_ifng": 0.959,
+   "L3_inflammatory": 0.962,
+   "L4_tnfa_nfkb": 0.962,
+   "L5_il6_jakstat3": 0.969,
+   "L6_complement": 1.0,
+   "L7_oxphos": 0.901,
+   "L8_hypoxia": 0.983,
+   "L9_il2_stat5": 0.974
+  },
+  "L7_oxphos": {
+   "L1_ifna": 0.895,
+   "L2_ifng": 0.898,
+   "L3_inflammatory": 0.824,
+   "L4_tnfa_nfkb": 0.853,
+   "L5_il6_jakstat3": 0.836,
+   "L6_complement": 0.901,
+   "L7_oxphos": 1.0,
+   "L8_hypoxia": 0.909,
+   "L9_il2_stat5": 0.87
+  },
+  "L8_hypoxia": {
+   "L1_ifna": 0.916,
+   "L2_ifng": 0.946,
+   "L3_inflammatory": 0.951,
+   "L4_tnfa_nfkb": 0.969,
+   "L5_il6_jakstat3": 0.958,
+   "L6_complement": 0.983,
+   "L7_oxphos": 0.909,
+   "L8_hypoxia": 1.0,
+   "L9_il2_stat5": 0.976
+  },
+  "L9_il2_stat5": {
+   "L1_ifna": 0.912,
+   "L2_ifng": 0.954,
+   "L3_inflammatory": 0.971,
+   "L4_tnfa_nfkb": 0.968,
+   "L5_il6_jakstat3": 0.976,
+   "L6_complement": 0.974,
+   "L7_oxphos": 0.87,
+   "L8_hypoxia": 0.976,
+   "L9_il2_stat5": 1.0
+  }
+ },
+ "p53_per_site_D_L9": {
+  "Ithaca, NY": 0.323,
+  "Los Angeles, CA": -0.014,
+  "New York City, NY": 0.039
+ },
+ "p53_site_n_by_group": {
+  "Ithaca, NY": {
+   "MECFS": 51,
+   "HV": 57
+  },
+  "Los Angeles, CA": {
+   "MECFS": 23,
+   "HV": 5
+  },
+  "New York City, NY": {
+   "MECFS": 19,
+   "HV": 13
+  }
+ },
+ "p53_lopo_D_distribution": {
+  "n_folds": 168,
+  "min": 0.24,
+  "q25": 0.254,
+  "median": 0.258,
+  "q75": 0.261,
+  "max": 0.272,
+  "sd": 0.006,
+  "all_positive": true
+ },
+ "p51_lopo_D_distribution": {
+  "n_folds": 37,
+  "min": -0.422,
+  "q25": -0.375,
+  "median": -0.357,
+  "q75": -0.35,
+  "max": -0.167,
+  "sd": 0.038,
+  "all_same_sign": true
+ },
+ "p51_projection": {
+  "full_module_genes": 195,
+  "panel_projection_genes": [
+   "ACADVL",
+   "AIFM1",
+   "BAX",
+   "DLD",
+   "ECHS1",
+   "GOT2",
+   "HADHB",
+   "LDHA",
+   "OAT",
+   "PDHB",
+   "PDK4",
+   "VDAC1"
+  ],
+  "n_panel_projection": 12,
+  "full_vs_projection_score_corr_on_training": 0.937,
+  "D_full_module_on_training": -0.356,
+  "D_panel_projection_on_training": -0.373
+ },
+ "bootstrap_CIs": {
+  "p51_E1_lc_vs_hc": {
+   "D_boot95ci": [
+    0.107,
+    0.582
+   ],
+   "g_boot95ci": [
+    0.311,
+    1.729
+   ]
+  },
+  "p51_E2_lc_vs_mecfs": {
+   "D_boot95ci": [
+    -0.206,
+    0.418
+   ],
+   "g_boot95ci": [
+    -0.465,
+    1.108
+   ]
+  },
+  "p53_E1_mecfs_vs_hc": {
+   "D_boot95ci": [
+    -0.31,
+    0.057
+   ],
+   "g_boot95ci": [
+    -1.185,
+    0.24
+   ]
+  },
+  "p53_E2_mecfs_vs_lc": {
+   "D_boot95ci": [
+    -0.427,
+    -0.065
+   ],
+   "g_boot95ci": [
+    -1.794,
+    -0.272
+   ]
+  }
+ },
+ "point_estimate_check": {
+  "p51_E1_D_matches_committed": true,
+  "p53_E1_D_matches_committed": true,
+  "note": "rebuilt composites reproduce committed eval D values to 1e-6"
+ }
+}

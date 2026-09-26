@@ -93,7 +93,14 @@ re-audited historical records and the individually checked GSE57560 GSMs,
 the lane holds 153 accession-backed records (145 sample records in
 Table~\ref{tab:accessions} plus eight series-level records). Duplicate accessions
 against the global manifest were checked before appending; the manifest's unit
-is a unique accession-backed record, not an independent cohort.
+is a unique accession-backed record, not an independent cohort. The ledger
+arithmetic is: 55 records already credited to this lane (across GSE621,
+GSE11783, GSE28242 and GSE57560) plus 98 new record units (64 + 21 + 13 from
+P45, P46 and P47) equals 153; of these, 145 are sample-level records and eight
+are series-level records. The 120-record floor is therefore met with a margin
+of 33, and every record carries the people-count caveats of its source
+(\ref{sec:twosource} and the provenance subsections) so that record units are
+never read as independent studies.
 
 \begin{table}[h]\centering\small
 \caption{Individually verified sample records by series and group.}
@@ -179,6 +186,26 @@ no gene under $.05$; and the validation sign agreement is 43/50 (86\%) against
 an empirical null mean of 75.1\%, $p=.0469$, which fails the registered $.025$
 threshold. The historical positive panel is therefore recorded as a ledger
 negative, not rewritten into a weaker claim.
+
+\subsection{Audit and sensitivity arithmetic, exactly as computed}
+The reproducibility detail a reviewer needs to rerun this verdict is as
+follows. The frozen historical result (T1) stands on the prior sample-level
+discovery: 40/40 sign agreements in the original 6-vs-8 and 10-vs-6 contrasts,
+left intact as a historical artifact. Post-audit, discovery was restricted to
+the corrected GSE621 and GSE11783 and required evidence from BOTH studies
+($k=2$), leaving 3{,}326 genes measured in both. On that intersection: the new
+top-50 by effect shares zero genes with the old top-50; the best new-cohort
+Benjamini-Hochberg value is $q=.418$ and no gene falls under $.05$. The
+GSE57560 sensitivity then scores the new top-50 in 4 case and 3 control
+libraries: sign agreement is 43/50 (86\%) against an empirical null mean of
+75.1\% ($p=.0469$), which fails the registered $.025$ bar, and genes with
+nominal direction-consistent $p<.05$ number 5 against a null mean of 4.02
+($p=.375$). Both sensitivity statistics sit inside their nulls. Two caveats
+are kept with the numbers: GSE57560 was previously seen, so this is a
+sensitivity, never a fresh replication; and a 4-vs-3 library contrast is too
+small to support any classifier-utility claim even had it passed. A 2025
+publication used overlapping studies, which is why the audit trail, not the
+literature, is the authority for what the old panel does.
 
 \section{Preregistered module framework (P48)}
 \label{sec:framework}
@@ -629,6 +656,22 @@ comparator-induced component: because $b_m$ is a constant within a fold, the
 paired $t$-test of $\Delta_{m,i}-b_m$ is the paired test of $\Delta_{m,i}$
 against the shifted null $b_m$, so BCG contributes a fixed offset, never
 variance, to the patient-level inference.
+
+\subsection{A fully worked fold: patient 25 under Gate 1}
+One complete fold, end to end, from the committed values
+(\texttt{results/ic\_p48\_gate1\_fold\_detail.csv}). Patient 25 is held
+out; module weights and reference distributions are refit on the other 24
+patients with the locked procedure, and the held-out pair is scored with no
+parameter seeing patient 25. The M2 composite scores are
+$S_{\mathrm{lesion}}=+0.9777$ and $S_{\mathrm{nonlesion}}=-0.5683$, giving
+$D=+1.5460$ - the largest positive fold in the gate (range
+$[-0.6874,+1.5460]$). The fold contributes one to the count of positives; the
+count reaches 19, and the exact one-sided binomial tail
+$P(X\geq19\mid n=25,p=0.5)=0.00732$ is the Gate 1 $p$-value. Under A2.1 the
+same held-out machinery on the BCG-adjusted residual gives patient 21 the
+largest value, $D_{\mathrm{resid}}=+2.0467$ (median $0.1798$), and the count
+of positives is 18 with tail $P(X\geq18\mid25,.5)=0.02164$. No other
+statistic enters either gate.
 
 \subsection{Worked tail computations}
 With $n=25$ paired patients and null per-patient success probability $1/2$,

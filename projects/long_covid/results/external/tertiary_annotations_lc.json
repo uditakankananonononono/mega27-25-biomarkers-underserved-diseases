@@ -1,0 +1,334 @@
+{
+ "retrieved_at_utc": "2026-09-26T02:28:27.514482+00:00",
+ "quickgo": {
+  "per_hub": {
+   "JAK1": 336,
+   "CXCL8": 90,
+   "BCL2L1": 153,
+   "OSM": 46,
+   "MAP3K8": 41,
+   "STAT3": 485
+  }
+ },
+ "intact": {
+  "per_hub": {
+   "JAK1": 5,
+   "CXCL8": 3,
+   "BCL2L1": 10,
+   "OSM": 10,
+   "MAP3K8": 4,
+   "STAT3": 10
+  }
+ },
+ "interpro": {
+  "per_hub": {
+   "JAK1": 18,
+   "CXCL8": 6,
+   "BCL2L1": 11,
+   "OSM": 4,
+   "MAP3K8": 5,
+   "STAT3": 13
+  }
+ },
+ "openalex": {
+  "per_hub": {
+   "JAK1": 4575,
+   "CXCL8": 4964,
+   "BCL2L1": 317,
+   "OSM": 3535,
+   "MAP3K8": 135,
+   "STAT3": 14793
+  }
+ },
+ "hpa": {
+  "per_hub": {
+   "JAK1": {
+    "gene": "JAK1",
+    "rna_tissue_specificity": "Low tissue specificity",
+    "subcellular_location": null
+   },
+   "CXCL8": {
+    "gene": "CXCL8",
+    "rna_tissue_specificity": "Tissue enriched",
+    "subcellular_location": [
+     "Golgi apparatus"
+    ]
+   },
+   "BCL2L1": {
+    "gene": "BCL2L1",
+    "rna_tissue_specificity": "Low tissue specificity",
+    "subcellular_location": [
+     "Nucleoli fibrillar center",
+     "Mitochondria",
+     "Acrosome"
+    ]
+   },
+   "OSM": {
+    "gene": "OSM",
+    "rna_tissue_specificity": "Tissue enriched",
+    "subcellular_location": null
+   },
+   "MAP3K8": {
+    "gene": "MAP3K8",
+    "rna_tissue_specificity": "Tissue enriched",
+    "subcellular_location": [
+     "Cytosol"
+    ]
+   },
+   "STAT3": {
+    "gene": "STAT3",
+    "rna_tissue_specificity": "Low tissue specificity",
+    "subcellular_location": [
+     "Nucleoplasm",
+     "Cytosol"
+    ]
+   }
+  }
+ },
+ "dgidb": {
+  "raw_head": "{\"errors\":[{\"message\":\"Field 'interactionId' doesn't exist on type 'Interaction'\",\"locations\":[{\"line\":1,\"column\":88}],\"path\":[\"query\",\"genes\",\"nodes\",\"interactions\",\"interactionId\"],\"extensions\":{\"code\":\"undefinedField\",\"typeName\":\"Interaction\",\"fieldName\":\"interactionId\"}}]}"
+ },
+ "gwas_catalog": {
+  "per_hub": {
+   "JAK1": 139,
+   "CXCL8": 78,
+   "BCL2L1": 74,
+   "OSM": 50,
+   "MAP3K8": 20,
+   "STAT3": 94
+  },
+  "control_bogus_gene": 0
+ },
+ "pubmed_comention": {
+  "per_hub": {
+   "JAK1": "3",
+   "CXCL8": "11",
+   "BCL2L1": "0",
+   "OSM": "2",
+   "MAP3K8": "0",
+   "STAT3": "9"
+  }
+ },
+ "pharos": {
+  "per_hub": {
+   "JAK1": {
+    "tdl": "Tclin",
+    "fam": "Kinase"
+   },
+   "CXCL8": {
+    "tdl": "Tchem",
+    "fam": null
+   },
+   "BCL2L1": {
+    "tdl": "Tchem",
+    "fam": null
+   },
+   "OSM": {
+    "tdl": "Tbio",
+    "fam": null
+   },
+   "MAP3K8": {
+    "tdl": "Tchem",
+    "fam": "Kinase"
+   },
+   "STAT3": {
+    "tdl": "Tchem",
+    "fam": "TF"
+   }
+  }
+ },
+ "wikipathways": {
+  "rejected": "webservice.wikipathways.org returns HTTP 404 on searchPathwaysByText (3 attempts across 2 sessions); endpoint retired. NOT counted."
+ },
+ "pgs_catalog": {
+  "long_covid_traits": 0,
+  "first": null
+ },
+ "monarch": {
+  "hits": [
+   [
+    "MONDO:0007523",
+    "Ehlers-Danlos syndrome, hypermobility type"
+   ],
+   [
+    "MONDO:0019391",
+    "Fanconi anemia"
+   ],
+   [
+    "MONDO:0018954",
+    "Loeys-Dietz syndrome"
+   ]
+  ]
+ },
+ "clinvar": {
+  "per_hub": {
+   "JAK1": "922",
+   "CXCL8": "42",
+   "BCL2L1": "43",
+   "OSM": "85",
+   "MAP3K8": "311",
+   "STAT3": "996"
+  }
+ },
+ "dbsnp": {
+  "per_hub": {
+   "JAK1": "94180",
+   "CXCL8": "2730",
+   "BCL2L1": "24030",
+   "OSM": "3032",
+   "MAP3K8": "13664",
+   "STAT3": "32068"
+  }
+ },
+ "ncbi_gene": {
+  "per_hub": {
+   "JAK1": "1",
+   "CXCL8": "1",
+   "BCL2L1": "1",
+   "OSM": "2",
+   "MAP3K8": "1",
+   "STAT3": "1"
+  }
+ },
+ "ucsc": {
+  "per_hub": {
+   "JAK1": 43,
+   "CXCL8": 38,
+   "BCL2L1": 45,
+   "OSM": 44,
+   "MAP3K8": 43,
+   "STAT3": 47
+  }
+ },
+ "kegg": {
+  "per_hub_gene_records": {
+   "JAK1": 1,
+   "CXCL8": 1,
+   "BCL2L1": 7,
+   "OSM": 33,
+   "MAP3K8": 1,
+   "STAT3": 1
+  }
+ },
+ "go_central": {
+  "term": "GO:0006119 oxidative phosphorylation (L7 module anchor)",
+  "n_gene_associations": null
+ },
+ "clinicaltrials": {
+  "long_covid_studies": 733
+ },
+ "pathway_commons": {
+  "rejected": "pc2 API returns HTML/404 at both www and apps hosts (2 sessions). NOT counted."
+ },
+ "signor": {
+  "network_rows": 43569,
+  "per_hub_edges": {
+   "JAK1": 76,
+   "CXCL8": 16,
+   "BCL2L1": 44,
+   "OSM": 4,
+   "MAP3K8": 21,
+   "STAT3": 167
+  }
+ },
+ "expression_atlas": {
+  "long_covid_experiments": 4562,
+  "raw_head": null
+ },
+ "bgee": {
+  "rejected": "expression_summary endpoint HTTP 400 (2 attempts, two param shapes). NOT counted."
+ },
+ "openfda": {
+  "drug": "tofacitinib (approved JAK1 inhibitor - Pharos Tdl Tclin for hub JAK1)",
+  "brand": [
+   "Tofacitinib"
+  ],
+  "has_label": true
+ },
+ "rcsb_pdb": {
+  "per_hub": {
+   "JAK1": 52,
+   "CXCL8": 21,
+   "BCL2L1": 126,
+   "OSM": 5,
+   "MAP3K8": 3,
+   "STAT3": 6
+  }
+ },
+ "cbioportal": {
+  "note": "study context query",
+  "per_hub": {
+   "JAK1": 3716,
+   "CXCL8": 3576,
+   "BCL2L1": 598,
+   "OSM": 5008,
+   "MAP3K8": 1326,
+   "STAT3": 6774
+  }
+ },
+ "mirtarbase": {
+  "per_hub_validated_mirnas_on_page": {
+   "JAK1": 32,
+   "CXCL8": 35,
+   "BCL2L1": 34,
+   "OSM": 7,
+   "MAP3K8": 39,
+   "STAT3": 25
+  },
+  "endpoint": "/miRTarBase/search/results/?mode=target"
+ },
+ "proteomicsdb": {
+  "rejected": "api_v2 endpoints 404 (2 attempts). NOT counted."
+ },
+ "omim": {
+  "per_hub": {
+   "JAK1": "1",
+   "CXCL8": "1",
+   "BCL2L1": "1",
+   "OSM": "1",
+   "MAP3K8": "1",
+   "STAT3": "1"
+  }
+ },
+ "ncbi_protein": {
+  "per_hub": {
+   "JAK1": "15",
+   "CXCL8": "2",
+   "BCL2L1": "10",
+   "OSM": "18",
+   "MAP3K8": "14",
+   "STAT3": "27"
+  }
+ },
+ "opentargets_genetics": {
+  "rejected": "api.genetics.opentargets.org DNS unresolvable (host retired). NOT counted."
+ },
+ "pride_archive": {
+  "long_covid_projects_top": [
+   [
+    "PXD066724",
+    "Molecular Insights into Long COVID: Plasma Proteomics Reveals Oxidative Stress, Coagulatio"
+   ],
+   [
+    "PXD054356",
+    "PLpro inhibition protects in post-acute sequelae mouse model of COVID-19"
+   ],
+   [
+    "PXD054355",
+    "LC-MS/MS proteomic analysis of pharyngeal swabs and plasma from MHV-infected and uninfecte"
+   ]
+  ],
+  "bogus_keyword_control_hits": 0,
+  "filter_verified": true
+ },
+ "litvar": {
+  "rejected": "litvar api v1 returns AttributeError page for gene queries. NOT counted."
+ },
+ "biocyc": {
+  "rejected": "websvc.biocyc.org apixml returns HTML CSP page, no JSON. NOT counted."
+ },
+ "biostudies": {
+  "long_covid_totalHits": 46397,
+  "note": "archive-level hit count incl. expanded EFO terms; distinct from Expression Atlas analysis db (caveat recorded in ledger)"
+ }
+}

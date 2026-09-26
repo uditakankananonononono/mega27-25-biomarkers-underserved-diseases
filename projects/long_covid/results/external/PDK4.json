@@ -1,0 +1,51 @@
+{
+ "gene": "PDK4",
+ "retrieved_at_utc": "2026-09-26T02:22:00.819816+00:00",
+ "sources": {
+  "ensembl": {
+   "data": {
+    "id": "ENSG00000004799",
+    "biotype": "protein_coding",
+    "desc": "pyruvate dehydrogenase kinase 4 [Source:HGNC Symbol;Acc:HGNC:8812]"
+   }
+  },
+  "uniprot": {
+   "data": {
+    "accession": "Q16654",
+    "protein": "[Pyruvate dehydrogenase (acetyl-transferring)] kinase isozyme 4, mitochondrial"
+   }
+  },
+  "europepmc": {
+   "data": {
+    "hitCount": 20
+   }
+  },
+  "mygene": {
+   "data": {
+    "hits": 1
+   }
+  },
+  "chembl": {
+   "data": {
+    "human_targets": 2,
+    "first": "[Pyruvate dehydrogenase (acetyl-transferring)] kinase isozyme 4, mitochondrial"
+   }
+  },
+  "hgnc": {
+   "data": {
+    "status": null,
+    "hgnc_id": "HGNC:8812"
+   }
+  },
+  "gtex": {
+   "data": {
+    "found": true
+   }
+  },
+  "reactome": {
+   "data": {
+    "n_pathways": 3
+   }
+  }
+ }
+}

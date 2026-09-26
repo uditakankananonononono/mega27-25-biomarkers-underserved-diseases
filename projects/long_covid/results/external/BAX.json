@@ -1,0 +1,51 @@
+{
+ "gene": "BAX",
+ "retrieved_at_utc": "2026-09-26T02:20:46.937437+00:00",
+ "sources": {
+  "ensembl": {
+   "data": {
+    "id": "ENSG00000087088",
+    "biotype": "protein_coding",
+    "desc": "BCL2 associated X, apoptosis regulator [Source:HGNC Symbol;Acc:HGNC:959]"
+   }
+  },
+  "uniprot": {
+   "data": {
+    "accession": "Q07812",
+    "protein": "Apoptosis regulator BAX"
+   }
+  },
+  "europepmc": {
+   "data": {
+    "hitCount": 349
+   }
+  },
+  "mygene": {
+   "data": {
+    "hits": 1
+   }
+  },
+  "chembl": {
+   "data": {
+    "human_targets": 8,
+    "first": "Apoptosis regulator BAX"
+   }
+  },
+  "hgnc": {
+   "data": {
+    "status": null,
+    "hgnc_id": "HGNC:959"
+   }
+  },
+  "gtex": {
+   "data": {
+    "found": true
+   }
+  },
+  "reactome": {
+   "data": {
+    "n_pathways": 7
+   }
+  }
+ }
+}

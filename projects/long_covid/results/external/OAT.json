@@ -1,0 +1,51 @@
+{
+ "gene": "OAT",
+ "retrieved_at_utc": "2026-09-26T02:21:42.554612+00:00",
+ "sources": {
+  "ensembl": {
+   "data": {
+    "id": "ENSG00000065154",
+    "biotype": "protein_coding",
+    "desc": "ornithine aminotransferase [Source:HGNC Symbol;Acc:HGNC:8091]"
+   }
+  },
+  "uniprot": {
+   "data": {
+    "accession": "P04181",
+    "protein": "Ornithine aminotransferase, mitochondrial"
+   }
+  },
+  "europepmc": {
+   "data": {
+    "hitCount": 189
+   }
+  },
+  "mygene": {
+   "data": {
+    "hits": 1
+   }
+  },
+  "chembl": {
+   "data": {
+    "human_targets": 2,
+    "first": "Ornithine aminotransferase, mitochondrial"
+   }
+  },
+  "hgnc": {
+   "data": {
+    "status": null,
+    "hgnc_id": "HGNC:8091"
+   }
+  },
+  "gtex": {
+   "data": {
+    "found": true
+   }
+  },
+  "reactome": {
+   "data": {
+    "n_pathways": 1
+   }
+  }
+ }
+}

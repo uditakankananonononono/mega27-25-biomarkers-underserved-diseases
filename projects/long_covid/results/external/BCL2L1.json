@@ -1,0 +1,51 @@
+{
+ "gene": "BCL2L1",
+ "retrieved_at_utc": "2026-09-26T02:20:51.844523+00:00",
+ "sources": {
+  "ensembl": {
+   "data": {
+    "id": "ENSG00000171552",
+    "biotype": "protein_coding",
+    "desc": "BCL2 like 1 [Source:HGNC Symbol;Acc:HGNC:992]"
+   }
+  },
+  "uniprot": {
+   "data": {
+    "accession": "Q07817",
+    "protein": "Bcl-2-like protein 1"
+   }
+  },
+  "europepmc": {
+   "data": {
+    "hitCount": 29
+   }
+  },
+  "mygene": {
+   "data": {
+    "hits": 1
+   }
+  },
+  "chembl": {
+   "data": {
+    "human_targets": 10,
+    "first": "BCL2L1/BAD"
+   }
+  },
+  "hgnc": {
+   "data": {
+    "status": null,
+    "hgnc_id": "HGNC:992"
+   }
+  },
+  "gtex": {
+   "data": {
+    "found": true
+   }
+  },
+  "reactome": {
+   "data": {
+    "n_pathways": 7
+   }
+  }
+ }
+}

@@ -1,0 +1,51 @@
+{
+ "gene": "PDHB",
+ "retrieved_at_utc": "2026-09-26T02:21:55.643558+00:00",
+ "sources": {
+  "ensembl": {
+   "data": {
+    "id": "ENSG00000168291",
+    "biotype": "protein_coding",
+    "desc": "pyruvate dehydrogenase E1 subunit beta [Source:HGNC Symbol;Acc:HGNC:8808]"
+   }
+  },
+  "uniprot": {
+   "data": {
+    "accession": "P11177",
+    "protein": "Pyruvate dehydrogenase E1 component subunit beta, mitochondrial"
+   }
+  },
+  "europepmc": {
+   "data": {
+    "hitCount": 6
+   }
+  },
+  "mygene": {
+   "data": {
+    "hits": 1
+   }
+  },
+  "chembl": {
+   "data": {
+    "human_targets": 1,
+    "first": "Pyruvate dehydrogenase E1 component subunit beta, mitochondrial"
+   }
+  },
+  "hgnc": {
+   "data": {
+    "status": null,
+    "hgnc_id": "HGNC:8808"
+   }
+  },
+  "gtex": {
+   "data": {
+    "found": true
+   }
+  },
+  "reactome": {
+   "data": {
+    "n_pathways": 4
+   }
+  }
+ }
+}

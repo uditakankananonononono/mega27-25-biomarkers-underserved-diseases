@@ -65,6 +65,13 @@ framing but is NOT evidence the miRNAs themselves are drug targets
 (results/druggability_overlay.json). This distinction will be put to the
 judge explicitly in round 02.
 
+Module coherence (STRING v12 API, 2026-09-27; descriptive): the CORE6
+strong-support targets form a significantly interconnected network -
+1051 edges vs 418 expected at confidence 0.7 (PPI enrichment p < 1e-16,
+average degree 7.0, clustering 0.445; results/string_core6_*.tsv). The
+module's targets are not a random gene list: they sit on a shared
+interaction scaffold, consistent with a coordinated regulatory program.
+
 Post-hoc pathway context (descriptive, not preregistered): the pooled
 strong-support validated targets of the 18 cardiac-passing candidates
 (557 genes) enrich in Enrichr for PI3K-Akt signaling (KEGG adj 1.2e-35;

@@ -147,3 +147,10 @@ Count: 32 used + 6 blocked-attempted; gate needs 40.
     49 Approved-Drug bucket). Note: knownDrugs is off the Target type in
     the current schema; tractability used instead - recorded honestly.
 Count: 33 used + 6 blocked-attempted; gate needs 40.
+
+## Addendum 7 (2026-09-27T00:51): service 34
+34. STRING v12 API - CORE6 target-program network: 1051 edges vs 418
+    expected (conf 0.7), PPI enrichment p<1e-16, clustering 0.445
+    (results/string_core6_network.tsv, string_core6_ppi_enrichment.tsv).
+    Descriptive module-coherence evidence.
+Count: 34 used + 6 blocked-attempted; gate needs 40.

@@ -1,0 +1,14 @@
+{
+  "round": 3,
+  "artifact": "projects/graph_holdout/REPORT.pdf in mega27-27-isef-bioinf-derived-tools @ 9925b30",
+  "route": "TEXT-PASTE verified round (user route change 2026-09-26 13:18 IST)",
+  "source_pdf_sha256": "8fdb442fc1c1683da9ef620065e04cc3a5235aaffbc1a8ee96a41c34807af7b7",
+  "extraction": "pdftotext -layout; completeness verified: 3 form-feed page breaks == 3 pdfinfo pages; 14,072 chars pasted whole in one message",
+  "prompt_file": "round3_message.txt (head: round3_graphholdout_prompt_head.txt)",
+  "response_file": "round3_response.txt",
+  "conversation_url": "https://chatgpt.com/c/6ab779b0-70f8-83e8-abeb-eeb07b037f57",
+  "receipt_verification": "PASS - 12 quoted strings present in pasted document text and absent from prompt head, e.g. 'This is a simple two-hop graph heuristic, not a graph neural network', 'does not prove causal disease interactions'",
+  "questions_asked": ["weaknesses classified fixable/rewrite/inherent", "ISEF standing", "improvement ordered by impact"],
+  "verdict": "YES - honestly represents the work and its limits; main weakness is that current evidence supports a rigorous audit framework rather than a validated biological prediction system",
+  "timestamp_ist": "2026-09-26T13:22"
+}

@@ -1,0 +1,328 @@
+1. WEAKNESSES
+
+I reviewed the report as a skeptical ISEF methods reviewer. The artifact is unusually careful about limiting claims, so most potential weaknesses are limitations of the scientific design rather than misleading reporting. I found a few genuine issues.
+
+Weakness	Classification	Evidence from report	Assessment
+The biological task is narrower than the title could imply	(b) Fixable by rewriting/clarifying scope	Title: “GraphHoldout: publication-time gene-disease ranking with cold-start refusal.” Later: “This build tests only a narrower question: under a publication-year split within one modern CTD snapshot…”	The title may initially suggest a general gene-disease prediction system. The body correctly narrows it, but the title/abstract could foreground “audit” rather than “ranking” to avoid overinterpretation.
+The sample is not representative and may produce unstable disease-level conclusions	(c) Inherent limitation (should remain disclosed)	“We chose every third numerically sorted PubMed ID among matching rows, capped at 275 distinct PMIDs… This is a tractability sample, not a representative random biological sample.”	This is already honestly disclosed. It limits external validity but is not a flaw if the goal remains a leakage/cold-start audit.
+The asthma 2/2 result is too easy to overread despite the caveat	(b) Fixable by emphasizing interpretation	“top-10 recall is asthma 2/2…” and later “A high-looking 2/2 for asthma is too small and selected to support generalization.”	The report handles this responsibly. However, the abstract gives the number before the caveat. A skeptical reader could skim and overvalue it. Move the warning closer to the first mention.
+The evaluation lacks uncertainty estimates	(a) Fixable by code/data changes	“The report also gives the expected top-10 fraction under a uniform random permutation…”	Given only eight reachable positives, confidence intervals or bootstrap intervals would not make the result strong, but they would quantify instability. This is an improvement, not a fatal flaw.
+The candidate selection process could introduce hidden bias	(a) Fixable by code/data changes	“We chose every third numerically sorted PubMed ID…”	This is deterministic and reproducible, but numeric PMID ordering is arbitrary. A stronger audit would include a prespecified rationale or sensitivity analysis with alternative deterministic sampling.
+The Open Targets analysis is descriptive rather than validation	(c) Inherent limitation	“That endpoint is not an independent 2012 validation… Current target ranks include evidence accumulated after 2012.”	Correctly handled. It should stay disclosed, not removed.
+No external independent disease-gene benchmark exists	(c) Inherent limitation given current scope	“We have no historical CTD curation snapshot or independently adjudicated disease-gene test set…”	This is the largest scientific limitation, but the report explicitly identifies it. It prevents calling this a validated predictor.
+The model is extremely simple	(c) Inherent limitation / possibly (b) framing	“This is a simple two-hop graph heuristic, not a graph neural network.”	This is not automatically a weakness. For a leakage audit, simplicity is arguably a strength. It only becomes a problem if positioned as a competitive predictor.
+The GWAS archive section risks distracting from the core experiment	(b) Fixable by rewriting	“Actual March 2016 GWAS archive eligibility…” followed by extensive mapping discussion	Scientifically useful as a failed independence attempt, but its role should be explicitly labeled as “exploratory negative validation attempt” so judges do not confuse it with a second benchmark.
+The “40-tool bar” discussion is unnecessary in an ISEF scientific report	(b) Fixable by rewriting	“Scientific source count is at most three, far below the user's per-project 40-tool bar…”	This is meta-discussion about an external criterion, not science. Remove from the formal report.
+The report says “source-disjoint evaluation” but actually uses one-source CTD retrospective splitting	(b) Fixable by wording	“A strict version would train on a genuinely historical graph snapshot from one source and assess prospectively new, independently curated edges from another source…”	The report already acknowledges this. The phrase “source-disjoint” appears mostly as a requirement, but title/summary wording should avoid implying it achieved this.
+Checks requested:
+Claims exceeding evidence?
+
+Mostly no.
+
+The report repeatedly prevents overclaiming:
+
+“not a validated biological predictor”
+
+“does not prove causal disease interactions”
+
+“No clinical, mechanistic or therapeutic inference is supported”
+
+“No gene is nominated for laboratory testing”
+
+Those are appropriate.
+
+Internal numerical consistency?
+
+The major counts appear internally consistent:
+
+556 evidence rows from 275 PMIDs.
+
+356 training pairs + 114 later pairs = 470 unique pairs considered.
+
+114 later pairs = 106 cold-start + 8 reachable.
+
+Reachable positives: 2 + 5 + 0 + 1 = 8.
+
+No obvious arithmetic contradiction.
+
+Does fail-closed framing hide a result?
+
+No meaningful hidden result appears.
+
+The report explicitly gives:
+
+reachable recall values,
+
+candidate counts,
+
+random expectations,
+
+Open Targets overlaps,
+
+GWAS exploration.
+
+The “refusal” language is not being used to avoid reporting failure; it is describing a methodological constraint.
+
+Is self-criticism complete?
+
+Almost.
+
+The strongest missing criticism is:
+
+The deterministic PMID sampling strategy (“every third numerically sorted PubMed ID”) may create a sample whose temporal structure differs from the full CTD universe.
+
+The report admits it is not representative, but it does not discuss why this sampling procedure might affect graph topology.
+
+2. ISEF STANDING
+Judging-relevant strengths
+1. Exceptional methodological honesty
+
+This is the strongest feature.
+
+Many computational biology projects fail because they:
+
+treat unknown associations as negatives,
+
+leak future information,
+
+report AUROC from invalid splits,
+
+claim biological discovery from correlations.
+
+This report explicitly avoids those errors.
+
+Strong examples:
+
+“Unknown pairs were never treated as experimental negatives”
+
+“A second website with overlapping source content is not a second scientific discovery.”
+
+“The task is not solved.”
+
+That kind of scientific restraint is highly valued.
+
+2. Strong reproducibility design
+
+The report provides:
+
+source hashes,
+
+manifests,
+
+deterministic preprocessing,
+
+executable tests,
+
+leakage tests,
+
+PMID audit,
+
+external query retention.
+
+The adversarial checks are particularly ISEF-relevant.
+
+3. Good understanding of biomedical ML failure modes
+
+The project demonstrates understanding of:
+
+temporal leakage,
+
+reverse-edge leakage,
+
+cold-start problems,
+
+label uncertainty,
+
+source dependence.
+
+Those are real issues in biomedical AI.
+
+Judging-relevant gaps
+1. Limited scientific novelty
+
+The core algorithm:
+
+“simple two-hop graph heuristic”
+
+is not novel.
+
+The novelty is primarily:
+
+evaluation design,
+
+leakage audit,
+
+refusal framework.
+
+That can be valuable, but it is different from discovering a new biological method.
+
+2. Weak biological discovery component
+
+The project does not produce:
+
+a validated gene candidate,
+
+mechanistic hypothesis,
+
+experimental prediction,
+
+biological insight beyond methodological critique.
+
+For an ISEF Computational Biology judge expecting biological discovery, this may feel incomplete.
+
+3. Small effective test set
+
+The most important number is not 114 later pairs; it is:
+
+“Only eight test positives involve genes available to rank.”
+
+That makes performance interpretation very limited.
+
+The project correctly states this, but judges may still view the empirical result as preliminary.
+
+4. No independent historical validation
+
+The report itself identifies this:
+
+“A genuinely source-disjoint evaluation would require a historical training snapshot…”
+
+This is probably the largest gap.
+
+Overall assessment
+
+As currently presented:
+
+This is a strong methods/audit project but not a strong biological prediction project.
+
+At ISEF, it would likely appeal to judges interested in:
+
+computational methodology,
+
+biomedical AI reliability,
+
+reproducibility,
+
+responsible ML.
+
+It would be less competitive with projects that provide:
+
+a validated model improvement,
+
+new biological discovery,
+
+experimental confirmation,
+
+stronger independent benchmarking.
+
+The strongest argument for the project is not “our model predicts disease genes.” It is:
+
+“We demonstrate why many apparent disease-gene graph predictions are invalid and build a reproducible system that detects those failure modes.”
+
+That is a legitimate contribution.
+
+3. IMPROVEMENT ORDERED BY IMPACT
+1. Obtain a true historical validation dataset (highest impact)
+
+The report already identifies this.
+
+Ideal improvement:
+
+historical CTD snapshot from before cutoff,
+
+later CTD release or independent database,
+
+provenance overlap filtering,
+
+prospective-style evaluation.
+
+This changes the work from an audit demonstration into a genuine benchmark.
+
+2. Increase reachable positives without relaxing criteria
+
+Current:
+
+“Only eight test positives involve genes available to rank.”
+
+A better design:
+
+expand disease set,
+
+pre-register disease inclusion criteria,
+
+choose diseases with sufficient historical depth,
+
+maintain leakage controls.
+
+Target:
+
+dozens of reachable positives per disease.
+
+3. Add sensitivity analyses
+
+Without changing the main experiment:
+
+Run:
+
+alternate PMID sampling seeds,
+
+different publication cutoffs,
+
+different diseases,
+
+different top-k thresholds.
+
+The point is not to optimize results, but demonstrate robustness.
+
+4. Improve statistical reporting
+
+Add:
+
+bootstrap confidence intervals,
+
+rank distributions,
+
+permutation distributions,
+
+uncertainty around recall.
+
+Avoid implying significance; quantify instability.
+
+5. Separate the “audit tool” and “ranker” identities more clearly
+
+Currently:
+
+“publication-time gene-disease ranking”
+
+could attract the wrong evaluation.
+
+A clearer framing:
+
+“A temporal leakage and cold-start audit framework for gene-disease graph prediction.”
+
+The actual contribution becomes clearer.
+
+6. Remove non-scientific meta-language
+
+Remove references such as:
+
+“far below the user's per-project 40-tool bar”
+
+from the formal report.
+
+ISEF judges evaluate scientific quality, not external checklist compliance.
+
+7. If adding biology, add it honestly
+
+Possible extension:
+
+identify categories where cold-start failures concentrate,
+
+analyze whether missing genes are systematically underrepresented,
+
+characterize disease areas where graph methods fail.
+
+This would create biological insight without pretending to have discovered mechanisms.
+
+Final verdict
+
+Yes — this report honestly represents the work and its limits; its main weakness is not scientific dishonesty but that the current evidence supports a rigorous audit framework rather than a validated biological prediction system.

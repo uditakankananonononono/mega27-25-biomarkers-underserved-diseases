@@ -89,3 +89,11 @@ Zenodo (artifact deposit at publication), Overleaf (paper build),
 MEGA/Drive (bundle sharing), HPA bulk TSV (if needed), TriTrypDB (after
 key), Semantic Scholar (after backoff), iTOL (figure), DisGeNET (needs
 auth).
+
+## Addendum (2026-09-26T21:23): miRTarBase retrieval attempt
+Needed for H2 gate (b) per ADDENDUM_3 C2. Download URLs for the validated
+MTI table (v8.0/v9.0 cache paths) returned 404 - the site restructured;
+the real download link must be discovered via a browser visit (queued for
+the next browser token). NOT counted as used; gate (b) runs are blocked
+on this retrieval. Do not substitute bare predicted-target databases
+without a locked amendment (judge round 01 explicitly de-ranked them).

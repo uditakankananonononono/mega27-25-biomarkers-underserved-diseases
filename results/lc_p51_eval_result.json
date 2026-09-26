@@ -1,0 +1,31 @@
+{
+  "preregistration": "projects/long_covid/prereg/LC_P51_preregistration.md",
+  "train_commit_signature": [
+    "L7_oxphos"
+  ],
+  "signature_panel_genes": 12,
+  "E1_lc_vs_healthy": {
+    "D": 0.3425325672392497,
+    "perm_p": 0.0037996200379962005,
+    "hedges_g": 0.9581983969455512,
+    "pass_.025": true
+  },
+  "E2_lc_vs_mecfs": {
+    "D": 0.11307104469909032,
+    "perm_p_two_sided": 0.48535146485351466,
+    "hedges_g": 0.2593362205261769,
+    "pass": false
+  },
+  "E1c_comparator_lc_vs_healthy": {
+    "D": 0.5191326722365552,
+    "perm_p": 0.0017998200179982,
+    "hedges_g": 1.0514235121116564
+  },
+  "E2c_comparator_lc_vs_mecfs": {
+    "D": 0.3950288354594899,
+    "perm_p_two_sided": 0.047295270472952705,
+    "hedges_g": 0.7764913953205875
+  },
+  "win_rule": "E1 pass AND E2 pass AND |g_E2| > |g_E2c|",
+  "win": false
+}

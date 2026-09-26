@@ -1,0 +1,180 @@
+{
+ "preregistration": "projects/long_covid/prereg/LC_P53_preregistration.md",
+ "training_cohort": "GSE293840 plasma cfRNA, 93 ME/CFS vs 75 healthy, batch-stratified (3 batches)",
+ "selection_rule": "two-sided batch-stratified perm p<.05 AND LOPO sign stable 168/168; smallest p if >1",
+ "modules": {
+  "L1_ifna": {
+   "eligible": true,
+   "n_train": 94,
+   "n_panel": 15,
+   "D_obs": 0.2975093129761709,
+   "perm_p_two_sided": 0.0051994800519948,
+   "lopo_stable_of_168": 168,
+   "per_batch_D": {
+    "2023.08.25": 0.4576331456947501,
+    "2024.03.05": 0.25554794677869264,
+    "2024.06.28": 0.14533870232459786
+   },
+   "selected": true
+  },
+  "L2_ifng": {
+   "eligible": true,
+   "n_train": 187,
+   "n_panel": 52,
+   "D_obs": 0.3226449353508636,
+   "perm_p_two_sided": 0.0014998500149985001,
+   "lopo_stable_of_168": 168,
+   "per_batch_D": {
+    "2023.08.25": 0.4815749921589807,
+    "2024.03.05": 0.29045497079124627,
+    "2024.06.28": 0.1592481233690773
+   },
+   "selected": true
+  },
+  "L3_inflammatory": {
+   "eligible": true,
+   "n_train": 147,
+   "n_panel": 43,
+   "D_obs": 0.24743102804283057,
+   "perm_p_two_sided": 0.0047995200479952005,
+   "lopo_stable_of_168": 168,
+   "per_batch_D": {
+    "2023.08.25": 0.34763527656700677,
+    "2024.03.05": 0.25933348178228444,
+    "2024.06.28": 0.10090179663550358
+   },
+   "selected": true
+  },
+  "L4_tnfa_nfkb": {
+   "eligible": true,
+   "n_train": 166,
+   "n_panel": 45,
+   "D_obs": 0.23588611442536733,
+   "perm_p_two_sided": 0.010998900109989001,
+   "lopo_stable_of_168": 168,
+   "per_batch_D": {
+    "2023.08.25": 0.37237632702530143,
+    "2024.03.05": 0.23331483479985654,
+    "2024.06.28": 0.05947794851168021
+   },
+   "selected": true
+  },
+  "L5_il6_jakstat3": {
+   "eligible": true,
+   "n_train": 70,
+   "n_panel": 34,
+   "D_obs": 0.2600551834968656,
+   "perm_p_two_sided": 0.0021997800219978004,
+   "lopo_stable_of_168": 168,
+   "per_batch_D": {
+    "2023.08.25": 0.3712076853568632,
+    "2024.03.05": 0.2591952199362536,
+    "2024.06.28": 0.11665945523280086
+   },
+   "selected": true
+  },
+  "L6_complement": {
+   "eligible": true,
+   "n_train": 164,
+   "n_panel": 30,
+   "D_obs": 0.25619349370430095,
+   "perm_p_two_sided": 0.0014998500149985001,
+   "lopo_stable_of_168": 168,
+   "per_batch_D": {
+    "2023.08.25": 0.35040671075260255,
+    "2024.03.05": 0.28280216087643684,
+    "2024.06.28": 0.09766346893248384
+   },
+   "selected": true
+  },
+  "L7_oxphos": {
+   "eligible": true,
+   "n_train": 196,
+   "n_panel": 12,
+   "D_obs": 0.2709557122941052,
+   "perm_p_two_sided": 0.0053994600539946005,
+   "lopo_stable_of_168": 168,
+   "per_batch_D": {
+    "2023.08.25": 0.3381742665410269,
+    "2024.03.05": 0.309839047130847,
+    "2024.06.28": 0.13273736180396198
+   },
+   "selected": true
+  },
+  "L8_hypoxia": {
+   "eligible": true,
+   "n_train": 146,
+   "n_panel": 17,
+   "D_obs": 0.25257727938660735,
+   "perm_p_two_sided": 0.0014998500149985001,
+   "lopo_stable_of_168": 168,
+   "per_batch_D": {
+    "2023.08.25": 0.3413312450560361,
+    "2024.03.05": 0.28689998542053785,
+    "2024.06.28": 0.09068458793927758
+   },
+   "selected": true
+  },
+  "L9_il2_stat5": {
+   "eligible": true,
+   "n_train": 167,
+   "n_panel": 34,
+   "D_obs": 0.25774655076768127,
+   "perm_p_two_sided": 0.0007999200079992001,
+   "lopo_stable_of_168": 168,
+   "per_batch_D": {
+    "2023.08.25": 0.37511738926510874,
+    "2024.03.05": 0.2779570226513857,
+    "2024.06.28": 0.07645862877513387
+   },
+   "selected": true
+  }
+ },
+ "selected": [
+  "L9_il2_stat5"
+ ],
+ "selected_panel_genes": {
+  "L9_il2_stat5": [
+   "SOCS2",
+   "CISH",
+   "IL2RA",
+   "TNFRSF4",
+   "SOCS1",
+   "TNFRSF9",
+   "CTLA4",
+   "NFIL3",
+   "IL10",
+   "TNFRSF18",
+   "DHRS3",
+   "CD79B",
+   "AHR",
+   "TNFRSF1B",
+   "BCL2L1",
+   "MAP3K8",
+   "IRF4",
+   "TLR7",
+   "RGS16",
+   "ITGAE",
+   "NT5E",
+   "BCL2",
+   "ITGAV",
+   "CDKN1C",
+   "IL1R2",
+   "BATF",
+   "ITGA6",
+   "CD48",
+   "PLSCR1",
+   "CASP3",
+   "ICOS",
+   "IL1RL1",
+   "EOMES",
+   "IL10RA",
+   "TNFSF10",
+   "SELL",
+   "RORA",
+   "CSF1",
+   "IRF8",
+   "CD86"
+  ]
+ }
+}

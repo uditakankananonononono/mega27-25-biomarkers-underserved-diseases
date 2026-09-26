@@ -83,3 +83,16 @@ double-count the uniqueness gate exists to catch.
 Expansion verified by scripts/verify_crosswalks.py: all checks passed.
 New lane total: 750 tagged records = 16 GSE + 733 GSM + 1 other
 (53 prior + 697 new across 14 new series).
+
+## COUNT CORRECTION (2026-09-26, live re-verification under standing verification rules)
+The "750 tagged records = 16 GSE + 733 GSM + 1 other" figure DOUBLE-COUNTS
+GSE244827, which was already in the prior 53 (main dataset_manifest: 2 GSE =
+GSE84796 + GSE244827; 50 GSM = 17 + 33; 1 other = OpenTargets EFO_0008559).
+Exact-match proof: the 50 prior GSMs on main equal exactly the union of this
+branch's GSE84796_used (17) and GSE244827 (33) crosswalk rows. GSE244827's 33
+GSMs and 1 GSE were counted both in the prior 53 and in the 697 new.
+CORRECTED unique lane total: 716 tagged records = 15 GSE + 700 GSM + 1 other.
+120-record floor: still PASS with margin 596. Discovery of this error came
+from the standing rule (verify counts against live files, not status text);
+the error was mine at expansion time (GSE244827 not added to the exclusion
+list of previously tagged series before acquiring it again).

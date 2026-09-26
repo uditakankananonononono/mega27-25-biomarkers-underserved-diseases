@@ -154,3 +154,10 @@ Count: 33 used + 6 blocked-attempted; gate needs 40.
     (results/string_core6_network.tsv, string_core6_ppi_enrichment.tsv).
     Descriptive module-coherence evidence.
 Count: 34 used + 6 blocked-attempted; gate needs 40.
+
+## Addendum 8 (2026-09-27T00:54): service 35
+35. g:Profiler g:GOSt API - second-opinion enrichment on the 557-gene
+    cardiac-passing target pool (1833 terms): PI3K-Akt (KEGG 5.8e-22,
+    WP 6.8e-19) and focal adhesion PI3K-Akt-mTOR (1.5e-18) reproduce the
+    Enrichr pattern - engine-stable pathway context.
+Count: 35 used + 6 blocked-attempted; gate needs 40.

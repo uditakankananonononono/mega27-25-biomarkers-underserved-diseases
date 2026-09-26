@@ -78,7 +78,11 @@ strong-support validated targets of the 18 cardiac-passing candidates
 WikiPathways WP4172 adj 1.2e-33) and VEGFA-VEGFR2 signaling (WP3888
 adj 1.7e-32) - vascular/remodeling biology consistent with CCC - amid the
 expected generic cancer/transcription terms of large miRNA target pools
-(results/enrichr/, userListId 138561924).
+(results/enrichr/, userListId 138561924). A second independent engine,
+g:Profiler g:GOSt (2026-09-27), reproduces the pattern on the same gene
+set: PI3K-Akt signaling (KEGG p=5.8e-22; WP p=6.8e-19) and focal
+adhesion/PI3K-Akt/mTOR (p=1.5e-18) - the pathway context is
+engine-stable, not an Enrichr artifact (results/gprofiler_cardiac18_strong.json).
 
 ## 9.4 Honest status box
 PASSED: record floor (716), provenance model, benchmark-beat (H1'),

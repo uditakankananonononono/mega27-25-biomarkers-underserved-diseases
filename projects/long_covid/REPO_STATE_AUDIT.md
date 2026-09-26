@@ -5,7 +5,7 @@
 - `git status --porcelain` repo-wide: empty - nothing uncommitted, nothing unpushed.
 
 ## Data integrity (re-verified this audit)
-- P53 training counts `projects/long_covid/data/geo/p53/GSE293840_raw_counts_all.csv.gz`
+- P53 training counts `data/geo/p53/GSE293840_raw_counts_all.csv.gz` (repository root; path corrected 2026-09-26 round-1 fixes)
   sha256 = 97ca1aa82b1098e75042a7aac5aa003bd3411d2bbf5cdde2da329f6e0f4965d8 - matches LC_P53_preregistration.md.
 
 ## Artifact inventory (all committed)

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2026.8.14)  26 SEP 2026 10:19
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2026.8.14)  26 SEP 2026 11:59
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -328,28 +328,34 @@ LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <7.4> not available
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <6> not available
 (Font)              Font shape `OT1/ptm/b/n' tried instead on input line 24.
  (./manuscript.toc
+[1
+
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <10.95> not available
 (Font)              Font shape `OT1/ptm/b/n' tried instead on input line 4.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <8> not available
 (Font)              Font shape `OT1/ptm/b/n' tried instead on input line 4.
-
-[1
-
-{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] [2])
+ [2])
 \tf@toc=\write3
 \openout3 = `manuscript.toc'.
 
- [3] [4
+ [3]
+LaTeX Font Info:    Trying to load font information for TS1+ptm on input line 1
+15.
+
+(/usr/share/texlive/texmf-dist/tex/latex/psnfss/ts1ptm.fd
+File: ts1ptm.fd 2001/06/04 font definitions for TS1/ptm.
+) [4
 
 ]
-Overfull \hbox (102.07pt too wide) in paragraph at lines 123--140
+Overfull \hbox (102.07pt too wide) in paragraph at lines 147--164
 \OT1/ptm/m/n/10.95 tributes the locked eval-u-a-tion co-hort: 23 Long COVID, 9 
 ME/CFS, 15 healthy con-trols (\OT1/cmtt/m/n/10.95 results/longcovid[]p37[]sampl
 es.csv\OT1/ptm/m/n/10.95 )
  []
 
 [5]
-Overfull \hbox (57.29193pt too wide) in paragraph at lines 180--186
+Overfull \hbox (57.29193pt too wide) in paragraph at lines 204--210
 \OT1/ptm/m/n/10.95 ($\OML/ztmcm/m/it/10.95 D \OT1/ztmcm/m/n/10.95 = \OMS/ztmcm/
 m/n/10.95 ^^@\OT1/ztmcm/m/n/10.95 0\OML/ztmcm/m/it/10.95 :\OT1/ztmcm/m/n/10.95 
 356$\OT1/ptm/m/n/10.95 , per-mu-ta-tion $\OML/ztmcm/m/it/10.95 p \OT1/ztmcm/m/n
@@ -359,34 +365,40 @@ sign sta-ble in all 37 leave-one-out folds; \OT1/cmtt/m/n/10.95 results/lc[]p51
  []
 
 [6]
-Overfull \hbox (115.37305pt too wide) in paragraph at lines 233--247
+Overfull \hbox (115.37305pt too wide) in paragraph at lines 288--303
 \OT1/ptm/m/n/10.95 A judge-mode ad-vi-sory re-view of the draft de-sign (ver-ba
 -tim record and con-ver-sa-tion URL in \OT1/cmtt/m/n/10.95 redirect/lc[]p52[]ju
 dge[]consult.md\OT1/ptm/m/n/10.95 )
  []
 
 [7]
-Overfull \hbox (18.65154pt too wide) in paragraph at lines 321--329
+Overfull \hbox (2.15121pt too wide) in paragraph at lines 317--325
+\OT1/ptm/m/n/10.95 The locked sen-si-tiv-ity val-ues de-serve em-pha-sis, not m
+en-tion: the se-lected (no-module) land-scape's platform-
+ []
+
+[8]
+Overfull \hbox (18.65154pt too wide) in paragraph at lines 392--400
 \OT1/ptm/m/n/10.95 COVID record units: 3 GSE se-ries records plus 175 nested GS
 M sam-ple records (the fourth se-ries, GSE251872's
  []
 
-[8]
-Overfull \hbox (128.27284pt too wide) in paragraph at lines 386--391
+[9]
+Overfull \hbox (128.27284pt too wide) in paragraph at lines 482--487
 \OT1/ptm/b/n/10.95 Preregistrations \OT1/ptm/m/n/10.95 (com-mit-ted and pushed 
 be-fore any run of their arc): \OT1/cmtt/m/n/10.95 projects/long[]covid/prereg/
 LC[]P51[]preregistration.md
  []
 
 
-Overfull \hbox (7.53862pt too wide) in paragraph at lines 392--402
+Overfull \hbox (7.53862pt too wide) in paragraph at lines 488--505
 []\OT1/ptm/b/n/10.95 Analysis scripts and re-sults\OT1/ptm/m/n/10.95 : \OT1/cmt
 t/m/n/10.95 scripts/lc[]p51[]train.py \OT1/ptm/m/n/10.95 / \OT1/cmtt/m/n/10.95 
 results/lc[]p51[]train[]result.json \OT1/ptm/m/n/10.95 (com-
  []
 
 
-Overfull \hbox (27.5883pt too wide) in paragraph at lines 392--402
+Overfull \hbox (27.5883pt too wide) in paragraph at lines 488--505
 \OT1/ptm/m/n/10.95 mit \OT1/cmtt/m/n/10.95 858e63f0\OT1/ptm/m/n/10.95 ); \OT1/c
 mtt/m/n/10.95 scripts/lc[]p51[]evaluate.py \OT1/ptm/m/n/10.95 (locked at \OT1/c
 mtt/m/n/10.95 54b852cc\OT1/ptm/m/n/10.95 ) / \OT1/cmtt/m/n/10.95 results/lc[]p5
@@ -394,25 +406,41 @@ mtt/m/n/10.95 54b852cc\OT1/ptm/m/n/10.95 ) / \OT1/cmtt/m/n/10.95 results/lc[]p5
  []
 
 
-Overfull \hbox (58.85007pt too wide) in paragraph at lines 392--402
-\OT1/cmtt/m/n/10.95 results/lc[]p52[]train[]result.json \OT1/ptm/m/n/10.95 (com
--mit \OT1/cmtt/m/n/10.95 889be703\OT1/ptm/m/n/10.95 ). Pre-arc nulls: \OT1/cmtt
-/m/n/10.95 results/longcovid[]p36[]result.json\OT1/ptm/m/n/10.95 ,
+Overfull \hbox (11.04303pt too wide) in paragraph at lines 488--505
+\OT1/cmtt/m/n/10.95 ce47aa52\OT1/ptm/m/n/10.95 ) / \OT1/cmtt/m/n/10.95 results/
+lc[]p53[]train[]result.json \OT1/ptm/m/n/10.95 (com-mit \OT1/cmtt/m/n/10.95 e70
+90e29\OT1/ptm/m/n/10.95 ); \OT1/cmtt/m/n/10.95 scripts/lc[]p53[]evaluate.py
+ []
+
+[10]
+Overfull \hbox (690.98009pt too wide) in alignment at lines 542--547
+ [] [] [] [] [] [] 
  []
 
 
-Overfull \hbox (20.5478pt too wide) in paragraph at lines 392--402
-\OT1/cmtt/m/n/10.95 p37\OT1/ptm/m/n/10.95 , \OT1/cmtt/m/n/10.95 p38\OT1/ptm/m/n
-/10.95 . An-no-ta-tion sweeps: \OT1/cmtt/m/n/10.95 scripts/lc[]annotate[]*.py\O
-T1/ptm/m/n/10.95 , \OT1/cmtt/m/n/10.95 projects/long[]covid/results/external/\O
-T1/ptm/m/n/10.95 . 
+Overfull \hbox (322.82495pt too wide) in alignment at lines 560--567
+ [] [] [] [] [] 
  []
 
-[9]
+
+Overfull \hbox (103.8873pt too wide) in paragraph at lines 577--596
+\OT1/cmtt/m/n/10.95 projects/long[]covid/EXTERNAL[]SERVICES.md \OT1/ptm/m/n/10.
+95 (44 ser-vices; ev-i-dence un-der \OT1/cmtt/m/n/10.95 projects/long[]covid/re
+sults/external/\OT1/ptm/m/n/10.95 ).
+ []
+
+
+Overfull \hbox (12.19307pt too wide) in paragraph at lines 577--596
+\OT1/ptm/m/n/10.95 record: \OT1/cmtt/m/n/10.95 projects/long[]covid/judge[]roun
+ds/ \OT1/ptm/m/n/10.95 (ver-ba-tim prompts, re-sponses, con-ver-sa-tion URLs, h
+ashes). 
+ []
+
+[11]
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.453 L1_
+l.634 L1_
          ifna & 95 & -0.134 & 0.2548 & 37/37 & no \\
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -420,7 +448,7 @@ you left one out. Proceed, with fingers crossed.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.453 L1_ifna &
+l.634 L1_ifna &
                 95 & -0.134 & 0.2548 & 37/37 & no \\
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -431,7 +459,7 @@ my insertion and my current dilemma will both disappear.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.454 L2_
+l.635 L2_
          ifng & 188 & -0.164 & 0.1724 & 37/37 & no \\
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -439,7 +467,7 @@ you left one out. Proceed, with fingers crossed.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.454 L2_ifng &
+l.635 L2_ifng &
                 188 & -0.164 & 0.1724 & 37/37 & no \\
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -450,7 +478,7 @@ my insertion and my current dilemma will both disappear.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.455 L3_
+l.636 L3_
          inflammatory & 153 & -0.072 & 0.2872 & 37/37 & no \\
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -458,7 +486,7 @@ you left one out. Proceed, with fingers crossed.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.455 L3_inflammatory &
+l.636 L3_inflammatory &
                         153 & -0.072 & 0.2872 & 37/37 & no \\
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -469,7 +497,7 @@ my insertion and my current dilemma will both disappear.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.456 L4_
+l.637 L4_
          tnfa_nfkb & 171 & +0.127 & 0.1721 & 37/37 & no \\
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -477,7 +505,7 @@ you left one out. Proceed, with fingers crossed.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.456 L4_tnfa_nfkb &
+l.637 L4_tnfa_nfkb &
                      171 & +0.127 & 0.1721 & 37/37 & no \\
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -488,7 +516,7 @@ my insertion and my current dilemma will both disappear.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.457 L5_
+l.638 L5_
          il6_jakstat3 & 69 & -0.174 & 0.1072 & 37/37 & no \\
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -496,7 +524,7 @@ you left one out. Proceed, with fingers crossed.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.457 L5_il6_jakstat3 &
+l.638 L5_il6_jakstat3 &
                         69 & -0.174 & 0.1072 & 37/37 & no \\
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -507,7 +535,7 @@ my insertion and my current dilemma will both disappear.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.458 L6_
+l.639 L6_
          complement & 161 & -0.196 & 0.1111 & 37/37 & no \\
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -515,7 +543,7 @@ you left one out. Proceed, with fingers crossed.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.458 L6_complement &
+l.639 L6_complement &
                       161 & -0.196 & 0.1111 & 37/37 & no \\
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -526,7 +554,7 @@ my insertion and my current dilemma will both disappear.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.459 L7_
+l.640 L7_
          oxphos & 195 & -0.356 & 0.0432 & 37/37 & \textbf{yes} \\
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -534,7 +562,7 @@ you left one out. Proceed, with fingers crossed.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.459 L7_oxphos &
+l.640 L7_oxphos &
                   195 & -0.356 & 0.0432 & 37/37 & \textbf{yes} \\
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -545,7 +573,7 @@ my insertion and my current dilemma will both disappear.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.460 L8_
+l.641 L8_
          hypoxia & 139 & -0.130 & 0.1024 & 37/37 & no \\
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -553,7 +581,7 @@ you left one out. Proceed, with fingers crossed.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.460 L8_hypoxia &
+l.641 L8_hypoxia &
                    139 & -0.130 & 0.1024 & 37/37 & no \\
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -564,7 +592,7 @@ my insertion and my current dilemma will both disappear.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.461 L9_
+l.642 L9_
          il2_stat5 & 166 & -0.106 & 0.2071 & 37/37 & no \\
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -572,7 +600,7 @@ you left one out. Proceed, with fingers crossed.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.461 L9_il2_stat5 &
+l.642 L9_il2_stat5 &
                      166 & -0.106 & 0.2071 & 37/37 & no \\
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -580,10 +608,11 @@ With luck, this will get me unwedged. But if you
 really didn't forget anything, try typing `2' now; then
 my insertion and my current dilemma will both disappear.
 
+[12]
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.469 L1_
+l.650 L1_
          ifna & 95 & 15 & +0.021 & 0.8917 & 19/27 & no \\
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -591,7 +620,7 @@ you left one out. Proceed, with fingers crossed.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.469 L1_ifna &
+l.650 L1_ifna &
                 95 & 15 & +0.021 & 0.8917 & 19/27 & no \\
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -602,7 +631,7 @@ my insertion and my current dilemma will both disappear.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.470 L2_
+l.651 L2_
          ifng & 189 & 52 & +0.030 & 0.7825 & 26/27 & no \\
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -610,7 +639,7 @@ you left one out. Proceed, with fingers crossed.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.470 L2_ifng &
+l.651 L2_ifng &
                 189 & 52 & +0.030 & 0.7825 & 26/27 & no \\
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -621,7 +650,7 @@ my insertion and my current dilemma will both disappear.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.471 L3_
+l.652 L3_
          inflammatory & 156 & 48 & -0.028 & 0.8286 & 26/27 & no \\
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -629,7 +658,7 @@ you left one out. Proceed, with fingers crossed.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.471 L3_inflammatory &
+l.652 L3_inflammatory &
                         156 & 48 & -0.028 & 0.8286 & 26/27 & no \\
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -640,7 +669,7 @@ my insertion and my current dilemma will both disappear.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.472 L4_
+l.653 L4_
          tnfa_nfkb & 179 & 48 & +0.076 & 0.6851 & 27/27 & no \\
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -648,7 +677,7 @@ you left one out. Proceed, with fingers crossed.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.472 L4_tnfa_nfkb &
+l.653 L4_tnfa_nfkb &
                      179 & 48 & +0.076 & 0.6851 & 27/27 & no \\
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -659,7 +688,7 @@ my insertion and my current dilemma will both disappear.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.473 L5_
+l.654 L5_
          il6_jakstat3 & 72 & 35 & -0.023 & 0.8170 & 24/27 & no \\
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -667,7 +696,7 @@ you left one out. Proceed, with fingers crossed.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.473 L5_il6_jakstat3 &
+l.654 L5_il6_jakstat3 &
                         72 & 35 & -0.023 & 0.8170 & 24/27 & no \\
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -678,7 +707,7 @@ my insertion and my current dilemma will both disappear.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.474 L6_
+l.655 L6_
          complement & 163 & 30 & -0.057 & 0.5444 & 26/27 & no \\
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -686,7 +715,7 @@ you left one out. Proceed, with fingers crossed.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.474 L6_complement &
+l.655 L6_complement &
                       163 & 30 & -0.057 & 0.5444 & 26/27 & no \\
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -697,7 +726,7 @@ my insertion and my current dilemma will both disappear.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.475 L7_
+l.656 L7_
          oxphos & 199 & 12 & -0.014 & 0.9217 & 19/27 & no \\
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -705,7 +734,7 @@ you left one out. Proceed, with fingers crossed.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.475 L7_oxphos &
+l.656 L7_oxphos &
                   199 & 12 & -0.014 & 0.9217 & 19/27 & no \\
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -716,7 +745,7 @@ my insertion and my current dilemma will both disappear.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.476 L8_
+l.657 L8_
          hypoxia & 145 & 17 & +0.031 & 0.6303 & 27/27 & no \\
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -724,7 +753,7 @@ you left one out. Proceed, with fingers crossed.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.476 L8_hypoxia &
+l.657 L8_hypoxia &
                    145 & 17 & +0.031 & 0.6303 & 27/27 & no \\
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -735,7 +764,7 @@ my insertion and my current dilemma will both disappear.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.477 L9_
+l.658 L9_
          il2_stat5 & 175 & 39 & +0.074 & 0.1938 & 27/27 & no \\
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -743,7 +772,7 @@ you left one out. Proceed, with fingers crossed.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.477 L9_il2_stat5 &
+l.658 L9_il2_stat5 &
                      175 & 39 & +0.074 & 0.1938 & 27/27 & no \\
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -751,103 +780,95 @@ With luck, this will get me unwedged. But if you
 really didn't forget anything, try typing `2' now; then
 my insertion and my current dilemma will both disappear.
 
-[10]
-Overfull \hbox (133.95464pt too wide) in paragraph at lines 506--517
-\OT1/ptm/m/it/10.95 nine \OT1/ptm/m/n/10.95 Hall-mark mod-ules sep-a-rate ME/CF
-S from healthy cfRNA (two-sided $\OML/ztmcm/m/it/10.95 p$ \OT1/ptm/m/n/10.95 fr
-om .0008 to .011; \OT1/cmtt/m/n/10.95 results/lc[]p53[]train[]result.json\OT1/p
-tm/m/n/10.95 ).
- []
-
-
-Overfull \hbox (6.79504pt too wide) in paragraph at lines 519--531
+[13]
+Overfull \hbox (6.79504pt too wide) in paragraph at lines 741--753
 \OT1/ptm/m/n/10.95 On the un-touched GSE275334 cel-lu-lar panel (\OT1/cmtt/m/n/
 10.95 results/lc[]p53[]eval[]result.json\OT1/ptm/m/n/10.95 ): \OT1/ptm/b/n/10.9
 5 E1 fails \OT1/ptm/m/n/10.95 - the cfRNA-
  []
 
-[11]
-Overfull \hbox (27.60526pt too wide) in alignment at lines 551--554
+[14]
+Overfull \hbox (27.60526pt too wide) in alignment at lines 799--802
  [] [] [] [] [] [] 
  []
 
 
-Overfull \hbox (27.60526pt too wide) in alignment at lines 554--556
+Overfull \hbox (27.60526pt too wide) in alignment at lines 802--804
  [] [] [] [] [] [] 
  []
 
 
-Overfull \hbox (27.60526pt too wide) in alignment at lines 556--575
+Overfull \hbox (27.60526pt too wide) in alignment at lines 804--823
  [] [] [] [] [] [] 
  []
 
 
-Overfull \hbox (2.67763pt too wide) in paragraph at lines 577--592
+Overfull \hbox (2.67763pt too wide) in paragraph at lines 825--840
 \OT1/ptm/m/n/10.95 rich-ment con-firmed in-de-pen-dently. Sec-ond, the com-para
 -tor six are sig-nal-ing genes (ki-nases JAK1/MAP3K8,
  []
 
-[12] [13]
-Overfull \hbox (59.23418pt too wide) in paragraph at lines 699--720
+[15] [16]
+Overfull \hbox (59.23418pt too wide) in paragraph at lines 965--986
 \OT1/ptm/m/n/10.95 brary per per-son en-ters the train-ing co-hort, cho-sen by 
 the fixed rule recorded in \OT1/cmtt/m/n/10.95 results/longcovid[]p36[]samples.
 csv
  []
 
 
-Overfull \hbox (18.83926pt too wide) in paragraph at lines 699--720
+Overfull \hbox (18.83926pt too wide) in paragraph at lines 965--986
 \OT1/cmtt/m/n/10.95 results/longcovid[]p37[]samples.csv\OT1/ptm/m/n/10.95 ; the
  eval-u-a-tion scripts as-sert the 15/18/14 Long COVID/healthy/ME-
  []
 
 
-Overfull \hbox (0.84904pt too wide) in paragraph at lines 699--720
+Overfull \hbox (0.84904pt too wide) in paragraph at lines 965--986
 \OT1/ptm/m/n/10.95 CFS com-po-si-tion be-fore any test. For GSE251872, group an
 d plat-form are re-derived from the two platform-
  []
 
-[14] [15]
-Overfull \hbox (122.54604pt too wide) in paragraph at lines 795--803
+[17] [18]
+Overfull \hbox (122.54604pt too wide) in paragraph at lines 1071--1079
 \OT1/ptm/m/n/10.95 In GSE226260 it-self (17 PASC vs 20 re-cov-ered, 12,828 mea-
 sur-able sym-bols af-ter map-ping; \OT1/cmtt/m/n/10.95 results/longcovid[]p36[]
 result.json\OT1/ptm/m/n/10.95 ),
  []
 
 
-Overfull \hbox (22.0477pt too wide) in paragraph at lines 805--815
+Overfull \hbox (22.0477pt too wide) in paragraph at lines 1081--1091
 \OT1/ptm/m/n/10.95 On GSE275334 PBMC NanoS-tring (15 Long COVID vs 18 healthy; 
 \OT1/cmtt/m/n/10.95 results/longcovid[]p37[]result.json\OT1/ptm/m/n/10.95 ),
  []
 
-[16]
-Overfull \hbox (180.82112pt too wide) in paragraph at lines 847--851
+[19]
+Overfull \hbox (180.82112pt too wide) in paragraph at lines 1125--1129
 \OT1/ptm/m/n/10.95 con-tent, be-yond the ledger counts, is as fol-lows (all ev-
 i-dence in \OT1/cmtt/m/n/10.95 projects/long[]covid/results/external/tertiary[]
 annotations[]lc.json\OT1/ptm/m/n/10.95 ). 
  []
 
-[17] (./manuscript.aux) ) 
+[20] [21] (./manuscript.aux) ) 
 Here is how much of TeX's memory you used:
- 3508 strings out of 480247
- 51940 string characters out of 5896151
- 352638 words of memory out of 5000000
- 21397 multiletter control sequences out of 15000+600000
- 515244 words of font info for 127 fonts, out of 8000000 for 9000
+ 3543 strings out of 480247
+ 52419 string characters out of 5896151
+ 354979 words of memory out of 5000000
+ 21428 multiletter control sequences out of 15000+600000
+ 515558 words of font info for 128 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
- 55i,6n,62p,222b,242s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r
-.enc}</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb><
-/usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/sh
-are/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/te
-xlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb></usr/share/texlive/
-texmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb></usr/share/texlive/texmf-
-dist/fonts/type1/urw/times/utmb8a.pfb></usr/share/texlive/texmf-dist/fonts/type
-1/urw/times/utmr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utm
-ri8a.pfb>
-Output written on manuscript.pdf (17 pages, 153322 bytes).
+ 55i,6n,62p,262b,242s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/share/texlive/texmf-dist/fonts/enc/dvips/ba
+se/8r.enc}</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.
+pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></u
+sr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/sha
+re/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb></usr/share/tex
+live/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb></usr/share/texlive/t
+exmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/share/texlive/texmf-dist/fonts
+/type1/urw/times/utmr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/time
+s/utmri8a.pfb>
+Output written on manuscript.pdf (21 pages, 174353 bytes).
 PDF statistics:
- 100 PDF objects out of 1000 (max. 8388607)
- 64 compressed objects within 1 object stream
+ 113 PDF objects out of 1000 (max. 8388607)
+ 73 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 

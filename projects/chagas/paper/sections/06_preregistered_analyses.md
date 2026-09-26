@@ -46,3 +46,38 @@ against a published n=60). Run 1 is not edited, re-run silently, or
 removed; it stands as the first entry of the run log. Whatever Amendment
 2 produces will be measured against the same locked benchmark value and
 reported under the same tier rules.
+
+## 6.5 Addendum 3: the judge-01 redesign, locked before any rerun
+Judge round 01 (judge_rounds/01_*, advisory text; adoption is ours)
+produced Addendum 3, locked 2026-09-26T21:23 IST before any new outcome
+run. Three clauses. C1: H1 closed as a documented negative; H1'
+registered - ordinal severity prediction on the 146 graded samples with
+immediate-threshold logistic regression, nested 5x3 CV, seed 20260926,
+top-100 inner-fold feature selection, ordinal c-index primary, and
+molecule-matched benchmarks (clinical age/sex model; best single miRNA
+chosen on inner folds). The beat criterion requires exceeding BOTH with
+bootstrap CIs of the difference excluding zero. C2: gate (b) routed to
+experimentally validated targets only (miRTarBase; prediction-only
+databases explicitly rejected), frozen direction rule, two orthogonal
+cohorts, 10,000 size-preserving permutations, BH FDR <= 0.05; same-
+molecule placenta replication and monotonic-trend "internal replication"
+rejected as replication. C3: the discovery deliverable frozen as a
+multi-omic severity module score resting only on gate-(b)-passing
+programs plus a druggability overlay, with the claim wording frozen as
+"a conserved regulatory module tracks transition toward cardiac disease"
+- never "miR-X predicts CCC".
+
+## 6.6 Execution record against the amendments
+H1' ran as locked (section 8): CLEAR BEAT on both locked comparators.
+Gate (b) ran 2026-09-27 exactly as C2 specifies - miRTarBase validated
+targets, frozen direction rule, both named cohorts, the locked
+permutation null - with two execution-time disclosures made in the run
+log rather than silently absorbed: the retrieval pinned miRTarBase v8.0
+(the live site's download paths had restructured; the official file was
+recovered byte-hashed from an archive snapshot of the publisher URL),
+and the GSE244827 sample-to-column identity, assumed positional at
+staging, was re-derived as a verified B-code bijection from live GEO
+records and asserted in code. Both disclosures strengthen the run; the
+design did not move. The module score and druggability overlay followed
+per C3 (section 9): the both-tissue core satisfies every C3 tier; the
+in-sample nature of the score is stated wherever the number appears.

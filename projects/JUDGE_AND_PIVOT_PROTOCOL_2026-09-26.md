@@ -11,6 +11,7 @@ Each disease has its own records, genuinely used external-service ledger, substa
 3. Lock a new question, comparator, split, metric, analysis plan, exclusion rule and independence check *before* seeing new held-out values. Do not reuse an exposed holdout as if untouched; do not promote a weaker endpoint to claim a win.
 4. Test with reproducible code, uncertainty and negative controls. A benchmark win requires the same task, patient unit and metric or a justified direct comparison, without leakage. A discovery requires a named new insight supported beyond the data used to select it, with relevant prior art checked. AI-judge praise is not evidence for either gate.
 5. If a necessary clinical crosswalk or independent cohort does not exist, record that blocker and pursue a different defensible question or acquire new data. Keep the project open rather than fabricating a biological result.
+6. When a negative/failure stalls progress, ask ChatGPT for redirection options with the actual failed design and source constraints. Preserve the verbatim prompt/answer, vet suggestions against primary sources and provenance, and select a defensible pivot under a new pre-value lock. A model suggestion is not a result or a reason to loosen the original gate.
 
 ## ChatGPT rounds: count only substantive iterations
 

@@ -1,0 +1,109 @@
+===DOCUMENT TEXT (part 5 of 9)===
+Item 27 | September 25, 2026 | Current manuscript - not the archival survey
+and pig fecal P are different endpoints, so this cross-check neither wins an algorithm benchmark nor validates an
+animal claim; published literature is not counted as an external research tool.
+The unresolved pig-phenotype reproduction led to a concrete within-PhosGene pivot rather than an invented
+positive effect. The new identifiability validator demands a numerical value, unit, source URL, organism, assay or
+feeding condition, and transfer rationale for every parameter used to turn AppA activity into a predicted fecal-P
+effect. Its requirement table is fixed in protocols/phosgene_identifiability_2026-09-25.md, and the
+implementation is phosgene/identifiability.py. A non-pig assay cannot silently stand in for pig-lumen physiology:
+the provided rationale must be substantial, but a substantial statement alone would not scientifically validate
+transfer. Owner/source review would still be required before interpreting a calculation as an animal result.
+The actual source packet contains an in-vitro purified E. coli AppA Km of 0.79 mM with PMID 10696472 and
+explicitly blank pig-transfer rationale. No pig-gut volume, active enzyme exposure, residence time, pH activity
+history, diet partition, baseline fecal fraction or absorption fraction is supplied. The validator returns 10 gaps,
+status unassessable and phenotype null. This failure is the intended scientific guardrail. A synthetic all-fields
+packet is used only by a unit test to check input bounds and mass-balance arithmetic; its output is never the
+reported pig phenotype. Committed result: phosgene/data/identifiability_audit.json.
+ Required source-grounded dimension     Expected unit                           Current verdict
+ substrate_mmol_per_kg                  mmol/kg                                 missing or unsupported transfer
+ enzyme_u_per_kg                        U/kg                                    missing or unsupported transfer
+ km_mmolar                              mM                                      missing or unsupported transfer
+ fluid_l_per_kg                         L/kg                                    missing or unsupported transfer
+ duration_min                           min                                     missing or unsupported transfer
+ ph_factor                              fraction                                missing or unsupported transfer
+ dietary_p_mmol                         mmol/kg                                 missing or unsupported transfer
+ baseline_excreted_fraction             fraction                                missing or unsupported transfer
+ phytate_fraction                       fraction                                missing or unsupported transfer
+ absorbed_fraction                      fraction                                missing or unsupported transfer
+
+This pivot yields a usable decision aid: researchers can see which original measurements are needed for a
+falsifiable pig comparison. It is a method/validation result, not a new biological effect size or proof the codon
+optimizer improves expression. The tool itself is local code, so it adds zero external tools and zero individual
+accessions to the strict gates. The original negative waypoint remains visible beside this narrower useful
+deliverable.
+
+9.3 Exploratory AppA-family provenance and transfer audit
+To make better use of public sequence evidence without pretending it supplies missing pig physiology, a follow-
+up queried reviewed UniProtKB entries carrying InterPro IPR000560, a family cross-reference verified on the
+direct AppA P07102 entry. The query returned 89 named entries; all 89 were retrieved at separate accession
+JSON endpoints, checked for exact primary accession, reviewed status and family cross-reference, and used in an
+untuned amino-acid 3-mer Jaccard comparison with P07102. Each record preserves source URL, SHA-256,
+sequence, organism, name, EC evidence and the explicit refusal to transfer its rate to pig gut. This is an
+exploratory source-scope study; the local plan preceded entry fetching but followed the original pig-model failure.
+Only 16 of the 89 direct records are explicitly named phytases. 34 carry at least one EC annotation with an
+experimental PubMed citation, which is still not a common-substrate or pig-lumen assay. The maximum non-
+anchor 3-mer Jaccard with AppA is 0.07798. A broad family match, name or low descriptive k-mer overlap does
+not establish equivalent catalytic products, secretion or in-vivo rate; these entries cannot calibrate the fecal-P
+sandbox. A second, pre-stated unreviewed bacterial phytase-label stratum added 40 disjoint direct entries. All 40
+carry explicit unreviewed phytase names, but zero experimental EC PubMed citations; maximum AppA 3-mer
+Jaccard is 0.13043. The combined narrow family-provenance audit uses 129 direct-fetched protein records (89
+reviewed, 40 unreviewed), which meets an accession-count condition for that annotation tool only. It does not
+represent 120 experimentally validated AppA-like kinetic measurements and adds no distinct service beyond
+
+Source: mega27-27-isef-bioinf-derived-tools | All outcomes limited to cited data and tests
+Item 27 | September 25, 2026 | Current manuscript - not the archival survey
+already counted UniProtKB. The 10-gap phenotype audit remains null. Full result:
+phosgene/data/hap_family_audit.json, method: phosgene/scripts/hap_family_audit.py.
+
+
+10. Calibration and failure modes
+A Beta(1,1) prior with three selected retrospective runnable builds produces Beta(4,1), posterior mean 0.800 and
+equal-tail interval [0.398,0.994]. Counting the two newer runnable candidates would yield Beta(6,1), mean 0.857
+and interval [0.541,0.996] for the narrowly defined end point of runnable construction. These values are not a
+biological success rate, a probability of winning an award, or evidence the rubric predicts discovery. An
+unassessable animal outcome cannot be relabeled a success just because a CLI runs.
+                                 P(q | s,n) = Beta(1+s, 1+n-s) under a uniform Beta(1,1) prior.
+                                        E[q | s,n] = (1+s)/(2+n); with s=n=3, E[q]=4/5.
+Selection of high-scored ideas inflates apparent build completion. With only two new post-protocol tests and no
+blinding, weakest-criterion calibration is not statistically assessable. The independent rater template is blank.
+VenomFunction-2 shows a useful failure of a homolog-sensitive split, while PhosGene fails a source-parameter
+sufficiency test. Both are legitimate bounded outcomes with different scopes.
+
+
+11. External tool audit and still-open conditions
+The strict ledger has 24 rows documenting service uses and attempted calls (some repeated providers), 17 counted
+across the two detailed candidates, but this aggregate is not a candidate-level gate. VenomFunction has 6/40
+(short by 34); PhosGene has 11/40 (short by 29). Each counted service has a source URL, preregistered or clearly
+exploratory test ID, output file and interpretive use. Exclusions include the official award page as a corpus rather
+than an analysis tool, a Pfam endpoint hosted by InterPro as the same service, a failed PDBe request, failed
+SABIO-RK, failed RCSB search, RCSB mirror of a PDB record, and NCBI BLAST still waiting. This accounting
+is more conservative than a list of URLs or software names.
+ Scientific service or attempt   Arm/test                        Counted?                         Meaning of check
+ Society for Science             award survey A1                 0                                Official award evidence source, not
+                                                                                                  a scientific analysis tool; seven
+                                                                                                  pages
+ UniProtKB                       VenomFunction V0                1                                120 direct-fetched entries actually
+                                                                                                  scored, one service
+ InterPro                        VenomFunction V1                1                                IPR003571 family cross-check
+ AlphaFold DB                    VenomFunction V5                1                                Predicted model confidence, not
+                                                                                                  function
+ NCBI Entrez/GenBank             PhosGene P0                     1                                AppA CDS; NCBI taxonomy same
+                                                                                                  provider not counted separately
+ Kazusa Codon Usage Database     PhosGene P0                     1                                64-codon frequency table in
+                                                                                                  optimizer
+ KEGG                            PhosGene P2                     1                                AppA gene identity versus wrong
+                                                                                                  AphA gene
+ ExPASy ENZYME                   PhosGene P3                     1                                4-phytase class reaction/isomer
+ Rhea                            PhosGene P4                     1                                Reaction isomer disagreement
+                                                                                                  against UniProt direct annotation
+ BRENDA                          PhosGene P1                     1                                Heterogeneous Km contexts fail to
+                                                                                                  identify in-vivo model parameters
+ STRING                          PhosGene P8                     1                                P07102 maps to b0980 AppA,
+                                                                                                  periplasmic annotation
+ InterPro-hosted Pfam            VenomFunction V2                0                                Same InterPro service/member
+                                                                                                  signature; not independent
+ PDBe                            VenomFunction V3                0                                404 no data
+ SABIO-RK                        PhosGene P6                     0                                Redirected UI 404; no kinetic result
+
+Source: mega27-27-isef-bioinf-derived-tools | All outcomes limited to cited data and tests

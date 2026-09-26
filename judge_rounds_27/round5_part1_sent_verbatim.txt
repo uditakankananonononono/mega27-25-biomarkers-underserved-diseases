@@ -1,0 +1,372 @@
+I am going to paste the COMPLETE extracted text of a document in 3 parts because of message length limits. After each part, reply ONLY with 'Part N received' and wait - do not analyze anything until I send the review questions after part 3.
+===BEGIN DOCUMENT TEXT (part 1 of 3)===
+Item 27 | September 25, 2026 | Current manuscript - not the archival survey
+
+ISEF-derived computational biology tools: award-corpus audit,
+family-held-out toxin benchmark, and AppA model provenance
+Current corrected research manuscript | September 25, 2026 | Ten runnable candidate directions are present; this
+19-page aggregate is not a final per-project paper. The updated owner floor is 50 pages of substantive research
+content per project, excluding headings and references; benchmark and external-resource gates remain open.
+Abstract. We built a reproducible corpus of 125 CBIO award project-year rows from seven Society for Science
+listings. A winner-only corpus cannot estimate award odds or validate a selection rule. A five-criterion rubric
+remained usable as a structured scoring CLI but has not undergone independent inter-rater testing. Of ten derived
+projects requested, this detailed study tests VenomFunction-2, a sequence classifier benchmark, and PhosGene, an
+AppA codon and phosphorus-balance sandbox; an updated source-limited inventory below describes the other
+eight runnable builds without promoting their results to validated discoveries. In 1,814 deduplicated reviewed
+snake-toxin sequences, random-split mean AUROC was 0.98044, falling to 0.59123 under family-held-out folds.
+An attribution proxy failed. PhosGene preserved protein translation and mass balance but could not verify a pig
+phenotype; an evidence validator refuses to compute that phenotype from incomplete in-vivo inputs. We
+individually fetched and scored 120 named UniProtKB entries. The shared scientific service ledger counts 17 uses
+across both candidates, below the 40-per-project requirement. These are bounded research results, not clinical or
+animal claims.
+
+
+1. Research question and frozen scope
+Question A: can official CBIO awards support a dependable design rubric? Question B: does a toxin-keyword
+predictor generalize outside annotated venom families? Question C: does a computational AppA construct
+optimizer reproduce a measurable fecal-phosphorus effect? The first is not answerable as an award-probability
+question from winning titles alone. The second has a falsifiable benchmark with a negative generalization gap.
+The third is currently unassessable from parameter provenance; a within-project evidence gate now identifies
+what is missing. These negative and unassessable waypoints are not terminal failures: further within-project
+pivots must retain them and seek a genuine useful result. We keep these outcomes separate.
+The user requested ten new ISEF-derived projects, each with at least 120 accession datasets, 40 external scientific
+tools, formulas, a falsifiable discovery or broken benchmark, a usable tool, a full paper and delivery. This
+manuscript gives detailed methods for candidates 1-2 and a separately labeled status inventory for eight newly
+built candidate directions 3-10. All ten have runnable code or audits, but none is asserted to meet every per-
+project scientific/resource gate; the status inventory is not a full methods/results paper for each of the eight. Three
+earlier tool prototypes are retrospective context and do not increase the ten-build count. The item-27 study has
+120 individually fetched-and-used toxin entries, 129 separately retrieved AppA-family annotation entries, and 17
+counted service uses assigned separately, never pooled to satisfy a candidate gate. Of these services only six are
+assigned to VenomFunction and eleven to PhosGene; a service must be materially used within the named
+candidate to count toward that candidate, so no shared-ledger completion claim is made. Shared counts do not
+automatically satisfy 120/40 for either standalone candidate: VenomFunction has the 120 direct toxin entries but
+fewer than 40 tools, and PhosGene now has 129 direct entries used in an exploratory AppA-family provenance
+audit, but not 120 experimentally validated phytase activity measurements, and still fewer than 40 tools or a pig
+outcome. The nonwinner denominator and three blinded outside raters are absent.
+
+
+2. Source provenance and reproducibility
+Award listings came from the original Society for Science full-awards pages. A project is one unique year/project-
+code pair after repeated top-award mentions are deduplicated. Each TSV row records year, code, title, award tier
+and original source URL. 2020 is excluded from this award-listing corpus rather than interpreted as zero CBIO
+Source: mega27-27-isef-bioinf-derived-tools | All outcomes limited to cited data and tests
+Item 27 | September 25, 2026 | Current manuscript - not the archival survey
+award projects. Source and parser: survey/data/official_cbio_awards.tsv and survey/scripts/collect_awards.py.
+The seven pages include https://www.societyforscience.org/press-release/regeneron-isef-2025-full-awards/ and
+https://www.societyforscience.org/press-release/regeneron-isef-full-awards-2023/.
+ Year                                                                 Awarded CBIO rows
+ 2018                                                                 10
+ 2019                                                                 13
+ 2021                                                                 25
+ 2022                                                                 20
+ 2023                                                                 20
+ 2024                                                                 15
+ 2025                                                                 22
+
+The literature and service checks do not manufacture 40 independent sources. One database queried 120 times
+remains one service. Mirrors of the same record and inaccessible endpoints are excluded. Public, unauthenticated
+science APIs required no external account login; private Drive delivery uses the connected owner account. Source
+URLs, test IDs, result paths and the counted judgment for every tried tool are in external_tools/ledger.tsv.
+
+
+3. Winner-only award analysis: what can be measured
+The title audit uses fixed literal/regex-like tokens, never semantic coding of the full abstract. It counts explicit
+wording rather than actual underlying methods. The 125 listing records are neither patient/protein datasets nor a
+sample of all science-fair submissions. A zero count is compatible with a method used but omitted from the title.
+A high count cannot establish judges rewarded that technique. The six original “what wins” patterns remain
+candidate prompts, not validated rules.
+ Title phrase                                                         Explicit matches in 125 titles
+ CNN explicitly named                                                 0
+ deep learning explicitly named                                       19
+ graph explicitly named                                               16
+ machine learning explicitly named                                    18
+ clinical or disease keyword                                          41
+ attribution or interpretability explicitly named                     0
+ low cost or access explicitly named                                  1
+ NLP explicitly named                                                 0
+
+A prospective award-probability analysis would require submitted projects including nonwinners, consistent
+category coding, covariates for year and award tier, and an analysis plan fixed before comparing methods. We
+have no such denominator. A 2023 suicide-prevention example appears outside CBIO and must not be folded into
+this CBIO award corpus. See survey/INTERPRETATION.md for the individual six-pattern audit.
+                          Observed title share = n(explicit title matches) / 125; this is NOT P(award | method).
+Citation: Society for Science 2025 full awards, URL above, plus the per-row official URLs in the award TSV. Re-
+running survey/scripts/collect_awards.py gives the source corpus. The parser is independently checked by
+tests/test_awards.py and tests/test_pattern_audit.py.
+
+
+4. Rubric as an instrument, not a validated predictor
+The scorer takes five required integer 0-4 fields: real data availability, novelty, feasible scope, measurable verdict
+and field or clinical value. Total is the unweighted sum; tier thresholds are strong >=17, promising >=13, needs
+work below 13. Missing, extra, Boolean, fractional and out-of-range scores are rejected. This prevents malformed
+input, not subjective disagreement or judge validity. The anchors are displayed by the CLI and the input remains a
+human judgment.
+                            T = d + n + f + m + v, where each term is an integer in {0,1,2,3,4}; 0 <= T <= 20.
+Source: mega27-27-isef-bioinf-derived-tools | All outcomes limited to cited data and tests
+Item 27 | September 25, 2026 | Current manuscript - not the archival survey
+                           tier(T) = strong if T >= 17; promising if 13 <= T < 17; needs work otherwise.
+ Candidate                                     Total / 20                                Weakest dimension
+ VenomFunction-2                               18                                        novel_angle
+ DreamMarker                                   18                                        measurable_verdict
+ RelapseCV                                     18                                        novel_angle
+ ConnectoScope                                 17                                        clinical_or_field_value
+ PhosGene                                      17                                        real_data_available
+
+Scores were frozen before the two new tests in protocols/prospective_2026-09-25.md. That dated local file is not
+an independent preregistration service. The earlier three selected builds were retrospective. The prospective two
+were preselected, unblinded and far too few to validate predictive calibration. The planned independent three-rater
+study has a protocol and blank template only; it has not recruited or measured anyone. No kappa or alpha estimate
+exists.
+Unweighted exact agreement = number of equal paired scores / number of paired criteria; no value is available without raters.
+A proper rater study would anonymize and randomize idea briefs before outcomes are revealed, use three
+separately consenting qualified scorers, preserve raw integer ratings and report each pair, not cherry-pick the most
+agreeable pair. The user has not selected recipients or shared-material scope for outside contact. This scientific
+gap is separate from CLI usability.
+
+
+5. VenomFunction-2: task, entries, split design
+We retrieved 2,068 reviewed Swiss-Prot snake-toxin search rows in five bulk pages. The task label is UniProt
+Neurotoxin keyword, not measured potency, clinical benefit, receptor binding or an experiment. The family is a
+UniProt similarity-comment family annotation. Sequences shorter than 25 residues, unnamed-family records and
+exact duplicates were excluded; one exact-sequence conflicting-label group was removed as ambiguous. The final
+training/evaluation corpus has 1,814 unique sequences, 542 keyword positives, across 25 named family groups.
+Bulk IDs alone do not count toward the strict individual-accession gate.
+The classifier is a binary character 3-mer CountVectorizer with min_df=2 and balanced logistic regression.
+Vocabulary is fitted only on the training fold. A prevalence-only dummy baseline is refit per fold. Five random
+stratified folds are compared with five disjoint family folds; these are different target populations and not
+interchangeable matched samples. A large random-fold AUROC can arise from homologous motifs shared across
+train and test; measured 3-mer overlap is audited below.
+                               x_s[k] = 1 if protein sequence s contains amino-acid 3-mer k, else 0.
+                                     p(y=1 | x) = 1 / (1 + exp[-(beta_0 + sum_k beta_k x_k)]).
+                           L(beta) = sum_i w_i[-y_i log(p_i) - (1-y_i) log(1-p_i)] + lambda ||beta||_2^2.
+                                 AUROC = P(score(x_positive) > score(x_negative)) + 0.5 P(tie).
+                              AP = sum over recall steps j of (Recall_j - Recall_(j-1)) * Precision_j.
+                            Gap = mean(random-fold AUROC) - mean(disjoint-family-fold AUROC).
+
+5.1 random folds
+ Fold              Train                Test                Positive test   AUROC               Average precision   Baseline AP
+ 0                 1451                 363                 108             0.98                0.9519              0.2975
+ 1                 1451                 363                 108             0.9854              0.9645              0.2975
+ 2                 1451                 363                 109             0.9787              0.9584              0.3003
+ 3                 1451                 363                 109             0.9879              0.9786              0.3003
+ 4                 1452                 362                 108             0.9703              0.9343              0.2983
+
+Five assessable folds; arithmetic mean AUROC 0.98044. This is not an external independent test cohort. Full per-
+fold family lists, test counts and metrics reside in venom/data/evaluation.json. No bootstrap confidence interval is
+claimed here.
+
+Source: mega27-27-isef-bioinf-derived-tools | All outcomes limited to cited data and tests
+Item 27 | September 25, 2026 | Current manuscript - not the archival survey
+5.2 family held out folds
+ Fold                 Train                 Test            Positive test          AUROC               Average precision   Baseline AP
+ 0                    1306                  508             327                    0.4962              0.6365              0.6437
+ 1                    1459                  355             127                    0.5127              0.384               0.3577
+ 2                    1497                  317             22                     0.7022              0.1269              0.0694
+ 3                    1497                  317             46                     0.5622              0.154               0.1451
+ 4                    1497                  317             20                     0.6828              0.1051              0.0631
+
+Five assessable folds; arithmetic mean AUROC 0.59123. This is not an external independent test cohort. Full per-
+fold family lists, test counts and metrics reside in venom/data/evaluation.json. No bootstrap confidence interval is
+claimed here.
+
+5.3 What the split comparison does and does not show
+The arithmetic mean AUROC is 0.98044 random versus 0.59123 family-held-out, difference 0.38921. This is a
+reproducible broken-benchmark finding: random-split keyword performance does not transfer cleanly to
+annotated unseen protein families under this model and task. Class composition differs by held-out family; the
+gap is descriptive, not an isolated causal measure of homology leakage. Unmeasured cross-family sequence
+resemblance and curation bias remain possible. Baseline prevalence is fold-specific, so AP should always be read
+alongside positive count and baseline AP.
+
+5.4 Follow-up: measured sequence-similarity exposure
+After the frozen benchmark, a separate follow-up measured whether test proteins actually resemble proteins
+available for training. In each original fold, the method forms the set of contiguous three-amino-acid substrings
+for every test and training sequence, computes pairwise Jaccard similarity, and retains the maximum training
+match for each test record. Unlike a model score, this overlap has no fitted label coefficients. The local analysis
+plan was written in the same session just before this computation; it is not independent preregistration, and the
+original AUROC difference was already known.
+                    Jaccard(s,t) = |three_mers(s) intersect three_mers(t)| / |three_mers(s) union three_mers(t)|.
+                              Maximum exposure(s, train_fold) = max_{t in train_fold} Jaccard(s,t).
+ Frozen split                      n test                               Weighted mean max Jaccard           Fraction max Jaccard >=0.80
+ random                            1814                                 0.6210                              0.3352
+ family_held_out                   1814                                 0.0442                              0.0000
+
+Random-fold test proteins have mean max Jaccard 0.6210 to a training protein; 33.5% have a match >=0.80.
+Family-held-out test proteins have mean max 0.0442 and none >=0.80. This documents a large similarity
+exposure difference, which makes the high random AUROC less persuasive as evidence for a novel-family use
+case. It does not isolate a causal leakage effect: group composition and label prevalence differ; threshold 0.80 was
+a fixed descriptive cutoff, not a biological homology definition. Fold-specific metrics and source code are in
+venom/data/similarity_leakage.json and venom/scripts/similarity_leakage.py.
+
+5.4 random similarity by original fold
+ Fold              n test          Mean max        Median               10th pct            90th pct        Share >=0.80      AUROC
+                                   Jaccard
+ 0                 363             0.613           0.639                0.259               0.925           0.322             0.980
+ 1                 363             0.609           0.633                0.241               0.928           0.322             0.985
+ 2                 363             0.620           0.647                0.246               0.927           0.350             0.979
+ 3                 363             0.631           0.675                0.268               0.927           0.336             0.988
+ 4                 362             0.632           0.684                0.248               0.931           0.345             0.970
+
+Spearman correlation across only five fold means and five fold AUROCs is -0.40. This small-n fold-level
+descriptive statistic is not a significance test and is confounded by fold family and class composition; no p-value
+is claimed.
+
+
+Source: mega27-27-isef-bioinf-derived-tools | All outcomes limited to cited data and tests
+Item 27 | September 25, 2026 | Current manuscript - not the archival survey
+5.4 family held out similarity by original fold
+ Fold              n test         Mean max        Median         10th pct       90th pct          Share >=0.80   AUROC
+                                  Jaccard
+ 0                 508            0.039           0.039          0.031          0.048             0.000          0.496
+ 1                 355            0.041           0.040          0.033          0.049             0.000          0.513
+ 2                 317            0.055           0.048          0.035          0.077             0.000          0.702
+ 3                 317            0.045           0.043          0.034          0.051             0.000          0.562
+ 4                 317            0.045           0.041          0.033          0.068             0.000          0.683
+
+Spearman correlation across only five fold means and five fold AUROCs is 1.00. This small-n fold-level
+descriptive statistic is not a significance test and is confounded by fold family and class composition; no p-value
+is claimed.
+
+
+6. Individually fetched accession audit
+To meet a stricter unit of biological data, venom/scripts/validate_individual.py issued 120 separate direct
+UniProtKB entry reads. Each saved JSON records accession, sequence and source URL, compared with the bulk
+snapshot. We selected 60 three-finger toxin and 60 phospholipase A2 records, each group 30 keyword-positive
+and 30 keyword-negative after deduplication. No held-out accession enters training; individual_validation.py
+produced a prediction from each individually fetched sequence. The selection is balanced by construction and
+uses the same UniProt source, so it is not a new natural-prevalence or external experimental cohort.
+phospholipase a2: n=60, positives=30, AUROC=0.60667, AP=0.58658, prevalence-only AP=0.500. Do not read
+the two family scores as a pooled clinical metric.
+three-finger toxin: n=60, positives=30, AUROC=0.42667, AP=0.48640, prevalence-only AP=0.500. Do not read
+the two family scores as a pooled clinical metric.
+        Per-accession audit inclusion = direct entry GET AND identity/sequence validation AND an actual held-out score.
+The 120 one-to-one source records are named in venom/data/individually_validated_120.tsv; the scored
+probabilities, labels, family and URLs are in venom/data/individual_validation.json. Appendix A tabulates all 120
+scores. Three-finger AUROC below 0.5 in the balanced sample is a negative result, not a reason to invert labels
+after seeing the answer.
+
+6.0 Post-hoc family annotation control
+On the same five random folds, a model given only the UniProt similarity-comment family label achieved mean
+AUROC 0.87929, compared with 0.98044 for the sequence 3-mer model. The family feature is an annotation, not
+a sequence-derived predictor. The encoder is fit only on each training fold, but both label and feature come from
+UniProt. This post-hoc control diagnoses annotation structure, not a causal decomposition of the sequence model
+or a fix for held-out-family failure. Frozen local diagnostic plan, code and results:
+protocols/venom_family_annotation_diagnostic_2026-09-25.md, venom/scripts/family_annotation_control.py,
+venom/data/family_annotation_control.json.
+ Random fold                                 Family-only AUROC                          Sequence 3-mer AUROC
+ 0                                           0.8766                                     0.9800
+ 1                                           0.8879                                     0.9854
+ 2                                           0.8955                                     0.9787
+ 3                                           0.8712                                     0.9879
+ 4                                           0.8653                                     0.9703
+
+
+6.1 Diagnostic threshold error audit
+After seeing the held-out probabilities, we calculated a descriptive 0.5 decision-threshold confusion matrix
+without re-fitting the model or selecting a new threshold. This is post-hoc error characterization and is not a
+prospectively selected operating point. Ranking metrics can remain above chance even when an uncalibrated 0.5
+
+Source: mega27-27-isef-bioinf-derived-tools | All outcomes limited to cited data and tests
+Item 27 | September 25, 2026 | Current manuscript - not the archival survey
+threshold produces zero true positives. Source: results/transfer_error_audit.json; the script recomputes each
+number directly from the 120 original prediction rows.
+ Held-out family      TN                  FP                FN                   TP             Brier                 Largest score
+ phospholipase a2     30                  0                 30                   0              0.371                 0.458
+ three-finger toxin   30                  0                 30                   0              0.392                 0.405
+
+The max probability is below 0.5 in both groups. Every 30 keyword-positive entries per family is a false negative
+at that threshold; specificity looks perfect only because the classifier always predicts negative in this balanced
+audit. Brier score is a squared-probability error summary and should be compared only within the same label
+definition and sample selection. The failure may reflect a shifted intercept under family exclusion, altered class
+mix or insufficient family-transfer signal. The available data cannot distinguish these causes, and post-hoc
+threshold tuning on these samples would defeat the held-out audit. A next within-project pivot is to freeze a
+separate nonoverlapping validation-family set, then calibrate a threshold on those families only and evaluate on
+untouched test families; the current two groups remain a frozen negative, not refitted success.
+                                 Brier = (1/n) * sum_i (predicted_probability_i - keyword_label_i)^2.
+                           Sensitivity at threshold 0.5 = TP / (TP + FN) = 0 in both 60-entry family samples.
+
+6.2 Threshold transfer without target-label tuning: another negative
+A separate exploratory attempt asked whether a decision threshold learned outside both target families could
+recover positives without reusing target labels. The model was trained on 951 sequences from 23 other families.
+Five GroupKFold out-of-fold predictions over those training families supplied a single scalar threshold that
+maximized balanced accuracy. The previously scored 120 direct-entry target proteins were not used to choose this
+threshold. However, the target outcomes were already visible before this experiment was planned, so it is not
+independent prospective validation.
+The selected training-family threshold was 0.001159, with training-family out-of-fold balanced accuracy 0.5227.
+It is far below 0.5, already warning of severe distribution shift. On each of the two balanced target groups, the
+original 0.5 threshold gave 30 true negatives and 30 false negatives. The non-target-calibrated threshold gave 30
+true positives and 30 false positives. Both achieve balanced accuracy 0.5 by predicting one class for all records.
+Thus this threshold transfer did not repair the actual decision problem. It cannot be reselected on target labels after
+seeing this result without sacrificing holdout integrity.
+ Family                              Original TN/FP/FN/TP            New TN/FP/FN/TP                    New balanced accuracy
+ phospholipase a2                    30/0/30/0                       0/30/0/30                          0.500
+ three-finger toxin                  30/0/30/0                       0/30/0/30                          0.500
+
+This jointly excluded both target families during model fitting, whereas the original direct-entry scoring excluded
+one family at a time. Its rankings/AUCs are therefore not apples-to-apples with the earlier AUCs, even though the
+same target accessions were used. Code and complete result: venom/scripts/transfer_calibration.py and
+venom/data/transfer_calibration.json. The within-project direction remains open; an independent biological label
+or a truly untouched external cohort would be needed for a stronger claim.
+
+6.3 Within-project label-coherence check
+A second VenomFunction pivot checks a narrow data-quality explanation without redefining the original held-out
+negative. Registered thresholds 1.00 and 0.95 positional identity before this scan; only equal-length raw direct-
+entry sequences are comparable by this proxy. The scanner reads the same 120 saved direct-UniProt entry JSON
+files and lists accession pairs with their keyword, source URLs, family and identity. This is not a new cohort or an
+optimized classifier.
+Across 120 direct entries, 277 pairs had equal lengths; 21 had at least 95% positional identity, and 0 of those had
+discordant keyword labels. At exact identity, 0 pairs were found. Thus the high-identity equal-length subset does
+not reveal a direct internal keyword contradiction in this sample. Unequal-length sequences were not aligned;
+other annotations, nearly identical proteins outside this 120-entry selection, and true functional outcomes remain
+untested. File: venom/data/label_conflict_audit.json, method: venom/scripts/label_conflicts.py.
+
+Source: mega27-27-isef-bioinf-derived-tools | All outcomes limited to cited data and tests
+Item 27 | September 25, 2026 | Current manuscript - not the archival survey
+               Positional identity(s,t) = sum_i 1[s_i=t_i] / length(s), defined here only if length(s)=length(t).
+The original family-transfer result remains negative even after this data-quality check. A curator could use the
+scanner on later direct-entry files to flag contradictions rather than quietly choosing one label; a zero here does
+not establish data cleanliness or potency. This tool adds no new external scientific service or accession count to
+the project gates.
+
+
+7. Residue-attribution proxy: retained negative
+The pre-specified site test replaces a curated active-site position with X and compares the absolute model-logit
+change with a within-protein control position more than five residues away. This is an input-sensitivity proxy.
+Catalytic active sites can belong to non-neurotoxin enzymes, so a failure here is not a definitive absence of a
+neurotoxin causal residue. It cannot prove binding, treatment benefit or counterfactual protein behavior.
+                           D_site = |logit f(sequence with site -> X) - logit f(original sequence)|.
+                                R_site/control = mean(D_site) / mean(D_matched_control).
+The audit covers 568 protein records and 1103 site-control pairs. Site mean absolute delta was 0.10132, control
+mean 0.15047, ratio 0.67338; 40.53% of sites exceeded controls. Predicted enrichment failed in this proxy. We
+retain the negative rather than retune sites after results. The complete positions, provenance and limitations are in
+venom/data/active_site_audit.json.
+
+
+8. Distinct motif and structure context: annotations, not potency
+ScanProsite direct scans found SNAKE_TOXIN PS00272 on P01400 and phospholipase A2 His/Asp signatures
+PS00118 and PS00119 on P00604. This corroborates broad family identity but not potency. HMMER phmmer
+queried the P01400 mature sequence against its PDB protein set and returned a Bungarus candidus weak-toxin
+homolog 2jqp_A (E=1.67e-28). PDBe maps that homolog accession Q8AY51 to a 65-residue solution-NMR
+structure at 100% coverage; RCSB confirms the same PDB chain. It does not show P01400 has a resolved
+structure. Shared PDB data from PDBe and RCSB count as one structural evidence source.
+Exact live-returned URLs and records: external_tools/prosite_check.json, hmmer_check.json and
+structure_check.json. The RCSB UniProt text-search attempt returned HTTP 400, and an earlier PDBe P00604
+mapping returned 404; those attempts were not counted. Motif, homology and structure are orthogonal checks of
+identity or fold availability, not a new potency assay or a validation of the predictor.
+
+
+9. PhosGene: coding-sequence arithmetic and physiology gap
+GenBank U00096.3 resolves the AppA CDS and translation corresponding to UniProt P07102. The older M58708
+CDS has an ambiguous base at one codon; the K-12 genome provides a resolved codon with the same translated
+amino acid. The Kazusa taxon 83333 codon table has 64 codon entries based on only 14 coding sequences and
+5,122 codons, so its reference weights are sparse. The optimizer replaces each amino acid codon with the highest-
+frequency synonymous codon and retains a terminal stop. It checks translation identity and input bounds. No
+construct was synthesized or tested for host expression.
+                  w(c | a) = observed_count(c) / max_{synonymous c* encoding a} observed_count(c*).
+                          CAI(sequence) = exp[(1/L) sum_{i=1}^{L} log w(c_i | amino_acid_i)].
+Observed AppA CAI is 0.610734 against the sparse table; the unrestricted maximum is 1.0 by construction. A
+ceiling reached by replacing all codons is an arithmetic test, not evidence for increased expression or secretion.
+GC-window constraints, repeat filtering and host-specific secretory regulation are not supported in the current
+optimizer.
+The enzyme sandbox takes substrate mmol/kg, enzyme units/kg, Km mM, fluid volume L/kg, duration min and a
+bounded pH factor. It Euler-integrates a Michaelis-Menten-like step with a nonnegative substrate bound. A
+Source: mega27-27-isef-bioinf-derived-tools | All outcomes limited to cited data and tests

@@ -1,0 +1,155 @@
+===DOCUMENT TEXT (part 5 of 7)===
+Item 27 | September 25, 2026 | Current manuscript - not the archival survey
+This is a paired negative transfer story, not a validated asthma diagnostic. Source:
+projects/transcript_shift/data/results.json, external_site_results.json and uncertainty.json.
+MicrobeTransfer (#7) begins from a 6,463-row resistance-gene index, not an isolate-level susceptible/resistant
+trial. The follow-up fetches 120 BioSample XML records by exact identifiers and records 442 explicit R/S assay
+rows. All 30 isolates with interpreted R/S share one collector, so a hospital-disjoint test set does not exist.
+Assembly links for 29 of these isolates are not genome sequences fetched and used in a predictor. The input
+contract and abstention rule are operational software, but no clinical susceptibility performance is measured.
+Matching gene annotations to AST labels without isolate/drug/breakpoint provenance would falsely promote
+catalog entries into phenotypes. Source: builds/microbe_transfer/ncbi_ast_results.json and README.md.
+PhageHostScope (#8) starts from measured lytic host-range pairs, making its data unit different from a docking
+score. It uses source-provided host and phage trees, holds out groups on both axes and quarantines pairs crossing
+only one axis. Its within-study AUC 0.709 on 1,120 jointly held-out pairs narrowly crosses an exploratory
+threshold, but those trees, aliases and group cutoffs were not independently reconstructed or externally confirmed.
+A separate Klebsiella cohort of 12,970 measured pairs cannot simply accept the E. coli host-tree distance model; a
+BASEL E. coli source adds 396 measured lysis records but no verified phage/host identity join to the Paris
+training pairs; absent comparable host representation, the external AUC is intentionally refused. The result is a
+bounded same-study benchmark, not cross-species host-range prediction. Source:
+builds/phage_host_scope/results.json and external_results.json.
+RNAEvidence (#9) separates curated record grades and publication IDs in a historical 2015 miRTarBase
+snapshot, quarantining repeated miRNA-gene pairs. A simple assay-propensity comparator yields AUC 0.647 on
+454 same-database records, but tested nonfunctional records are selected and cannot represent the unbiased space
+of all true negatives. The independent miRBench CLASH/eCLIP files instead test a fixed 7-mer sequence rule at
+the site level; 858 of 954 eCLIP test rows share gene clusters with training context, and two exact site-pair
+overlaps were quarantined; that is a different endpoint, not external validation of the historical curated gene-pair
+model. Its risk is endpoint substitution, mirrored literature and constructed negative sites. Neither AUC is a
+prospective target-interaction ranking result. Source: builds/rna_evidence/results.json, README.md and
+mirbench_results.json.
+SpatialArtifactGuard (#10) checks all 15,611 spot barcodes and metadata counts against a downloaded spatial
+gene matrix and image-position list, then evaluates a patient-out RNA-QC/center-pixel color baseline. That matrix
+audit establishes row linkage and count agreement, not precise histology pixel registration or an external site. A
+pre-stated 37-pixel image-coordinate shift control lowered all six AUCs, supporting a spatial-registration
+dependence within the same atlas but not an external-site gate. The apparent fold AUCs include groups with only
+four or one artifact spot; averaging such unstable folds would hide denominator fragility. The atlas is one source
+across six slides and labels can reflect local annotation practices. The scientific gate remains external-site
+validation with enough artifacts per held-out patient, not a spot-level random split. Source:
+builds/spatial_artifact_guard/gene_alignment_results.json, results.json and README.md.
+
+13.2 Cross-candidate interpretation
+The eight software builds fail in materially different ways. Some refuse a prediction because the necessary
+endpoint or linkage was never established (#3, #4, #7); some run a fixed benchmark and preserve poor transfer or
+limited coverage (#5, #6, #9, #10); #8 has a within-study score but no comparable external test. A negative AUC
+and a missing validation cohort should not be merged into one failed-performance category. The separate service
+ledger uses data providers per build, not files or Python packages: #3-#6 count 5, 5, 3, 1; #7-#10 now count 4, 3,
+2, 1. No candidate may borrow another candidate accession cohort to claim 120, and none approaches 40 services.
+The program result is a transparent set of runnable audits and demonstrated evaluation traps, not ten established
+biological discoveries.
+Supplementary material: exact accession predictions, the full award listing, and endpoint-level service provenance
+are in MEGA27-27-research-supplement.pdf. The main paper stands alone for methods, results, limitations and
+the candidate inventory.
+Source: mega27-27-isef-bioinf-derived-tools | All outcomes limited to cited data and tests
+Item 27 | September 25, 2026 | Current manuscript - not the archival survey
+Appendix C. Full fold definitions and family composition
+GroupKFold tests all sequences in a held-out family only once over five folds. The table below prints the literal
+held-out groups from the committed JSON, together with test positivity and the raw fold metrics. It shows how
+the target population and class balance vary, so the arithmetic mean should not be overread as a pooled population
+estimate. Fold count is five because that was the frozen implementation, not because five-fold error bounds are
+known to be stable for 25 unequal families.
+
+C. random
+Fold 0: training 1451, testing 363, keyword-positive 108 (29.8%). AUROC 0.97996, AP 0.95185, prevalence
+baseline AP 0.29752, balanced accuracy 0.91291.
+Fold 1: training 1451, testing 363, keyword-positive 108 (29.8%). AUROC 0.98537, AP 0.96454, prevalence
+baseline AP 0.29752, balanced accuracy 0.93622.
+Fold 2: training 1451, testing 363, keyword-positive 109 (30.0%). AUROC 0.97873, AP 0.95845, prevalence
+baseline AP 0.30028, balanced accuracy 0.93706.
+Fold 3: training 1451, testing 363, keyword-positive 109 (30.0%). AUROC 0.98786, AP 0.97860, prevalence
+baseline AP 0.30028, balanced accuracy 0.94952.
+Fold 4: training 1452, testing 362, keyword-positive 108 (29.8%). AUROC 0.97029, AP 0.93431, prevalence
+baseline AP 0.29834, balanced accuracy 0.89906.
+Interpretation: random assignment allows closely related family signatures across folds; this design approximates
+interpolation under the curated keyword distribution.
+
+C. family held out
+Fold 0: training 1306, testing 508, keyword-positive 327 (64.4%). AUROC 0.49617, AP 0.63654, prevalence
+baseline AP 0.64370, balanced accuracy 0.50153.
+Held-out families: three-finger toxin.
+Fold 1: training 1459, testing 355, keyword-positive 127 (35.8%). AUROC 0.51274, AP 0.38398, prevalence
+baseline AP 0.35775, balanced accuracy 0.50174.
+Held-out families: phospholipase a2.
+Fold 2: training 1497, testing 317, keyword-positive 22 (6.9%). AUROC 0.70216, AP 0.12693, prevalence
+baseline AP 0.06940, balanced accuracy 0.58451.
+Held-out families: crotamine-myotoxin, disintegrin, ficolin lectin, nucleotide pyrophosphatase/phosphodiesterase,
+ohanin/vespryn, type-b carboxylesterase/lipase, venom metalloproteinase (m12b).
+Fold 3: training 1497, testing 317, keyword-positive 46 (14.5%). AUROC 0.56225, AP 0.15401, prevalence
+baseline AP 0.14511, balanced accuracy 0.47192.
+Held-out families: avit (prokineticin), bradykinin-potentiating peptide, crisp, endothelin/sarafotoxin, natriuretic
+peptide, pdgf/vegf growth factor, peptidase s1, venom complement c3 homolog.
+Fold 4: training 1497, testing 317, keyword-positive 20 (6.3%). AUROC 0.68283, AP 0.10508, prevalence
+baseline AP 0.06309, balanced accuracy 0.60934.
+Held-out families: 5'-nucleotidase, flavin monoamine oxidase, multicopper oxidase, ngf-beta, phospholipase b-
+like, snaclec, true venom lectin, venom kunitz-type.
+Interpretation: no named family appears in both train and test for the fold, but phylogenetic and annotation
+relationships may cross named families. This tests harder transfer, not a clean causal ablation of homology alone.
+
+
+Methods note: equations, invariants and failure conditions
+The equations above are descriptions of implemented calculations, not novel biochemical laws. This appendix
+connects them to tests and failure boundaries so that counting formula lines does not disguise an unverified
+Source: mega27-27-isef-bioinf-derived-tools | All outcomes limited to cited data and tests
+Item 27 | September 25, 2026 | Current manuscript - not the archival survey
+phenotype. It also explains where the definitions break or cease to be measurable. For exact implementation and
+unit checks see venom/scripts/evaluate.py, venom/scripts/audit_active_sites.py, phosgene/model.py and the tests/
+folder.
+
+E1. Binary feature map
+Binary 3-mer features have no explicit physical state, folding information or catalytic-site geometry. Duplicate
+exact sequences can violate train/test independence, so exact-sequence groups were collapsed before evaluation.
+Named family holdout reduces one family-level leakage channel but does not establish independent wet-lab
+measurements.
+
+E2. Balanced logistic loss
+Class weights are estimated on each training fold, and the intercept and coefficients are learned only there. A
+held-out family can shift both feature support and the relationship between model score and prior probability. The
+threshold audit exposes this risk: all 120 direct-entry scores lie below 0.5.
+
+E3. AUROC and AP
+AUROC is undefined for a test fold with only one observed class; the code marks such folds unassessable rather
+than using a made-up value. Average precision depends strongly on prevalence, so the baseline AP and positive
+count accompany each fold. A comparison of the two mean AUROCs is descriptive because test distributions
+differ.
+
+E4. Attribution site ratio
+The X-substitution sensitivity ratio is a quotient of mean absolute logit changes. It would be undefined if mean
+control delta were zero; the observed denominator is positive, and the measured ratio is 0.67338. Since catalytic
+active sites are not validated causal features for the Neurotoxin keyword, no mechanistic attribution claim
+follows.
+
+E5. CAI geometric mean
+The codon adaptation index uses log weights and exponentiation, which avoids underflow across the 432-residue
+coding sequence. A codon with zero reference count cannot be assigned log weight and is rejected rather than
+silently treated as functional absence. The maximum of 1.0 follows trivially from selecting a maximal count for
+each amino acid, independent of biology.
+
+E6. Substrate concentration and enzyme units
+Dividing mmol per kg meal by liters per kg meal produces mM. One enzyme unit is interpreted as one
+micromole/min under the assay, converted by 1/1000 into mmol/min. Different assay temperatures, pH, protein
+secretion and luminal dilution can invalidate that conversion as an in-vivo rate.
+
+E7. Nonnegative integration
+The Euler step deducts no more substrate than remains and therefore conserves initial phytate substrate into
+hydrolyzed plus residual amounts. The mass-balance residual is arithmetic zero by construction, not an
+independent analytical measurement of product identity or dietary phosphorus fate.
+
+E8. Fecal phosphorus bound
+The new-retained quantity cannot exceed baseline fecal phosphorus by the min operation. Thus calculated relative
+reduction is between zero and one when baseline fecal output is positive. Its numerical value can still be anything
+in that interval as free fractions vary; this is exactly why matching a literature range by choice of input is not
+validation.
+
+
+
+
+Source: mega27-27-isef-bioinf-derived-tools | All outcomes limited to cited data and tests

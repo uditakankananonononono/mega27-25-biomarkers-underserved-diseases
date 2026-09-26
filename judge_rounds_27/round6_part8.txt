@@ -1,0 +1,156 @@
+===DOCUMENT TEXT (part 8 of 9)===
+Item 27 | September 25, 2026 | Current manuscript - not the archival survey
+Appendix C. Full fold definitions and family composition
+GroupKFold tests all sequences in a held-out family only once over five folds. The table below prints the literal
+held-out groups from the committed JSON, together with test positivity and the raw fold metrics. It shows how
+the target population and class balance vary, so the arithmetic mean should not be overread as a pooled population
+estimate. Fold count is five because that was the frozen implementation, not because five-fold error bounds are
+known to be stable for 25 unequal families.
+
+C. random
+Fold 0: training 1451, testing 363, keyword-positive 108 (29.8%). AUROC 0.97996, AP 0.95185, prevalence
+baseline AP 0.29752, balanced accuracy 0.91291.
+Fold 1: training 1451, testing 363, keyword-positive 108 (29.8%). AUROC 0.98537, AP 0.96454, prevalence
+baseline AP 0.29752, balanced accuracy 0.93622.
+Fold 2: training 1451, testing 363, keyword-positive 109 (30.0%). AUROC 0.97873, AP 0.95845, prevalence
+baseline AP 0.30028, balanced accuracy 0.93706.
+Fold 3: training 1451, testing 363, keyword-positive 109 (30.0%). AUROC 0.98786, AP 0.97860, prevalence
+baseline AP 0.30028, balanced accuracy 0.94952.
+Fold 4: training 1452, testing 362, keyword-positive 108 (29.8%). AUROC 0.97029, AP 0.93431, prevalence
+baseline AP 0.29834, balanced accuracy 0.89906.
+Interpretation: random assignment allows closely related family signatures across folds; this design approximates
+interpolation under the curated keyword distribution.
+
+C. family held out
+Fold 0: training 1306, testing 508, keyword-positive 327 (64.4%). AUROC 0.49617, AP 0.63654, prevalence
+baseline AP 0.64370, balanced accuracy 0.50153.
+Held-out families: three-finger toxin.
+Fold 1: training 1459, testing 355, keyword-positive 127 (35.8%). AUROC 0.51274, AP 0.38398, prevalence
+baseline AP 0.35775, balanced accuracy 0.50174.
+Held-out families: phospholipase a2.
+Fold 2: training 1497, testing 317, keyword-positive 22 (6.9%). AUROC 0.70216, AP 0.12693, prevalence
+baseline AP 0.06940, balanced accuracy 0.58451.
+Held-out families: crotamine-myotoxin, disintegrin, ficolin lectin, nucleotide pyrophosphatase/phosphodiesterase,
+ohanin/vespryn, type-b carboxylesterase/lipase, venom metalloproteinase (m12b).
+Fold 3: training 1497, testing 317, keyword-positive 46 (14.5%). AUROC 0.56225, AP 0.15401, prevalence
+baseline AP 0.14511, balanced accuracy 0.47192.
+Held-out families: avit (prokineticin), bradykinin-potentiating peptide, crisp, endothelin/sarafotoxin, natriuretic
+peptide, pdgf/vegf growth factor, peptidase s1, venom complement c3 homolog.
+Fold 4: training 1497, testing 317, keyword-positive 20 (6.3%). AUROC 0.68283, AP 0.10508, prevalence
+baseline AP 0.06309, balanced accuracy 0.60934.
+Held-out families: 5'-nucleotidase, flavin monoamine oxidase, multicopper oxidase, ngf-beta, phospholipase b-
+like, snaclec, true venom lectin, venom kunitz-type.
+Interpretation: no named family appears in both train and test for the fold, but phylogenetic and annotation
+relationships may cross named families. This tests harder transfer, not a clean causal ablation of homology alone.
+
+
+Methods note: equations, invariants and failure conditions
+The equations above are descriptions of implemented calculations, not novel biochemical laws. This appendix
+connects them to tests and failure boundaries so that counting formula lines does not disguise an unverified
+Source: mega27-27-isef-bioinf-derived-tools | All outcomes limited to cited data and tests
+Item 27 | September 25, 2026 | Current manuscript - not the archival survey
+phenotype. It also explains where the definitions break or cease to be measurable. For exact implementation and
+unit checks see venom/scripts/evaluate.py, venom/scripts/audit_active_sites.py, phosgene/model.py and the tests/
+folder.
+
+E1. Binary feature map
+Binary 3-mer features have no explicit physical state, folding information or catalytic-site geometry. Duplicate
+exact sequences can violate train/test independence, so exact-sequence groups were collapsed before evaluation.
+Named family holdout reduces one family-level leakage channel but does not establish independent wet-lab
+measurements.
+
+E2. Balanced logistic loss
+Class weights are estimated on each training fold, and the intercept and coefficients are learned only there. A
+held-out family can shift both feature support and the relationship between model score and prior probability. The
+threshold audit exposes this risk: all 120 direct-entry scores lie below 0.5.
+
+E3. AUROC and AP
+AUROC is undefined for a test fold with only one observed class; the code marks such folds unassessable rather
+than using a made-up value. Average precision depends strongly on prevalence, so the baseline AP and positive
+count accompany each fold. A comparison of the two mean AUROCs is descriptive because test distributions
+differ.
+
+E4. Attribution site ratio
+The X-substitution sensitivity ratio is a quotient of mean absolute logit changes. It would be undefined if mean
+control delta were zero; the observed denominator is positive, and the measured ratio is 0.67338. Since catalytic
+active sites are not validated causal features for the Neurotoxin keyword, no mechanistic attribution claim
+follows.
+
+E5. CAI geometric mean
+The codon adaptation index uses log weights and exponentiation, which avoids underflow across the 432-residue
+coding sequence. A codon with zero reference count cannot be assigned log weight and is rejected rather than
+silently treated as functional absence. The maximum of 1.0 follows trivially from selecting a maximal count for
+each amino acid, independent of biology.
+
+E6. Substrate concentration and enzyme units
+Dividing mmol per kg meal by liters per kg meal produces mM. One enzyme unit is interpreted as one
+micromole/min under the assay, converted by 1/1000 into mmol/min. Different assay temperatures, pH, protein
+secretion and luminal dilution can invalidate that conversion as an in-vivo rate.
+
+E7. Nonnegative integration
+The Euler step deducts no more substrate than remains and therefore conserves initial phytate substrate into
+hydrolyzed plus residual amounts. The mass-balance residual is arithmetic zero by construction, not an
+independent analytical measurement of product identity or dietary phosphorus fate.
+
+E8. Fecal phosphorus bound
+The new-retained quantity cannot exceed baseline fecal phosphorus by the min operation. Thus calculated relative
+reduction is between zero and one when baseline fecal output is positive. Its numerical value can still be anything
+in that interval as free fractions vary; this is exactly why matching a literature range by choice of input is not
+validation.
+
+
+
+
+Source: mega27-27-isef-bioinf-derived-tools | All outcomes limited to cited data and tests
+Item 27 | September 25, 2026 | Current manuscript - not the archival survey
+E9. Beta-binomial posterior
+The Beta update assumes exchangeable Bernoulli trials for the chosen narrow endpoint. The five idea builds were
+selected deliberately and are not exchangeable draws from all project ideas or awards. A posterior on runnable
+construction cannot be transported to discovery or award odds.
+
+E10. Service and dataset units
+The tool denominator is independent scientific services with actually used output, not API calls. The accession
+denominator is separate direct entry retrievals used in a scored audit, not all IDs in a bulk query. Their units
+differ: 120 entries from one UniProt service satisfy an entry-count condition while adding one, not 120, to a
+scientific-service ledger.
+
+
+14. Reproducibility, limitations and next valid tests
+The research record has a defined scope for each outcome, not one pooled pass/fail label. The venom sequence
+baseline uses reviewed snake-toxin entries, a UniProt keyword and one family ontology supplied by the same
+database. It is meaningful to report the random versus family-held-out ranking gap and the direct-entry test
+counts; it would be wrong to transport those numbers to venom potency or antivenom selection. The balanced
+120-entry selection creates a 50% positive fraction in each target family by construction, while the original 1,814-
+entry cohort has 542 keyword positives. AP, threshold sensitivity and any predicted probability should therefore
+be interpreted against each sample-specific prevalence rather than as a clinical risk score.
+The feature map is deliberately simple: contiguous amino-acid 3-mers and logistic weights. Exact-sequence
+collapse removes identical duplicate rows but not homologs, and the follow-up similarity audit shows why
+random folds are easier. A family category fed directly to another classifier reaches AUROC 0.87929 on those
+random folds, which is striking annotation signal but cannot prove which sequence motifs the first classifier used.
+A genuine independent test would preselect experimentally measured activities, freeze a protein homolog
+clustering method before outcome inspection, separate training and test by both family and measurement
+publication, and report calibration as well as discrimination. No such cohort has been obtained in this manuscript.
+For PhosGene, the AppA reference sequence and codon table are reproducible public records, and translation
+conservation is an exact software check. CAI 1.0 after choosing the maximally weighted synonym for every
+amino acid says only that the optimizer follows its reference counts. In an expression experiment the appropriate
+unit would be paired constructs in a named host with matched promoter, secretion system, culture conditions,
+protein yield and enzyme activity. A host mismatch, mRNA folding change or secretion failure could reverse the
+arithmetic ranking. The pig fecal-P endpoint additionally needs feed composition, active enzyme exposure and
+absorption measurements. No amount of resampling the toy mass-balance equation can replace those original
+assays.
+The 2018 dietary-pig and earlier Enviropig reports are contexts, not exchangeable calibration targets. The former
+gives diet-specific fecal-P decreases of 45.8% and 34.8% for a multi-enzyme setup; the earlier construct reports
+up to 75% under different biology. Selecting model inputs to land within these numbers after seeing them would
+be target leakage. The evidence validator reports ten missing or unsupported input dimensions and a null
+phenotype for the actual packet. A sensible next test would gather measurements for every dimension in one
+specified feeding design, assess source relevance before the model is run, and leave any transfer assumption
+explicit. Even a numerical agreement would then need uncertainty and an independent animal comparison, not
+just a plausible point estimate.
+The award-corpus analysis has a different identification problem. Its 125 rows are awarded project listings, not a
+registry of all submissions. Titles are a lossy summary of methods, category boundaries vary, and repeated top-
+award mentions were deduplicated by year/project code. A title-term frequency can guide which ideas to inspect;
+it cannot say which technique improves award probability. A valid rubric study would recruit independent blinded
+scorers for the same anonymized idea briefs and compare scores with actual later results, retaining both failures
+
+
+Source: mega27-27-isef-bioinf-derived-tools | All outcomes limited to cited data and tests

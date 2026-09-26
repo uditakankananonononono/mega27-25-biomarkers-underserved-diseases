@@ -1,0 +1,114 @@
+===DOCUMENT TEXT (part 3 of 7)===
+Item 27 | September 25, 2026 | Current manuscript - not the archival survey
+already counted UniProtKB. The 10-gap phenotype audit remains null. Full result:
+phosgene/data/hap_family_audit.json, method: phosgene/scripts/hap_family_audit.py.
+
+
+10. Calibration and failure modes
+A Beta(1,1) prior with three selected retrospective runnable builds produces Beta(4,1), posterior mean 0.800 and
+equal-tail interval [0.398,0.994]. Counting the two newer runnable candidates would yield Beta(6,1), mean 0.857
+and interval [0.541,0.996] for the narrowly defined end point of runnable construction. These values are not a
+biological success rate, a probability of winning an award, or evidence the rubric predicts discovery. An
+unassessable animal outcome cannot be relabeled a success just because a CLI runs.
+                                 P(q | s,n) = Beta(1+s, 1+n-s) under a uniform Beta(1,1) prior.
+                                        E[q | s,n] = (1+s)/(2+n); with s=n=3, E[q]=4/5.
+Selection of high-scored ideas inflates apparent build completion. With only two new post-protocol tests and no
+blinding, weakest-criterion calibration is not statistically assessable. The independent rater template is blank.
+VenomFunction-2 shows a useful failure of a homolog-sensitive split, while PhosGene fails a source-parameter
+sufficiency test. Both are legitimate bounded outcomes with different scopes.
+
+
+11. External tool audit and still-open conditions
+The strict ledger has 24 rows documenting service uses and attempted calls (some repeated providers), 17 counted
+across the two detailed candidates, but this aggregate is not a candidate-level gate. VenomFunction has 6/40
+(short by 34); PhosGene has 11/40 (short by 29). Each counted service has a source URL, preregistered or clearly
+exploratory test ID, output file and interpretive use. Exclusions include the official award page as a corpus rather
+than an analysis tool, a Pfam endpoint hosted by InterPro as the same service, a failed PDBe request, failed
+SABIO-RK, failed RCSB search, RCSB mirror of a PDB record, and NCBI BLAST still waiting. This accounting
+is more conservative than a list of URLs or software names.
+ Scientific service or attempt   Arm/test                        Counted?                         Meaning of check
+ Society for Science             award survey A1                 0                                Official award evidence source, not
+                                                                                                  a scientific analysis tool; seven
+                                                                                                  pages
+ UniProtKB                       VenomFunction V0                1                                120 direct-fetched entries actually
+                                                                                                  scored, one service
+ InterPro                        VenomFunction V1                1                                IPR003571 family cross-check
+ AlphaFold DB                    VenomFunction V5                1                                Predicted model confidence, not
+                                                                                                  function
+ NCBI Entrez/GenBank             PhosGene P0                     1                                AppA CDS; NCBI taxonomy same
+                                                                                                  provider not counted separately
+ Kazusa Codon Usage Database     PhosGene P0                     1                                64-codon frequency table in
+                                                                                                  optimizer
+ KEGG                            PhosGene P2                     1                                AppA gene identity versus wrong
+                                                                                                  AphA gene
+ ExPASy ENZYME                   PhosGene P3                     1                                4-phytase class reaction/isomer
+ Rhea                            PhosGene P4                     1                                Reaction isomer disagreement
+                                                                                                  against UniProt direct annotation
+ BRENDA                          PhosGene P1                     1                                Heterogeneous Km contexts fail to
+                                                                                                  identify in-vivo model parameters
+ STRING                          PhosGene P8                     1                                P07102 maps to b0980 AppA,
+                                                                                                  periplasmic annotation
+ InterPro-hosted Pfam            VenomFunction V2                0                                Same InterPro service/member
+                                                                                                  signature; not independent
+ PDBe                            VenomFunction V3                0                                404 no data
+ SABIO-RK                        PhosGene P6                     0                                Redirected UI 404; no kinetic result
+
+Source: mega27-27-isef-bioinf-derived-tools | All outcomes limited to cited data and tests
+Item 27 | September 25, 2026 | Current manuscript - not the archival survey
+ ExPASy ScanProsite           VenomFunction V8            1                            Motif scanning of two named
+                                                                                       exemplars, distinct analytical
+                                                                                       service from ExP
+ EBI HMMER phmmer             VenomFunction V9            1                            P01400 PDB homology result, top
+                                                                                       weak-toxin neighbor is not an
+                                                                                       activity meas
+ RCSB PDB Search              VenomFunction V11           0                            P01400 UniProt exact-match
+                                                                                       attributes rejected HTTP 400; no
+                                                                                       structural resu
+ PDBe                         VenomFunction V12           1                            Prior HMMER homolog Q8AY51
+                                                                                       has NMR chain 2jqp_A with
+                                                                                       mature-sequence covera
+ RCSB PDB Data                VenomFunction V12           0                            Confirmed same PDB entry and
+                                                                                       chain; shared underlying structural
+                                                                                       record, no
+ EcoCyc BioCyc                PhosGene P9                 1                            Exploratory gene-to-protein
+                                                                                       mapping b0980 and curated
+                                                                                       periplasmic context
+ EBI QuickGO                  PhosGene P10                1                            Exploratory evidence-code
+                                                                                       provenance audit of GO
+                                                                                       localization and phytase;
+ NCBI BLASTP                  VenomFunction V10           0                            Submitted P01400 Swiss-Prot
+                                                                                       search, RID WAITING; NCBI
+                                                                                       provider collapsed wi
+ EBI IntAct                   PhosGene P12                1                            Culture pull-down partner rows;
+                                                                                       two AC values, same publication,
+                                                                                       no in-vivo
+ PRIDE Archive                PhosGene P15                1                            Exploratory protein-to-project
+                                                                                       mapping and sample-organism
+                                                                                       audit: 3 project
+
+These checks contribute to annotation/identity/reproducibility and not all measure biological function. No
+fabricated count is applied to GitHub, Drive, shell, PDF renderer, browser, web search or repeated requests to one
+endpoint. The full exact URLs and paths remain in external_tools/ledger.tsv and per-source result files. The tool
+gate remains open. A failed or slow service is logged as such and not silently replaced with an invented successful
+query.
+
+
+12. Reproduction and responsible claims
+Install project dependencies, then run PYTHONPATH=src:. python -m pytest -q. Rebuild award list with python
+survey/scripts/collect_awards.py, toxin bulk source with python venom/scripts/fetch_uniprot.py, evaluation with
+OPENBLAS_NUM_THREADS=1 python venom/scripts/evaluate.py, active-site test with PYTHONPATH=src:.
+python -m venom.scripts.audit_active_sites, and direct-entry audit with PYTHONPATH=src:. python -m
+venom.scripts.validate_individual followed by python -m venom.scripts.individual_validation. Fetch AppA and
+codon reference with python phosgene/scripts/fetch_reference.py and run PYTHONPATH=src:. python -m
+phosgene. Live endpoints can evolve, so committed result JSON and dated URLs are the result provenance; re-
+runs must compare source IDs, labels and sequences, not assume unchanged annotations.
+Safety and scope: toxin analyses compare public sequences and database keywords and do not supply a biological
+construction protocol or claim clinical deployment. The codon optimization is a computational arithmetic
+demonstration, with no synthesized construct, animal study, medical recommendation, or environmental release.
+The result is a usable benchmark/rubric/sandbox at their stated bounded scopes, not world-best potency prediction
+or a validated pig system.
+Remaining for user request: enough genuinely distinct tools to meet 40 per candidate, not merely 24 for a shared
+ledger; an activity/phenotype-grounded use of PhosGene accessions beyond its completed 129-entry annotation
+audit, and separate biological assay or accession validation appropriate to each later build; an independently
+grounded phenotype comparison; three blinded outside raters with owner-approved recipients; candidate builds 3-
+Source: mega27-27-isef-bioinf-derived-tools | All outcomes limited to cited data and tests

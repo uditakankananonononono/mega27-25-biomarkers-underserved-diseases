@@ -1,0 +1,103 @@
+===DOCUMENT TEXT (part 4 of 9)===
+Item 27 | September 25, 2026 | Current manuscript - not the archival survey
+               Positional identity(s,t) = sum_i 1[s_i=t_i] / length(s), defined here only if length(s)=length(t).
+The original family-transfer result remains negative even after this data-quality check. A curator could use the
+scanner on later direct-entry files to flag contradictions rather than quietly choosing one label; a zero here does
+not establish data cleanliness or potency. This tool adds no new external scientific service or accession count to
+the project gates.
+
+
+7. Residue-attribution proxy: retained negative
+The pre-specified site test replaces a curated active-site position with X and compares the absolute model-logit
+change with a within-protein control position more than five residues away. This is an input-sensitivity proxy.
+Catalytic active sites can belong to non-neurotoxin enzymes, so a failure here is not a definitive absence of a
+neurotoxin causal residue. It cannot prove binding, treatment benefit or counterfactual protein behavior.
+                           D_site = |logit f(sequence with site -> X) - logit f(original sequence)|.
+                                R_site/control = mean(D_site) / mean(D_matched_control).
+The audit covers 568 protein records and 1103 site-control pairs. Site mean absolute delta was 0.10132, control
+mean 0.15047, ratio 0.67338; 40.53% of sites exceeded controls. Predicted enrichment failed in this proxy. We
+retain the negative rather than retune sites after results. The complete positions, provenance and limitations are in
+venom/data/active_site_audit.json.
+
+
+8. Distinct motif and structure context: annotations, not potency
+ScanProsite direct scans found SNAKE_TOXIN PS00272 on P01400 and phospholipase A2 His/Asp signatures
+PS00118 and PS00119 on P00604. This corroborates broad family identity but not potency. HMMER phmmer
+queried the P01400 mature sequence against its PDB protein set and returned a Bungarus candidus weak-toxin
+homolog 2jqp_A (E=1.67e-28). PDBe maps that homolog accession Q8AY51 to a 65-residue solution-NMR
+structure at 100% coverage; RCSB confirms the same PDB chain. It does not show P01400 has a resolved
+structure. Shared PDB data from PDBe and RCSB count as one structural evidence source.
+Exact live-returned URLs and records: external_tools/prosite_check.json, hmmer_check.json and
+structure_check.json. The RCSB UniProt text-search attempt returned HTTP 400, and an earlier PDBe P00604
+mapping returned 404; those attempts were not counted. Motif, homology and structure are orthogonal checks of
+identity or fold availability, not a new potency assay or a validation of the predictor.
+
+
+9. PhosGene: coding-sequence arithmetic and physiology gap
+GenBank U00096.3 resolves the AppA CDS and translation corresponding to UniProt P07102. The older M58708
+CDS has an ambiguous base at one codon; the K-12 genome provides a resolved codon with the same translated
+amino acid. The Kazusa taxon 83333 codon table has 64 codon entries based on only 14 coding sequences and
+5,122 codons, so its reference weights are sparse. The optimizer replaces each amino acid codon with the highest-
+frequency synonymous codon and retains a terminal stop. It checks translation identity and input bounds. No
+construct was synthesized or tested for host expression.
+                  w(c | a) = observed_count(c) / max_{synonymous c* encoding a} observed_count(c*).
+                          CAI(sequence) = exp[(1/L) sum_{i=1}^{L} log w(c_i | amino_acid_i)].
+Observed AppA CAI is 0.610734 against the sparse table; the unrestricted maximum is 1.0 by construction. A
+ceiling reached by replacing all codons is an arithmetic test, not evidence for increased expression or secretion.
+GC-window constraints, repeat filtering and host-specific secretory regulation are not supported in the current
+optimizer.
+The enzyme sandbox takes substrate mmol/kg, enzyme units/kg, Km mM, fluid volume L/kg, duration min and a
+bounded pH factor. It Euler-integrates a Michaelis-Menten-like step with a nonnegative substrate bound. A
+Source: mega27-27-isef-bioinf-derived-tools | All outcomes limited to cited data and tests
+Item 27 | September 25, 2026 | Current manuscript - not the archival survey
+literature Km of 0.79 mM is from an in-vitro AppA assay; assay units do not transfer automatically to pig
+intestinal residence or active concentration. Phytate hydrolysis and newly absorbed phosphate are different
+quantities.
+                                        S_mM = S_mmol_per_kg / V_L_per_kg.
+            rate_mmol_per_kg_min = (enzyme_units_per_kg/1000) * pH_factor * S_mM/(Km_mM+S_mM).
+                                       S(t+dt) = max(0, S(t) - min(rate * dt, S(t))).
+     new_retained_P = min(baseline_fecal_P, dietary_P * phytate_fraction * hydrolysis_fraction * absorbed_fraction).
+                 predicted_fecal_reduction = new_retained_P / baseline_fecal_P, if baseline_fecal_P > 0.
+The compartment mass balance bounds hydrolyzed substrate between zero and initial substrate; the fecal-P
+balance caps retention at baseline fecal P. These are invariants of a user-supplied model, not measurements.
+Missing in-vivo enzyme rate, pH history, gut fluid volume, residence time and absorption coefficients make an
+independent fecal-P phenotype comparison unassessable. The older 54.1% prototype estimate is not
+independently reproduced here.
+
+9.1 Reaction identity and source disagreement
+KEGG eco:b0980 maps appA to a 4-phytase/acid phosphatase context, while b4055 maps another phosphatase
+AphA. UniProt P07102 assigns an unspecific EC and one positional pentakisphosphate product. ExPASy
+ENZYME and Rhea list generic enzyme-class reactions and can use different inositol phosphate positional
+conventions. It would be incorrect to use any one generic EC step as proof of six phosphate-release steps in vivo.
+All source claims and exact URLs are in external_tools/phos_reaction_check.json.
+BRENDA Km entries span assay contexts, not validated pig luminal conditions. STRING resolves AppA to the
+b0980 gene neighborhood without showing dietary phenotype. EcoCyc independently links AppA monomer to
+appA/b0980 and periplasmic location; QuickGO returns 21 evidence-coded annotations including IDA/EXP
+activity/localization, often citing EcoCyc or UniProt. IntAct returns three partner rows with two interaction AC
+values from one culture pull-down study, not independent animal assays. PRIDE Archive protein P07102 search
+maps to three project identifiers, but direct project metadata lists horse/mouse/bovine, human and C. elegans, no
+pig context. That mapping is not itself evidence of organism-specific AppA peptide assignment. These checks
+locate a gene and a function-context disagreement rather than filling the kinetic gap. Source files:
+external_tools/taxonomy_and_brenda.json, string_check.json, appa_annotations.json, intact_check.json,
+pride_check.json.
+The 2018 multi-enzyme pigs study at https://elifesciences.org/articles/34286 reports fecal P lower by 45.8% under
+a corn-soybean diet and 34.8% under a wheat/corn/soybean/bran diet (its abstract pools N and P into a 23.2%-
+45.8% range; the 23.2% lower endpoint is fecal N), whereas the original Enviropig report at
+https://europepmc.org/article/MED/11479566 reports up to 75%. These are different systems and comparisons. A
+pooled 20%-60% band is not a defensible prespecified verification target. No pig-gut measurement has been
+generated by this repository. The next within-PhosGene direction is a parameter-identifiability tool: report the
+entire feasible fecal-P outcome range over evidence-bounded inputs, and leave unknown dimensions visibly
+unbounded instead of selecting values to hit a published pig outcome. This is a planned pivot, not a completed
+scientific result.
+
+9.2 Within-project pivot: provenance-gated phenotype identifiability
+Measured-variant eligibility check. A 2023 AppA engineering paper reports six P. pastoris parent/mutant culture
+activity rows with matched mutation identities (https://www.frontiersin.org/journals/bioengineering-and-
+biotechnology/articles/10.3389/fbioe.2023.1167530/full). An exact table transcription and tested comparison in
+phosgene/benchmarks/frontiers_appa_variants.tsv and frontiers_appa_audit.json finds the published D7 mutant at
+837.2 ± 17.8 U/mL versus its own parent 508.6 ± 21.5 U/mL (ratio 1.6461). These prior investigators measured
+this positive result, not PhosGene. Their parent is reported 97% homologous to PDB 1DKP; exact
+sequence/numbering identity with our P07102/U00096 reference is unverified. Culture activity, codon adaptation
+
+
+Source: mega27-27-isef-bioinf-derived-tools | All outcomes limited to cited data and tests

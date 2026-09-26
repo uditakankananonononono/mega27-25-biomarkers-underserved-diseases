@@ -1,0 +1,93 @@
+===DOCUMENT TEXT (part 7 of 7)===
+Item 27 | September 25, 2026 | Current manuscript - not the archival survey
+ #8 PhageHostScope            3/40                         97 source phage FASTAs; external     Compatible external host
+                                                           105 incomparable                     representation
+ #9 RNAEvidence               2/40                         No individually verified 120-entry   Independent gene-target assay
+                                                           ranker set                           endpoint
+ #10 SpatialArtifactGuard     1/40                         Bulk matrix and 15,611 aligned       Independent site and pixel
+                                                           spots                                validation
+
+Counts are per candidate and reflect dated committed ledgers; they may change only when a new material use and
+its biological interpretation are recorded. The table does not add scores across candidates. A direct BioSample
+AST record answers a metadata/assay provenance question, not the same question as a genome that is individually
+fetched and used in a predictor. An accession can be a dataset unit for a well-specified audit while still failing a
+larger discovery requirement. See projects/EVIDENCE_LEDGER.md, builds/service_ledger.tsv and
+external_tools/ledger.tsv.
+
+15.1 Interpretation guide for independent readers
+A raw score should be paired with its observation unit and a meaningful denominator. The venom random-fold
+AUROC refers to held-out rows from one curated source with homologous families shared across folds; the held-
+out-family AUROC refers to a different set of entire families. The two AUROCs are not repeated measurements
+of the same target population. Likewise, the PhageHostScope AUC refers to pairs held out by trees within one
+source experiment, while its external Klebsiella inventory has no compatible host representation and therefore no
+external AUC. These distinctions matter more than the size of any single number.
+A refusal is a result when the tool has checked the relevant evidence, not a placeholder success. ToxinAudit
+refuses to label unassayed enzymes negative, PhosGene refuses to infer a pig effect from an in-vitro Km,
+MicrobeTransfer refuses a hospital-disjoint score from one R/S collector, and GraphHoldout refuses precision
+when unknown gene-disease pairs are not measured negatives. Each refusal is reproducible code behavior with a
+stated missing experiment. The next branch of work should target the missing measurement rather than recoding a
+null outcome as a positive model performance metric.
+The current resource counts are audit snapshots. The strict criterion for a counted service is that its output was
+materially used in the named candidate and the biological interpretation or limitation is logged. An API call that
+returned a 404, a citation copied into a reference list, and a second website mirroring the same record do not make
+independent scientific tools. Similarly, accession-wise retrieval and actual use in an analysis differ from spotting
+many accession strings in a bulk CSV. This distinction is why 120 direct toxin entries count as an entry audit but
+just one UniProt service.
+
+
+16. Conclusion and bounded claim
+The defensible finding is methodological rather than a new treatment or a measured animal effect. In the protein-
+keyword task, a random fold looked excellent and a family-disjoint fold fell near chance; direct accession scoring
+confirmed poor transfer in two selected toxin families. Separate analyses found high train-test sequence
+resemblance in random folds, substantial family-annotation signal, an unsuccessful threshold transfer, and a
+negative catalytic-site input-sensitivity proxy. Each is a specific check with its own data and timing. Together
+they support caution about an easy benchmark, not a universal causal explanation or a clinical classifier.
+The AppA branch reached a different endpoint: the coding-sequence optimizer and phosphorus equation are
+executable and testable, but their available inputs cannot identify a pig fecal-phosphorus reduction. The
+provenance gate that returns null is a positive software safety property, not a positive biological phenotype.
+Extending that branch requires original matched expression and feeding data rather than selecting free constants
+to imitate a published decrease. The award/rubric branch likewise yields a transparent winner-only catalog and
+scoring instrument, not an estimate of which method wins or agreement among independent judges.
+Eight additional candidate builds now broaden the program inventory, but their research units vary: experimental
+citations, synthetic CDS rules, curated graph edges, GEO cohorts, AST metadata, host-range plates, assay records
+and spatial spots. These units cannot be exchanged for each other or pooled to satisfy ten separate accession and
+Source: mega27-27-isef-bioinf-derived-tools | All outcomes limited to cited data and tests
+Item 27 | September 25, 2026 | Current manuscript - not the archival survey
+service gates. Only the bounded claims in this paper and the source-limited inventory should be communicated as
+current results. The linked supplement makes the data trail inspectable, while the candidate-specific short reports
+and repository tests show what is runnable and where each gate still fails. Future successes should add new
+measurements and independent evaluations without erasing these negative waypoints.
+
+
+References and record locator
+Official award pages: survey/data/official_cbio_awards.tsv, per-row official URLs
+UniProtKB API documentation: https://www.uniprot.org/help/api_queries
+Snake toxin annotation background: https://pmc.ncbi.nlm.nih.gov/articles/PMC3393831/
+2018 pig feeding experiment, full text: https://pmc.ncbi.nlm.nih.gov/articles/PMC5963925/
+Original Enviropig experiment: https://europepmc.org/article/MED/11479566
+AppA in-vitro kinetics: https://pubmed.ncbi.nlm.nih.gov/10696472/
+Measured AppA mutant comparison: https://www.frontiersin.org/journals/bioengineering-and-biotechnology/
+articles/10.3389/fbioe.2023.1167530/full
+Codon harmonization paired-yield feasibility: https://doi.org/10.1371/journal.pone.0002189
+Specific direct source/tool URLs: external_tools/ledger.tsv and linked result JSON
+Rubric and prospective protocol: src/isefdev/rubric.py; protocols/prospective_2026-09-25.md
+
+
+
+
+Source: mega27-27-isef-bioinf-derived-tools | All outcomes limited to cited data and tests
+
+===END DOCUMENT TEXT===
+
+The 7 parts above (part 1 plus parts 2-7) together form the complete document text I asked you to wait for. Now apply the following review instructions to that pasted text.
+
+You are a skeptical ISEF methods reviewer. Below this instruction block, between the markers ===BEGIN DOCUMENT TEXT=== and ===END DOCUMENT TEXT===, is the COMPLETE extracted text of a candidate working report PDF for a bioinformatics derived-tools build called the item-27 aggregate manuscript (item 27). The text was extracted from the source PDF with layout preserved; tables appear as plain text. An earlier review of this artifact was invalidated because the artifact never actually reached the model, so this is the authoritative re-run. Base your review ONLY on the pasted text. SCOPE RESTRICTION: review ONLY the VenomFunction-2 content - its dedicated section(s) and any front-matter/ledger passages that reference VenomFunction. Do not review the other candidate sections except where they bear on VenomFunction. TWO CAVEATS you must apply: (1) this aggregate main text is known to be stale relative to source audits conducted after it was written - distinguish what the text actually says from what you can verify from the pasted text alone, and explicitly flag any claim you cannot check from the document; (2) this aggregate is NOT a standalone 50-page per-project paper for VenomFunction and is not a candidate-level gate - do not evaluate it as if it were one.
+
+Answer three questions:
+1. WEAKNESSES: every genuine weakness, each classified as (a) fixable by code/data changes within the current candidate's scope, (b) fixable by rewriting or clarifying scope in the report, or (c) an inherent limitation that should stay disclosed as-is. Quote the specific text you rely on for each. Check in particular: whether any claim exceeds the evidence presented; whether stated numbers are internally consistent (counts, metric values, dates); whether the fail-closed framing hides any result that was actually run; whether the self-criticism is complete or something is claimed too strongly OR dismissed too weakly.
+2. ISEF STANDING: how well would this work do at ISEF as currently presented - judging-relevant strengths, judging-relevant gaps, and an honest overall assessment.
+3. IMPROVEMENT: how it could be improved, ordered by impact, staying within honest science (no fabricating results, no padding, no weakening preregistration discipline).
+
+Rules: do not invent weaknesses to look thorough; distinguish real problems from stylistic preferences. If everything material is already handled honestly, say so and say why. End with a one-sentence verdict: does this report honestly represent the work and its limits?
+
+Reminder: the document text is the 7 pasted parts above; base your review ONLY on that pasted text.

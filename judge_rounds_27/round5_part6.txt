@@ -1,0 +1,109 @@
+===DOCUMENT TEXT (part 6 of 7)===
+Item 27 | September 25, 2026 | Current manuscript - not the archival survey
+E9. Beta-binomial posterior
+The Beta update assumes exchangeable Bernoulli trials for the chosen narrow endpoint. The five idea builds were
+selected deliberately and are not exchangeable draws from all project ideas or awards. A posterior on runnable
+construction cannot be transported to discovery or award odds.
+
+E10. Service and dataset units
+The tool denominator is independent scientific services with actually used output, not API calls. The accession
+denominator is separate direct entry retrievals used in a scored audit, not all IDs in a bulk query. Their units
+differ: 120 entries from one UniProt service satisfy an entry-count condition while adding one, not 120, to a
+scientific-service ledger.
+
+
+14. Reproducibility, limitations and next valid tests
+The research record has a defined scope for each outcome, not one pooled pass/fail label. The venom sequence
+baseline uses reviewed snake-toxin entries, a UniProt keyword and one family ontology supplied by the same
+database. It is meaningful to report the random versus family-held-out ranking gap and the direct-entry test
+counts; it would be wrong to transport those numbers to venom potency or antivenom selection. The balanced
+120-entry selection creates a 50% positive fraction in each target family by construction, while the original 1,814-
+entry cohort has 542 keyword positives. AP, threshold sensitivity and any predicted probability should therefore
+be interpreted against each sample-specific prevalence rather than as a clinical risk score.
+The feature map is deliberately simple: contiguous amino-acid 3-mers and logistic weights. Exact-sequence
+collapse removes identical duplicate rows but not homologs, and the follow-up similarity audit shows why
+random folds are easier. A family category fed directly to another classifier reaches AUROC 0.87929 on those
+random folds, which is striking annotation signal but cannot prove which sequence motifs the first classifier used.
+A genuine independent test would preselect experimentally measured activities, freeze a protein homolog
+clustering method before outcome inspection, separate training and test by both family and measurement
+publication, and report calibration as well as discrimination. No such cohort has been obtained in this manuscript.
+For PhosGene, the AppA reference sequence and codon table are reproducible public records, and translation
+conservation is an exact software check. CAI 1.0 after choosing the maximally weighted synonym for every
+amino acid says only that the optimizer follows its reference counts. In an expression experiment the appropriate
+unit would be paired constructs in a named host with matched promoter, secretion system, culture conditions,
+protein yield and enzyme activity. A host mismatch, mRNA folding change or secretion failure could reverse the
+arithmetic ranking. The pig fecal-P endpoint additionally needs feed composition, active enzyme exposure and
+absorption measurements. No amount of resampling the toy mass-balance equation can replace those original
+assays.
+The 2018 dietary-pig and earlier Enviropig reports are contexts, not exchangeable calibration targets. The former
+gives diet-specific fecal-P decreases of 45.8% and 34.8% for a multi-enzyme setup; the earlier construct reports
+up to 75% under different biology. Selecting model inputs to land within these numbers after seeing them would
+be target leakage. The evidence validator reports ten missing or unsupported input dimensions and a null
+phenotype for the actual packet. A sensible next test would gather measurements for every dimension in one
+specified feeding design, assess source relevance before the model is run, and leave any transfer assumption
+explicit. Even a numerical agreement would then need uncertainty and an independent animal comparison, not
+just a plausible point estimate.
+The award-corpus analysis has a different identification problem. Its 125 rows are awarded project listings, not a
+registry of all submissions. Titles are a lossy summary of methods, category boundaries vary, and repeated top-
+award mentions were deduplicated by year/project code. A title-term frequency can guide which ideas to inspect;
+it cannot say which technique improves award probability. A valid rubric study would recruit independent blinded
+scorers for the same anonymized idea briefs and compare scores with actual later results, retaining both failures
+
+
+Source: mega27-27-isef-bioinf-derived-tools | All outcomes limited to cited data and tests
+Item 27 | September 25, 2026 | Current manuscript - not the archival survey
+and ambiguous cases. Neither nonwinner submission records nor such independent rater scores are in the current
+study.
+A shared denominator cannot discharge candidate-specific resource requirements. VenomFunction has 120 direct
+accession reads that were scored, but only six distinct counted scientific service uses; PhosGene has eleven
+distinct scientific services and an exploratory 129-entry direct protein-family provenance audit, clearing the
+narrow accession-count threshold but not an experimentally validated phytase or pig-phenotype gate. Candidate
+#7 has 120 BioSample records, yet the cohort lacks a multi-hospital interpreted R/S comparison and no genome
+predictor has been validated. Candidates #3 and #4 now have 120 separately retrieved protein entries for their
+narrow audits, but not their measured-function or synonymous-expression benchmarks; #5-6 and #8-10 retain
+source and accession deficits. Repeated endpoint requests, mirrored annotation services, a bulk table with many
+IDs, and a bibliography of tools are not forty materially used biological services for any one project. These
+shortfalls remain visible in the ledgers and cannot be repaired by relabeling repositories or supplement pages as
+evidence.
+The paper and companion supplement have complementary purposes. The main text has the full study question,
+evaluation designs, measured results, failure analysis, ten-build status and limits. The supplement is an audit trail:
+all 120 toxin entry scores, the 125 listed awards and each attempted external service endpoint. A reader should
+use the main paper to understand the claims and the supplement to verify individual rows, then inspect the cited
+JSON/TSV and source URLs for exact sequences, dates and retrieval hashes. The supplement does not add
+independent experiments, and a long appendix is not a substitute for valid data or methods.
+
+
+15. Gate-to-evidence decision table
+ Claim under test                          What is directly observed                                What remains unproved
+ Award pattern                             125 official awarded CBIO title rows                     No nonwinner denominator or award odds
+ Rubric reliability                        Deterministic five-field scoring CLI                     No three-person blinded agreement
+ Venom keyword baseline                    1,814 reviewed sequences; fixed random/family            No measured potency or independent function
+                                           folds                                                    cohort
+ Venom direct test                         120 separate entries fetched, checked and scored         Only one service; selected balanced sample
+ PhosGene optimizer                        Translation conserved; 129-entry family scope            No expression/secretory yield measurement
+                                           audit
+ Pig phosphorus model                      Mass-balance equations and provenance refusal            No source-complete in-vivo input packet
+ Builds #3-10                              Runnable audits and bounded tests in own                 Separate 120/40 gates and full papers open
+                                           directories
+
+The table is a decision aid, not a sum of heterogeneous outcomes. In particular, a false-negative threshold failure
+and an unmeasured phenotype are different reasons not to ship a scientific predictor. Future work should specify
+which gate an experiment will answer before collecting more data; adding a service without a biological use
+cannot close any row.
+ Candidate                     Counted scientific providers            Strict direct-entry status               Principal unresolved test
+ VenomFunction-2               6/40                                    120 direct scored UniProt                Independent measured activity and
+                                                                       accessions                               transfer
+ PhosGene                      11/40                                   129 direct family-audit proteins; no     Pig-physiology evidence and
+                                                                       activity assay                           phenotype
+ #3 ToxinAudit                 5/40                                    120 direct UniProt entries; 41           Measured functional negatives
+                                                                       target-EC citations
+ #4 CodonContext               5/40                                    120 direct proteins; 120 CDS             Paired expression constructs
+                                                                       features/one genome
+ #5 GraphHoldout               3/40                                    0 individual biological retrievals       Historical source-disjoint
+                                                                                                                prospective edges
+ #6 TranscriptShift            1/40                                    0 separate sample files                  Comparable independent asthma
+                                                                                                                cohort
+ #7 MicrobeTransfer            4/40                                    120 BioSample records, not               Multi-hospital interpreted AST and
+                                                                       genome predictor set                     genomes
+
+Source: mega27-27-isef-bioinf-derived-tools | All outcomes limited to cited data and tests

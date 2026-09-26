@@ -1,0 +1,110 @@
+===DOCUMENT TEXT (part 2 of 9)===
+Item 27 | September 25, 2026 | Current manuscript - not the archival survey
+                           tier(T) = strong if T >= 17; promising if 13 <= T < 17; needs work otherwise.
+ Candidate                                     Total / 20                                Weakest dimension
+ VenomFunction-2                               18                                        novel_angle
+ DreamMarker                                   18                                        measurable_verdict
+ RelapseCV                                     18                                        novel_angle
+ ConnectoScope                                 17                                        clinical_or_field_value
+ PhosGene                                      17                                        real_data_available
+
+Scores were frozen before the two new tests in protocols/prospective_2026-09-25.md. That dated local file is not
+an independent preregistration service. The earlier three selected builds were retrospective. The prospective two
+were preselected, unblinded and far too few to validate predictive calibration. The planned independent three-rater
+study has a protocol and blank template only; it has not recruited or measured anyone. No kappa or alpha estimate
+exists.
+Unweighted exact agreement = number of equal paired scores / number of paired criteria; no value is available without raters.
+A proper rater study would anonymize and randomize idea briefs before outcomes are revealed, use three
+separately consenting qualified scorers, preserve raw integer ratings and report each pair, not cherry-pick the most
+agreeable pair. The user has not selected recipients or shared-material scope for outside contact. This scientific
+gap is separate from CLI usability.
+
+
+5. VenomFunction-2: task, entries, split design
+We retrieved 2,068 reviewed Swiss-Prot snake-toxin search rows in five bulk pages. The task label is UniProt
+Neurotoxin keyword, not measured potency, clinical benefit, receptor binding or an experiment. The family is a
+UniProt similarity-comment family annotation. Sequences shorter than 25 residues, unnamed-family records and
+exact duplicates were excluded; one exact-sequence conflicting-label group was removed as ambiguous. The final
+training/evaluation corpus has 1,814 unique sequences, 542 keyword positives, across 25 named family groups.
+Bulk IDs alone do not count toward the strict individual-accession gate.
+The classifier is a binary character 3-mer CountVectorizer with min_df=2 and balanced logistic regression.
+Vocabulary is fitted only on the training fold. A prevalence-only dummy baseline is refit per fold. Five random
+stratified folds are compared with five disjoint family folds; these are different target populations and not
+interchangeable matched samples. A large random-fold AUROC can arise from homologous motifs shared across
+train and test; measured 3-mer overlap is audited below.
+                               x_s[k] = 1 if protein sequence s contains amino-acid 3-mer k, else 0.
+                                     p(y=1 | x) = 1 / (1 + exp[-(beta_0 + sum_k beta_k x_k)]).
+                           L(beta) = sum_i w_i[-y_i log(p_i) - (1-y_i) log(1-p_i)] + lambda ||beta||_2^2.
+                                 AUROC = P(score(x_positive) > score(x_negative)) + 0.5 P(tie).
+                              AP = sum over recall steps j of (Recall_j - Recall_(j-1)) * Precision_j.
+                            Gap = mean(random-fold AUROC) - mean(disjoint-family-fold AUROC).
+
+5.1 random folds
+ Fold              Train                Test                Positive test   AUROC               Average precision   Baseline AP
+ 0                 1451                 363                 108             0.98                0.9519              0.2975
+ 1                 1451                 363                 108             0.9854              0.9645              0.2975
+ 2                 1451                 363                 109             0.9787              0.9584              0.3003
+ 3                 1451                 363                 109             0.9879              0.9786              0.3003
+ 4                 1452                 362                 108             0.9703              0.9343              0.2983
+
+Five assessable folds; arithmetic mean AUROC 0.98044. This is not an external independent test cohort. Full per-
+fold family lists, test counts and metrics reside in venom/data/evaluation.json. No bootstrap confidence interval is
+claimed here.
+
+Source: mega27-27-isef-bioinf-derived-tools | All outcomes limited to cited data and tests
+Item 27 | September 25, 2026 | Current manuscript - not the archival survey
+5.2 family held out folds
+ Fold                 Train                 Test            Positive test          AUROC               Average precision   Baseline AP
+ 0                    1306                  508             327                    0.4962              0.6365              0.6437
+ 1                    1459                  355             127                    0.5127              0.384               0.3577
+ 2                    1497                  317             22                     0.7022              0.1269              0.0694
+ 3                    1497                  317             46                     0.5622              0.154               0.1451
+ 4                    1497                  317             20                     0.6828              0.1051              0.0631
+
+Five assessable folds; arithmetic mean AUROC 0.59123. This is not an external independent test cohort. Full per-
+fold family lists, test counts and metrics reside in venom/data/evaluation.json. No bootstrap confidence interval is
+claimed here.
+
+5.3 What the split comparison does and does not show
+The arithmetic mean AUROC is 0.98044 random versus 0.59123 family-held-out, difference 0.38921. This is a
+reproducible broken-benchmark finding: random-split keyword performance does not transfer cleanly to
+annotated unseen protein families under this model and task. Class composition differs by held-out family; the
+gap is descriptive, not an isolated causal measure of homology leakage. Unmeasured cross-family sequence
+resemblance and curation bias remain possible. Baseline prevalence is fold-specific, so AP should always be read
+alongside positive count and baseline AP.
+
+5.4 Follow-up: measured sequence-similarity exposure
+After the frozen benchmark, a separate follow-up measured whether test proteins actually resemble proteins
+available for training. In each original fold, the method forms the set of contiguous three-amino-acid substrings
+for every test and training sequence, computes pairwise Jaccard similarity, and retains the maximum training
+match for each test record. Unlike a model score, this overlap has no fitted label coefficients. The local analysis
+plan was written in the same session just before this computation; it is not independent preregistration, and the
+original AUROC difference was already known.
+                    Jaccard(s,t) = |three_mers(s) intersect three_mers(t)| / |three_mers(s) union three_mers(t)|.
+                              Maximum exposure(s, train_fold) = max_{t in train_fold} Jaccard(s,t).
+ Frozen split                      n test                               Weighted mean max Jaccard           Fraction max Jaccard >=0.80
+ random                            1814                                 0.6210                              0.3352
+ family_held_out                   1814                                 0.0442                              0.0000
+
+Random-fold test proteins have mean max Jaccard 0.6210 to a training protein; 33.5% have a match >=0.80.
+Family-held-out test proteins have mean max 0.0442 and none >=0.80. This documents a large similarity
+exposure difference, which makes the high random AUROC less persuasive as evidence for a novel-family use
+case. It does not isolate a causal leakage effect: group composition and label prevalence differ; threshold 0.80 was
+a fixed descriptive cutoff, not a biological homology definition. Fold-specific metrics and source code are in
+venom/data/similarity_leakage.json and venom/scripts/similarity_leakage.py.
+
+5.4 random similarity by original fold
+ Fold              n test          Mean max        Median               10th pct            90th pct        Share >=0.80      AUROC
+                                   Jaccard
+ 0                 363             0.613           0.639                0.259               0.925           0.322             0.980
+ 1                 363             0.609           0.633                0.241               0.928           0.322             0.985
+ 2                 363             0.620           0.647                0.246               0.927           0.350             0.979
+ 3                 363             0.631           0.675                0.268               0.927           0.336             0.988
+ 4                 362             0.632           0.684                0.248               0.931           0.345             0.970
+
+Spearman correlation across only five fold means and five fold AUROCs is -0.40. This small-n fold-level
+descriptive statistic is not a significance test and is confounded by fold family and class composition; no p-value
+is claimed.
+
+
+Source: mega27-27-isef-bioinf-derived-tools | All outcomes limited to cited data and tests

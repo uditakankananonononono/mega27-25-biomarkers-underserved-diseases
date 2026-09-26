@@ -1,0 +1,108 @@
+===DOCUMENT TEXT (part 4 of 7)===
+Item 27 | September 25, 2026 | Current manuscript - not the archival survey
+10 requiring separate full scientific papers, 120+ individually used biological datasets and 40+ distinct scientific
+tools per project; stronger independent biological benchmarks and external validation where their current gates
+fail; this program manuscript is a substantive working paper, not eight substituted full papers; release/delivery
+audit once the scientific gates are actually met. Do not represent ten runnable builds as ten completed scientific
+projects.
+
+
+13. Candidate builds 3-10: source-limited program inventory
+After the detailed two-project analysis was prepared, separate lanes added eight runnable candidate directions.
+The entries below summarize their committed READMEs, result objects and methods, not an independent source
+reanalysis by this manuscript author. They are concise working builds with documented missing inputs, not eight
+fully validated discoveries or eight full-length papers. Their accession/service gates must be audited separately
+rather than borrowing the VenomFunction/PhosGene ledger; code, catalog row counts or measured pairs are not
+automatically 120 individually fetched-and-used biological accessions or 40 independent services.
+ # / build                              Observed bounded result                           Unmet biology or resource gate
+ 3 ToxinAudit-LabelScope                120 direct reviewed UniProt entries; 41 target-   No measured negatives or homolog-disjoint
+                                        EC direct citations; AUROC refused                benchmark; 4/40 services
+ 4 CodonContext                         Synonymous CDS guard; 120 proteins matched        Exploratory PSI expression baseline AUC
+                                        to 120 CDS features in one RefSeq genome          0.659; no synonymous-pair yield assay
+ 5 GraphHoldout                         CTD/PubMed time split: 114 novel later pairs,     Tiny reachable set, one retrospective source,
+                                        only 8 reachable; asthma 2/2 top-10               most targets cold start
+ 6 TranscriptShift                      GEO BAMSE-to-INMA AUC 0.457, reverse              Transfer gates fail; cohorts from same papers, no
+                                        0.521; separate site-cohort audit                 independent hospital claim
+ 7 MicrobeTransfer                      120 BioSample AST entries; second 1,178-row       Sequence linkage/breakpoints unverified; no
+                                        six-site metadata audit                           hospital-disjoint genome predictor
+ 8 PhageHostScope                       38,435 measured pairs; joint holdout AUC          No verified Paris-BASEL phage/host join; no
+                                        0.709; BASEL lysis audit                          external transfer AUC
+ 9 RNAEvidence                          Historical comparator AUC 0.647;                  858/954 eCLIP rows share gene clusters; no
+                                        CLASH/eCLIP leakage audit                         gene-pair validation
+ 10 SpatialArtifactGuard                15,611 aligned spots; 37px image-shift control    Same atlas, no external site; rare artifact folds
+                                        lowers all six AUCs
+
+The distinct scientific provider ledger for candidate builds 7-10, builds/service_ledger.tsv, counts #7 4/40, #8
+3/40, #9 2/40, and #10 1/40. These provider uses are separate from candidate builds 1-6, and the Zenodo files,
+NCBI sibling endpoints and computational libraries are not additional providers. Candidate #10 directly audited
+the full gene matrix against all 15,611 metadata/image-position barcodes and counts; its missing check is
+external-site/pixel registration and a validated patient-level classifier, not absence of a downloaded matrix.
+The newly committed per-build ledger for candidates 3-6, projects/evidence_ledger.json and
+projects/EVIDENCE_LEDGER.md, counts 5/40 services and 120 direct protein entries for #3; 5/40 services and
+120 individually retrieved protein entries paired with CDS features from one fetched genome for #4; 3/40 services
+and 120 bibliographic PMID responses, not biological assay accessions, for #5; 1/40 service and 120 GSM
+metadata responses, not separately fetched expression datasets, for #6. These are per-build numbers, not additive
+program closure. Candidate #7 has 120 individually read BioSample records containing AST annotations, but no
+genome-wise fetched-and-used predictor set or multi-hospital R/S cohort; treating its BioSample retrieval as a
+completed biological accession gate would erase the stated project requirement. #8 has 97 source phage FASTAs
+and 105 external-cohort phage FASTAs, but they are different species/source contexts and not a common 120-
+accession model validation. The other bulk catalog and patient-spot rows are not individually fetched accession
+datasets.
+Candidate 3 provenance: projects/toxin_audit/README.md and results.json (direct UniProt source IDs and EC
+evidence); 4: projects/codon_context/README.md and synthetic example; 5:
+projects/graph_holdout/README.md and CTD/PubMed manifest; 6: projects/transcript_shift/README.md and
+GEO source manifest. Candidate 7: builds/microbe_transfer/README.md and results.json (CARD catalog); 8:
+
+Source: mega27-27-isef-bioinf-derived-tools | All outcomes limited to cited data and tests
+Item 27 | September 25, 2026 | Current manuscript - not the archival survey
+builds/phage_host_scope/README.md and results.json (Paris et al. source); 9:
+builds/rna_evidence/README.md and results.json (historical miRTarBase); 10:
+builds/spatial_artifact_guard/README.md and results.json (Zenodo spatial atlas). Each individual README or
+manifest gives source URLs, methods, test commands and caveats; a reader must inspect those artifacts before
+relying on a candidate-level claim.
+Build-time thresholds and directions are not independent preregistrations. Negative, unassessable and exploratory
+statuses are retained, and no shared resource count can close the ten separate 120/40 gates. A follow-on program
+synthesis should independently reproduce the eight builds, audit original biological sources, expand their methods
+and outcomes into their own full papers, and replace this bounded inventory only after that review.
+
+13.1 Why the eight build verdicts differ
+ToxinAudit-LabelScope (#3) retains its original 26-entry panel and expands to 120 separately fetched reviewed
+UniProt entries under two fixed EC queries. Forty-one expanded entries have direct target-EC experimental
+citations; the earlier panel had twelve. The absence of such a citation in the others cannot serve as a negative
+functional assay: an unmeasured protein may still catalyze the reaction. The classifier refuses to fit until
+independent measured negatives and homolog-disjoint controls exist. QuickGO, InterPro and ChEMBL add
+contextual annotation and target identity; UniRef50 maps all 120 selected entries to 73 half-identity clusters, 19
+containing multiple panel entries. These checks are not biochemical null results or assay-disjoint folds. This is a
+useful failure-before-modeling control, but no predictive AUROC or novel enzyme-function finding follows.
+Source: projects/toxin_audit/accessions.json, results.json and external_checks.json.
+CodonContext (#4) takes a candidate coding sequence and checks translation preservation, reading frame,
+terminal stop, GC/motif and window constraints. A first-120 E. coli panel separately retrieves 120 UniProt
+proteins, mapping them to 120 translated CDS features from a single fetched RefSeq chromosome; it is not 120
+separately fetched nucleotide accessions. A PSI protein-expression dataset supports an exploratory accession-
+prefix split with AUC 0.659, but is not a same-protein synonymous construct test. Angov et al. 2008 provides five
+paired wild-type/codon-harmonized yield rows, without full paired CDS sequences or comparable CAI; it checks
+experiment feasibility, not a held-out CAI-gain benchmark. The separate published NAR 2023 mRFP workbook
+supplies 1,459 sequence/fluorescence rows for one protein and one host, crosschecked against a downstream CSV
+as one evidence chain. Its exploratory first-eight-codon fixed feature had a held-out within-study Pearson r of
+0.722 versus 0.521 for GC features, but a post-result source-header holdout had macro R2 -0.305 and two
+negative folds. Those are not 1,459 independent datasets, a matched published benchmark or a new biological
+discovery. The panel does not supply paired constructs measured in an expression host. Its CAI arithmetic
+therefore cannot answer whether synonymous changes increase yield, even if a constraint checker can reject
+impossible or unwanted sequences. This is distinct from PhosGene despite shared P07102 context and must not
+count that overlap as an independent expression experiment. Source: projects/codon_context/README.md and
+evidence_ledger.json.
+GraphHoldout (#5) uses 556 curated CTD gene-disease-PMID evidence rows with PubMed publication dates. It
+represents an edge and its reverse as one canonical pair and excludes shared paper IDs across the retrospective
+time split. Of 114 later novel associations, 106 involve genes absent from the earlier graph; only eight positives
+are rankable at all. Asthma 2/2 among the eight cannot validate a general ranker when the other disease groups
+yield 0/5 and 0/1. The 2026 CTD snapshot is filtered by article date, not historical curation date; current Open
+Targets context can overlap the same papers. The observed cold-start limit and leakage refusal are results;
+prospective gene-disease prediction is not. Source: projects/graph_holdout/data/results.json and REPORT.md.
+TranscriptShift (#6) downloads expression matrices for two GEO cohort accessions, uses a fixed 1,000-probe
+linear model and trains on an entire study before testing on the other. AUCs of 0.457 and 0.521 fail its two-
+direction gate. An independent publication supplies GSE110551 with a different platform and explicit site
+metadata. The old fitted probe model cannot be applied as if probes were harmonized; a separate fixed baseline
+gives Wroclaw-to-Zurich AUC 0.613 and reverse 0.545. Conditional bootstrap AUC intervals for the original
+directions are 0.350-0.560 and 0.448-0.596; they do not cover future hospitals or clinical phenotype adjudication.
+
+Source: mega27-27-isef-bioinf-derived-tools | All outcomes limited to cited data and tests

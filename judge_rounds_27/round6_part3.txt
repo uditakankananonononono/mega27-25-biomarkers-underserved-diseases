@@ -1,0 +1,109 @@
+===DOCUMENT TEXT (part 3 of 9)===
+Item 27 | September 25, 2026 | Current manuscript - not the archival survey
+5.4 family held out similarity by original fold
+ Fold              n test         Mean max        Median         10th pct       90th pct          Share >=0.80   AUROC
+                                  Jaccard
+ 0                 508            0.039           0.039          0.031          0.048             0.000          0.496
+ 1                 355            0.041           0.040          0.033          0.049             0.000          0.513
+ 2                 317            0.055           0.048          0.035          0.077             0.000          0.702
+ 3                 317            0.045           0.043          0.034          0.051             0.000          0.562
+ 4                 317            0.045           0.041          0.033          0.068             0.000          0.683
+
+Spearman correlation across only five fold means and five fold AUROCs is 1.00. This small-n fold-level
+descriptive statistic is not a significance test and is confounded by fold family and class composition; no p-value
+is claimed.
+
+
+6. Individually fetched accession audit
+To meet a stricter unit of biological data, venom/scripts/validate_individual.py issued 120 separate direct
+UniProtKB entry reads. Each saved JSON records accession, sequence and source URL, compared with the bulk
+snapshot. We selected 60 three-finger toxin and 60 phospholipase A2 records, each group 30 keyword-positive
+and 30 keyword-negative after deduplication. No held-out accession enters training; individual_validation.py
+produced a prediction from each individually fetched sequence. The selection is balanced by construction and
+uses the same UniProt source, so it is not a new natural-prevalence or external experimental cohort.
+phospholipase a2: n=60, positives=30, AUROC=0.60667, AP=0.58658, prevalence-only AP=0.500. Do not read
+the two family scores as a pooled clinical metric.
+three-finger toxin: n=60, positives=30, AUROC=0.42667, AP=0.48640, prevalence-only AP=0.500. Do not read
+the two family scores as a pooled clinical metric.
+        Per-accession audit inclusion = direct entry GET AND identity/sequence validation AND an actual held-out score.
+The 120 one-to-one source records are named in venom/data/individually_validated_120.tsv; the scored
+probabilities, labels, family and URLs are in venom/data/individual_validation.json. Appendix A tabulates all 120
+scores. Three-finger AUROC below 0.5 in the balanced sample is a negative result, not a reason to invert labels
+after seeing the answer.
+
+6.0 Post-hoc family annotation control
+On the same five random folds, a model given only the UniProt similarity-comment family label achieved mean
+AUROC 0.87929, compared with 0.98044 for the sequence 3-mer model. The family feature is an annotation, not
+a sequence-derived predictor. The encoder is fit only on each training fold, but both label and feature come from
+UniProt. This post-hoc control diagnoses annotation structure, not a causal decomposition of the sequence model
+or a fix for held-out-family failure. Frozen local diagnostic plan, code and results:
+protocols/venom_family_annotation_diagnostic_2026-09-25.md, venom/scripts/family_annotation_control.py,
+venom/data/family_annotation_control.json.
+ Random fold                                 Family-only AUROC                          Sequence 3-mer AUROC
+ 0                                           0.8766                                     0.9800
+ 1                                           0.8879                                     0.9854
+ 2                                           0.8955                                     0.9787
+ 3                                           0.8712                                     0.9879
+ 4                                           0.8653                                     0.9703
+
+
+6.1 Diagnostic threshold error audit
+After seeing the held-out probabilities, we calculated a descriptive 0.5 decision-threshold confusion matrix
+without re-fitting the model or selecting a new threshold. This is post-hoc error characterization and is not a
+prospectively selected operating point. Ranking metrics can remain above chance even when an uncalibrated 0.5
+
+Source: mega27-27-isef-bioinf-derived-tools | All outcomes limited to cited data and tests
+Item 27 | September 25, 2026 | Current manuscript - not the archival survey
+threshold produces zero true positives. Source: results/transfer_error_audit.json; the script recomputes each
+number directly from the 120 original prediction rows.
+ Held-out family      TN                  FP                FN                   TP             Brier                 Largest score
+ phospholipase a2     30                  0                 30                   0              0.371                 0.458
+ three-finger toxin   30                  0                 30                   0              0.392                 0.405
+
+The max probability is below 0.5 in both groups. Every 30 keyword-positive entries per family is a false negative
+at that threshold; specificity looks perfect only because the classifier always predicts negative in this balanced
+audit. Brier score is a squared-probability error summary and should be compared only within the same label
+definition and sample selection. The failure may reflect a shifted intercept under family exclusion, altered class
+mix or insufficient family-transfer signal. The available data cannot distinguish these causes, and post-hoc
+threshold tuning on these samples would defeat the held-out audit. A next within-project pivot is to freeze a
+separate nonoverlapping validation-family set, then calibrate a threshold on those families only and evaluate on
+untouched test families; the current two groups remain a frozen negative, not refitted success.
+                                 Brier = (1/n) * sum_i (predicted_probability_i - keyword_label_i)^2.
+                           Sensitivity at threshold 0.5 = TP / (TP + FN) = 0 in both 60-entry family samples.
+
+6.2 Threshold transfer without target-label tuning: another negative
+A separate exploratory attempt asked whether a decision threshold learned outside both target families could
+recover positives without reusing target labels. The model was trained on 951 sequences from 23 other families.
+Five GroupKFold out-of-fold predictions over those training families supplied a single scalar threshold that
+maximized balanced accuracy. The previously scored 120 direct-entry target proteins were not used to choose this
+threshold. However, the target outcomes were already visible before this experiment was planned, so it is not
+independent prospective validation.
+The selected training-family threshold was 0.001159, with training-family out-of-fold balanced accuracy 0.5227.
+It is far below 0.5, already warning of severe distribution shift. On each of the two balanced target groups, the
+original 0.5 threshold gave 30 true negatives and 30 false negatives. The non-target-calibrated threshold gave 30
+true positives and 30 false positives. Both achieve balanced accuracy 0.5 by predicting one class for all records.
+Thus this threshold transfer did not repair the actual decision problem. It cannot be reselected on target labels after
+seeing this result without sacrificing holdout integrity.
+ Family                              Original TN/FP/FN/TP            New TN/FP/FN/TP                    New balanced accuracy
+ phospholipase a2                    30/0/30/0                       0/30/0/30                          0.500
+ three-finger toxin                  30/0/30/0                       0/30/0/30                          0.500
+
+This jointly excluded both target families during model fitting, whereas the original direct-entry scoring excluded
+one family at a time. Its rankings/AUCs are therefore not apples-to-apples with the earlier AUCs, even though the
+same target accessions were used. Code and complete result: venom/scripts/transfer_calibration.py and
+venom/data/transfer_calibration.json. The within-project direction remains open; an independent biological label
+or a truly untouched external cohort would be needed for a stronger claim.
+
+6.3 Within-project label-coherence check
+A second VenomFunction pivot checks a narrow data-quality explanation without redefining the original held-out
+negative. Registered thresholds 1.00 and 0.95 positional identity before this scan; only equal-length raw direct-
+entry sequences are comparable by this proxy. The scanner reads the same 120 saved direct-UniProt entry JSON
+files and lists accession pairs with their keyword, source URLs, family and identity. This is not a new cohort or an
+optimized classifier.
+Across 120 direct entries, 277 pairs had equal lengths; 21 had at least 95% positional identity, and 0 of those had
+discordant keyword labels. At exact identity, 0 pairs were found. Thus the high-identity equal-length subset does
+not reveal a direct internal keyword contradiction in this sample. Unequal-length sequences were not aligned;
+other annotations, nearly identical proteins outside this 120-entry selection, and true functional outcomes remain
+untested. File: venom/data/label_conflict_audit.json, method: venom/scripts/label_conflicts.py.
+
+Source: mega27-27-isef-bioinf-derived-tools | All outcomes limited to cited data and tests

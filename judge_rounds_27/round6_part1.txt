@@ -1,0 +1,105 @@
+I am going to paste the COMPLETE extracted text of a document in 9 parts because of message length limits. After each part, reply ONLY with 'Part N received' and wait - do not analyze anything until I send the review questions after part 9.
+===BEGIN DOCUMENT TEXT (part 1 of 9)===
+Item 27 | September 25, 2026 | Current manuscript - not the archival survey
+
+ISEF-derived computational biology tools: award-corpus audit,
+family-held-out toxin benchmark, and AppA model provenance
+Current corrected research manuscript | September 25, 2026 | Ten runnable candidate directions are present; this
+19-page aggregate is not a final per-project paper. The updated owner floor is 50 pages of substantive research
+content per project, excluding headings and references; benchmark and external-resource gates remain open.
+Abstract. We built a reproducible corpus of 125 CBIO award project-year rows from seven Society for Science
+listings. A winner-only corpus cannot estimate award odds or validate a selection rule. A five-criterion rubric
+remained usable as a structured scoring CLI but has not undergone independent inter-rater testing. Of ten derived
+projects requested, this detailed study tests VenomFunction-2, a sequence classifier benchmark, and PhosGene, an
+AppA codon and phosphorus-balance sandbox; an updated source-limited inventory below describes the other
+eight runnable builds without promoting their results to validated discoveries. In 1,814 deduplicated reviewed
+snake-toxin sequences, random-split mean AUROC was 0.98044, falling to 0.59123 under family-held-out folds.
+An attribution proxy failed. PhosGene preserved protein translation and mass balance but could not verify a pig
+phenotype; an evidence validator refuses to compute that phenotype from incomplete in-vivo inputs. We
+individually fetched and scored 120 named UniProtKB entries. The shared scientific service ledger counts 17 uses
+across both candidates, below the 40-per-project requirement. These are bounded research results, not clinical or
+animal claims.
+
+
+1. Research question and frozen scope
+Question A: can official CBIO awards support a dependable design rubric? Question B: does a toxin-keyword
+predictor generalize outside annotated venom families? Question C: does a computational AppA construct
+optimizer reproduce a measurable fecal-phosphorus effect? The first is not answerable as an award-probability
+question from winning titles alone. The second has a falsifiable benchmark with a negative generalization gap.
+The third is currently unassessable from parameter provenance; a within-project evidence gate now identifies
+what is missing. These negative and unassessable waypoints are not terminal failures: further within-project
+pivots must retain them and seek a genuine useful result. We keep these outcomes separate.
+The user requested ten new ISEF-derived projects, each with at least 120 accession datasets, 40 external scientific
+tools, formulas, a falsifiable discovery or broken benchmark, a usable tool, a full paper and delivery. This
+manuscript gives detailed methods for candidates 1-2 and a separately labeled status inventory for eight newly
+built candidate directions 3-10. All ten have runnable code or audits, but none is asserted to meet every per-
+project scientific/resource gate; the status inventory is not a full methods/results paper for each of the eight. Three
+earlier tool prototypes are retrospective context and do not increase the ten-build count. The item-27 study has
+120 individually fetched-and-used toxin entries, 129 separately retrieved AppA-family annotation entries, and 17
+counted service uses assigned separately, never pooled to satisfy a candidate gate. Of these services only six are
+assigned to VenomFunction and eleven to PhosGene; a service must be materially used within the named
+candidate to count toward that candidate, so no shared-ledger completion claim is made. Shared counts do not
+automatically satisfy 120/40 for either standalone candidate: VenomFunction has the 120 direct toxin entries but
+fewer than 40 tools, and PhosGene now has 129 direct entries used in an exploratory AppA-family provenance
+audit, but not 120 experimentally validated phytase activity measurements, and still fewer than 40 tools or a pig
+outcome. The nonwinner denominator and three blinded outside raters are absent.
+
+
+2. Source provenance and reproducibility
+Award listings came from the original Society for Science full-awards pages. A project is one unique year/project-
+code pair after repeated top-award mentions are deduplicated. Each TSV row records year, code, title, award tier
+and original source URL. 2020 is excluded from this award-listing corpus rather than interpreted as zero CBIO
+Source: mega27-27-isef-bioinf-derived-tools | All outcomes limited to cited data and tests
+Item 27 | September 25, 2026 | Current manuscript - not the archival survey
+award projects. Source and parser: survey/data/official_cbio_awards.tsv and survey/scripts/collect_awards.py.
+The seven pages include https://www.societyforscience.org/press-release/regeneron-isef-2025-full-awards/ and
+https://www.societyforscience.org/press-release/regeneron-isef-full-awards-2023/.
+ Year                                                                 Awarded CBIO rows
+ 2018                                                                 10
+ 2019                                                                 13
+ 2021                                                                 25
+ 2022                                                                 20
+ 2023                                                                 20
+ 2024                                                                 15
+ 2025                                                                 22
+
+The literature and service checks do not manufacture 40 independent sources. One database queried 120 times
+remains one service. Mirrors of the same record and inaccessible endpoints are excluded. Public, unauthenticated
+science APIs required no external account login; private Drive delivery uses the connected owner account. Source
+URLs, test IDs, result paths and the counted judgment for every tried tool are in external_tools/ledger.tsv.
+
+
+3. Winner-only award analysis: what can be measured
+The title audit uses fixed literal/regex-like tokens, never semantic coding of the full abstract. It counts explicit
+wording rather than actual underlying methods. The 125 listing records are neither patient/protein datasets nor a
+sample of all science-fair submissions. A zero count is compatible with a method used but omitted from the title.
+A high count cannot establish judges rewarded that technique. The six original “what wins” patterns remain
+candidate prompts, not validated rules.
+ Title phrase                                                         Explicit matches in 125 titles
+ CNN explicitly named                                                 0
+ deep learning explicitly named                                       19
+ graph explicitly named                                               16
+ machine learning explicitly named                                    18
+ clinical or disease keyword                                          41
+ attribution or interpretability explicitly named                     0
+ low cost or access explicitly named                                  1
+ NLP explicitly named                                                 0
+
+A prospective award-probability analysis would require submitted projects including nonwinners, consistent
+category coding, covariates for year and award tier, and an analysis plan fixed before comparing methods. We
+have no such denominator. A 2023 suicide-prevention example appears outside CBIO and must not be folded into
+this CBIO award corpus. See survey/INTERPRETATION.md for the individual six-pattern audit.
+                          Observed title share = n(explicit title matches) / 125; this is NOT P(award | method).
+Citation: Society for Science 2025 full awards, URL above, plus the per-row official URLs in the award TSV. Re-
+running survey/scripts/collect_awards.py gives the source corpus. The parser is independently checked by
+tests/test_awards.py and tests/test_pattern_audit.py.
+
+
+4. Rubric as an instrument, not a validated predictor
+The scorer takes five required integer 0-4 fields: real data availability, novelty, feasible scope, measurable verdict
+and field or clinical value. Total is the unweighted sum; tier thresholds are strong >=17, promising >=13, needs
+work below 13. Missing, extra, Boolean, fractional and out-of-range scores are rejected. This prevents malformed
+input, not subjective disagreement or judge validity. The anchors are displayed by the CLI and the input remains a
+human judgment.
+                            T = d + n + f + m + v, where each term is an integer in {0,1,2,3,4}; 0 <= T <= 20.
+Source: mega27-27-isef-bioinf-derived-tools | All outcomes limited to cited data and tests

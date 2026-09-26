@@ -16,6 +16,6 @@
     "round5 aggregate scoped to VenomFunction-2 only",
     "round6 aggregate scoped to PhosGene only"
   ],
-  "status": "BLOCKED 2026-09-26 13:16 IST: ChatGPT Free-tier daily file-upload cap consumed on account uditakankana@gmail.com. The composer + menu shows 'Get Plus for more uploads / Or wait 7 hours to upload again' and suppresses the Upload-from-computer entry. Expected resume ~20:16 IST; first attempt scheduled ~20:25 IST. Prompts for all six rounds are committed alongside this meta. Evidence screenshot: cloud-browser-20260926-074617.png (attached to parent report).",
+  "status": "COMPLETE 2026-09-26 13:34 IST. All six rounds run as TEXT-PASTE verified rounds (user route change 13:18 IST after the Free-tier upload cap). Every round: fresh conversation, whole document text pasted (chunked <=13KB for the aggregate), model acked each part, receipt verified via doc-unique quoted strings, verdicts YES for honest representation (verification/weakness passes). See round1..round6_meta.json.",
   "per_round_protocol": "Fresh conversation; arm via + > upload entry; upload actual PDF; wait 20-25s; verify chip; send committed prompt; accept only answers quoting strings unique to the attached PDF version; record attachment_verified + sha256 + conversation URL in the round meta."
 }

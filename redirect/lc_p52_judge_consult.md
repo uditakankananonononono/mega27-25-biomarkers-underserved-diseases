@@ -20,3 +20,8 @@ signature strategy fails, not that LC/ME/CFS lack molecular separation.
    uses only the pre-declared panel intersection, no redefinition after seeing data.
 4. Interpretation framing: E2 failure means this signature strategy fails to
    separate LC from ME/CFS, NOT that no molecular separation exists.
+
+## Implementation-bug log (per prereg disclosure rule)
+- 2026-09-26: first training execution attempt failed before producing any result:
+  RAW.tar members are gzip-compressed per-sample files; read_csv hit UnicodeDecodeError.
+  Fixed by wrapping members in gzip.open; no result was produced or seen before the fix.

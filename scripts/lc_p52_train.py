@@ -2,7 +2,7 @@
 frozen at commit f81bb92d BEFORE this script was run). No evaluation-cohort expression
 contact; the GSE275334 panel is touched only for its gene SYMBOL LIST (pre-declared
 eligibility bar, same rule as P51). Outputs results/lc_p52_train_result.json."""
-import hashlib, json, tarfile, io, re
+import hashlib, json, tarfile, io, re, gzip
 from pathlib import Path
 import pandas as pd, numpy as np
 
@@ -16,7 +16,6 @@ for n,digest in SHA.items(): assert hashlib.sha256((folder/n).read_bytes()).hexd
 # --- sample metadata from series matrices: group + platform ---
 meta = {}
 for gpl in ['GPL21290','GPL24676']:
-    import gzip
     txt = gzip.open(folder/f'GSE251872-{gpl}_series_matrix.txt.gz','rt').read()
     titles = re.search(r'^!Sample_title\t(.+)$', txt, re.M).group(1).split('\t')
     gsms   = re.search(r'^!Sample_geo_accession\t(.+)$', txt, re.M).group(1).split('\t')
@@ -31,7 +30,7 @@ counts = {}
 with tarfile.open(folder/'GSE251872_RAW.tar') as tf:
     for m in tf.getmembers():
         gsm = m.name.split('_')[0]
-        df = pd.read_csv(tf.extractfile(m), sep='\t')
+        df = pd.read_csv(io.TextIOWrapper(gzip.open(tf.extractfile(m),'rb')), sep='\t')
         valcol = [c for c in df.columns if c not in ('gene_id','external_gene_name')][0]
         counts[gsm] = df.set_index('external_gene_name')[valcol]
 assert set(counts) == set(meta), (set(counts)^set(meta))

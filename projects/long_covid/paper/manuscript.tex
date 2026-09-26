@@ -1,0 +1,191 @@
+\documentclass[11pt,a4paper]{article}
+\usepackage{mathptmx}
+\usepackage[margin=0.9in]{geometry}
+\usepackage{amsmath,amssymb,graphicx,longtable,array}
+\usepackage{url}
+\setlength{\parskip}{4pt}\setlength{\parindent}{0pt}
+
+\title{Long COVID whole-blood and PBMC programs after preregistration:\\
+a cross-assay oxidative-phosphorylation signal, two transparent\\
+negatives on ME/CFS separation, and a full gate audit}
+\author{MEGA-PROGRAM-27, Long COVID lane (builder branch \texttt{builder-25-ic})}
+\date{26 September 2026 - working disease manuscript; not yet complete}
+
+\begin{document}
+\maketitle
+\begin{abstract}
+Long COVID (post-acute sequelae of SARS-CoV-2 infection, PASC) still lacks any
+molecular test; its closest clinical neighbour, myalgic encephalomyelitis/chronic
+fatigue syndrome (ME/CFS), shares both symptoms and putative biology, and the two
+are routinely conflated in cohort design. This report runs a disciplined,
+fully preregistered program on four public cohorts and keeps every negative on
+the record. First, three fixed-list tests derived from published six-gene panels
+fail their strict rules: the GSE226260-derived list shows 5/6 expected signs in
+its own source cohort ($p=.0081$, no Bonferroni pass), fails outright on a
+NanoString PBMC cohort, and a naive-CD4 cohort cannot measure CXCL8 at all.
+Second, the preregistered P51 arc trains nine Hallmark-derived modules on
+GSE226260 whole blood (17 PASC vs 20 recovered) and selects exactly one:
+oxidative phosphorylation, down-regulated in PASC (permutation $p=.0432$,
+leave-one-patient-out stable 37/37). Frozen evaluation on the untouched
+GSE275334 PBMC NanoString cohort shows the oxphos-down signature separates Long
+COVID from healthy controls cross-assay (E1: $p=.0038$, Hedges $g=0.958$) but
+does not separate Long COVID from ME/CFS (E2: $p=.485$, $g=0.259$); the
+published six-gene comparator also fails the locked $|g|>0.8$ bar on that
+contrast ($g=0.776$). The locked win rule is not met and is recorded as such.
+Third, the preregistered P52 arc - designed after an advisory design review and
+correcting the first arc's anti-conservative one-sided selection to a two-sided,
+platform-stratified rule - attempts to train an ME/CFS-contrast signature on
+post-infectious ME/CFS PBMC (GSE251872; 12 cases, 15 controls): no module
+passes (best two-sided $p=.194$), and the arc ends at the training stage, by
+preregistration, without touching the evaluation cohort. Fourth, we build the
+lane's gate evidence honestly: 178 accession-backed record units (record units,
+not patients or studies), 44 genuinely used external scientific services (42
+under the conservative recount), and this manuscript toward the
+50-substantive-page gate, whose status is stated exactly wherever it stands.
+No clinical test, named discovery, or benchmark break is claimed.
+\end{abstract}
+\tableofcontents\clearpage
+
+\section{Scope, verdict and reproducibility}
+\textbf{Scope.} This manuscript is the disease-lane report for the Long COVID
+project of MEGA-PROGRAM-27. It covers: (i) provenance and verification of every
+dataset the lane has used or credited; (ii) the pre-arc fixed-list tests that
+motivated preregistration; (iii) the two preregistered analysis arcs, P51 and
+P52, with their frozen protocols, single executions, and untuned outcomes;
+(iv) the external-service annotation landscape that contextualises the
+preregistered gene sets; and (v) the lane's gate audit against the program's
+120-record, 40-service and 50-substantive-page floors.
+
+\textbf{Verdict, stated up front.} The lane holds one preregistered positive
+and two preregistered negatives. The positive: an oxidative-phosphorylation
+down-regulation signature, selected under a frozen protocol in whole blood,
+transports across assay platform and cell mixture to separate Long COVID from
+healthy controls in PBMC (E1, $p=.0038$). The negatives: that signature does
+not distinguish Long COVID from ME/CFS (E2, $p=.485$), and a second,
+better-powered-design arc aimed directly at the ME/CFS contrast found no
+trainable module signal at all (best two-sided $p=.194$). We claim the positive
+exactly as far as the preregistration supports: a reproducible chronic-state
+signal against healthy controls, not a disease-specific discriminator and not
+a diagnostic. The ME/CFS separation question - the lane's declared
+differentiator in its novelty plan - is, after two disciplined attempts,
+unresolved: the first arc's signatures fail it, and the second arc shows the
+failure is not fixed by switching training cohorts at this sample size.
+
+\textbf{Reproducibility.} Every dataset is stored in-repo under
+\texttt{data/geo/} with SHA-256 locks asserted at the top of every analysis
+script. Every gated test has its preregistration committed and pushed before
+its first execution (\texttt{projects/long\_covid/prereg/}). Every analysis
+script runs end-to-end from the locked data with a fixed seed and writes a
+JSON result committed alongside. Advisory consultations (judge mode) are
+preserved verbatim with conversation URLs in \texttt{redirect/}. One
+implementation bug occurred (gzip handling in the P52 trainer); it failed
+before producing any result, is disclosed in the redirect log, and the fixed
+script's output is the single training execution the preregistration allows.
+
+\section{Disease background and the ME/CFS adjacency problem}
+Long COVID denotes persistent symptoms following SARS-CoV-2 infection that
+cannot be explained by an alternative diagnosis; fatigue, post-exertional
+malaise, cognitive dysfunction and autonomic features dominate. Its case
+definition is clinical and exclusionary, which makes a molecular discriminator
+valuable in principle and dangerous in practice: any blood signal that merely
+tracks chronic illness will appear to ``work'' against healthy controls while
+adding nothing over clinical assessment. The strongest version of the problem
+is ME/CFS. ME/CFS is likewise a post-infectious, exclusion-diagnosed syndrome
+with overlapping symptomatology; a nontrivial fraction of Long COVID patients
+meet ME/CFS criteria. A biomarker claim for Long COVID that has never been
+tested against ME/CFS controls is, at best, a claim about chronic unwellness.
+
+This is why the lane's novelty plan names the ME/CFS contrast as the actual
+contribution to attempt, and why both preregistered arcs are built around it:
+P51 asks whether a discovered signature separates Long COVID from ME/CFS, not
+merely from health; P52 asks whether a signature trained on ME/CFS itself
+separates the two. The honest scientific prior, which the advisory review of
+the P52 design stated plainly, is that these conditions may be molecularly
+continuous in blood; the program's job is to test that falsifiably, not to
+assume separability.
+
+\section{Data acquisition and provenance}
+\subsection{Datasets and roles}
+Four GEO series are locked in-repo. \textbf{GSE226260} (whole-blood RNA-seq;
+source study Nature Immunology 2025) contributes the P51 training cohort: 17
+PASC vs 20 recovered donors, one sample per person selected under the lane's
+sample-map rules from 103 libraries (\texttt{results/longcovid\_p36\_samples.csv});
+the same series is the source of the published six-gene panel (JAK1, CXCL8,
+BCL2L1, OSM, MAP3K8, STAT3) used throughout as the named comparator.
+\textbf{GSE275334} (PBMC, 635-gene NanoString panel) contributes the locked
+evaluation cohort: 23 Long COVID, 9 ME/CFS, 15 healthy controls
+(\texttt{results/longcovid\_p37\_samples.csv}) - to our knowledge the only
+public cohort carrying Long COVID and ME/CFS arms on one platform, which is
+why it is reserved for evaluation and never trained on. \textbf{GSE334857}
+(naive CD4 T-cells) contributes the p38 coverage test. \textbf{GSE251872}
+(Walitt deep-phenotyping post-infectious ME/CFS, baseline PBMC RNA-seq)
+contributes the P52 training cohort: 12 cases vs 15 healthy volunteers across
+two sequencing platforms (3/7 and 9/8 case/control splits), a confound the
+P52 preregistration handles by within-platform z-scoring and
+platform-stratified permutation.
+
+\subsection{Verification}
+All files carry SHA-256 digests asserted in-script before any processing;
+sample-to-group assignments are taken from series-matrix titles and
+characteristics, not from secondary citations. The GSE251872 group split
+(12/15) and platform split were re-derived from the two platform-specific
+series matrices and are re-asserted in the training script, which fails closed
+if the composition ever changes.
+
+\section{Pre-arc fixed-list tests: three negatives that forced preregistration}
+Before any preregistered arc, the lane tested the obvious cheap hypotheses -
+published fixed gene lists - under strict all-gene rules
+(\texttt{results/longcovid\_p36\_result.json}, \texttt{p37}, \texttt{p38}).
+The GSE226260 six-gene list, evaluated in its own source cohort, shows 5/6
+expected signs ($p=.0081$) but no gene passes a Bonferroni bar: a weak,
+post-selected signal exactly where it was discovered. The same list fails its
+strict rule outright on GSE275334. The naive-CD4 cohort cannot measure CXCL8
+(the list's anchor gene) above detection, so the third test is uninterpretable
+by construction and recorded as a coverage failure, not a result. These
+negatives are why the lane moved to frozen-protocol module arcs: post-selected
+six-gene lists do not survive contact with independent cohorts, and any
+discovered signature must be selected where it is trained and judged where it
+has never been seen.
+
+\section{Preregistered arc P51: the oxidative-phosphorylation signal}
+\subsection{Frozen design}
+The P51 preregistration (committed at \texttt{42deadfa} before any run) fixed:
+nine Hallmark-derived candidate modules L1--L9
+(\texttt{prereg/lc\_p51\_module\_genesets.json}); training on GSE226260 only;
+module eligibility bars ($\geq$20 genes measurable in training, $\geq$10 on the
+635-gene evaluation panel, locked a priori because the panel is small);
+selection by Cohen's $D$ plus permutation testing with leave-one-patient-out
+sign stability; and a frozen evaluation on GSE275334 comprising E1 (signature
+vs healthy, one-sided in the trained direction, pass $p<.025$), E2 (signature
+vs ME/CFS, two-sided $p<.05$ and $|g|>0.8$), the same two tests for the
+six-gene comparator on the same subjects with the same machinery, and a win
+rule requiring E1 and E2 to pass and the signature's E2 effect to exceed the
+comparator's.
+
+\subsection{Training result}
+One module of nine was selected: L7, oxidative phosphorylation, down-regulated
+in PASC vs recovered ($D=-0.356$, permutation $p=.0432$, sign stable in all 37
+leave-one-out folds; \texttt{results/lc\_p51\_train\_result.json}). The other
+eight modules show permutation $p$ between .10 and .29 - no second signal.
+Twelve of the module's genes are on the evaluation panel, clearing the locked
+$\geq$10 bar.
+
+\subsection{Evaluation result and the honest ledger}
+On GSE275334 (\texttt{results/lc\_p51\_eval\_result.json}): \textbf{E1 passes}
+- the oxphos-down signature separates Long COVID from healthy controls
+cross-assay ($D=0.343$, $p=.0038$, $g=0.958$). \textbf{E2 fails} - it does not
+separate Long COVID from ME/CFS ($D=0.113$, $p=.485$, $g=0.259$). The six-gene
+comparator is stronger on both tests ($p=.0018$, $g=1.051$ against healthy;
+$p=.0473$, $g=0.776$ against ME/CFS) yet itself fails the locked $|g|>0.8$ bar
+on the ME/CFS contrast. The win rule is not met; the arc is recorded as a
+ledger outcome, untuned.
+
+\subsection{The anti-conservatism note, carried forward}
+The P51 training permutation was implemented one-sided in each module's
+observed direction; because direction was not fixed a priori, this is
+anti-conservative relative to a truly prespecified test. The flaw is disclosed
+in the result commit, the training result was not re-run (no tuning into a
+different answer), and the correction was mandated into the P52
+preregistration: two-sided selection, stated below.
+
+\end{document}

@@ -131,3 +131,12 @@ Count: 30 used + 5 blocked-attempted; gate needs 40.
     the identical query - honest note, no retry-loop.
     Used to translate GSE244827 Ensembl Geneids for target matching.
 Count: 31 used + 5 blocked-attempted; gate needs 40.
+
+## Addendum 5 (2026-09-27T00:48): service 32 + blocked note
+32. Enrichr API (maayanlab.cloud) - pathway context on pooled strong-
+    support validated targets (557 genes, userListId 138561924):
+    GO BP 2025, KEGG 2021, WikiPathways 2024 Human. Post-hoc descriptive
+    context for the discovery section; not a preregistered gate.
+Blocked (not counted): TarBase v9 scripted retrieval - dianalab site is a
+JS app; all probed data URLs 404; browser visit would be needed.
+Count: 32 used + 6 blocked-attempted; gate needs 40.

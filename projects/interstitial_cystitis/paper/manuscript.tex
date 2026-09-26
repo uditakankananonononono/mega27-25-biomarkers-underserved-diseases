@@ -495,6 +495,40 @@ locked-protocol comparator exists for the residual-program question asked here,
 so no same-task benchmark win is claimed or implied; a formal published
 comparator test remains an open gate of the project.
 
+\section{Published comparator: the Zhou 2025 marker panel (P50)}
+The NOVELTY\_PLAN requires a frozen evaluation against a named published
+baseline before any same-task advantage is claimed. The baseline is Zhou et
+al.'s 2025 IC/BPS marker panel \cite{zhou2025}: PLAC8, S100A8 and PPBP, all
+up-regulated in IC/BPS tissue in their study (per-gene AUCs 0.887, 0.818,
+0.871 on pooled GSE11783, GSE28242 and GSE57560 data). That study did not use
+GSE238208, so this cohort is untouched by the baseline. Because the
+publication reports genes and directions but no weights, the frozen evaluable
+form is an unweighted mean of per-gene $z$-scores, scored with exactly the
+LOPO machinery of Gates 1 and A2.1; the protocol, endpoints and the win rule
+were locked in \texttt{prereg/IC\_P50\_published\_comparator.md} before the
+first (and only) run.
+
+The published panel reproduces on the untouched cohort: 19 of 25 held-out
+patients positive ($p=.0073$, median $D=0.184$). Contrary to the registered
+prediction, the panel is not BCG-shared in this matched construction: its BCG
+offset is $-0.680$ (BCG samples score below the HIC reference on these genes),
+and the BCG-adjusted discrimination is stronger, not weaker (24/25,
+$p=7.7\times10^{-7}$). Correlations across patients are $r=-0.29$
+($p=.157$) against the M2 Gate 1 values and $r=+0.338$ ($p=.098$) against the
+M6 residual.
+
+The frozen win rule therefore fails on two of its three legs - the adjusted
+panel is stronger than the raw panel, and the panel-residual correlation
+exceeds the pre-locked 0.3 bound - so no same-task advantage is claimed. What
+the comparison establishes instead: the Zhou panel is real and generalizes to
+an independent cohort; it is not redundant with the remodeling axis; and its
+mild positive correlation with the residual means the two signals overlap
+more than the locked orthogonality bar allows. The residual program's
+contribution is the BCG-adjustment framing itself, not superiority over the
+published marker. The registered prediction that the inflammatory panel
+members would collapse after BCG adjustment was wrong and is retained in the
+ledger as a wrong prediction, not edited away.
+
 \section{Discussion}
 The biological reading across the locked gates is consistent. Hunner lesions
 carry a strong remodeling/inflammatory axis (M2) that replicates across
@@ -663,6 +697,10 @@ extracellular vesicle isolation methods for transcriptomic biomarker research.
 \bibitem{pichler2024} Pichler R.\ et al. Treating BCG-induced cystitis with
 combined chondroitin and hyaluronic acid instillations in bladder cancer.
 \emph{J.\ Clinical Medicine} (2024). PMID 38610796.
+\bibitem{zhou2025} Zhou T.\ et al. Identification and validation of immune
+and diagnostic biomarkers for interstitial cystitis/bladder pain syndrome by
+integrating bioinformatics and machine-learning. \emph{Frontiers in
+Immunology} 16:1511529 (2025). PMID 39917301.
 \end{thebibliography}
 
 \clearpage

@@ -3,7 +3,7 @@
   "disease": "pcos",
   "proposed_repo": "mega27-25-pcos-biomarkers",
   "source_shared_repository": "uditakankananonononono/mega27-25-biomarkers-underserved-diseases",
-  "source_commit": "343705c888cf788c137e2003a772f6419d93a9c2",
+  "source_commit": "d2284557dc5c515cef9ffc13b7df774508b8211e",
   "tracked_files": [
     {
       "shared_repo_path": "projects/pcos/NOVELTY_PLAN.md",
@@ -357,7 +357,7 @@
     },
     {
       "shared_repo_path": "results/series/pcos__GSE293353.csv.gz",
-      "sha256": "64ceb0cd957da3f1602353e98a3adae81bf0834b46aeac57381b1ef596089668",
+      "sha256": "52035bcc4e81a451fb15d17a1375f96e1a9803198041abdb6edce4cd9fcebe66",
       "bytes": 151405
     },
     {
@@ -531,5 +531,5 @@
     "other_count": 1
   },
   "deployment_status": "planning_only_no_repos_verified",
-  "method": "copy and verify hashes from committed tree; preserve source commit and project-relative paths; pin shared core; then run project-specific tests and read back remote"
+  "method": "copy and verify hashes from source_commit Git tree, not dirty working tree; preserve project-relative paths; pin shared core; then run project-specific tests and read back remote"
 }

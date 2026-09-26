@@ -3,7 +3,7 @@
   "disease": "interstitial_cystitis",
   "proposed_repo": "mega27-25-interstitial-cystitis-biomarkers",
   "source_shared_repository": "uditakankananonononono/mega27-25-biomarkers-underserved-diseases",
-  "source_commit": "343705c888cf788c137e2003a772f6419d93a9c2",
+  "source_commit": "d2284557dc5c515cef9ffc13b7df774508b8211e",
   "tracked_files": [
     {
       "shared_repo_path": "projects/interstitial_cystitis/NOVELTY_PLAN.md",
@@ -291,5 +291,5 @@
     "other_count": 1
   },
   "deployment_status": "planning_only_no_repos_verified",
-  "method": "copy and verify hashes from committed tree; preserve source commit and project-relative paths; pin shared core; then run project-specific tests and read back remote"
+  "method": "copy and verify hashes from source_commit Git tree, not dirty working tree; preserve project-relative paths; pin shared core; then run project-specific tests and read back remote"
 }

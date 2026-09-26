@@ -1,0 +1,30 @@
+{
+  "preregistration": "projects/interstitial_cystitis/prereg/IC_P50_published_comparator.md",
+  "baseline": "Zhou et al. 2025 Front Immunol 16:1511529 (PMID 39917301); panel PLAC8,S100A8,PPBP up in IC/BPS",
+  "evaluable_form": "unweighted mean of per-gene z-scores; publication gives genes+direction, no weights",
+  "cohort": "GSE238208 untouched by baseline publication; 25 HIC pairs + 13 BCG",
+  "E1_positive": 19,
+  "E1_binom_p_one_sided": 0.007316648960113525,
+  "E1_median_D": 0.1840713091422096,
+  "E2_bcg_offset_mean": -0.6804530538405439,
+  "E2_bcg_offset_range": [
+    -0.7108564253489235,
+    -0.641648502521838
+  ],
+  "E3_positive": 24,
+  "E3_binom_p_one_sided": 7.748603820800781e-07,
+  "E3_median_D_residual": 0.8671129174405875,
+  "E4_r_panel_vs_m2": {
+    "r": -0.2919332418453314,
+    "p": 0.15677501146233372
+  },
+  "E4_r_panel_vs_m6resid": {
+    "r": 0.3380105429763285,
+    "p": 0.09841601508025127
+  },
+  "locked_m6_a2_1": {
+    "positive": 18,
+    "binom_p": 0.021642625331878662
+  },
+  "win_rule": "prereg: M6 18/25 locked AND E3 weaker than E1 AND |r(D_panel,D_M6resid)|<0.3"
+}

@@ -70,3 +70,12 @@ criterion. The program's benchmark-beat gate is satisfied for chagas
 against the honest molecule-matched comparators. Bug note: an initial CI
 script had a scoring bug (score vector subtracted instead of c-index);
 caught by sanity bounds, fixed, rerun - both runs' scripts committed.
+
+## GATE-(b) PREP - 2026-09-26T23:33 IST
+Orthogonal mRNA matrices acquired pre-run: GSE244827_CHAVArawcounts.txt.gz
+(60,675 genes x 33 libs, blood RNA-seq) and GSE203525_Counts.txt.gz
+(58,142 genes x 20 libs, hiPSC-CM) from GEO FTP; hashes in
+sources/matrices/MATRIX_SHA256.txt. miRTarBase scripted retrieval confirmed
+blocked (download URLs 404; search endpoint 400s scripted GETs incl. with
+cookies/UA/referer) - one browser visit queued for the token. Gate-(b)
+script next; no targets-substitute will be used without a locked amendment.

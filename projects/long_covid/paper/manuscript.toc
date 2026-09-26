@@ -43,3 +43,6 @@
 \contentsline {subsection}{\numberline {15.1}The one positive, stated exactly as far as it goes}{14}{}%
 \contentsline {subsection}{\numberline {15.2}The separation problem is the field's problem, shown cleanly}{14}{}%
 \contentsline {subsection}{\numberline {15.3}What the lane would do next, unfrozen}{14}{}%
+\contentsline {section}{\numberline {16}Sample-map construction rules}{14}{}%
+\contentsline {section}{\numberline {17}The comparator's provenance, kept separate}{15}{}%
+\contentsline {section}{\numberline {18}Preregistration discipline as the lane's method}{15}{}%

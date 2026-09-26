@@ -694,4 +694,64 @@ spent for that question); and a metabolic-panel evaluation cohort to give
 the oxphos signal a fair specificity test. None of these is claimed; all are
 proposed with their preregistrations unwritten.
 
+
+\section{Sample-map construction rules}
+Every person-level claim in the lane traces to an explicit, committed sample
+map; this section records the construction rules so the maps are auditable
+rather than folkloric. For GSE226260, 103 libraries collapse to 37 donors:
+where a donor contributed multiple libraries (time courses, technical
+replicates), exactly one library per person enters the training cohort, chosen
+by the fixed rule recorded in \texttt{results/longcovid\_p36\_samples.csv}
+(each row carries its selection flag and reason); the training script asserts
+both the 37-person count and the 17/20 PASC/recovered split and fails closed
+on any drift. For GSE275334, the 47 subjects map one-to-one to panel columns
+with disease labels taken from the source's own column annotations into
+\texttt{results/longcovid\_p37\_samples.csv}; the evaluation scripts assert
+the 15/18/14 Long COVID/healthy/ME-CFS composition before any test. For
+GSE251872, group and platform are re-derived from the two platform-specific
+series matrices' titles at script start (12 PI-ME/CFS, 15 healthy; 3/7 and
+9/8 platform splits) and asserted. For GSE293840, subject identity, group,
+and batch are re-derived from the series matrix titles and characteristics
+and cross-asserted against the phenotype characteristic (93/75), with the
+counts-file column set asserted identical to the metadata subject set. The
+pattern is uniform: no group label is ever copied from a secondary source,
+and every script re-derives and asserts its cohort before touching
+expression values.
+
+\section{The comparator's provenance, kept separate}
+The six-gene comparator (JAK1, CXCL8, BCL2L1, OSM, MAP3K8, STAT3) enters the
+lane from the GSE226260 source publication, where it was selected from that
+cohort's own data. Three discipline rules follow. First, it is never used for
+feature discovery: its genes overlap several L-modules by construction of the
+Hallmark sets (STAT3 in L2/L5; CXCL8 and OSM in L3; MAP3K8 in L4/L5/L9;
+BCL2L1 in L9), so letting it inform module construction would leak a
+post-selected list into a frozen candidate space. Second, on the evaluation
+cohort it is run with the identical machinery as the lane's signature
+(unweighted z-mean composite, same subjects, same permutation engine), so
+comparisons are machinery-matched; its evaluation behaviour is a fair
+like-for-like contrast even though its selection history is not. Third, its
+own P51 result - strongest on both tests yet below the locked ME/CFS bar
+($g=0.776$) - is reported as context for the bar's meaning, not spun as a
+lane win: beating a post-selected six-gene list is not the lane's claim, and
+the P52/P53 preregistrations demoted exactly that comparison from gate to
+reported statistic on the advisory review's argument.
+
+\section{Preregistration discipline as the lane's method}
+The arcs share one operational skeleton, worth stating once as a method:
+(i) freeze the question, candidates, eligibility bars, tests, seeds, win rule
+and stopping rules in a committed preregistration before any run of the arc;
+(ii) lock analysis code in a committed script before its first execution;
+(iii) execute once per stage - training, then evaluation only if the training
+stage's own gate passes; (iv) commit the JSON result with the outcome,
+whatever it is; (v) disclose implementation bugs with their pre-result
+status; (vi) carry known statistical weaknesses forward as named clauses in
+the next preregistration rather than silently fixing them. The lane's ledger
+shows the skeleton doing its work: P51's one-sided-selection flaw was
+disclosed in its result commit and became P52's mandated two-sided
+correction; P52's advisory review demoted a stacked win gate before it could
+produce a spurious win; P53's analyte clause converted what could have been
+an inverted-direction ``win'' into an honest strategy-plus-analyte negative.
+None of these protections cost a real positive: the oxphos E1 result survives
+all of them.
+
 \end{document}

@@ -1,0 +1,126 @@
+{
+ "preregistration": "projects/long_covid/prereg/LC_P52_preregistration.md",
+ "training_cohort": "GSE251872 baseline PBMC, 12 PI-ME/CFS vs 15 HV, platform-stratified",
+ "selection_rule": "two-sided stratified perm p<.05 AND LOPO sign stable 27/27; smallest p if >1",
+ "modules": {
+  "L1_ifna": {
+   "eligible": true,
+   "n_train": 95,
+   "n_panel": 15,
+   "D_obs": 0.02068921598373489,
+   "perm_p_two_sided": 0.8917108289171083,
+   "lopo_stable_of_27": 19,
+   "platform_only_D": {
+    "GPL21290": 0.26233149239589587,
+    "GPL24676": -0.09750633982004889
+   },
+   "selected": false
+  },
+  "L2_ifng": {
+   "eligible": true,
+   "n_train": 189,
+   "n_panel": 52,
+   "D_obs": 0.029791919013639874,
+   "perm_p_two_sided": 0.7825217478252174,
+   "lopo_stable_of_27": 26,
+   "platform_only_D": {
+    "GPL21290": 0.19210621200999664,
+    "GPL24676": -0.04835797611867161
+   },
+   "selected": false
+  },
+  "L3_inflammatory": {
+   "eligible": true,
+   "n_train": 156,
+   "n_panel": 48,
+   "D_obs": -0.02830532854706472,
+   "perm_p_two_sided": 0.8286171382861713,
+   "lopo_stable_of_27": 26,
+   "platform_only_D": {
+    "GPL21290": 0.15368583117537002,
+    "GPL24676": -0.12075724178187106
+   },
+   "selected": false
+  },
+  "L4_tnfa_nfkb": {
+   "eligible": true,
+   "n_train": 179,
+   "n_panel": 48,
+   "D_obs": 0.07633829109743079,
+   "perm_p_two_sided": 0.6851314868513149,
+   "lopo_stable_of_27": 27,
+   "platform_only_D": {
+    "GPL21290": 0.14277405132558274,
+    "GPL24676": 0.04936999109331737
+   },
+   "selected": false
+  },
+  "L5_il6_jakstat3": {
+   "eligible": true,
+   "n_train": 72,
+   "n_panel": 35,
+   "D_obs": -0.02347462935856769,
+   "perm_p_two_sided": 0.817018298170183,
+   "lopo_stable_of_27": 24,
+   "platform_only_D": {
+    "GPL21290": 0.1368368793511891,
+    "GPL24676": -0.10479909148345057
+   },
+   "selected": false
+  },
+  "L6_complement": {
+   "eligible": true,
+   "n_train": 163,
+   "n_panel": 30,
+   "D_obs": -0.056763679516977306,
+   "perm_p_two_sided": 0.5444455554444556,
+   "lopo_stable_of_27": 26,
+   "platform_only_D": {
+    "GPL21290": -0.018319048193186728,
+    "GPL24676": -0.08026704154760175
+   },
+   "selected": false
+  },
+  "L7_oxphos": {
+   "eligible": true,
+   "n_train": 199,
+   "n_panel": 12,
+   "D_obs": -0.01367975754666909,
+   "perm_p_two_sided": 0.9217078292170783,
+   "lopo_stable_of_27": 19,
+   "platform_only_D": {
+    "GPL21290": 0.1962667770319255,
+    "GPL24676": -0.11884856197216066
+   },
+   "selected": false
+  },
+  "L8_hypoxia": {
+   "eligible": true,
+   "n_train": 145,
+   "n_panel": 17,
+   "D_obs": 0.03137117316098567,
+   "perm_p_two_sided": 0.6303369663033697,
+   "lopo_stable_of_27": 27,
+   "platform_only_D": {
+    "GPL21290": 0.18990467445770223,
+    "GPL24676": -0.0447805174059481
+   },
+   "selected": false
+  },
+  "L9_il2_stat5": {
+   "eligible": true,
+   "n_train": 175,
+   "n_panel": 39,
+   "D_obs": 0.07420548381786882,
+   "perm_p_two_sided": 0.1937806219378062,
+   "lopo_stable_of_27": 27,
+   "platform_only_D": {
+    "GPL21290": 0.1287662582101862,
+    "GPL24676": 0.052958325202613316
+   },
+   "selected": false
+  }
+ },
+ "selected": [],
+ "selected_panel_genes": {}
+}

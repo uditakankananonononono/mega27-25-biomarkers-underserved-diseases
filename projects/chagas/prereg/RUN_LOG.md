@@ -79,3 +79,19 @@ sources/matrices/MATRIX_SHA256.txt. miRTarBase scripted retrieval confirmed
 blocked (download URLs 404; search endpoint 400s scripted GETs incl. with
 cookies/UA/referer) - one browser visit queued for the token. Gate-(b)
 script next; no targets-substitute will be used without a locked amendment.
+
+## GATE-(b) LABEL-MAP VERIFICATION - 2026-09-27T00:36 IST (revival agent)
+GSE244827 matrix column order (B052..H754, 33 libs) is NOT self-describing;
+crosswalk rows carry no B-code. Resolved via live GEO SOFT: each GSM's
+!Sample_description holds its CHAVA B-code (e.g. GSM7830424 -> B052).
+Fetched all 33 records 2026-09-27 00:35 IST; mapping is bijective with the
+33 matrix columns and confirms the acquisition-time GSM order matches the
+matrix column order exactly. Labels taken from the frozen crosswalk
+(10 case / 23 control). Wrote sources/GSE244827_column_label_map.csv.
+Honest note: re-fetched SOFT page sha256 does NOT match the
+acquisition-time crosswalk hashes (page-level dynamic content); the
+B-code/label metadata lines themselves are stable and mutually consistent
+with the matrix header. Script h2_gate_b_enrichment.py now asserts
+bijection (fails loudly on mismatch) instead of assuming row order;
+removed a dead direction line; added GSE203525 group-size assertion
+(6 CC + 6 IND at 0hpi verified on the live header).

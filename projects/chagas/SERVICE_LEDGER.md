@@ -161,3 +161,18 @@ Count: 34 used + 6 blocked-attempted; gate needs 40.
     WP 6.8e-19) and focal adhesion PI3K-Akt-mTOR (1.5e-18) reproduce the
     Enrichr pattern - engine-stable pathway context.
 Count: 35 used + 6 blocked-attempted; gate needs 40.
+
+## Addendum 9 (2026-09-27T00:55): services 36-37 + blocked note
+36. mygene.info v3 - cross-validation of the 352 CORE6 strong-support
+    target symbols: 344 current human matches, 8 unmapped
+    (ALPPL2, COX1, CTGF, FAM45A, H3F3A, ND1, NDUFA4, SEPT10 - legacy/
+    renamed symbols, e.g. CTGF->CCN2, SEPT10->SEPTIN10, mitochondrial
+    COX1/ND1). INDEPENDENTLY CONFIRMS the BioMart 344/352 mapping -
+    two annotation services agree; the 8 stay in the set, named, not
+    silently dropped (results/mygene_core6_symbol_validation.json).
+37. miRBase (live mirbase.org) - mature-entry verification used for the
+    gate-(b) name mapping: MIMAT0000728 = hsa-miR-375-3p
+    (mirbase.org/mature/MIMAT0000728, retrieved 2026-09-27).
+Blocked (not counted): Pharos GraphQL (pharos-api.ncats.io) - every
+    query HTTP error tonight; endpoint appears moved/retired.
+Count: 37 used + 7 blocked-attempted; gate needs 40.

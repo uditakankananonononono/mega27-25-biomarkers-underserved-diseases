@@ -140,3 +140,8 @@ Open Targets tractability on CORE6 strong targets: 344/352 mapped,
 HCN4...). Target-program druggability stated; miRNA-druggability
 explicitly NOT claimed. ADDENDUM_3 C3 components now all executed:
 gate (b) enrichment, module score, druggability overlay.
+
+## SERVICE QA - 2026-09-27T00:55 IST
+mygene.info independently confirms BioMart symbol mapping (344/352 both);
+8 legacy symbols named and kept. Pharos blocked (HTTP errors, endpoint
+moved). miRBase live lookup logged as service for the 375-alias proof.

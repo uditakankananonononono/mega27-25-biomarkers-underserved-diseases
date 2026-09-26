@@ -74,9 +74,15 @@ def main(targets_path):
     assert len(cc)>=3 and len(ind)>=3, f'GSE203525 0hpi groups too small: {len(cc)} CC {len(ind)} IND'
     g2,fc2,p2=de_stats(g2m,X2,cc,ind)
     results=[]
+    # miRBase-version name aliases (documented, exact-name only):
+    # miRBase v22 'hsa-miR-375-3p' == legacy 'hsa-miR-375' (mature MIMAT0000728)
+    LEGACY_ALIASES={'MIR-375-3P':['MIR-375']}
     for _,r in cand.iterrows():
         mir=r['mirna'].replace('hsa-','')
-        sub=tg[tg.mirna.str.upper().str.contains(mir.upper(),regex=False)]
+        key=mir.upper()
+        sub=tg[tg.mirna.str.upper().str.contains(key,regex=False)]
+        if len(sub)==0 and key in LEGACY_ALIASES:
+            sub=tg[tg.mirna.str.upper().isin([f'HSA-{a}' for a in LEGACY_ALIASES[key]])]
         if len(sub)==0: continue
         # canonical repression: miRNA DOWN in severe (d<0) => targets expected UP (+1), and vice versa
         expected = 1 if r['d_sev_mild']<0 else -1

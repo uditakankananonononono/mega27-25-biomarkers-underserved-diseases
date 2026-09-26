@@ -108,3 +108,18 @@ or retired); Semantic Scholar still 429; api.biorxiv.org still 0-byte.
 dbSNP rs1045642 (ABCB1 C3435T, benznidazole PGx context) was retrieved via
 NCBI eutils - folded under existing service #2, not double-counted.
 Count stands: 29 used + 5 blocked-attempted; gate needs 40.
+
+## Addendum 3 (2026-09-27T00:40): service 30 - miRTarBase retrieved
+30. miRTarBase v8.0 (Huang et al. 2022, NAR) - human MTI table
+    (hsa_MTI.xlsx, 23,516,047 bytes,
+    sha256 104c1a1bba2de7a6cef003f67371284d3478a341d34c2c3dfc1461b5cf37c2dc).
+    Live site download paths still 404/400 tonight (site restructured);
+    retrieved the identical official file via Internet Archive snapshot
+    20220623192730 of the publisher's own URL
+    (~miRTarBase/miRTarBase_2022/cache/download/8.0/hsa_MTI.xlsx).
+    VERSION CAVEAT (honest): v8.0 (2022), not the current 2025/v9 release;
+    locked for gate (b) as the preregistered validated-target source, and
+    the version pin will be disclosed to the judge in the round-02 record.
+    382,175 dedup human MTI rows -> sources/services/mirtarbase/
+    validated_targets.tsv (mirna, target_gene, support).
+Count: 30 used + 5 blocked-attempted; gate needs 40.

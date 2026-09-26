@@ -95,3 +95,14 @@ with the matrix header. Script h2_gate_b_enrichment.py now asserts
 bijection (fails loudly on mismatch) instead of assuming row order;
 removed a dead direction line; added GSE203525 group-size assertion
 (6 CC + 6 IND at 0hpi verified on the live header).
+
+## miRTarBase RETRIEVAL + COVERAGE - 2026-09-27T00:40 IST (revival agent)
+Live-site retrieval remains blocked (404/400, confirmed again tonight).
+Recovered the official v8.0 human MTI file via Wayback snapshot of the
+publisher URL (hash above). Version pinned to v8.0 - disclosed caveat.
+Candidate coverage: 19/20 gate-(a) candidates have validated targets
+(65-1004 MTIs each). hsa-miR-375-3p had ZERO exact-name rows: v8 uses
+legacy name hsa-miR-375 (same mature, MIMAT0000728); handled via an
+explicit documented alias in the script (no data rows fabricated).
+Support-type mix retained (Functional MTI strong+weak); sensitivity
+analysis on strong-only can follow if a judge asks.

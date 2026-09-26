@@ -58,3 +58,15 @@ Gate (b) NOT yet run: replication routing awaits the redirection consult +
 locked amendment (open question 1). These 20 are gate-(a)/(c) candidates,
 NOT discoveries. Files: results/h2_severity_association_all.csv,
 results/h2_gate_a_passing.csv, results/h2_gate_a_summary.json.
+
+## H1' RUN (ADDENDUM_3 C1) - 2026-09-26T21:35 IST - scripts/h1prime_ordinal.py + h1prime_ci.py
+Ordinal immediate-threshold logistic on log2(CPM+1), nested 5x3 stratified
+CV, seed 20260926, top-100 univariate selection per outer fold. Pooled
+out-of-fold ordinal c-index: model 0.787, clinical(age/sex) 0.620, best
+single miRNA (inner-fold selected) 0.713. Bootstrap 1000x on OOF samples:
+diff vs clinical +0.167 CI [+0.087,+0.242]; diff vs single +0.074 CI
+[+0.009,+0.136]. Both CIs exclude 0 -> **CLEAR BEAT** under the locked C1
+criterion. The program's benchmark-beat gate is satisfied for chagas
+against the honest molecule-matched comparators. Bug note: an initial CI
+script had a scoring bug (score vector subtracted instead of c-index);
+caught by sanity bounds, fixed, rerun - both runs' scripts committed.

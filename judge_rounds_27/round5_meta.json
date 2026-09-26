@@ -1,0 +1,14 @@
+{
+  "round": 5,
+  "artifact": "paper/MEGA27-27-current-research-manuscript.pdf in mega27-27-isef-bioinf-derived-tools @ 9925b30, SCOPED to VenomFunction-2 sections + VenomFunction references in front matter/ledger",
+  "route": "TEXT-PASTE verified round (user route change 2026-09-26 13:18 IST)",
+  "source_pdf_sha256": "f720822545127e5592d33b7885a9da15512042fd6993c1fae32b9f0dac0b7c2c",
+  "extraction": "pdftotext -layout; completeness verified: 20 form-feed page breaks == 20 pdfinfo pages; 91,916 chars pasted as 7 parts (part 1 pages 1-7 sent verbatim as committed round5_part1_sent_verbatim.txt; parts 2-7 pages 8-20 per round5_part2..7.txt after a browser 15s input-dispatch limit killed two 33-37KB fills; model acked each part before the question block in part 7)",
+  "scope_and_caveats_in_prompt": "VenomFunction-only scope; staleness caveat (main text predates later source audits; model told to flag what it cannot verify from the paste); not-a-standalone-50-page-paper caveat",
+  "response_file": "round5_response.txt",
+  "conversation_url": "https://chatgpt.com/c/6ab77a2a-73e4-83e9-b488-09c56e72e86b",
+  "receipt_verification": "PASS - 11 quoted strings present in pasted document text and absent from prompt head, e.g. 'arithmetic mean AUROC 0.98044', 'Random-fold test proteins have mean max Jaccard 0.6210 to a training protein; 33.5% have a match >=0.80', 'This is not an external independent test cohort.'",
+  "questions_asked": ["weaknesses classified fixable/rewrite/inherent", "ISEF standing", "improvement ordered by impact"],
+  "verdict": "YES - based only on the pasted manuscript, honestly represents the VenomFunction-2 work and its limitations; main weaknesses are limited biological validation and lack of a demonstrated predictive advance, not misleading claims or hidden failures",
+  "timestamp_ist": "2026-09-26T13:30"
+}

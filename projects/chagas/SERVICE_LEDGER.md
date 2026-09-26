@@ -140,3 +140,10 @@ Count: 31 used + 5 blocked-attempted; gate needs 40.
 Blocked (not counted): TarBase v9 scripted retrieval - dianalab site is a
 JS app; all probed data URLs 404; browser visit would be needed.
 Count: 32 used + 6 blocked-attempted; gate needs 40.
+
+## Addendum 6 (2026-09-27T00:50): service 33
+33. Open Targets Platform GraphQL API - tractability overlay on the CORE6
+    module's strong-support targets (344 mapped, 332 tractability-positive,
+    49 Approved-Drug bucket). Note: knownDrugs is off the Target type in
+    the current schema; tractability used instead - recorded honestly.
+Count: 33 used + 6 blocked-attempted; gate needs 40.

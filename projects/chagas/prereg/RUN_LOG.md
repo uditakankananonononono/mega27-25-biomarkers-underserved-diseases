@@ -133,3 +133,10 @@ weights derive from this cohort, so NO generalization claim). CORE6:
 monotone medians, KW p=1.7e-11, ordinal c-index 0.756. CARDIAC18:
 non-monotone, c-index 0.509 - signed-module washout across 18 members.
 Module deliverable = 6-miRNA core; superset failure reported honestly.
+
+## DRUGGABILITY OVERLAY - 2026-09-27T00:50 IST (revival agent)
+Open Targets tractability on CORE6 strong targets: 344/352 mapped,
+332 tractability-positive, 49 Approved-Drug (EGFR/BRAF/CDK4/CDK6/ESR1/
+HCN4...). Target-program druggability stated; miRNA-druggability
+explicitly NOT claimed. ADDENDUM_3 C3 components now all executed:
+gate (b) enrichment, module score, druggability overlay.

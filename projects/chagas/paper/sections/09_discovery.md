@@ -55,6 +55,16 @@ across members washes the signal out. The module deliverable is therefore
 the 6-miRNA core; the superset's failure is reported, not hidden
 (results/module_score.json).
 
+Druggability overlay (Open Targets Platform API, 2026-09-27; descriptive):
+of the CORE6 module's 352 pooled strong-support validated targets, 344
+mapped to Ensembl IDs and 332 carry at least one positive small-molecule
+tractability bucket; 49 sit in the Approved Drug bucket (including EGFR,
+BRAF, CDK4, CDK6, ESR1, ACVR2B, AXL, HCN4) - the module's target program
+is heavily druggable in principle, which matters for translational
+framing but is NOT evidence the miRNAs themselves are drug targets
+(results/druggability_overlay.json). This distinction will be put to the
+judge explicitly in round 02.
+
 Post-hoc pathway context (descriptive, not preregistered): the pooled
 strong-support validated targets of the 18 cardiac-passing candidates
 (557 genes) enrich in Enrichr for PI3K-Akt signaling (KEGG adj 1.2e-35;

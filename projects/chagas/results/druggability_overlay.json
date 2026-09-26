@@ -1,0 +1,2593 @@
+{
+  "n_strong_targets": 352,
+  "n_mapped": 344,
+  "tractability_positive": {
+    "AACS": [
+      "Database Ubiquitination",
+      "Half-life Data"
+    ],
+    "ABCB1": [
+      "Advanced Clinical",
+      "Structure with Ligand",
+      "High-Quality Ligand",
+      "Druggable Family",
+      "UniProt loc high conf",
+      "GO CC high conf",
+      "UniProt SigP or TMHMM",
+      "Human Protein Atlas loc",
+      "Database Ubiquitination",
+      "Half-life Data",
+      "Small Molecule Binder",
+      "Advanced Clinical"
+    ],
+    "ABCC1": [
+      "Advanced Clinical",
+      "Structure with Ligand",
+      "High-Quality Ligand",
+      "Druggable Family",
+      "UniProt loc high conf",
+      "GO CC high conf",
+      "UniProt SigP or TMHMM",
+      "Human Protein Atlas loc",
+      "Database Ubiquitination",
+      "Half-life Data",
+      "Small Molecule Binder"
+    ],
+    "ABHD17C": [
+      "GO CC high conf",
+      "Database Ubiquitination",
+      "Half-life Data"
+    ],
+    "ABRACL": [
+      "Database Ubiquitination",
+      "Half-life Data"
+    ],
+    "ACVR2B": [
+      "Structure with Ligand",
+      "High-Quality Ligand",
+      "Med-Quality Pocket",
+      "Druggable Family",
+      "Advanced Clinical",
+      "UniProt loc high conf",
+      "GO CC high conf",
+      "UniProt SigP or TMHMM",
+      "Database Ubiquitination",
+      "Small Molecule Binder",
+      "Approved Drug"
+    ],
+    "ADAM10": [
+      "Structure with Ligand",
+      "High-Quality Ligand",
+      "Druggable Family",
+      "UniProt loc high conf",
+      "GO CC high conf",
+      "UniProt SigP or TMHMM",
+      "Human Protein Atlas loc",
+      "Database Ubiquitination",
+      "Half-life Data",
+      "Small Molecule Binder"
+    ],
+    "ADAM17": [
+      "Advanced Clinical",
+      "Structure with Ligand",
+      "High-Quality Ligand",
+      "High-Quality Pocket",
+      "Druggable Family",
+      "UniProt loc high conf",
+      "GO CC high conf",
+      "UniProt SigP or TMHMM",
+      "Database Ubiquitination",
+      "Half-life Data",
+      "Small Molecule Binder"
+    ],
+    "ADAR": [
+      "UniProt Ubiquitination",
+      "Database Ubiquitination",
+      "Half-life Data"
+    ],
+    "ADD3": [
+      "GO CC high conf",
+      "UniProt loc med conf",
+      "Human Protein Atlas loc",
+      "UniProt Ubiquitination",
+      "Database Ubiquitination",
+      "Half-life Data"
+    ],
+    "AGO1": [
+      "UniProt Ubiquitination",
+      "Database Ubiquitination",
+      "Half-life Data"
+    ],
+    "AKR1B10": [
+      "Structure with Ligand",
+      "High-Quality Ligand",
+      "High-Quality Pocket",
+      "Druggable Family",
+      "UniProt loc high conf",
+      "GO CC high conf",
+      "Human Protein Atlas loc",
+      "Database Ubiquitination",
+      "Half-life Data",
+      "Small Molecule Binder"
+    ],
+    "AKT1": [
+      "Advanced Clinical",
+      "Structure with Ligand",
+      "High-Quality Ligand",
+      "High-Quality Pocket",
+      "Druggable Family",
+      "UniProt loc high conf",
+      "GO CC high conf",
+      "Literature",
+      "UniProt Ubiquitination",
+      "Database Ubiquitination",
+      "Half-life Data",
+      "Small Molecule Binder"
+    ],
+    "AKT3": [
+      "Advanced Clinical",
+      "High-Quality Ligand",
+      "Druggable Family",
+      "UniProt loc high conf",
+      "GO CC high conf",
+      "Human Protein Atlas loc",
+      "Literature",
+      "UniProt Ubiquitination",
+      "Database Ubiquitination",
+      "Half-life Data",
+      "Small Molecule Binder"
+    ],
+    "ALCAM": [
+      "UniProt loc high conf",
+      "GO CC high conf",
+      "UniProt SigP or TMHMM",
+      "Database Ubiquitination",
+      "Half-life Data",
+      "Advanced Clinical"
+    ],
+    "ALDH3A1": [
+      "Structure with Ligand",
+      "High-Quality Ligand",
+      "High-Quality Pocket",
+      "Druggable Family",
+      "GO CC high conf",
+      "Database Ubiquitination",
+      "Small Molecule Binder"
+    ],
+    "ALDOA": [
+      "Structure with Ligand",
+      "High-Quality Pocket",
+      "GO CC high conf",
+      "UniProt Ubiquitination",
+      "Database Ubiquitination",
+      "Half-life Data"
+    ],
+    "ANGPT2": [
+      "Approved Drug",
+      "UniProt loc high conf",
+      "GO CC high conf",
+      "UniProt SigP or TMHMM",
+      "Advanced Clinical"
+    ],
+    "ANK2": [
+      "UniProt loc high conf",
+      "UniProt loc med conf",
+      "GO CC med conf",
+      "Human Protein Atlas loc",
+      "Database Ubiquitination",
+      "Half-life Data"
+    ],
+    "ANXA11": [
+      "GO CC med conf",
+      "Database Ubiquitination",
+      "Half-life Data"
+    ],
+    "ANXA2": [
+      "Structure with Ligand",
+      "High-Quality Pocket",
+      "UniProt loc high conf",
+      "GO CC high conf",
+      "Human Protein Atlas loc",
+      "UniProt Ubiquitination",
+      "Database Ubiquitination",
+      "Half-life Data",
+      "Small Molecule Binder"
+    ],
+    "AP1G1": [
+      "UniProt loc high conf",
+      "Database Ubiquitination",
+      "Half-life Data"
+    ],
+    "AP3M2": [
+      "UniProt loc med conf",
+      "Database Ubiquitination",
+      "Half-life Data"
+    ],
+    "APH1A": [
+      "Advanced Clinical",
+      "Structure with Ligand",
+      "High-Quality Ligand",
+      "Druggable Family",
+      "GO CC high conf",
+      "UniProt SigP or TMHMM",
+      "Database Ubiquitination",
+      "Half-life Data",
+      "Small Molecule Binder"
+    ],
+    "API5": [
+      "Database Ubiquitination",
+      "Half-life Data"
+    ],
+    "ARF6": [
+      "Structure with Ligand",
+      "High-Quality Ligand",
+      "High-Quality Pocket",
+      "UniProt loc high conf",
+      "GO CC high conf",
+      "Database Ubiquitination",
+      "Half-life Data",
+      "Small Molecule Binder"
+    ],
+    "ARL6IP5": [
+      "UniProt loc med conf",
+      "UniProt SigP or TMHMM",
+      "GO CC med conf",
+      "Database Ubiquitination",
+      "Half-life Data"
+    ],
+    "ASPH": [
+      "Structure with Ligand",
+      "High-Quality Ligand",
+      "GO CC high conf",
+      "UniProt SigP or TMHMM",
+      "Database Ubiquitination",
+      "Half-life Data",
+      "Small Molecule Binder"
+    ],
+    "ATP1A2": [
+      "Approved Drug",
+      "High-Quality Ligand",
+      "Druggable Family",
+      "UniProt loc high conf",
+      "GO CC high conf",
+      "UniProt SigP or TMHMM",
+      "Database Ubiquitination",
+      "Half-life Data",
+      "Small Molecule Binder"
+    ],
+    "ATP1B1": [
+      "Advanced Clinical",
+      "Structure with Ligand",
+      "High-Quality Ligand",
+      "Druggable Family",
+      "UniProt loc high conf",
+      "GO CC high conf",
+      "UniProt loc med conf",
+      "UniProt SigP or TMHMM",
+      "Database Ubiquitination",
+      "Half-life Data"
+    ],
+    "ATP6V1B2": [
+      "Structure with Ligand",
+      "UniProt loc high conf",
+      "GO CC med conf",
+      "Database Ubiquitination",
+      "Half-life Data",
+      "Small Molecule Binder"
+    ],
+    "AXL": [
+      "Approved Drug",
+      "Structure with Ligand",
+      "High-Quality Ligand",
+      "Druggable Family",
+      "UniProt loc high conf",
+      "GO CC high conf",
+      "UniProt SigP or TMHMM",
+      "Human Protein Atlas loc",
+      "UniProt Ubiquitination",
+      "Database Ubiquitination",
+      "Small Molecule Binder",
+      "Advanced Clinical"
+    ],
+    "BAG4": [
+      "GO CC high conf",
+      "Database Ubiquitination",
+      "Half-life Data"
+    ],
+    "BAX": [
+      "Structure with Ligand",
+      "High-Quality Ligand",
+      "UniProt SigP or TMHMM",
+      "UniProt Ubiquitination",
+      "Database Ubiquitination",
+      "Half-life Data",
+      "Small Molecule Binder"
+    ],
+    "BCL2": [
+      "Approved Drug",
+      "Structure with Ligand",
+      "High-Quality Ligand",
+      "Druggable Family",
+      "UniProt SigP or TMHMM",
+      "Literature",
+      "UniProt Ubiquitination",
+      "Database Ubiquitination",
+      "Half-life Data",
+      "Small Molecule Binder",
+      "Advanced Clinical"
+    ],
+    "BCL2L2": [
+      "Advanced Clinical",
+      "High-Quality Ligand",
+      "High-Quality Pocket",
+      "Druggable Family",
+      "UniProt loc high conf",
+      "Database Ubiquitination",
+      "Small Molecule Binder"
+    ],
+    "BCL9": [
+      "Structure with Ligand",
+      "High-Quality Ligand",
+      "Half-life Data",
+      "Small Molecule Binder"
+    ],
+    "BCLAF1": [
+      "UniProt Ubiquitination",
+      "Database Ubiquitination",
+      "Half-life Data"
+    ],
+    "BDNF": [
+      "UniProt loc high conf",
+      "GO CC high conf",
+      "UniProt SigP or TMHMM",
+      "Database Ubiquitination",
+      "Small Molecule Binder"
+    ],
+    "BECN1": [
+      "Structure with Ligand",
+      "UniProt loc high conf",
+      "UniProt Ubiquitination",
+      "Database Ubiquitination",
+      "Half-life Data"
+    ],
+    "BMI1": [
+      "Structure with Ligand",
+      "UniProt Ubiquitination",
+      "Database Ubiquitination"
+    ],
+    "BMP1": [
+      "Structure with Ligand",
+      "High-Quality Ligand",
+      "Druggable Family",
+      "UniProt loc high conf",
+      "GO CC high conf",
+      "UniProt SigP or TMHMM",
+      "Database Ubiquitination",
+      "Half-life Data",
+      "Small Molecule Binder"
+    ],
+    "BNIP3": [
+      "UniProt SigP or TMHMM",
+      "Database Ubiquitination",
+      "Half-life Data"
+    ],
+    "BRAF": [
+      "Approved Drug",
+      "Structure with Ligand",
+      "High-Quality Ligand",
+      "High-Quality Pocket",
+      "Druggable Family",
+      "UniProt loc high conf",
+      "GO CC high conf",
+      "Human Protein Atlas loc",
+      "Literature",
+      "UniProt Ubiquitination",
+      "Database Ubiquitination",
+      "Half-life Data",
+      "Small Molecule Binder"
+    ],
+    "CALM3": [
+      "Structure with Ligand",
+      "Druggable Family",
+      "GO CC high conf",
+      "UniProt Ubiquitination"
+    ],
+    "CAMK1D": [
+      "Structure with Ligand",
+      "High-Quality Ligand",
+      "High-Quality Pocket",
+      "Druggable Family",
+      "UniProt Ubiquitination",
+      "Database Ubiquitination",
+      "Half-life Data",
+      "Small Molecule Binder"
+    ],
+    "CAMK2D": [
+      "Structure with Ligand",
+      "High-Quality Ligand",
+      "High-Quality Pocket",
+      "Druggable Family",
+      "UniProt loc high conf",
+      "GO CC med conf",
+      "Human Protein Atlas loc",
+      "Database Ubiquitination",
+      "Half-life Data",
+      "Small Molecule Binder"
+    ],
+    "CAND1": [
+      "GO CC high conf",
+      "Database Ubiquitination",
+      "Half-life Data"
+    ],
+    "CASP3": [
+      "Advanced Clinical",
+      "Structure with Ligand",
+      "High-Quality Ligand",
+      "High-Quality Pocket",
+      "Druggable Family",
+      "UniProt Ubiquitination",
+      "Database Ubiquitination",
+      "Half-life Data",
+      "Small Molecule Binder"
+    ],
+    "CAV1": [
+      "GO CC high conf",
+      "UniProt loc med conf",
+      "UniProt Ubiquitination",
+      "Database Ubiquitination",
+      "Half-life Data"
+    ],
+    "CBFB": [
+      "Structure with Ligand",
+      "High-Quality Ligand",
+      "Database Ubiquitination",
+      "Half-life Data",
+      "Small Molecule Binder"
+    ],
+    "CCDC43": [
+      "UniProt Ubiquitination",
+      "Database Ubiquitination",
+      "Half-life Data"
+    ],
+    "CCL2": [
+      "High-Quality Ligand",
+      "Advanced Clinical",
+      "UniProt loc high conf",
+      "GO CC high conf",
+      "UniProt SigP or TMHMM",
+      "Small Molecule Binder"
+    ],
+    "CCND1": [
+      "Advanced Clinical",
+      "High-Quality Ligand",
+      "Druggable Family",
+      "UniProt Ubiquitination",
+      "Database Ubiquitination",
+      "Small Molecule Binder"
+    ],
+    "CCND2": [
+      "High-Quality Ligand",
+      "Druggable Family",
+      "UniProt Ubiquitination",
+      "Database Ubiquitination"
+    ],
+    "CCNG1": [
+      "Database Ubiquitination"
+    ],
+    "CD28": [
+      "Structure with Ligand",
+      "Advanced Clinical",
+      "UniProt loc high conf",
+      "GO CC high conf",
+      "UniProt SigP or TMHMM",
+      "Human Protein Atlas loc",
+      "Database Ubiquitination"
+    ],
+    "CD40": [
+      "Advanced Clinical",
+      "GO CC high conf",
+      "UniProt loc med conf",
+      "UniProt SigP or TMHMM",
+      "Half-life Data",
+      "Small Molecule Binder",
+      "Advanced Clinical"
+    ],
+    "CD44": [
+      "Advanced Clinical",
+      "UniProt loc high conf",
+      "GO CC high conf",
+      "UniProt SigP or TMHMM",
+      "Human Protein Atlas loc",
+      "Database Ubiquitination",
+      "Half-life Data",
+      "Small Molecule Binder",
+      "Phase 1 Clinical"
+    ],
+    "CD47": [
+      "Advanced Clinical",
+      "UniProt loc high conf",
+      "GO CC high conf",
+      "UniProt SigP or TMHMM",
+      "Human Protein Atlas loc",
+      "Database Ubiquitination",
+      "Half-life Data",
+      "Small Molecule Binder",
+      "Advanced Clinical"
+    ],
+    "CDC42": [
+      "Structure with Ligand",
+      "High-Quality Ligand",
+      "High-Quality Pocket",
+      "Druggable Family",
+      "UniProt loc high conf",
+      "GO CC high conf",
+      "Database Ubiquitination",
+      "Half-life Data",
+      "Small Molecule Binder"
+    ],
+    "CDC7": [
+      "Advanced Clinical",
+      "Structure with Ligand",
+      "High-Quality Ligand",
+      "Druggable Family",
+      "Literature",
+      "UniProt Ubiquitination",
+      "Database Ubiquitination",
+      "Small Molecule Binder"
+    ],
+    "CDH2": [
+      "UniProt loc high conf",
+      "GO CC high conf",
+      "UniProt loc med conf",
+      "UniProt SigP or TMHMM",
+      "Human Protein Atlas loc",
+      "Database Ubiquitination",
+      "Half-life Data",
+      "Small Molecule Binder"
+    ],
+    "CDK4": [
+      "Approved Drug",
+      "Structure with Ligand",
+      "High-Quality Ligand",
+      "High-Quality Pocket",
+      "Druggable Family",
+      "Literature",
+      "Database Ubiquitination",
+      "Half-life Data",
+      "Small Molecule Binder"
+    ],
+    "CDK6": [
+      "Approved Drug",
+      "Structure with Ligand",
+      "High-Quality Ligand",
+      "High-Quality Pocket",
+      "Druggable Family",
+      "Literature",
+      "Database Ubiquitination",
+      "Half-life Data",
+      "Small Molecule Binder"
+    ],
+    "CDKN1A": [
+      "Druggable Family",
+      "UniProt Ubiquitination",
+      "Database Ubiquitination",
+      "Small Molecule Binder"
+    ],
+    "CDKN1B": [
+      "Structure with Ligand",
+      "UniProt Ubiquitination",
+      "Database Ubiquitination",
+      "Half-life Data"
+    ],
+    "CEBPA": [
+      "UniProt Ubiquitination",
+      "Database Ubiquitination"
+    ],
+    "CFTR": [
+      "Approved Drug",
+      "Structure with Ligand",
+      "High-Quality Ligand",
+      "High-Quality Pocket",
+      "Druggable Family",
+      "UniProt loc high conf",
+      "GO CC high conf",
+      "UniProt SigP or TMHMM",
+      "UniProt Ubiquitination",
+      "Database Ubiquitination",
+      "Small Molecule Binder"
+    ],
+    "CHD1": [
+      "Structure with Ligand",
+      "Database Ubiquitination",
+      "Half-life Data"
+    ],
+    "CLIC4": [
+      "UniProt loc high conf",
+      "GO CC high conf",
+      "UniProt SigP or TMHMM",
+      "Human Protein Atlas loc",
+      "Database Ubiquitination",
+      "Half-life Data"
+    ],
+    "CLINT1": [
+      "UniProt loc med conf",
+      "GO CC med conf",
+      "Database Ubiquitination",
+      "Half-life Data"
+    ],
+    "CNN3": [
+      "Database Ubiquitination",
+      "Half-life Data"
+    ],
+    "COL5A1": [
+      "GO CC high conf",
+      "UniProt loc med conf",
+      "UniProt SigP or TMHMM",
+      "Database Ubiquitination",
+      "Approved Drug"
+    ],
+    "CREB1": [
+      "UniProt Ubiquitination",
+      "Database Ubiquitination",
+      "Half-life Data",
+      "Small Molecule Binder"
+    ],
+    "CTDNEP1": [
+      "UniProt SigP or TMHMM",
+      "Database Ubiquitination"
+    ],
+    "CTNND1": [
+      "UniProt loc high conf",
+      "GO CC high conf",
+      "Human Protein Atlas loc",
+      "UniProt Ubiquitination",
+      "Database Ubiquitination",
+      "Half-life Data"
+    ],
+    "CUL5": [
+      "Structure with Ligand",
+      "UniProt Ubiquitination",
+      "Database Ubiquitination",
+      "Half-life Data"
+    ],
+    "CXCL12": [
+      "Structure with Ligand",
+      "High-Quality Ligand",
+      "GO CC high conf",
+      "UniProt loc med conf",
+      "UniProt SigP or TMHMM",
+      "Small Molecule Binder",
+      "Advanced Clinical"
+    ],
+    "CYP7A1": [
+      "Structure with Ligand",
+      "High-Quality Pocket",
+      "UniProt SigP or TMHMM",
+      "Small Molecule Binder"
+    ],
+    "DDC": [
+      "Approved Drug",
+      "Structure with Ligand",
+      "High-Quality Pocket",
+      "Druggable Family"
+    ],
+    "DDIT4": [
+      "UniProt Ubiquitination",
+      "Database Ubiquitination"
+    ],
+    "DDX17": [
+      "Structure with Ligand",
+      "UniProt Ubiquitination",
+      "Database Ubiquitination",
+      "Half-life Data"
+    ],
+    "DDX6": [
+      "Structure with Ligand",
+      "GO CC high conf",
+      "UniProt Ubiquitination",
+      "Database Ubiquitination",
+      "Half-life Data",
+      "Small Molecule Binder"
+    ],
+    "DFFA": [
+      "GO CC high conf",
+      "Database Ubiquitination",
+      "Half-life Data"
+    ],
+    "DHFR": [
+      "Approved Drug",
+      "Structure with Ligand",
+      "High-Quality Ligand",
+      "High-Quality Pocket",
+      "Druggable Family",
+      "Database Ubiquitination",
+      "Half-life Data",
+      "Small Molecule Binder"
+    ],
+    "DICER1": [
+      "Database Ubiquitination",
+      "Half-life Data"
+    ],
+    "DLG5": [
+      "UniProt loc high conf",
+      "GO CC high conf",
+      "Database Ubiquitination",
+      "Half-life Data"
+    ],
+    "DLL4": [
+      "Advanced Clinical",
+      "UniProt loc high conf",
+      "GO CC high conf",
+      "UniProt SigP or TMHMM"
+    ],
+    "DNMT1": [
+      "Approved Drug",
+      "Structure with Ligand",
+      "High-Quality Ligand",
+      "High-Quality Pocket",
+      "Druggable Family",
+      "UniProt Ubiquitination",
+      "Database Ubiquitination",
+      "Half-life Data",
+      "Small Molecule Binder"
+    ],
+    "DNMT3A": [
+      "Approved Drug",
+      "Structure with Ligand",
+      "High-Quality Ligand",
+      "Druggable Family",
+      "UniProt Ubiquitination",
+      "Database Ubiquitination",
+      "Half-life Data",
+      "Small Molecule Binder"
+    ],
+    "DSTYK": [
+      "High-Quality Ligand",
+      "Druggable Family",
+      "UniProt loc high conf",
+      "UniProt loc med conf",
+      "GO CC med conf",
+      "Database Ubiquitination",
+      "Small Molecule Binder"
+    ],
+    "DTD1": [
+      "Med-Quality Pocket",
+      "Database Ubiquitination",
+      "Half-life Data"
+    ],
+    "DTL": [
+      "UniProt loc med conf",
+      "UniProt Ubiquitination",
+      "Database Ubiquitination"
+    ],
+    "DUSP2": [
+      "High-Quality Pocket",
+      "Database Ubiquitination",
+      "Small Molecule Binder"
+    ],
+    "E2F3": [
+      "Database Ubiquitination",
+      "Advanced Clinical"
+    ],
+    "EDN1": [
+      "GO CC high conf",
+      "UniProt loc med conf",
+      "UniProt SigP or TMHMM",
+      "Database Ubiquitination"
+    ],
+    "EGFR": [
+      "Approved Drug",
+      "Structure with Ligand",
+      "High-Quality Ligand",
+      "High-Quality Pocket",
+      "Druggable Family",
+      "Approved Drug",
+      "UniProt loc high conf",
+      "GO CC high conf",
+      "UniProt loc med conf",
+      "UniProt SigP or TMHMM",
+      "Human Protein Atlas loc",
+      "Literature",
+      "UniProt Ubiquitination",
+      "Database Ubiquitination",
+      "Half-life Data",
+      "Small Molecule Binder",
+      "Advanced Clinical"
+    ],
+    "EGLN3": [
+      "Approved Drug",
+      "High-Quality Ligand",
+      "Druggable Family",
+      "UniProt Ubiquitination",
+      "Database Ubiquitination",
+      "Small Molecule Binder"
+    ],
+    "EIF2S1": [
+      "Structure with Ligand",
+      "High-Quality Ligand",
+      "Med-Quality Pocket",
+      "Database Ubiquitination",
+      "Half-life Data",
+      "Small Molecule Binder"
+    ],
+    "EIF4E": [
+      "Structure with Ligand",
+      "High-Quality Ligand",
+      "Med-Quality Pocket",
+      "Druggable Family",
+      "Literature",
+      "Database Ubiquitination",
+      "Half-life Data",
+      "Small Molecule Binder"
+    ],
+    "ENTPD4": [
+      "UniProt SigP or TMHMM",
+      "Database Ubiquitination"
+    ],
+    "EPAS1": [
+      "Approved Drug",
+      "Structure with Ligand",
+      "High-Quality Ligand",
+      "Med-Quality Pocket",
+      "Druggable Family",
+      "UniProt Ubiquitination",
+      "Database Ubiquitination",
+      "Small Molecule Binder"
+    ],
+    "ERCC3": [
+      "Structure with Ligand",
+      "Database Ubiquitination",
+      "Half-life Data"
+    ],
+    "ERCC4": [
+      "High-Quality Ligand",
+      "Med-Quality Pocket",
+      "UniProt Ubiquitination",
+      "Database Ubiquitination",
+      "Half-life Data",
+      "Small Molecule Binder"
+    ],
+    "ERG": [
+      "Structure with Ligand",
+      "High-Quality Ligand",
+      "Druggable Family",
+      "UniProt Ubiquitination",
+      "Database Ubiquitination",
+      "Small Molecule Binder"
+    ],
+    "ESR1": [
+      "Approved Drug",
+      "Structure with Ligand",
+      "High-Quality Ligand",
+      "High-Quality Pocket",
+      "Druggable Family",
+      "UniProt loc high conf",
+      "GO CC high conf",
+      "UniProt loc med conf",
+      "Advanced Clinical",
+      "Literature",
+      "UniProt Ubiquitination",
+      "Database Ubiquitination",
+      "Small Molecule Binder",
+      "Approved Drug"
+    ],
+    "ETS1": [
+      "High-Quality Pocket",
+      "UniProt Ubiquitination",
+      "Database Ubiquitination",
+      "Half-life Data"
+    ],
+    "F11R": [
+      "UniProt loc high conf",
+      "GO CC high conf",
+      "UniProt SigP or TMHMM",
+      "Database Ubiquitination",
+      "Half-life Data"
+    ],
+    "FABP3": [
+      "Structure with Ligand",
+      "High-Quality Ligand",
+      "High-Quality Pocket",
+      "Half-life Data",
+      "Small Molecule Binder"
+    ],
+    "FAM117B": [
+      "Database Ubiquitination",
+      "Half-life Data"
+    ],
+    "FAM3C": [
+      "GO CC high conf",
+      "UniProt loc med conf",
+      "UniProt SigP or TMHMM",
+      "Database Ubiquitination",
+      "Half-life Data"
+    ],
+    "FASN": [
+      "Structure with Ligand",
+      "High-Quality Ligand",
+      "High-Quality Pocket",
+      "Druggable Family",
+      "GO CC high conf",
+      "Human Protein Atlas loc",
+      "UniProt Ubiquitination",
+      "Database Ubiquitination",
+      "Half-life Data",
+      "Small Molecule Binder"
+    ],
+    "FLI1": [
+      "High-Quality Ligand",
+      "Database Ubiquitination",
+      "Half-life Data",
+      "Small Molecule Binder"
+    ],
+    "FN1": [
+      "Structure with Ligand",
+      "Med-Quality Pocket",
+      "Advanced Clinical",
+      "UniProt loc high conf",
+      "GO CC high conf",
+      "UniProt loc med conf",
+      "UniProt SigP or TMHMM",
+      "Database Ubiquitination",
+      "Half-life Data",
+      "Small Molecule Binder",
+      "Approved Drug"
+    ],
+    "FOXJ3": [
+      "Database Ubiquitination"
+    ],
+    "FOXM1": [
+      "High-Quality Ligand",
+      "UniProt Ubiquitination",
+      "Database Ubiquitination",
+      "Small Molecule Binder"
+    ],
+    "FOXO3": [
+      "Structure with Ligand",
+      "UniProt loc high conf",
+      "UniProt Ubiquitination",
+      "Database Ubiquitination"
+    ],
+    "FOXP1": [
+      "Med-Quality Pocket",
+      "UniProt Ubiquitination",
+      "Database Ubiquitination",
+      "Half-life Data"
+    ],
+    "FRS2": [
+      "GO CC high conf",
+      "UniProt Ubiquitination",
+      "Database Ubiquitination",
+      "Half-life Data",
+      "Small Molecule Binder"
+    ],
+    "FSCN1": [
+      "Structure with Ligand",
+      "High-Quality Ligand",
+      "UniProt Ubiquitination",
+      "Database Ubiquitination",
+      "Half-life Data",
+      "Small Molecule Binder"
+    ],
+    "FUNDC2": [
+      "UniProt SigP or TMHMM",
+      "Database Ubiquitination",
+      "Half-life Data"
+    ],
+    "FUT8": [
+      "Structure with Ligand",
+      "Med-Quality Pocket",
+      "UniProt SigP or TMHMM",
+      "Database Ubiquitination",
+      "Half-life Data",
+      "Small Molecule Binder"
+    ],
+    "FXN": [
+      "Structure with Ligand",
+      "Database Ubiquitination",
+      "Half-life Data"
+    ],
+    "FZD7": [
+      "Structure with Ligand",
+      "Advanced Clinical",
+      "UniProt loc high conf",
+      "GO CC high conf",
+      "UniProt SigP or TMHMM",
+      "UniProt Ubiquitination",
+      "Database Ubiquitination"
+    ],
+    "G6PC3": [
+      "UniProt SigP or TMHMM"
+    ],
+    "G6PD": [
+      "Structure with Ligand",
+      "High-Quality Ligand",
+      "High-Quality Pocket",
+      "Druggable Family",
+      "UniProt loc high conf",
+      "Database Ubiquitination",
+      "Half-life Data",
+      "Small Molecule Binder"
+    ],
+    "GALNT10": [
+      "Structure with Ligand",
+      "High-Quality Pocket",
+      "UniProt SigP or TMHMM",
+      "Human Protein Atlas loc",
+      "Database Ubiquitination",
+      "Half-life Data",
+      "Small Molecule Binder"
+    ],
+    "GJA1": [
+      "Structure with Ligand",
+      "High-Quality Ligand",
+      "UniProt loc high conf",
+      "GO CC high conf",
+      "UniProt SigP or TMHMM",
+      "UniProt Ubiquitination",
+      "Database Ubiquitination",
+      "Half-life Data",
+      "Small Molecule Binder"
+    ],
+    "GMFB": [
+      "Database Ubiquitination",
+      "Half-life Data"
+    ],
+    "GOLM1": [
+      "GO CC high conf",
+      "UniProt SigP or TMHMM",
+      "Database Ubiquitination",
+      "Half-life Data"
+    ],
+    "GYS1": [
+      "Structure with Ligand",
+      "High-Quality Ligand",
+      "Database Ubiquitination",
+      "Half-life Data",
+      "Small Molecule Binder"
+    ],
+    "HAND2": [
+      "Database Ubiquitination"
+    ],
+    "HBEGF": [
+      "Phase 1 Clinical",
+      "GO CC high conf",
+      "UniProt loc med conf",
+      "UniProt SigP or TMHMM"
+    ],
+    "HCN2": [
+      "Structure with Ligand",
+      "Druggable Family",
+      "UniProt loc high conf",
+      "GO CC high conf",
+      "UniProt SigP or TMHMM",
+      "Database Ubiquitination",
+      "Half-life Data",
+      "Small Molecule Binder"
+    ],
+    "HCN4": [
+      "Approved Drug",
+      "Structure with Ligand",
+      "High-Quality Ligand",
+      "Med-Quality Pocket",
+      "Druggable Family",
+      "UniProt loc high conf",
+      "GO CC high conf",
+      "UniProt SigP or TMHMM",
+      "Half-life Data",
+      "Small Molecule Binder"
+    ],
+    "HDAC11": [
+      "Approved Drug",
+      "High-Quality Ligand",
+      "Druggable Family",
+      "GO CC high conf",
+      "Database Ubiquitination",
+      "Small Molecule Binder",
+      "Approved Drug"
+    ],
+    "HDAC2": [
+      "Approved Drug",
+      "Structure with Ligand",
+      "High-Quality Ligand",
+      "Med-Quality Pocket",
+      "Druggable Family",
+      "Literature",
+      "UniProt Ubiquitination",
+      "Database Ubiquitination",
+      "Half-life Data",
+      "Small Molecule Binder",
+      "Approved Drug"
+    ],
+    "HDAC4": [
+      "Approved Drug",
+      "Structure with Ligand",
+      "High-Quality Ligand",
+      "Med-Quality Pocket",
+      "Druggable Family",
+      "UniProt Ubiquitination",
+      "Database Ubiquitination",
+      "Half-life Data",
+      "Small Molecule Binder",
+      "Approved Drug"
+    ],
+    "HLTF": [
+      "Structure with Ligand",
+      "UniProt Ubiquitination",
+      "Database Ubiquitination"
+    ],
+    "HMGA2": [
+      "Database Ubiquitination"
+    ],
+    "HMOX1": [
+      "Structure with Ligand",
+      "High-Quality Ligand",
+      "High-Quality Pocket",
+      "UniProt SigP or TMHMM",
+      "Database Ubiquitination",
+      "Half-life Data",
+      "Small Molecule Binder"
+    ],
+    "HNF4G": [
+      "Druggable Family"
+    ],
+    "HOXA10": [
+      "Database Ubiquitination"
+    ],
+    "HRH1": [
+      "Approved Drug",
+      "Structure with Ligand",
+      "High-Quality Ligand",
+      "Med-Quality Pocket",
+      "Druggable Family",
+      "UniProt loc high conf",
+      "GO CC high conf",
+      "UniProt SigP or TMHMM",
+      "Human Protein Atlas loc",
+      "Database Ubiquitination",
+      "Small Molecule Binder"
+    ],
+    "HSPA4": [
+      "Database Ubiquitination",
+      "Half-life Data"
+    ],
+    "HSPD1": [
+      "Structure with Ligand",
+      "High-Quality Ligand",
+      "GO CC high conf",
+      "UniProt Ubiquitination",
+      "Database Ubiquitination",
+      "Half-life Data",
+      "Small Molecule Binder"
+    ],
+    "IDH1": [
+      "Structure with Ligand",
+      "High-Quality Ligand",
+      "High-Quality Pocket",
+      "GO CC high conf",
+      "Database Ubiquitination",
+      "Half-life Data",
+      "Small Molecule Binder",
+      "Approved Drug"
+    ],
+    "IER2": [
+      "Database Ubiquitination"
+    ],
+    "IFNB1": [
+      "Structure with Ligand",
+      "Med-Quality Pocket",
+      "Advanced Clinical",
+      "UniProt loc high conf",
+      "GO CC high conf",
+      "UniProt SigP or TMHMM"
+    ],
+    "IGF1": [
+      "Structure with Ligand",
+      "Med-Quality Pocket",
+      "Advanced Clinical",
+      "GO CC high conf",
+      "UniProt loc med conf",
+      "UniProt SigP or TMHMM",
+      "Database Ubiquitination"
+    ],
+    "IGF1R": [
+      "Approved Drug",
+      "Structure with Ligand",
+      "High-Quality Ligand",
+      "High-Quality Pocket",
+      "Druggable Family",
+      "Approved Drug",
+      "UniProt loc high conf",
+      "GO CC high conf",
+      "UniProt SigP or TMHMM",
+      "Literature",
+      "UniProt Ubiquitination",
+      "Database Ubiquitination",
+      "Half-life Data",
+      "Small Molecule Binder",
+      "Approved Drug"
+    ],
+    "IL10": [
+      "Med-Quality Pocket",
+      "Advanced Clinical",
+      "GO CC high conf",
+      "UniProt loc med conf",
+      "UniProt SigP or TMHMM"
+    ],
+    "IL11": [
+      "Structure with Ligand",
+      "UniProt loc high conf",
+      "GO CC high conf",
+      "UniProt SigP or TMHMM"
+    ],
+    "IL1A": [
+      "Advanced Clinical",
+      "UniProt loc high conf",
+      "GO CC high conf"
+    ],
+    "ILK": [
+      "Structure with Ligand",
+      "High-Quality Ligand",
+      "High-Quality Pocket",
+      "Druggable Family",
+      "UniProt loc high conf",
+      "GO CC med conf",
+      "Database Ubiquitination",
+      "Half-life Data",
+      "Small Molecule Binder"
+    ],
+    "IRS1": [
+      "Structure with Ligand",
+      "High-Quality Ligand",
+      "Med-Quality Pocket",
+      "GO CC high conf",
+      "Human Protein Atlas loc",
+      "UniProt Ubiquitination",
+      "Database Ubiquitination",
+      "Small Molecule Binder"
+    ],
+    "IRS2": [
+      "GO CC high conf",
+      "UniProt Ubiquitination",
+      "Database Ubiquitination",
+      "Half-life Data"
+    ],
+    "ITGA9": [
+      "GO CC high conf",
+      "UniProt SigP or TMHMM",
+      "Human Protein Atlas loc"
+    ],
+    "ITGAV": [
+      "Structure with Ligand",
+      "High-Quality Ligand",
+      "High-Quality Pocket",
+      "Druggable Family",
+      "Approved Drug",
+      "GO CC high conf",
+      "UniProt loc med conf",
+      "UniProt SigP or TMHMM",
+      "Database Ubiquitination",
+      "Half-life Data",
+      "Small Molecule Binder",
+      "Advanced Clinical"
+    ],
+    "ITGB1": [
+      "Advanced Clinical",
+      "Structure with Ligand",
+      "High-Quality Ligand",
+      "Druggable Family",
+      "Advanced Clinical",
+      "UniProt loc high conf",
+      "GO CC high conf",
+      "UniProt loc med conf",
+      "UniProt SigP or TMHMM",
+      "Human Protein Atlas loc",
+      "UniProt Ubiquitination",
+      "Database Ubiquitination",
+      "Half-life Data",
+      "Small Molecule Binder",
+      "Advanced Clinical"
+    ],
+    "ITGB3": [
+      "Approved Drug",
+      "Structure with Ligand",
+      "High-Quality Ligand",
+      "Druggable Family",
+      "Approved Drug",
+      "UniProt loc high conf",
+      "GO CC high conf",
+      "UniProt loc med conf",
+      "UniProt SigP or TMHMM",
+      "Human Protein Atlas loc",
+      "Database Ubiquitination",
+      "Small Molecule Binder",
+      "Approved Drug"
+    ],
+    "ITGB8": [
+      "Structure with Ligand",
+      "High-Quality Ligand",
+      "Druggable Family",
+      "UniProt loc high conf",
+      "GO CC high conf",
+      "UniProt SigP or TMHMM",
+      "Human Protein Atlas loc",
+      "Database Ubiquitination",
+      "Half-life Data"
+    ],
+    "ITSN1": [
+      "Structure with Ligand",
+      "Med-Quality Pocket",
+      "UniProt loc high conf",
+      "GO CC high conf",
+      "Human Protein Atlas loc",
+      "Database Ubiquitination",
+      "Half-life Data"
+    ],
+    "JADE1": [
+      "GO CC high conf",
+      "UniProt Ubiquitination",
+      "Database Ubiquitination"
+    ],
+    "JAK1": [
+      "Approved Drug",
+      "Structure with Ligand",
+      "High-Quality Ligand",
+      "Druggable Family",
+      "GO CC high conf",
+      "UniProt loc med conf",
+      "Literature",
+      "UniProt Ubiquitination",
+      "Database Ubiquitination",
+      "Half-life Data",
+      "Small Molecule Binder"
+    ],
+    "KCNE1": [
+      "High-Quality Ligand",
+      "Med-Quality Pocket",
+      "Druggable Family",
+      "UniProt loc high conf",
+      "GO CC high conf",
+      "UniProt loc med conf",
+      "UniProt SigP or TMHMM",
+      "Small Molecule Binder"
+    ],
+    "KCNJ2": [
+      "Approved Drug",
+      "Druggable Family",
+      "UniProt loc high conf",
+      "GO CC high conf",
+      "UniProt loc med conf",
+      "UniProt SigP or TMHMM",
+      "Database Ubiquitination"
+    ],
+    "KDM5B": [
+      "Structure with Ligand",
+      "High-Quality Ligand",
+      "UniProt Ubiquitination",
+      "Database Ubiquitination",
+      "Half-life Data",
+      "Small Molecule Binder"
+    ],
+    "KIF20B": [
+      "Database Ubiquitination",
+      "Small Molecule Binder"
+    ],
+    "KIF2A": [
+      "Structure with Ligand",
+      "Database Ubiquitination",
+      "Half-life Data"
+    ],
+    "KLF4": [
+      "UniProt Ubiquitination",
+      "Database Ubiquitination"
+    ],
+    "KLF5": [
+      "High-Quality Ligand",
+      "Druggable Family",
+      "UniProt Ubiquitination",
+      "Database Ubiquitination",
+      "Small Molecule Binder"
+    ],
+    "KRAS": [
+      "Approved Drug",
+      "Structure with Ligand",
+      "High-Quality Ligand",
+      "UniProt loc high conf",
+      "GO CC high conf",
+      "Literature",
+      "UniProt Ubiquitination",
+      "Database Ubiquitination",
+      "Half-life Data",
+      "Small Molecule Binder"
+    ],
+    "KREMEN1": [
+      "UniProt loc med conf",
+      "UniProt SigP or TMHMM",
+      "GO CC med conf"
+    ],
+    "LARP4": [
+      "Database Ubiquitination",
+      "Half-life Data"
+    ],
+    "LASP1": [
+      "Human Protein Atlas loc",
+      "Database Ubiquitination",
+      "Half-life Data"
+    ],
+    "LMNB2": [
+      "UniProt Ubiquitination",
+      "Database Ubiquitination",
+      "Half-life Data"
+    ],
+    "LPIN1": [
+      "Human Protein Atlas loc",
+      "UniProt Ubiquitination",
+      "Database Ubiquitination"
+    ],
+    "LYPLA2": [
+      "Structure with Ligand",
+      "High-Quality Ligand",
+      "Database Ubiquitination",
+      "Half-life Data",
+      "Small Molecule Binder"
+    ],
+    "MAD2L1": [
+      "Structure with Ligand",
+      "High-Quality Pocket",
+      "Database Ubiquitination",
+      "Half-life Data"
+    ],
+    "MAP2K6": [
+      "Structure with Ligand",
+      "High-Quality Ligand",
+      "High-Quality Pocket",
+      "Druggable Family",
+      "UniProt Ubiquitination",
+      "Database Ubiquitination",
+      "Half-life Data",
+      "Small Molecule Binder"
+    ],
+    "MAPK11": [
+      "Approved Drug",
+      "Structure with Ligand",
+      "High-Quality Ligand",
+      "High-Quality Pocket",
+      "Druggable Family",
+      "Literature",
+      "Small Molecule Binder"
+    ],
+    "MCL1": [
+      "Advanced Clinical",
+      "Structure with Ligand",
+      "High-Quality Ligand",
+      "Med-Quality Pocket",
+      "Druggable Family",
+      "UniProt SigP or TMHMM",
+      "Literature",
+      "UniProt Ubiquitination",
+      "Database Ubiquitination",
+      "Half-life Data",
+      "Small Molecule Binder"
+    ],
+    "MCM10": [
+      "UniProt Ubiquitination",
+      "Database Ubiquitination"
+    ],
+    "MCM2": [
+      "Structure with Ligand",
+      "UniProt Ubiquitination",
+      "Database Ubiquitination",
+      "Half-life Data"
+    ],
+    "MDM2": [
+      "Advanced Clinical",
+      "Structure with Ligand",
+      "High-Quality Ligand",
+      "High-Quality Pocket",
+      "Druggable Family",
+      "GO CC high conf",
+      "Literature",
+      "UniProt Ubiquitination",
+      "Database Ubiquitination",
+      "Small Molecule Binder"
+    ],
+    "MECP2": [
+      "Database Ubiquitination",
+      "Half-life Data",
+      "Small Molecule Binder"
+    ],
+    "MEF2A": [
+      "Structure with Ligand",
+      "UniProt Ubiquitination",
+      "Database Ubiquitination",
+      "Half-life Data"
+    ],
+    "MEF2D": [
+      "UniProt Ubiquitination",
+      "Database Ubiquitination",
+      "Half-life Data"
+    ],
+    "MEST": [
+      "UniProt SigP or TMHMM",
+      "Half-life Data"
+    ],
+    "MET": [
+      "Approved Drug",
+      "Structure with Ligand",
+      "High-Quality Ligand",
+      "High-Quality Pocket",
+      "Druggable Family",
+      "Approved Drug",
+      "GO CC high conf",
+      "UniProt loc med conf",
+      "UniProt SigP or TMHMM",
+      "Human Protein Atlas loc",
+      "Literature",
+      "UniProt Ubiquitination",
+      "Database Ubiquitination",
+      "Half-life Data",
+      "Small Molecule Binder",
+      "Advanced Clinical"
+    ],
+    "MIS12": [
+      "Database Ubiquitination",
+      "Half-life Data"
+    ],
+    "MMP1": [
+      "Approved Drug",
+      "Structure with Ligand",
+      "High-Quality Ligand",
+      "Med-Quality Pocket",
+      "Druggable Family",
+      "UniProt loc high conf",
+      "GO CC high conf",
+      "UniProt SigP or TMHMM",
+      "Database Ubiquitination",
+      "Small Molecule Binder"
+    ],
+    "MMP12": [
+      "Advanced Clinical",
+      "Structure with Ligand",
+      "High-Quality Ligand",
+      "High-Quality Pocket",
+      "UniProt loc high conf",
+      "GO CC high conf",
+      "UniProt SigP or TMHMM",
+      "Small Molecule Binder"
+    ],
+    "MMP14": [
+      "Advanced Clinical",
+      "Structure with Ligand",
+      "High-Quality Ligand",
+      "Druggable Family",
+      "UniProt loc high conf",
+      "GO CC high conf",
+      "UniProt SigP or TMHMM",
+      "Database Ubiquitination",
+      "Half-life Data",
+      "Small Molecule Binder"
+    ],
+    "MPL": [
+      "Approved Drug",
+      "High-Quality Ligand",
+      "Druggable Family",
+      "UniProt loc high conf",
+      "GO CC high conf",
+      "UniProt SigP or TMHMM",
+      "Human Protein Atlas loc",
+      "UniProt Ubiquitination",
+      "Database Ubiquitination",
+      "Small Molecule Binder",
+      "Approved Drug"
+    ],
+    "MSH3": [
+      "Structure with Ligand",
+      "Database Ubiquitination",
+      "Half-life Data"
+    ],
+    "MTA1": [
+      "Structure with Ligand",
+      "UniProt Ubiquitination",
+      "Database Ubiquitination",
+      "Half-life Data"
+    ],
+    "MTDH": [
+      "UniProt SigP or TMHMM",
+      "Database Ubiquitination",
+      "Half-life Data"
+    ],
+    "MTMR14": [
+      "Database Ubiquitination",
+      "Half-life Data"
+    ],
+    "MTTP": [
+      "Approved Drug",
+      "Druggable Family",
+      "UniProt SigP or TMHMM",
+      "Half-life Data",
+      "Small Molecule Binder"
+    ],
+    "MUC1": [
+      "Structure with Ligand",
+      "Med-Quality Pocket",
+      "Advanced Clinical",
+      "UniProt loc high conf",
+      "GO CC high conf",
+      "UniProt loc med conf",
+      "UniProt SigP or TMHMM",
+      "Human Protein Atlas loc",
+      "Advanced Clinical"
+    ],
+    "MYC": [
+      "Structure with Ligand",
+      "High-Quality Ligand",
+      "UniProt Ubiquitination",
+      "Database Ubiquitination",
+      "Small Molecule Binder"
+    ],
+    "MYO5A": [
+      "Structure with Ligand",
+      "Database Ubiquitination",
+      "Half-life Data"
+    ],
+    "MYO6": [
+      "Structure with Ligand",
+      "UniProt loc high conf",
+      "GO CC high conf",
+      "Database Ubiquitination",
+      "Half-life Data"
+    ],
+    "MYOCD": [
+      "UniProt Ubiquitination"
+    ],
+    "NAIP": [
+      "Structure with Ligand",
+      "Half-life Data"
+    ],
+    "NCAM1": [
+      "High-Quality Pocket",
+      "Advanced Clinical",
+      "UniProt loc high conf",
+      "GO CC high conf",
+      "UniProt loc med conf",
+      "UniProt SigP or TMHMM",
+      "Human Protein Atlas loc",
+      "Database Ubiquitination",
+      "Half-life Data",
+      "Advanced Clinical"
+    ],
+    "NCOR2": [
+      "Structure with Ligand",
+      "High-Quality Ligand",
+      "Druggable Family",
+      "UniProt Ubiquitination",
+      "Database Ubiquitination",
+      "Half-life Data",
+      "Small Molecule Binder"
+    ],
+    "NDRG2": [
+      "Structure with Ligand",
+      "Half-life Data"
+    ],
+    "NEDD9": [
+      "GO CC high conf",
+      "UniProt loc med conf",
+      "UniProt Ubiquitination",
+      "Database Ubiquitination",
+      "Half-life Data"
+    ],
+    "NFATC1": [
+      "High-Quality Ligand",
+      "High-Quality Pocket",
+      "Database Ubiquitination",
+      "Half-life Data",
+      "Small Molecule Binder"
+    ],
+    "NFATC2IP": [
+      "UniProt Ubiquitination",
+      "Database Ubiquitination",
+      "Half-life Data"
+    ],
+    "NID1": [
+      "GO CC high conf",
+      "UniProt loc med conf",
+      "UniProt SigP or TMHMM",
+      "Half-life Data"
+    ],
+    "NIPSNAP1": [
+      "UniProt Ubiquitination",
+      "Database Ubiquitination",
+      "Half-life Data"
+    ],
+    "NOB1": [
+      "Structure with Ligand",
+      "Database Ubiquitination",
+      "Half-life Data"
+    ],
+    "NOD2": [
+      "Approved Drug",
+      "High-Quality Ligand",
+      "Druggable Family",
+      "UniProt loc high conf",
+      "GO CC high conf",
+      "UniProt Ubiquitination",
+      "Database Ubiquitination",
+      "Small Molecule Binder"
+    ],
+    "NOTCH1": [
+      "Structure with Ligand",
+      "High-Quality Ligand",
+      "Med-Quality Pocket",
+      "Druggable Family",
+      "Advanced Clinical",
+      "GO CC high conf",
+      "UniProt loc med conf",
+      "UniProt SigP or TMHMM",
+      "UniProt Ubiquitination",
+      "Database Ubiquitination",
+      "Half-life Data",
+      "Small Molecule Binder"
+    ],
+    "NOTCH3": [
+      "High-Quality Ligand",
+      "Advanced Clinical",
+      "UniProt loc high conf",
+      "GO CC high conf",
+      "UniProt SigP or TMHMM",
+      "Human Protein Atlas loc",
+      "Database Ubiquitination",
+      "Small Molecule Binder"
+    ],
+    "NRAS": [
+      "Advanced Clinical",
+      "Structure with Ligand",
+      "High-Quality Ligand",
+      "UniProt loc high conf",
+      "GO CC high conf",
+      "UniProt Ubiquitination",
+      "Database Ubiquitination",
+      "Half-life Data",
+      "Small Molecule Binder"
+    ],
+    "NT5C3A": [
+      "High-Quality Pocket",
+      "Database Ubiquitination",
+      "Half-life Data"
+    ],
+    "NUDT1": [
+      "Structure with Ligand",
+      "High-Quality Ligand",
+      "Med-Quality Pocket",
+      "Database Ubiquitination",
+      "Half-life Data",
+      "Small Molecule Binder"
+    ],
+    "NUMBL": [
+      "Half-life Data"
+    ],
+    "P4HA1": [
+      "High-Quality Ligand",
+      "UniProt SigP or TMHMM",
+      "Database Ubiquitination",
+      "Half-life Data",
+      "Small Molecule Binder"
+    ],
+    "PAK1": [
+      "Structure with Ligand",
+      "High-Quality Ligand",
+      "High-Quality Pocket",
+      "Druggable Family",
+      "UniProt loc high conf",
+      "GO CC high conf",
+      "Human Protein Atlas loc",
+      "Database Ubiquitination",
+      "Half-life Data",
+      "Small Molecule Binder"
+    ],
+    "PAK4": [
+      "Phase 1 Clinical",
+      "Structure with Ligand",
+      "High-Quality Ligand",
+      "High-Quality Pocket",
+      "Druggable Family",
+      "Human Protein Atlas loc",
+      "Literature",
+      "UniProt Ubiquitination",
+      "Database Ubiquitination",
+      "Half-life Data",
+      "Small Molecule Binder"
+    ],
+    "PARP8": [
+      "High-Quality Ligand",
+      "Database Ubiquitination",
+      "Small Molecule Binder"
+    ],
+    "PDK4": [
+      "Approved Drug",
+      "Structure with Ligand",
+      "High-Quality Ligand",
+      "High-Quality Pocket",
+      "Database Ubiquitination",
+      "Small Molecule Binder"
+    ],
+    "PEG10": [
+      "UniProt loc high conf",
+      "GO CC med conf",
+      "UniProt Ubiquitination",
+      "Database Ubiquitination",
+      "Half-life Data"
+    ],
+    "PGD": [
+      "Structure with Ligand",
+      "High-Quality Pocket",
+      "Druggable Family",
+      "Database Ubiquitination",
+      "Half-life Data",
+      "Small Molecule Binder"
+    ],
+    "PIGF": [
+      "UniProt SigP or TMHMM"
+    ],
+    "PIK3CA": [
+      "Approved Drug",
+      "Structure with Ligand",
+      "High-Quality Ligand",
+      "High-Quality Pocket",
+      "Druggable Family",
+      "GO CC med conf",
+      "Literature",
+      "Database Ubiquitination",
+      "Half-life Data",
+      "Small Molecule Binder"
+    ],
+    "PIM1": [
+      "Phase 1 Clinical",
+      "Structure with Ligand",
+      "High-Quality Ligand",
+      "High-Quality Pocket",
+      "Druggable Family",
+      "GO CC high conf",
+      "UniProt loc med conf",
+      "UniProt Ubiquitination",
+      "Database Ubiquitination",
+      "Small Molecule Binder"
+    ],
+    "PKM": [
+      "Structure with Ligand",
+      "High-Quality Ligand",
+      "High-Quality Pocket",
+      "Druggable Family",
+      "GO CC high conf",
+      "UniProt Ubiquitination",
+      "Database Ubiquitination",
+      "Half-life Data",
+      "Small Molecule Binder"
+    ],
+    "PNP": [
+      "Advanced Clinical",
+      "Structure with Ligand",
+      "High-Quality Ligand",
+      "High-Quality Pocket",
+      "Druggable Family",
+      "GO CC high conf",
+      "Database Ubiquitination",
+      "Half-life Data",
+      "Small Molecule Binder"
+    ],
+    "PODXL": [
+      "GO CC high conf",
+      "UniProt loc med conf",
+      "UniProt SigP or TMHMM",
+      "Database Ubiquitination"
+    ],
+    "POGK": [
+      "UniProt Ubiquitination",
+      "Database Ubiquitination",
+      "Half-life Data"
+    ],
+    "POU5F1": [
+      "Structure with Ligand",
+      "UniProt Ubiquitination",
+      "Database Ubiquitination"
+    ],
+    "PPP2R5A": [
+      "Structure with Ligand",
+      "GO CC high conf",
+      "Database Ubiquitination",
+      "Half-life Data",
+      "Small Molecule Binder"
+    ],
+    "PPP3CA": [
+      "Druggable Family",
+      "UniProt loc high conf",
+      "GO CC high conf",
+      "UniProt loc med conf",
+      "Database Ubiquitination",
+      "Half-life Data",
+      "Small Molecule Binder",
+      "Approved Drug"
+    ],
+    "PRKAB1": [
+      "Advanced Clinical",
+      "Structure with Ligand",
+      "High-Quality Ligand",
+      "Druggable Family",
+      "Database Ubiquitination",
+      "Half-life Data",
+      "Small Molecule Binder"
+    ],
+    "PRKCE": [
+      "Approved Drug",
+      "Structure with Ligand",
+      "High-Quality Ligand",
+      "Druggable Family",
+      "UniProt loc high conf",
+      "GO CC high conf",
+      "Human Protein Atlas loc",
+      "Database Ubiquitination",
+      "Half-life Data",
+      "Small Molecule Binder",
+      "Advanced Clinical"
+    ],
+    "PRKRA": [
+      "Database Ubiquitination",
+      "Half-life Data"
+    ],
+    "PRPF38A": [
+      "Structure with Ligand",
+      "Database Ubiquitination",
+      "Half-life Data"
+    ],
+    "PTBP1": [
+      "Med-Quality Pocket",
+      "Druggable Family",
+      "UniProt Ubiquitination",
+      "Database Ubiquitination",
+      "Half-life Data",
+      "Small Molecule Binder"
+    ],
+    "PTMA": [
+      "UniProt Ubiquitination",
+      "Database Ubiquitination",
+      "Half-life Data"
+    ],
+    "PTP4A2": [
+      "Structure with Ligand",
+      "High-Quality Ligand",
+      "Druggable Family",
+      "UniProt loc med conf",
+      "GO CC med conf",
+      "Database Ubiquitination",
+      "Half-life Data",
+      "Small Molecule Binder"
+    ],
+    "PTPN1": [
+      "Structure with Ligand",
+      "High-Quality Ligand",
+      "Med-Quality Pocket",
+      "Druggable Family",
+      "UniProt loc high conf",
+      "GO CC high conf",
+      "Database Ubiquitination",
+      "Half-life Data",
+      "Small Molecule Binder"
+    ],
+    "PTPN12": [
+      "High-Quality Ligand",
+      "Druggable Family",
+      "Human Protein Atlas loc",
+      "Database Ubiquitination",
+      "Half-life Data",
+      "Small Molecule Binder"
+    ],
+    "PTPN13": [
+      "Structure with Ligand",
+      "High-Quality Ligand",
+      "High-Quality Pocket",
+      "Druggable Family",
+      "GO CC high conf",
+      "Human Protein Atlas loc",
+      "Database Ubiquitination",
+      "Small Molecule Binder"
+    ],
+    "PXN": [
+      "Structure with Ligand",
+      "GO CC high conf",
+      "Database Ubiquitination",
+      "Half-life Data"
+    ],
+    "RAB11FIP1": [
+      "Structure with Ligand",
+      "Database Ubiquitination",
+      "Half-life Data"
+    ],
+    "RAB6B": [
+      "Structure with Ligand",
+      "Med-Quality Pocket",
+      "Database Ubiquitination",
+      "Half-life Data"
+    ],
+    "RAC1": [
+      "Structure with Ligand",
+      "High-Quality Ligand",
+      "High-Quality Pocket",
+      "UniProt loc high conf",
+      "GO CC high conf",
+      "UniProt Ubiquitination",
+      "Database Ubiquitination",
+      "Half-life Data",
+      "Small Molecule Binder"
+    ],
+    "RACGAP1": [
+      "Structure with Ligand",
+      "UniProt loc med conf",
+      "GO CC med conf",
+      "UniProt Ubiquitination",
+      "Database Ubiquitination"
+    ],
+    "RARB": [
+      "Approved Drug",
+      "Structure with Ligand",
+      "High-Quality Ligand",
+      "Druggable Family",
+      "Literature",
+      "Small Molecule Binder"
+    ],
+    "RASAL2": [
+      "Human Protein Atlas loc",
+      "Database Ubiquitination",
+      "Half-life Data"
+    ],
+    "RB1": [
+      "High-Quality Ligand",
+      "Med-Quality Pocket",
+      "Druggable Family",
+      "Database Ubiquitination",
+      "Half-life Data",
+      "Small Molecule Binder"
+    ],
+    "RBX1": [
+      "Approved Drug",
+      "Structure with Ligand",
+      "High-Quality Pocket",
+      "Database Ubiquitination",
+      "Half-life Data"
+    ],
+    "RHOA": [
+      "Structure with Ligand",
+      "High-Quality Ligand",
+      "GO CC high conf",
+      "UniProt loc med conf",
+      "Human Protein Atlas loc",
+      "UniProt Ubiquitination",
+      "Database Ubiquitination",
+      "Half-life Data",
+      "Small Molecule Binder"
+    ],
+    "ROBO2": [
+      "GO CC high conf",
+      "UniProt SigP or TMHMM",
+      "Human Protein Atlas loc",
+      "Half-life Data"
+    ],
+    "ROCK1": [
+      "Approved Drug",
+      "Structure with Ligand",
+      "High-Quality Ligand",
+      "High-Quality Pocket",
+      "Druggable Family",
+      "UniProt loc high conf",
+      "GO CC high conf",
+      "UniProt loc med conf",
+      "Database Ubiquitination",
+      "Half-life Data",
+      "Small Molecule Binder"
+    ],
+    "RPA1": [
+      "Structure with Ligand",
+      "High-Quality Ligand",
+      "Med-Quality Pocket",
+      "UniProt Ubiquitination",
+      "Database Ubiquitination",
+      "Half-life Data",
+      "Small Molecule Binder"
+    ],
+    "RPS6KB1": [
+      "Phase 1 Clinical",
+      "Structure with Ligand",
+      "High-Quality Ligand",
+      "Med-Quality Pocket",
+      "Druggable Family",
+      "Literature",
+      "Database Ubiquitination",
+      "Half-life Data",
+      "Small Molecule Binder"
+    ],
+    "RREB1": [
+      "UniProt Ubiquitination",
+      "Database Ubiquitination",
+      "Half-life Data"
+    ],
+    "RTKN": [
+      "Database Ubiquitination",
+      "Half-life Data"
+    ],
+    "RUNX2": [
+      "Structure with Ligand",
+      "UniProt Ubiquitination",
+      "Database Ubiquitination"
+    ],
+    "SCN5A": [
+      "Approved Drug",
+      "Structure with Ligand",
+      "High-Quality Ligand",
+      "Druggable Family",
+      "UniProt loc high conf",
+      "GO CC high conf",
+      "UniProt loc med conf",
+      "UniProt SigP or TMHMM",
+      "Human Protein Atlas loc",
+      "UniProt Ubiquitination",
+      "Database Ubiquitination",
+      "Small Molecule Binder"
+    ],
+    "SENP1": [
+      "High-Quality Ligand",
+      "Med-Quality Pocket",
+      "Database Ubiquitination",
+      "Half-life Data",
+      "Small Molecule Binder"
+    ],
+    "SERINC5": [
+      "UniProt loc high conf",
+      "GO CC high conf",
+      "UniProt SigP or TMHMM",
+      "Human Protein Atlas loc",
+      "Database Ubiquitination"
+    ],
+    "SERPINE1": [
+      "Advanced Clinical",
+      "Structure with Ligand",
+      "High-Quality Ligand",
+      "High-Quality Pocket",
+      "Druggable Family",
+      "UniProt loc high conf",
+      "GO CC high conf",
+      "UniProt SigP or TMHMM",
+      "Small Molecule Binder"
+    ],
+    "SET": [
+      "UniProt Ubiquitination",
+      "Database Ubiquitination",
+      "Half-life Data"
+    ],
+    "SLC7A1": [
+      "GO CC high conf",
+      "UniProt loc med conf",
+      "UniProt SigP or TMHMM",
+      "Database Ubiquitination",
+      "Half-life Data"
+    ],
+    "SLC7A11": [
+      "Structure with Ligand",
+      "High-Quality Ligand",
+      "UniProt loc high conf",
+      "GO CC high conf",
+      "UniProt SigP or TMHMM",
+      "UniProt Ubiquitination",
+      "Database Ubiquitination",
+      "Half-life Data",
+      "Small Molecule Binder"
+    ],
+    "SLC8A1": [
+      "Structure with Ligand",
+      "UniProt loc high conf",
+      "GO CC high conf",
+      "UniProt SigP or TMHMM",
+      "Human Protein Atlas loc",
+      "Half-life Data",
+      "Small Molecule Binder"
+    ],
+    "SMAD1": [
+      "High-Quality Pocket",
+      "UniProt Ubiquitination",
+      "Database Ubiquitination",
+      "Half-life Data"
+    ],
+    "SMAD2": [
+      "High-Quality Ligand",
+      "Med-Quality Pocket",
+      "UniProt Ubiquitination",
+      "Database Ubiquitination",
+      "Half-life Data",
+      "Small Molecule Binder"
+    ],
+    "SMAD3": [
+      "High-Quality Ligand",
+      "Med-Quality Pocket",
+      "Druggable Family",
+      "GO CC med conf",
+      "Literature",
+      "UniProt Ubiquitination",
+      "Database Ubiquitination",
+      "Half-life Data",
+      "Small Molecule Binder"
+    ],
+    "SMARCB1": [
+      "Structure with Ligand",
+      "UniProt Ubiquitination",
+      "Database Ubiquitination",
+      "Half-life Data"
+    ],
+    "SNAI1": [
+      "Structure with Ligand",
+      "UniProt Ubiquitination",
+      "Database Ubiquitination"
+    ],
+    "SNAI2": [
+      "UniProt Ubiquitination",
+      "Database Ubiquitination"
+    ],
+    "SOCS2": [
+      "Structure with Ligand",
+      "UniProt Ubiquitination",
+      "Database Ubiquitination"
+    ],
+    "SOCS3": [
+      "Human Protein Atlas loc",
+      "Database Ubiquitination"
+    ],
+    "SOCS7": [
+      "UniProt loc med conf",
+      "GO CC med conf"
+    ],
+    "SOX2": [
+      "Structure with Ligand",
+      "UniProt Ubiquitination",
+      "Database Ubiquitination"
+    ],
+    "SOX5": [
+      "Database Ubiquitination"
+    ],
+    "SOX6": [
+      "UniProt Ubiquitination",
+      "Database Ubiquitination"
+    ],
+    "SOX9": [
+      "UniProt Ubiquitination",
+      "Database Ubiquitination"
+    ],
+    "SP1": [
+      "UniProt Ubiquitination",
+      "Database Ubiquitination",
+      "Half-life Data",
+      "Small Molecule Binder"
+    ],
+    "SP7": [
+      "UniProt Ubiquitination",
+      "Database Ubiquitination"
+    ],
+    "SPRED1": [
+      "Structure with Ligand",
+      "UniProt loc high conf",
+      "GO CC high conf",
+      "UniProt Ubiquitination",
+      "Database Ubiquitination"
+    ],
+    "SPRY2": [
+      "GO CC high conf",
+      "Database Ubiquitination",
+      "Half-life Data"
+    ],
+    "SPTBN1": [
+      "UniProt loc high conf",
+      "GO CC high conf",
+      "UniProt loc med conf",
+      "Database Ubiquitination",
+      "Half-life Data"
+    ],
+    "SPTLC1": [
+      "Structure with Ligand",
+      "High-Quality Ligand",
+      "UniProt SigP or TMHMM",
+      "Database Ubiquitination",
+      "Half-life Data",
+      "Small Molecule Binder"
+    ],
+    "SRGAP1": [
+      "Database Ubiquitination",
+      "Half-life Data"
+    ],
+    "STAT1": [
+      "High-Quality Ligand",
+      "Druggable Family",
+      "UniProt Ubiquitination",
+      "Database Ubiquitination",
+      "Half-life Data",
+      "Small Molecule Binder"
+    ],
+    "SWAP70": [
+      "GO CC high conf",
+      "UniProt loc med conf",
+      "Human Protein Atlas loc",
+      "Database Ubiquitination",
+      "Half-life Data"
+    ],
+    "TAGLN2": [
+      "GO CC high conf",
+      "UniProt Ubiquitination",
+      "Database Ubiquitination",
+      "Half-life Data"
+    ],
+    "TBX19": [
+      "Database Ubiquitination"
+    ],
+    "TGFB2": [
+      "Advanced Clinical",
+      "GO CC high conf",
+      "UniProt loc med conf",
+      "UniProt SigP or TMHMM",
+      "Database Ubiquitination",
+      "Small Molecule Binder",
+      "Approved Drug"
+    ],
+    "TGFBR2": [
+      "Structure with Ligand",
+      "High-Quality Ligand",
+      "Druggable Family",
+      "UniProt loc high conf",
+      "GO CC high conf",
+      "UniProt SigP or TMHMM",
+      "Human Protein Atlas loc",
+      "Database Ubiquitination",
+      "Small Molecule Binder"
+    ],
+    "TGIF2": [
+      "Database Ubiquitination"
+    ],
+    "TH": [
+      "Approved Drug",
+      "Structure with Ligand",
+      "Med-Quality Pocket",
+      "Druggable Family",
+      "Small Molecule Binder"
+    ],
+    "TIRAP": [
+      "UniProt loc high conf",
+      "GO CC high conf",
+      "UniProt Ubiquitination"
+    ],
+    "TKT": [
+      "Structure with Ligand",
+      "High-Quality Ligand",
+      "High-Quality Pocket",
+      "Druggable Family",
+      "UniProt Ubiquitination",
+      "Database Ubiquitination",
+      "Half-life Data",
+      "Small Molecule Binder"
+    ],
+    "TLN2": [
+      "UniProt loc med conf",
+      "GO CC med conf",
+      "Database Ubiquitination",
+      "Half-life Data"
+    ],
+    "TMEM9B": [
+      "UniProt SigP or TMHMM",
+      "Database Ubiquitination",
+      "Half-life Data"
+    ],
+    "TMSB4X": [
+      "Structure with Ligand",
+      "GO CC high conf",
+      "UniProt Ubiquitination",
+      "Database Ubiquitination",
+      "Half-life Data"
+    ],
+    "TNFSF13": [
+      "Structure with Ligand",
+      "Advanced Clinical",
+      "UniProt loc high conf",
+      "GO CC high conf",
+      "Database Ubiquitination",
+      "Advanced Clinical"
+    ],
+    "TNKS2": [
+      "Advanced Clinical",
+      "Structure with Ligand",
+      "High-Quality Ligand",
+      "Med-Quality Pocket",
+      "Druggable Family",
+      "UniProt loc med conf",
+      "UniProt Ubiquitination",
+      "Database Ubiquitination",
+      "Small Molecule Binder"
+    ],
+    "TP53": [
+      "Advanced Clinical",
+      "Structure with Ligand",
+      "High-Quality Ligand",
+      "Med-Quality Pocket",
+      "Druggable Family",
+      "UniProt Ubiquitination",
+      "Database Ubiquitination",
+      "Small Molecule Binder",
+      "Advanced Clinical"
+    ],
+    "TPD52L2": [
+      "Database Ubiquitination",
+      "Half-life Data"
+    ],
+    "TPM3": [
+      "Database Ubiquitination",
+      "Half-life Data"
+    ],
+    "TRAPPC2B": [
+      "Database Ubiquitination"
+    ],
+    "TRIB1": [
+      "Human Protein Atlas loc",
+      "Database Ubiquitination",
+      "Small Molecule Binder"
+    ],
+    "TSPAN6": [
+      "UniProt SigP or TMHMM",
+      "GO CC med conf",
+      "Database Ubiquitination",
+      "Half-life Data"
+    ],
+    "TWF1": [
+      "Structure with Ligand",
+      "Database Ubiquitination",
+      "Half-life Data"
+    ],
+    "TWIST1": [
+      "Database Ubiquitination"
+    ],
+    "UBAP2": [
+      "Database Ubiquitination",
+      "Half-life Data"
+    ],
+    "UBE2I": [
+      "Structure with Ligand",
+      "High-Quality Ligand",
+      "UniProt Ubiquitination",
+      "Database Ubiquitination",
+      "Half-life Data",
+      "Small Molecule Binder"
+    ],
+    "VEGFA": [
+      "Structure with Ligand",
+      "High-Quality Ligand",
+      "Med-Quality Pocket",
+      "Approved Drug",
+      "UniProt loc high conf",
+      "GO CC high conf",
+      "UniProt loc med conf",
+      "Small Molecule Binder",
+      "Approved Drug"
+    ],
+    "VEGFC": [
+      "UniProt loc high conf",
+      "GO CC high conf",
+      "UniProt SigP or TMHMM",
+      "Advanced Clinical"
+    ],
+    "VIM": [
+      "High-Quality Pocket",
+      "Advanced Clinical",
+      "UniProt loc med conf",
+      "GO CC med conf",
+      "UniProt Ubiquitination",
+      "Database Ubiquitination",
+      "Half-life Data"
+    ],
+    "VPS51": [
+      "Database Ubiquitination",
+      "Half-life Data"
+    ],
+    "WNK1": [
+      "Structure with Ligand",
+      "High-Quality Ligand",
+      "Druggable Family",
+      "UniProt Ubiquitination",
+      "Database Ubiquitination",
+      "Half-life Data",
+      "Small Molecule Binder"
+    ],
+    "WNT1": [
+      "UniProt loc high conf",
+      "GO CC high conf",
+      "UniProt SigP or TMHMM"
+    ],
+    "XIAP": [
+      "Structure with Ligand",
+      "High-Quality Ligand",
+      "Druggable Family",
+      "UniProt Ubiquitination",
+      "Database Ubiquitination",
+      "Half-life Data",
+      "Small Molecule Binder"
+    ],
+    "XPO6": [
+      "GO CC high conf",
+      "Database Ubiquitination",
+      "Half-life Data"
+    ],
+    "YES1": [
+      "Approved Drug",
+      "High-Quality Ligand",
+      "Druggable Family",
+      "GO CC high conf",
+      "UniProt loc med conf",
+      "Human Protein Atlas loc",
+      "Literature",
+      "Database Ubiquitination",
+      "Half-life Data",
+      "Small Molecule Binder"
+    ],
+    "YWHAZ": [
+      "Structure with Ligand",
+      "High-Quality Ligand",
+      "Med-Quality Pocket",
+      "Database Ubiquitination",
+      "Half-life Data",
+      "Small Molecule Binder"
+    ],
+    "ZNF395": [
+      "Database Ubiquitination"
+    ]
+  },
+  "approved_drug": [
+    "ACVR2B",
+    "ANGPT2",
+    "ATP1A2",
+    "AXL",
+    "BCL2",
+    "BRAF",
+    "CDK4",
+    "CDK6",
+    "CFTR",
+    "COL5A1",
+    "DDC",
+    "DHFR",
+    "DNMT1",
+    "DNMT3A",
+    "EGFR",
+    "EGLN3",
+    "EPAS1",
+    "ESR1",
+    "FN1",
+    "HCN4",
+    "HDAC11",
+    "HDAC2",
+    "HDAC4",
+    "HRH1",
+    "IDH1",
+    "IGF1R",
+    "ITGAV",
+    "ITGB3",
+    "JAK1",
+    "KCNJ2",
+    "KRAS",
+    "MAPK11",
+    "MET",
+    "MMP1",
+    "MPL",
+    "MTTP",
+    "NOD2",
+    "PDK4",
+    "PIK3CA",
+    "PPP3CA",
+    "PRKCE",
+    "RARB",
+    "RBX1",
+    "ROCK1",
+    "SCN5A",
+    "TGFB2",
+    "TH",
+    "VEGFA",
+    "YES1"
+  ]
+}

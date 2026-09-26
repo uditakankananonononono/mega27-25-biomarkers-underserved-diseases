@@ -70,3 +70,33 @@ validated-target enrichment (10,000 permutations; miRTarBase v8.0).
 | hsa-miR-375-3p | down | 0.0002 | 0.4640 | cardiac only |
 | hsa-miR-651-5p | up | 0.0002 | 0.8235 | cardiac only |
 | hsa-miR-769-5p | down | 0.0002 | 1.0000 | cardiac only |
+
+
+## 7.6 Gate-(a) association table (machine-generated from results/h2_gate_a_passing.csv)
+All 28 miRNAs passing the frozen screen (KW FDR <= 0.05, |severe-vs-mild| >= 0.5 log2CPM).
+class: CANDIDATE = absent from the frozen literature screen; REPLICATION = named before.
+Medians are log2 CPM per severity group.
+
+| miRNA | FDR | d(sev-mild) | ctrl | mild | mod | sev | class |
+|---|---|---|---|---|---|---|---|
+| hsa-miR-223-3p | 2.71e-08 | -0.52 | 8.72 | 11.58 | 11.40 | 11.05 | REPLICATION |
+| hsa-miR-182-5p | 4.01e-08 | -0.67 | 5.78 | 8.06 | 7.92 | 7.39 | CANDIDATE |
+| hsa-miR-1-3p | 2.22e-05 | +0.57 | 4.44 | 6.93 | 6.85 | 7.49 | CANDIDATE |
+| hsa-miR-206 | 2.93e-05 | -1.35 | 5.08 | 7.74 | 6.77 | 6.39 | CANDIDATE |
+| hsa-miR-30c-5p | 8.54e-05 | +1.76 | 0.00 | 2.38 | 4.21 | 4.15 | CANDIDATE |
+| hsa-miR-1294 | 1.66e-04 | +0.65 | 7.01 | 5.27 | 5.45 | 5.92 | CANDIDATE |
+| hsa-miR-125b-5p | 2.16e-04 | +0.61 | 0.00 | 4.64 | 4.80 | 5.25 | CANDIDATE |
+| hsa-miR-125a-5p | 2.64e-04 | -0.60 | 4.29 | 6.47 | 5.69 | 5.87 | CANDIDATE |
+| hsa-miR-374b-5p | 2.73e-04 | -1.16 | 0.00 | 4.35 | 4.12 | 3.20 | CANDIDATE |
+| hsa-miR-199b-5p | 1.10e-03 | -1.63 | 0.00 | 3.40 | 3.20 | 1.77 | CANDIDATE |
+| hsa-miR-145-5p | 5.34e-03 | +1.68 | 0.00 | 0.00 | 2.69 | 1.68 | CANDIDATE |
+| hsa-miR-20a-3p | 7.03e-03 | -0.59 | 0.00 | 2.37 | 3.45 | 1.78 | CANDIDATE |
+| hsa-miR-769-5p | 8.75e-03 | -1.50 | 0.00 | 4.85 | 3.18 | 3.35 | CANDIDATE |
+| hsa-miR-1285-3p | 9.06e-03 | +3.82 | 4.23 | 0.00 | 2.88 | 3.82 | CANDIDATE |
+| hsa-miR-192-5p | 1.10e-02 | +0.87 | 3.98 | 4.82 | 5.02 | 5.68 | CANDIDATE |
+| hsa-miR-122-5p | 1.62e-02 | +0.61 | 14.75 | 15.36 | 15.21 | 15.97 | CANDIDATE |
+| hsa-miR-223-5p | 1.84e-02 | -0.62 | 8.06 | 9.44 | 8.89 | 8.83 | CANDIDATE |
+| hsa-miR-651-5p | 2.06e-02 | +0.60 | 5.31 | 3.97 | 4.21 | 4.57 | CANDIDATE |
+| hsa-miR-194-5p | 3.28e-02 | +0.99 | 4.11 | 4.79 | 5.33 | 5.78 | CANDIDATE |
+| hsa-miR-375-3p | 4.55e-02 | -0.64 | 6.86 | 8.24 | 7.68 | 7.61 | CANDIDATE |
+| hsa-miR-1301-3p | 4.58e-02 | -1.49 | 2.35 | 5.30 | 4.15 | 3.81 | CANDIDATE |

@@ -74,3 +74,17 @@ established by a verified B-code bijection (each GSM's live
 translated to symbols with an Ensembl BioMart GRCh38 map. miR-375-3p is
 matched through its documented legacy name hsa-miR-375
 (MIMAT0000728, verified against live miRBase). Seed 20260926.
+
+
+## 5.y Compute environment and reproducibility
+All analyses run as committed scripts (scripts/) against byte-hashed
+inputs; every figure-free number in this paper regenerates from the
+repository state at the cited commit. Environment: Python
+3.10.12, NumPy 2.2.6, SciPy
+1.15.3, pandas 2.3.3. Frozen seed 20260926 for
+every stochastic step (CV splits, bootstrap, permutation nulls).
+Permutation tests use (1+b)/(n+1) p-value convention; multiple-testing
+control is Benjamini-Hochberg within each locked family. External
+service responses are stored with sha256 in sources/services/ and
+logged with retrieval timestamps in SERVICE_LEDGER.md (40 distinct
+tools; blocked attempts logged, not counted).

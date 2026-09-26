@@ -36,3 +36,20 @@ instead of documenting it (sections 6-8). The discovery arm then asks the
 question that matters: do the severity-linked miRNAs point, through
 experimentally validated targets, at cardiac remodeling programs visible
 in independent cohorts (section 9).
+
+
+## 2.4 Host biology: the pathway the parasite hijacks
+The KEGG Chagas disease pathway (hsa05142, retrieved with hash into
+sources/services/kegg/) frames the cardiac mechanism this project reads
+in molecular data: T. cruzi invades cardiomyocytes, activates Ca2+
+signaling through cruzipain, oligopeptidase B and trans-sialidase,
+escapes the parasitophorous vacuole via TcTOX, replicates in the cytosol,
+and drives cardiomyocyte hypertrophy while disturbing T-cell responses.
+The pathway's human gene set (102 genes in the retrieved flat file) is
+enriched for calcium-handling, immune and remodeling terms - the same
+axes on which the severity-linked miRNA programs of section 9 land
+(PI3K-Akt, focal adhesion, VEGFA-VEGFR2 among their validated targets).
+This grounding matters for claim discipline: a serum miRNA module that
+tracks severity is biologically plausible exactly to the extent its
+target programs intersect these host processes, and that intersection -
+not the association alone - is what the discovery arm tests.

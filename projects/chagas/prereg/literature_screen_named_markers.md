@@ -24,3 +24,9 @@ Cellular: CD4/CD8 T-cell response profiles, IgG1 serology.
 Any H2 candidate feature matching this list (exact symbol or unambiguous
 synonym, e.g. LGALS3 = galectin-3) is classified as REPLICATION, not new
 discovery. Only features absent from this list can pass gate (c).
+
+## Addendum-B1 extension (2026-09-26): source paper PMID 41574750
+miR-143-3p, miR-223-3p, miR-486-5p, miR-3960, miR-6734-5p, miR-1285-5p,
+miR-10527-5p, miR-1228-5p, miR-30c-3p -> REPLICATION-class (already named
+as ChD/CCC-severity associated). Full 40-DEM list paywalled; residual-risk
+limitation logged in ADDENDUM_2 B1.

@@ -1,0 +1,1079 @@
+I treated this as a verification/weakness pass, not a completion or “win” assessment. I also treated the manuscript itself as the evidentiary source; I did not assume that undocumented repo material exists merely because the manuscript says it does.
+
+1. Scientific/statistical/methodological/presentational weaknesses
+A. P53 is not actually documented as preregistered to the same standard as P51/P52
+
+Severity: major.
+
+The manuscript repeatedly calls P53 “preregistered,” but the reproducibility appendix explicitly identifies only P51 and P52 preregistration commits. 
+
+1-manuscript
+
+More importantly, §12.1 says:
+
+“The arc was approved with GSE227375 … Pre-analysis reconnaissance changed that.”
+
+and then GSE293840 was substituted. The manuscript says this was “parent-approved before any data touch,” but that is not the same thing as documenting a frozen preregistration. 
+
+1-manuscript
+
+Fix: code/data/provenance + rewriting.
+
+You need an auditable P53 preregistration commit with:
+
+timestamp before expression-data inspection,
+
+exact original and substituted cohort decision rule,
+
+exact P53 candidate set,
+
+preprocessing,
+
+selection criterion,
+
+E1/E2 definitions,
+
+stopping rule,
+
+inversion interpretation,
+
+comparator treatment,
+
+seed,
+
+and evidence that the substitution occurred before relevant data were analyzed.
+
+If that record exists, cite it. If it does not, stop calling P53 preregistered and call it a locked/audited analysis instead.
+
+B. The manuscript is internally inconsistent about the number of arcs
+
+The abstract describes P51 and P52 but omits P53; §1 says there are “two preregistered analysis arcs, P51 and P52”; later the manuscript presents P53 as a third preregistered arc. 
+
+1-manuscript +1
+
+Likewise, the abstract says the report runs on four public cohorts, but the manuscript actually uses GSE226260, GSE275334, GSE334857, GSE251872, and GSE293840. 
+
+1-manuscript
+
+Fix: rewriting.
+
+This is straightforward but important. A reviewer should never have to infer which arcs actually count.
+
+C. “Powered” is not demonstrated
+
+P53 is repeatedly called the “powered” ME/CFS-contrast test, and the manuscript says n=168 is “six times P52’s training power.” 
+
+1-manuscript
+
+But six times the sample size is not a power analysis. No target effect size, alpha, power, detectable effect, or calculation is presented.
+
+And the relevant final question is not merely ME/CFS-vs-healthy cfRNA separation. The hard question is transport from cfRNA ME/CFS to cellular ME/CFS/Long COVID, where the evaluation arm is still small.
+
+Fix: rewriting if “powered” is removed.
+Fixable with computation if you can perform a genuinely prespecified/clearly labeled retrospective power or detectable-effect analysis—but it should not be used to retroactively certify the failed endpoint.
+
+Better language: “larger-sample P53 analysis” or “higher-powered relative to P52,” not simply “powered.”
+
+D. The P53 E2 result is overinterpreted as an “inversion artifact”
+
+This is one of the most important scientific overstatements.
+
+The manuscript observes:
+
+E1 fails: cfRNA-trained L9 does not transport to cellular ME/CFS.
+
+E2 is significant: ME/CFS vs Long COVID differs, g = −0.929.
+
+Direction is opposite to the training contrast.
+
+It then calls this an “inversion artifact of cross-analyte training” and says it “expos[es] a transport artifact class.” 
+
+1-manuscript
+
+But the data establish directional discordance plus failure of transport. They do not establish the causal mechanism as an “artifact.” Alternative explanations include:
+
+genuine biology differing between cfRNA and cellular RNA,
+
+cell-composition differences,
+
+analyte-specific biology,
+
+cohort differences,
+
+technical/platform effects,
+
+chance,
+
+or some combination.
+
+Fix: rewriting, unless you can produce an independent validation experiment specifically demonstrating the artifact mechanism.
+
+The defensible claim is:
+
+“The cfRNA-trained signature failed transport and showed an oppositely directed cellular contrast; the mechanism of this discordance is unresolved.”
+
+That is substantially stronger scientifically than pretending the mechanism is known.
+
+E. “Cross-assay replication” is too strong
+
+§15.1 calls P51:
+
+“a real, preregistered, cross-assay replication”
+
+But this is not conventional replication. Training and evaluation differ in:
+
+cohort,
+
+disease/control composition,
+
+tissue/cell mixture,
+
+assay platform,
+
+gene availability,
+
+and module representation.
+
+Training is whole-blood RNA-seq against recovered controls; evaluation is PBMC NanoString against healthy controls. 
+
+1-manuscript
+
+The evaluation is valuable transport validation, but calling it “replication” risks implying biological replication of the same contrast.
+
+Fix: rewriting.
+
+Use “cross-cohort, cross-assay transport validation” or similar.
+
+F. The actual P51 “positive” is much narrower than the prose sometimes makes it
+
+The signature is selected from 195 measurable genes in the Hallmark oxphos module, but only 12 genes survive onto the 635-gene evaluation panel. 
+
+1-manuscript
+
+Thus the evaluated object is not literally the same 195-gene score. It is a 12-gene projection of the selected module.
+
+That is an important methodological fact and should be foregrounded, not buried in §5.2/limitations.
+
+Fix: rewriting, plus ideally a code-produced sensitivity analysis.
+
+Useful evidence would be:
+
+the exact 12 genes,
+
+their locked direction,
+
+score correlation with the full training module if calculable,
+
+sensitivity to alternative reasonable intersection rules,
+
+and per-gene contribution.
+
+The existing post-hoc table helps, but does not solve the construct-validity issue.
+
+G. The evaluation panel was not designed to measure oxidative phosphorylation
+
+The manuscript admits that the 635-gene NanoString panel is immune-focused and that metabolic coverage is incidental. 
+
+1-manuscript
+
+That means E1 is not a broad replication of an oxphos transcriptomic state. It is a test of whether a small available subset retains a compatible signal.
+
+This is an inherent limitation of the available evaluation cohort.
+
+Fix: cannot be fully fixed without another appropriately measured cohort.
+You can make the limitation much clearer and perhaps perform sensitivity analyses within the available genes.
+
+H. P51 selection has acknowledged anti-conservatism that materially affects the training evidence
+
+The manuscript correctly admits that direction was chosen from the data and the permutation was one-sided in that observed direction. 
+
+1-manuscript
+
+That means p=.0432 is not a clean prespecified two-sided selection result.
+
+The manuscript sometimes still uses language such as “selected under a frozen protocol” without immediately reminding the reader that the frozen protocol itself contained this statistical weakness.
+
+The E1 result is protected much better because evaluation is independent, but the training selection evidence should not be described as if it were pristine.
+
+Fix: rewriting.
+A useful code analysis would be a two-sided post-hoc sensitivity result, clearly labeled non-preregistered, but it cannot retroactively replace P51's original result.
+
+I. The nine-module selection problem deserves explicit multiplicity discussion
+
+P51 tests nine candidate modules and selects one. The manuscript reports individual permutation p-values, with L7 at .0432. 
+
+1-manuscript
+
+Even though the ultimate evaluation was locked and independent, a reader needs to distinguish:
+
+evidence that one of nine modules looked promising in training, from
+
+evidence that the selected module transports to a new cohort.
+
+The independent E1 protects the latter much more strongly than the former.
+
+The paper currently makes the latter distinction implicitly but does not quantitatively explain it.
+
+Fix: rewriting plus optional code.
+
+A simple permutation-of-the-whole-selection-procedure or maximum-statistic analysis would quantify how unusual “best of nine” is under the null. Do not substitute that for the preregistered result; report it as a sensitivity analysis.
+
+J. LOPO “37/37 stability” is a weak stability criterion
+
+The manuscript repeatedly emphasizes 37/37 sign stability. 
+
+1-manuscript
+
+But the criterion is merely sign of D, not:
+
+selection stability,
+
+magnitude stability,
+
+rank stability,
+
+p-value stability,
+
+gene membership stability,
+
+or predictive performance.
+
+With a tiny sample, an effect can retain its sign while its magnitude changes drastically.
+
+Fix: code/data.
+
+Useful locked/post-hoc diagnostics:
+
+LOPO effect-size distribution,
+
+confidence interval,
+
+module ranking across folds,
+
+number of folds in which the module actually meets the selection threshold,
+
+influence diagnostics.
+
+Do not retroactively make these selection criteria.
+
+K. P52 does not establish a biological null
+
+The manuscript does mostly acknowledge this, but §6.5 still says:
+
+“there is simply no Hallmark-scale signal … at this n.”
+
+That is acceptable if strictly read as a study-specific result, but the surrounding language risks turning it into evidence about ME/CFS biology.
+
+The 27-subject cohort, with a severe platform imbalance, cannot exclude moderate effects.
+
+Fix: rewriting.
+
+Explicitly say “no module met the preregistered threshold in this cohort”, rather than “no signal” unless qualified by detectable-effect limitations.
+
+L. P52 platform confounding remains serious despite stratification
+
+This is correctly acknowledged but understated.
+
+The platform-by-disease composition is 3/7 and 9/8. 
+
+1-manuscript
+
+Within-platform z-scoring and stratified permutation preserve the null appropriately, but they cannot create information that is absent. The first platform has only three cases.
+
+If biological status and platform are imbalanced within strata, estimating a disease effect is intrinsically unstable.
+
+The manuscript itself says this, but the scientific consequence deserves stronger treatment. 
+
+1-manuscript
+
+Fix: inherent limitation, partially characterizable computationally.
+
+The leave-one-platform-out analysis should be shown quantitatively rather than merely mentioned.
+
+M. P53 has analogous batch/site confounding that is not fully characterized
+
+GSE293840 spans three sequencing batches and three collection sites. The manuscript says it uses within-batch z-scoring and batch-stratified permutation, but does not establish whether site and batch are independent, whether disease composition is balanced within site/batch, or whether collection-site effects could explain the apparent universal signal. 
+
+1-manuscript
+
+Fix: code/data.
+
+Report:
+
+disease × batch table,
+
+disease × site table,
+
+batch × site table,
+
+per-stratum sample sizes,
+
+per-stratum effect estimates,
+
+and whether site is nested/confounded with batch.
+
+If site is perfectly confounded with disease, this becomes an unresolved limitation.
+
+N. “All nine modules are signal” is too strong
+
+The heading itself—“at n=168, everything is signal”—is rhetorically stronger than the result.
+
+The actual result is nine nominally significant module-level contrasts, p=.0008–.011. 
+
+1-manuscript
+
+Because Hallmark modules overlap heavily biologically and genetically, nine significant modules do not mean nine independent signals.
+
+They may represent one underlying transcriptional axis, cell composition, batch-associated structure, or correlated gene-set response.
+
+Fix: rewriting plus code if desired.
+
+Show module-module correlations and, ideally, an enrichment/latent-axis analysis. Do not describe them as nine independent discoveries.
+
+O. P53’s “power lesson” is not established by the design
+
+The paper says the contrast between P52 and P53 is the “power lesson.” But P52 and P53 differ in:
+
+cohort,
+
+analyte,
+
+sample size,
+
+batch structure,
+
+possibly disease phenotype,
+
+and technical platform.
+
+Therefore the change from null to strong signal cannot be attributed to sample size alone.
+
+Fix: rewriting.
+
+Call it “a larger-cohort contrast”, not a demonstrated power lesson.
+
+P. “Six times P52’s training power” is mathematically misleading
+
+168 is approximately 6.2×27 in sample count, but statistical power does not scale linearly with n.
+
+Fix: rewriting.
+
+“Six-fold larger sample” is accurate. “Six times the power” is not supported.
+
+Q. The healthy-control E1 result is vulnerable to control choice
+
+The manuscript appropriately says the evaluation healthy arm is not recovered-from-infection. 
+
+1-manuscript
+
+This is actually a major interpretive limitation, because the P51 training contrast was PASC vs recovered, whereas the E1 evaluation is Long COVID vs healthy.
+
+The observed effect could therefore reflect differences between chronically ill participants and healthy people rather than the PASC-vs-recovered contrast.
+
+Fix: inherent limitation unless a recovered-control cohort measured on a compatible panel can be obtained.
+
+This is one reason “cross-assay replication” should be changed to “transport.”
+
+R. No demographic/clinical confounding analysis is presented
+
+There is essentially no reporting in the manuscript of:
+
+age,
+
+sex,
+
+race/ethnicity,
+
+vaccination status,
+
+time since infection,
+
+Long COVID duration,
+
+symptom burden,
+
+medications,
+
+comorbidities,
+
+disease severity,
+
+ME/CFS diagnostic criteria/details,
+
+or matching between groups.
+
+Given expression data, these are potentially major sources of variation.
+
+Fix: code/data if the GEO metadata contain these variables.
+Inherent limitation for variables unavailable in the public data.
+
+At minimum, the manuscript needs a cohort-characteristics table and an explicit statement of which covariates were unavailable.
+
+S. Cell-composition confounding is central but insufficiently tested
+
+The manuscript itself highlights whole blood vs PBMC/cfRNA differences, but there is no convincing decomposition of whether the L7 signal is:
+
+intracellular transcriptional state,
+
+cell-type abundance,
+
+or some combination.
+
+The “cross-cell-mixture” transport is actually evidence of robustness of a score, not proof of a cell-intrinsic pathway state.
+
+Fix: computationally, to some extent.
+
+If suitable marker genes are available, cell-composition proxies/deconvolution or sensitivity analyses could help. But a definitive cell-intrinsic interpretation requires richer measurements.
+
+T. “Broad-based across its panel genes” is somewhat overstated
+
+The manuscript says 10/12 genes have negative effects, which is useful. But the effects are heterogeneous, ranging from −1.39 to near zero, and two are positive. 
+
+1-manuscript
+
+“Broad-based” is defensible descriptively; “coherent module-level down-shift” is more interpretive.
+
+Fix: minor rewriting. Report the distribution and avoid implying every gene independently supports the effect.
+
+U. The post-hoc per-gene analysis has no multiplicity correction
+
+The paper explicitly calls this analysis descriptive, which helps. 
+
+1-manuscript
+
+Still, listing 12 individual effect sizes invites gene-level interpretation. It should either:
+
+remain clearly descriptive, or
+
+include uncertainty intervals and explicitly say no gene-level inferential claims are made.
+
+Fix: rewriting; CIs can be added computationally.
+
+V. The comparator is methodologically asymmetric
+
+The paper correctly acknowledges that the six-gene comparator was selected from the same source cohort and therefore has a different selection history. 
+
+1-manuscript
+
+However, calling the evaluation comparison “fair like-for-like” is only true at the scoring machinery level. It is not fair in terms of feature-selection provenance.
+
+That asymmetry matters substantially when interpreting:
+
+g = 0.958 vs 1.051 for E1,
+
+g = 0.259 vs 0.776 for E2.
+
+Fix: rewriting.
+
+Do not frame the comparator as an equivalent independently derived benchmark.
+
+W. The “published comparator fails” language risks obscuring what actually failed
+
+The six-gene panel does not fail universally. On the E2 contrast its g=.776 misses the preregistered >.8 bar by a small amount, while it has a significant p=.0473. 
+
+1-manuscript
+
+The exact statement should be:
+
+“It did not meet the preregistered combined effect-size criterion.”
+
+Not “the published panel fails” without specifying the criterion.
+
+Fix: rewriting.
+
+X. The fixed-list p=.0081 is vulnerable to post-selection and the manuscript should be even clearer about its inferential status
+
+The manuscript correctly recognizes this. 
+
+1-manuscript
+
+But calling it “nominally strong” is unnecessary and potentially confusing. The relevant fact is that the list was selected in the same cohort.
+
+Fix: rewriting only.
+
+Y. The statement that published lists “do not survive contact with independent cohorts” is broader than the tested evidence
+
+Only one six-gene panel was tested, and one specific NanoString cohort was used.
+
+That cannot establish that “published fixed gene lists” generally do not survive independent cohorts.
+
+Fix: rewriting.
+
+Use “this published six-gene panel did not meet the locked criterion in this evaluation cohort.”
+
+Z. The manuscript makes a universal claim from one CXCL8 coverage failure
+
+§4 concludes:
+
+“fixed lists discovered in whole blood do not automatically exist in sorted-cell compartments.”
+
+The underlying example supports that transfer cannot be assumed, not a general law about fixed lists.
+
+Fix: rewriting.
+
+AA. “Only public cohort” claims require a systematic search
+
+The manuscript repeatedly says GSE275334 is “the only public cohort” containing LC + ME/CFS on one platform. 
+
+1-manuscript
+
+But §23 explicitly says the literature position is not a systematic review. 
+
+1-manuscript
+
+Therefore “only public cohort” is not adequately supported unless the repository search was systematically documented.
+
+Fix: either perform/document a reproducible GEO/ArrayExpress/etc. search or rewrite to:
+
+“the only such public cohort identified by our search.”
+
+This is a meaningful distinction.
+
+AB. The “field needs X more than Y” conclusion is too sweeping
+
+§15.2 says the field needs a powered two-disease cohort “more than it needs another single-disease signature.” 
+
+1-manuscript
+
+That is an opinion/research-priority judgment, not a result of this study.
+
+Fix: rewriting.
+
+Say:
+
+“These results motivate prioritizing…”
+
+rather than claiming what the field objectively needs.
+
+AC. The “three attempts” are not comparable enough to summarize as three failures of the same hypothesis
+
+P51 tests a cellular signature selected from PASC-vs-recovered whole blood.
+P52 trains nine modules on a tiny post-infectious ME/CFS PBMC cohort.
+P53 trains on cfRNA and evaluates cellular data.
+
+They are deliberately different falsification attempts, but they do not form three independent tests of the same statistical hypothesis.
+
+Fix: rewriting.
+
+The cumulative narrative should be “three distinct attempts with different failure modes,” not “three replications of the same null.”
+
+AD. “The failure indicts the signature strategy” is too strong
+
+The P52 interpretation says its failure “indicts this signature strategy.” 
+
+1-manuscript
+
+A 27-person study with platform confounding does not indict the strategy generally.
+
+Fix: rewriting.
+
+“This implementation of the nine-module strategy did not identify a qualifying signal in this cohort.”
+
+AE. The manuscript sometimes turns null results into positive methodological lessons without enough evidentiary separation
+
+Examples:
+
+“cross-analyte transport can manufacture significant contrasts”
+
+“exposing a transport artifact class”
+
+“the field’s missing instrument…”
+
+These are plausible hypotheses, but not experimentally demonstrated by this dataset.
+
+Fix: rewriting.
+To establish the mechanism would require targeted additional analyses or independent validation.
+
+AF. External annotation is much more prominent than its evidentiary value warrants
+
+The manuscript devotes substantial space to:
+
+STRING,
+
+g:Profiler,
+
+DGIdb,
+
+Pharos,
+
+ClinVar,
+
+miRTarBase,
+
+GWAS counts,
+
+PubMed co-mentions,
+
+PRIDE,
+
+Open Targets, etc. 
+
+1-manuscript
+
+The paper correctly says these are not independent replication, but the sheer volume risks creating an impression of corroboration.
+
+Most are annotation/context, not evidence that the P51 signature is valid or specific.
+
+Fix: rewriting/presentation.
+
+Compress or clearly label them as exploratory annotation. Do not let service count become a proxy for scientific validation.
+
+AG. “Independent resonance” is a potentially misleading heading
+
+g:Profiler on the same selected 12 genes is not independent biological evidence. It is a transformation/annotation of the selected gene set.
+
+PRIDE is genuinely orthogonal, but the manuscript does not demonstrate that the PRIDE result reproduces the exact direction, cohort, genes, or effect.
+
+Fix: rewriting.
+
+Call this “orthogonal contextual evidence,” not “independent resonance,” unless the independence criterion is explicitly defined.
+
+AH. The g:Profiler enrichment is partly tautological
+
+The L7 genes come from an oxidative-phosphorylation Hallmark module. Finding metabolic/pyruvate/organic-acid enrichment among them is not surprising.
+
+It supports annotation coherence, but it is not independent confirmation of the discovery.
+
+Fix: rewriting.
+
+AI. The druggability analysis is scientifically peripheral
+
+The manuscript spends substantial space on Tclin/Tchem/Tbio and drug-gene interaction counts despite explicitly saying the project does not have a therapeutic hypothesis. 
+
+1-manuscript
+
+This adds narrative bulk without advancing the central scientific question.
+
+Fix: rewriting/presentation.
+
+It can remain as future-hypothesis context, but should be clearly secondary.
+
+AJ. The manuscript has no conventional references/bibliography
+
+The document names:
+
+Nature Immunology 2025,
+
+JCI Insight,
+
+Walitt,
+
+PRIDE,
+
+OpenFDA,
+
+Pharos,
+
+g:Profiler,
+
+STRING,
+
+etc.
+
+But there is no normal reference list in the supplied manuscript. The final page is §23 “Related work.” 
+
+1-manuscript
+
+For a research manuscript this is a substantial presentation/reproducibility deficiency.
+
+Fix: rewriting/documentation.
+
+Add complete references with accession numbers, DOI/PMID where applicable, versions/access dates for external services, and exact source publications for each cohort.
+
+AK. The cohort characteristics are insufficient for a research manuscript
+
+There is no conventional Table 1 describing cohorts.
+
+At minimum, the reader needs:
+
+n by group,
+
+age,
+
+sex,
+
+disease duration,
+
+relevant clinical definitions,
+
+assay,
+
+tissue/analyte,
+
+platform,
+
+collection site/batch,
+
+and available covariates.
+
+Fix: data extraction + writing.
+
+This is one of the highest-value additions you can make without changing the analysis.
+
+AL. The statistical uncertainty around the main effect sizes is underreported
+
+The paper reports p and Hedges g but generally not confidence intervals for:
+
+P51 E1,
+
+P51 E2,
+
+P53 E1,
+
+P53 E2.
+
+A manuscript built around small cohorts should show uncertainty, not just point estimates and permutation p-values.
+
+Fix: code.
+
+Add bootstrap/permutation-compatible CIs or appropriate analytic CIs, with exact method stated. Do not alter the preregistered tests; these can be descriptive uncertainty estimates.
+
+AM. The manuscript lacks a clear participant/sample-flow diagram
+
+GSE226260 has 103 libraries collapsing to 37 donors. GSE275334 has its own selection. Other datasets have platform/batch/sample filtering.
+
+The prose is auditable, but a flow diagram would make exclusions and person-level independence much easier to inspect.
+
+Fix: rewriting/figure generation.
+
+AN. The paper needs a single master table of all analyses
+
+Currently the reader has to reconstruct the program from many sections.
+
+A compact table should contain:
+
+Arc	Train	Evaluation	n	analyte	selection	E1	E2	status
+
+This would sharply reduce ambiguity about what was actually preregistered and what was exploratory.
+
+Fix: rewriting.
+
+AO. The phrase “fully preregistered program” is presently too broad
+
+Because P53's preregistration provenance is not documented in the supplied manuscript, and because the paper contains multiple post-hoc analyses, the phrase is too categorical. 
+
+1-manuscript
+
+The arcs can be preregistered; the entire manuscript obviously is not.
+
+Fix: rewriting unless P53 documentation exists.
+
+AP. The “single execution” claim needs stronger computational provenance
+
+The manuscript says scripts were executed once, fixed seed, JSON committed. 
+
+1-manuscript
+
+That is good, but for a verification manuscript you should ideally provide:
+
+environment lock,
+
+Python/package versions,
+
+OS/container,
+
+exact commit of data,
+
+exact script commit,
+
+command,
+
+result hash,
+
+and ideally a fresh-clone reproduction record.
+
+Otherwise “reproducible” is asserted more than demonstrated.
+
+Fix: code/reproducibility infrastructure.
+
+AQ. The P52 bug disclosure is good, but the relationship between the buggy and corrected code needs stronger auditability
+
+The paper says the gzip bug occurred before output and the corrected script produced the single allowed execution. 
+
+1-manuscript
+
+A reviewer will want to know:
+
+exactly what the bug was,
+
+why it could not affect statistical logic,
+
+that no expression-derived output was generated before correction,
+
+and that the corrected code was locked before execution.
+
+Fix: rewriting + commit-level evidence.
+
+AR. The “no clinical test” wording is correct, but “chronic-state metabolic axis” may still sound more biological than demonstrated
+
+The strongest evidence is a module score difference. It does not demonstrate a physiological “axis” as a latent biological construct.
+
+Fix: minor rewriting.
+
+“Expression signature associated with chronic illness” is safer than “chronic-state metabolic axis.”
+
+AS. The manuscript does not establish clinical specificity
+
+It says so explicitly, which is good. But it should also explicitly say that healthy-control discrimination is not equivalent to:
+
+diagnosis,
+
+classification against other diseases,
+
+sensitivity/specificity,
+
+or incremental value beyond clinical criteria.
+
+Fix: rewriting.
+
+AT. The manuscript does not report predictive metrics
+
+There is no:
+
+ROC/AUC,
+
+sensitivity/specificity,
+
+calibration,
+
+threshold,
+
+PPV/NPV,
+
+or decision analysis.
+
+This is not a flaw if the preregistration deliberately defined effect-size testing rather than prediction. But the discussion occasionally uses “biomarker” terminology, making the absence worth explicitly stating.
+
+Fix: inherent to the chosen estimand; add a sentence explaining that no diagnostic classifier was evaluated.
+
+AU. The paper's “benchmark/discovery not met” statement is good, but it should not call the E1 result a “discovery” anywhere else
+
+The manuscript mostly respects this, but words such as “one positive,” “real,” “replication,” “coherent,” and “signal” cumulatively make it sound closer to a discovery than the gate status admits.
+
+Fix: rewriting.
+
+2. Claims I would specifically change
+
+These are the most important overstatements.
+
+“a real, preregistered, cross-assay replication”
+
+Too strong.
+
+Replace with:
+
+“a preregistered cross-cohort, cross-assay transport result.”
+
+1-manuscript
+
+“robust, transportable chronic-illness metabolic axis”
+
+Too strong as a biological interpretation.
+
+Better:
+
+“a reproducible expression-module association with Long COVID relative to healthy controls in the evaluated cohorts.”
+
+“powered ME/CFS-contrast test”
+
+Unsupported without a formal power argument.
+
+Use “larger-sample ME/CFS-contrast test.”
+
+“everything is signal”
+
+Too rhetorical.
+
+Use:
+
+“all nine candidate modules met the nominal training threshold.”
+
+“the power lesson”
+
+Not established.
+
+Use:
+
+“The larger cohort yielded detectable module-level differences that were absent in the smaller P52 cohort.”
+
+“inversion artifact”
+
+Mechanism not established.
+
+Use:
+
+“oppositely directed cellular contrast following cfRNA training.”
+
+“exposing a transport artifact class”
+
+Generalization exceeds one experiment.
+
+Use:
+
+“raising the possibility that cross-analyte transport can generate directionally discordant contrasts.”
+
+“genuine, citable negative”
+
+Too categorical for an exploratory/unvalidated E2 finding.
+
+Use:
+
+“a preregistered negative for the specified transport strategy.”
+
+“post-selected signal exactly where it was discovered”
+
+Reasonable, but “textbook signature of selection optimism” is rhetorical. 
+
+1-manuscript
+
+Use neutral statistical language.
+
+“the field needs…”
+
+Change to “these results motivate…”
+
+“the only public cohort”
+
+Change to “the only public cohort identified by our documented search,” unless a systematic search actually establishes exclusivity.
+
+3. One particularly important conceptual correction
+
+The paper currently has a slightly too neat narrative:
+
+P51: positive against healthy, negative against ME/CFS
+→ P52: small cohort null
+→ P53: bigger cohort signal but inverted
+→ therefore cross-analyte transport is the problem.
+
+The actual evidence is messier:
+
+P51 demonstrates that a selected module can produce a statistically significant score difference in a different cohort/platform, but specificity remains unresolved.
+
+P52 fails to find a qualifying signal in a tiny, platform-confounded cohort.
+
+P53 finds a strong cfRNA ME/CFS-vs-healthy signal, but that selected cfRNA signature does not transport to cellular ME/CFS and shows an opposite-direction LC-vs-ME/CFS contrast.
+
+That is scientifically interesting. But the mechanism of the P53 discordance remains unknown.
+
+The manuscript will actually become more credible if it stops one step short of explaining it.
+
+4. What is fixable vs inherently unresolved
+Highest-priority fixes that are realistically achievable
+
+Code/data:
+
+Establish the actual P53 preregistration provenance.
+
+Produce cohort-characteristics tables.
+
+Produce batch/site/platform × disease contingency tables.
+
+Quantify P51 LOPO effect-size stability rather than only sign stability.
+
+Add uncertainty intervals for major effects.
+
+Show P52 leave-one-platform-out results quantitatively.
+
+Characterize P53 module correlations rather than implying nine independent signals.
+
+Add exact sample-flow/exclusion accounting.
+
+Provide full computational environment/reproduction metadata.
+
+If available, test demographic/clinical covariates descriptively without altering locked analyses.
+
+Rewriting:
+
+Remove “replication.”
+
+Remove/qualify “powered.”
+
+Remove “everything is signal.”
+
+Remove “inversion artifact.”
+
+Remove “field needs.”
+
+Remove universal claims about published gene panels.
+
+Make P51's 12-gene evaluation projection explicit.
+
+Make healthy-vs-recovered control mismatch prominent.
+
+Make P52's low power/platform confounding more explicit.
+
+Reframe annotation as context, not corroboration.
+
+Add a conventional references section.
+
+Correct the four-vs-five cohorts and two-vs-three arcs inconsistencies.
+
+Add a master analysis table and cohort table.
+
+Limitations that cannot be honestly “fixed” with the current resources
+
+Lack of an appropriately powered LC-vs-ME/CFS cohort measured on the same platform.
+
+Lack of recovered-from-infection controls in GSE275334.
+
+Limited metabolic coverage of the NanoString panel.
+
+Whole-blood/PBMC/cfRNA analyte and cell-composition differences.
+
+Small ME/CFS evaluation arm.
+
+Residual platform confounding in P52 if the design is intrinsically confounded.
+
+Inability to establish biological mechanism from transcriptomic association alone.
+
+Lack of independent wet-lab validation.
+
+Lack of clinical diagnostic validation.
+
+Inability to establish that the P53 inversion is mechanistically an “artifact.”
+
+Those should remain as explicit unresolved limitations, not be papered over.
+
+5. One thing I would not criticize
+
+The manuscript is right to keep the failed gates visible rather than manufacturing a positive. The front-matter gate statement is unusually clear about the 50-page failure, record-unit counting, service-count ambiguity, and the open benchmark/discovery endpoint. 
+
+1-manuscript
+
+Likewise, explicitly retaining the P51 anti-conservatism rather than silently rerunning it is methodologically preferable. 
+
+1-manuscript
+
+And the decision not to touch GSE275334 after P52's preregistered stopping rule is internally coherent provided the preregistration really contained that stopping rule. 
+
+1-manuscript
+
+Those are strengths of the research record, not reasons to inflate the scientific conclusion.
+
+6. Would it honestly represent the work after the fixes?
+
+Yes — with an important qualification.
+
+After the changes above, I think the manuscript could honestly represent the work as a transparent preregistered computational evaluation with one limited positive transport result and multiple negative/indeterminate ME/CFS-specificity results.
+
+I would not represent it as:
+
+a validated Long COVID biomarker paper,
+
+a successful ME/CFS discriminator,
+
+a demonstrated cross-analyte artifact study,
+
+a powered specificity study,
+
+or an independently replicated biological discovery.
+
+The strongest defensible scientific contribution is narrower:
+
+A locked module-selection/transport program found an oxidative-phosphorylation expression association that transported from whole blood to a limited PBMC NanoString panel for Long COVID versus healthy controls, but the signal did not distinguish Long COVID from ME/CFS; subsequent ME/CFS-focused analyses failed to establish a transported disease-specific signature, including a larger cfRNA-to-cellular attempt whose direction was discordant.
+
+That is a legitimate research result even though the project's actual gates remain failed.
+
+The most serious outstanding issue before submission is P53 provenance. If there is a real pre-data P53 preregistration commit, document it prominently. If there isn't, the manuscript must stop calling P53 preregistered. That is the one issue I would resolve before spending time polishing secondary prose.
+
+And separately, the manuscript is currently only 17 rendered pages versus the required 50-substantive-page gate; since you explicitly do not want padding, I agree that this should remain an openly failed gate rather than being “fixed” editorially.

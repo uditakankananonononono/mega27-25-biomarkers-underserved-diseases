@@ -1,0 +1,29 @@
+I am submitting a research manuscript for review. This is a verification and
+weakness pass, not a win check: the project's gates honestly fail at this
+time (paper is 13 of a required 50 substantive pages; the positive benchmark
+or discovery endpoint is open - the preregistered arcs ended in honest
+negatives). I am not asking you to bless it.
+
+The lane: a preregistered evaluation of Long COVID blood-expression modules
+(9 modules, 18 genes), with three locked arcs - P51 (training selection on
+GSE226260, eval on GSE275334), P52 (training null on GSE251872), and P53
+(training on GSE293840 cfRNA, eval on GSE275334) - plus a six-gene published
+panel as a named comparator, and 44 logged external-service annotations.
+
+Please do the following, in order:
+1. List every scientific, statistical, methodological, or presentational
+   weakness you can find in the manuscript. Be adversarial and specific -
+   point to sections and claims, not generalities.
+2. For each weakness, say whether it is fixable with code/data the project
+   could produce (and what evidence would fix it), fixable by rewriting, or
+   an inherent limitation that must be stated but cannot be fixed.
+3. Flag any claim in the manuscript that the underlying results do not
+   support, or any overstatement of the negatives.
+4. Say plainly: after those fixes, would the manuscript honestly represent
+   the work?
+
+Do not suggest fabricating results, weakening the preregistration discipline,
+or inflating the page count. Where your criticism cannot be resolved without
+wet-lab validation or resources the project does not have, mark it as an
+unresolved limitation - that is an acceptable and honest outcome.
+

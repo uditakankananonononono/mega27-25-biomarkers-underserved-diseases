@@ -40,3 +40,21 @@ class-weighted fit, feature-count rule). No amendment is applied to RUN 1.
    external benchmark (none currently identified - candidate: the
    GSE299582 source paper's own reported severity classifier performance,
    to be extracted from PMID 41574750 full text).
+
+## H2 GATE (a) RUN - 2026-09-26T20:34 IST - scripts/h2_severity_association.py
+Prereg state: PREREGISTRATION + ADDENDUM_1 + ADDENDUM_2 (a7e79c8) committed
+BEFORE this run. Frozen test: KW across 4 ordinal groups (n=146), BH
+FDR<=0.05 AND |median log2(CPM+1) severe-mild|>=0.5.
+Result: 2114 miRNAs tested (after drop of all-zero rows), gate (a) passing
+28; after frozen exclusion screen (gate c), **20 CANDIDATE features** not
+named in the screen or the source-paper abstract. Top by FDR: miR-182-5p
+(4.0e-8, down in severe), miR-1-3p (2.2e-5, up), miR-206 (2.9e-5, down),
+miR-30c-5p (8.5e-5, up - note: the source paper named miR-30c-3p; the -5p
+arm is distinct and NOT excluded), miR-1294, miR-125b-5p, miR-125a-5p.
+Muscle-lineage miRNAs (miR-1, miR-206, miR-145-5p, miR-199b-5p) cluster in
+the candidate set - consistent with cardiomyocyte injury leakage into
+serum, a biologically coherent severity signal.
+Gate (b) NOT yet run: replication routing awaits the redirection consult +
+locked amendment (open question 1). These 20 are gate-(a)/(c) candidates,
+NOT discoveries. Files: results/h2_severity_association_all.csv,
+results/h2_gate_a_passing.csv, results/h2_gate_a_summary.json.

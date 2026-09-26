@@ -1,14 +1,14 @@
 # Author outreach for GSE213363 - draft only
 
-Date: 2026-09-26. Metadata-only prep on builder-25-ppd. **Not sent.** Requires Udita's review of the recipient and exact words together before any email is sent. No values or preregistration work follows from this draft.
+Date: 2026-09-26. Metadata-only prep on builder-25-ppd. **Not sent; closed.** At 13:03 IST on 2026-09-26, Udita explicitly said "Don't email" in reply to the PCOS outreach choice. Preserve this draft solely as a historical record. Do not send, queue, or surface it for later approval; a new, explicit user request would be required to reopen outreach. No values or preregistration work follows from this draft.
 
 ## Correspondence verification
 
 The [published article](https://pmc.ncbi.nlm.nih.gov/articles/PMC10802204/) formally marks **three** authors with the correspondence envelope (✉): Cristiana Libardi Miranda Furtado, Rosana Maria dos Reis, and Timothy Jenkins. Its author-notes section gives Furtado two addresses (`clibardim@gmail.com`; `clibardim@unifor.br`), dos Reis `romareis@fmrp.usp.br`, and Jenkins `tim_jenkins@byu.edu`. Furtado is listed with "CONTACT" in the first correspondence note; this is not evidence that she is the *only* corresponding author. The article's [full-text XML](https://www.ebi.ac.uk/europepmc/webservices/rest/PMC10802204/fullTextXML) associates each of the three with a distinct correspondence note (`an0001`, `an0002`, `an0003`).
 
-Default for review: write only to first-named Furtado at her published institutional address, `clibardim@unifor.br`, with no CC/BCC. This is a reversible draft choice, not a verified delivery address or a requirement to contact her rather than the other two corresponding authors. Sender account is not selected; it must be chosen and checked before a send.
+Historical proposed recipient (not an active plan): write only to first-named Furtado at her published institutional address, `clibardim@unifor.br`, with no CC/BCC. This is a reversible draft choice, not a verified delivery address or a requirement to contact her rather than the other two corresponding authors. Sender account is not selected; it must be chosen and checked before a send.
 
-## Email draft for Udita's review
+## Historical email draft - do not send
 
 To: Cristiana Libardi Miranda Furtado <clibardim@unifor.br>
 Cc/Bcc: none

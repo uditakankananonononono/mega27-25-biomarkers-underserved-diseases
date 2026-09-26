@@ -26,3 +26,17 @@ Disease-specific documents and source logs are not yet split from shared core; u
   prereg framing: this signature strategy (Hallmark modules on this small PBMC cohort)
   finds no transportable ME/CFS state signal; it does NOT establish that LC and ME/CFS
   lack molecular separation.
+- **P53 (powered ME/CFS-contrast arc)** — prereg `prereg/LC_P53_preregistration.md`
+  (frozen at f3af5c8c). Cohort substitution disclosed and parent-approved 09:31:
+  GSE227375 abandoned (no processed data + platform-confounded male arm), GSE128078
+  rejected (under-powered), GSE293840 substituted (plasma cfRNA, 93 ME/CFS vs 75
+  healthy, n=168; analyte-transport clause locked). Training: ALL 9 modules pass
+  two-sided batch-stratified selection (p .0008-.011); L9_il2_stat5 selected by rule
+  (`results/lc_p53_train_result.json`). Evaluation (`results/lc_p53_eval_result.json`):
+  E1 TRANSPORT FAILS (p=.90, g=-0.453, direction inverted); E2 passes (p=.0126,
+  g=-0.929) but inverted vs cfRNA training - with E1 failed, not a transported
+  discriminator. WIN RULE NOT MET. Ledger outcome per prereg: cfRNA-to-cellular
+  strategy+analyte failure. Lane answer after three disciplined arcs: a cellular
+  chronic-state oxphos signal transports LC-vs-healthy; no ME/CFS-trained state
+  signature transports to the cellular panel; LC and ME/CFS remain unseparated by
+  any preregistered signature in this lane.

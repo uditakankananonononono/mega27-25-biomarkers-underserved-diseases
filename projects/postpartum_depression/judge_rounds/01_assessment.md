@@ -1,4 +1,4 @@
-# PPD critique/redirection round 01 - provisional review
+# PPD ChatGPT consultation 01 - provisional, 0/10 counted novelty-improvement rounds
 
 Date: 2026-09-26, 16:13 IST. ChatGPT user-account conversation: https://chatgpt.com/c/6ab7a1c4-96cc-83e9-983f-797ab607a6eb . `01_prompt.txt` and `01_response.txt` are the verbatim prompt and visible answer, captured after the response stopped expanding. This is an incomplete project, not a reviewed final paper.
 
@@ -12,4 +12,4 @@ These are ideas, not verified data availability. Option 1 is a plausible scienti
 
 ## Action before round 02
 
-Audit source metadata and published comparators for option 1, including participant crosswalk and phenotype specificity, without reopening seen outcomes. If a coherent untouched cohort plus eligible same-task baseline is located, register exact question, split, metric and null before values. Otherwise ask depositors for the mapping or scout a different disease-valid endpoint. No source, result, accession increment, benchmark pass, judge fix, or completion is claimed from this round. The critique is one substantive early-stage round; nine or more distinct rounds and final-artifact critique remain.
+Audit source metadata and published comparators for option 1, including participant crosswalk and phenotype specificity, without reopening seen outcomes. If a coherent untouched cohort plus eligible same-task baseline is located, register exact question, split, metric and null before values. Otherwise ask depositors for the mapping or scout a different disease-valid endpoint. No source, result, accession increment, benchmark pass, judge fix, or completion is claimed from this round. This is a substantive critique and source audit, but no empirically grounded novel angle/method/analysis/feature has yet been implemented. Under the owner's 5:00 PM clarification, it counts as **0/10 completed novelty-improvement judge rounds** until such an addition is built, checked against prior art, and linked here with evidence. The prompt and answer remain preserved as consultation 01. Ten qualifying rounds and final-artifact critique remain.

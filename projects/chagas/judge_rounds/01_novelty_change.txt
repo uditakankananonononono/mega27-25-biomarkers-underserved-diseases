@@ -1,0 +1,15 @@
+LANDED NOVELTY CHANGE from round 01 (folded back before counting):
+prereg/ADDENDUM_3.md locks the judge's redirection into executable form:
+(1) H1 re-registered: primary = ordinal severity model (nested CV, locked
+metrics) with benchmark-beat redefined against honest comparators (clinical
+baseline age/sex model + best single-miRNA model) - the program's
+benchmark-beat gate is preserved with molecule-matched benchmarks; the
+protein-panel binary comparison is closed as a documented negative audit
+(RUN 1 stands).
+(2) H2 gate (b) routed per judge option 1: miRTarBase-validated targets
+(experimentally supported only), direction-predicted enrichment in
+GSE244827 + GSE203525, size-preserving permutation null, FDR<=0.05.
+(3) NEW discovery deliverable: the multi-omic "severity module score" with
+pharmacogenomic druggability overlay - registered as the H2 claim tier.
+New services implied: miRTarBase (+ TargetScan context). Evidence:
+judge_rounds/01_response.txt; lock: prereg/ADDENDUM_3.md.

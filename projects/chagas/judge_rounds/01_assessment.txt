@@ -1,0 +1,35 @@
+JUDGE ROUND 01 - 2026-09-26T21:21 IST (text-paste route, her ChatGPT Free account)
+Chat: https://chatgpt.com/c/6ab7e9ef-c618-83e8-86f8-ee990fba6120
+Prompt: judge_rounds/01_prompt.txt (3367 chars, verbatim). Response:
+judge_rounds/01_response.txt (7007 chars, verbatim, full response re-read
+before lease release). This was a simulated ISEF-style critique, not a real
+adjudication; judge content is advisory input, not authority - every adopted
+change is locked by us in ADDENDUM_3 before any run.
+
+JUDGE VERDICT (verbatim summary): Prediction weak; biology promising; novelty
+moderate. "The biggest mistake would be trying to resurrect the binary
+classifier."
+
+Q1 (H1 redirection): pick (d) - the binary benchmark-beat is "structurally
+unsalvageable" (molecule-class mismatch: ELISA protein n=60 vs miRNA n=150/45;
+R2=-55.7 is catastrophic instability, not a tuning problem). Re-register
+primary as ordinal severity prediction with nested CV, pre-specified metrics
+(ordinal c-index, macro-AUC, calibration, bootstrap CIs) vs clinical baseline
+and single-marker models. Keep binary as a negative benchmark audit. Options
+(a) post-hoc metric rescue, (b) ordinal-vs-DEM benchmark, (c) protein-subset
+benchmark all rejected with reasons.
+
+Q2 (H2 routing) ranking: 1=(a) miRNA->validated targets (miRTarBase /
+CLIP-supported, NOT bare TargetScan fishing) -> direction-predicted
+enrichment in GSE244827/GSE203525 with size-preserving permutation null +
+FDR. 2=(c) gene-level convergence reframing ("candidates converge on
+conserved cardiac remodeling pathways") - safest publication-grade. 3=(b)
+placenta miRNA (biologically poor match). 4=(d) monotonic trend = supportive
+dose-response, never "replication".
+
+Q3 (novelty): strongest concrete improvement = multi-omic "severity module
+score": candidates -> validated targets -> RNA-seq DE -> pathway -> cardiac
+phenotype, PLUS pharmacogenomic druggability overlay (fibrosis, mitochondrial,
+inflammatory modules vs ChEMBL/OpenTargets). Claim becomes "a conserved
+regulatory module tracks transition toward cardiac disease" - survives the
+failed classifier.

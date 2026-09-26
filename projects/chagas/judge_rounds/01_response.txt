@@ -1,0 +1,305 @@
+Show more
+Q1 — H1 redesign: strongest defensible path
+
+Pick: (d) something else — abandon “benchmark-beat” as the primary claim and redesign around a locked, molecule-matched discovery + validation framework.
+
+The current H1 is structurally unsalvageable as a benchmark-beat claim. The failure is not just the model; the comparison is scientifically mismatched:
+
+Published benchmark: ELISA protein panel, n=60, C/S vs C/A.
+
+Your model: serum miRNA, n=150 training universe, n=45 frozen test.
+
+Different analyte biology, feature dimensionality, cohort, preprocessing assumptions.
+
+A negative R² of −55.7 is not a “tuning problem”; it indicates catastrophic instability on the frozen test. With n=45, adding flexibility risks overfitting rather than recovering signal.
+
+The redesign I would accept:
+
+Primary claim: “Can serum miRNA signatures stratify Chagas cardiomyopathy severity and identify biologically coherent candidate pathways?”
+Not: “Can miRNAs beat protein biomarkers?”
+
+A stronger registered endpoint:
+
+Keep binary CCC vs indeterminate only as a negative benchmark audit.
+
+Make the primary model:
+
+ordinal severity prediction (because disease biology is progressive),
+
+nested cross-validation,
+
+pre-specified metrics:
+
+ordinal c-index,
+
+macro-AUC,
+
+calibration,
+
+bootstrap confidence intervals.
+
+Compare against:
+
+clinical baseline (age/sex if available),
+
+single-marker models,
+
+published miRNA literature signatures if available.
+
+Why the options fail:
+(a) Keep binary, switch metric, log1p transform + class weighting
+
+Weak.
+
+This is the classic post-hoc rescue attempt.
+
+Problems:
+
+The preregistered pipeline failed.
+
+Changing metric after seeing failure changes the question.
+
+Log transformation may be biologically justified, but it cannot retroactively repair a broken benchmark.
+
+Class weighting does not create information where the feature set lacks signal.
+
+It might improve AUC from 0.588, but it does not restore a credible benchmark-beat claim.
+
+(b) Re-register ordinal severity classifier
+
+Closest of the listed options, and scientifically correct, but incomplete.
+
+This is the direction I would choose if you explicitly abandon the benchmark-beat framing.
+
+Why it is stronger:
+
+Your own H2 already suggests severity-associated biology.
+
+miRNAs are likely better suited to gradients than binary thresholds.
+
+CCC is heterogeneous; mild/moderate/severe contains information the binary collapse destroys.
+
+Weakness:
+
+Benchmarking against DEMs is not a performance benchmark.
+
+“Replication of direction” is weaker than a predictive advance.
+
+Still, this is the best listed option.
+
+(c) Published-marker subset performance
+
+Not viable.
+
+You cannot benchmark miRNAs against proteins without a bridge.
+
+A reviewer will say:
+
+“You changed the measurement space and then declared victory because the old marker panel cannot compete.”
+
+Correct criticism.
+
+Q2 — H2 replication routing
+
+Ranking:
+
+1. (a) miRNA → target genes → direction check in mRNA cohorts
+
+Best route.
+
+This is the only biologically defensible cross-platform bridge.
+
+But it must be done carefully.
+
+A weak implementation:
+
+“TargetScan predicts miR-182 targets; those genes change in RNA-seq.”
+
+That is basically fishing.
+
+A rigorous implementation:
+
+Lock candidate miRNAs first (already mostly done).
+
+Obtain experimentally supported targets where possible:
+
+miRTarBase,
+
+CLIP-supported interactions.
+
+Create predicted direction:
+
+Example:
+
+miR-182 decreases in severe CCC.
+
+Therefore validated miR-182 targets should show increased expression if canonical repression dominates.
+
+Test whether those targets are enriched among genes changing in GSE244827/GSE203525.
+
+Do:
+
+gene-set enrichment,
+
+permutation null preserving gene-set size,
+
+FDR correction.
+
+A positive result would be much stronger than simple feature replication.
+
+2. (c) Drop miRNA-level replication and convert H2 to gene-level convergence only
+
+Second best.
+
+Actually, this may be the safest publication-grade option.
+
+The problem:
+
+You cannot claim “miRNA replication” when no comparable serum miRNA cohort exists.
+
+A strong reframing:
+
+“Serum miRNA candidates converge on conserved Chagas cardiac remodeling pathways.”
+
+That is defensible.
+
+Loss:
+
+You lose biomarker specificity.
+
+You gain biological credibility.
+
+Judges usually reward this trade.
+
+3. (b) Same molecule replication in placenta small RNA cohort
+
+Third.
+
+Technically same molecule, biologically poor match.
+
+Placenta congenital Chagas ≠ adult chronic cardiomyopathy.
+
+A reviewer would immediately ask:
+
+“Why should fetal/placental miRNA biology validate adult cardiac severity?”
+
+You might find interesting conserved infection-response miRNAs, but it is not a severity replication.
+
+4. (d) Internal monotonic trend substitute
+
+Fourth.
+
+Useful as supporting evidence only.
+
+A monotonic trend:
+
+control < mild < moderate < severe
+
+is valuable, but it is still the same cohort.
+
+Calling it replication would be rejected.
+
+It is:
+
+dose-response evidence,
+not
+
+independent validation.
+
+Q3 — Single strongest novelty upgrade
+
+The strongest improvement:
+
+Build a Chagas multi-omics severity atlas that converts serum miRNA changes into mechanistic cardiac remodeling hypotheses using causal triangulation.
+
+Not another classifier.
+
+The current project's weakest point is that it risks becoming:
+
+“We ran ML on GEO and found miRNAs.”
+
+There are thousands of those.
+
+Your unique asset is not the model. It is the integration opportunity:
+
+16 GEO series
+
+serum miRNA severity cohort
+
+blood RNA-seq
+
+cardiac cell models
+
+methylation
+
+pharmacogenomics
+
+The novel contribution could be:
+
+“A severity-linked miRNA regulatory network predicting molecular transition states from asymptomatic infection to cardiomyopathy.”
+
+Concrete workflow:
+
+Step 1 — Define severity-associated miRNAs
+
+Already done.
+
+Step 2 — Map regulatory consequences
+
+For each candidate:
+
+miRNA
+↓
+validated targets
+↓
+RNA-seq differential expression
+↓
+pathway activation
+↓
+cardiac phenotype relevance
+
+Step 3 — Add pharmacogenomic layer
+
+This is where novelty appears.
+
+Ask:
+
+Do severity-associated regulatory modules overlap with druggable pathways?
+
+Examples:
+
+fibrosis pathways,
+
+mitochondrial dysfunction,
+
+inflammatory signaling,
+
+cardiomyocyte stress responses.
+
+Step 4 — Create a reproducible “severity module score”
+
+Instead of:
+
+“miR-182 predicts CCC”
+
+claim:
+
+“A conserved regulatory module tracks transition toward cardiac disease.”
+
+That survives the failed classifier.
+
+Judge verdict
+
+Current state:
+
+Prediction: weak.
+Biology: promising.
+Novelty: moderate.
+
+The failed H1 actually helps if handled correctly because you can say:
+
+“Serum miRNA alone did not reproduce a protein biomarker classifier; however, multi-omic integration revealed conserved regulatory programs associated with severity.”
+
+That is a scientifically mature pivot.
+
+The biggest mistake would be trying to resurrect the binary classifier. The strongest project is no longer a biomarker competition; it is a mechanistic atlas of Chagas progression.

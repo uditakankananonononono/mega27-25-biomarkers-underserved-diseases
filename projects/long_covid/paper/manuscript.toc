@@ -46,3 +46,4 @@
 \contentsline {section}{\numberline {16}Sample-map construction rules}{14}{}%
 \contentsline {section}{\numberline {17}The comparator's provenance, kept separate}{15}{}%
 \contentsline {section}{\numberline {18}Preregistration discipline as the lane's method}{15}{}%
+\contentsline {section}{\numberline {19}Inside the E1 composite (post-hoc, descriptive)}{15}{}%

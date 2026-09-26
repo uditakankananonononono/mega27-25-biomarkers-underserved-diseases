@@ -22,3 +22,21 @@ RULE 6 the next step is a ChatGPT redirection consult (browser token
 queue) + a timestamped Amendment 2 (candidate fixes to be proposed and
 locked BEFORE rerun: log1p transform, within-arm train/test normalization,
 class-weighted fit, feature-count rule). No amendment is applied to RUN 1.
+
+## OPEN DESIGN QUESTIONS for the redirection consult (logged 2026-09-26T20:32)
+1. H2 replication routing: miRNA features cannot replicate directly in
+   mRNA cohorts (GSE244827 blood RNA-seq, hiPSC-CM). Options: (a) miRNA ->
+   predicted-target genes -> mRNA replication (adds a target-prediction
+   dependency, e.g. TargetScan/miRDB - new services, honest); (b) miRNA
+   replication in GSE333874 placenta small-RNA cohort (same molecule type,
+   different tissue/condition); (c) restrict H2 to gene-level features
+   only. Needs the consult + a locked amendment BEFORE H2 runs.
+2. H1 metric fairness: published R2=0.688 came from n=60 ELISA data; our
+   frozen split yields test n=45. Whether AUC (comparable across studies)
+   should be the amended primary metric is a consult question; any change
+   locks in Amendment 2 before rerun.
+3. Ordinal 0.779: descriptive only under current prereg. A registered
+   ordinal-severity claim would need its own amendment with a named
+   external benchmark (none currently identified - candidate: the
+   GSE299582 source paper's own reported severity classifier performance,
+   to be extracted from PMID 41574750 full text).

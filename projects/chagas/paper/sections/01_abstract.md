@@ -14,8 +14,15 @@ best single miRNA (+0.074, CI [+0.009, +0.136]). Second, a frozen
 novelty-screened association analysis isolates 20 severity-linked miRNAs
 absent from the screened Chagas biomarker literature, with a
 muscle-lineage thread (miR-1, miR-206, miR-145, miR-199b) consistent with
-progressive cardiomyocyte injury; their validated-target programs are
-registered for orthogonal testing in blood and cardiomyocyte mRNA cohorts
-as the path to a multi-omic severity module score. Every count, hash,
+progressive cardiomyocyte injury. The registered orthogonal replication
+has now run: direction-predicted enrichment of miRTarBase-validated
+target programs confirms 18/20 candidates in patient-derived
+cardiomyocytes but only 6/20 in peripheral blood - an honest
+compartment split. Six miRNAs (miR-1-3p, miR-122-5p, miR-192-5p,
+miR-30c-5p, miR-145-5p, miR-194-5p) replicate in both tissues and form
+a signed severity module that tracks the gradient monotonically
+(in-sample c-index 0.756); their 352 strong-support validated targets
+are significantly interconnected (STRING, p < 1e-16) and 49 are
+approved-drug targets (Open Targets). Every count, hash,
 run and negative - including one failed classifier kept as a documented
 audit - is committed and re-verifiable end to end.

@@ -42,3 +42,31 @@ macro-AUC of 0.779 shows the severity signal is real but the frozen
 binary pipeline and metric did not capture it. The full run log, JSON,
 and the redirection plan are in prereg/RUN_LOG.md; the redesign moves to
 Amendment 3 after the consult, per the standing pivot rule.
+
+
+## 7.5 Gate-(b) replication table (machine-generated from results/h2_gate_b_enrichment.csv)
+Direction = severe-vs-mild shift in serum; cells are BH FDR for direction-predicted
+validated-target enrichment (10,000 permutations; miRTarBase v8.0).
+
+| miRNA | serum dir | hiPSC-CM FDR | blood FDR | verdict |
+|---|---|---|---|---|
+| hsa-miR-1-3p | up | 0.0002 | 0.0002 | BOTH |
+| hsa-miR-122-5p | up | 0.0002 | 0.0002 | BOTH |
+| hsa-miR-125a-5p | down | 0.0019 | 0.0510 | cardiac only |
+| hsa-miR-125b-5p | up | 0.0002 | 0.2003 | cardiac only |
+| hsa-miR-1285-3p | up | 0.0002 | 0.1360 | cardiac only |
+| hsa-miR-1294 | up | 0.0002 | 0.8235 | cardiac only |
+| hsa-miR-1301-3p | down | 0.0005 | 0.2967 | cardiac only |
+| hsa-miR-145-5p | up | 0.0002 | 0.0097 | BOTH |
+| hsa-miR-182-5p | down | 0.0007 | 0.6764 | cardiac only |
+| hsa-miR-192-5p | up | 0.0002 | 0.0002 | BOTH |
+| hsa-miR-194-5p | up | 0.0002 | 0.0375 | BOTH |
+| hsa-miR-199b-5p | down | 0.0047 | 0.1367 | cardiac only |
+| hsa-miR-206 | down | 0.2829 | 0.5229 | neither |
+| hsa-miR-20a-3p | down | 0.0036 | 1.0000 | cardiac only |
+| hsa-miR-223-5p | down | 0.0002 | 1.0000 | cardiac only |
+| hsa-miR-30c-5p | up | 0.0002 | 0.0047 | BOTH |
+| hsa-miR-374b-5p | down | 0.0718 | 0.7555 | neither |
+| hsa-miR-375-3p | down | 0.0002 | 0.4640 | cardiac only |
+| hsa-miR-651-5p | up | 0.0002 | 0.8235 | cardiac only |
+| hsa-miR-769-5p | down | 0.0002 | 1.0000 | cardiac only |

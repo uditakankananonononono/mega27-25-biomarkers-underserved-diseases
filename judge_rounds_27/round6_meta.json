@@ -1,0 +1,14 @@
+{
+  "round": 6,
+  "artifact": "paper/MEGA27-27-current-research-manuscript.pdf in mega27-27-isef-bioinf-derived-tools @ 9925b30, SCOPED to PhosGene sections + PhosGene references in front matter/ledger",
+  "route": "TEXT-PASTE verified round (user route change 2026-09-26 13:18 IST)",
+  "source_pdf_sha256": "f720822545127e5592d33b7885a9da15512042fd6993c1fae32b9f0dac0b7c2c",
+  "extraction": "pdftotext -layout; completeness verified: 20 form-feed page breaks == 20 pdfinfo pages; 91,916 chars pasted as 9 parts (round6_part1..9.txt, <=13KB each after browser 15s input-dispatch limit); model acked each part before the question block in part 9",
+  "scope_and_caveats_in_prompt": "PhosGene-only scope; staleness caveat (main text predates later source audits; model told to flag what it cannot verify from the paste); not-a-standalone-50-page-paper caveat",
+  "response_file": "round6_response.txt",
+  "conversation_url": "https://chatgpt.com/c/6ab77bbc-7c2c-83ee-bc28-fec910574640",
+  "receipt_verification": "PASS - 11 quoted strings present in pasted document text and absent from prompt head, e.g. 'Observed AppA CAI is 0.610734 against the sparse table; the unrestricted maximum is 1.0 by construction', 'PhosGene has 11/40', 'combined narrow family-provenance audit uses 129 direct-fetched protein records'",
+  "questions_asked": ["weaknesses classified fixable/rewrite/inherent", "ISEF standing", "improvement ordered by impact"],
+  "verdict": "YES - based only on the pasted manuscript, honestly represents the PhosGene work and its limits; main weakness is that the demonstrated contribution remains a rigorous computational validation framework rather than a biologically validated AppA optimization discovery, not misleading claims",
+  "timestamp_ist": "2026-09-26T13:33"
+}

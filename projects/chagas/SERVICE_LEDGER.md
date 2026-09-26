@@ -189,3 +189,20 @@ tools. Annotating rather than renumbering to keep the log append-only:
 DISTINCT external tools used now: 33 (entries 1-31 + 36 mygene +
 37 miRBase). Gate of 40 counts DISTINCT tools: 7 more needed.
 Same convention as the 750->716 record correction (commit ef7b29a).
+
+## Addendum 10 (2026-09-27T00:56): services 38-40
+38. NCBI Datasets API v2 - gene reports for the six CORE6 miRNA host
+    genes (MIR1-1 406904, MIR122 406906, MIR192 406967, MIR30C2 407032,
+    MIR145 406937, MIR194-2 406970; all ncRNA) - stable NCBI Gene IDs
+    for the supplement (results/service_runs/ncbi_datasets_core6_hosts.json).
+39. IntAct (EBI PSICQUIC) - second independent interaction source:
+    key module targets' interaction counts (EGFR 31462, ESR1 3575,
+    HCN4 1680, BRAF 907, CDK4 544, CDK6 347) corroborate that the
+    STRING coherence signal is not single-source
+    (results/service_runs/intact_key_targets_counts.json).
+40. WikiData SPARQL - entity resolution: EGFR UniProt P00533 -> Q424401
+    "epidermal growth factor receptor" (results/service_runs/wikidata_lookups.json).
+DISTINCT count: 40/40 - gate MET (honestly, after the re-use correction).
+Probes still blocked tonight: Pharos (HTTP errors), GTEx medianGeneExpression
+(empty for direct gencode queries - endpoint shape unclear), TarBase
+(SPA site), Expression Atlas JSON path 404, RNAcentral accession path HTML.

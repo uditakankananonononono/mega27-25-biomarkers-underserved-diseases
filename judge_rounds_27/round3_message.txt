@@ -1,0 +1,181 @@
+You are a skeptical ISEF methods reviewer. Below this instruction block, between the markers ===BEGIN DOCUMENT TEXT=== and ===END DOCUMENT TEXT===, is the COMPLETE extracted text of a candidate working report PDF for a bioinformatics derived-tools build called GraphHoldout (item 27). The text was extracted from the source PDF with layout preserved; tables appear as plain text. An earlier review of this artifact was invalidated because the artifact never actually reached the model, so this is the authoritative re-run. Base your review ONLY on the pasted text. 
+
+Answer three questions:
+1. WEAKNESSES: every genuine weakness, each classified as (a) fixable by code/data changes within the current candidate's scope, (b) fixable by rewriting or clarifying scope in the report, or (c) an inherent limitation that should stay disclosed as-is. Quote the specific text you rely on for each. Check in particular: whether any claim exceeds the evidence presented; whether stated numbers are internally consistent (counts, metric values, dates); whether the fail-closed framing hides any result that was actually run; whether the self-criticism is complete or something is claimed too strongly OR dismissed too weakly.
+2. ISEF STANDING: how well would this work do at ISEF as currently presented - judging-relevant strengths, judging-relevant gaps, and an honest overall assessment.
+3. IMPROVEMENT: how it could be improved, ordered by impact, staying within honest science (no fabricating results, no padding, no weakening preregistration discipline).
+
+Rules: do not invent weaknesses to look thorough; distinguish real problems from stylistic preferences. If everything material is already handled honestly, say so and say why. End with a one-sentence verdict: does this report honestly represent the work and its limits?
+
+===BEGIN DOCUMENT TEXT===
+ GraphHoldout: publication-time gene-disease ranking with cold-
+ start refusal
+ Candidate-specific working report, September 25, 2026. This is separate from the aggregate item-27 manuscript and is
+ not a validated gene-discovery paper. The build produces a reproducible ranker, source inventory and leakage audit. It
+ does not prove causal disease interactions or use physical protein-interaction evidence.
+
+ Abstract
+ Graph methods can look accurate if a target gene-disease edge is duplicated in reverse, if evidence from the same paper
+ crosses train and test, or if future curated labels are treated as negative until their publication. We used the original CTD
+ curated gene-disease report and PubMed publication-year metadata to construct 556 evidence rows for four named
+ diseases. A 2012 cutoff produces 356 unique training pairs and 114 novel later pairs. Of the later pairs, 106 involve
+ genes absent from the training graph, so a ranker limited to known nodes cannot retrieve them. Among eight reachable
+ later positive pairs, top-10 recall is asthma 2/2, breast neoplasms 0/5, prostate cancer 0/1, and diabetes unevaluable.
+ Unknown pairs were never treated as experimental negatives; no precision or AUROC is claimed. A current Open
+ Targets query provides additional context but not an independent historical validation, since underlying literature and
+ CTD contributions may overlap. The result is a working temporal-leakage/cold-start audit, not a validated biological
+ predictor.
+
+ 1. Question and task boundary
+ The original candidate called for graph-based gene-disease ranking with source- and time-disjoint edge holdouts. Named
+ biological interaction evidence must remain distinct from text-mined co-occurrence. A strict version would train on a
+ genuinely historical graph snapshot from one source and assess prospectively new, independently curated edges from
+ another source, with interaction provenance. This build tests only a narrower question: under a publication-year split
+ within one modern CTD snapshot, can a simple training-only neighbor ranker recover subsequently published CTD-
+ curated gene-disease associations for genes already in the training graph?
+ This question matters because a model evaluated on random edges can receive nearly the same biological relation
+ through reverse arcs or duplicated publications. Even when leakage is removed, a cold-start gene cannot be ranked by a
+ graph-only method that has no representation for it. The implemented software makes those limitations observable rather
+ than returning a seductive performance score on mislabeled unknowns.
+
+ 2. Data lineage and exact identifiers
+ The direct source is the CTD curated gene-disease report, downloaded as a compressed TSV. data/manifest.json
+ records its SHA-256 digest. We read only rows with a direct curated evidence code and PMID, not inferred or text-
+ mined edges. Four disease IDs were fixed by exact MESH term: D001249 asthma, D001943 breast neoplasms, D003920
+ diabetes mellitus and D011471 prostate neoplasms. We chose every third numerically sorted PubMed ID among
+ matching rows, capped at 275 distinct PMIDs, before querying dates. This is a tractability sample, not a representative
+ random biological sample. It produces 556 gene-MESH-PMID evidence rows from 275 publications. The row-level
+ data/edges.json records gene symbol, NCBI Gene ID, disease ID, evidence type, PMID and publication year.
+
+ Publication years were read through the NCBI PubMed E-utilities summary endpoint. The year of an article is not
+ necessarily when CTD added a curated edge. This distinction is fundamental: a 2026 CTD snapshot cannot be made into
+ a genuine 2012 graph merely by filtering contemporary rows on the original article's date. The experiment is a
+ retrospective illustration of a split, not a historical replay. Rows with no usable year are excluded rather than assigned
+ one.
+
+ 3. Edge representation and holdout
+ Each gene-disease relation is represented once by canonical (NCBI Gene ID, MESH ID). A publication through 2012
+ puts that relation in training. A later publication contributes a novel test pair only when that exact relation was absent
+ from training. We also require the source PMID sets on opposite sides to be disjoint, rejecting any overlap. Representing
+ one canonical relation makes a reverse disease-gene arc equivalent to the same edge; it cannot be left in training when
+ the target pair is held out. An explicit test covers this recurrence and a second test rejects a PMID shared across split
+ years.
+
+
+
+GraphHoldout | September 26, 2026 | Candidate-specific report                                                                    1
+ The candidate universe for each disease includes only genes observed in training through 2012 whose target disease
+ edge is not already known. All other candidate pairs remain unlabeled, not measured biological negatives. The ranker
+ can put a later positive high in this universe, but top-10 recall is not precision, because the noncurated remainder can
+ contain true associations. We separately count later positive pairs whose gene never appeared in training as cold-start
+ failures rather than hiding them from the denominator of task feasibility.
+
+ 4. Model and metrics
+ For each candidate gene and disease, the score sums the size of shared training-gene neighborhoods between the target
+ disease and every other training disease to which the gene connects, plus 0.01 times the candidate gene's training disease
+ degree. This is a simple two-hop graph heuristic, not a graph neural network. The 0.01 degree term and top-10 cutoff
+ were fixed as software constants; the resulting values have not been optimized against the held-out pairs. The exact
+ ranking and tie-breaker by gene ID are reproducible from evaluate.py.
+ For a target disease with reachable later positives, positive recall@10 equals the number of those positives ranked in the
+ first ten candidate genes divided by the number of reachable later positives. The report also gives the expected top-10
+ fraction under a uniform random permutation of the same candidate list. That random expectation is a comparison of
+ ranks, not an empirically validated negative control or a statistical significance test. Where a disease has zero reachable
+ positives the recall is explicitly null.
+
+ 5. Primary outcomes
+  Disease                        Reachable novel positives      Candidate genes   Positive recall@10   Random expected recall@10
+
+  Asthma                                                  2                306                   2/2                      0.0327
+
+  Breast neoplasms                                        5                164                   0/5                      0.0610
+
+  Diabetes mellitus                                       0                323         Unassessable                       0.0310
+
+  Prostate neoplasms                                      1                183                   0/1                      0.0546
+
+
+ The graph contains 356 unique pre-cutoff pairs and 114 novel post-cutoff pairs. Only eight test positives involve genes
+ available to rank. A high-looking 2/2 for asthma is too small and selected to support generalization, especially against six
+ other reachable positives with zero hits. The 106 cold-start pairs make a stronger practical point: a graph-only ranker
+ limited to known genes has no defined prediction for most subsequently curated edges in this sample. No gene is
+ nominated for laboratory testing from this exploratory output.
+
+ 6. External source context without false independence
+ The Open Targets Platform GraphQL endpoint was queried for four current MONDO concepts, mapped to the four CTD
+ MESH terms by concept name. Exact-symbol overlaps between sampled CTD genes and the platform's current top-100
+ associated targets were 9/39 asthma, 19/220 breast neoplasm, 27/197 prostate cancer and 4/14 diabetes mellitus. data/
+ external_source.json retains the query, disease ID, returned ranking, response digest and matched symbols.
+
+ That endpoint is not an independent 2012 validation. It may include the same papers or CTD-derived evidence, and
+ symbols are not stable accession mappings. Current target ranks include evidence accumulated after 2012. A second
+ website with overlapping source content is not a second scientific discovery. This analysis therefore checks modern
+ cross-service context only and is not added to the temporal benchmark denominator.
+
+ 7. Missing interaction and source gates
+ The CTD rows are curated associations such as marker/mechanism or therapeutic links. They are not direct, named
+ physical gene-product interactions. A path through CTD disease neighbors can suggest co-annotation; it cannot establish
+ protein binding, an intervention effect or causal disease mechanism. A future mechanistic graph would need interaction
+ records with their experiment type, partners, provenance and date, and it would keep text-mined co-occurrence in a
+ separate layer. No such interaction layer was added here, so the build's graph score is expressly a disease co-annotation
+ heuristic.
+ A genuinely source-disjoint evaluation would require a historical training snapshot that can be dated by curation time
+ and an independently generated future test set with evidence overlap checked at paper, gene and disease level. At least
+ 20 reachable positives per disease and several independent diseases would allow a less fragile recall estimate. We have
+
+
+
+GraphHoldout | September 26, 2026 | Candidate-specific report                                                                      2
+ no historical CTD curation snapshot or independently adjudicated disease-gene test set, and not enough reachable
+ positives in this sample. These are named missing gates, not promises of later success.
+
+ 8. Reproducibility and adversarial checks
+ Run python3 projects/graph_holdout/prepare.py to download CTD and query PubMed dates; compare CTD
+ source hash to committed data/manifest.json. Run python3 projects/graph_holdout/evaluate.py on
+ committed data/edges.json to regenerate rankings and primary result JSON. Run python3 projects/
+ graph_holdout/external_source.py to query current Open Targets ranks, noting those results can change. Run
+ python3 -m pytest -q projects/graph_holdout for tests of reverse-relation leakage, shared-PMID rejection,
+ unseen-gene handling and the cross-source query shape. CTD's publication/citation and linking terms need separate legal
+ review for downstream redistribution; see https://ctdbase.org/about/legal.jsp. The repo retains a small sampled
+ derivative, not the full CTD report.
+
+ 9. Interpretation
+ The task is not solved. The usable result is a transparent auditor that refuses to turn absent labels into negatives, keeps
+ one edge and its reverse together, separates publication sources across time, and exposes the cold-start denominator. The
+ apparent asthma top-10 result cannot offset the breast/prostate failures, tiny denominators or single-source retrospective
+ leakage risk. No clinical, mechanistic or therapeutic inference is supported. A new prospectively registered historical-
+ source and experimentally grounded graph would be a different study, not a retrofit of this result.
+
+ Sources and files
+ Source files are the CTD curated association download, PubMed E-utilities, and Open Targets GraphQL API. Exact
+ source digests, used rows and result counts are in data/manifest.json, data/edges.json, data/results.json,
+ and data/external_source.json. Scientific source count is at most three, far below the user's per-project 40-tool bar;
+ model libraries and access infrastructure are not counted as extra biological services.
+
+ Post-report PMID provenance audit, September 25
+ The separate verify_pmid_metadata.py audit individually retrieved 120 PubMed ESummary records, the first 60
+ numeric IDs on each side of the 2012 publication-time split. All 120 IDs, response-byte SHA-256 digests, parsed
+ publication dates and linked row counts are in data/pmid_metadata_audit.json; every year matches the existing
+ CTD edge table. This is a check against batch parsing errors and bibliographic accession identity. It is not 120
+ independently fetched biological association datasets and does not turn a modern CTD snapshot into a historical one.
+ The original ranker results and refusal stand.
+
+ Actual March 2016 GWAS archive eligibility
+ The GWAS Catalog original March 6, 2016 release is a dated source, unlike the current CTD snapshot retrospectively
+ split by paper year. Its original 24,413 SNP-trait rows were pinned by SHA-256. Exact trait names, not synonym
+ searches, yield 55 Asthma, 199 Breast cancer, 201 Prostate cancer, 97 Type 1 diabetes and 340 Type 2 diabetes rows.
+ Only 31, 146, 104, 60 and 205 rows respectively carry a single unambiguous numeric SNP-locus Entrez mapping; the
+ rest have missing or multi-ID mappings. Three original CTD breast cancer publication IDs and one prostate cancer
+ publication ID recur in the corresponding GWAS trait subset. Asthma and the separate Type 1/2 diabetes subsets show
+ no same-PMID match within our small CTD panel, but that alone does not establish independent evidence, trait
+ equivalence or temporal train/test integrity. A GWAS SNP's locus-mapped gene is not a directly assayed causal gene-
+ disease link, and a plain-text trait is not a verified MeSH disease crosswalk. In particular, the CTD target's broad
+ Diabetes Mellitus term cannot silently absorb both Type 1 and Type 2 diabetes. We do not treat these rows as biological
+ association negatives or as source-disjoint positive truth, and calculate no new recall or AUROC. The source digest,
+ exact rules, per-target publication overlap, executable scope audit and tests are in data/gwas_archive/ and
+ gwas_archive_scope.py. This is a substantive negative validation finding, not a newly validated predictor.
+
+
+
+
+GraphHoldout | September 26, 2026 | Candidate-specific report                                                                  3
+===END DOCUMENT TEXT===

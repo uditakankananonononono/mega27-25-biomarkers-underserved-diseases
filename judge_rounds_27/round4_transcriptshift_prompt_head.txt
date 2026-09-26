@@ -1,0 +1,10 @@
+You are a skeptical ISEF methods reviewer. Below this instruction block, between the markers ===BEGIN DOCUMENT TEXT=== and ===END DOCUMENT TEXT===, is the COMPLETE extracted text of a candidate working report PDF for a bioinformatics derived-tools build called TranscriptShift (item 27). The text was extracted from the source PDF with layout preserved; tables appear as plain text. An earlier review of this artifact was invalidated because the artifact never actually reached the model, so this is the authoritative re-run. Base your review ONLY on the pasted text. 
+
+Answer three questions:
+1. WEAKNESSES: every genuine weakness, each classified as (a) fixable by code/data changes within the current candidate's scope, (b) fixable by rewriting or clarifying scope in the report, or (c) an inherent limitation that should stay disclosed as-is. Quote the specific text you rely on for each. Check in particular: whether any claim exceeds the evidence presented; whether stated numbers are internally consistent (counts, metric values, dates); whether the fail-closed framing hides any result that was actually run; whether the self-criticism is complete or something is claimed too strongly OR dismissed too weakly.
+2. ISEF STANDING: how well would this work do at ISEF as currently presented - judging-relevant strengths, judging-relevant gaps, and an honest overall assessment.
+3. IMPROVEMENT: how it could be improved, ordered by impact, staying within honest science (no fabricating results, no padding, no weakening preregistration discipline).
+
+Rules: do not invent weaknesses to look thorough; distinguish real problems from stylistic preferences. If everything material is already handled honestly, say so and say why. End with a one-sentence verdict: does this report honestly represent the work and its limits?
+
+===BEGIN DOCUMENT TEXT===

@@ -1,0 +1,210 @@
+You are a skeptical ISEF methods reviewer. Below this instruction block, between the markers ===BEGIN DOCUMENT TEXT=== and ===END DOCUMENT TEXT===, is the COMPLETE extracted text of a candidate working report PDF for a bioinformatics derived-tools build called TranscriptShift (item 27). The text was extracted from the source PDF with layout preserved; tables appear as plain text. An earlier review of this artifact was invalidated because the artifact never actually reached the model, so this is the authoritative re-run. Base your review ONLY on the pasted text. 
+
+Answer three questions:
+1. WEAKNESSES: every genuine weakness, each classified as (a) fixable by code/data changes within the current candidate's scope, (b) fixable by rewriting or clarifying scope in the report, or (c) an inherent limitation that should stay disclosed as-is. Quote the specific text you rely on for each. Check in particular: whether any claim exceeds the evidence presented; whether stated numbers are internally consistent (counts, metric values, dates); whether the fail-closed framing hides any result that was actually run; whether the self-criticism is complete or something is claimed too strongly OR dismissed too weakly.
+2. ISEF STANDING: how well would this work do at ISEF as currently presented - judging-relevant strengths, judging-relevant gaps, and an honest overall assessment.
+3. IMPROVEMENT: how it could be improved, ordered by impact, staying within honest science (no fabricating results, no padding, no weakening preregistration discipline).
+
+Rules: do not invent weaknesses to look thorough; distinguish real problems from stylistic preferences. If everything material is already handled honestly, say so and say why. End with a one-sentence verdict: does this report honestly represent the work and its limits?
+
+===BEGIN DOCUMENT TEXT===
+ TranscriptShift: study-disjoint and site-disjoint asthma-expression
+ transfer audits
+ Research report, September 25, 2026. This document is a candidate-specific expansion of the short PAPER.md, not a
+ chapter counted again in the aggregate item-27 manuscript. Its first experiment is a negative test of transfer between two
+ GEO cohorts in one parent publication. Its second is a separate negative within-study site transfer using another GEO
+ series and microarray platform. Neither makes a clinical diagnostic claim.
+
+ Abstract
+ A model that classifies cases in a sample-random partition may rely on study conditions rather than disease signal. We used
+ exact original GEO series matrices for GSE141623 (BAMSE, 256 blood-expression profiles) and GSE141631 (INMA, 201
+ profiles), two separate cohorts under the same parent GSE141661. Phenotypes were parsed from per-sample asthma: 0/1
+ characteristics. A panel of the first 1,000 valid probe rows was selected without phenotype inspection. Fixed logistic
+ regression (C=0.1) with train-only median imputation and standardization was trained on one full study and evaluated on
+ the other. AUC was 0.457 BAMSE to INMA and 0.521 in reverse, below the build-time exploratory >0.65 two-direction
+ gate. An independent third GEO series, GSE110551 (156 adults across Wroclaw and Zurich), uses a different GPL570
+ probe space. It therefore cannot validate the first fitted model. A separate, identically specified model trained on one site
+ scored AUC 0.613 on the other in one direction and 0.545 in reverse. No tuned neural model was compared because the
+ fixed linear baseline did not pass. The useful result is the fail-closed split and provenance audit, not a validated asthma
+ classifier.
+
+ 1. Research question and practical use
+ The question is whether a simple expression-based classifier holds when an entire study or site is withheld, not whether
+ expression changes in asthma exist. The intended user is a researcher who needs to audit a proposed classification
+ benchmark before relying on its sample-random performance. The code provides original-source manifests, phenotype
+ extraction, a study-disjoint split, a second within-study site split, test-set uncertainty and explicit refusal to merge
+ incompatible probe ID spaces. It does not output patient diagnoses.
+ Study-level and site-level splits differ. BAMSE versus INMA isolates two cohorts processed on GPL17586, but the parent
+ series and publication overlap. Wroclaw versus Zurich isolates locations within one independent series on GPL570, but not
+ publication or laboratory processing. Neither split alone establishes generalization to a prospective hospital. The scopes
+ remain separate in result files and throughout this report.
+
+ 2. Dataset provenance and inclusion
+ The original gzip-compressed GEO matrices were downloaded directly from:
+         • GSE141623: https://ftp.ncbi.nlm.nih.gov/geo/series/GSE141nnn/GSE141623/matrix/
+           GSE141623_series_matrix.txt.gz
+         • GSE141631: https://ftp.ncbi.nlm.nih.gov/geo/series/GSE141nnn/GSE141631/matrix/
+           GSE141631_series_matrix.txt.gz
+         • GSE110551: https://ftp.ncbi.nlm.nih.gov/geo/series/GSE110nnn/GSE110551/matrix/
+           GSE110551_series_matrix.txt.gz
+
+ data/manifest.json and data/external_site_results.json record source SHA-256 hashes. Preparation scripts
+ read !Sample_geo_accession and exact !Sample_characteristics_ch1 fields, not inferred labels from signal.
+ data/cohorts.json and data/site_cohort.json retain each original sample accession and selected probe values.
+ Full source matrices total about 190 MB and are not committed; each can be re-downloaded from its URL and checked
+ against the recorded digest. A matrix with hundreds of GSM columns is one original series download, not hundreds of
+ separately fetched accession datasets. A separate accession-level check individually fetched 120 GSM metadata records (40
+ per series, balanced by class), verifying phenotype, platform and series against the matrices and saving URL/response
+ hashes in data/gsm_metadata_audit.json. These metadata pages are not 120 expression datasets; no model changed.
+ BAMSE has 98 asthma-labeled samples and 158 controls, prevalence 0.3828. INMA has 36 cases and 165 controls,
+ prevalence 0.1791. The third series has 78 asthma and 78 non-asthma adults. Wroclaw has 117 profiles (58 cases) and
+ Zurich 39 (20 cases). These prevalence and recruitment differences are plausible sources of transfer failure. The GEO
+ fields provide no independent clinical re-adjudication.
+
+
+
+
+TranscriptShift | September 26, 2026 | Candidate-specific report                                                                 1
+ 3. Fixed feature construction and leakage control
+ For each GPL17586 cohort, the parser takes the first 1,000 valid numeric probe rows in matrix order. Their exact
+ intersection is 1,000 probe IDs. The choice is computational and independent of phenotype, not a biologically optimized
+ gene signature. GPL570 likewise uses its first 1,000 valid rows, but there are zero probe IDs shared with the GPL17586
+ panel. The data object stores GEO sample IDs; overlap checks find zero repeated samples between BAMSE and INMA and
+ zero between those cohorts and GSE110551.
+ Median imputation and standardization are inside a scikit-learn pipeline and fit only on the training study or site. Logistic
+ regression has fixed C=0.1, max_iter=1,500 and seed 27. No features are selected by outcome on the test set. The platform
+ difference is structural: an original model expecting the GPL17586 feature identity cannot be applied to GPL570 merely
+ because both have 1,000 columns. Cross-platform gene mapping would require platform annotation, probe-to-gene
+ disambiguation, common-gene aggregation and a prospective analysis plan; none was done here. The second experiment
+ trains a new model on the independent platform rather than pretending the first was externally validated.
+
+ 4. Outcomes and gate
+ The primary descriptive metric is held-out AUROC, the probability that a randomly chosen case scores above a randomly
+ chosen control plus half of ties. Balanced accuracy at threshold 0.5 is secondary; it averages sensitivity and specificity. The
+ build-time exploratory gate was AUC >0.65 in both directions of a cohort pair. This threshold was scoped during the build
+ and is not a third-party preregistration. Within-study random sample splits are diagnostic comparators only, never
+ substituted for the holdout. Neural models were deliberately not tested after the baseline failed because fitting a more
+ flexible model to these outcomes would invite outcome-driven tuning.
+
+  Train                  Held out                     n      n     Positive AUROC    Balanced Conditional bootstrap 95% AUC
+                                                  train    test        test          accuracy interval
+
+  BAMSE                  INMA GSE141631             256    201         36   0.4571     0.4773 0.3505-0.5599
+  GSE141623
+
+  INMA GSE141631         BAMSE                      201    256         98   0.5213     0.5302 0.4477-0.5957
+                         GSE141623
+
+  Wroclaw,               Zurich, GSE110551          117      39        20   0.6132     0.5592 0.4237-0.7842
+  GSE110551
+
+  Zurich, GSE110551      Wroclaw,                    39    117         58   0.5447     0.5811 0.4392-0.6496
+                         GSE110551
+
+
+ Both study directions and both site directions fail at point estimates. The random-sample AUCs within BAMSE and INMA
+ were 0.5180 and 0.6055 respectively; these are diagnostics and not independent validation. No claim of a dramatic
+ random-versus-study gap follows when one within-study AUC is itself weak. The most honest result is that this simple
+ fixed panel fails, not that all asthma expression models must fail.
+
+ 5. Uncertainty and sensitivity
+ uncertainty.py refits only the same fixed training pipelines to reproduce held-out scores. It then draws 2,000 class-
+ stratified bootstrap samples of test subjects with replacement, without touching model parameters or the feature panel.
+ Percentile intervals are listed above. This is conditional uncertainty for the chosen studies, phenotypes, frozen panel and
+ model. It does not quantify platform harmonization error, selection of cohorts, label verification or a future site's case mix.
+ The Zurich test interval is especially wide at n=39; its upper end crosses the exploratory threshold even though the point
+ estimate and reverse direction fail. We do not reinterpret that upper interval as a passing gate.
+ The sample-random comparator is vulnerable to within-study structure even when no subject is duplicated. Conversely,
+ study/site splits introduce severe distribution differences that may depress true signal or expose nontransportability.
+ Distinguishing those explanations requires additional independent data and planned covariate analyses. No post-hoc
+ stratification by age, sex or obesity was used to declare success.
+
+ 6. Cohort search and exclusions
+ The independent-cohort search examined original GEO accession metadata. GSE141661 is the parent of BAMSE and
+ INMA and cannot be counted as a third cohort. GSE137394 profiles asthma-at-baseline samples but lacks a non-asthma
+ target group in the inspected series metadata. GSE188424 asks controlled versus uncontrolled asthma, which is a different
+ endpoint. GSE110551 has explicit asthma/non-asthma and site labels, but its GPL570 probe IDs differ entirely from
+ GPL17586. A further platform-targeted search checked GSE69683, a separate whole-blood asthma/control cohort on
+ GPL13158, and GSE130499, an asthma/control series of bronchial epithelial and lavage cells on GPL4133. Both have a
+
+
+TranscriptShift | September 26, 2026 | Candidate-specific report                                                                   2
+ plausible disease comparison, but neither supplies the GPL17586 blood probe-and-tissue match needed for a frozen-model
+ test. GSE134347 uses GPL17586 blood profiles but contrasts sepsis, non-infectious critical illness and health, not asthma
+ versus non-asthma. These are metadata-level scope checks, not downloaded cohort matrices or evidence that no suitable
+ cohort exists. These exclusion decisions prevent a superficially larger but invalid pooled validation. Different tissues,
+ species, treatment-response endpoints or single-cell profiles would also need separate questions and model definitions.
+
+ 7. Reproducibility
+ From the repository root, install NumPy, scikit-learn and pytest. Run python3 projects/transcript_shift/
+ prepare.py to retrieve and parse the two GPL17586 matrices, compare the printed SHA-256 values to committed data/
+ manifest.json, and run python3 projects/transcript_shift/evaluate.py. For the independent site audit, run
+ python3 projects/transcript_shift/external_site.py. Run python3 projects/transcript_shift/
+ uncertainty.py for conditional AUC intervals, python3 projects/transcript_shift/study_report.py for
+ cross-check tables, and python3 -m pytest -q projects/transcript_shift. The scripts make no account-
+ dependent or paid-service calls. The committed extracted JSON supports model reproduction without re-downloading
+ source matrices, but original-data provenance should be checked when publishing.
+
+ 8. Limitations and verdict
+ The two primary cohorts are study-disjoint but publication-linked. The third is publication-distinct but evaluated only
+ within its own site split. Phenotypes come from GEO submitter metadata, not a harmonized clinical adjudication. First-in-
+ matrix probes are arbitrary; the panel may be biologically uninformative. Age, geography, recruitment, expression
+ processing, disease prevalence and site batches are not adjusted. AUROC does not measure calibration or patient utility. No
+ gene mechanism, biomarker nomination or clinical diagnosis is warranted. The result is a reproducible negative benchmark
+ and an auditor for easy leakage, with a clear path to a genuinely independent hospital/endpoint-matched validation if
+ original compatible expression and phenotype data become available.
+
+ Source notes
+ The GEO GSE141623, GEO GSE141631 and GEO GSE110551 series pages identify the parent datasets. Original matrix
+ URLs and hashes above are the computation sources. GSE141661, GSE137394, and GSE188424 are scope checks, not
+ extra training or test data. Numeric results are reproducible from committed data/results.json, data/
+ external_site_results.json, data/uncertainty.json and the scripts named above.
+
+ Independent Asthma BRIDGE assay, same-study random split only
+ A fourth original GEO series, GSE285752, reports 954 whole-blood profiles in an array experiment distinct from the three
+ earlier series. Its platform is GPL10558, not the GPL17586 probe space of the original BAMSE/INMA model; it cannot be
+ called that model's external validation. We downloaded the original submitter metadata XLS and full ~685 MB compressed
+ normalized expression matrix from the GEO supplementary URLs in data/bridge_protocol.json; the source
+ SHA-256 digests and code are committed, while the large matrix is excluded from Git and can be fetched again. The
+ metadata has 852 whole-blood asthma and 102 controls. Four sample rows lack IDAT filenames; there are no duplicated
+ nonmissing filenames. The matrix has 1,535 total sample columns, each paired with a detection-p-value column.
+ bridge_side_study.py joins the 954 whole-blood sample names exactly and takes the first 1,000 numeric ILMN probe
+ rows without consulting labels.
+ A local descriptive protocol was written before computing the result: one seed-27 stratified 75/25 sample split, training-
+ only imputation/standardization and fixed logistic C=0.1. Its 715 train and 239 test samples include 639 and 213 asthma
+ cases respectively. Held-out AUROC is 0.9074; average precision 0.9872 against test prevalence 0.8912; balanced
+ accuracy at threshold 0.5 is 0.6829. This is a within-one-study random sample split with extreme class imbalance, not an
+ independent hospital holdout, not a matched published benchmark and not transfer of either fitted GPL17586 model. A
+ post-result confounding audit of the original metadata found controls aged 23.95-31.50 years (median 25.90), versus cases
+ aged 5.17-31.65 years (median 10.03). All 102 controls but only 102 of 852 cases lie within the shared 23.95-31.50 age
+ range; sex also differs (controls 62 F/40 M, cases 351 F/501 M). On the same frozen split, an age-only logistic model
+ scored AUC 0.9497, higher than the expression model, although age was not an input to that expression model. Post-hoc
+ restriction of the original held-out predictions to the overlapping age range leaves only 42 subjects (16 cases) and gives
+ expression AUC 0.6707; this tiny, selected subset is descriptive and not a fresh validation, age-adjusted performance claim
+ or benchmark pass. The apparently high all-age random-split AUC may reflect developmental differences and recruitment
+ composition, so it cannot be interpreted as disease-specific signal. It does not reverse the earlier negative cross-study AUCs
+ or meet the two-direction >0.65 transfer gate. No clinical diagnostic claim or cross-platform model mapping follows. Exact
+ probe/metadata source hashes, counts and refusal scope are in data/bridge_result.json.
+
+
+
+
+TranscriptShift | September 26, 2026 | Candidate-specific report                                                                  3
+ Independent blood RNA-seq cohort eligibility, September 26
+ GSE207751 is an original independent IMSA cohort of 56 whole-blood RNA-seq subjects, with 27,071 unique ENSG gene
+ rows and exactly 56 metadata-matched expression columns with no missing/nonfinite cells, in original metadata and norm
+ alized/batch-corrected gene-expression matrix. The metadata lists 19 moderate asthma, 23 severe asthma and 14 healthy
+ samples, with age, sex and six batch values. Batches and labels are entangled: batch 2 has eight cases and no healthy
+ control; batch 7 has three cases and six healthy controls. The gene-level RNA-seq features cannot be passed unchanged to
+ the original GPL17586 microarray probe-level classifier. The released normalized matrix is already batch-adjusted, without
+ a separately frozen training-only adjustment in this audit. No model transfer or within-cohort score was calculated; 56
+ patients
+ are not 56 distinct downloaded biological cohorts. Metadata and matrix response hashes, counts and decision are in data/
+ gse207751_scope.json. This improves phenotype/source eligibility review but leaves the original independent
+ compatible-cohort gate unmet.
+
+
+
+
+TranscriptShift | September 26, 2026 | Candidate-specific report                                                              4
+===END DOCUMENT TEXT===

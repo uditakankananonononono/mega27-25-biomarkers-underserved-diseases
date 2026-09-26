@@ -1,0 +1,1045 @@
+You are a skeptical ISEF methods reviewer. Below this instruction block, between the markers ===BEGIN DOCUMENT TEXT=== and ===END DOCUMENT TEXT===, is the COMPLETE extracted text of a candidate working report PDF for a bioinformatics derived-tools build called the item-27 aggregate manuscript (item 27). The text was extracted from the source PDF with layout preserved; tables appear as plain text. An earlier review of this artifact was invalidated because the artifact never actually reached the model, so this is the authoritative re-run. Base your review ONLY on the pasted text. SCOPE RESTRICTION: review ONLY the VenomFunction-2 content - its dedicated section(s) and any front-matter/ledger passages that reference VenomFunction. Do not review the other candidate sections except where they bear on VenomFunction. TWO CAVEATS you must apply: (1) this aggregate main text is known to be stale relative to source audits conducted after it was written - distinguish what the text actually says from what you can verify from the pasted text alone, and explicitly flag any claim you cannot check from the document; (2) this aggregate is NOT a standalone 50-page per-project paper for VenomFunction and is not a candidate-level gate - do not evaluate it as if it were one.
+
+Answer three questions:
+1. WEAKNESSES: every genuine weakness, each classified as (a) fixable by code/data changes within the current candidate's scope, (b) fixable by rewriting or clarifying scope in the report, or (c) an inherent limitation that should stay disclosed as-is. Quote the specific text you rely on for each. Check in particular: whether any claim exceeds the evidence presented; whether stated numbers are internally consistent (counts, metric values, dates); whether the fail-closed framing hides any result that was actually run; whether the self-criticism is complete or something is claimed too strongly OR dismissed too weakly.
+2. ISEF STANDING: how well would this work do at ISEF as currently presented - judging-relevant strengths, judging-relevant gaps, and an honest overall assessment.
+3. IMPROVEMENT: how it could be improved, ordered by impact, staying within honest science (no fabricating results, no padding, no weakening preregistration discipline).
+
+Rules: do not invent weaknesses to look thorough; distinguish real problems from stylistic preferences. If everything material is already handled honestly, say so and say why. End with a one-sentence verdict: does this report honestly represent the work and its limits?
+
+===BEGIN DOCUMENT TEXT===
+Item 27 | September 25, 2026 | Current manuscript - not the archival survey
+
+ISEF-derived computational biology tools: award-corpus audit,
+family-held-out toxin benchmark, and AppA model provenance
+Current corrected research manuscript | September 25, 2026 | Ten runnable candidate directions are present; this
+19-page aggregate is not a final per-project paper. The updated owner floor is 50 pages of substantive research
+content per project, excluding headings and references; benchmark and external-resource gates remain open.
+Abstract. We built a reproducible corpus of 125 CBIO award project-year rows from seven Society for Science
+listings. A winner-only corpus cannot estimate award odds or validate a selection rule. A five-criterion rubric
+remained usable as a structured scoring CLI but has not undergone independent inter-rater testing. Of ten derived
+projects requested, this detailed study tests VenomFunction-2, a sequence classifier benchmark, and PhosGene, an
+AppA codon and phosphorus-balance sandbox; an updated source-limited inventory below describes the other
+eight runnable builds without promoting their results to validated discoveries. In 1,814 deduplicated reviewed
+snake-toxin sequences, random-split mean AUROC was 0.98044, falling to 0.59123 under family-held-out folds.
+An attribution proxy failed. PhosGene preserved protein translation and mass balance but could not verify a pig
+phenotype; an evidence validator refuses to compute that phenotype from incomplete in-vivo inputs. We
+individually fetched and scored 120 named UniProtKB entries. The shared scientific service ledger counts 17 uses
+across both candidates, below the 40-per-project requirement. These are bounded research results, not clinical or
+animal claims.
+
+
+1. Research question and frozen scope
+Question A: can official CBIO awards support a dependable design rubric? Question B: does a toxin-keyword
+predictor generalize outside annotated venom families? Question C: does a computational AppA construct
+optimizer reproduce a measurable fecal-phosphorus effect? The first is not answerable as an award-probability
+question from winning titles alone. The second has a falsifiable benchmark with a negative generalization gap.
+The third is currently unassessable from parameter provenance; a within-project evidence gate now identifies
+what is missing. These negative and unassessable waypoints are not terminal failures: further within-project
+pivots must retain them and seek a genuine useful result. We keep these outcomes separate.
+The user requested ten new ISEF-derived projects, each with at least 120 accession datasets, 40 external scientific
+tools, formulas, a falsifiable discovery or broken benchmark, a usable tool, a full paper and delivery. This
+manuscript gives detailed methods for candidates 1-2 and a separately labeled status inventory for eight newly
+built candidate directions 3-10. All ten have runnable code or audits, but none is asserted to meet every per-
+project scientific/resource gate; the status inventory is not a full methods/results paper for each of the eight. Three
+earlier tool prototypes are retrospective context and do not increase the ten-build count. The item-27 study has
+120 individually fetched-and-used toxin entries, 129 separately retrieved AppA-family annotation entries, and 17
+counted service uses assigned separately, never pooled to satisfy a candidate gate. Of these services only six are
+assigned to VenomFunction and eleven to PhosGene; a service must be materially used within the named
+candidate to count toward that candidate, so no shared-ledger completion claim is made. Shared counts do not
+automatically satisfy 120/40 for either standalone candidate: VenomFunction has the 120 direct toxin entries but
+fewer than 40 tools, and PhosGene now has 129 direct entries used in an exploratory AppA-family provenance
+audit, but not 120 experimentally validated phytase activity measurements, and still fewer than 40 tools or a pig
+outcome. The nonwinner denominator and three blinded outside raters are absent.
+
+
+2. Source provenance and reproducibility
+Award listings came from the original Society for Science full-awards pages. A project is one unique year/project-
+code pair after repeated top-award mentions are deduplicated. Each TSV row records year, code, title, award tier
+and original source URL. 2020 is excluded from this award-listing corpus rather than interpreted as zero CBIO
+Source: mega27-27-isef-bioinf-derived-tools | All outcomes limited to cited data and tests
+Item 27 | September 25, 2026 | Current manuscript - not the archival survey
+award projects. Source and parser: survey/data/official_cbio_awards.tsv and survey/scripts/collect_awards.py.
+The seven pages include https://www.societyforscience.org/press-release/regeneron-isef-2025-full-awards/ and
+https://www.societyforscience.org/press-release/regeneron-isef-full-awards-2023/.
+ Year                                                                 Awarded CBIO rows
+ 2018                                                                 10
+ 2019                                                                 13
+ 2021                                                                 25
+ 2022                                                                 20
+ 2023                                                                 20
+ 2024                                                                 15
+ 2025                                                                 22
+
+The literature and service checks do not manufacture 40 independent sources. One database queried 120 times
+remains one service. Mirrors of the same record and inaccessible endpoints are excluded. Public, unauthenticated
+science APIs required no external account login; private Drive delivery uses the connected owner account. Source
+URLs, test IDs, result paths and the counted judgment for every tried tool are in external_tools/ledger.tsv.
+
+
+3. Winner-only award analysis: what can be measured
+The title audit uses fixed literal/regex-like tokens, never semantic coding of the full abstract. It counts explicit
+wording rather than actual underlying methods. The 125 listing records are neither patient/protein datasets nor a
+sample of all science-fair submissions. A zero count is compatible with a method used but omitted from the title.
+A high count cannot establish judges rewarded that technique. The six original “what wins” patterns remain
+candidate prompts, not validated rules.
+ Title phrase                                                         Explicit matches in 125 titles
+ CNN explicitly named                                                 0
+ deep learning explicitly named                                       19
+ graph explicitly named                                               16
+ machine learning explicitly named                                    18
+ clinical or disease keyword                                          41
+ attribution or interpretability explicitly named                     0
+ low cost or access explicitly named                                  1
+ NLP explicitly named                                                 0
+
+A prospective award-probability analysis would require submitted projects including nonwinners, consistent
+category coding, covariates for year and award tier, and an analysis plan fixed before comparing methods. We
+have no such denominator. A 2023 suicide-prevention example appears outside CBIO and must not be folded into
+this CBIO award corpus. See survey/INTERPRETATION.md for the individual six-pattern audit.
+                          Observed title share = n(explicit title matches) / 125; this is NOT P(award | method).
+Citation: Society for Science 2025 full awards, URL above, plus the per-row official URLs in the award TSV. Re-
+running survey/scripts/collect_awards.py gives the source corpus. The parser is independently checked by
+tests/test_awards.py and tests/test_pattern_audit.py.
+
+
+4. Rubric as an instrument, not a validated predictor
+The scorer takes five required integer 0-4 fields: real data availability, novelty, feasible scope, measurable verdict
+and field or clinical value. Total is the unweighted sum; tier thresholds are strong >=17, promising >=13, needs
+work below 13. Missing, extra, Boolean, fractional and out-of-range scores are rejected. This prevents malformed
+input, not subjective disagreement or judge validity. The anchors are displayed by the CLI and the input remains a
+human judgment.
+                            T = d + n + f + m + v, where each term is an integer in {0,1,2,3,4}; 0 <= T <= 20.
+Source: mega27-27-isef-bioinf-derived-tools | All outcomes limited to cited data and tests
+Item 27 | September 25, 2026 | Current manuscript - not the archival survey
+                           tier(T) = strong if T >= 17; promising if 13 <= T < 17; needs work otherwise.
+ Candidate                                     Total / 20                                Weakest dimension
+ VenomFunction-2                               18                                        novel_angle
+ DreamMarker                                   18                                        measurable_verdict
+ RelapseCV                                     18                                        novel_angle
+ ConnectoScope                                 17                                        clinical_or_field_value
+ PhosGene                                      17                                        real_data_available
+
+Scores were frozen before the two new tests in protocols/prospective_2026-09-25.md. That dated local file is not
+an independent preregistration service. The earlier three selected builds were retrospective. The prospective two
+were preselected, unblinded and far too few to validate predictive calibration. The planned independent three-rater
+study has a protocol and blank template only; it has not recruited or measured anyone. No kappa or alpha estimate
+exists.
+Unweighted exact agreement = number of equal paired scores / number of paired criteria; no value is available without raters.
+A proper rater study would anonymize and randomize idea briefs before outcomes are revealed, use three
+separately consenting qualified scorers, preserve raw integer ratings and report each pair, not cherry-pick the most
+agreeable pair. The user has not selected recipients or shared-material scope for outside contact. This scientific
+gap is separate from CLI usability.
+
+
+5. VenomFunction-2: task, entries, split design
+We retrieved 2,068 reviewed Swiss-Prot snake-toxin search rows in five bulk pages. The task label is UniProt
+Neurotoxin keyword, not measured potency, clinical benefit, receptor binding or an experiment. The family is a
+UniProt similarity-comment family annotation. Sequences shorter than 25 residues, unnamed-family records and
+exact duplicates were excluded; one exact-sequence conflicting-label group was removed as ambiguous. The final
+training/evaluation corpus has 1,814 unique sequences, 542 keyword positives, across 25 named family groups.
+Bulk IDs alone do not count toward the strict individual-accession gate.
+The classifier is a binary character 3-mer CountVectorizer with min_df=2 and balanced logistic regression.
+Vocabulary is fitted only on the training fold. A prevalence-only dummy baseline is refit per fold. Five random
+stratified folds are compared with five disjoint family folds; these are different target populations and not
+interchangeable matched samples. A large random-fold AUROC can arise from homologous motifs shared across
+train and test; measured 3-mer overlap is audited below.
+                               x_s[k] = 1 if protein sequence s contains amino-acid 3-mer k, else 0.
+                                     p(y=1 | x) = 1 / (1 + exp[-(beta_0 + sum_k beta_k x_k)]).
+                           L(beta) = sum_i w_i[-y_i log(p_i) - (1-y_i) log(1-p_i)] + lambda ||beta||_2^2.
+                                 AUROC = P(score(x_positive) > score(x_negative)) + 0.5 P(tie).
+                              AP = sum over recall steps j of (Recall_j - Recall_(j-1)) * Precision_j.
+                            Gap = mean(random-fold AUROC) - mean(disjoint-family-fold AUROC).
+
+5.1 random folds
+ Fold              Train                Test                Positive test   AUROC               Average precision   Baseline AP
+ 0                 1451                 363                 108             0.98                0.9519              0.2975
+ 1                 1451                 363                 108             0.9854              0.9645              0.2975
+ 2                 1451                 363                 109             0.9787              0.9584              0.3003
+ 3                 1451                 363                 109             0.9879              0.9786              0.3003
+ 4                 1452                 362                 108             0.9703              0.9343              0.2983
+
+Five assessable folds; arithmetic mean AUROC 0.98044. This is not an external independent test cohort. Full per-
+fold family lists, test counts and metrics reside in venom/data/evaluation.json. No bootstrap confidence interval is
+claimed here.
+
+Source: mega27-27-isef-bioinf-derived-tools | All outcomes limited to cited data and tests
+Item 27 | September 25, 2026 | Current manuscript - not the archival survey
+5.2 family held out folds
+ Fold                 Train                 Test            Positive test          AUROC               Average precision   Baseline AP
+ 0                    1306                  508             327                    0.4962              0.6365              0.6437
+ 1                    1459                  355             127                    0.5127              0.384               0.3577
+ 2                    1497                  317             22                     0.7022              0.1269              0.0694
+ 3                    1497                  317             46                     0.5622              0.154               0.1451
+ 4                    1497                  317             20                     0.6828              0.1051              0.0631
+
+Five assessable folds; arithmetic mean AUROC 0.59123. This is not an external independent test cohort. Full per-
+fold family lists, test counts and metrics reside in venom/data/evaluation.json. No bootstrap confidence interval is
+claimed here.
+
+5.3 What the split comparison does and does not show
+The arithmetic mean AUROC is 0.98044 random versus 0.59123 family-held-out, difference 0.38921. This is a
+reproducible broken-benchmark finding: random-split keyword performance does not transfer cleanly to
+annotated unseen protein families under this model and task. Class composition differs by held-out family; the
+gap is descriptive, not an isolated causal measure of homology leakage. Unmeasured cross-family sequence
+resemblance and curation bias remain possible. Baseline prevalence is fold-specific, so AP should always be read
+alongside positive count and baseline AP.
+
+5.4 Follow-up: measured sequence-similarity exposure
+After the frozen benchmark, a separate follow-up measured whether test proteins actually resemble proteins
+available for training. In each original fold, the method forms the set of contiguous three-amino-acid substrings
+for every test and training sequence, computes pairwise Jaccard similarity, and retains the maximum training
+match for each test record. Unlike a model score, this overlap has no fitted label coefficients. The local analysis
+plan was written in the same session just before this computation; it is not independent preregistration, and the
+original AUROC difference was already known.
+                    Jaccard(s,t) = |three_mers(s) intersect three_mers(t)| / |three_mers(s) union three_mers(t)|.
+                              Maximum exposure(s, train_fold) = max_{t in train_fold} Jaccard(s,t).
+ Frozen split                      n test                               Weighted mean max Jaccard           Fraction max Jaccard >=0.80
+ random                            1814                                 0.6210                              0.3352
+ family_held_out                   1814                                 0.0442                              0.0000
+
+Random-fold test proteins have mean max Jaccard 0.6210 to a training protein; 33.5% have a match >=0.80.
+Family-held-out test proteins have mean max 0.0442 and none >=0.80. This documents a large similarity
+exposure difference, which makes the high random AUROC less persuasive as evidence for a novel-family use
+case. It does not isolate a causal leakage effect: group composition and label prevalence differ; threshold 0.80 was
+a fixed descriptive cutoff, not a biological homology definition. Fold-specific metrics and source code are in
+venom/data/similarity_leakage.json and venom/scripts/similarity_leakage.py.
+
+5.4 random similarity by original fold
+ Fold              n test          Mean max        Median               10th pct            90th pct        Share >=0.80      AUROC
+                                   Jaccard
+ 0                 363             0.613           0.639                0.259               0.925           0.322             0.980
+ 1                 363             0.609           0.633                0.241               0.928           0.322             0.985
+ 2                 363             0.620           0.647                0.246               0.927           0.350             0.979
+ 3                 363             0.631           0.675                0.268               0.927           0.336             0.988
+ 4                 362             0.632           0.684                0.248               0.931           0.345             0.970
+
+Spearman correlation across only five fold means and five fold AUROCs is -0.40. This small-n fold-level
+descriptive statistic is not a significance test and is confounded by fold family and class composition; no p-value
+is claimed.
+
+
+Source: mega27-27-isef-bioinf-derived-tools | All outcomes limited to cited data and tests
+Item 27 | September 25, 2026 | Current manuscript - not the archival survey
+5.4 family held out similarity by original fold
+ Fold              n test         Mean max        Median         10th pct       90th pct          Share >=0.80   AUROC
+                                  Jaccard
+ 0                 508            0.039           0.039          0.031          0.048             0.000          0.496
+ 1                 355            0.041           0.040          0.033          0.049             0.000          0.513
+ 2                 317            0.055           0.048          0.035          0.077             0.000          0.702
+ 3                 317            0.045           0.043          0.034          0.051             0.000          0.562
+ 4                 317            0.045           0.041          0.033          0.068             0.000          0.683
+
+Spearman correlation across only five fold means and five fold AUROCs is 1.00. This small-n fold-level
+descriptive statistic is not a significance test and is confounded by fold family and class composition; no p-value
+is claimed.
+
+
+6. Individually fetched accession audit
+To meet a stricter unit of biological data, venom/scripts/validate_individual.py issued 120 separate direct
+UniProtKB entry reads. Each saved JSON records accession, sequence and source URL, compared with the bulk
+snapshot. We selected 60 three-finger toxin and 60 phospholipase A2 records, each group 30 keyword-positive
+and 30 keyword-negative after deduplication. No held-out accession enters training; individual_validation.py
+produced a prediction from each individually fetched sequence. The selection is balanced by construction and
+uses the same UniProt source, so it is not a new natural-prevalence or external experimental cohort.
+phospholipase a2: n=60, positives=30, AUROC=0.60667, AP=0.58658, prevalence-only AP=0.500. Do not read
+the two family scores as a pooled clinical metric.
+three-finger toxin: n=60, positives=30, AUROC=0.42667, AP=0.48640, prevalence-only AP=0.500. Do not read
+the two family scores as a pooled clinical metric.
+        Per-accession audit inclusion = direct entry GET AND identity/sequence validation AND an actual held-out score.
+The 120 one-to-one source records are named in venom/data/individually_validated_120.tsv; the scored
+probabilities, labels, family and URLs are in venom/data/individual_validation.json. Appendix A tabulates all 120
+scores. Three-finger AUROC below 0.5 in the balanced sample is a negative result, not a reason to invert labels
+after seeing the answer.
+
+6.0 Post-hoc family annotation control
+On the same five random folds, a model given only the UniProt similarity-comment family label achieved mean
+AUROC 0.87929, compared with 0.98044 for the sequence 3-mer model. The family feature is an annotation, not
+a sequence-derived predictor. The encoder is fit only on each training fold, but both label and feature come from
+UniProt. This post-hoc control diagnoses annotation structure, not a causal decomposition of the sequence model
+or a fix for held-out-family failure. Frozen local diagnostic plan, code and results:
+protocols/venom_family_annotation_diagnostic_2026-09-25.md, venom/scripts/family_annotation_control.py,
+venom/data/family_annotation_control.json.
+ Random fold                                 Family-only AUROC                          Sequence 3-mer AUROC
+ 0                                           0.8766                                     0.9800
+ 1                                           0.8879                                     0.9854
+ 2                                           0.8955                                     0.9787
+ 3                                           0.8712                                     0.9879
+ 4                                           0.8653                                     0.9703
+
+
+6.1 Diagnostic threshold error audit
+After seeing the held-out probabilities, we calculated a descriptive 0.5 decision-threshold confusion matrix
+without re-fitting the model or selecting a new threshold. This is post-hoc error characterization and is not a
+prospectively selected operating point. Ranking metrics can remain above chance even when an uncalibrated 0.5
+
+Source: mega27-27-isef-bioinf-derived-tools | All outcomes limited to cited data and tests
+Item 27 | September 25, 2026 | Current manuscript - not the archival survey
+threshold produces zero true positives. Source: results/transfer_error_audit.json; the script recomputes each
+number directly from the 120 original prediction rows.
+ Held-out family      TN                  FP                FN                   TP             Brier                 Largest score
+ phospholipase a2     30                  0                 30                   0              0.371                 0.458
+ three-finger toxin   30                  0                 30                   0              0.392                 0.405
+
+The max probability is below 0.5 in both groups. Every 30 keyword-positive entries per family is a false negative
+at that threshold; specificity looks perfect only because the classifier always predicts negative in this balanced
+audit. Brier score is a squared-probability error summary and should be compared only within the same label
+definition and sample selection. The failure may reflect a shifted intercept under family exclusion, altered class
+mix or insufficient family-transfer signal. The available data cannot distinguish these causes, and post-hoc
+threshold tuning on these samples would defeat the held-out audit. A next within-project pivot is to freeze a
+separate nonoverlapping validation-family set, then calibrate a threshold on those families only and evaluate on
+untouched test families; the current two groups remain a frozen negative, not refitted success.
+                                 Brier = (1/n) * sum_i (predicted_probability_i - keyword_label_i)^2.
+                           Sensitivity at threshold 0.5 = TP / (TP + FN) = 0 in both 60-entry family samples.
+
+6.2 Threshold transfer without target-label tuning: another negative
+A separate exploratory attempt asked whether a decision threshold learned outside both target families could
+recover positives without reusing target labels. The model was trained on 951 sequences from 23 other families.
+Five GroupKFold out-of-fold predictions over those training families supplied a single scalar threshold that
+maximized balanced accuracy. The previously scored 120 direct-entry target proteins were not used to choose this
+threshold. However, the target outcomes were already visible before this experiment was planned, so it is not
+independent prospective validation.
+The selected training-family threshold was 0.001159, with training-family out-of-fold balanced accuracy 0.5227.
+It is far below 0.5, already warning of severe distribution shift. On each of the two balanced target groups, the
+original 0.5 threshold gave 30 true negatives and 30 false negatives. The non-target-calibrated threshold gave 30
+true positives and 30 false positives. Both achieve balanced accuracy 0.5 by predicting one class for all records.
+Thus this threshold transfer did not repair the actual decision problem. It cannot be reselected on target labels after
+seeing this result without sacrificing holdout integrity.
+ Family                              Original TN/FP/FN/TP            New TN/FP/FN/TP                    New balanced accuracy
+ phospholipase a2                    30/0/30/0                       0/30/0/30                          0.500
+ three-finger toxin                  30/0/30/0                       0/30/0/30                          0.500
+
+This jointly excluded both target families during model fitting, whereas the original direct-entry scoring excluded
+one family at a time. Its rankings/AUCs are therefore not apples-to-apples with the earlier AUCs, even though the
+same target accessions were used. Code and complete result: venom/scripts/transfer_calibration.py and
+venom/data/transfer_calibration.json. The within-project direction remains open; an independent biological label
+or a truly untouched external cohort would be needed for a stronger claim.
+
+6.3 Within-project label-coherence check
+A second VenomFunction pivot checks a narrow data-quality explanation without redefining the original held-out
+negative. Registered thresholds 1.00 and 0.95 positional identity before this scan; only equal-length raw direct-
+entry sequences are comparable by this proxy. The scanner reads the same 120 saved direct-UniProt entry JSON
+files and lists accession pairs with their keyword, source URLs, family and identity. This is not a new cohort or an
+optimized classifier.
+Across 120 direct entries, 277 pairs had equal lengths; 21 had at least 95% positional identity, and 0 of those had
+discordant keyword labels. At exact identity, 0 pairs were found. Thus the high-identity equal-length subset does
+not reveal a direct internal keyword contradiction in this sample. Unequal-length sequences were not aligned;
+other annotations, nearly identical proteins outside this 120-entry selection, and true functional outcomes remain
+untested. File: venom/data/label_conflict_audit.json, method: venom/scripts/label_conflicts.py.
+
+Source: mega27-27-isef-bioinf-derived-tools | All outcomes limited to cited data and tests
+Item 27 | September 25, 2026 | Current manuscript - not the archival survey
+               Positional identity(s,t) = sum_i 1[s_i=t_i] / length(s), defined here only if length(s)=length(t).
+The original family-transfer result remains negative even after this data-quality check. A curator could use the
+scanner on later direct-entry files to flag contradictions rather than quietly choosing one label; a zero here does
+not establish data cleanliness or potency. This tool adds no new external scientific service or accession count to
+the project gates.
+
+
+7. Residue-attribution proxy: retained negative
+The pre-specified site test replaces a curated active-site position with X and compares the absolute model-logit
+change with a within-protein control position more than five residues away. This is an input-sensitivity proxy.
+Catalytic active sites can belong to non-neurotoxin enzymes, so a failure here is not a definitive absence of a
+neurotoxin causal residue. It cannot prove binding, treatment benefit or counterfactual protein behavior.
+                           D_site = |logit f(sequence with site -> X) - logit f(original sequence)|.
+                                R_site/control = mean(D_site) / mean(D_matched_control).
+The audit covers 568 protein records and 1103 site-control pairs. Site mean absolute delta was 0.10132, control
+mean 0.15047, ratio 0.67338; 40.53% of sites exceeded controls. Predicted enrichment failed in this proxy. We
+retain the negative rather than retune sites after results. The complete positions, provenance and limitations are in
+venom/data/active_site_audit.json.
+
+
+8. Distinct motif and structure context: annotations, not potency
+ScanProsite direct scans found SNAKE_TOXIN PS00272 on P01400 and phospholipase A2 His/Asp signatures
+PS00118 and PS00119 on P00604. This corroborates broad family identity but not potency. HMMER phmmer
+queried the P01400 mature sequence against its PDB protein set and returned a Bungarus candidus weak-toxin
+homolog 2jqp_A (E=1.67e-28). PDBe maps that homolog accession Q8AY51 to a 65-residue solution-NMR
+structure at 100% coverage; RCSB confirms the same PDB chain. It does not show P01400 has a resolved
+structure. Shared PDB data from PDBe and RCSB count as one structural evidence source.
+Exact live-returned URLs and records: external_tools/prosite_check.json, hmmer_check.json and
+structure_check.json. The RCSB UniProt text-search attempt returned HTTP 400, and an earlier PDBe P00604
+mapping returned 404; those attempts were not counted. Motif, homology and structure are orthogonal checks of
+identity or fold availability, not a new potency assay or a validation of the predictor.
+
+
+9. PhosGene: coding-sequence arithmetic and physiology gap
+GenBank U00096.3 resolves the AppA CDS and translation corresponding to UniProt P07102. The older M58708
+CDS has an ambiguous base at one codon; the K-12 genome provides a resolved codon with the same translated
+amino acid. The Kazusa taxon 83333 codon table has 64 codon entries based on only 14 coding sequences and
+5,122 codons, so its reference weights are sparse. The optimizer replaces each amino acid codon with the highest-
+frequency synonymous codon and retains a terminal stop. It checks translation identity and input bounds. No
+construct was synthesized or tested for host expression.
+                  w(c | a) = observed_count(c) / max_{synonymous c* encoding a} observed_count(c*).
+                          CAI(sequence) = exp[(1/L) sum_{i=1}^{L} log w(c_i | amino_acid_i)].
+Observed AppA CAI is 0.610734 against the sparse table; the unrestricted maximum is 1.0 by construction. A
+ceiling reached by replacing all codons is an arithmetic test, not evidence for increased expression or secretion.
+GC-window constraints, repeat filtering and host-specific secretory regulation are not supported in the current
+optimizer.
+The enzyme sandbox takes substrate mmol/kg, enzyme units/kg, Km mM, fluid volume L/kg, duration min and a
+bounded pH factor. It Euler-integrates a Michaelis-Menten-like step with a nonnegative substrate bound. A
+Source: mega27-27-isef-bioinf-derived-tools | All outcomes limited to cited data and tests
+Item 27 | September 25, 2026 | Current manuscript - not the archival survey
+literature Km of 0.79 mM is from an in-vitro AppA assay; assay units do not transfer automatically to pig
+intestinal residence or active concentration. Phytate hydrolysis and newly absorbed phosphate are different
+quantities.
+                                        S_mM = S_mmol_per_kg / V_L_per_kg.
+            rate_mmol_per_kg_min = (enzyme_units_per_kg/1000) * pH_factor * S_mM/(Km_mM+S_mM).
+                                       S(t+dt) = max(0, S(t) - min(rate * dt, S(t))).
+     new_retained_P = min(baseline_fecal_P, dietary_P * phytate_fraction * hydrolysis_fraction * absorbed_fraction).
+                 predicted_fecal_reduction = new_retained_P / baseline_fecal_P, if baseline_fecal_P > 0.
+The compartment mass balance bounds hydrolyzed substrate between zero and initial substrate; the fecal-P
+balance caps retention at baseline fecal P. These are invariants of a user-supplied model, not measurements.
+Missing in-vivo enzyme rate, pH history, gut fluid volume, residence time and absorption coefficients make an
+independent fecal-P phenotype comparison unassessable. The older 54.1% prototype estimate is not
+independently reproduced here.
+
+9.1 Reaction identity and source disagreement
+KEGG eco:b0980 maps appA to a 4-phytase/acid phosphatase context, while b4055 maps another phosphatase
+AphA. UniProt P07102 assigns an unspecific EC and one positional pentakisphosphate product. ExPASy
+ENZYME and Rhea list generic enzyme-class reactions and can use different inositol phosphate positional
+conventions. It would be incorrect to use any one generic EC step as proof of six phosphate-release steps in vivo.
+All source claims and exact URLs are in external_tools/phos_reaction_check.json.
+BRENDA Km entries span assay contexts, not validated pig luminal conditions. STRING resolves AppA to the
+b0980 gene neighborhood without showing dietary phenotype. EcoCyc independently links AppA monomer to
+appA/b0980 and periplasmic location; QuickGO returns 21 evidence-coded annotations including IDA/EXP
+activity/localization, often citing EcoCyc or UniProt. IntAct returns three partner rows with two interaction AC
+values from one culture pull-down study, not independent animal assays. PRIDE Archive protein P07102 search
+maps to three project identifiers, but direct project metadata lists horse/mouse/bovine, human and C. elegans, no
+pig context. That mapping is not itself evidence of organism-specific AppA peptide assignment. These checks
+locate a gene and a function-context disagreement rather than filling the kinetic gap. Source files:
+external_tools/taxonomy_and_brenda.json, string_check.json, appa_annotations.json, intact_check.json,
+pride_check.json.
+The 2018 multi-enzyme pigs study at https://elifesciences.org/articles/34286 reports fecal P lower by 45.8% under
+a corn-soybean diet and 34.8% under a wheat/corn/soybean/bran diet (its abstract pools N and P into a 23.2%-
+45.8% range; the 23.2% lower endpoint is fecal N), whereas the original Enviropig report at
+https://europepmc.org/article/MED/11479566 reports up to 75%. These are different systems and comparisons. A
+pooled 20%-60% band is not a defensible prespecified verification target. No pig-gut measurement has been
+generated by this repository. The next within-PhosGene direction is a parameter-identifiability tool: report the
+entire feasible fecal-P outcome range over evidence-bounded inputs, and leave unknown dimensions visibly
+unbounded instead of selecting values to hit a published pig outcome. This is a planned pivot, not a completed
+scientific result.
+
+9.2 Within-project pivot: provenance-gated phenotype identifiability
+Measured-variant eligibility check. A 2023 AppA engineering paper reports six P. pastoris parent/mutant culture
+activity rows with matched mutation identities (https://www.frontiersin.org/journals/bioengineering-and-
+biotechnology/articles/10.3389/fbioe.2023.1167530/full). An exact table transcription and tested comparison in
+phosgene/benchmarks/frontiers_appa_variants.tsv and frontiers_appa_audit.json finds the published D7 mutant at
+837.2 ± 17.8 U/mL versus its own parent 508.6 ± 21.5 U/mL (ratio 1.6461). These prior investigators measured
+this positive result, not PhosGene. Their parent is reported 97% homologous to PDB 1DKP; exact
+sequence/numbering identity with our P07102/U00096 reference is unverified. Culture activity, codon adaptation
+
+
+Source: mega27-27-isef-bioinf-derived-tools | All outcomes limited to cited data and tests
+Item 27 | September 25, 2026 | Current manuscript - not the archival survey
+and pig fecal P are different endpoints, so this cross-check neither wins an algorithm benchmark nor validates an
+animal claim; published literature is not counted as an external research tool.
+The unresolved pig-phenotype reproduction led to a concrete within-PhosGene pivot rather than an invented
+positive effect. The new identifiability validator demands a numerical value, unit, source URL, organism, assay or
+feeding condition, and transfer rationale for every parameter used to turn AppA activity into a predicted fecal-P
+effect. Its requirement table is fixed in protocols/phosgene_identifiability_2026-09-25.md, and the
+implementation is phosgene/identifiability.py. A non-pig assay cannot silently stand in for pig-lumen physiology:
+the provided rationale must be substantial, but a substantial statement alone would not scientifically validate
+transfer. Owner/source review would still be required before interpreting a calculation as an animal result.
+The actual source packet contains an in-vitro purified E. coli AppA Km of 0.79 mM with PMID 10696472 and
+explicitly blank pig-transfer rationale. No pig-gut volume, active enzyme exposure, residence time, pH activity
+history, diet partition, baseline fecal fraction or absorption fraction is supplied. The validator returns 10 gaps,
+status unassessable and phenotype null. This failure is the intended scientific guardrail. A synthetic all-fields
+packet is used only by a unit test to check input bounds and mass-balance arithmetic; its output is never the
+reported pig phenotype. Committed result: phosgene/data/identifiability_audit.json.
+ Required source-grounded dimension     Expected unit                           Current verdict
+ substrate_mmol_per_kg                  mmol/kg                                 missing or unsupported transfer
+ enzyme_u_per_kg                        U/kg                                    missing or unsupported transfer
+ km_mmolar                              mM                                      missing or unsupported transfer
+ fluid_l_per_kg                         L/kg                                    missing or unsupported transfer
+ duration_min                           min                                     missing or unsupported transfer
+ ph_factor                              fraction                                missing or unsupported transfer
+ dietary_p_mmol                         mmol/kg                                 missing or unsupported transfer
+ baseline_excreted_fraction             fraction                                missing or unsupported transfer
+ phytate_fraction                       fraction                                missing or unsupported transfer
+ absorbed_fraction                      fraction                                missing or unsupported transfer
+
+This pivot yields a usable decision aid: researchers can see which original measurements are needed for a
+falsifiable pig comparison. It is a method/validation result, not a new biological effect size or proof the codon
+optimizer improves expression. The tool itself is local code, so it adds zero external tools and zero individual
+accessions to the strict gates. The original negative waypoint remains visible beside this narrower useful
+deliverable.
+
+9.3 Exploratory AppA-family provenance and transfer audit
+To make better use of public sequence evidence without pretending it supplies missing pig physiology, a follow-
+up queried reviewed UniProtKB entries carrying InterPro IPR000560, a family cross-reference verified on the
+direct AppA P07102 entry. The query returned 89 named entries; all 89 were retrieved at separate accession
+JSON endpoints, checked for exact primary accession, reviewed status and family cross-reference, and used in an
+untuned amino-acid 3-mer Jaccard comparison with P07102. Each record preserves source URL, SHA-256,
+sequence, organism, name, EC evidence and the explicit refusal to transfer its rate to pig gut. This is an
+exploratory source-scope study; the local plan preceded entry fetching but followed the original pig-model failure.
+Only 16 of the 89 direct records are explicitly named phytases. 34 carry at least one EC annotation with an
+experimental PubMed citation, which is still not a common-substrate or pig-lumen assay. The maximum non-
+anchor 3-mer Jaccard with AppA is 0.07798. A broad family match, name or low descriptive k-mer overlap does
+not establish equivalent catalytic products, secretion or in-vivo rate; these entries cannot calibrate the fecal-P
+sandbox. A second, pre-stated unreviewed bacterial phytase-label stratum added 40 disjoint direct entries. All 40
+carry explicit unreviewed phytase names, but zero experimental EC PubMed citations; maximum AppA 3-mer
+Jaccard is 0.13043. The combined narrow family-provenance audit uses 129 direct-fetched protein records (89
+reviewed, 40 unreviewed), which meets an accession-count condition for that annotation tool only. It does not
+represent 120 experimentally validated AppA-like kinetic measurements and adds no distinct service beyond
+
+Source: mega27-27-isef-bioinf-derived-tools | All outcomes limited to cited data and tests
+Item 27 | September 25, 2026 | Current manuscript - not the archival survey
+already counted UniProtKB. The 10-gap phenotype audit remains null. Full result:
+phosgene/data/hap_family_audit.json, method: phosgene/scripts/hap_family_audit.py.
+
+
+10. Calibration and failure modes
+A Beta(1,1) prior with three selected retrospective runnable builds produces Beta(4,1), posterior mean 0.800 and
+equal-tail interval [0.398,0.994]. Counting the two newer runnable candidates would yield Beta(6,1), mean 0.857
+and interval [0.541,0.996] for the narrowly defined end point of runnable construction. These values are not a
+biological success rate, a probability of winning an award, or evidence the rubric predicts discovery. An
+unassessable animal outcome cannot be relabeled a success just because a CLI runs.
+                                 P(q | s,n) = Beta(1+s, 1+n-s) under a uniform Beta(1,1) prior.
+                                        E[q | s,n] = (1+s)/(2+n); with s=n=3, E[q]=4/5.
+Selection of high-scored ideas inflates apparent build completion. With only two new post-protocol tests and no
+blinding, weakest-criterion calibration is not statistically assessable. The independent rater template is blank.
+VenomFunction-2 shows a useful failure of a homolog-sensitive split, while PhosGene fails a source-parameter
+sufficiency test. Both are legitimate bounded outcomes with different scopes.
+
+
+11. External tool audit and still-open conditions
+The strict ledger has 24 rows documenting service uses and attempted calls (some repeated providers), 17 counted
+across the two detailed candidates, but this aggregate is not a candidate-level gate. VenomFunction has 6/40
+(short by 34); PhosGene has 11/40 (short by 29). Each counted service has a source URL, preregistered or clearly
+exploratory test ID, output file and interpretive use. Exclusions include the official award page as a corpus rather
+than an analysis tool, a Pfam endpoint hosted by InterPro as the same service, a failed PDBe request, failed
+SABIO-RK, failed RCSB search, RCSB mirror of a PDB record, and NCBI BLAST still waiting. This accounting
+is more conservative than a list of URLs or software names.
+ Scientific service or attempt   Arm/test                        Counted?                         Meaning of check
+ Society for Science             award survey A1                 0                                Official award evidence source, not
+                                                                                                  a scientific analysis tool; seven
+                                                                                                  pages
+ UniProtKB                       VenomFunction V0                1                                120 direct-fetched entries actually
+                                                                                                  scored, one service
+ InterPro                        VenomFunction V1                1                                IPR003571 family cross-check
+ AlphaFold DB                    VenomFunction V5                1                                Predicted model confidence, not
+                                                                                                  function
+ NCBI Entrez/GenBank             PhosGene P0                     1                                AppA CDS; NCBI taxonomy same
+                                                                                                  provider not counted separately
+ Kazusa Codon Usage Database     PhosGene P0                     1                                64-codon frequency table in
+                                                                                                  optimizer
+ KEGG                            PhosGene P2                     1                                AppA gene identity versus wrong
+                                                                                                  AphA gene
+ ExPASy ENZYME                   PhosGene P3                     1                                4-phytase class reaction/isomer
+ Rhea                            PhosGene P4                     1                                Reaction isomer disagreement
+                                                                                                  against UniProt direct annotation
+ BRENDA                          PhosGene P1                     1                                Heterogeneous Km contexts fail to
+                                                                                                  identify in-vivo model parameters
+ STRING                          PhosGene P8                     1                                P07102 maps to b0980 AppA,
+                                                                                                  periplasmic annotation
+ InterPro-hosted Pfam            VenomFunction V2                0                                Same InterPro service/member
+                                                                                                  signature; not independent
+ PDBe                            VenomFunction V3                0                                404 no data
+ SABIO-RK                        PhosGene P6                     0                                Redirected UI 404; no kinetic result
+
+Source: mega27-27-isef-bioinf-derived-tools | All outcomes limited to cited data and tests
+Item 27 | September 25, 2026 | Current manuscript - not the archival survey
+ ExPASy ScanProsite           VenomFunction V8            1                            Motif scanning of two named
+                                                                                       exemplars, distinct analytical
+                                                                                       service from ExP
+ EBI HMMER phmmer             VenomFunction V9            1                            P01400 PDB homology result, top
+                                                                                       weak-toxin neighbor is not an
+                                                                                       activity meas
+ RCSB PDB Search              VenomFunction V11           0                            P01400 UniProt exact-match
+                                                                                       attributes rejected HTTP 400; no
+                                                                                       structural resu
+ PDBe                         VenomFunction V12           1                            Prior HMMER homolog Q8AY51
+                                                                                       has NMR chain 2jqp_A with
+                                                                                       mature-sequence covera
+ RCSB PDB Data                VenomFunction V12           0                            Confirmed same PDB entry and
+                                                                                       chain; shared underlying structural
+                                                                                       record, no
+ EcoCyc BioCyc                PhosGene P9                 1                            Exploratory gene-to-protein
+                                                                                       mapping b0980 and curated
+                                                                                       periplasmic context
+ EBI QuickGO                  PhosGene P10                1                            Exploratory evidence-code
+                                                                                       provenance audit of GO
+                                                                                       localization and phytase;
+ NCBI BLASTP                  VenomFunction V10           0                            Submitted P01400 Swiss-Prot
+                                                                                       search, RID WAITING; NCBI
+                                                                                       provider collapsed wi
+ EBI IntAct                   PhosGene P12                1                            Culture pull-down partner rows;
+                                                                                       two AC values, same publication,
+                                                                                       no in-vivo
+ PRIDE Archive                PhosGene P15                1                            Exploratory protein-to-project
+                                                                                       mapping and sample-organism
+                                                                                       audit: 3 project
+
+These checks contribute to annotation/identity/reproducibility and not all measure biological function. No
+fabricated count is applied to GitHub, Drive, shell, PDF renderer, browser, web search or repeated requests to one
+endpoint. The full exact URLs and paths remain in external_tools/ledger.tsv and per-source result files. The tool
+gate remains open. A failed or slow service is logged as such and not silently replaced with an invented successful
+query.
+
+
+12. Reproduction and responsible claims
+Install project dependencies, then run PYTHONPATH=src:. python -m pytest -q. Rebuild award list with python
+survey/scripts/collect_awards.py, toxin bulk source with python venom/scripts/fetch_uniprot.py, evaluation with
+OPENBLAS_NUM_THREADS=1 python venom/scripts/evaluate.py, active-site test with PYTHONPATH=src:.
+python -m venom.scripts.audit_active_sites, and direct-entry audit with PYTHONPATH=src:. python -m
+venom.scripts.validate_individual followed by python -m venom.scripts.individual_validation. Fetch AppA and
+codon reference with python phosgene/scripts/fetch_reference.py and run PYTHONPATH=src:. python -m
+phosgene. Live endpoints can evolve, so committed result JSON and dated URLs are the result provenance; re-
+runs must compare source IDs, labels and sequences, not assume unchanged annotations.
+Safety and scope: toxin analyses compare public sequences and database keywords and do not supply a biological
+construction protocol or claim clinical deployment. The codon optimization is a computational arithmetic
+demonstration, with no synthesized construct, animal study, medical recommendation, or environmental release.
+The result is a usable benchmark/rubric/sandbox at their stated bounded scopes, not world-best potency prediction
+or a validated pig system.
+Remaining for user request: enough genuinely distinct tools to meet 40 per candidate, not merely 24 for a shared
+ledger; an activity/phenotype-grounded use of PhosGene accessions beyond its completed 129-entry annotation
+audit, and separate biological assay or accession validation appropriate to each later build; an independently
+grounded phenotype comparison; three blinded outside raters with owner-approved recipients; candidate builds 3-
+Source: mega27-27-isef-bioinf-derived-tools | All outcomes limited to cited data and tests
+Item 27 | September 25, 2026 | Current manuscript - not the archival survey
+10 requiring separate full scientific papers, 120+ individually used biological datasets and 40+ distinct scientific
+tools per project; stronger independent biological benchmarks and external validation where their current gates
+fail; this program manuscript is a substantive working paper, not eight substituted full papers; release/delivery
+audit once the scientific gates are actually met. Do not represent ten runnable builds as ten completed scientific
+projects.
+
+
+13. Candidate builds 3-10: source-limited program inventory
+After the detailed two-project analysis was prepared, separate lanes added eight runnable candidate directions.
+The entries below summarize their committed READMEs, result objects and methods, not an independent source
+reanalysis by this manuscript author. They are concise working builds with documented missing inputs, not eight
+fully validated discoveries or eight full-length papers. Their accession/service gates must be audited separately
+rather than borrowing the VenomFunction/PhosGene ledger; code, catalog row counts or measured pairs are not
+automatically 120 individually fetched-and-used biological accessions or 40 independent services.
+ # / build                              Observed bounded result                           Unmet biology or resource gate
+ 3 ToxinAudit-LabelScope                120 direct reviewed UniProt entries; 41 target-   No measured negatives or homolog-disjoint
+                                        EC direct citations; AUROC refused                benchmark; 4/40 services
+ 4 CodonContext                         Synonymous CDS guard; 120 proteins matched        Exploratory PSI expression baseline AUC
+                                        to 120 CDS features in one RefSeq genome          0.659; no synonymous-pair yield assay
+ 5 GraphHoldout                         CTD/PubMed time split: 114 novel later pairs,     Tiny reachable set, one retrospective source,
+                                        only 8 reachable; asthma 2/2 top-10               most targets cold start
+ 6 TranscriptShift                      GEO BAMSE-to-INMA AUC 0.457, reverse              Transfer gates fail; cohorts from same papers, no
+                                        0.521; separate site-cohort audit                 independent hospital claim
+ 7 MicrobeTransfer                      120 BioSample AST entries; second 1,178-row       Sequence linkage/breakpoints unverified; no
+                                        six-site metadata audit                           hospital-disjoint genome predictor
+ 8 PhageHostScope                       38,435 measured pairs; joint holdout AUC          No verified Paris-BASEL phage/host join; no
+                                        0.709; BASEL lysis audit                          external transfer AUC
+ 9 RNAEvidence                          Historical comparator AUC 0.647;                  858/954 eCLIP rows share gene clusters; no
+                                        CLASH/eCLIP leakage audit                         gene-pair validation
+ 10 SpatialArtifactGuard                15,611 aligned spots; 37px image-shift control    Same atlas, no external site; rare artifact folds
+                                        lowers all six AUCs
+
+The distinct scientific provider ledger for candidate builds 7-10, builds/service_ledger.tsv, counts #7 4/40, #8
+3/40, #9 2/40, and #10 1/40. These provider uses are separate from candidate builds 1-6, and the Zenodo files,
+NCBI sibling endpoints and computational libraries are not additional providers. Candidate #10 directly audited
+the full gene matrix against all 15,611 metadata/image-position barcodes and counts; its missing check is
+external-site/pixel registration and a validated patient-level classifier, not absence of a downloaded matrix.
+The newly committed per-build ledger for candidates 3-6, projects/evidence_ledger.json and
+projects/EVIDENCE_LEDGER.md, counts 5/40 services and 120 direct protein entries for #3; 5/40 services and
+120 individually retrieved protein entries paired with CDS features from one fetched genome for #4; 3/40 services
+and 120 bibliographic PMID responses, not biological assay accessions, for #5; 1/40 service and 120 GSM
+metadata responses, not separately fetched expression datasets, for #6. These are per-build numbers, not additive
+program closure. Candidate #7 has 120 individually read BioSample records containing AST annotations, but no
+genome-wise fetched-and-used predictor set or multi-hospital R/S cohort; treating its BioSample retrieval as a
+completed biological accession gate would erase the stated project requirement. #8 has 97 source phage FASTAs
+and 105 external-cohort phage FASTAs, but they are different species/source contexts and not a common 120-
+accession model validation. The other bulk catalog and patient-spot rows are not individually fetched accession
+datasets.
+Candidate 3 provenance: projects/toxin_audit/README.md and results.json (direct UniProt source IDs and EC
+evidence); 4: projects/codon_context/README.md and synthetic example; 5:
+projects/graph_holdout/README.md and CTD/PubMed manifest; 6: projects/transcript_shift/README.md and
+GEO source manifest. Candidate 7: builds/microbe_transfer/README.md and results.json (CARD catalog); 8:
+
+Source: mega27-27-isef-bioinf-derived-tools | All outcomes limited to cited data and tests
+Item 27 | September 25, 2026 | Current manuscript - not the archival survey
+builds/phage_host_scope/README.md and results.json (Paris et al. source); 9:
+builds/rna_evidence/README.md and results.json (historical miRTarBase); 10:
+builds/spatial_artifact_guard/README.md and results.json (Zenodo spatial atlas). Each individual README or
+manifest gives source URLs, methods, test commands and caveats; a reader must inspect those artifacts before
+relying on a candidate-level claim.
+Build-time thresholds and directions are not independent preregistrations. Negative, unassessable and exploratory
+statuses are retained, and no shared resource count can close the ten separate 120/40 gates. A follow-on program
+synthesis should independently reproduce the eight builds, audit original biological sources, expand their methods
+and outcomes into their own full papers, and replace this bounded inventory only after that review.
+
+13.1 Why the eight build verdicts differ
+ToxinAudit-LabelScope (#3) retains its original 26-entry panel and expands to 120 separately fetched reviewed
+UniProt entries under two fixed EC queries. Forty-one expanded entries have direct target-EC experimental
+citations; the earlier panel had twelve. The absence of such a citation in the others cannot serve as a negative
+functional assay: an unmeasured protein may still catalyze the reaction. The classifier refuses to fit until
+independent measured negatives and homolog-disjoint controls exist. QuickGO, InterPro and ChEMBL add
+contextual annotation and target identity; UniRef50 maps all 120 selected entries to 73 half-identity clusters, 19
+containing multiple panel entries. These checks are not biochemical null results or assay-disjoint folds. This is a
+useful failure-before-modeling control, but no predictive AUROC or novel enzyme-function finding follows.
+Source: projects/toxin_audit/accessions.json, results.json and external_checks.json.
+CodonContext (#4) takes a candidate coding sequence and checks translation preservation, reading frame,
+terminal stop, GC/motif and window constraints. A first-120 E. coli panel separately retrieves 120 UniProt
+proteins, mapping them to 120 translated CDS features from a single fetched RefSeq chromosome; it is not 120
+separately fetched nucleotide accessions. A PSI protein-expression dataset supports an exploratory accession-
+prefix split with AUC 0.659, but is not a same-protein synonymous construct test. Angov et al. 2008 provides five
+paired wild-type/codon-harmonized yield rows, without full paired CDS sequences or comparable CAI; it checks
+experiment feasibility, not a held-out CAI-gain benchmark. The separate published NAR 2023 mRFP workbook
+supplies 1,459 sequence/fluorescence rows for one protein and one host, crosschecked against a downstream CSV
+as one evidence chain. Its exploratory first-eight-codon fixed feature had a held-out within-study Pearson r of
+0.722 versus 0.521 for GC features, but a post-result source-header holdout had macro R2 -0.305 and two
+negative folds. Those are not 1,459 independent datasets, a matched published benchmark or a new biological
+discovery. The panel does not supply paired constructs measured in an expression host. Its CAI arithmetic
+therefore cannot answer whether synonymous changes increase yield, even if a constraint checker can reject
+impossible or unwanted sequences. This is distinct from PhosGene despite shared P07102 context and must not
+count that overlap as an independent expression experiment. Source: projects/codon_context/README.md and
+evidence_ledger.json.
+GraphHoldout (#5) uses 556 curated CTD gene-disease-PMID evidence rows with PubMed publication dates. It
+represents an edge and its reverse as one canonical pair and excludes shared paper IDs across the retrospective
+time split. Of 114 later novel associations, 106 involve genes absent from the earlier graph; only eight positives
+are rankable at all. Asthma 2/2 among the eight cannot validate a general ranker when the other disease groups
+yield 0/5 and 0/1. The 2026 CTD snapshot is filtered by article date, not historical curation date; current Open
+Targets context can overlap the same papers. The observed cold-start limit and leakage refusal are results;
+prospective gene-disease prediction is not. Source: projects/graph_holdout/data/results.json and REPORT.md.
+TranscriptShift (#6) downloads expression matrices for two GEO cohort accessions, uses a fixed 1,000-probe
+linear model and trains on an entire study before testing on the other. AUCs of 0.457 and 0.521 fail its two-
+direction gate. An independent publication supplies GSE110551 with a different platform and explicit site
+metadata. The old fitted probe model cannot be applied as if probes were harmonized; a separate fixed baseline
+gives Wroclaw-to-Zurich AUC 0.613 and reverse 0.545. Conditional bootstrap AUC intervals for the original
+directions are 0.350-0.560 and 0.448-0.596; they do not cover future hospitals or clinical phenotype adjudication.
+
+Source: mega27-27-isef-bioinf-derived-tools | All outcomes limited to cited data and tests
+Item 27 | September 25, 2026 | Current manuscript - not the archival survey
+This is a paired negative transfer story, not a validated asthma diagnostic. Source:
+projects/transcript_shift/data/results.json, external_site_results.json and uncertainty.json.
+MicrobeTransfer (#7) begins from a 6,463-row resistance-gene index, not an isolate-level susceptible/resistant
+trial. The follow-up fetches 120 BioSample XML records by exact identifiers and records 442 explicit R/S assay
+rows. All 30 isolates with interpreted R/S share one collector, so a hospital-disjoint test set does not exist.
+Assembly links for 29 of these isolates are not genome sequences fetched and used in a predictor. The input
+contract and abstention rule are operational software, but no clinical susceptibility performance is measured.
+Matching gene annotations to AST labels without isolate/drug/breakpoint provenance would falsely promote
+catalog entries into phenotypes. Source: builds/microbe_transfer/ncbi_ast_results.json and README.md.
+PhageHostScope (#8) starts from measured lytic host-range pairs, making its data unit different from a docking
+score. It uses source-provided host and phage trees, holds out groups on both axes and quarantines pairs crossing
+only one axis. Its within-study AUC 0.709 on 1,120 jointly held-out pairs narrowly crosses an exploratory
+threshold, but those trees, aliases and group cutoffs were not independently reconstructed or externally confirmed.
+A separate Klebsiella cohort of 12,970 measured pairs cannot simply accept the E. coli host-tree distance model; a
+BASEL E. coli source adds 396 measured lysis records but no verified phage/host identity join to the Paris
+training pairs; absent comparable host representation, the external AUC is intentionally refused. The result is a
+bounded same-study benchmark, not cross-species host-range prediction. Source:
+builds/phage_host_scope/results.json and external_results.json.
+RNAEvidence (#9) separates curated record grades and publication IDs in a historical 2015 miRTarBase
+snapshot, quarantining repeated miRNA-gene pairs. A simple assay-propensity comparator yields AUC 0.647 on
+454 same-database records, but tested nonfunctional records are selected and cannot represent the unbiased space
+of all true negatives. The independent miRBench CLASH/eCLIP files instead test a fixed 7-mer sequence rule at
+the site level; 858 of 954 eCLIP test rows share gene clusters with training context, and two exact site-pair
+overlaps were quarantined; that is a different endpoint, not external validation of the historical curated gene-pair
+model. Its risk is endpoint substitution, mirrored literature and constructed negative sites. Neither AUC is a
+prospective target-interaction ranking result. Source: builds/rna_evidence/results.json, README.md and
+mirbench_results.json.
+SpatialArtifactGuard (#10) checks all 15,611 spot barcodes and metadata counts against a downloaded spatial
+gene matrix and image-position list, then evaluates a patient-out RNA-QC/center-pixel color baseline. That matrix
+audit establishes row linkage and count agreement, not precise histology pixel registration or an external site. A
+pre-stated 37-pixel image-coordinate shift control lowered all six AUCs, supporting a spatial-registration
+dependence within the same atlas but not an external-site gate. The apparent fold AUCs include groups with only
+four or one artifact spot; averaging such unstable folds would hide denominator fragility. The atlas is one source
+across six slides and labels can reflect local annotation practices. The scientific gate remains external-site
+validation with enough artifacts per held-out patient, not a spot-level random split. Source:
+builds/spatial_artifact_guard/gene_alignment_results.json, results.json and README.md.
+
+13.2 Cross-candidate interpretation
+The eight software builds fail in materially different ways. Some refuse a prediction because the necessary
+endpoint or linkage was never established (#3, #4, #7); some run a fixed benchmark and preserve poor transfer or
+limited coverage (#5, #6, #9, #10); #8 has a within-study score but no comparable external test. A negative AUC
+and a missing validation cohort should not be merged into one failed-performance category. The separate service
+ledger uses data providers per build, not files or Python packages: #3-#6 count 5, 5, 3, 1; #7-#10 now count 4, 3,
+2, 1. No candidate may borrow another candidate accession cohort to claim 120, and none approaches 40 services.
+The program result is a transparent set of runnable audits and demonstrated evaluation traps, not ten established
+biological discoveries.
+Supplementary material: exact accession predictions, the full award listing, and endpoint-level service provenance
+are in MEGA27-27-research-supplement.pdf. The main paper stands alone for methods, results, limitations and
+the candidate inventory.
+Source: mega27-27-isef-bioinf-derived-tools | All outcomes limited to cited data and tests
+Item 27 | September 25, 2026 | Current manuscript - not the archival survey
+Appendix C. Full fold definitions and family composition
+GroupKFold tests all sequences in a held-out family only once over five folds. The table below prints the literal
+held-out groups from the committed JSON, together with test positivity and the raw fold metrics. It shows how
+the target population and class balance vary, so the arithmetic mean should not be overread as a pooled population
+estimate. Fold count is five because that was the frozen implementation, not because five-fold error bounds are
+known to be stable for 25 unequal families.
+
+C. random
+Fold 0: training 1451, testing 363, keyword-positive 108 (29.8%). AUROC 0.97996, AP 0.95185, prevalence
+baseline AP 0.29752, balanced accuracy 0.91291.
+Fold 1: training 1451, testing 363, keyword-positive 108 (29.8%). AUROC 0.98537, AP 0.96454, prevalence
+baseline AP 0.29752, balanced accuracy 0.93622.
+Fold 2: training 1451, testing 363, keyword-positive 109 (30.0%). AUROC 0.97873, AP 0.95845, prevalence
+baseline AP 0.30028, balanced accuracy 0.93706.
+Fold 3: training 1451, testing 363, keyword-positive 109 (30.0%). AUROC 0.98786, AP 0.97860, prevalence
+baseline AP 0.30028, balanced accuracy 0.94952.
+Fold 4: training 1452, testing 362, keyword-positive 108 (29.8%). AUROC 0.97029, AP 0.93431, prevalence
+baseline AP 0.29834, balanced accuracy 0.89906.
+Interpretation: random assignment allows closely related family signatures across folds; this design approximates
+interpolation under the curated keyword distribution.
+
+C. family held out
+Fold 0: training 1306, testing 508, keyword-positive 327 (64.4%). AUROC 0.49617, AP 0.63654, prevalence
+baseline AP 0.64370, balanced accuracy 0.50153.
+Held-out families: three-finger toxin.
+Fold 1: training 1459, testing 355, keyword-positive 127 (35.8%). AUROC 0.51274, AP 0.38398, prevalence
+baseline AP 0.35775, balanced accuracy 0.50174.
+Held-out families: phospholipase a2.
+Fold 2: training 1497, testing 317, keyword-positive 22 (6.9%). AUROC 0.70216, AP 0.12693, prevalence
+baseline AP 0.06940, balanced accuracy 0.58451.
+Held-out families: crotamine-myotoxin, disintegrin, ficolin lectin, nucleotide pyrophosphatase/phosphodiesterase,
+ohanin/vespryn, type-b carboxylesterase/lipase, venom metalloproteinase (m12b).
+Fold 3: training 1497, testing 317, keyword-positive 46 (14.5%). AUROC 0.56225, AP 0.15401, prevalence
+baseline AP 0.14511, balanced accuracy 0.47192.
+Held-out families: avit (prokineticin), bradykinin-potentiating peptide, crisp, endothelin/sarafotoxin, natriuretic
+peptide, pdgf/vegf growth factor, peptidase s1, venom complement c3 homolog.
+Fold 4: training 1497, testing 317, keyword-positive 20 (6.3%). AUROC 0.68283, AP 0.10508, prevalence
+baseline AP 0.06309, balanced accuracy 0.60934.
+Held-out families: 5'-nucleotidase, flavin monoamine oxidase, multicopper oxidase, ngf-beta, phospholipase b-
+like, snaclec, true venom lectin, venom kunitz-type.
+Interpretation: no named family appears in both train and test for the fold, but phylogenetic and annotation
+relationships may cross named families. This tests harder transfer, not a clean causal ablation of homology alone.
+
+
+Methods note: equations, invariants and failure conditions
+The equations above are descriptions of implemented calculations, not novel biochemical laws. This appendix
+connects them to tests and failure boundaries so that counting formula lines does not disguise an unverified
+Source: mega27-27-isef-bioinf-derived-tools | All outcomes limited to cited data and tests
+Item 27 | September 25, 2026 | Current manuscript - not the archival survey
+phenotype. It also explains where the definitions break or cease to be measurable. For exact implementation and
+unit checks see venom/scripts/evaluate.py, venom/scripts/audit_active_sites.py, phosgene/model.py and the tests/
+folder.
+
+E1. Binary feature map
+Binary 3-mer features have no explicit physical state, folding information or catalytic-site geometry. Duplicate
+exact sequences can violate train/test independence, so exact-sequence groups were collapsed before evaluation.
+Named family holdout reduces one family-level leakage channel but does not establish independent wet-lab
+measurements.
+
+E2. Balanced logistic loss
+Class weights are estimated on each training fold, and the intercept and coefficients are learned only there. A
+held-out family can shift both feature support and the relationship between model score and prior probability. The
+threshold audit exposes this risk: all 120 direct-entry scores lie below 0.5.
+
+E3. AUROC and AP
+AUROC is undefined for a test fold with only one observed class; the code marks such folds unassessable rather
+than using a made-up value. Average precision depends strongly on prevalence, so the baseline AP and positive
+count accompany each fold. A comparison of the two mean AUROCs is descriptive because test distributions
+differ.
+
+E4. Attribution site ratio
+The X-substitution sensitivity ratio is a quotient of mean absolute logit changes. It would be undefined if mean
+control delta were zero; the observed denominator is positive, and the measured ratio is 0.67338. Since catalytic
+active sites are not validated causal features for the Neurotoxin keyword, no mechanistic attribution claim
+follows.
+
+E5. CAI geometric mean
+The codon adaptation index uses log weights and exponentiation, which avoids underflow across the 432-residue
+coding sequence. A codon with zero reference count cannot be assigned log weight and is rejected rather than
+silently treated as functional absence. The maximum of 1.0 follows trivially from selecting a maximal count for
+each amino acid, independent of biology.
+
+E6. Substrate concentration and enzyme units
+Dividing mmol per kg meal by liters per kg meal produces mM. One enzyme unit is interpreted as one
+micromole/min under the assay, converted by 1/1000 into mmol/min. Different assay temperatures, pH, protein
+secretion and luminal dilution can invalidate that conversion as an in-vivo rate.
+
+E7. Nonnegative integration
+The Euler step deducts no more substrate than remains and therefore conserves initial phytate substrate into
+hydrolyzed plus residual amounts. The mass-balance residual is arithmetic zero by construction, not an
+independent analytical measurement of product identity or dietary phosphorus fate.
+
+E8. Fecal phosphorus bound
+The new-retained quantity cannot exceed baseline fecal phosphorus by the min operation. Thus calculated relative
+reduction is between zero and one when baseline fecal output is positive. Its numerical value can still be anything
+in that interval as free fractions vary; this is exactly why matching a literature range by choice of input is not
+validation.
+
+
+
+
+Source: mega27-27-isef-bioinf-derived-tools | All outcomes limited to cited data and tests
+Item 27 | September 25, 2026 | Current manuscript - not the archival survey
+E9. Beta-binomial posterior
+The Beta update assumes exchangeable Bernoulli trials for the chosen narrow endpoint. The five idea builds were
+selected deliberately and are not exchangeable draws from all project ideas or awards. A posterior on runnable
+construction cannot be transported to discovery or award odds.
+
+E10. Service and dataset units
+The tool denominator is independent scientific services with actually used output, not API calls. The accession
+denominator is separate direct entry retrievals used in a scored audit, not all IDs in a bulk query. Their units
+differ: 120 entries from one UniProt service satisfy an entry-count condition while adding one, not 120, to a
+scientific-service ledger.
+
+
+14. Reproducibility, limitations and next valid tests
+The research record has a defined scope for each outcome, not one pooled pass/fail label. The venom sequence
+baseline uses reviewed snake-toxin entries, a UniProt keyword and one family ontology supplied by the same
+database. It is meaningful to report the random versus family-held-out ranking gap and the direct-entry test
+counts; it would be wrong to transport those numbers to venom potency or antivenom selection. The balanced
+120-entry selection creates a 50% positive fraction in each target family by construction, while the original 1,814-
+entry cohort has 542 keyword positives. AP, threshold sensitivity and any predicted probability should therefore
+be interpreted against each sample-specific prevalence rather than as a clinical risk score.
+The feature map is deliberately simple: contiguous amino-acid 3-mers and logistic weights. Exact-sequence
+collapse removes identical duplicate rows but not homologs, and the follow-up similarity audit shows why
+random folds are easier. A family category fed directly to another classifier reaches AUROC 0.87929 on those
+random folds, which is striking annotation signal but cannot prove which sequence motifs the first classifier used.
+A genuine independent test would preselect experimentally measured activities, freeze a protein homolog
+clustering method before outcome inspection, separate training and test by both family and measurement
+publication, and report calibration as well as discrimination. No such cohort has been obtained in this manuscript.
+For PhosGene, the AppA reference sequence and codon table are reproducible public records, and translation
+conservation is an exact software check. CAI 1.0 after choosing the maximally weighted synonym for every
+amino acid says only that the optimizer follows its reference counts. In an expression experiment the appropriate
+unit would be paired constructs in a named host with matched promoter, secretion system, culture conditions,
+protein yield and enzyme activity. A host mismatch, mRNA folding change or secretion failure could reverse the
+arithmetic ranking. The pig fecal-P endpoint additionally needs feed composition, active enzyme exposure and
+absorption measurements. No amount of resampling the toy mass-balance equation can replace those original
+assays.
+The 2018 dietary-pig and earlier Enviropig reports are contexts, not exchangeable calibration targets. The former
+gives diet-specific fecal-P decreases of 45.8% and 34.8% for a multi-enzyme setup; the earlier construct reports
+up to 75% under different biology. Selecting model inputs to land within these numbers after seeing them would
+be target leakage. The evidence validator reports ten missing or unsupported input dimensions and a null
+phenotype for the actual packet. A sensible next test would gather measurements for every dimension in one
+specified feeding design, assess source relevance before the model is run, and leave any transfer assumption
+explicit. Even a numerical agreement would then need uncertainty and an independent animal comparison, not
+just a plausible point estimate.
+The award-corpus analysis has a different identification problem. Its 125 rows are awarded project listings, not a
+registry of all submissions. Titles are a lossy summary of methods, category boundaries vary, and repeated top-
+award mentions were deduplicated by year/project code. A title-term frequency can guide which ideas to inspect;
+it cannot say which technique improves award probability. A valid rubric study would recruit independent blinded
+scorers for the same anonymized idea briefs and compare scores with actual later results, retaining both failures
+
+
+Source: mega27-27-isef-bioinf-derived-tools | All outcomes limited to cited data and tests
+Item 27 | September 25, 2026 | Current manuscript - not the archival survey
+and ambiguous cases. Neither nonwinner submission records nor such independent rater scores are in the current
+study.
+A shared denominator cannot discharge candidate-specific resource requirements. VenomFunction has 120 direct
+accession reads that were scored, but only six distinct counted scientific service uses; PhosGene has eleven
+distinct scientific services and an exploratory 129-entry direct protein-family provenance audit, clearing the
+narrow accession-count threshold but not an experimentally validated phytase or pig-phenotype gate. Candidate
+#7 has 120 BioSample records, yet the cohort lacks a multi-hospital interpreted R/S comparison and no genome
+predictor has been validated. Candidates #3 and #4 now have 120 separately retrieved protein entries for their
+narrow audits, but not their measured-function or synonymous-expression benchmarks; #5-6 and #8-10 retain
+source and accession deficits. Repeated endpoint requests, mirrored annotation services, a bulk table with many
+IDs, and a bibliography of tools are not forty materially used biological services for any one project. These
+shortfalls remain visible in the ledgers and cannot be repaired by relabeling repositories or supplement pages as
+evidence.
+The paper and companion supplement have complementary purposes. The main text has the full study question,
+evaluation designs, measured results, failure analysis, ten-build status and limits. The supplement is an audit trail:
+all 120 toxin entry scores, the 125 listed awards and each attempted external service endpoint. A reader should
+use the main paper to understand the claims and the supplement to verify individual rows, then inspect the cited
+JSON/TSV and source URLs for exact sequences, dates and retrieval hashes. The supplement does not add
+independent experiments, and a long appendix is not a substitute for valid data or methods.
+
+
+15. Gate-to-evidence decision table
+ Claim under test                          What is directly observed                                What remains unproved
+ Award pattern                             125 official awarded CBIO title rows                     No nonwinner denominator or award odds
+ Rubric reliability                        Deterministic five-field scoring CLI                     No three-person blinded agreement
+ Venom keyword baseline                    1,814 reviewed sequences; fixed random/family            No measured potency or independent function
+                                           folds                                                    cohort
+ Venom direct test                         120 separate entries fetched, checked and scored         Only one service; selected balanced sample
+ PhosGene optimizer                        Translation conserved; 129-entry family scope            No expression/secretory yield measurement
+                                           audit
+ Pig phosphorus model                      Mass-balance equations and provenance refusal            No source-complete in-vivo input packet
+ Builds #3-10                              Runnable audits and bounded tests in own                 Separate 120/40 gates and full papers open
+                                           directories
+
+The table is a decision aid, not a sum of heterogeneous outcomes. In particular, a false-negative threshold failure
+and an unmeasured phenotype are different reasons not to ship a scientific predictor. Future work should specify
+which gate an experiment will answer before collecting more data; adding a service without a biological use
+cannot close any row.
+ Candidate                     Counted scientific providers            Strict direct-entry status               Principal unresolved test
+ VenomFunction-2               6/40                                    120 direct scored UniProt                Independent measured activity and
+                                                                       accessions                               transfer
+ PhosGene                      11/40                                   129 direct family-audit proteins; no     Pig-physiology evidence and
+                                                                       activity assay                           phenotype
+ #3 ToxinAudit                 5/40                                    120 direct UniProt entries; 41           Measured functional negatives
+                                                                       target-EC citations
+ #4 CodonContext               5/40                                    120 direct proteins; 120 CDS             Paired expression constructs
+                                                                       features/one genome
+ #5 GraphHoldout               3/40                                    0 individual biological retrievals       Historical source-disjoint
+                                                                                                                prospective edges
+ #6 TranscriptShift            1/40                                    0 separate sample files                  Comparable independent asthma
+                                                                                                                cohort
+ #7 MicrobeTransfer            4/40                                    120 BioSample records, not               Multi-hospital interpreted AST and
+                                                                       genome predictor set                     genomes
+
+Source: mega27-27-isef-bioinf-derived-tools | All outcomes limited to cited data and tests
+Item 27 | September 25, 2026 | Current manuscript - not the archival survey
+ #8 PhageHostScope            3/40                         97 source phage FASTAs; external     Compatible external host
+                                                           105 incomparable                     representation
+ #9 RNAEvidence               2/40                         No individually verified 120-entry   Independent gene-target assay
+                                                           ranker set                           endpoint
+ #10 SpatialArtifactGuard     1/40                         Bulk matrix and 15,611 aligned       Independent site and pixel
+                                                           spots                                validation
+
+Counts are per candidate and reflect dated committed ledgers; they may change only when a new material use and
+its biological interpretation are recorded. The table does not add scores across candidates. A direct BioSample
+AST record answers a metadata/assay provenance question, not the same question as a genome that is individually
+fetched and used in a predictor. An accession can be a dataset unit for a well-specified audit while still failing a
+larger discovery requirement. See projects/EVIDENCE_LEDGER.md, builds/service_ledger.tsv and
+external_tools/ledger.tsv.
+
+15.1 Interpretation guide for independent readers
+A raw score should be paired with its observation unit and a meaningful denominator. The venom random-fold
+AUROC refers to held-out rows from one curated source with homologous families shared across folds; the held-
+out-family AUROC refers to a different set of entire families. The two AUROCs are not repeated measurements
+of the same target population. Likewise, the PhageHostScope AUC refers to pairs held out by trees within one
+source experiment, while its external Klebsiella inventory has no compatible host representation and therefore no
+external AUC. These distinctions matter more than the size of any single number.
+A refusal is a result when the tool has checked the relevant evidence, not a placeholder success. ToxinAudit
+refuses to label unassayed enzymes negative, PhosGene refuses to infer a pig effect from an in-vitro Km,
+MicrobeTransfer refuses a hospital-disjoint score from one R/S collector, and GraphHoldout refuses precision
+when unknown gene-disease pairs are not measured negatives. Each refusal is reproducible code behavior with a
+stated missing experiment. The next branch of work should target the missing measurement rather than recoding a
+null outcome as a positive model performance metric.
+The current resource counts are audit snapshots. The strict criterion for a counted service is that its output was
+materially used in the named candidate and the biological interpretation or limitation is logged. An API call that
+returned a 404, a citation copied into a reference list, and a second website mirroring the same record do not make
+independent scientific tools. Similarly, accession-wise retrieval and actual use in an analysis differ from spotting
+many accession strings in a bulk CSV. This distinction is why 120 direct toxin entries count as an entry audit but
+just one UniProt service.
+
+
+16. Conclusion and bounded claim
+The defensible finding is methodological rather than a new treatment or a measured animal effect. In the protein-
+keyword task, a random fold looked excellent and a family-disjoint fold fell near chance; direct accession scoring
+confirmed poor transfer in two selected toxin families. Separate analyses found high train-test sequence
+resemblance in random folds, substantial family-annotation signal, an unsuccessful threshold transfer, and a
+negative catalytic-site input-sensitivity proxy. Each is a specific check with its own data and timing. Together
+they support caution about an easy benchmark, not a universal causal explanation or a clinical classifier.
+The AppA branch reached a different endpoint: the coding-sequence optimizer and phosphorus equation are
+executable and testable, but their available inputs cannot identify a pig fecal-phosphorus reduction. The
+provenance gate that returns null is a positive software safety property, not a positive biological phenotype.
+Extending that branch requires original matched expression and feeding data rather than selecting free constants
+to imitate a published decrease. The award/rubric branch likewise yields a transparent winner-only catalog and
+scoring instrument, not an estimate of which method wins or agreement among independent judges.
+Eight additional candidate builds now broaden the program inventory, but their research units vary: experimental
+citations, synthetic CDS rules, curated graph edges, GEO cohorts, AST metadata, host-range plates, assay records
+and spatial spots. These units cannot be exchanged for each other or pooled to satisfy ten separate accession and
+Source: mega27-27-isef-bioinf-derived-tools | All outcomes limited to cited data and tests
+Item 27 | September 25, 2026 | Current manuscript - not the archival survey
+service gates. Only the bounded claims in this paper and the source-limited inventory should be communicated as
+current results. The linked supplement makes the data trail inspectable, while the candidate-specific short reports
+and repository tests show what is runnable and where each gate still fails. Future successes should add new
+measurements and independent evaluations without erasing these negative waypoints.
+
+
+References and record locator
+Official award pages: survey/data/official_cbio_awards.tsv, per-row official URLs
+UniProtKB API documentation: https://www.uniprot.org/help/api_queries
+Snake toxin annotation background: https://pmc.ncbi.nlm.nih.gov/articles/PMC3393831/
+2018 pig feeding experiment, full text: https://pmc.ncbi.nlm.nih.gov/articles/PMC5963925/
+Original Enviropig experiment: https://europepmc.org/article/MED/11479566
+AppA in-vitro kinetics: https://pubmed.ncbi.nlm.nih.gov/10696472/
+Measured AppA mutant comparison: https://www.frontiersin.org/journals/bioengineering-and-biotechnology/
+articles/10.3389/fbioe.2023.1167530/full
+Codon harmonization paired-yield feasibility: https://doi.org/10.1371/journal.pone.0002189
+Specific direct source/tool URLs: external_tools/ledger.tsv and linked result JSON
+Rubric and prospective protocol: src/isefdev/rubric.py; protocols/prospective_2026-09-25.md
+
+
+
+
+Source: mega27-27-isef-bioinf-derived-tools | All outcomes limited to cited data and tests
+===END DOCUMENT TEXT===

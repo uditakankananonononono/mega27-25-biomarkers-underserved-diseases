@@ -1,0 +1,14 @@
+{
+  "round": 1,
+  "artifact": "projects/toxin_audit/REPORT.pdf in mega27-27-isef-bioinf-derived-tools @ 9925b30",
+  "route": "TEXT-PASTE verified round (user route change 2026-09-26 13:18 IST replaces PDF-attachment route after Free-tier upload cap)",
+  "source_pdf_sha256": "b3d341562f262f789ee2781560d81584f48425809834b9392d1348e559dca34a",
+  "extraction": "pdftotext -layout; completeness verified: 4 form-feed page breaks == 4 pdfinfo pages; tables preserved as layout text; 15,692 chars pasted whole in one message",
+  "prompt_file": "round1_message.txt (head: round1_toxinaudit_prompt_head.txt)",
+  "response_file": "round1_response.txt",
+  "conversation_url": "https://chatgpt.com/c/3ffbb71f-8d6b-4022-a243-21795e7648cc",
+  "receipt_verification": "PASS - response quotes version-unique strings: 'ECO:0000269', '22 clusters', 'fail-closed benchmark auditor', 'Predictor AUROC' table wording",
+  "questions_asked": ["weaknesses classified fixable/rewrite/inherent", "ISEF standing", "improvement ordered by impact"],
+  "verdict": "YES - report honestly represents the work and its limits; remaining weaknesses are presentation and competition positioning, not scientific misrepresentation",
+  "timestamp_ist": "2026-09-26T13:20"
+}

@@ -1,0 +1,284 @@
+You are a skeptical ISEF methods reviewer. Below this instruction block, between the markers ===BEGIN DOCUMENT TEXT=== and ===END DOCUMENT TEXT===, is the COMPLETE extracted text of a candidate working report PDF for a bioinformatics derived-tools build called CodonContext (item 27). The text was extracted from the source PDF with layout preserved; tables appear as plain text. An earlier review of this artifact was invalidated because the artifact never actually reached the model, so this is the authoritative re-run. Base your review ONLY on the pasted text. 
+
+Answer three questions:
+1. WEAKNESSES: every genuine weakness, each classified as (a) fixable by code/data changes within the current candidate's scope, (b) fixable by rewriting or clarifying scope in the report, or (c) an inherent limitation that should stay disclosed as-is. Quote the specific text you rely on for each. Check in particular: whether any claim exceeds the evidence presented; whether stated numbers are internally consistent (counts, metric values, dates); whether the fail-closed framing hides any result that was actually run; whether the self-criticism is complete or something is claimed too strongly OR dismissed too weakly.
+2. ISEF STANDING: how well would this work do at ISEF as currently presented - judging-relevant strengths, judging-relevant gaps, and an honest overall assessment.
+3. IMPROVEMENT: how it could be improved, ordered by impact, staying within honest science (no fabricating results, no padding, no weakening preregistration discipline).
+
+Rules: do not invent weaknesses to look thorough; distinguish real problems from stylistic preferences. If everything material is already handled honestly, say so and say why. End with a one-sentence verdict: does this report honestly represent the work and its limits?
+
+===BEGIN DOCUMENT TEXT===
+ CodonContext: a fail-closed CDS constraint tool with no
+ expression claim
+ Candidate-specific working report, September 25, 2026. This project is separate from the aggregate item-27 manuscript. A
+ later same-protein, one-host mRFP expression analysis now supplies real paired construct measurements, but does not test
+ the original cross-host CAI-gain/yield question or establish a new design method. The useful software deliverable is a
+ tested CDS-constraint and provenance checker that refuses to turn codon metrics into yield predictions.
+
+ Abstract
+ Codon adaptation index (CAI) is a descriptive measure of how supplied synonymous codon weights match a particular
+ usage table. Raising a CAI value does not, by arithmetic alone, prove that a protein is expressed, secreted or functional.
+ The original candidate proposed testing whether CAI gain predicts experimentally measured expression across hosts under
+ held-out GC and secretion constraints. The original examples lacked paired construct measurements, and a later mRFP
+ cohort supplies only one protein in one host; four source-header holdouts show unstable calibration (macro R2 -0.305). We
+ therefore keep the fallback: a standard-code coding-sequence checker for protein identity, whole and sliding-window GC,
+ forbidden DNA motifs, homopolymer runs and supplied host-specific relative codon weights. It refuses invalid inputs and
+ always leaves expression_prediction null. Three exact UniProtKB/NCBI RefSeq protein-CDS pairs were retrieved
+ and crosschecked; their CDS translations match the corresponding protein sequences. These real sequences test parsing and
+ translation, not expression. The software gate passes; the proposed host-/protein-held-out CAI-gain biological question
+ remains unassessable. The mRFP early-codon result reproduces a published theme and is not a new discovery.
+
+ 1. Initial biological question and pivot
+ A codon optimization study would need multiple constructs encoding the same protein, measured protein yield in multiple
+ expression hosts, and a defined separation of train and test by host, GC stratum, secretion pathway or laboratory. It would
+ compare a CAI-only expectation to the observed yield after controlling for composition and context. A collection of
+ coding-sequence accessions alone does not supply such a label. Codon choice also affects mRNA structure, ribosome
+ dynamics, motif creation, regulatory elements and host stress, none of which is captured by a single CAI value.
+ Because that data gate was not met, the computational task is narrower. A user can submit a candidate and optional
+ reference DNA CDS. The tool checks whether it encodes the same polypeptide and satisfies explicit, user-supplied
+ sequence constraints. A lack of protein identity is a hard error. Constraint violations are returned as positions and values,
+ not turned into a predicted expression rank. A user may supply relative codon adaptiveness weights for descriptive CAI
+ arithmetic, but the tool will not invent a host table or measured response.
+
+ 2. Algorithm and formulas
+ For a CDS of length L nucleotides, valid input requires L>0, L divisible by 3, only A/C/G/T, initial ATG, a terminal stop
+ codon TAA/TGA/TAG and no internal in-frame stop. Translation uses the standard nuclear/bacterial codon map. A
+ candidate and reference must have identical translated amino-acid strings; the stop is omitted from the protein sequence
+ hash. This is a sequence-preservation check, not a statement that the protein folds or behaves identically in different hosts.
+ Whole-sequence GC fraction is (count(G)+count(C))/L. The optional sliding window of W nucleotides visits every
+ position from 0 through L-W, inclusive, and compares each window's GC fraction to supplied minimum and maximum. A
+ forbidden motif is matched against exact uppercase DNA text and its first zero-based position is reported. Homopolymer
+ check flags a run longer than the supplied maximum. Limits must be finite and in [0,1] for GC, W must be an integer from
+ 3 through L, and contradictory min/max ranges are rejected. Boolean and NaN values are refused; silently interpreting
+ them as numbers could make a wrong construct appear feasible.
+ For each non-Met, nonsingleton synonymous codon c, the optional CAI is the exponential of the arithmetic mean of log
+ relative-adaptiveness weight w(c), where each required weight is in (0,1]. The tool returns null when there are no variable
+ synonymous codons. CAI gain is candidate CAI minus reference CAI only when both sequences and all necessary weights
+ are supplied. This is an arithmetic difference, not a percentage expression gain. Supplying weights without their host and
+ experimental origin can make a number look precise while remaining biologically uninterpretable.
+
+ 3. Real accession provenance
+ accession_audit.py fetched exact UniProtKB records and the linked NCBI RefSeq nucleotide records. For each
+ protein, it selected the GenBank CDS feature with the matching protein ID, extracted the DNA at annotated coordinates,
+ translated it and required exact equality to the separately retrieved UniProtKB protein sequence. This includes reverse-
+ complement feature handling where necessary. The results and SHA-256 response digests are in accessions.json.
+
+
+CodonContext | September 26, 2026 | Candidate-specific report                                                                     1
+  UniProtKB protein                      RefSeq protein Nucleotide record     Protein length CDS/UniProt match   Yield measured here?
+
+  P00722, E. coli beta-galactosidase     NP_414878.1       NC_000913.3      1,024 amino acids Yes                No
+
+  P07102, E. coli AppA phytase           NP_415500.1       NC_000913.3       432 amino acids Yes                 No
+
+  P61769, human beta-2-microglobulin     NP_004039.1       NM_004048.4       119 amino acids Yes                 No
+
+
+ P07102 occurs in the earlier PhosGene project. Its re-use as a sequence-validity test is not a new independent biological
+ discovery for either project. These three crosschecked pairs count as three individually retrieved pairs within this tool; they
+ do not satisfy a 120-independent-accession program gate. NCBI RefSeq and UniProtKB are two distinct biological
+ sources; Biopython parses GenBank, but is a local library rather than a third biological service.
+
+ 4. Tool behavior and examples
+ The committed example.json contains synthetic short synonymous CDS inputs, a small illustrative adaptiveness table
+ and constraint values. Run python3 projects/codon_context/codon_context.py projects/codon_context/
+ example.json from repo root. A normal result names constraints_pass or constraints_fail, records violation
+ positions, hashes the translated protein and returns expression_prediction: null with an explicit warning. A
+ candidate that changes the amino-acid sequence raises an error rather than returning a comparable CAI gain. Missing
+ codon weights, zero or negative weights, nonfinite values, impossible window sizes, contradictory GC bounds and
+ ambiguous nucleotides fail closed.
+ The tests cover valid synonymous comparison, altered protein rejection, invalid start/stop/ambiguity, forbidden motifs, GC
+ windows, malformed numerical constraints and all three real accession CDS checks. They test software behavior, not
+ whether any gene expresses in a lab. No code enumerates or searches synonymous designs. This is an auditor of proposed
+ CDS sequences, not a codon optimizer that can find a satisfying sequence on its own.
+
+ 5. Evidentiary gate and missing cohort
+ The software gate is concrete: preserve translation, enforce explicit constraints, and never claim yield from unmeasured
+ codon arithmetic. That gate passes the supplied tests. The original biological hypothesis remains unassessable: the later
+ mRFP cohort provides sequence and expression for one protein/host but not the multi-host, protein-held-out, GC- and
+ secretion-controlled design needed to test CAI-gain generalization. A stronger cohort would include original construct
+ sequences, host strain, growth conditions, measured expression or yield, assay variability and secretion status or
+ compatible constraints for each construct. A host-held-out and a secretion-held-out comparison would be needed to test
+ whether CAI gain adds predictive value beyond GC and simple sequence features. A single best-performing recombinant
+ protein or an accession-only CDS database would not suffice.
+ Even with a paired cohort, a robust test would freeze the unit of independence: constructs from the same protein or
+ publication may share protocol and label noise. The final model should be assessed on a genuinely new host/lab or held-out
+ protein family, with confidence intervals and a baseline that uses composition alone. That is future work, not a benchmark
+ result concealed in this report. No external wet-lab measurements were acquired or inferred from UniProt/RefSeq
+ identifiers.
+
+ 6. Safety and misuse boundaries
+ A scientifically honest CDS checker should be predictable when input is malformed. It rejects non-ACGT bases, internal
+ stops and candidate/reference protein mismatch before reporting a passing constraint status. It does not silently accept
+ Boolean numeric fields or cast fractional window lengths to integers. DNA motif and GC restrictions can matter for
+ cloning or synthesis, but the user remains responsible for choosing biologically appropriate constraints, host weights and
+ gene identity. A passing output means only that the supplied sequence meets the supplied arithmetic rules; it is not a safety,
+ expression, manufacturing or clinical clearance.
+ The tool currently assumes the standard genetic code and an ATG start. Mitochondrial genomes, organisms with alternate
+ codon tables, noncanonical starts and engineered code systems require a separate specified mode. Secretion is not modeled,
+ nor are mRNA secondary structure, RNA stability, rare-codon stalls, immunogenicity or regulatory sequence effects. No
+ wet-lab phenotype can be reconstructed from the source accession metadata.
+
+ 7. Reproducibility and counts
+ Run python3 projects/codon_context/accession_audit.py to refetch source records and verify translation;
+ compare hashes in accessions.json before interpreting a changed UniProt or RefSeq record as the same source. Run
+ python3 -m pytest -q projects/codon_context for the local software gate. The initial sequence audit used two
+ scientific services (UniProtKB and NCBI RefSeq) and three protein-CDS pairs. Later sections add the expanded pair audit
+
+
+CodonContext | September 26, 2026 | Candidate-specific report                                                                           2
+ and a distinct PSI:Biology expression-success cohort, bringing materially used sources to three before the paired-construct
+ scope check below. The later mRFP cohort supplies same-protein synonymous constructs and fluorescence-linked
+ expression in one host, while the earlier expanded accession and PSI cohorts do not. It is neither a multi-host matched-
+ yield cohort nor a matched benchmark. The cross-host CAI-gain verdict remains unassessable, not negative expression
+ performance or a successful CAI predictor. A short source-backed tool report is more truthful than padding this result into
+ an apparent 20-page expression paper.
+
+ Source notes
+ The UniProtKB REST service and NCBI Entrez E-utilities are the direct record sources. Exact protein and nucleotide
+ URLs, feature coordinates and response digests are in projects/codon_context/accessions.json. The committed
+ CLI tests and code establish only the claimed arithmetic checks. No accession listed here includes a paired construct/
+ expression value in this analysis.
+
+ Post-report CDS feature expansion, September 25
+ The original three pairs above remain an archival cross-species demonstration. A frozen new selection chose the first 120
+ reviewed E. coli K12 entries in UniProtKB search order with one unambiguous NP_ RefSeq link to NC_000913.3, before
+ comparing translations. All 120 UniProtKB entries were fetched separately with response SHA-256; their 120 distinct CDS
+ features were extracted from one fetched RefSeq chromosome (one shared response SHA-256), and each annotated protein
+ translation matched the linked UniProt sequence. data/expanded_selection.json and data/expanded_pairs.json
+ store exact IDs, source URLs, coordinates, sequence hashes and check results. Seven entries have valid annotated bacterial
+ GTG/TTG starts and one has a selenocysteine translation exception. The strict ATG/standard-code constraint CLI is
+ unchanged and must not be used to reject those valid annotated exceptions. This is 120 matched protein/CDS feature pairs,
+ not 120 individually downloaded nucleotide records, independent constructs or measured expression outcomes. The no-
+ yield-prediction gate remains in force.
+
+ Exploratory measured-expression side experiment, September 25
+ The original CAI-gain question remains unanswerable without matched synonymous constructs, but a secondary, distinct
+ prediction question now uses real expression-success labels. The Bhandari et al. 2021 article links its research source
+ repository, where a fixed revision supplies the PSI:Biology pET21_NESG sequences, species names and class table. Exact
+ original-file URLs and digests are in data/psi_sources.json. The class table has 11,437 accessions, original FASTA
+ 11,469; seven class accessions lack a supplied species name, leaving 11,430 matched records. The source authors' notebook
+ collapses classes 1/2 into detectable expression versus 0 not found. These binary outcomes are measured expression
+ success, not protein yield, and no two records are asserted to be synonymous versions of the same protein.
+ data/expression_protocol.json records a locally frozen design before metrics: four composition/length features, one
+ seed-27 25%-of-prefix-groups holdout and a training-only logistic pipeline with C=0.1. On 8,941 train and 2,489 test
+ records, AUROC is 0.6585; length-only 0.5365, GC-only 0.5755, intercept-only 0.5. Average precision is 0.8225 versus
+ test prevalence 0.7453; balanced accuracy at 0.5 is 0.5123. Prefix groups are not a verified taxonomic or homology split:
+ 39 of 130 prefixes mix named species, although the frozen split has no exact supplied species name or identical full CDS
+ sequence on both sides. This does not establish homology independence. Source labels and experimental protocols may
+ still be correlated, and the feature choices were motivated by prior literature. The paper's published opening-energy AUC
+ 0.70 used its own region, methodology and cohort; it is not a matched head-to-head comparison. This exploratory result
+ cannot be called a win or match. Most importantly, classification across different proteins in one E. coli expression setting
+ says nothing about the incremental yield effect of changing synonymous codons while holding protein, host, GC and
+ secretion constant. The CLI keeps expression_prediction: null.
+
+ Paired-construct scope check without model fitting
+ Angov et al. 2008 reports wild-type versus codon-harmonized E. coli expression for five selected constructs. We read the o
+ riginal supplementary Table 1 as an XLS with response SHA-256 in data/synonymous_pair_scope.json. FMP003 has
+ one synonymous codon change and a reported harmonized purified yield of 0.07 mg/g cell paste versus wild-type not
+ detected. The 3D7 MSP1 construct has reported wild-type 0.8 versus harmonized 3 mg/g cell paste with 246 changes.
+ Those are selected paired intervention observations, not proof of an average CAI effect: the table lacks full paired CDS
+ sequences and CAI, other entries include ND or Not Detected rather than quantitative zero, and there are only five
+ reported designs from one setting. We neither fit a model nor infer a host-held-out yield response. This fourth materially
+ used source strengthens the reason to collect construct-level paired data, while leaving the program gate open.
+
+
+
+
+CodonContext | September 26, 2026 | Candidate-specific report                                                                    3
+ mRFP same-protein measured-expression scope check
+ The original whole-gene codon-randomization study reports 1,459 mRFP construct sequences with protein-production
+ measurements in E. coli. A downstream CodonBERT CSV supplies exact 678-nt mRNA sequence, numerical expression
+ and CodonBERT-provided train/validation/test columns. We fetched the pinned file and independently retrieved the
+ original article supplementary workbook from Europe PMC. All 1,459 original validated sequences and log-corrected
+ fluorescence values match the downstream CSV as a multiset (maximum numeric difference 3.6e-15); the four duplicate
+ sequences are preserved. The outer Europe PMC ZIP is regenerated, but its nested archive and workbook hashes are stable
+ in data/mrfp_original_crosscheck.json. We checked the pinned CSV SHA-256 and confirmed all rows translate to
+ the same 225-aa protein with a common stop. It contains 1,455 unique sequences: two train/test exact-sequence overlaps,
+ one train/train duplicate and one validation/validation duplicate. We removed the two training rows whose sequences recur
+ in the test set, averaged the remaining train/train duplicate from training measurements only, and left the 219 unique test
+ rows untouched. This leaves 1,018 training sequences. Validation labels and values were not used for tuning. The exact-
+ provenance and split audit are in data/mrfp_protocol.json, mrfp_side_study.py and data/mrfp_result.json;
+ the raw CSV is not redistributed pending license review.
+ On the frozen secondary-CSV test partition, training-only standardized ridge with fixed alpha 100 has Pearson r 0.5214,
+ MAE 0.4751 and R2 0.2618 using whole-CDS and first-30-nt GC. A fixed positional-agnostic count of the first eight
+ codons gives r 0.7224, MAE 0.3940 and R2 0.5158. A training-mean constant has MAE 0.5762 and R2 -0.0007. The
+ response is the secondary CSV's numerical fluorescence-linked expression measurement, not purified yield. These are not
+ matched published-model results: the original paper reports a random forest first-eight-codon correlation from its own
+ cross-validation, with different features, splits and estimator. The direction that early codon context matters is already
+ known from that paper, so this reanalysis is a leakage-aware reproduction and a useful feasibility check, not a new
+ biological discovery. It supplies real same-protein construct measurements but only one protein, source laboratory and
+ host setting; it cannot test host-, secretion- or protein-held-out generalization, or whether a change in CAI within paired
+ designs causes improved yield. The original named-protein examples P00722, P07102 and P61769 still have zero
+ measured synonymous constructs in this build. A post-result audit mapped each downstream row back to the original
+ validated workbook by both DNA sequence and log response, then checked the original design library and source header as
+ categorical predictors on the same split. Library only has test Pearson r 0.3552; original four-level header only r 0.4493.
+ These do not explain all the first-eight-codon score (r 0.7224), but demonstrate laboratory/design structure is predictive and
+ could leak through a within-source random split. The follow-up was designed after seeing the first result and is a sensitivity
+ diagnostic, not an independent lab holdout or new discovery. See data/mrfp_batch_protocol.json and data/
+ mrfp_batch_result.json. A separate post-result four-fold leave-original-header-out sensitivity test uses the same fixed
+ ridge and GC/early-codon features with one of the four source headers held out in each fold. The early-codon model has
+ test Pearson r 0.666, 0.146, 0.805 and 0.667 across the four headers, but R2 is -0.179, -1.763, 0.641 and 0.080 respectively
+ (unweighted macro R2 -0.305); macro MAE is 0.480 versus training-mean 0.592. A high correlation can thus coexist with
+ poor calibration on a held-out design batch. The four headers are not four independent labs, and all came from one study;
+ this does not establish host transfer. The design and all fold outcomes are in data/
+ mrfp_header_holdout_protocol.json and data/mrfp_header_holdout_result.json. The candidate's present
+ contribution remains a fail-closed constraint checker and evidence/split audit, not a validated new codon-design pipeline.
+
+ Original multi-gene source test, September 26
+ The 2010 E. coli expression study and its original Europe PMC supplementary bundle provide full wild-type and optimized
+ CDS for 100 distinct protein constructs. We matched each original Table I ID, including the paper's multi-accession
+ formatting, to its original workbook row and confirmed identical translated polypeptides up to stop for each of the 100
+ pairs. Optimized records append two terminal stops, while 98 WT records have one and two WT records lack a terminal
+ stop; full raw translated strings are thus not identical. The original model retains raw-CDS GC including these short stop
+ tails; first-30-nt GC is unchanged and the exploratory pooled R2 remains 0.061. The table reports 73 strictly positive total-
+ expression ratios (optimized divided by wild-type), 21 entries marked 0 (no expression) and six / entries (no analysis
+ possible, lacking wild-type construct). The 0 and / entries are preserved in the audit but excluded from logarithmic
+ regression, not assigned invented numeric yield. Table III contains 25 proteins with purified-yield comparisons, including
+ multiple purification modes and undetermined wild-type values; its endpoint cannot be substituted for Table I total
+ expression. All source hashes, the fixed analytic choices and 100 provenance-linked rows are in data/multigene/, with a
+ rerunnable parser/model in multigene_audit.py. Original XML and XLS are fetched locally, not redistributed.
+ Before computing the model, we fixed three simple features (whole-CDS and first-30-nucleotide GC changes plus wild-
+ type log length), a scaled ridge regression with alpha 10, and leave-one-original-protein-family-out testing. On the 73
+ positive-ratio observations in six families, pooled held-out log-ratio R2 is 0.061 (training-mean baseline -0.003), with
+ MAE 0.729 (mean baseline 0.753). Family-specific R2 is negative for the 15 cytokines (-0.048); no score is a measured
+ purified-yield score or a matched literature-model comparison. This source fills a real same-protein, multi-gene feasibility
+ gap, but selection on measurable expression, one lab, one host, one optimizer and only six coarse families prevent a novel
+
+
+CodonContext | September 26, 2026 | Candidate-specific report                                                                     4
+ generalizable CAI-gain claim. Our model has no CAI feature, cannot estimate causal effects, and does not run in the CLI's
+ expression_prediction field. The fail-closed original conclusion stands; a small pooled lift over a mean baseline is not
+ an ISEF-winning discovery.
+
+ Distinct yeast-host source, but no matched transfer endpoint
+ Lanza et al. 2014 generated nine eGFP and ten CatA wild-type or re-coded constructs in yeast. Its original supplementary
+ PDF lists sequences. The paper plots eGFP flow-cytometry response and CatA Vmax at three growth times and muconic-
+ acid production; the authors report a condition-specific CatA result of 2.6-fold wild type and nearly 2.9-fold a commercial
+ comparator in stationary-phase product yield. These are the original authors' findings, already in prior work, and unlike the
+ 2010 E. coli paper's total-expression ratio endpoint. We did not extract numeric values from plotted figures or join different
+ proteins as if they were the same cross-host construct. Text extraction of the supplement spans PDF page boundaries and
+ yields inconsistent eGFP lengths, so full eGFP translation identity remains unverified here. This second host is useful for
+ novelty and design context, not evidence of an independently validated host-transfer model; see data/
+ yeast_independent_scope.json.
+
+ Purified-yield eligibility is smaller than total-expression eligibility
+ Table III of the same original multi-gene article reports 27 native/denatured purification rows for 24 unique named
+ proteins. The prose also says 24 candidates, though the table title says 25 genes. Its original numerical rows yield 17 pairs
+ with two strictly positive mg/L values and finite reported optimized/wild-type ratios. Six rows have n.d. wild-type
+ purification and four rows have a measured zero wild-type yield, where a finite fold-change is undefined. IFN alpha, TFIIB
+ and TNF alpha are each listed in two purification modes. multigene_yield_scope.py parses and checks the original
+ ratio against the two yields; data/multigene/yield_rows.json preserves all 27 rows and yield_scope.json records
+ counts. This selected and partly duplicated subset is too small for an honest separate protein-family or host-held-out
+ purified-yield model. It must not be substituted for the 73 positive total-expression ratios in the exploratory model above.
+ A post-result stop-codon sensitivity test removes all terminal stops from the whole-CDS GC feature of the same original
+ 100 pairs, without changing labels, family splits or model settings. Pooled out-of-family R2 shifts from 0.06063 to 0.06027
+ (difference 0.00036); first-30-nt GC remains identical. The original score's short stop-tail composition effect is small for
+ this narrow diagnostic, but this is neither a new host benchmark nor proof that CAI controls yield. Code and result are in
+ multigene_stop_sensitivity.py and data/multigene/stop_sensitivity.json.
+
+
+
+
+CodonContext | September 26, 2026 | Candidate-specific report                                                                     5
+===END DOCUMENT TEXT===

@@ -1,0 +1,200 @@
+You are a skeptical ISEF methods reviewer. Below this instruction block, between the markers ===BEGIN DOCUMENT TEXT=== and ===END DOCUMENT TEXT===, is the COMPLETE extracted text of a candidate working report PDF for a bioinformatics derived-tools build called ToxinAudit (item 27). The text was extracted from the source PDF with layout preserved; tables appear as plain text. An earlier review of this artifact was invalidated because the artifact never actually reached the model, so this is the authoritative re-run. Base your review ONLY on the pasted text. 
+
+Answer three questions:
+1. WEAKNESSES: every genuine weakness, each classified as (a) fixable by code/data changes within the current candidate's scope, (b) fixable by rewriting or clarifying scope in the report, or (c) an inherent limitation that should stay disclosed as-is. Quote the specific text you rely on for each. Check in particular: whether any claim exceeds the evidence presented; whether stated numbers are internally consistent (counts, metric values, dates); whether the fail-closed framing hides any result that was actually run; whether the self-criticism is complete or something is claimed too strongly OR dismissed too weakly.
+2. ISEF STANDING: how well would this work do at ISEF as currently presented - judging-relevant strengths, judging-relevant gaps, and an honest overall assessment.
+3. IMPROVEMENT: how it could be improved, ordered by impact, staying within honest science (no fabricating results, no padding, no weakening preregistration discipline).
+
+Rules: do not invent weaknesses to look thorough; distinguish real problems from stylistic preferences. If everything material is already handled honestly, say so and say why. End with a one-sentence verdict: does this report honestly represent the work and its limits?
+
+===BEGIN DOCUMENT TEXT===
+ ToxinAudit-LabelScope: an enzyme EC provenance gate before
+ family-transfer modeling
+ Candidate-specific working report, September 25, 2026. This report does not extend the previous toxin family's
+ AUROC result or count that earlier work as a new result. It records a new exact-accession enzyme evidence audit. Its
+ principal scientific outcome is that a predictive benchmark should not be run without measured function-negative
+ labels, even after the positive accession set was expanded.
+
+ Abstract
+ A random-versus-family generalization gap in the earlier VenomFunction project prompted a distinct question: would
+ a new protein-function benchmark with enzyme EC labels also reveal annotation shortcuts when sequence families
+ are held out? We inspected direct UniProtKB reviewed entries for carboxylesterase EC 3.1.1.1 and hexokinase EC
+ 2.7.1.1. Twenty-six individual entry JSON records were fetched, with original URLs and SHA-256 hashes. Seven
+ esterase and five hexokinase entries have an experimental ECO:0000269 citation attached specifically to the target
+ EC. Fourteen other entries have the target EC annotation but no direct experimental evidence attached to that specific
+ target EC in the parsed entry. None is a measured function-negative control. A subsequent frozen API-ranked
+ expansion independently fetched 120 reviewed EC entries, 62 esterases and 58 hexokinases, with 22 and 19 target-
+ EC experimental citations respectively. The original 26 are preserved but not added to the 120. Neither panel
+ contains assayed target-function negatives. A 3-mer sequence-overlap proxy finds 22 clusters in the original panel
+ and at least one cluster crossing a seeded random train/test split, but no classifier or AUROC can be justified from a
+ panel with no assayed negatives. Direct QuickGO, InterPro and ChEMBL crosschecks provide annotation context,
+ not negative function measurements. The output is a runnable fail-closed benchmark auditor, not a validated enzyme-
+ function model.
+
+ 1. Biological question and distinction from the parent toxin work
+ The earlier VenomFunction analysis compared random splits to snake-toxin family-disjoint splits using a curated
+ keyword. A large gap there is motivation for a different annotation task, not an independent test of this enzyme
+ problem. Enzyme Commission (EC) terms describe reactions under specified substrates and conditions; they cannot
+ be treated as measured binary labels for arbitrary proteins without examining evidence. Our two target EC values,
+ 3.1.1.1 (carboxylesterase) and 2.7.1.1 (hexokinase), have different chemistry and enzyme-family composition. The
+ planned question was whether a predictor trained on one set of enzyme families would maintain performance on
+ held-out groups compared with a random split. A defensible binary benchmark requires positives with direct
+ experimental support and negatives assayed for absence of the same target reaction. A protein with a different EC is
+ not automatically negative for a multifunctional enzyme, and a record lacking ECO:0000269 is not a negative.
+ We used a build-time feasibility gate: at least five direct experimentally supported positives in each function class, at
+ least five experimentally verified negatives for that function, and homolog-disjoint train/test groups before
+ computing a predictive metric. The threshold was scoped during the build, not registered with a third party. It is a
+ refusal criterion, not a claim that five labels are enough for precise field-scale AUROC.
+
+ 2. Direct accession retrieval and label parsing
+ build_data.py requests each selected accession's UniProtKB JSON record separately at https://
+ rest.uniprot.org/uniprotkb/<accession>.json. Each record in accessions.json stores accession, sequence,
+ organism, taxonomy ID, all parsed EC terms, target-EC experimental evidence codes, URL and response digest. Both
+ recommended and alternative protein names are parsed, because a target EC can appear under an alternative name.
+ The first convenience panel was 12 reviewed proteins. Fourteen more carboxylesterase records were retrieved as a
+ new fixed tranche, yielding 26 entries: 19 esterase and seven hexokinase. This selection is nonrandom and not
+ representative of all enzymes.
+ For each record, the code checks that the expected target EC occurs among the parsed EC annotations. It then
+ distinguishes a direct ECO:0000269 citation on that EC from a citation on another EC or a general annotation
+ elsewhere in the protein. Among 19 esterase entries, seven have direct target-EC experimental citation; among seven
+ hexokinases, five do. The positive count minimum is therefore met after expansion. The remaining 14 records must
+
+
+
+ToxinAudit | September 26, 2026 | Candidate-specific report                                                                  1
+ be marked 'no direct experimental target-EC evidence in this parsed annotation', not 'experimentally inactive'. A
+ function assay may exist outside the entry; missing proof in this source cannot prove biological absence.
+ The organism span includes human, rodent, plant, fly and Mycobacterium for the esterase panel. This makes a broad
+ annotation audit possible but introduces enormous changes in protein architecture, assay substrates and sequence
+ composition. We did not pool these organisms into a measured, harmonized function screen. Response hashes guard
+ against silently changing remote records when rerunning the code; they do not adjudicate whether original papers'
+ assays were comparable.
+
+ 3. Approximate homology contamination audit
+ audit.py computes each sequence's set of amino-acid 3-mers and pairwise Jaccard overlap. At a fixed 0.55 overlap
+ cutoff it takes connected components as an approximate contamination proxy. This is not sequence alignment,
+ orthology assignment or a family phylogeny. It yields 22 groups for 26 entries. A deterministic random quarter-test
+ split (seed 27) shares at least one proxy cluster across train and test. That exposes a concrete failure mode for a future
+ random fold: a homolog-like group can occupy both sides. It does not prove the old toxin model's full AUROC
+ difference was caused by this exact mechanism, and no new enzyme AUROC was fitted.
+ The threshold and split were specified as audit defaults, not chosen for predictive performance. Even if a group-
+ disjoint assignment were made, there would still be no assayed negative class. Recording a family split alone would
+ not rescue the benchmark. A larger panel with independent structure or curated orthology groups and harmonized
+ enzyme assays would be needed before comparing random and family-held-out metrics.
+
+ 4. Evidence crosschecks from distinct sources
+ To test whether two named accessions mapped to the expected annotation families, crosschecks.py queried EBI
+ QuickGO, InterPro and ChEMBL, for O00748 and P19367. The source ledger stores response hashes and interpreted
+ records. O00748 maps to InterPro carboxylesterase type B domain IPR002018 and ChEMBL target CHEMBL3180.
+ P19367 maps to InterPro hexokinase family IPR001312 and ChEMBL target CHEMBL2688. QuickGO supplies
+ molecular-function annotation evidence identifiers; its GO:0004340 records for P19367 include computational or
+ inferred references as well as curated context. GO and domain hits are not direct absence assays. ChEMBL target
+ indexing is not a standardized EC activity outcome for every construct.
+ The original scientific source inventory was UniProtKB, QuickGO, InterPro and ChEMBL (four); a later UniRef50
+ sequence-cluster audit adds a fifth materially used resource. EBI hosts two distinct annotated data resources; if the
+ program counts all EBI endpoints as one conservative parent service, the count would be lower. Repeated accessions,
+ model libraries, transport infrastructure and alternate endpoint paths do not turn five sources into forty independent
+ tools.
+
+ 5. Results and refusal gate
+  Evidence unit                                               Count or verdict Interpretation
+
+  Direct reviewed UniProtKB entries                                          26 Exact accession JSON retrieved and hashed
+
+  Esterase target-EC direct experimental citations                         7/19 Positive feasibility minimum reached, not a balanced cohort
+
+  Hexokinase target-EC direct experimental citations                        5/7 Positive feasibility minimum reached
+
+  Experimental target-function negatives                          0 documented Essential gate missing for both function classes
+
+  Approximate 3-mer overlap components                                       22 Proxy grouping only, not curated families
+
+  Seeded random split crossing proxy groups                   At least one group Warns that random-split evaluation would leak similarity
+
+  Predictor AUROC                                                 Not estimated Deliberate fail-closed refusal
+
+
+ There is no performance figure to compare with the earlier VenomFunction result. A fabricated negative class from
+ the 14 evidence-unspecified records might produce a number but would answer an annotation-provenance question,
+ not biochemical function. The tool returns an explicit null for function-prediction AUROC and marks family holdout
+ unassessable until label scope is repaired.
+
+
+
+ToxinAudit | September 26, 2026 | Candidate-specific report                                                                                   2
+ 6. Implementation and tests
+ build_data.py retrieves entry JSON in parallel with bounded workers. audit.py checks uniqueness, target EC
+ presence, positive evidence grade, proxy sequence groups and deterministic split crossings. test_build_data.py
+ asserts that all 26 accession URLs and hashes are present and no fetched entry is silently relabeled as an experimental
+ negative. test_audit.py tests duplicate refusal, wrong-target EC rejection, group formation and null AUROC.
+ crosschecks.py can be rerun to refresh the three contextual annotations for two named accessions. Run python3
+ projects/toxin_audit/build_data.py, python3 projects/toxin_audit/audit.py, and python3 -m pytest
+ -q projects/toxin_audit from repository root. Remote UniProt records may change; compare response hashes
+ before treating a rerun as identical data.
+
+ 7. Limits and next valid experiment
+ First, ECO:0000269 on an EC annotation is evidence-linked curation, not a complete re-analysis of substrate, rate
+ and assay context. Second, the accession panel mixes organisms and substrates, so a numerical split comparison
+ would confound lineage and label provenance. Third, 3-mer Jaccard components can miss homologs with
+ rearrangements and collapse unrelated low-complexity proteins. Fourth, the convenience accession list is not
+ sampled from a defined background population. Fifth, no cross-protein target-function absence assay was found in
+ this original accession retrieval, and no outside wet-lab cohort has been validated. A later single-protein variant assay
+ is scoped separately below. The correct present state is a tested source/label auditor and a blocked predictive
+ benchmark.
+ A future experiment could gather independently measured positive and negative substrate assays for the same target
+ reaction, freeze family groups from a credible alignment/orthology resource, reserve a truly external measured cohort
+ and only then fit a fixed linear baseline. If those data are unavailable, preserving the negative feasibility result is
+ scientifically preferable to relabeling a curated database as ground truth. This report does not promise that future data
+ will produce a positive classifier.
+
+ Source notes
+ UniProtKB REST owns the direct protein entries; each individual URL is stored in accessions.json. QuickGO, In
+ terPro and ChEMBL supplied interpreted context in external_checks.json. Exact output objects are
+ accessions.json, results.json and external_checks.json. No source here supplies a measured negative
+ enzyme-function cohort.
+
+ Post-report accession expansion, September 25
+ The original 26-entry cohort and its numerical cluster results above remain an archival small-panel analysis. For the
+ distinct retrieval-count gate, expand_panel.py froze the first 62 reviewed UniProtKB EC 3.1.1.1 and 58 reviewed
+ EC 2.7.1.1 identifiers in search order before inspecting evidence. It then fetched 120 exact entry JSON responses
+ separately, saving URL, response-byte SHA-256, sequence and parsed EC evidence in data/
+ expanded_accessions.json; the fixed search URLs and chosen IDs are in data/expanded_selection.json.
+ Included multifunctional proteins required parsing EC terms under the entry's includes components, not only its
+ main name. The expanded audit finds 22/62 and 19/58 target-EC direct ECO:0000269 citations, 79 records without
+ that grade, and 97 approximate 3-mer components. These are nonrandom, heavily cross-species accession
+ annotations. No activity-negative assay cohort appeared; a missing citation remains unknown, so the function-
+ prediction AUROC is null. data/expanded_results.json records that refusal. This establishes 120 separately
+ retrieved accession records, not 120 independent activity assays, biological discoveries, or a benchmark win.
+
+ External sequence-cluster audit
+ Each of the 120 expanded enzyme accessions was separately mapped to a UniRef50 sequence cluster, saving URL,
+ response SHA-256 and ID in data/uniref50_membership.json. The panel spans 73 UniRef50 groups; 19 contain
+ multiple selected entries, with a largest group of 11. The two EC target classes do not co-occur within a selected
+ group in this mapping. This is an external 50%-identity grouping reference rather than the report's original 3-mer
+ proxy, and a fifth materially used annotation source. It still does not establish substrate-specific negative activity or a
+ measured family-disjoint benchmark; the AUROC remains null.
+
+
+
+
+ToxinAudit | September 26, 2026 | Candidate-specific report                                                                    3
+ Separate measured variant-assay scope check, September 26
+ Gersing et al. 2023 tested full-length human glucokinase GCK variants by expressing them in yeast lacking
+ endogenous hexokinases, then selecting growth on glucose. The original workbook provides 9,362 unfloored
+ continuous amino-acid-level scores. The paper reports coverage of 9,003/9,280 possible missense and nonsense
+ variants and a 38-variant comparison with in-vitro catalytic efficiency (Spearman 0.76, its own result). Our
+ independent source parsing found 8,570 missense, 433 nonsense and 359 synonymous variant records, all with
+ HGVS reference residues matching the separately fetched 465-aa UniProt P35557 (EC 2.7.1.1) sequence. At a
+ descriptive, not validated classifier, threshold of score <0.2, 2,788 missense, 332 nonsense and nine synonymous
+ records fall below it. The original assay, score normalization, abundance effects and error distribution matter, so this
+ is not proof that each low-score variant is biochemically inactive. One protein's thousands of related variants are one
+ experimental dataset, not thousands of independent enzyme families, and a within-P35557 diagnostic cannot supply
+ measured inactive other-protein controls for the planned family-disjoint esterase or hexokinase classifier. We make
+ no AUROC claim and retain the no-benchmark verdict. The exact source links, workbook and sequence digests,
+ independent parser and focused tests are in data/gck_variant_scope.json and gck_variant_scope.py.
+
+
+
+
+ToxinAudit | September 26, 2026 | Candidate-specific report                                                                 4
+===END DOCUMENT TEXT===

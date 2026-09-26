@@ -27,3 +27,8 @@
 \contentsline {subsection}{\numberline {11.2}Effect sizes and permutation tests}{8}{}%
 \contentsline {subsection}{\numberline {11.3}Eligibility bars, locked a priori}{9}{}%
 \contentsline {subsection}{\numberline {11.4}Complete module-level results}{9}{}%
+\contentsline {section}{\numberline {12}Preregistered arc P53: the powered ME/CFS-contrast test}{9}{}%
+\contentsline {subsection}{\numberline {12.1}Cohort selection, made auditable}{9}{}%
+\contentsline {subsection}{\numberline {12.2}Training: at n=168, everything is signal}{10}{}%
+\contentsline {subsection}{\numberline {12.3}Evaluation: transport fails; the contrast ``passes'' inverted}{10}{}%
+\contentsline {subsection}{\numberline {12.4}What three arcs leave behind}{10}{}%

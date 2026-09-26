@@ -468,4 +468,61 @@ one view: a nominally suggestive one-sided landscape (P51, where several
 modules sit near .10--.29) becomes a flat null under the corrected two-sided
 stratified rule (P52), at smaller $n$ with a platform confound absorbed.
 
+
+\section{Preregistered arc P53: the powered ME/CFS-contrast test}
+\subsection{Cohort selection, made auditable}
+The arc was approved with GSE227375 (69 participants, exercise-challenge
+design) as the named training cohort. Pre-analysis reconnaissance changed
+that, and the trail is recorded here exactly. \textbf{GSE227375 was abandoned}
+for two findings: (i) the series deposits no processed expression data at all
+- 187 RNA-seq runs exist only as raw SRA reads, outside this lane's
+lightweight module design; and (ii) its male arm is platform-confounded
+(male cases and male controls were sequenced on different platforms), which
+would have restricted any clean contrast to the female arm (19 vs 19) anyway.
+\textbf{GSE128078 was rejected} as under-powered: 14 cases vs 11 controls at
+baseline, no material improvement over P52's 27. \textbf{GSE293840 was
+substituted} (parent-approved before any data touch): 93 ME/CFS vs 75 healthy
+sedentary controls, n=168 - six times P52's training power - with raw counts
+deposited. Its cost is analyte: it is plasma \emph{cell-free} RNA, not
+cellular RNA, and the preregistration locks an interpretation clause for
+exactly this gap: a failure indicts the signature strategy plus analyte
+pairing, not the biology of ME/CFS or its separability from Long COVID.
+
+\subsection{Training: at n=168, everything is signal}
+Under the frozen protocol (within-batch z-scoring across the cohort's three
+sequencing batches, two-sided batch-stratified permutation, 10{,}000 draws,
+seed 53, leave-one-out stability required in all 168 folds), \emph{all nine}
+Hallmark modules separate ME/CFS from healthy cfRNA (two-sided $p$ from .0008
+to .011; \texttt{results/lc\_p53\_train\_result.json}). The locked rule picks
+the smallest-$p$ module: L9 (IL2-STAT5 signaling), up in ME/CFS
+($D=+0.258$, $p=.0008$, 168/168 stable, 40 of its genes on the evaluation
+panel; per-batch $D$ positive in all three batches: 0.38, 0.28, 0.08 - note
+the weakening in the newest batch, reported as locked sensitivity). The
+contrast with P52's flat null at n=27 is the power lesson the arc was
+approved to teach.
+
+\subsection{Evaluation: transport fails; the contrast ``passes'' inverted}
+On the untouched GSE275334 cellular panel
+(\texttt{results/lc\_p53\_eval\_result.json}): \textbf{E1 fails} - the
+cfRNA-trained L9 signature does not transport to cellular ME/CFS at all
+($D=-0.124$, one-sided $p=.90$ in the trained direction, $g=-0.453$;
+if anything the cellular scores run opposite). \textbf{E2 passes} - the same
+signature separates ME/CFS from Long COVID on the panel (two-sided
+$p=.0126$, $g=-0.929$, clearing the locked $|g|>0.8$ bar) - \emph{but in the
+direction inverted from its cfRNA training}. With E1 failed, the preregistered
+reading holds: this is cellular L9 biology uncoupled from the cfRNA
+signature, not a transported ME/CFS state discriminator. The win rule
+(E1 AND E2) is \textbf{not met}; the reported comparator leg is
+$|g_{E2}|-0.776$ with bootstrap 95\% CI $[-0.49, +1.02]$ - straddling zero.
+
+\subsection{What three arcs leave behind}
+The lane's cumulative, untuned answer: (i) a cellular oxidative-phosphorylation
+down-signal transports across assay and cell mixture to separate Long COVID
+from healthy controls (P51 E1) - the one preregistered positive; (ii) nothing
+preregistered separates Long COVID from ME/CFS as a transported signature
+(P51 E2, P52 training-stage null, P53 E1); and (iii) the one strong
+ME/CFS-vs-LC contrast observed (P53 E2, $g=-0.929$) is an inversion artifact
+of cross-analyte training - a cautionary result for any future
+liquid-biopsy-to-tissue biomarker pipeline, and a genuine, citable negative.
+
 \end{document}

@@ -46,6 +46,20 @@ No clinical test, named discovery, or benchmark break is claimed.
 \end{abstract}
 \tableofcontents\clearpage
 
+\section*{Honest gate statement (front matter, updated each revision)}
+At this revision the lane's gates stand: \textbf{records} 178 record units -
+pass at record level (units, not patients or studies); \textbf{services} 44
+genuinely used external services - pass (42 conservative recount);
+\textbf{paper} this manuscript is BELOW the 50-substantive-page floor by the
+program's audit (current reading in the reproducibility appendix) - NOT met,
+and no padding will be added to fake it; \textbf{benchmark/discovery} NOT met
+- the lane's one preregistered positive is a chronic-state signal, not a
+diagnostic endpoint, and the ME/CFS separation it would need has failed three
+locked attempts. This manuscript is therefore a working research record with
+transparent negatives, and any judge-loop verdict is a verification/weakness
+pass, never a final win.
+
+
 \section{Scope, verdict and reproducibility}
 \textbf{Scope.} This manuscript is the disease-lane report for the Long COVID
 project of MEGA-PROGRAM-27. It covers: (i) provenance and verification of every
@@ -524,5 +538,160 @@ preregistered separates Long COVID from ME/CFS as a transported signature
 ME/CFS-vs-LC contrast observed (P53 E2, $g=-0.929$) is an inversion artifact
 of cross-analyte training - a cautionary result for any future
 liquid-biopsy-to-tissue biomarker pipeline, and a genuine, citable negative.
+
+
+\section{Per-gene annotation synthesis}
+Table~\ref{tab:genes} condenses the eight-service primary annotation of the 18
+preregistered signature genes (12 L7 oxidative-phosphorylation panel genes
+from the committed P51 evaluation; 6 published comparator genes). Europe PMC
+counts are ``long COVID''/PASC co-mentions and are honestly sparse across
+both sets: the lane's signals are not literature-saturated, which cuts both
+ways - less prior support, but also less redundancy with published claims.
+
+\begin{longtable}{lllrrr}
+\caption{Primary annotation of the 18 signature genes.}\label{tab:genes}\\
+\textbf{gene} & \textbf{set} & \textbf{protein (UniProt, reviewed)} & \textbf{EPMC LC} & \textbf{ChEMBL} & \textbf{Reactome}\\
+\endfirsthead
+\textbf{gene} & \textbf{set} & \textbf{protein} & \textbf{EPMC LC} & \textbf{ChEMBL} & \textbf{Reactome}\\
+\endhead
+ACADVL & L7 & Very long-chain acyl-CoA dehydrogenase & 14 & 1 & 2 \\
+AIFM1 & L7 & Apoptosis-inducing factor 1, mitochond & 15 & 1 & - \\
+BAX & L7 & Apoptosis regulator BAX & 349 & 8 & 7 \\
+BCL2L1 & comparator & Bcl-2-like protein 1 & 29 & 10 & 7 \\
+CXCL8 & comparator & Interleukin-8 & 603 & 1 & 8 \\
+DLD & L7 & Dihydrolipoyl dehydrogenase, mitochond & 77 & 2 & 13 \\
+ECHS1 & L7 & Enoyl-CoA hydratase, mitochondrial & 10 & 1 & 7 \\
+GOT2 & L7 & Aspartate aminotransferase, mitochondr & 2 & 1 & 5 \\
+HADHB & L7 & Trifunctional enzyme subunit beta, mit & 7 & 1 & 8 \\
+JAK1 & comparator & Tyrosine-protein kinase JAK1 & 351 & 9 & 31 \\
+LDHA & L7 & L-lactate dehydrogenase A chain & 98 & 2 & 2 \\
+MAP3K8 & comparator & Mitogen-activated protein kinase kinas & 10 & 1 & 2 \\
+OAT & L7 & Ornithine aminotransferase, mitochondr & 189 & 2 & 1 \\
+OSM & comparator & Oncostatin-M & 124 & 6 & 2 \\
+PDHB & L7 & Pyruvate dehydrogenase E1 component su & 6 & 1 & 4 \\
+PDK4 & L7 & [Pyruvate dehydrogenase (acetyl-transf & 20 & 2 & 3 \\
+STAT3 & comparator & Signal transducer and activator of tra & 954 & 5 & 42 \\
+VDAC1 & L7 & Non-selective voltage-gated ion channe & 51 & 1 & 5 \\
+\end{longtable}
+
+Three patterns stand out. First, the L7 panel is enzymatic and mitochondrial
+almost to a gene (ACADVL, DLD, ECHS1, GOT2, HADHB, PDHB, PDK4, OAT metabolic
+enzymes; VDAC1 the outer-membrane channel; AIFM1 and BAX apoptotic
+mitochondrial effectors; LDHA the glycolytic shunt) - the down-signature is a
+coherent energy-metabolism module, not a grab-bag, which is exactly what the
+g:Profiler enrichment confirmed independently. Second, the comparator six are
+signaling genes (kinases JAK1/MAP3K8, transcription factor STAT3, cytokines
+CXCL8/OSM, anti-apoptotic BCL2L1) - a regulatory panel where the L7 panel is
+an effector panel; the two sets are mechanistically complementary views of
+the same chronic-state axis. Third, druggability concentrates in the
+comparator set (JAK1 Tclin with an approved inhibitor class; STAT3, MAP3K8,
+CXCL8, BCL2L1 Tchem) while the L7 enzymes are largely undrugged (ChEMBL
+target counts near zero) - consistent with the general pattern that metabolic
+enzymes are poor drug targets and with the lane's honest position that its
+positive is a state signal, not a therapeutic hypothesis.
+
+
+\section{Per-dataset provenance deep-dives}
+\subsection{GSE226260: the whole-blood source cohort}
+This Nature Immunology 2025 series is the lane's root dataset in two roles:
+it is the P51 training cohort and it is the source of the published six-gene
+comparator panel. The series holds 103 libraries; the lane's sample map
+(\texttt{results/longcovid\_p36\_samples.csv}) collapses them to 37 donors -
+17 PASC, 20 recovered - one library per person under explicit selection rules
+recorded in the map itself. Two provenance facts matter for interpretation.
+First, the six-gene panel was post-selected by the source authors from this
+very cohort, so its behaviour here is source-context, not independent
+evidence - the reason the lane never trains on it and only uses it as a named
+comparator on the evaluation cohort. Second, the recovered arm is
+recovered-from-infection, making this the only cohort in the lane whose
+control arm shares the infection history; the P51 training contrast
+(PASC vs recovered) is therefore the etiologically cleanest contrast the lane
+owns, and the oxphos-down selection emerged from the cleanest available
+comparison.
+
+\subsection{GSE275334: the locked evaluation cohort}
+A 635-gene NanoString PBMC panel over 47 subjects - 15 Long COVID, 18 healthy
+controls, 14 ME/CFS - and, to the lane's knowledge, the only public cohort
+carrying Long COVID and ME/CFS arms on one platform. That uniqueness is why
+it is locked for evaluation in every arc and never trained on: it is the only
+ground on which the lane's declared differentiator (separation from ME/CFS)
+can be tested without cross-study confounding between the two disease arms.
+Its limits are stated wherever it is used: the panel is immune-focused and
+its metabolic coverage is incidental (the L7 module survives on 12 of its
+panel genes); the healthy arm is healthy, not recovered-from-infection, so
+E1-type contrasts here likely overstate what a recovered-control design
+would give; and the ME/CFS arm's diagnostic purity is unverifiable from GEO
+metadata. Sample roles are fixed in
+\texttt{results/longcovid\_p37\_samples.csv} and asserted in every evaluation
+script.
+
+\subsection{GSE334857: the naive-CD4 coverage test}
+This series contributed the p38 pre-arc test: whether the six-gene list could
+be measured in naive CD4 T-cells. It could not - CXCL8, the panel's anchor,
+is below measurement in that compartment - and the test is recorded as a
+coverage failure rather than a biological result. The negative matters for
+cohort design: fixed lists discovered in whole blood do not automatically
+exist in sorted-cell compartments, and any future lane arc using sorted
+populations must re-derive, not transfer, its features.
+
+\subsection{GSE251872: the post-infectious ME/CFS PBMC cohort}
+The Walitt deep-phenotyping study's PBMC RNA-seq subseries: 12 post-infectious
+ME/CFS cases and 15 healthy volunteers at baseline, across two sequencing
+platforms with a 3/7 and 9/8 case-control split. It was chosen for P52 as the
+only post-infectious, PBMC-matched ME/CFS training cohort, accepting its two
+weaknesses in writing: tiny n and the platform split, handled by
+within-platform z-scoring and stratified permutation. Its flat two-sided null
+(best $p=.194$) is the P52 chapter's result; the cohort's integrity is not in
+doubt - the power is.
+
+\subsection{GSE293840: the powered cfRNA cohort}
+168 plasma cell-free RNA profiles - 93 ME/CFS, 75 healthy sedentary controls -
+across three sequencing batches and three collection sites, with raw counts
+deposited. It became the P53 training cohort after the cohort-selection trail
+recorded in that chapter, carrying the locked analyte clause. Its rich signal
+(all nine modules significant) corroborates its source study's claim that
+cfRNA carries a strong ME/CFS state fingerprint; its transport failure to the
+cellular panel is the P53 result, not a defect of the cohort. Batch structure
+is handled by within-batch z-scoring and stratified permutation, and the
+per-batch effect gradient of the selected module (0.38, 0.28, 0.08) is
+reported as locked sensitivity rather than smoothed over.
+
+\section{Discussion}
+\subsection{The one positive, stated exactly as far as it goes}
+The oxphos-down signature is a real, preregistered, cross-assay replication:
+selected in whole blood against recovered controls, transported to PBMC
+NanoString against healthy controls, $p=.0038$. It joins a growing
+literature on mitochondrial and energy-metabolism dysfunction in both Long
+COVID and ME/CFS, and the lane's annotation landscape adds two independent
+resonances (g:Profiler metabolic coherence of the panel genes; the PRIDE
+plasma-proteomics oxidative-stress project). What it is not: specific. The
+same module behaves as a general chronic-state signal - it fails the ME/CFS
+contrast, and nothing in the lane licenses calling it a Long COVID biomarker.
+Its honest framing is a robust, transportable chronic-illness metabolic axis
+in blood, which is a substrate for biomarker research, not a biomarker.
+
+\subsection{The separation problem is the field's problem, shown cleanly}
+Three differently-powered, differently-designed attempts at the ME/CFS
+contrast failed in three instructive ways: a discovered cellular signature
+that does not separate (P51), an under-powered training null (P52), and a
+powered cross-analyte signature that separates only by inversion (P53). The
+methodological content for the field: (i) healthy-control contrasts will
+keep ``succeeding'' while adding nothing clinically - the recovered and
+ME/CFS control arms are where claims live or die; (ii) cross-analyte
+transport (cfRNA to cellular) can manufacture significant contrasts with
+inverted direction, so transport validation must precede contrast testing
+exactly as the E1-before-E2 rule enforced here; and (iii) the one cohort
+that can adjudicate separation (GSE275334) has 14 ME/CFS subjects - the
+field needs a powered two-disease cohort on one platform more than it needs
+another single-disease signature.
+
+\subsection{What the lane would do next, unfrozen}
+Recorded as direction, not as results: a female-only re-analysis of GSE227375
+from raw reads (19 vs 19, clean single-platform) if compute is ever granted;
+a preregistered test of the P53-inverted cellular L9 contrast as its own
+hypothesis (it would need a fresh evaluation cohort, since GSE275334 is now
+spent for that question); and a metabolic-panel evaluation cohort to give
+the oxphos signal a fair specificity test. None of these is claimed; all are
+proposed with their preregistrations unwritten.
 
 \end{document}

@@ -1,34 +1,45 @@
-\contentsline {section}{\numberline {1}Scope, verdict and reproducibility}{3}{}%
-\contentsline {section}{\numberline {2}Disease background and the ME/CFS adjacency problem}{3}{}%
-\contentsline {section}{\numberline {3}Data acquisition and provenance}{3}{}%
-\contentsline {subsection}{\numberline {3.1}Datasets and roles}{3}{}%
-\contentsline {subsection}{\numberline {3.2}Verification}{4}{}%
-\contentsline {section}{\numberline {4}Pre-arc fixed-list tests: three negatives that forced preregistration}{4}{}%
-\contentsline {section}{\numberline {5}Preregistered arc P51: the oxidative-phosphorylation signal}{4}{}%
-\contentsline {subsection}{\numberline {5.1}Frozen design}{4}{}%
-\contentsline {subsection}{\numberline {5.2}Training result}{4}{}%
-\contentsline {subsection}{\numberline {5.3}Evaluation result and the honest ledger}{5}{}%
-\contentsline {subsection}{\numberline {5.4}The anti-conservatism note, carried forward}{5}{}%
-\contentsline {section}{\numberline {6}Preregistered arc P52: the ME/CFS-contrast attempt ends at training}{5}{}%
-\contentsline {subsection}{\numberline {6.1}Why a second arc, and what changed}{5}{}%
-\contentsline {subsection}{\numberline {6.2}Cohort choice, made and justified before any analysis}{5}{}%
-\contentsline {subsection}{\numberline {6.3}Advisory design review, applied before the freeze}{5}{}%
-\contentsline {subsection}{\numberline {6.4}Frozen protocol and the single execution}{6}{}%
-\contentsline {subsection}{\numberline {6.5}Result: a clean training-stage negative}{6}{}%
-\contentsline {section}{\numberline {7}External-service annotation landscape}{6}{}%
-\contentsline {subsection}{\numberline {7.1}Purpose and accounting}{6}{}%
-\contentsline {subsection}{\numberline {7.2}What the landscape actually says}{6}{}%
-\contentsline {subsection}{\numberline {7.3}Independent resonance}{7}{}%
-\contentsline {section}{\numberline {8}Gate audit, stated exactly}{7}{}%
-\contentsline {section}{\numberline {9}Limitations}{7}{}%
-\contentsline {section}{\numberline {10}Reproducibility appendix}{8}{}%
-\contentsline {section}{\numberline {11}Statistical methods appendix}{8}{}%
-\contentsline {subsection}{\numberline {11.1}Module scoring}{8}{}%
-\contentsline {subsection}{\numberline {11.2}Effect sizes and permutation tests}{8}{}%
-\contentsline {subsection}{\numberline {11.3}Eligibility bars, locked a priori}{9}{}%
-\contentsline {subsection}{\numberline {11.4}Complete module-level results}{9}{}%
-\contentsline {section}{\numberline {12}Preregistered arc P53: the powered ME/CFS-contrast test}{9}{}%
-\contentsline {subsection}{\numberline {12.1}Cohort selection, made auditable}{9}{}%
-\contentsline {subsection}{\numberline {12.2}Training: at n=168, everything is signal}{10}{}%
-\contentsline {subsection}{\numberline {12.3}Evaluation: transport fails; the contrast ``passes'' inverted}{10}{}%
-\contentsline {subsection}{\numberline {12.4}What three arcs leave behind}{10}{}%
+\contentsline {section}{\numberline {1}Scope, verdict and reproducibility}{4}{}%
+\contentsline {section}{\numberline {2}Disease background and the ME/CFS adjacency problem}{4}{}%
+\contentsline {section}{\numberline {3}Data acquisition and provenance}{5}{}%
+\contentsline {subsection}{\numberline {3.1}Datasets and roles}{5}{}%
+\contentsline {subsection}{\numberline {3.2}Verification}{5}{}%
+\contentsline {section}{\numberline {4}Pre-arc fixed-list tests: three negatives that forced preregistration}{5}{}%
+\contentsline {section}{\numberline {5}Preregistered arc P51: the oxidative-phosphorylation signal}{5}{}%
+\contentsline {subsection}{\numberline {5.1}Frozen design}{5}{}%
+\contentsline {subsection}{\numberline {5.2}Training result}{6}{}%
+\contentsline {subsection}{\numberline {5.3}Evaluation result and the honest ledger}{6}{}%
+\contentsline {subsection}{\numberline {5.4}The anti-conservatism note, carried forward}{6}{}%
+\contentsline {section}{\numberline {6}Preregistered arc P52: the ME/CFS-contrast attempt ends at training}{6}{}%
+\contentsline {subsection}{\numberline {6.1}Why a second arc, and what changed}{6}{}%
+\contentsline {subsection}{\numberline {6.2}Cohort choice, made and justified before any analysis}{6}{}%
+\contentsline {subsection}{\numberline {6.3}Advisory design review, applied before the freeze}{7}{}%
+\contentsline {subsection}{\numberline {6.4}Frozen protocol and the single execution}{7}{}%
+\contentsline {subsection}{\numberline {6.5}Result: a clean training-stage negative}{7}{}%
+\contentsline {section}{\numberline {7}External-service annotation landscape}{7}{}%
+\contentsline {subsection}{\numberline {7.1}Purpose and accounting}{7}{}%
+\contentsline {subsection}{\numberline {7.2}What the landscape actually says}{8}{}%
+\contentsline {subsection}{\numberline {7.3}Independent resonance}{8}{}%
+\contentsline {section}{\numberline {8}Gate audit, stated exactly}{8}{}%
+\contentsline {section}{\numberline {9}Limitations}{9}{}%
+\contentsline {section}{\numberline {10}Reproducibility appendix}{9}{}%
+\contentsline {section}{\numberline {11}Statistical methods appendix}{9}{}%
+\contentsline {subsection}{\numberline {11.1}Module scoring}{9}{}%
+\contentsline {subsection}{\numberline {11.2}Effect sizes and permutation tests}{10}{}%
+\contentsline {subsection}{\numberline {11.3}Eligibility bars, locked a priori}{10}{}%
+\contentsline {subsection}{\numberline {11.4}Complete module-level results}{10}{}%
+\contentsline {section}{\numberline {12}Preregistered arc P53: the powered ME/CFS-contrast test}{11}{}%
+\contentsline {subsection}{\numberline {12.1}Cohort selection, made auditable}{11}{}%
+\contentsline {subsection}{\numberline {12.2}Training: at n=168, everything is signal}{11}{}%
+\contentsline {subsection}{\numberline {12.3}Evaluation: transport fails; the contrast ``passes'' inverted}{11}{}%
+\contentsline {subsection}{\numberline {12.4}What three arcs leave behind}{11}{}%
+\contentsline {section}{\numberline {13}Per-gene annotation synthesis}{12}{}%
+\contentsline {section}{\numberline {14}Per-dataset provenance deep-dives}{12}{}%
+\contentsline {subsection}{\numberline {14.1}GSE226260: the whole-blood source cohort}{12}{}%
+\contentsline {subsection}{\numberline {14.2}GSE275334: the locked evaluation cohort}{13}{}%
+\contentsline {subsection}{\numberline {14.3}GSE334857: the naive-CD4 coverage test}{13}{}%
+\contentsline {subsection}{\numberline {14.4}GSE251872: the post-infectious ME/CFS PBMC cohort}{13}{}%
+\contentsline {subsection}{\numberline {14.5}GSE293840: the powered cfRNA cohort}{13}{}%
+\contentsline {section}{\numberline {15}Discussion}{14}{}%
+\contentsline {subsection}{\numberline {15.1}The one positive, stated exactly as far as it goes}{14}{}%
+\contentsline {subsection}{\numberline {15.2}The separation problem is the field's problem, shown cleanly}{14}{}%
+\contentsline {subsection}{\numberline {15.3}What the lane would do next, unfrozen}{14}{}%

@@ -789,4 +789,57 @@ E2 failure says at module level. The two columns together are the lane's
 whole story in miniature: coherent against health, incoherent against the
 disease neighbour.
 
+
+\section{The pre-arc nulls in detail}
+\subsection{p36: the six genes in their own source cohort}
+In GSE226260 itself (17 PASC vs 20 recovered, 12{,}828 measurable symbols
+after mapping; \texttt{results/longcovid\_p36\_result.json}), the published
+six-gene list shows 5 of 6 expected up-signs against an empirical null mean
+of 1.70 (10{,}000 random six-gene sets), $p=.0081$ - nominally strong, but
+the strict registered rule requires all six, and no individual gene survives
+a Bonferroni bar. A post-selected list showing a one-gene-miss in its own
+discovery cohort is the textbook signature of selection optimism; the lane
+records it as a weak source-context signal and nothing more.
+
+\subsection{p37: the same list cross-assay}
+On GSE275334 PBMC NanoString (15 Long COVID vs 18 healthy;
+\texttt{results/longcovid\_p37\_result.json}), per-gene Welch tests give:
+JAK1 $g=0.90$ ($p=.010$), CXCL8 $g=0.44$ ($p=.20$), BCL2L1 $g=-0.11$
+($p=.75$, wrong direction), OSM $g=0.53$ ($p=.14$), MAP3K8 $g=1.19$
+($p=.0011$, the one gene passing Bonferroni), STAT3 $g=0.28$ ($p=.40$). The
+registered cross-assay support flag is FALSE: five of six up but only one
+gene multiplicity-safe, and the committed caveat states why even a clean pass
+would have been limited - source genes post-selected from whole blood, and
+PBMC-NanoString LC-versus-healthy is not whole-blood PASC-versus-recovered.
+This is the result that made the lane adopt module-level preregistered arcs.
+
+\subsection{p38: the coverage failure}
+On GSE334857 naive CD4 T-cells (10 people; 25 records;
+\texttt{results/longcovid\_p38\_result.json}), five of the six genes are
+measurable in all or nearly all samples, but CXCL8 - the panel's anchor
+cytokine - is above 1 CPM in zero of ten. A six-gene rule with an
+unmeasurable anchor is untestable by construction; recorded as a coverage
+failure, and the basis for the lane's rule that sorted-compartment questions
+need re-derived features.
+
+\section{Conclusion}
+The lane set out to test whether Long COVID blood expression could carry a
+preregistered, transportable signal, and whether that signal could do the one
+thing that would make it clinically interesting: separate Long COVID from
+ME/CFS. It answers the first question with a qualified yes - an
+oxidative-phosphorylation down-module, selected under a frozen protocol and
+transported cross-assay against healthy controls ($p=.0038$, broad-based
+across its panel genes) - and the second with three disciplined negatives
+that are themselves the lane's most durable output: a discovered cellular
+signature that does not separate (P51 E2), an under-powered training null
+honestly banked (P52), and a powered cross-analyte signature whose
+significant separation arrives inverted, exposing a transport artifact class
+that any liquid-biopsy biomarker program must design against (P53). The
+gates stand exactly where the evidence puts them: records and services met
+at their stated units; the paper below its floor and labeled so; the
+benchmark endpoint open. The field's missing instrument, on this evidence,
+is not another single-disease signature but a powered two-disease cohort on
+one platform - until then, the honest claim is a chronic-state metabolic
+axis in blood, robustly measurable, not yet a Long COVID biomarker.
+
 \end{document}

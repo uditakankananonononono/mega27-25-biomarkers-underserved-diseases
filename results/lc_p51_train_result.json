@@ -1,0 +1,85 @@
+{
+  "preregistration": "projects/long_covid/prereg/LC_P51_preregistration.md",
+  "cohort": "GSE226260 training only; 17 PASC vs 20 recovered, one sample per person",
+  "n_measurable_symbols": 12828,
+  "seed": 20260926,
+  "n_perm": 10000,
+  "modules": {
+    "L1_ifna": {
+      "eligible": true,
+      "n_measurable": 95,
+      "D_obs": -0.13442991708561933,
+      "perm_p_one_sided": 0.25477452254774524,
+      "lopo_stable": 37,
+      "selected": false
+    },
+    "L2_ifng": {
+      "eligible": true,
+      "n_measurable": 188,
+      "D_obs": -0.16432376257317344,
+      "perm_p_one_sided": 0.1723827617238276,
+      "lopo_stable": 37,
+      "selected": false
+    },
+    "L3_inflammatory": {
+      "eligible": true,
+      "n_measurable": 153,
+      "D_obs": -0.07163706610624067,
+      "perm_p_one_sided": 0.28717128287171284,
+      "lopo_stable": 37,
+      "selected": false
+    },
+    "L4_tnfa_nfkb": {
+      "eligible": true,
+      "n_measurable": 171,
+      "D_obs": 0.12715856031943823,
+      "perm_p_one_sided": 0.1720827917208279,
+      "lopo_stable": 37,
+      "selected": false
+    },
+    "L5_il6_jakstat3": {
+      "eligible": true,
+      "n_measurable": 69,
+      "D_obs": -0.1741943856390492,
+      "perm_p_one_sided": 0.10718928107189281,
+      "lopo_stable": 37,
+      "selected": false
+    },
+    "L6_complement": {
+      "eligible": true,
+      "n_measurable": 161,
+      "D_obs": -0.19584865715412214,
+      "perm_p_one_sided": 0.1110888911108889,
+      "lopo_stable": 37,
+      "selected": false
+    },
+    "L7_oxphos": {
+      "eligible": true,
+      "n_measurable": 195,
+      "D_obs": -0.3555084588277413,
+      "perm_p_one_sided": 0.043195680431956804,
+      "lopo_stable": 37,
+      "selected": true
+    },
+    "L8_hypoxia": {
+      "eligible": true,
+      "n_measurable": 139,
+      "D_obs": -0.13045389312888261,
+      "perm_p_one_sided": 0.10238976102389762,
+      "lopo_stable": 37,
+      "selected": false
+    },
+    "L9_il2_stat5": {
+      "eligible": true,
+      "n_measurable": 166,
+      "D_obs": -0.10566387414708381,
+      "perm_p_one_sided": 0.20707929207079293,
+      "lopo_stable": 37,
+      "selected": false
+    }
+  },
+  "selected_modules": [
+    "L7_oxphos"
+  ],
+  "signature": "signed sum of selected module composites"
+}

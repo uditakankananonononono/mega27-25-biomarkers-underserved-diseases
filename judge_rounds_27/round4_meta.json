@@ -1,0 +1,14 @@
+{
+  "round": 4,
+  "artifact": "projects/transcript_shift/REPORT.pdf in mega27-27-isef-bioinf-derived-tools @ 9925b30",
+  "route": "TEXT-PASTE verified round (user route change 2026-09-26 13:18 IST)",
+  "source_pdf_sha256": "e8fbc39660757ab568e0b6ca12269b855d5fcfe0bca39b8d65aa638433e71bb8",
+  "extraction": "pdftotext -layout; completeness verified: 4 form-feed page breaks == 4 pdfinfo pages; 16,836 chars pasted whole in one message",
+  "prompt_file": "round4_message.txt (head: round4_transcriptshift_prompt_head.txt)",
+  "response_file": "round4_response.txt",
+  "conversation_url": "https://chatgpt.com/c/6ab779dd-7198-83e8-981a-d0a375b06b6a",
+  "receipt_verification": "PASS - 14 quoted strings present in pasted document text and absent from prompt head, e.g. 'A panel of the first 1,000 valid probe rows was selected without phenotype inspection', 'It therefore cannot validate the first fitted model'",
+  "questions_asked": ["weaknesses classified fixable/rewrite/inherent", "ISEF standing", "improvement ordered by impact"],
+  "verdict": "YES - honestly represents the work and its limits; main weaknesses are limited biological novelty and incomplete independent validation inherent to the available public datasets, not hidden flaws or overstated science",
+  "timestamp_ist": "2026-09-26T13:23"
+}

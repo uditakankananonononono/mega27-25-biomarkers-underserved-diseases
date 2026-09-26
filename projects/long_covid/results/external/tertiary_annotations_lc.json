@@ -86,7 +86,14 @@
   }
  },
  "dgidb": {
-  "raw_head": "{\"errors\":[{\"message\":\"Field 'interactionId' doesn't exist on type 'Interaction'\",\"locations\":[{\"line\":1,\"column\":88}],\"path\":[\"query\",\"genes\",\"nodes\",\"interactions\",\"interactionId\"],\"extensions\":{\"code\":\"undefinedField\",\"typeName\":\"Interaction\",\"fieldName\":\"interactionId\"}}]}"
+  "per_hub": {
+   "OSM": 3,
+   "MAP3K8": 3,
+   "JAK1": 82,
+   "STAT3": 43,
+   "BCL2L1": 14,
+   "CXCL8": 80
+  }
  },
  "gwas_catalog": {
   "per_hub": {

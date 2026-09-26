@@ -52,3 +52,4 @@
 \contentsline {subsection}{\numberline {20.2}p37: the same list cross-assay}{16}{}%
 \contentsline {subsection}{\numberline {20.3}p38: the coverage failure}{16}{}%
 \contentsline {section}{\numberline {21}Conclusion}{16}{}%
+\contentsline {section}{\numberline {22}Hub-level annotation narrative}{17}{}%

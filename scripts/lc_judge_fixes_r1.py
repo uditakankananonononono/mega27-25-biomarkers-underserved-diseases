@@ -116,6 +116,17 @@ D_full = float(comp_full[pasc].mean()-comp_full[rec].mean()); D_proj = float(com
 out['p51_projection']['D_full_module_on_training'] = round(D_full,3)
 out['p51_projection']['D_panel_projection_on_training'] = round(D_proj,3)
 
+# ---------- P51 two-sided sensitivity (post-hoc; judge round-1 item H) ----------
+rng2 = np.random.default_rng(20260926)
+d_obs7 = float(comp_full[pasc].mean()-comp_full[rec].mean())
+null2 = 0
+for _ in range(10000):
+    perm = rng2.permutation(len(comp_full))
+    dn = comp_full[perm[:17]].mean() - comp_full[perm[17:]].mean()
+    null2 += abs(dn) >= abs(d_obs7)
+out['p51_two_sided_sensitivity'] = {'L7_two_sided_perm_p': round(float((null2+1)/10001),4),
+ 'note': 'POST-HOC sensitivity only; the preregistered P51 selection was one-sided in the observed direction (p=.0432) and that anti-conservatism stands disclosed; this cannot retroactively replace it.'}
+
 # ---------- eval composites (same machinery as the two frozen eval scripts) ----------
 p37 = root/'data/geo/p37/GSE275334_File_1_Normalised.xlsx'
 assert hashlib.sha256(p37.read_bytes()).hexdigest() == '9db33a05d0becbc51693cd392b03da5a1def06b0b36d3160e28a04ccfea7dfc5'

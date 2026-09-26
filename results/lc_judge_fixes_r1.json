@@ -476,6 +476,10 @@
   "D_full_module_on_training": -0.356,
   "D_panel_projection_on_training": -0.373
  },
+ "p51_two_sided_sensitivity": {
+  "L7_two_sided_perm_p": 0.0721,
+  "note": "POST-HOC sensitivity only; the preregistered P51 selection was one-sided in the observed direction (p=.0432) and that anti-conservatism stands disclosed; this cannot retroactively replace it."
+ },
  "bootstrap_CIs": {
   "p51_E1_lc_vs_hc": {
    "D_boot95ci": [

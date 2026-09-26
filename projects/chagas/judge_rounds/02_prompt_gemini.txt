@@ -1,4 +1,4 @@
-You are an ISEF-style science-fair judge and harsh methods critic. This is a FRESH consultation - no prior context exists, so everything needed is below. Project: Chagas disease biomarker discovery from public data (716 byte-verified GEO records, 16 human series).
+You are an expert research reviewer and harsh methods critic. This is a FRESH consultation - no prior context exists, so everything needed is below. Project: Chagas disease biomarker discovery from public data (716 byte-verified GEO records, 16 human series).
 
 STATE:
 1. Serum miRNA cohort GSE299582 (n=192: 42 controls, 46 indeterminate seropositive, 104 chronic Chagas cardiomyopathy graded 37 mild/37 moderate/30 severe; 2632 miRNAs).

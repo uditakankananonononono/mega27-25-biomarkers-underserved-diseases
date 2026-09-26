@@ -1,0 +1,21 @@
+{
+  "assignment": "Six PDF-attached ChatGPT weakness re-runs for item 27 (mega27-27-isef-bioinf-derived-tools @ 9925b30), replacing prompt-only rounds marked INVALID. Assigned by parent 2026-09-26 13:14 IST.",
+  "artifact_sha256": {
+    "toxin_audit_REPORT.pdf": "b3d341562f262f789ee2781560d81584f48425809834b9392d1348e559dca34a",
+    "codon_context_REPORT.pdf": "5e5347a9e23a84c19af1898e534b4fe9e77173ebddb54ffff9562dc4def4e6c0",
+    "graph_holdout_REPORT.pdf": "8fdb442fc1c1683da9ef620065e04cc3a5235aaffbc1a8ee96a41c34807af7b7",
+    "transcript_shift_REPORT.pdf": "e8fbc39660757ab568e0b6ca12269b855d5fcfe0bca39b8d65aa638433e71bb8",
+    "MEGA27-27-current-research-manuscript.pdf": "f720822545127e5592d33b7885a9da15512042fd6993c1fae32b9f0dac0b7c2c"
+  },
+  "artifact_verification": "All five sha256 values independently recomputed after parent relay and match the lead's declared values.",
+  "rounds": [
+    "round1 toxin_audit REPORT",
+    "round2 codon_context REPORT",
+    "round3 graph_holdout REPORT",
+    "round4 transcript_shift REPORT",
+    "round5 aggregate scoped to VenomFunction-2 only",
+    "round6 aggregate scoped to PhosGene only"
+  ],
+  "status": "BLOCKED 2026-09-26 13:16 IST: ChatGPT Free-tier daily file-upload cap consumed on account uditakankana@gmail.com. The composer + menu shows 'Get Plus for more uploads / Or wait 7 hours to upload again' and suppresses the Upload-from-computer entry. Expected resume ~20:16 IST; first attempt scheduled ~20:25 IST. Prompts for all six rounds are committed alongside this meta. Evidence screenshot: cloud-browser-20260926-074617.png (attached to parent report).",
+  "per_round_protocol": "Fresh conversation; arm via + > upload entry; upload actual PDF; wait 20-25s; verify chip; send committed prompt; accept only answers quoting strings unique to the attached PDF version; record attachment_verified + sha256 + conversation URL in the round meta."
+}

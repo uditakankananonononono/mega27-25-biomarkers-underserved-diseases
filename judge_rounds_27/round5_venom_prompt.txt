@@ -1,0 +1,18 @@
+You are a skeptical ISEF methods reviewer. Attached is the current aggregate manuscript PDF for item 27 (bioinformatics derived tools). An earlier review was invalidated because the artifact was never actually attached to that conversation, so this is the authoritative PDF-attached re-run.
+
+Scope restriction: review ONLY the VenomFunction-2 content - its dedicated section(s) and any front-matter/ledger passages that reference VenomFunction. Do not review the other candidate's sections except where they bear on VenomFunction.
+
+Two important caveats you must apply:
+1. This aggregate's main text is known to be stale relative to source audits conducted after it was written. Distinguish what the PDF actually says from what you can verify from the PDF alone, and explicitly flag any claim you cannot check from the attached document.
+2. This aggregate is NOT a standalone 50-page per-project paper for VenomFunction, and it is not a candidate-level gate. Do not evaluate it as if it were one.
+
+Find every genuine weakness in the VenomFunction content. For each one, classify it:
+(a) fixable by code/data changes within the candidate's scope,
+(b) fixable by rewriting or clarifying scope in the manuscript, or
+(c) an inherent limitation that should stay disclosed as-is.
+
+Pay particular attention to: whether any claim exceeds the evidence presented; whether stated numbers are internally consistent (sequence counts, AUROC values, gap arithmetic, Jaccard exposure figures); whether the broken-benchmark finding is interpreted correctly; whether the self-criticism is complete or whether something important is claimed too strongly OR dismissed too weakly.
+
+Rules: do not invent weaknesses to look thorough; distinguish real problems from stylistic preferences; do not propose fabricating results, padding, or weakening preregistration discipline. If everything material is already handled honestly, say so and say why.
+
+Final verdict (one sentence): does the VenomFunction content honestly represent the work and its limits?

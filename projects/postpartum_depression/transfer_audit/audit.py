@@ -77,11 +77,60 @@ def audit(study, path=None):
     }
 
 
+
+def audit_longitudinal_methylation(path=None):
+    """Validate source-stated pair keys only; no endpoint or clinical-table inference."""
+    with open(path or SOURCES / 'GSE335141_sample_crosswalk.csv', newline='') as f:
+        rows = list(csv.DictReader(f))
+    errors = set()
+    gsm = [r.get('gsm', '').strip() for r in rows]
+    if len(gsm) != len(set(gsm)):
+        errors.add('duplicate_GSM')
+    if any(not re.fullmatch(r'GSM\d+', g) for g in gsm):
+        errors.add('invalid_GSM')
+    people = defaultdict(list)
+    for r in rows:
+        person = r.get('person_token', '').strip()
+        time = r.get('timepoint', '').strip()
+        diagnosis = r.get('diagnosis', '').strip()
+        title = r.get('title', '').strip()
+        if not person:
+            errors.add('missing_person_key')
+        if time not in {'T0', 'T4'}:
+            errors.add('unexpected_timepoint')
+        if diagnosis not in {'healthy', 'PPD'}:
+            errors.add('unexpected_diagnosis')
+        if title != f'{person}_{time}':
+            errors.add('title_disagrees_with_patient_and_time')
+        if r.get('source_name', '').strip() != 'whole blood' or r.get('platform_id', '').strip() != 'GPL33022':
+            errors.add('unexpected_assay_source')
+        if not re.fullmatch(r'[0-9a-f]{64}', r.get('source_sha256', '').strip()):
+            errors.add('source_hash_missing_or_invalid')
+        people[person].append((time, diagnosis))
+    for visits in people.values():
+        if Counter(t for t, _ in visits) != {'T0': 1, 'T4': 1}:
+            errors.add('nonunique_or_unpaired_visits')
+        if len({d for _, d in visits}) != 1:
+            errors.add('within_person_diagnosis_conflict')
+    clean = not errors
+    cases = sum(len(v) == 2 and {d for _, d in v} == {'PPD'} for v in people.values())
+    controls = sum(len(v) == 2 and {d for _, d in v} == {'healthy'} for v in people.values())
+    return {
+        'study': 'GSE335141', 'specimen_records': len(rows), 'unique_GSM': len(set(gsm)),
+        'source_person_tokens': len(people), 'source_paired_T0_T4': sum(Counter(t for t, _ in v) == {'T0': 1, 'T4': 1} for v in people.values()),
+        'source_PPD_person_tokens': cases, 'source_healthy_person_tokens': controls,
+        'paired_sample_mapping_usable': clean, 'errors': sorted(errors),
+        'clinical_table_denominator_status': 'unresolved_preprint_37_vs_series_41',
+        'external_validation_status': 'not_established_same_cohort_as_published_analysis',
+        'limitation': 'GEO sample titles and characteristics supply paired tokens, not endpoint timing, clinical covariates, or an independent validation cohort',
+    }
+
+
 def main():
     p = argparse.ArgumentParser()
-    p.add_argument('--study', choices=CONFIG, required=True)
+    p.add_argument('--study', choices=[*CONFIG, 'GSE335141'], required=True)
     args = p.parse_args()
-    print(json.dumps(audit(args.study), indent=2, sort_keys=True))
+    print(json.dumps(audit_longitudinal_methylation() if args.study == 'GSE335141' else audit(args.study), indent=2, sort_keys=True))
 
 if __name__ == '__main__':
     main()

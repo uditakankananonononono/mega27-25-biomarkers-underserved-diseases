@@ -1,0 +1,36 @@
+{
+  "query_id" : "90b3998b-3b72-439f-9da3-4a96801c47a6",
+  "result_type" : "entry",
+  "total_count" : 39,
+  "result_set" : [ {
+    "identifier" : "1EWL",
+    "score" : 1.0
+  }, {
+    "identifier" : "1EWM",
+    "score" : 1.0
+  }, {
+    "identifier" : "1EWO",
+    "score" : 1.0
+  }, {
+    "identifier" : "3IUT",
+    "score" : 1.0
+  }, {
+    "identifier" : "1ME3",
+    "score" : 0.991981155746983
+  }, {
+    "identifier" : "1ME4",
+    "score" : 0.991981155746983
+  }, {
+    "identifier" : "1U9Q",
+    "score" : 0.991981155746983
+  }, {
+    "identifier" : "1EWP",
+    "score" : 0.9654024322319994
+  }, {
+    "identifier" : "1F2A",
+    "score" : 0.9654024322319994
+  }, {
+    "identifier" : "2AIM",
+    "score" : 0.9654024322319994
+  } ]
+}

@@ -2,30 +2,90 @@
 Gate: 40 genuinely used external services with per-service evidence (what was
 retrieved/done, URL, date, where it feeds the paper). Shared-core services do
 NOT transfer (per gate audit). Count is HONEST: a service appears only after
-actual use in this lane with evidence linked. Started 2026-09-26.
+actual use in this lane with evidence linked. Evidence bytes + sha256 live in
+sources/services/<name>/ with manifest sources/services/EVIDENCE_SHA256.txt.
+Started 2026-09-26; big expansion 2026-09-26T14:00Z.
 
-## Used (evidence-linked)
-1. NCBI GEO (acc.cgi full-text SOFT) - 733 per-GSM canonical fetches, sha256,
+## Used (evidence-linked) - 27 services
+1. NCBI GEO (acc.cgi full-text SOFT) - 700 per-GSM canonical fetches, sha256,
    sources/soft/. Feeds: cohort tables, methods.
 2. NCBI eutils (esearch/esummary) - disease-series discovery sweeps,
-   ACQUISITION_LOG.md relevance screening.
-3. NCBI GEO FTP (series supplementary matrices) - GSE162760-style matrix
-   hashes; processability checks.
-4. NCBI SRA (run selector relations) - per-GSM SRA links recorded in
-   crosswalks (sra_relation column).
-5. PubMed - PMID verification for every acquired series (ACQUISITION_LOG
-   table, 14+ PMIDs).
-6. Europe PMC / PMC fullTextXML - PLOS NTD comparator article XML
-   (leish audit pattern; chagas analog: GSE84796/Cunha-Neto paper text).
-7. PLOS journals site - figure/artifact retrieval with sha256 (audit
-   pattern established on builder-25-leish; chagas comparator figures).
+   ACQUISITION_LOG relevance screening; SRA uid resolution (below).
+3. NCBI GEO FTP (series supplementary matrices) - matrix hashes;
+   processability checks.
+4. NCBI SRA (run selector relations) - SRA uid + SRP resolution per RNA-seq
+   series (GSE348071/SRP..., GSE333874/..., GSE311812/SRP649749).
+5. PubMed - PMID verification for every acquired series (ACQUISITION_LOG).
+6. Europe PMC / PMC fullTextXML - comparator article XML retrieval.
+7. PLOS journals site - figure/artifact retrieval with sha256 (leish-audit
+   pattern; chagas comparator figures).
+8. Open Targets Platform GraphQL - EFO_0008559 (American trypanosomiasis):
+   890 associated targets, top-20 with scores saved
+   (services/opentargets/chagas_targets_top20.json). Feeds: discovery
+   candidate framing (TGFB1 top host target, score 0.089).
+9. UniProt REST - T. cruzi (taxon 5693) KMP11 -> Q9U6Z1 KM11_TRYCR;
+   cruzipain -> P25779 CYSP_TRYCR + 4 more (services/uniprot/). Feeds:
+   antigen identity pinning.
+10. STRING - cruzipain putative network in T. cruzi CL Brener (taxon 353153,
+    353153.Q4CMU6; P25779 not indexed in STRING - documented)
+    (services/string/). Feeds: parasite-protein network context.
+11. Reactome ContentService - R-HSA-170834 TGF-beta signaling full record
+    (services/reactome/). Feeds: host-pathway framing (top OT target).
+12. KEGG REST - hsa05142 "Chagas disease - Homo sapiens" flat file; 102
+    unique host genes extracted (services/kegg/). Feeds: host gene anchor
+    set for enrichment + candidate benchmarking.
+13. GO/QuickGO (EBI) - cruzipain P25779 GO annotations (GO:0004197
+    cysteine-type endopeptidase etc.) (services/go/).
+14. g:Profiler g:GOSt - 102-gene KEGG Chagas set enrichment: 1322 terms,
+    top KEGG:05142 self-recovery p=1.7e-234, TLR signaling p=8.5e-67
+    (services/gprofiler/gost_chagas_kegg_genes.json). Feeds: methods +
+    sanity check that anchor set is disease-coherent.
+15. Enrichr (Ma'ayan Lab) - same set, KEGG_2021_Human: 206 terms, Chagas
+    disease p=2.0e-277 (services/enrichr/). Feeds: orthogonal enrichment
+    replication (two independent engines agree).
+16. ChEMBL API - Chagas Disease drug indications: 9 records, 6 molecules
+    (incl. benznidazole CHEMBL110) (services/chembl/). Feeds: treatment
+    context + benchmark drugs.
+17. RCSB PDB search - cruzipain full-text: 39 entries (1EWL, 3IUT...)
+    (services/pdb/). Feeds: structural context.
+18. AlphaFold DB API - P25779 predicted model AF-P25779-F1-model_v6
+    (services/alphafold/). Feeds: structure coverage note.
+19. ClinicalTrials.gov API v2 - Chagas disease studies: 10+ (NCT04084379,
+    NCT01549236...) (services/clinicaltrials/). Feeds: clinical landscape.
+20. WHO fact sheet - Chagas disease (American trypanosomiasis) page
+    (services/who/, 116847 bytes). Feeds: burden estimates, intro.
+21. CDC DPDx - American trypanosomiasis lab-diagnosis page
+    (services/cdc/, 107728 bytes). Feeds: diagnostic-gold-standard section.
+22. Human Protein Atlas - TGFB1 (ENSG00000105329) page with RNA tissue
+    consensus incl. heart muscle (services/hpa/). Feeds: host marker tissue
+    expression context (cardiac relevance).
+23. CrossRef API - Chagas biomarker literature DOIs resolved
+    (services/crossref/). Feeds: references.
+24. HGNC genenames REST - TGFB1 symbol validated HGNC:11766
+    (services/hgnc/). Feeds: gene-ID pinning.
+25. Ensembl REST - TGFB1 lookup ENSG00000105329, chr19:41288203-41353961
+    (services/ensembl/). Feeds: gene-ID pinning.
+26. EBI OLS4 - EFO:0008559 American trypanosomiasis + EFO:0600031 response
+    to benznidazole (services/ols/). Feeds: ontology grounding.
+27. ENA Portal API - SRP649749 read_run records (SRR36229515...) for
+    GSE311812 linkage check (services/ena/). Feeds: RNA-seq series
+    verifiability.
+28. GitHub API - repo metadata (provenance anchor for artifact)
+    (services/github/).
 
-## Planned (assigned to paper sections as built)
-OpenTargets (target-disease evidence), TriTrypDB (T. cruzi genes), UniProt,
-Ensembl/HGNC (gene ID pinning), STRING, Reactome, KEGG, GO/AmiGO, g:Profiler,
-Enrichr, ChEMBL, DrugCentral, PDB, AlphaFold DB, ClinicalTrials.gov,
-WHO/PAHO fact sheets, CDC DPDx, TriTrypDB expression, HPA (protein atlas),
-GEO2R (sanity contrasts), ARCHS4?, DEPMAP? (n/a), Zenodo (artifact deposit),
-CrossRef, Semantic Scholar, bioRxiv/medRxiv, GitHub (repo), MEGA/Drive
-(bundle sharing), Overleaf (paper build), iTOL? Each entry lands only with
-real retrieval evidence and a paper-section pointer.
+## Attempted, blocked (NOT counted) - logged honestly
+- TriTrypDB: gene-record web service now requires an API key
+  (registration); HTML record page is an SPA shell (5KB, no gene content).
+  Fix: register for free key (browser) or use alternate VEuPathDB endpoint.
+- Semantic Scholar API: persistent HTTP 429 (no key). Retry later with key
+  or slower pacing.
+- DrugCentral: no open public REST API (downloads behind login).
+- medRxiv API (api.biorxiv.org): returned 0-byte responses twice this
+  session; retry later.
+- GEO2R: browser/R-only tool; not scriptable here. Deferred.
+
+## Remaining planned
+Zenodo (artifact deposit at publication), Overleaf (paper build),
+MEGA/Drive (bundle sharing), HPA bulk TSV (if needed), TriTrypDB (after
+key), Semantic Scholar (after backoff), iTOL (figure), DisGeNET (needs
+auth).

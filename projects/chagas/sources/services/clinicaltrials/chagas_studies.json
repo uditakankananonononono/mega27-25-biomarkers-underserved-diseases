@@ -1,0 +1,12 @@
+{"studies":[
+{"protocolSection":{"identificationModule":{"nctId":"NCT04084379","briefTitle":"Implementation Strategy of Bio-molecular Techniques for Early Diagnose of Congenital Syphilis and Chagas Diseases"},"statusModule":{"overallStatus":"UNKNOWN"},"designModule":{}}},
+{"protocolSection":{"identificationModule":{"nctId":"NCT01549236","briefTitle":"Population Pharmacokinetics Study of Benznidazole in Children With Chagas'Disease"},"statusModule":{"overallStatus":"COMPLETED"},"designModule":{"phases":["PHASE4"]}}},
+{"protocolSection":{"identificationModule":{"nctId":"NCT01755377","briefTitle":"New Tools for the Diagnosis, Prognosis and Treatment Follow-up in Chagas Disease"},"statusModule":{"overallStatus":"COMPLETED"},"designModule":{}}},
+{"protocolSection":{"identificationModule":{"nctId":"NCT04274101","briefTitle":"Nifurtimox Versus Benznidazole Effectiveness and Tolerance for Chagas Disease Treatment"},"statusModule":{"overallStatus":"UNKNOWN"},"designModule":{}}},
+{"protocolSection":{"identificationModule":{"nctId":"NCT04984265","briefTitle":"SBRT in Chagas Disease Ventricular Tachycardia"},"statusModule":{"overallStatus":"UNKNOWN"},"designModule":{"phases":["PHASE1","PHASE2"]}}},
+{"protocolSection":{"identificationModule":{"nctId":"NCT01547533","briefTitle":"Study of Benznidazole Transfer Into Breastmilk in Lactating Women With Chagas Disease"},"statusModule":{"overallStatus":"COMPLETED"},"designModule":{}}},
+{"protocolSection":{"identificationModule":{"nctId":"NCT01539161","briefTitle":"Reveal Chagas: Clinical Evidence of the Implantable Cardiac Monitor in Patients With Chagas Disease"},"statusModule":{"overallStatus":"TERMINATED"},"designModule":{"phases":["PHASE4"]}}},
+{"protocolSection":{"identificationModule":{"nctId":"NCT04023227","briefTitle":"Efficacy and Safety of Sacubitril/Valsartan Compared With Enalapril on Morbidity, Mortality, and NT-proBNP Change in Patients With CCC"},"statusModule":{"overallStatus":"COMPLETED"},"designModule":{"phases":["PHASE4"]}}},
+{"protocolSection":{"identificationModule":{"nctId":"NCT00349271","briefTitle":"Cell Therapy in Chagas Cardiomyopathy"},"statusModule":{"overallStatus":"TERMINATED"},"designModule":{"phases":["PHASE3"]}}},
+{"protocolSection":{"identificationModule":{"nctId":"NCT01557140","briefTitle":"A Randomized Trial of Carvedilol in Chronic Chagas Cardiomyopathy"},"statusModule":{"overallStatus":"COMPLETED"},"designModule":{"phases":["PHASE4"]}}}
+],"nextPageToken":"ZVNj7o2Elu8o3lpwW8iooeytmpOQJJxqZfKk2fAW"}

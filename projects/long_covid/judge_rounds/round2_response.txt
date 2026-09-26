@@ -1,0 +1,577 @@
+Round 2 verification pass (v10)
+
+I treated the revision claims as hypotheses and checked the manuscript text available in the PDF. The revision did address most of the Round 1 problems. The remaining issues are now narrower: mostly wording precision, inferential boundaries, and a few places where the manuscript still extracts a general lesson from a single lane.
+
+1. Round-1 weaknesses: resolved vs still limitations
+A. P53 preregistration provenance
+
+Status: substantially resolved.
+
+The manuscript now provides the missing reproducibility chain:
+
+P51/P52/P53 scripts and results are tied to commits.
+
+Dataset files carry SHA-256 checks.
+
+Scripts assert cohort identities before analysis. 
+
+1-manuscript
+
+This directly addresses the largest Round 1 concern.
+
+Remaining minor issue:
+The paper should distinguish:
+
+“P53 preregistered analysis”
+
+“the manuscript as a whole”
+
+because the manuscript contains many non-gated descriptive analyses.
+
+The distinction is mostly already there, but keep it explicit.
+
+Classification: resolved.
+
+B. “Replication” / transport terminology
+
+Status: mostly resolved, but one relapse remains.
+
+The methods sections correctly use transport language in places, but §15.1 still says:
+
+“a real, preregistered, cross-assay replication” 
+
+1-manuscript
+
+That phrase reintroduces the exact problem from Round 1.
+
+This is not cosmetic. “Replication” implies the same biological claim was independently reproduced. What was actually tested:
+
+training: whole blood RNA-seq, PASC vs recovered
+
+evaluation: PBMC NanoString, Long COVID vs healthy
+
+The manuscript itself acknowledges that the healthy arm is not recovered-from-infection and that metabolic coverage is incidental. 
+
+1-manuscript
+
+Fix: rewrite.
+
+Replace “cross-assay replication” with:
+
+“cross-cohort cross-assay transport validation.”
+
+C. P53 “inversion artifact”
+
+Status: improved but not fully fixed.
+
+The body text now says mechanism is unresolved in some places, which is good. However, the summary section still says:
+
+“the one strong ME/CFS-vs-LC contrast observed … is an inversion artifact of cross-analyte training.” 
+
+1-manuscript
+
+That is still too mechanistic.
+
+Your added analyses (batch/site effects, module correlations, etc.) strengthen the observation that:
+
+the cfRNA signal is real,
+
+transport fails,
+
+the cellular contrast goes opposite.
+
+They do not prove the reason is an “artifact.”
+
+Possible explanations remain:
+
+analyte biology,
+
+cell composition,
+
+disease biology,
+
+cohort effects,
+
+technical effects,
+
+or combinations.
+
+Fix: rewrite.
+
+Suggested:
+
+“The cfRNA-trained signature failed cellular transport and produced an oppositely directed cellular contrast; the biological basis of this discordance remains unresolved.”
+
+Classification: rewriting.
+
+D. “Powered” language
+
+Status: mostly fixed, one occurrence remains.
+
+The manuscript still contains:
+
+“Three differently-powered, differently-designed attempts…” 
+
+1-manuscript
+
+and the GSE293840 provenance section calls it:
+
+“the powered cfRNA cohort.” 
+
+1-manuscript
+
+You removed “powered” in many places, but these remain.
+
+A cohort can be larger. A study can have greater detectable sensitivity. “Powered” implies a formal power calculation.
+
+Fix: rewrite.
+
+Use:
+
+“larger cfRNA cohort”
+
+“larger-sample attempt”
+
+Classification: rewriting.
+
+E. P51 12-gene projection issue
+
+Status: resolved.
+
+The added projection correlation is exactly the right kind of diagnostic.
+
+The manuscript now clearly states that:
+
+the evaluation uses the panel intersection,
+
+the L7 module survives on 12 genes,
+
+this is a limitation of the assay. 
+
+1-manuscript
+
+The r=0.937 sensitivity analysis addresses the construct-preservation concern.
+
+Remaining limitation:
+The correlation is not proof that the 12 genes capture all biological information in the full module, only that the scores correlate in this setting.
+
+That is acceptable.
+
+Classification: resolved with residual limitation.
+
+F. Nine-module selection / multiplicity
+
+Status: adequately handled.
+
+The manuscript now correctly avoids calling the nine modules independent signals:
+
+all nine modules significant
+
+is presented as a shared axis rather than nine discoveries. 
+
+1-manuscript
+
+The module correlations (0.87–0.98) are important because they support the interpretation that this is a correlated transcriptional program.
+
+No major remaining problem.
+
+Classification: resolved.
+
+G. LOPO stability overinterpretation
+
+Status: improved.
+
+Adding effect-size distributions was the correct fix.
+
+The manuscript now still reports the original preregistered stability criterion (sign stability), but this is no longer the only evidence.
+
+No major issue.
+
+Classification: resolved.
+
+H. P52 platform confounding
+
+Status: adequately carried.
+
+The manuscript now explicitly states:
+
+two platforms,
+
+3/7 and 9/8 split,
+
+within-platform z-scoring,
+
+stratified permutation,
+
+power limitation. 
+
+1-manuscript
+
+The new sensitivity analyses help.
+
+This remains an inherent limitation because no computational correction can create information where disease/platform overlap is limited.
+
+Classification: unresolved limitation, correctly stated.
+
+I. Batch/site confounding in P53
+
+Status: substantially resolved.
+
+The new analysis is exactly what was needed:
+
+site effects,
+
+batch effects,
+
+per-batch gradients.
+
+The manuscript now reports the selected module's per-batch effects rather than hiding them. 
+
+1-manuscript
+
+One remaining caution:
+
+The site analysis should not be interpreted as proving site independence unless the disease/site table actually demonstrates adequate overlap.
+
+If one site is strongly case-heavy, it remains a limitation.
+
+Classification: adequately addressed.
+
+J. External annotation overreach
+
+Status: improved but not fully fixed.
+
+The manuscript now explicitly says annotations are:
+
+“context for the preregistered gene sets, not independent replication.” 
+
+1-manuscript
+
+Good.
+
+However, later language still says:
+
+“two independent resonances” 
+
+1-manuscript
+
+That is questionable.
+
+g:Profiler enrichment of the selected genes is not independent evidence. It is expected from the Hallmark module definition.
+
+PRIDE may be orthogonal, but the enrichment analysis is not.
+
+Fix: rewrite.
+
+Use:
+
+“two orthogonal contextual observations”
+
+or separate PRIDE from annotation enrichment.
+
+Classification: rewriting.
+
+2. New weaknesses in v10
+
+These are issues introduced or remaining after the fixes.
+
+1. The manuscript still overstates the biological interpretation of P51
+
+Severity: moderate.
+
+The current conclusion says:
+
+“a robust, transportable chronic-illness metabolic axis in blood” 
+
+1-manuscript
+
+This is close, but “axis” implies a latent biological variable.
+
+The actual evidence is:
+
+one module score,
+
+in one cross-assay evaluation,
+
+separating Long COVID from healthy controls,
+
+without disease specificity.
+
+The manuscript itself correctly says it is not a biomarker. 
+
+1-manuscript
+
+But “axis” remains slightly stronger than necessary.
+
+Fix: rewrite.
+
+Possible:
+
+“a transportable blood expression association involving oxidative-phosphorylation-related genes.”
+
+Classification: rewriting.
+
+2. The comparator interpretation remains slightly too rhetorical
+
+The manuscript says:
+
+“The same list fails its strict rule outright on GSE275334.” 
+
+1-manuscript
+
+This is technically correct relative to the preregistered rule.
+
+However, because:
+
+the comparator was not independently selected,
+
+the comparator itself was selected from GSE226260,
+
+and its ME/CFS criterion was a high effect-size threshold,
+
+the result should not sound like a general failure of the published biology.
+
+The manuscript mostly handles this well, but some sentences are stronger than the evidence.
+
+Fix: minor rewriting.
+
+Use:
+
+“did not meet the locked evaluation criterion.”
+
+Classification: rewriting.
+
+3. “The nine modules corroborate the source study’s claim” is too strong
+
+The manuscript says:
+
+“its rich signal (all nine modules significant) corroborates its source study’s claim that cfRNA carries a strong ME/CFS state fingerprint.” 
+
+1-manuscript
+
+This is the most important remaining scientific overstatement.
+
+Why?
+
+The analysis was built from the same general biological question and related cohort. Agreement is not independent confirmation.
+
+The result shows:
+
+the selected Hallmark modules reproduce a broad cfRNA disease-control separation.
+
+It does not independently validate the source study.
+
+Fix: rewrite.
+
+Suggested:
+
+“is consistent with the source study’s report of a strong cfRNA ME/CFS-associated signal.”
+
+Classification: rewriting.
+
+4. “The field’s problem, shown cleanly” is still too broad
+
+The title:
+
+“The separation problem is the field’s problem, shown cleanly” 
+
+1-manuscript
+
+is rhetorically strong.
+
+Your data show:
+
+this program failed to establish ME/CFS specificity.
+
+They do not demonstrate that the field has a single dominant problem.
+
+Fix: rewrite heading.
+
+Suggested:
+
+“The separation problem illustrated by these analyses.”
+
+Classification: rewriting.
+
+5. The phrase “honest answer” appears too frequently
+
+This is minor but real.
+
+The manuscript repeatedly says:
+
+honest answer,
+
+honest ledger,
+
+honest negative,
+
+honest position.
+
+The intent is good, but in a scientific manuscript repeated self-certification can read defensively.
+
+The evidence should demonstrate honesty; it does not need repeated labels.
+
+Fix: presentation rewrite.
+
+Replace some with neutral terms:
+
+“predefined interpretation”
+
+“reported outcome”
+
+“negative result”
+
+Classification: rewriting.
+
+6. The manuscript needs clearer separation between preregistered analyses and advisory additions
+
+You added the correct post-hoc analyses, but the reader should be able to see immediately:
+
+Analysis	preregistered?	gated?
+
+The paper does this conceptually, but not always visually.
+
+Because this manuscript is about avoiding analytical flexibility, the distinction itself is part of the scientific contribution.
+
+Fix: add a compact table.
+
+Classification: presentation.
+
+7. The “44 services” discussion remains disproportionately large
+
+The revision improved the framing:
+
+“These annotations are context…” 
+
+1-manuscript
+
+However, 44 services still occupies a lot of narrative space relative to its evidentiary importance.
+
+A skeptical reviewer may wonder whether annotation volume is compensating for weak biological validation.
+
+Fix: presentation only.
+
+Move most service accounting to supplement/appendix.
+
+Keep the ledger.
+
+Classification: rewriting/presentation.
+
+8. The manuscript should explicitly distinguish “negative” from “failed discovery”
+
+The manuscript is generally careful, but some passages combine:
+
+P52 null,
+
+P53 transport failure,
+
+P51 specificity failure
+
+into one cumulative failure story.
+
+Those are scientifically different:
+
+P52: no selected module in small ME/CFS PBMC cohort.
+
+P53: strong cfRNA signal but no transport.
+
+P51: transport without specificity.
+
+The distinctions matter.
+
+Fix: small rewrite of synthesis section.
+
+Classification: rewriting.
+
+9. The paper still needs a clearer “estimand” statement
+
+A reviewer should be able to answer:
+
+What exactly is the quantity being estimated?
+
+For example:
+
+P51 E1:
+“Does the locked module score differ between Long COVID and healthy controls?”
+
+P51 E2:
+“Does it differ between Long COVID and ME/CFS?”
+
+P53 E1:
+“Does a cfRNA-trained ME/CFS signature transport to cellular RNA?”
+
+The manuscript contains these pieces, but an explicit estimand table would improve clarity.
+
+Fix: presentation.
+
+10. “Only public cohort carrying Long COVID and ME/CFS arms” remains slightly risky
+
+The manuscript now says:
+
+“to the lane’s knowledge, the only public cohort…” 
+
+1-manuscript
+
+This is much better.
+
+Still, “only” claims are fragile unless the search method is visible.
+
+You already added “identified by our search” elsewhere.
+
+Keep the cautious phrasing consistently.
+
+Classification: rewriting.
+
+3. Remaining unsupported or too-strong claims
+
+I would still change:
+
+Current wording	Problem	Replacement
+cross-assay replication	implies biological replication	cross-assay transport validation
+inversion artifact	mechanism inferred	oppositely directed contrast; mechanism unresolved
+powered cfRNA cohort	implies formal power	larger cfRNA cohort
+corroborates source study	not independent validation	consistent with source study
+independent resonances	enrichment is not independent	contextual observations
+chronic-illness metabolic axis	biological latent construct implied	expression association
+field’s problem	overgeneralization	illustrated by these analyses
+4. Final judgment: does v10 honestly represent the work?
+
+Yes, with the remaining wording fixes above.
+
+The substantive Round 1 problems are largely repaired:
+
+preregistration provenance: fixed
+
+transport vs replication: mostly fixed
+
+comparator asymmetry: handled
+
+P51 projection issue: handled
+
+batch/site concerns: substantially addressed
+
+P52 limitations: appropriately carried
+
+post-hoc analyses: clearly separated
+
+references/cohort tables/master structure: addressed
+
+The remaining problems are not hidden methodological failures. They are mostly scientific language discipline.
+
+After those final wording changes, the manuscript would honestly represent:
+
+A preregistered computational evaluation program testing whether blood-expression modules transport across Long COVID and ME/CFS-related datasets. It identifies one limited Long COVID-versus-healthy transport association, fails to establish ME/CFS specificity, and documents multiple negative transport attempts under locked analysis rules.
+
+It should not claim:
+
+a validated biomarker,
+
+a mechanistic mitochondrial axis,
+
+a demonstrated cross-analyte artifact,
+
+a general failure of published signatures,
+
+or a field-wide conclusion.
+
+The paper gate failure is appropriately retained. The current manuscript does not appear to be trying to rescue that gate through padding or reinterpretation, which is important. The remaining work is mostly making the prose match the evidence exactly.

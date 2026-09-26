@@ -208,7 +208,7 @@ eight modules show permutation $p$ between .10 and .29 - no second signal.
 Twelve of the module's genes are on the evaluation panel, clearing the locked
 $\geq$10 bar.
 
-\subsection{Evaluation result and the honest ledger}
+\subsection{Evaluation result, recorded exactly}
 On GSE275334 (\texttt{results/lc\_p51\_eval\_result.json}): \textbf{E1 passes}
 - the oxphos-down signature separates Long COVID from healthy controls
 cross-assay ($D=0.343$, $p=.0038$, $g=0.958$). \textbf{E2 fails} - it does not
@@ -329,7 +329,7 @@ No module passed. The best two-sided stratified permutation $p$ is .194
 (\texttt{results/lc\_p52\_train\_result.json}). Under the corrected two-sided
 rule there is simply no Hallmark-scale signal separating post-infectious
 ME/CFS from healthy PBMC in this cohort at this $n$. The evaluation cohort was
-never opened for this arc. This is the arc's honest answer, and per the
+never opened for this arc. This is the arc's preregistered outcome, and per the
 preregistration's interpretation clause it means: \emph{this} signature
 strategy - nine fixed modules, platform-stratified, trained on 27 PBMC
 samples - finds no transportable ME/CFS state signal. It does not establish
@@ -510,7 +510,7 @@ platform series matrices (p52). Scripts fail closed on mismatch.
 
 \textbf{Substance audit.} The current reading of
 \texttt{scripts/audit\_research\_body.py} on this PDF is \textbf{17 of 50
-substantive pages (21 rendered)} - the paper gate is NOT met and is not
+substantive pages (22 rendered)} - the paper gate is NOT met and is not
 claimed. The reading is recorded in the commit message of every manuscript
 revision and updated honestly as chapters land; the gate is claimed only
 when the audit passes.
@@ -544,6 +544,22 @@ One view of the whole program; post-hoc items are excluded by definition.
 P51 & GSE226260 whole-blood RNA-seq, PASC vs recovered & GSE275334 PBMC NanoString, LC vs HC (E1), LC vs ME/CFS (E2) & 37 / 47 & one-sided perm., 1 of 9 modules (L7) & E1 pass $p=.0038$; E2 fail $p=.485$; win rule not met\\
 P52 & GSE251872 PBMC, PI-ME/CFS vs HV, platform-stratified & none (stopped at training by prereg) & 27 / 0 & two-sided stratified perm., none of 9 & best $p=.194$; training-stage negative\\
 P53 & GSE293840 plasma cfRNA, ME/CFS vs HV, batch-stratified & GSE275334 cellular, ME/CFS vs HC (E1), ME/CFS vs LC (E2) & 168 / 47 & two-sided stratified perm., smallest-$p$ (L9) & E1 fail $p=.90$; E2 sig. inverted $g=-0.929$; win rule not met\\
+\end{longtable}
+
+\subsection{Estimands and registration status}
+Each locked question, stated as an estimand, with its registration status:
+
+\begin{longtable}{llll}
+\textbf{test} & \textbf{estimand} & \textbf{preregistered?} & \textbf{gated?}\\
+P51 selection & does any of 9 module scores differ, PASC vs recovered (GSE226260)? & yes (P51 prereg) & yes\\
+P51 E1 & does the locked L7 projection differ, LC vs healthy (GSE275334)? & yes & yes\\
+P51 E2 & does it differ, LC vs ME/CFS? & yes & yes\\
+P52 selection & does any module differ, PI-ME/CFS vs HV (GSE251872)? & yes (P52 prereg) & yes\\
+P53 selection & does any module differ, ME/CFS vs HV cfRNA (GSE293840)? & yes (P53 prereg) & yes\\
+P53 E1 & does the locked L9 projection transport to cellular ME/CFS? & yes & yes\\
+P53 E2 & does it differ, ME/CFS vs LC? & yes & yes\\
+per-gene decomposition & which panel genes carry E1? & no - post-hoc descriptive & no\\
+projection validity, LOPO magnitudes, CIs, site/batch tables, module correlations & characterization & no - post-hoc descriptive (\texttt{lc\_judge\_fixes\_r1.json}) & no\\
 \end{longtable}
 
 Comparator legs (six-gene published panel, machinery-matched but with
@@ -835,7 +851,7 @@ the same chronic-state axis. Third, druggability concentrates in the
 comparator set (JAK1 Tclin with an approved inhibitor class; STAT3, MAP3K8,
 CXCL8, BCL2L1 Tchem) while the L7 enzymes are largely undrugged (ChEMBL
 target counts near zero) - consistent with the general pattern that metabolic
-enzymes are poor drug targets and with the lane's honest position that its
+enzymes are poor drug targets and with the lane's stated position that its
 positive is a state signal, not a therapeutic hypothesis.
 
 
@@ -898,8 +914,9 @@ doubt - the power is.
 across three sequencing batches and three collection sites, with raw counts
 deposited. It became the P53 training cohort after the cohort-selection trail
 recorded in that chapter, carrying the locked analyte clause. Its rich signal
-(all nine modules significant) corroborates its source study's claim that
-cfRNA carries a strong ME/CFS state fingerprint; its transport failure to the
+(all nine modules significant) is consistent with its source study's report
+of a strong cfRNA ME/CFS-associated signal - agreement, not independent
+validation; its transport failure to the
 cellular panel is the P53 result, not a defect of the cohort. Batch structure
 is handled by within-batch z-scoring and stratified permutation, and the
 per-batch effect gradient of the selected module (0.38, 0.28, 0.08) is

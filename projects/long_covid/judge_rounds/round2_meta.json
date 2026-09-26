@@ -1,0 +1,12 @@
+{
+ "round": 2,
+ "date": "2026-09-26",
+ "conversation_url": "https://chatgpt.com/c/6ab763e2-2b00-83ee-8465-a72294185514",
+ "artifact_reviewed": "projects/long_covid/paper/manuscript.pdf (v10, commit bc5001004c3af4201d4c8a5c10b45cebecc8b2c2)",
+ "pdf_sha256_v10": "e2a16e38635d40339de694aa4fd08b06be4873176767acaba5f156b57017a1f7",
+ "response_file": "round2_response.txt",
+ "response_sha256": "06142efa13fe84169ed709d1951ca69e9e7d1ce920af5b6da681cabd1d6837af",
+ "verdict": "YES with remaining wording fixes - manuscript would honestly represent the work after final wording changes; gates-fail honesty explicitly commended.",
+ "stale_quote_note": "Round-2 items B/C/D and three rows of the 'still unsupported' table quote the round-1 PDF (cited as '1-manuscript'); grep of the v10 source confirms those phrases (cross-assay replication, inversion artifact, differently-powered, powered cfRNA cohort, independent resonances, metabolic axis, field's problem) are ABSENT from v10. Verified-present items fixed in v11: corroborates->consistent, estimand+registration table added, self-certification wording softened.",
+ "fixes_in_v11": ["corroborates source study -> consistent with source study (GSE293840 deep-dive)", "estimand + registration-status table", "honest answer/ledger/position self-labels reduced", "substance reading updated 17/50 (22 rendered)"]
+}

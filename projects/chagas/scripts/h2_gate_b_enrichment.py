@@ -30,7 +30,7 @@ def de_stats(genes,X,case_idx,ctrl_idx):
     fc=L[:,case_idx].mean(axis=1)-L[:,ctrl_idx].mean(axis=1)
     return genes, fc, np.nan_to_num(p,nan=1.0)
 
-def enrichment(fc,p,targets,direction,label):
+def enrichment(genes,fc,p,targets,direction,label):
     """direction=+1 targets expected UP; -1 expected DOWN."""
     sig = direction*np.sign(fc)>0
     de = sig & (p<=0.05)
@@ -65,6 +65,13 @@ def main(targets_path):
     labels=[b2l[c] for c in mat_cols]
     case=[i for i,l in enumerate(labels) if l=='case']; ctrl=[i for i,l in enumerate(labels) if l=='control']
     assert len(case)>=5 and len(ctrl)>=5, f'too few samples: {len(case)} case {len(ctrl)} control'
+    # GSE244827 Geneid is Ensembl (ENSG); translate to symbols via Ensembl
+    # BioMart map (useast mirror, 2026-09-27) so validated targets can match
+    bmap=pd.read_csv('sources/services/ensembl_biomart/ensg_symbol_map.tsv',sep='	')
+    e2s=dict(zip(bmap['Gene stable ID'],bmap['Gene name'].astype(str).str.upper()))
+    n_mapped=sum(1 for x in g if x in e2s)
+    print(f'GSE244827 ENSG->symbol: {n_mapped}/{len(g)} mapped')
+    g=g.map(lambda x: e2s.get(x,x))
     g1,fc1,p1=de_stats(g,X,case,ctrl)
     # GSE203525: CCC lines vs IND lines at 0hpi
     g2m,X2=load_counts('sources/matrices/GSE203525_Counts.txt.gz',1)
@@ -87,7 +94,7 @@ def main(targets_path):
         # canonical repression: miRNA DOWN in severe (d<0) => targets expected UP (+1), and vice versa
         expected = 1 if r['d_sev_mild']<0 else -1
         for lbl,gg,ff,pp in [('blood_GSE244827',g1,fc1,p1),('hipsc_GSE203525',g2,fc2,p2)]:
-            res=enrichment(ff,pp,sub.target_gene.tolist(),expected,f'{mir}|{lbl}')
+            res=enrichment(gg,ff,pp,sub.target_gene.tolist(),expected,f'{mir}|{lbl}')
             if res: res['mirna']=mir; res['candidate_fdr']=r['fdr']; results.append(res)
     R=pd.DataFrame(results)
     if len(R):

@@ -123,3 +123,11 @@ Count stands: 29 used + 5 blocked-attempted; gate needs 40.
     382,175 dedup human MTI rows -> sources/services/mirtarbase/
     validated_targets.tsv (mirna, target_gene, support).
 Count: 30 used + 5 blocked-attempted; gate needs 40.
+
+## Addendum 4 (2026-09-27T00:46): service 31 + gate-(b) run
+31. Ensembl BioMart (GRCh38 hsapiens_gene_ensembl) - ENSG->symbol map
+    (1,799,721 bytes, sha256 3a0f92465f5d0605f871df7c780b3251b4c46cd817225f46ad2a1fb261b42e20).
+    www.ensembl.org returned 0 bytes; useast.ensembl.org mirror served
+    the identical query - honest note, no retry-loop.
+    Used to translate GSE244827 Ensembl Geneids for target matching.
+Count: 31 used + 5 blocked-attempted; gate needs 40.

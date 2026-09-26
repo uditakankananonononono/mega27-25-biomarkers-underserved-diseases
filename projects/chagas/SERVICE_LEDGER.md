@@ -176,3 +176,16 @@ Count: 35 used + 6 blocked-attempted; gate needs 40.
 Blocked (not counted): Pharos GraphQL (pharos-api.ncats.io) - every
     query HTTP error tonight; endpoint appears moved/retired.
 Count: 37 used + 7 blocked-attempted; gate needs 40.
+
+## COUNT CORRECTION (2026-09-27T00:55, revival agent) - DISTINCT services
+Entries 32, 33, 34, 35 (tonight's Enrichr, Open Targets, STRING,
+g:Profiler) are RE-USES of services already counted as 15, 8, 10, 14
+respectively - tonight's runs were new analyses on those rails, not new
+tools. Annotating rather than renumbering to keep the log append-only:
+- 32 = re-use of 15 (Enrichr)
+- 33 = re-use of 8 (Open Targets)
+- 34 = re-use of 10 (STRING)
+- 35 = re-use of 14 (g:Profiler)
+DISTINCT external tools used now: 33 (entries 1-31 + 36 mygene +
+37 miRBase). Gate of 40 counts DISTINCT tools: 7 more needed.
+Same convention as the 750->716 record correction (commit ef7b29a).

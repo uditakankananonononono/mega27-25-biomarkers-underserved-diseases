@@ -1,0 +1,30 @@
+{
+ "preregistration": "projects/long_covid/prereg/LC_P53_preregistration.md",
+ "train_commit_signature": [
+  "L9_il2_stat5"
+ ],
+ "signature_panel_genes": 40,
+ "trained_direction": "up in ME/CFS (cfRNA)",
+ "E1_mecfs_vs_healthy": {
+  "D": -0.12386493887669843,
+  "perm_p": 0.8996100389961004,
+  "hedges_g": -0.4529351600536618,
+  "pass_.025": false
+ },
+ "E2_mecfs_vs_lc": {
+  "D": -0.24220435269386195,
+  "perm_p_two_sided": 0.012598740125987402,
+  "hedges_g": -0.9285295991311207,
+  "pass": true
+ },
+ "reported_comparator_leg": {
+  "banked_abs_g_p51_sixgene": 0.776,
+  "abs_g_E2_minus_banked_boot95ci": [
+   -0.48803546324234764,
+   1.0234430893276354
+  ]
+ },
+ "win_rule": "E1 pass AND E2 pass",
+ "win": false,
+ "analyte_clause": "cfRNA-plasma-trained signature on cellular NanoString; failure indicts strategy+analyte, not biology"
+}

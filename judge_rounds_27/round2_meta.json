@@ -1,0 +1,14 @@
+{
+  "round": 2,
+  "artifact": "projects/codon_context/REPORT.pdf in mega27-27-isef-bioinf-derived-tools @ 9925b30",
+  "route": "TEXT-PASTE verified round (user route change 2026-09-26 13:18 IST)",
+  "source_pdf_sha256": "5e5347a9e23a84c19af1898e534b4fe9e77173ebddb54ffff9562dc4def4e6c0",
+  "extraction": "pdftotext -layout; completeness verified: 5 form-feed page breaks == 5 pdfinfo pages; 25,954 chars pasted whole in one message",
+  "prompt_file": "round2_message.txt (head: round2_codoncontext_prompt_head.txt)",
+  "response_file": "round2_response.txt",
+  "conversation_url": "https://chatgpt.com/c/6ab77977-0a64-83ee-a398-26784ff69608",
+  "receipt_verification": "PASS - 6 quoted strings present in pasted document text and absent from prompt head, e.g. 'expression_prediction: null', 'The mRFP early-codon result reproduces a published theme and is not a new discovery', 'pooled held-out log-ratio R2 is 0.061'",
+  "questions_asked": ["weaknesses classified fixable/rewrite/inherent", "ISEF standing", "improvement ordered by impact"],
+  "verdict": "YES - honestly represents the work and its limits; main weakness is that the validated contribution is a rigorous auditing framework rather than a novel biological discovery or predictive breakthrough",
+  "timestamp_ist": "2026-09-26T13:21"
+}

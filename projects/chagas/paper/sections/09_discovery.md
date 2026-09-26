@@ -42,6 +42,19 @@ interpretation: the regulatory module is strong in the cardiac-cellular
 compartment and partially visible in peripheral blood - compartment
 specificity, not uniform replication. Reported as-is.
 
+Module score (formula 10, descriptive in-sample on GSE299582; member
+selection and weights both reuse this cohort, so no generalization claim):
+per-sample S_j = sum over members of sign(d_severe-mild) * z(log2 CPM).
+CORE6 (the both-tissue core) tracks severity monotonically - medians
+control -2.98 / mild 0.06 / moderate 2.01 / severe 2.66, KW p = 1.7e-11,
+ordinal c-index 0.756 in-sample (vs the cross-validated H1' 0.787 - the
+consistent direction supports, but does not add to, that claim). The
+18-member cardiac-passing superset does NOT hold together as a signed
+module (medians non-monotone, c-index 0.509) - serum-direction conflict
+across members washes the signal out. The module deliverable is therefore
+the 6-miRNA core; the superset's failure is reported, not hidden
+(results/module_score.json).
+
 Post-hoc pathway context (descriptive, not preregistered): the pooled
 strong-support validated targets of the 18 cardiac-passing candidates
 (557 genes) enrich in Enrichr for PI3K-Akt signaling (KEGG adj 1.2e-35;

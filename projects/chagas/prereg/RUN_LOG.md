@@ -126,3 +126,10 @@ permutations/test, BH across all 40 tests):
 H2 gate (b) verdict: SUPPORTED in the cardiac-cellular orthogonal
 cohort (18/20); PARTIAL in blood (6/20). Reported as-is, no gate
 claim beyond the data.
+
+## MODULE SCORE - 2026-09-27T00:49 IST (revival agent)
+Formula 10 executed on GSE299582 (in-sample, descriptive - members and
+weights derive from this cohort, so NO generalization claim). CORE6:
+monotone medians, KW p=1.7e-11, ordinal c-index 0.756. CARDIAC18:
+non-monotone, c-index 0.509 - signed-module washout across 18 members.
+Module deliverable = 6-miRNA core; superset failure reported honestly.

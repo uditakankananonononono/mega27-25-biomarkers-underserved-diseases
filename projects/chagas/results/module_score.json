@@ -1,0 +1,52 @@
+{
+  "CORE6": {
+    "members": [
+      "hsa-miR-1-3p",
+      "hsa-miR-30c-5p",
+      "hsa-miR-145-5p",
+      "hsa-miR-192-5p",
+      "hsa-miR-122-5p",
+      "hsa-miR-194-5p"
+    ],
+    "missing": [],
+    "kw_p": 1.7012028706833222e-11,
+    "ordinal_cindex": 0.7556868166394369,
+    "median_by_group": {
+      "control": -2.9821899836365615,
+      "mild": 0.05924749502069071,
+      "moderate": 2.008865475947244,
+      "severe": 2.6639772974205362
+    }
+  },
+  "CARDIAC18": {
+    "members": [
+      "hsa-miR-182-5p",
+      "hsa-miR-1-3p",
+      "hsa-miR-30c-5p",
+      "hsa-miR-1294",
+      "hsa-miR-125b-5p",
+      "hsa-miR-125a-5p",
+      "hsa-miR-199b-5p",
+      "hsa-miR-145-5p",
+      "hsa-miR-20a-3p",
+      "hsa-miR-769-5p",
+      "hsa-miR-1285-3p",
+      "hsa-miR-192-5p",
+      "hsa-miR-122-5p",
+      "hsa-miR-223-5p",
+      "hsa-miR-651-5p",
+      "hsa-miR-194-5p",
+      "hsa-miR-375-3p",
+      "hsa-miR-1301-3p"
+    ],
+    "missing": [],
+    "kw_p": 2.0160115355993655e-06,
+    "ordinal_cindex": 0.5092371496795275,
+    "median_by_group": {
+      "control": 2.0530497967302965,
+      "mild": -3.2298816453707127,
+      "moderate": 0.3207555787774734,
+      "severe": 2.582000759944738
+    }
+  }
+}

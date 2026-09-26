@@ -97,3 +97,14 @@ the real download link must be discovered via a browser visit (queued for
 the next browser token). NOT counted as used; gate (b) runs are blocked
 on this retrieval. Do not substitute bare predicted-target databases
 without a locked amendment (judge round 01 explicitly de-ranked them).
+
+## Addendum 2 (2026-09-26T22:32): service 29 + blocked notes
+29. TargetScan (vert_80) - miR_Family_Info.txt downloaded and used for
+    seed-family context on candidate miRNAs (services/targetscan/;
+    predicted-target context only per ADDENDUM_3/judge-01 - NOT the gate-(b)
+    validated-target source).
+Blocked (not counted): WikiPathways webservice returns 404 (service moved
+or retired); Semantic Scholar still 429; api.biorxiv.org still 0-byte.
+dbSNP rs1045642 (ABCB1 C3435T, benznidazole PGx context) was retrieved via
+NCBI eutils - folded under existing service #2, not double-counted.
+Count stands: 29 used + 5 blocked-attempted; gate needs 40.

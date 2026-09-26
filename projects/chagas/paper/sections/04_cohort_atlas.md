@@ -74,3 +74,25 @@ GSE84796 and GSE244827 remain in the crosswalk set so that a reader can
 verify the prior 50 samples byte-for-byte; per the count-correction record
 (commit ef7b29a) they contribute to the 716-record total exactly once,
 through the prior manifest.
+
+## 4.8 Machine-checked per-series table (generated from the frozen crosswalks)
+| Series | n GSM | Platform | Label counts |
+|---|---|---|---|
+| GSE107376 | 9 | GPL16791 | case 6, control 3 |
+| GSE129676 | 16 | GPL17301 | case 8, control 8 |
+| GSE154421 | 92 | GPL28868 | case 92 (genotype contrast within) |
+| GSE158986 | 12 | GPL16791 | infected 6, control 6 |
+| GSE191081 | 22 | GPL24676 | case 8, control 14 |
+| GSE191082 | 158 | GPL21145 | case 104, control 54 |
+| GSE203525 | 20 | GPL18573 | case 20 (line-level contrasts within) |
+| GSE244827 | 33 | GPL24676 | case 10, control 23 |
+| GSE295194 | 16 | GPL24676 | case 16 (donor-status tags within) |
+| GSE299582 | 192 | GPL30173 | case 150, control 42 |
+| GSE311812 | 46 | GPL24676 | case 25, control 21 |
+| GSE328447 | 4 | GPL16791 | treated 2, control 2 |
+| GSE333874 | 31 | GPL24676 | case 31 (transmitter contrast within) |
+| GSE348071 | 32 | GPL30173 | variant 16, reference 16 |
+| GSE84796 | 17 | GPL14550 | case 10, control 7 |
+Every row regenerates from sources/<GSE>_sample_crosswalk.csv
+(sha256-hashed per-GSM GEO SOFT records); the table is a view, not a
+source of truth.

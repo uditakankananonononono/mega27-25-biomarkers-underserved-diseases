@@ -54,3 +54,23 @@ Semantic Scholar rate limiting, DrugCentral's login wall, medRxiv's empty
 responses, GEO2R's browser-only interface) are logged in the ledger's
 blocked section with the exact failure - they are not counted, and their
 planned roles are named so the gap is visible rather than papered over.
+
+## 5.x Gate-(b) enrichment pipeline (executed 2026-09-27)
+Inputs: miRTarBase v8.0 human MTI table (382,175 dedup rows;
+sha256-pinned, version disclosed), GSE244827 CHAVA raw counts
+(60,675 Ensembl genes x 33 libraries), GSE203525 counts (58,142 genes
+x 20 libraries). Per candidate miRNA, its validated-target set T is
+taken as-is from miRTarBase; the direction rule is canonical repression:
+candidate down in severe disease predicts targets UP in the case
+contrast and vice versa. Differential expression is a Welch t-test on
+log2(CPM+1), gene-level; the direction-consistent DE set is genes
+moving in the predicted direction at nominal p <= 0.05. The enrichment
+statistic is the fraction of T in that set, judged against 10,000
+size-preserving random gene sets from the same matrix (one-sided
+permutation p, (1+b)/(10001)); Benjamini-Hochberg FDR across all 40
+candidate-cohort tests. Sample-to-column identity for GSE244827 is
+established by a verified B-code bijection (each GSM's live
+!Sample_description), asserted in-code; GSE244827 Ensembl IDs are
+translated to symbols with an Ensembl BioMart GRCh38 map. miR-375-3p is
+matched through its documented legacy name hsa-miR-375
+(MIMAT0000728, verified against live miRBase). Seed 20260926.

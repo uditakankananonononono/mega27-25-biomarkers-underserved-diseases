@@ -1,0 +1,186 @@
+Judge this preregistered analysis design for scientific soundness. Be terse and critical; list only real flaws.
+
+Context: Long COVID biomarker research, preregistered arc discipline (one training run, one evaluation run, no tuning). Question: can a gene-expression signature trained on post-infectious ME/CFS (vs healthy) (a) transport cross-study to a second cohort, and (b) distinguish ME/CFS from Long COVID in that cohort, better than prior attempts?
+
+Training cohort: GSE251872, baseline PBMC RNA-seq, 12 PI-ME/CFS vs 15 healthy, 27 samples. Known confound: two sequencing platforms (platform A: 3 case/7 control; platform B: 9 case/8 control). Handled by z-scoring each gene within platform, then pooling, and label permutation within platform strata.
+Evaluation cohort: GSE275334, PBMC NanoString 635-gene panel, 23 Long COVID / 9 ME/CFS / 15 healthy. Evaluation only, never used for training.
+
+Signature: candidate gene sets are 9 fixed Hallmark-derived modules (20+ genes required in training data, 10+ required on the 635-gene panel, bars locked a priori). Module score = mean of within-platform z over module genes. Selection: two-sided permutation p<.05 (10k permutations, stratified by platform) plus sign stability in all 27 leave-one-out folds. Previous arc used one-sided permutation in the observed direction and we flagged that as anti-conservative; this arc corrects it to two-sided.
+
+Evaluation (run once, only if a module is selected): signature sign fixed from training. E1: ME/CFS vs healthy, one-sided p<.025 (direction fixed by untouched training cohort). E2: ME/CFS vs Long COVID, two-sided p<.05 AND |Hedges g|>0.8. Leg iii: |g_E2| must beat 0.776, the best |g| previously computed on that exact contrast (a published six-gene comparator panel). Win = E1 AND E2 AND leg iii.
+
+Questions: (1) Is the platform-stratified approach adequate given the case/control imbalance across platforms (3/7 vs 9/8)? (2) Is requiring the ME/CFS signature to beat the prior six-gene comparator's |g| on the LC-vs-ME/CFS contrast a fair win rule, or is it stacked? (3) With n=9 ME/CFS in evaluation, is the g>0.8 bar too harsh to make the arc informative? (4) Any fatal flaw that would make the result uninterpretable?
+Show more
+Overall judgment: mostly sound intent, but several real statistical weaknesses remain
+
+The preregistration discipline is strong (locked cohorts, no tuning, corrected permutation direction, external evaluation). The main vulnerabilities are small-sample inference, batch handling assumptions, and comparator choice.
+
+(1) Platform-stratified z-scoring: adequate?
+
+Partially, but not fully.
+
+The approach is defensible, but the imbalance creates a real weakness:
+
+Platform A has 3 cases / 7 controls. After within-platform z-scoring, the case distribution is estimated from only 3 samples. Any gene/module mean in that stratum has high variance.
+
+If the platform effect is nonlinear or gene-specific beyond a simple location/scale shift, z-scoring does not remove it.
+
+Stratified permutation preserves platform labels, which protects the p-value from obvious platform-label confounding, but it does not guarantee biological signal is independent of platform.
+
+The biggest concern is that the training signal is partly identified from the platform split:
+
+Cases are 30% of platform A but 53% of platform B.
+
+A module that separates the platforms slightly can still look like a disease module after z-normalization.
+
+This is not fatal, but I would want at least one preregistered sensitivity check:
+
+train on platform B only (9 cases/8 controls), test whether direction survives;
+
+or leave-one-platform-out as an exploratory robustness analysis.
+
+(2) Beating the prior six-gene comparator |g| = 0.776: fair or stacked?
+
+Mostly stacked unless the comparator was chosen before seeing this arc.
+
+The problem is not benchmarking against a prior result; that is good. The problem is making it a hard win criterion when:
+
+the comparator has only six genes,
+
+it was optimized in some previous analysis,
+
+its reported g may itself be upward-biased,
+
+your signature is constrained by transportability and preregistration.
+
+You are comparing:
+
+a locked, transport-oriented discovery pipeline
+
+against
+
+a previously published/selected panel whose discovery process may not have had the same constraints.
+
+That is not apples-to-apples.
+
+A fairer rule would be:
+
+report whether the new signature exceeds the comparator,
+
+provide bootstrap confidence intervals for the difference,
+
+avoid making "beats comparator" a pass/fail gate unless both were evaluated under identical locked conditions.
+
+As written, leg iii risks turning a scientific comparison into a hurdle test.
+
+(3) Is |g| > 0.8 too harsh with n=9 ME/CFS?
+
+Yes, probably underpowered, but not scientifically unreasonable.
+
+With:
+
+ME/CFS n=9
+
+Long COVID n=23
+
+an observed Hedges g of 0.8 is a large effect. But the confidence interval will be very wide.
+
+The issue is not that the threshold is "wrong"; the issue is that:
+
+many real effects around g=0.5–1.0 will be impossible to distinguish reliably,
+
+a true biological signal could fail because of sampling noise,
+
+a winner will likely be a large-effect estimate with uncertainty.
+
+So the bar makes the arc conservative, but the information gained is asymmetric:
+
+failure tells you little;
+
+success would be interesting.
+
+I would not call it fatal, but interpret failures cautiously.
+
+(4) Fatal flaws?
+
+I do not see a fatal flaw that makes the entire experiment uninterpretable, but there are three serious risks:
+
+Fatal-risk #1: Training set is too small for module selection
+
+You have:
+
+27 training samples
+
+9 candidate modules
+
+Even with fixed Hallmark-derived modules, selecting the one with p<0.05 and LOO sign stability introduces discovery uncertainty.
+
+The two-sided permutation helps, but:
+
+27 samples is extremely small for estimating a biological signature.
+
+LOO sign stability is not independent validation.
+
+This is the largest statistical weakness.
+
+Fatal-risk #2: Disease contrast mismatch
+
+Training:
+
+PI-ME/CFS vs healthy
+
+Evaluation:
+
+Long COVID vs ME/CFS
+
+These are not symmetric tasks.
+
+The signature is trained to find ME/CFS-associated biology, not necessarily biology distinguishing ME/CFS from another post-infectious illness.
+
+A module can pass E1 because it captures chronic illness/inflammation and fail E2 because Long COVID shares it.
+
+That is scientifically informative, but the hypothesis must be framed carefully.
+
+Fatal-risk #3: NanoString vs RNA-seq transport
+
+This is probably the biggest biological generalization issue.
+
+Training:
+
+whole-transcriptome RNA-seq
+
+Evaluation:
+
+fixed 635-gene NanoString panel
+
+Even with locked genes:
+
+normalization differs,
+
+dynamic range differs,
+
+missing genes may alter module composition.
+
+The 10+ gene availability rule helps, but you need to state whether the module score uses:
+
+the same genes only, or
+
+a redefined module after seeing NanoString availability.
+
+Only the first is clean.
+
+Answers in one line
+
+Platform approach: acceptable but not sufficient; imbalance leaves residual batch-identification risk.
+
+Comparator rule: likely stacked as a pass/fail criterion unless comparator was locked under identical conditions.
+
+g>0.8: conservative and likely underpowered, but not invalid.
+
+Fatal flaw: no single fatal flaw; biggest threats are tiny training n, selection optimism, and RNA-seq→NanoString transport validity.
+
+The design is closer to a high-integrity falsification test than a discovery study. Its strongest possible result would be meaningful; its negative result would mostly show that this particular signature strategy/cohort pairing failed, not that ME/CFS/Long COVID lack molecular separation.
+
+ChatGPT can make mistakes. Check important info.
+
+Think

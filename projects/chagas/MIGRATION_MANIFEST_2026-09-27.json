@@ -1,0 +1,155 @@
+{
+  "schema": "migration-plan-v1",
+  "disease": "chagas",
+  "proposed_repo": "mega27-25-chagas-biomarkers",
+  "source_shared_repository": "uditakankananonononono/mega27-25-biomarkers-underserved-diseases",
+  "source_commit": "343705c888cf788c137e2003a772f6419d93a9c2",
+  "tracked_files": [
+    {
+      "shared_repo_path": "projects/chagas/NOVELTY_PLAN.md",
+      "sha256": "7a8fc59bcd3f7b36eb75b308ee1e85c6830bbb6b1f66c0a9bd860a932f2b495f",
+      "bytes": 3291
+    },
+    {
+      "shared_repo_path": "projects/chagas/README.md",
+      "sha256": "ca89165b4ba66fa77918a1cb51986f6f2e63ecee719457e73ae7c054f2ff5115",
+      "bytes": 2680
+    },
+    {
+      "shared_repo_path": "projects/chagas/sources/GSE84796_used_sample_crosswalk.csv",
+      "sha256": "96d3109854cec86b0a05ddd1cd0bcc1d6767bd620ab03230ba16214bb50f3631",
+      "bytes": 4902
+    },
+    {
+      "shared_repo_path": "projects/chagas/sources/prior_prognosis_literature.json",
+      "sha256": "6070537f8b0094e333f85be7d40355fed95e9a1bcb7b1da92add1206f44b868c",
+      "bytes": 7935
+    },
+    {
+      "shared_repo_path": "results/chagas_p31_fixed_panel.csv",
+      "sha256": "201b41f637b29a0fd779892901b753b66ce45620469470814d4fc2b9c885ea01",
+      "bytes": 536
+    },
+    {
+      "shared_repo_path": "results/chagas_p31_genes.csv",
+      "sha256": "e7bc8e77f97738f281aeec438974ac32b6690a41c117a04a51692d23509b4cc6",
+      "bytes": 2365
+    },
+    {
+      "shared_repo_path": "results/chagas_p31_gsm_audit.csv",
+      "sha256": "9eb1808b065304c2851a8ac2ea65b278b60a6a643cae7bb426f54c9c1ab3a89c",
+      "bytes": 9448
+    },
+    {
+      "shared_repo_path": "results/chagas_p31_null.csv.gz",
+      "sha256": "ba020ab704aa851545704ebcadb7b5907fcefff850e92b872166affd814e5c1d",
+      "bytes": 5916
+    },
+    {
+      "shared_repo_path": "results/chagas_p31_result.json",
+      "sha256": "5ed83e883dcc018a07fddcc19d1e8a68bfebef14b0175a6abf040f8c16a09a65",
+      "bytes": 2347
+    },
+    {
+      "shared_repo_path": "results/chagas_p31_samples.csv",
+      "sha256": "e2183878cec1b06fd0352423489e28892624ea84e0edd062319cd054d90c72de",
+      "bytes": 3913
+    },
+    {
+      "shared_repo_path": "results/label_audit/chagas__GSE113155.csv",
+      "sha256": "025e65f9571900865dedc7e1d92116e41e831dfe66d6f981da473ad7b1010e61",
+      "bytes": 277
+    },
+    {
+      "shared_repo_path": "results/label_audit/chagas__GSE128270.csv",
+      "sha256": "43c21e47a3a074e01e48885adc884c158708ccdf79bc34c709a0de7d53d2263e",
+      "bytes": 559
+    },
+    {
+      "shared_repo_path": "results/label_audit/chagas__GSE13791.csv",
+      "sha256": "81f204c778104bf731a5dc771e7fa7f3236a084479fdf74e65c569cd47ac6c66",
+      "bytes": 1345
+    },
+    {
+      "shared_repo_path": "results/label_audit/chagas__GSE2596.csv",
+      "sha256": "e20decc53f6dcd06aef679867bdb59bfa4969bbebd0c6e50f0d83474b6249aa3",
+      "bytes": 627
+    },
+    {
+      "shared_repo_path": "results/label_audit/chagas__GSE4470.csv",
+      "sha256": "4ecd8681e2f5f81d16415c1d42b02b8a9f87070f418d9ecb462c9104444e95f8",
+      "bytes": 212
+    },
+    {
+      "shared_repo_path": "results/label_audit/chagas__GSE84796.csv",
+      "sha256": "45811bfb716a51f73d29639a20bb38c924cf789aa5d7632bf2800aad7e2f8469",
+      "bytes": 2619
+    },
+    {
+      "shared_repo_path": "results/meta_discovery/chagas.csv.gz",
+      "sha256": "1fde8feecfc34328206d86d94169600fe6340829637bc8b9130040b08d2397e0",
+      "bytes": 346294
+    },
+    {
+      "shared_repo_path": "results/prio/benchmark_chagas.csv",
+      "sha256": "a357734556b42a65e1d794ae58fb8f77bd185e3e52e4381e113df5da4b9ade75",
+      "bytes": 4261
+    },
+    {
+      "shared_repo_path": "results/prio/candidates_chagas.csv",
+      "sha256": "06b40be980e9fc8233809b74c2ec22c775f285ffa49327b4b9218bb3640a8660",
+      "bytes": 2222
+    },
+    {
+      "shared_repo_path": "results/series/chagas__GSE128270.csv.gz",
+      "sha256": "4951b558e0520afd6af8653c6cad72ce86c9975c1cbc7f38e6d9076b6e20b793",
+      "bytes": 233191
+    },
+    {
+      "shared_repo_path": "results/series/chagas__GSE128270.labels.csv",
+      "sha256": "409ab860a8de4ffc295c1c4655a9507dd4ef2d7cc82e59c38c83199908a7561c",
+      "bytes": 387
+    },
+    {
+      "shared_repo_path": "results/series/chagas__GSE13791.csv.gz",
+      "sha256": "d052c10502a41b0b10194ee296b1510d33d9eecc677a8eb883686fbf8d0139b5",
+      "bytes": 212619
+    },
+    {
+      "shared_repo_path": "results/series/chagas__GSE13791.labels.csv",
+      "sha256": "be216caaa9b5705f797706314b22bce7435819b1e0040e87fd3982e1b8ace057",
+      "bytes": 439
+    },
+    {
+      "shared_repo_path": "results/series/chagas__GSE84796.csv.gz",
+      "sha256": "6b3f50871780d8a2cef0af822720ba098c78539b60ea63b747f67f17e861283a",
+      "bytes": 222211
+    },
+    {
+      "shared_repo_path": "results/series/chagas__GSE84796.labels.csv",
+      "sha256": "a3b979effdac90001e105dae882cbf07974613629efd88fb96f8f5ce1c3f5a02",
+      "bytes": 303
+    },
+    {
+      "shared_repo_path": "scripts/chagas_p31_transport.py",
+      "sha256": "775c67a7188c958962e1445e11270ed7dccd41022293180e0d3875531af03d9d",
+      "bytes": 7648
+    }
+  ],
+  "explicitly_excluded": [
+    "untracked files",
+    "modified tracked files not represented by source commit",
+    "other-disease results",
+    "shared manuscript until disease-specific content can be verified"
+  ],
+  "accession_manifest": {
+    "source": "results/dataset_manifest.csv",
+    "matching_rule": "disease string in role field, not proof of independent datasets",
+    "matching_record_count": 53,
+    "GSE_count": 2,
+    "GSM_count": 50,
+    "other_count": 1
+  },
+  "deployment_status": "planning_only_no_repos_verified",
+  "method": "copy and verify hashes from committed tree; preserve source commit and project-relative paths; pin shared core; then run project-specific tests and read back remote"
+}

@@ -1,0 +1,41 @@
+I checked the available attachment inventory before reviewing. I cannot verify v11 from the attached files available in this chat.
+
+The only uploaded PDF currently available to me is:
+
+1-manuscript.pdf (uploaded at 06:19:24 UTC) 
+
+1-manuscript
+
+I do not have a separate 3-manuscript.pdf / v11 file in the conversation attachments, so I cannot honestly claim that I reviewed v11-only changes. The excerpts I can access are from the existing PDF, not a newly attached revision.
+
+Please re-upload 3-manuscript.pdf (v11), and I will run the final pass exactly as requested:
+
+Verify the Round 2 fixes against v11 only
+
+no reuse of v10 text,
+
+no assumptions from your summary,
+
+cite the actual v11 sections.
+
+List remaining weaknesses only if present
+
+scientific/statistical/methodological/presentational,
+
+classified as:
+
+fixable by code/data,
+
+fixable by rewriting,
+
+inherent limitation.
+
+Give the final representation verdict
+
+whether the manuscript accurately describes the work,
+
+whether any claims still exceed the evidence,
+
+and whether only unresolved limitations remain.
+
+I will not treat the stated v11 changes as verified until the actual PDF is available.

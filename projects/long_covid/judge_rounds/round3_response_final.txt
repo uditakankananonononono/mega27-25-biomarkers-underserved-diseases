@@ -1,0 +1,271 @@
+Final adversarial verification pass — 5-manuscript.pdf
+
+I reviewed the manuscript as a verification pass, not a win assessment. The manuscript itself already acknowledges that the benchmark/discovery gate is open, the 50-page substantive gate is unmet, and that the preregistered positive is not a diagnostic/discovery endpoint. 
+
+5-manuscript
+
+ The paper also explicitly frames the result as a working research record rather than a final win. 
+
+5-manuscript
+
+1. Remaining weaknesses
+A. Fixable by code/data (remaining)
+
+I find no remaining mandatory code/data corrections needed for scientific honesty. The major prior failure modes appear incorporated:
+
+P51 one-sided selection bias is disclosed rather than hidden. The manuscript states that the direction was chosen from the data and that the training p-value is not treated as a clean prespecified result. 
+
+5-manuscript
+
+P52 stopping discipline is correctly preserved: the evaluation cohort was never opened after the training-stage negative. 
+
+5-manuscript
+
+P53 preregistration provenance and single execution are documented. 
+
+5-manuscript
+
+Post-hoc analyses are labeled as descriptive/non-gated. 
+
+5-manuscript
+
+Minor reproducibility improvements that would be nice but are not scientific defects:
+
+Add a single consolidated “analysis dependency graph” figure/table.
+Currently the reader has to reconstruct which datasets were touched by which arc from multiple sections. The master table helps, but a visual dependency map would reduce audit burden. The current arc summary is present in the master analysis table. 
+
+5-manuscript
+
+Clarify exact distinction between exploratory annotation and hypothesis support earlier.
+The manuscript eventually states that annotation volume is not cumulative evidence. 
+
+5-manuscript
+
+ Moving that warning earlier would reduce possible reader misinterpretation.
+
+These are presentation/audit improvements, not corrections to the science.
+
+B. Fixable by rewriting
+1. “Transports across assay and cell mixture” is slightly stronger than the evidence
+
+The manuscript says:
+
+“a cellular oxidative-phosphorylation down-signal transports across assay and cell mixture to separate Long COVID from healthy controls”
+
+in the cumulative interpretation. 
+
+5-manuscript
+
+The problem: the evidence shows that the score projection survives a change in platform and sample composition. It does not prove the underlying biological program is invariant to cell mixture.
+
+The manuscript partially corrects this later by explicitly stating that transport across mixtures is score robustness, not proof of a cell-intrinsic pathway state. 
+
+5-manuscript
+
+Suggested wording change:
+
+Replace “transports across assay and cell mixture”
+with:
+
+“retains association across a cross-assay and cross-cohort evaluation involving different sample compositions.”
+
+Classification: rewriting only.
+
+2. “The one preregistered positive transport result” needs repeated qualification
+
+The paper is careful overall, but the phrase “positive transport result” risks being read as stronger than intended because “transport” has different meanings across biomarker literature.
+
+The paper itself correctly says the result is:
+
+“not a disease-specific discriminator and not a diagnostic.” 
+
+5-manuscript
+
+However, in a title/abstract/discussion context, repeatedly pairing “positive” and “transport” may invite overreading.
+
+Suggested clarification:
+
+“positive cross-cohort association transport result under the preregistered E1 definition.”
+
+Classification: rewriting only.
+
+3. P53 “passes” language remains slightly dangerous
+
+The manuscript writes:
+
+“E2 passes”
+
+for the inverted ME/CFS-vs-Long COVID contrast. 
+
+5-manuscript
+
+This is technically correct under the locked E2 statistic, but scientifically awkward because the overall arc fails and the direction is opposite to the training hypothesis.
+
+The manuscript immediately corrects this:
+
+“With E1 failed, the preregistered reading holds: this is cellular L9 biology uncoupled from the cfRNA signature, not a transported ME/CFS state discriminator.” 
+
+5-manuscript
+
+Still, a reader scanning only headings may misunderstand.
+
+Suggested wording:
+
+“E2 threshold met in the opposite direction; arc win rule failed.”
+
+Classification: rewriting only.
+
+C. Inherent limitations (cannot be solved within this project)
+
+These are the real remaining weaknesses.
+
+1. Healthy controls are not recovered-infection controls
+
+The manuscript correctly identifies this:
+
+“GSE275334’s healthy arm is healthy, not recovered-from-infection, so E1 effect sizes likely overstate what a recovered-control design would give.” 
+
+5-manuscript
+
+This cannot be fixed computationally. It requires a different cohort.
+
+Classification: inherent limitation.
+
+2. Small sample sizes and limited power
+
+The manuscript is appropriately cautious:
+
+37 training donors
+
+47 evaluation subjects
+
+27 P52 training subjects
+
+and notes that failures are weak evidence of absence. 
+
+5-manuscript
+
+No statistical rewrite fixes this. More samples are required.
+
+Classification: inherent limitation.
+
+3. Cell composition versus cell-intrinsic biology
+
+This remains unresolved.
+
+The manuscript correctly states:
+
+“whether the L7 signal is cell-intrinsic transcription or cell-type abundance cannot be resolved on these data.” 
+
+5-manuscript
+
+This requires cell-resolved assays, deconvolution validation, sorted-cell experiments, or equivalent resources.
+
+Classification: inherent limitation.
+
+4. P53 site heterogeneity
+
+This is a genuine remaining scientific weakness.
+
+The manuscript finds:
+
+balanced Ithaca effect,
+
+weaker/no effects in NYC and LA,
+
+unresolved site heterogeneity. 
+
+5-manuscript
+
+This is not fixable by additional narrative. It requires independent cohorts or site-balanced validation.
+
+Classification: inherent limitation.
+
+5. Comparator feature-selection mismatch
+
+The manuscript correctly admits:
+
+“the six-gene comparator matches scoring machinery but not feature-selection provenance.” 
+
+5-manuscript
+
+The comparison is informative but not a perfectly matched head-to-head benchmark.
+
+Classification: inherent limitation.
+
+2. Claims exceeding evidence
+
+I found no major unsupported scientific claim that requires retraction.
+
+The manuscript consistently avoids the strongest overclaims:
+
+It explicitly says no clinical test is claimed. 
+
+5-manuscript
+
+It explicitly says no diagnostic endpoint is claimed. 
+
+5-manuscript
+
+It explicitly says P53 discordance mechanism is unresolved. 
+
+5-manuscript
+
+The only claims I would soften are terminology issues:
+
+Claim area	Problem	Action
+“transports across assay and cell mixture”	sounds like biological invariance	rewrite
+“E2 passes” in P53	technically true but rhetorically misleading	rewrite
+“positive transport result”	needs repeated qualification	rewrite
+
+These are not evidence violations.
+
+3. Final verdict
+Does the manuscript honestly represent the work?
+
+Yes.
+
+The manuscript accurately reports:
+
+the P51 positive E1 result,
+
+the failed P51 ME/CFS separation,
+
+the P52 training-stage negative,
+
+the P53 transport failure,
+
+the inverted P53 contrast,
+
+the unmet win rule.
+
+The front matter is unusually explicit that the benchmark/discovery endpoint is not met and that no padding or inflated claims are being made. 
+
+5-manuscript
+
+Are the only remaining items inherent limitations?
+
+Almost, but not completely.
+
+The remaining substantive scientific problems are overwhelmingly inherent limitations:
+
+cohort composition,
+
+sample size,
+
+biological resolution,
+
+site heterogeneity,
+
+comparator mismatch.
+
+However, there are still minor rewriting issues around terminology strength. They do not change conclusions, but tightening them would make the manuscript harder to misread.
+
+Final judge assessment
+
+Scientific integrity: acceptable.
+Evidence calibration: strong.
+Remaining weaknesses: mostly inherent limitations, with a few wording refinements.
+No evidence of result inflation, preregistration erosion, or selective reporting in the manuscript as provided.
+
+The manuscript is not a successful benchmark/discovery paper, and it does not pretend to be one. Its strongest contribution is methodological transparency around failed separation attempts plus one bounded cross-cohort association result, not a validated Long COVID biomarker. That distinction is maintained.

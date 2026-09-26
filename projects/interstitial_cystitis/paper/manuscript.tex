@@ -50,8 +50,13 @@ lane of MEGA-PROGRAM-27. It is written while the project gates are only partly
 met, and says so. Current gate state: the 120 accession-record floor is met
 (153 records, Table~\ref{tab:accessions}); the 40 genuinely-used external
 service floor is met (43 counted, 41 most-conservative, Appendix~\ref{app:services});
-the substantive-page floor for this disease paper is not yet met and is stated
-honestly where relevant; a positive preregistered replication exists for the
+the substantive-page floor for this disease paper is not met and is stated
+honestly here: at this revision the manuscript renders 43 pages, of which the
+research-body audit (pages carrying at least 300 non-heading words) counts 10
+of the 50 required - the remainder of the page count is locked result tables,
+gene-set appendices, per-fold values and the service ledger, which are data,
+not prose. Per the lane's substance-first rule, no padding was added to reach
+the floor; the shortfall is recorded rather than disguised; a positive preregistered replication exists for the
 residual program (Gate A2.1) but no published-comparator benchmark break and no
 named new discovery is claimed. Every analysis threshold in this manuscript was
 committed to the repository before the corresponding test was run; preregistrations
@@ -68,9 +73,9 @@ records with verified roles, not independent studies, cohorts or people.
 Interstitial cystitis/bladder pain syndrome (IC/BPS) splits clinically into
 Hunner-lesion disease (HIC), an inflammatory phenotype with ulcerative lesions
 visible at cystoscopy, and non-lesion bladder pain syndrome (BPS), which shares
-pain but not the lesion biology. BCG intravesical therapy for bladder cancer
-produces an iatrogenic inflammatory cystitis that is the most important
-molecular comparator: any ``Hunner signature'' that is equally present in BCG
+pain but not the lesion biology \cite{lai2020,clemens2022}. BCG intravesical therapy for bladder cancer
+produces an iatrogenic inflammatory cystitis \cite{pichler2024} that is the
+most important molecular comparator: any ``Hunner signature'' that is equally present in BCG
 cystitis is a general severe-inflammation signature, not a Hunner marker. The
 historical in-program IC panel descended from two array series (GSE621,
 GSE11783). The program-wide audit found two IC-derived mock-APF samples in
@@ -540,6 +545,20 @@ urinary transfer is to be retested. A cohort meeting those four requirements
 turns the residual program from a replicated-in-one-cohort finding into a
 testable prediction.
 
+\subsection{Where this sits in the published landscape}
+Three published anchors frame the claims. The AUA/SUFU guideline keeps IC/BPS
+a clinical diagnosis made on symptoms and cystoscopy findings, not on a
+molecular test \cite{clemens2022}. The systematic review of the Hunner
+phenotype supports treating HIC as a distinct entity from non-lesion BPS
+\cite{lai2020}. And the 2021 biomarker review finds no validated molecular
+biomarker for either phenotype and catalogs candidate markers that remain
+research-grade \cite{akiyama2021}. Against that landscape, nothing in this
+manuscript is a validated biomarker: the residual program is a within-cohort
+reproducible molecular correlate, and the urinary legs are research assays at
+most. The source studies behind the accessions used here
+\cite{akiyama2023,keay2003,gamo2009,colaco2012,walker2014,blalock2008} are
+the evidentiary base; the reviews are context, not support.
+
 \subsection{Module-level reading of the two gates}
 The two positive gates select different modules for consistent reasons. Gate 1
 rewards the largest reproducible lesion-versus-non-lesion contrast, which is
@@ -578,7 +597,10 @@ and one platform; the residual replication is therefore a within-study
 patient-level result, and between-study heterogeneity is unestimated. The BCG
 comparator is 13 samples, which is why the A2.2 specificity bound can only be
 ``compatible'' rather than informative. The GSE28242 with-lesion arm is three
-donors, so A2.3a's directional trend has a wide null. The GSE196156 cystitis
+donors, so A2.3a's directional trend has a wide null. On the EV-miRNA side,
+isolation and quantification choices materially move urinary EV transcriptomic
+readouts \cite{barreiro2020}, which bounds how much weight any one array's
+composite can carry. The GSE196156 cystitis
 arm is eight profiles, the composite averages 262 measured regulators - a broad
 set that dilutes any per-miRNA signal - and 2{,}168 deposited rows were
 detection-gated out by the locked measured-set definition. The A2.2 bound is
@@ -626,6 +648,21 @@ Acids Research} (2025), doi:10.1093/nar/gkae1072; v10.0 per-gene exports used.
 \bibitem{kozomara2019} Kozomara A., Birgaoanu M., Griffiths-Jones S.\ miRBase:
 from microRNA sequences to function. \emph{Nucleic Acids Research} (2019);
 \texttt{mature.fa} accession mapping used.
+\bibitem{lai2020} Lai H.H.\ et al. Hunner lesion phenotype in interstitial
+cystitis/bladder pain syndrome: a systematic review and meta-analysis.
+\emph{J.\ Urology} (2020). PMID 32223699.
+\bibitem{clemens2022} Clemens J.Q.\ et al. Diagnosis and treatment of
+interstitial cystitis/bladder pain syndrome (AUA/SUFU guideline).
+\emph{J.\ Urology} (2022). PMID 35536143.
+\bibitem{akiyama2021} Akiyama Y.\ et al. Biomarkers in interstitial
+cystitis/bladder pain syndrome with and without Hunner lesion: a review and
+future perspectives. \emph{Diagnostics} (2021). PMID 34943475.
+\bibitem{barreiro2020} Barreiro K.\ et al. Comparison of urinary
+extracellular vesicle isolation methods for transcriptomic biomarker research.
+\emph{J.\ Extracellular Vesicles} (2020). PMID 33437407.
+\bibitem{pichler2024} Pichler R.\ et al. Treating BCG-induced cystitis with
+combined chondroitin and hyaluronic acid instillations in bladder cancer.
+\emph{J.\ Clinical Medicine} (2024). PMID 38610796.
 \end{thebibliography}
 
 \clearpage

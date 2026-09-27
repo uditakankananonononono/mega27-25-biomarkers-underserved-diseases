@@ -2,7 +2,7 @@
 
 Status: project scaffold and gate audit only, not a finished paper or a positive benchmark. The parent repository is shared core; this directory must hold a disease-specific protocol, accession and external-service evidence ledger, reproducible results and a 50-page substantive paper before its gates can be claimed.
 
-Current disease-tagged manifest records: 178 = 5 GSE studies + 172 nested GSM samples + 1 other. These are record units, not independent datasets or patients. The shared 40-service and 49-page PDF do not transfer as automatic per-project passes. Benchmark/discovery endpoint is open.
+Current disease-tagged manifest records: 179 = 6 GSE identifiers + 172 nested GSM samples + 1 other. These are record units, not independent datasets or patients. The shared 40-service and 49-page PDF do not transfer as automatic per-project passes. Benchmark/discovery endpoint is open.
 
 Disease-specific documents and source logs are not yet split from shared core; use the shared source code and result filenames by disease as leads, then verify original record attribution before copying.
 
@@ -17,3 +17,7 @@ The original rule-based `results/series/leishmaniasis__GSE125993.labels.csv` cou
 ## Individually verified, historically analyzed cutaneous cohorts
 
 The earlier shared-core expression analysis had used [GSE55664](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE55664) (25 lesion and ten normal-skin GSMs) and [GSE80008](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE80008) (18 localized cutaneous-leishmaniasis and twelve healthy PBMC GSMs), but their individual GSM records had not been added to the manifest. We fetched each of the 65 primary GEO sample records and matched accession, title, source phenotype, platform and finite matrix column to the preexisting analysis labels. The URL/hash crosswalks are under `sources/`; only these 65 used nested records were added. This raises tagged leish records from 113 to 178, passing **only the accession-record interpretation** of 120. It adds two preexisting studies, not 65 independent cohorts or a new scientific result. Lesion tissue and ex-vivo PBMC are different tasks; source titles alone are not a verified cross-study patient independence proof. The 40-service, 50-page disease paper, and positive same-task/novel discovery gates are still open.
+
+## P35 parent accession reconciliation
+
+GSE127831 was the source of the frozen P35 normalized expression matrix, design table and 28 individually mapped GSMs, but its parent accession row had been omitted from the shared manifest. The source files and hashes are in `data/geo/p35/` and `results/leish_p35_result.json`, with exact sample mapping in `results/leish_p35_samples.csv`; the pre-result frozen protocol and retained result are in `results/preregistered_predictions.md`. The shared manifest now adds this one genuinely used GSE identifier. This corrects record accounting to 179 leishmaniasis identifiers, not six independent studies: the 28 P35 GSMs all nest within this one series. P35 is selected-gene descriptive recurrence, not independent donor-verified clinical validation or a published same-task benchmark beat. Series: https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE127831 (direct fetch unavailable at this audit); metadata mirror: https://www.omicsdi.org/dataset/geo/GSE127831.

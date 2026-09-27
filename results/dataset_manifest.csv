@@ -34,6 +34,7 @@ GSE11783,GEO series,interstitial_cystitis:discovery
 GSE120103,GEO series,endometriosis:validation
 GSE124226,GEO series,pcos:validation
 GSE125993,GEO series,leishmaniasis:validation
+GSE127831,GEO series and depositor normalized expression/design files,"leishmaniasis:P35 selected two-gene descriptive lesion follow-up; parent of 28 analyzed GSMs, not an independent additional cohort"
 GSE137684,GEO series,pcos:validation
 GSE143953,GEO series,"preeclampsia:P19 processed eight-sample cohort, panel failed"
 GSE14577,GEO series,me_cfs:discovery

@@ -1,0 +1,111 @@
+Authenticated owner-channel message ID: wamid.HBgMOTE4MTM0MDk4NTcxFQIAEhgWM0VCMEFGRDY4MzY4OTkxNzFEQURGRAA=
+Received: Sunday, September 27, 2026, 12:02:56 PM IST
+The following two excerpts preserve the original message text without bracketed editor notes. The omitted sections concern other projects.
+
+OWNER OPENING (verbatim; the item-27 title immediately follows its directive):
+IGNORE ABOUT ISEF DELIVERABLES, IMPROVE PAGE COUNT : ITEM-27: Five Bioinformatics Tools (Draft)
+
+ITEM 25 (verbatim):
+5. manuscript (2): Biomarkers-25 — Cross-Cohort Audit
+Weaknesses (20) — computational only:
+
+Core result is a negative: audit changes earlier replications.
+
+Only PCOS and IC survive; IC has 7 specimens.
+
+PCOS follow-up selection-matched nulls fail (p=0.588).
+
+P10-P44 mostly fail.
+
+P14 uses re-mapped material from prior studies — reuse risk.
+
+P24 GSE295760 has label conflicts (4 participants).
+
+P25 Hunner-lesion test fails (31/46, p=0.068).
+
+P26 iPSC-MPC panel fails (10/18, p=0.328).
+
+P27 granulosa isoform panel fails (9/15, p=0.261).
+
+P28 leishmaniasis panel fails (11/18, p=0.644).
+
+P29 ME/CFS cfRNA panel fails (5/13, p=0.949).
+
+P30 PON2/CACNA2D2 are post-hoc picks.
+
+P31 Chagas mixed signs, 15/17 (p=0.020) — fragile.
+
+P32 ME/CFS blood-to-muscle fails (3/9, p=0.941).
+
+P33 lower than published Lasso (0.723 vs 0.810).
+
+P36-P38 long-COVID genes are source-selected.
+
+CNN underperforms logistic (0.576 vs 0.628).
+
+1,328 accessions are nested, not independent studies.
+
+No positive named discovery; gate not met.
+
+No pre-registered new cohort for any surviving panel.
+
+Additions (computational):
+
+Make the GSM-overlap audit the primary contribution.
+
+Report PCOS and IC survivors as the payload; failures as limits.
+
+Add a pre-registered new cohort for one surviving panel.
+
+Add a proper clinical adjudication of the IC lesion split.
+
+Reduce accession count to study-level.
+
+Add a "how to audit biomarkers" decision tree.
+
+Provide the source-audit tool as a standalone resource.
+
+Simplify to 12 slides.
+
+
+CROSS-CUTTING (verbatim):
+Cross-Cutting Computational Themes
+Recurring weaknesses:
+
+Dataset/tool count inflation (nested records counted as independent).
+
+Long papers (47-58 pages) — not ISEF-ready.
+
+Negative-heavy narratives that obscure positive contributions.
+
+Single-seed headline numbers.
+
+Ad hoc gates/thresholds rather than theoretically derived.
+
+Homology leakage in random-split benchmarks.
+
+No leave-family-out CV in most projects.
+
+CIs often overlapping — point-estimate wins only.
+
+Universal computational additions:
+
+One primary question per paper.
+
+One locked primary endpoint.
+
+Cluster-level bootstrap CIs everywhere.
+
+Leave-family-out CV as the primary protocol.
+
+12-slide storyboard as the ISEF deliverable.
+
+One-page summary card.
+
+Decision tree for tool use.
+
+Pre-registered replication within the paper itself.
+
+"What this is NOT" section in every abstract.
+
+Reduce tool/dataset counting to study-level units.

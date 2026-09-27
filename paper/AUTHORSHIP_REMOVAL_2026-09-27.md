@@ -11,3 +11,5 @@ The prior cleanup paragraph records the state at the earlier commit, not the cur
 The subsequent title/abstract revision leads with the measured deduplication method and limited sign-test survivors rather than calling the entire paper a negative-results study. The older Times DOCX/PDF snapshots still have their prior title and abstract; do not present them as the current manuscript.
 
 The September 27 owner-verdict response added a study/sample-unit reconciliation and decision-tree section. The core PDF now renders 52 pages, but a conservative body-density proxy counts only 37 pages with 300+ research-body words. Its actual Times New Roman disease-specific 50-page gate remains unmet. The older Times DOCX/PDF still do not reflect these later revisions.
+
+A further source-grounded P46 PCOS section records its pre-registered failure in GSE271363. The rebuilt core remains 52 physical pages, with 38 dense research-body pages under the documented 300-word proxy. The separate disease-specific Times manuscript and validated-discovery gates remain unmet.

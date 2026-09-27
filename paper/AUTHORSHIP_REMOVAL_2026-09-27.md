@@ -1,0 +1,5 @@
+# Working paper attribution cleanup
+
+At the owner's request on September 27, 2026, the shared manuscript title page has no author byline. The two manuscript TeX sources, the existing Times New Roman DOCX, and both rebuilt PDFs no longer carry the previous program label as author; both PDFs' `Author` metadata fields are absent. No substitute author was assigned. The owner can add her chosen authorship later. Figure PDFs carried no `Author` metadata in the checked files.
+
+`manuscript.pdf` was rebuilt from the source `manuscript.tex` through pdfLaTeX after changing the local package preamble to avoid missing `hyperref` and epstopdf helper packages; its first-page visual was inspected. `manuscript-times.pdf` was re-exported from the existing Times New Roman DOCX after removing its old byline paragraph and clearing author metadata. The DOCX is an earlier 49-page working snapshot; the separately modified `manuscript-times.tex` has later PPD prose not yet propagated into the DOCX/PDF. This cleanup does not certify current paper content or meet any disease-specific 50-page gate.
